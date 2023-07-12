@@ -6,7 +6,7 @@ export default function NavBar() {
     <nav>
       <ul>
         
-        <a href="/noticias"><li>Noticias</li></a>
+        <li>Noticias</li>
         <li>Reintegro</li>
         <li>Contacto</li>
         <li>Informacion</li>

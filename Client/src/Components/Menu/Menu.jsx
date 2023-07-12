@@ -5,7 +5,7 @@ export default function Menu() {
     <div>
         <h1>X</h1>
         <ul>
-            <li>Derivacion Local</li>
+            <a href="nacional"><li>Red Nacional</li></a>
             <li>Trafico Nacional</li>
             <li>Terminales</li>
             <li>Atp</li>
