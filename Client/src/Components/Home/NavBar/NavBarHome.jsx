@@ -1,18 +1,18 @@
 import React from 'react'
+import './NavBar.css'
 
-export default function NavBar() {
+export default function NavBarHome() {
 
   return (
-    <nav>
-      <ul>
-        
+    <div className='conteiner'>
+    <nav >
+      <ul className='lista'>
         <li>Noticias</li>
         <li>Reintegro</li>
         <li>Contacto</li>
         <li>Informacion</li>
-        <li></li>
-        <li></li>
       </ul>
     </nav>
+    </div>
   )
 }

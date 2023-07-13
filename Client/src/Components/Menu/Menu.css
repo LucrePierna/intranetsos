@@ -1,0 +1,110 @@
+.burger-menu {
+    margin: 50px 0 0 10px;
+    text-decoration: none;
+  }
+  
+  .burger-menu .menu-check {
+    display: none;
+  }
+  
+  /* Circulo de Menu */
+  .burger-menu .menu-open {
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    border-radius: 100%;
+    position: relative;
+    background: #f70303;
+    box-shadow: 1px 1px 3px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  /* Menu Hamburguesa */
+  .burger-menu .menu-open span {
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    margin-top: -1.5px;
+    margin-left: -20px;
+    background-color: #0d0d0d;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  .burger-menu .menu-open span.burger1 {
+    transform: translate3d(0px, -12px, 0px);
+  }
+  
+  .burger-menu .menu-open span.burger2 {
+    transform: translate3d(0px, 0px, 0px);
+    transition: 0.1s;
+  }
+  
+  .burger-menu .menu-open span.burger3 {
+    transform: translate3d(0px, 12px, 0px);
+  }
+  
+  .burger-menu .menu-check:checked + .menu-open {
+    background: #de0808;
+    border: 0;
+  }
+  
+  .burger-menu .menu-check:checked + .menu-open span {
+    background-color: #141414;
+  }
+  
+  .burger-menu .menu-check:checked + .menu-open span.burger1 {
+    transform: translate3d(0px, -10px, 0px) rotate(-45deg);
+    width: 25px;
+  }
+  
+  .burger-menu .menu-check:checked + .menu-open span.burger2 {
+    opacity: 0;
+  }
+  
+  .burger-menu .menu-check:checked + .menu-open span.burger3 {
+    transform: translate3d(0px, 10px, 0px) rotate(45deg);
+    width: 25px;
+  }
+  
+  .burger-menu .menu-options {
+    background-color: #020202;
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    padding: 70px 0px 20px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .burger-menu .menu-options li {
+    color: #ffffff;
+    text-align: start;
+    margin-left: 10px;
+    list-style: none;
+    display: block;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  
+  .burger-menu .menu-options li a {
+    color: white;
+    line-height: 4em;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  
+  .burger-menu .menu-options li a.active {
+    color: #ff0000;
+  }
+  
+  .burger-menu .menu-check:checked ~ .menu-options {
+    width: 15%;
+    opacity: 1;
+  }
+  
