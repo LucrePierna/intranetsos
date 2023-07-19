@@ -5,12 +5,14 @@ export default function NavBarDerivacion() {
   return (
     <nav className='conteiner'>
       <div className='lista'>
-      <ul className='seccion'>
-        <li>Noticias</li>
-        <li>Reintegro</li>
-        <li>Contacto</li>
-        <li>Informacion</li>
-      </ul>
+      <ol className='seccion'>
+        <li>Consultas</li>
+        <li>Flujograma</li>
+        <li>Novedades</li>
+        <li>Prestadores</li>
+        <li>Procedimientos</li>
+
+      </ol>
       </div>
     </nav>
   )
