@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../EstilosGlobales/NavBar.css'
 
-export default function NavBarViajero() {
+export default function NavBarTP() {
   return (
     <nav className='conteiner'>
     <div className='lista'>
