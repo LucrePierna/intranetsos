@@ -1,0 +1,19 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+}
+
+.info{
+    color: black;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40%;
+    
+}
+
+h1{
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+}
