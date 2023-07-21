@@ -1,27 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../../EstilosGlobales/NavBar.css'
 import CalculoKms from '../Secciones/CalculoKms/CalculoKms'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import MicroStrategy from '../Secciones/MicroStrategy/MicroStrategy'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Planilla from '../Secciones/Planilla/Planilla'
-import Seccion1 from '../Secciones/Seccion1/Seccion1'
-import Seccion2 from '../Secciones/Seccion2/Seccion2'
+
 
 export default function NavBarTdc() {
+  const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const handleComponentClick = (component) => {
+    setSelectedComponent(component);
+  };
+
   return (
-    <nav className='conteiner'>
-    <div className='lista'>
-    <ul className='seccion'>
-      <li><CalculoKms /></li>
-      <li><Flujograma /></li>
-      <li><Instructivo /></li>
-      <li><MicroStrategy /></li>
-      <li><Planilla /></li>
-      <li><Seccion1 /></li>
-      <li><Seccion2 /></li>
+    <div>
+      <ul className='navbar'>
+        <li onClick={()=> handleComponentClick('flujodrama')}>Flujograma </li>
+        <li onClick={()=> handleComponentClick('calculokms')}>Calculo De Kms </li>
+        <li onClick={()=> handleComponentClick('instructivo')}>Instructivo </li>
+        <li onClick={()=> handleComponentClick('microStrategy')}>MicroStrategy </li>
+        <li onClick={()=> handleComponentClick('planilla')}>Planilla </li>
+
+
     </ul>
+    <div>
+      {selectedComponent === 'flujodrama' && <Flujograma />}
+      {selectedComponent === 'calculokms' && <CalculoKms />}
+      {selectedComponent === 'instructivo' && <Instructivo />}
+      {selectedComponent === 'microStrategy' && <MicroStrategy />}
+      {selectedComponent === 'planilla' && <Planilla />}
     </div>
-  </nav>
+    </div>
+  
   )
 }

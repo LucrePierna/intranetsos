@@ -1,25 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../../EstilosGlobales/NavBar.css'
-import Flujograma from '../../TDC/Secciones/Flujograma/Flujograma'
+import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Planilla from '../Secciones/Planilla/Planilla'
-import Seccion1 from '../Secciones/Seccion1/Seccion1'
-import Seccion2 from '../Secciones/Seccion2/Seccion2'
-import Seccion3 from '../Secciones/Seccion3/Seccion3'
+
 
 export default function NavBarExtranjero() {
+  const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const handleComponentClick = (component) => {
+    setSelectedComponent(component);
+  };
   return (
-    <nav className='conteiner'>
-    <div className='lista'>
-    <ul className='seccion'>
-      <li><Flujograma /></li>
-      <li><Instructivo /></li>
-      <li><Planilla /></li>
-      <li><Seccion1 /></li>
-      <li><Seccion2 /></li>
-      <li><Seccion3 /></li>
+    <div>
+    <ul className='navbar'>
+      <li onClick={() => handleComponentClick('flujograma')}  >Flujograma</li>
+      <li onClick={()=> handleComponentClick('instructivo')}>Instructivo</li>
+      <li onClick={()=> handleComponentClick('planilla')}>Planilla</li>
+
     </ul>
+    <div >
+      {selectedComponent === 'flujograma' && <Flujograma />}
+      {selectedComponent === 'instructivo' && <Instructivo />}
+      {selectedComponent === 'planilla' && <Planilla />}
     </div>
-  </nav>
+  </div>
   )
 }

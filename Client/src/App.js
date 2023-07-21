@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
-import Derivacion from './Components/Tareas/Derivacion/derivacion'
+import Derivacion from './Components/Tareas/Derivacion/Derivacion'
 import TraficoNacional from './Components/Tareas/TraficoNacional/TraficoNacional'
 import Transportin from './Components/Tareas/Transportin/Transportin'
 import Atp from './Components/Tareas/Atp/Atp'

@@ -1,29 +1,38 @@
-import React from 'react'
-
+import React, { useState } from 'react';
 import '../../../EstilosGlobales/NavBar.css'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Mapas from '../Secciones/Mapas/Mapas'
 import Noticias from '../Secciones/Noticias/Noticias'
 import Planilla from '../Secciones/Planilla/Planilla'
-import Seccion1 from '../Secciones/Seccion1/Seccion1'
-import Seccion2 from '../Secciones/Seccion2/Seccion'
+
 
 export default function NavBarTrafico() {
-  return (
-    <nav className='conteiner'>
+  const [selectedComponent, setSelectedComponent] = useState(null);
 
-    <div className='lista'>
-    <ul className='seccion'>
-      <li><Flujograma /></li>
-      <li><Instructivo /></li>
-      <li><Mapas /></li>
-      <li><Noticias /></li>
-      <li><Planilla /></li>
-      <li><Seccion1 /></li>
-      <li><Seccion2 /></li>
-    </ul>
+  const handleComponentClick = (component) => {
+    setSelectedComponent(component);
+  };
+  return (
+    
+    <div>
+      <ul className='navbar'>
+       
+        <li onClick={() => handleComponentClick('flujograma')}>Flujograma</li>
+        <li onClick={() => handleComponentClick('instructivo')}>Instructivo</li>
+        <li onClick={() => handleComponentClick('mapas')}>Mapas</li>
+        <li onClick={() => handleComponentClick('noticias')}>Noticias</li>
+        <li onClick={() => handleComponentClick('planilla')}>Planilla</li>
+      </ul>
+      
+      <div className='lista'>
+       
+        {selectedComponent === 'flujograma' && <Flujograma />}
+        {selectedComponent === 'instructivo' && <Instructivo />}
+        {selectedComponent === 'mapas' && <Mapas />}
+        {selectedComponent === 'noticias' && <Noticias />}
+        {selectedComponent === 'planilla' && <Planilla />}
+      </div>
     </div>
-  </nav>
-  )
+  );
 }
