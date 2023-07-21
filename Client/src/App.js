@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
-import Derivacion from './Components/Tareas/Derivación/Derivacion'
+import Derivacion from './Components/Tareas/Derivacion/derivacion'
 import TraficoNacional from './Components/Tareas/TraficoNacional/TraficoNacional'
 import Transportin from './Components/Tareas/Transportin/Transportin'
 import Atp from './Components/Tareas/Atp/Atp'
@@ -17,7 +17,7 @@ function App() {
       <Menu />
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/derivacion' element={<Derivacion />}/>
+        <Route path='/derivacion' element={<Derivacion />} />
         <Route path='/trafico' element={<TraficoNacional />}/>
         <Route path='/transportin' element={<Transportin />}/>
         <Route path='/atp' element={<Atp />}/>
