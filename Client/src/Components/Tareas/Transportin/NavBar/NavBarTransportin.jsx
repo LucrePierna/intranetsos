@@ -1,16 +1,16 @@
 import React from 'react'
 import '../../../EstilosGlobales/NavBar.css'
 
-
 export default function NavBarTransportin() {
   return (
     <nav className='conteiner'>
     <div className='lista'>
     <ul className='seccion'>
-      <li>Noticias</li>
-      <li>Reintegro</li>
-      <li>Contacto</li>
-      <li>Informacion</li>
+      <li>Bases</li>
+      <li>Corredores</li>
+      <li>Flujograma</li>
+      <li>Instructivo</li>
+      <li>Planillas</li>
     </ul>
     </div>
   </nav>
