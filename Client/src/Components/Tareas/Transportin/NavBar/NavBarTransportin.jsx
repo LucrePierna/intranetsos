@@ -1,18 +1,39 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../../EstilosGlobales/NavBar.css'
+import Bases from '../Secciones/Bases/Bases'
+import Corredores from '../Secciones/Corredores/Corredores'
+import Flujograma from '../Secciones/Flujograma/Flujograma'
+import Instructivo from '../Secciones/Instructivo/Instructivo'
+import Planillas from '../Secciones/Planillas/Planillas'
 
 export default function NavBarTransportin() {
+    const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const handleComponentClick = (component) => {
+    setSelectedComponent(component);
+  };
+
   return (
-    <nav className='conteiner'>
-    <div className='lista'>
-    <ul className='seccion'>
-      <li>Bases</li>
-      <li>Corredores</li>
-      <li>Flujograma</li>
-      <li>Instructivo</li>
-      <li>Planillas</li>
-    </ul>
+   <div>
+
+      <ul className='navbar'>
+        <li onClick={()=> handleComponentClick('bases')}>Bases</li>
+        <li onClick={()=> handleComponentClick('corredores')}>Corredores</li>
+        <li onClick={()=> handleComponentClick('flujodrama')}>Flujodrama</li>
+        <li onClick={()=> handleComponentClick('instructivo')}>Instructivo</li>
+        <li onClick={()=> handleComponentClick('Planillas')}>Planillas</li>
+
+      </ul>
+
+      <div className='lista'>
+        {selectedComponent === 'bases' && <Bases />}
+        {selectedComponent === 'corredores' && <Corredores />}
+        {selectedComponent === 'flujodrama' && <Flujograma />}
+        {selectedComponent === 'instructivo' && <Instructivo />}
+        {selectedComponent === 'Planillas' && <Planillas />}
+
+      </div>
+
     </div>
-  </nav>
   )
 }
