@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
-import NavBarDerivacion from '../Tareas/Derivación/Navbar/NavBarDerivacion';
+import NavBarDerivacion from '../Tareas/Derivacion/Navbar/NavBarDerivacion';
 import NavBarHome from '../Home/NavBar/NavBarHome';
 import NavBarAtp from '../Tareas/Atp/NavBar/NavBarAtp';
 import NavBarTdc from '../Tareas/TDC/NavBar/NavBarTdc';
@@ -12,8 +12,7 @@ import NavBarViajero from '../Tareas/Viajeros/NavBar/NavBarViajero';
 
 const Menu = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+ 
   useEffect(() => {
     const currentPath = window.location.pathname;
     setSelectedRoute(currentPath);
@@ -21,12 +20,9 @@ const Menu = () => {
 
   const handleRouteClick = (route) => {
     setSelectedRoute(route);
-    setIsMenuOpen(false);
+
   };
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <div>
@@ -50,24 +46,16 @@ const Menu = () => {
         <NavBarHome /> 
       )}
 
-      <div className="menu">
-        <nav className={`burger-menu ${isMenuOpen ? 'open' : ''}`}>
-          <input
-            className="menu-check"
-            type="checkbox"
-            name="menu-check"
-            value=""
-            id="menu-check"
-            checked={isMenuOpen}
-            onChange={handleMenuToggle}
-          />
-          <label className="menu-open" htmlFor="menu-check">
-            <span className="burger1"></span>
-            <span className="burger2"></span>
-            <span className="burger3"></span>
+      <div className="menu">  
+        <nav className="burger-menu">
+        <input class="menu-check" type="checkbox" name="menu-check" value="" id="menu-check" />
+          <label class="menu-open" htmlFor="menu-check">
+            <span class="burger1"></span>
+            <span class="burger2"></span>
+            <span class="burger3"></span>
           </label>
 
-          <ul className="menu-options">
+          <ul class="menu-options">
             <li>
               <a
                 href="/"

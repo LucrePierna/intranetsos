@@ -1,25 +1,34 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../../EstilosGlobales/NavBar.css'
 import Anulación from '../Secciones/Anulación/Anulacion'
 import Chattigo from '../Secciones/Chattigo/Chattigo'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
-import Seccion1 from '../Secciones/Seccion1/Seccion1'
-import Seccion2 from '../Secciones/Seccion2/Seccion2'
 
 export default function NavBarAtp() {
+  const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const handleComponentClick = (component) => {
+    setSelectedComponent(component);
+  };
+
   return (
-    <nav className='conteiner'>
-    <div className='lista'>
-    <ul className='seccion'>
-      <li><Anulación/></li>
-      <li><Chattigo /></li>
-      <li><Flujograma /></li>
-      <li><Instructivo /></li>
-      <li><Seccion1 /></li>
-      <li><Seccion2 /></li>
-    </ul>
+    <div>
+
+      <ul className='navbar'>
+        <li onClick={()=> handleComponentClick('flujodrama')}>Flujograma</li>
+        <li onClick={()=> handleComponentClick('anulacion')}>Instructivo</li>
+        <li onClick={()=> handleComponentClick('chattigo')}>Chattigo</li>
+        <li onClick={()=> handleComponentClick('instructivo')}>Anulacion</li>
+      </ul>
+
+      <div className='lista'>
+        {selectedComponent === 'flujodrama' && <Flujograma />}
+        {selectedComponent === 'flujodrama' && <Anulación />}
+        {selectedComponent === 'flujodrama' && <Chattigo />}
+        {selectedComponent === 'flujodrama' && <Instructivo />}
+      </div>
+
     </div>
-  </nav>
   )
 }
