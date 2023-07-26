@@ -16,14 +16,14 @@ export default function NavBarAtp() {
     <div>
 
       <ul className='navbar'>
-        <li onClick={()=> handleComponentClick('flujodrama')}>Flujograma</li>
+        <li onClick={()=> handleComponentClick('flujograma')}>Flujograma</li>
         <li onClick={()=> handleComponentClick('instructivo')}>Instructivo</li>
         <li onClick={()=> handleComponentClick('chattigo')}>Chattigo</li>
         <li onClick={()=> handleComponentClick('anulacion')}>Anulacion</li>
       </ul>
 
       <div className='lista'>
-        {selectedComponent === 'flujodrama' && <Flujograma />}
+        {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'anulacion' && <Anulación />}
         {selectedComponent === 'chattigo' && <Chattigo />}
         {selectedComponent === 'instructivo' && <Instructivo />}
