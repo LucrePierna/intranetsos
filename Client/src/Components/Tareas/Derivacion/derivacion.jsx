@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Derivacion() {
+export default function derivacion() {
   return (
-    <div>Derivacion</div>
+    <div>derivacion</div>
   )
 }
