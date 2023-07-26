@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Organigrama() {
+export default function Flujograma() {
   return (
     <div>Flujograma</div>
   )
