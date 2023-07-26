@@ -17,7 +17,7 @@ export default function NavBarTdc() {
   return (
     <div>
       <ul className='navbar'>
-        <li onClick={()=> handleComponentClick('flujodrama')}>Flujograma </li>
+        <li onClick={()=> handleComponentClick('flujograma')}>Flujograma </li>
         <li onClick={()=> handleComponentClick('calculokms')}>Calculo De Kms </li>
         <li onClick={()=> handleComponentClick('instructivo')}>Instructivo </li>
         <li onClick={()=> handleComponentClick('microStrategy')}>MicroStrategy </li>
@@ -26,7 +26,7 @@ export default function NavBarTdc() {
 
     </ul>
     <div>
-      {selectedComponent === 'flujodrama' && <Flujograma />}
+      {selectedComponent === 'flujograma' && <Flujograma />}
       {selectedComponent === 'calculokms' && <CalculoKms />}
       {selectedComponent === 'instructivo' && <Instructivo />}
       {selectedComponent === 'microStrategy' && <MicroStrategy />}
