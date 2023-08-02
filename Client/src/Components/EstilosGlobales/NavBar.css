@@ -1,5 +1,5 @@
 .conteiner{
-    background: linear-gradient(to right, #000000, #181818);
+    background: linear-gradient(to right, #00000083, #181818);
     color: white;
     padding: 0;
     width: 100%;
@@ -30,6 +30,13 @@
     align-items: center;
     text-decoration: none;
     font-size: 1.5rem;
-    margin-left: 10px;
-    
+    margin-left: 50px;
 }
+
+a {
+ margin: 50px;
+ color: aliceblue;
+ text-decoration: none;
+ line-height: 100px;
+}
+
