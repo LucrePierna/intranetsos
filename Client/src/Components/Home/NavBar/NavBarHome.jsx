@@ -16,7 +16,7 @@ export default function NavBarHome() {
       <div class="navbar-nav">
         <a class="nav-link" href="#">Noticias</a>
         <a class="nav-link" href="#">Reintegro</a>
-        <a class="nav-link" href="#">Contactos</a>
+        <a class="nav-link" href="#">Contacto</a>
         <a class="nav-link" href="#">Informacion</a>
       </div>
     </div>
