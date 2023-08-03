@@ -6,10 +6,10 @@ export default function NavBarHome() {
 
   return (
     
-    <nav className='conteiner'>
-      <img className='logo' src={Logo} alt="" />
-      <div className='lista'>
-      <ul className='seccion'>
+    <nav class='conteiner'>
+      <img class='logo' src={Logo} alt="" />
+      <div class='lista'>
+      <ul class='seccion'>
         <li>Noticias</li>
         <li>Reintegro</li>
         <li>Contacto</li>

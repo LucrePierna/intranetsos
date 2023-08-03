@@ -19,7 +19,7 @@ export default function NavBarTransportin() {
       <ul className='navbar'>
         <li onClick={()=> handleComponentClick('bases')}>Bases</li>
         <li onClick={()=> handleComponentClick('corredores')}>Corredores</li>
-        <li onClick={()=> handleComponentClick('flujodrama')}>Flujodrama</li>
+        <li onClick={()=> handleComponentClick('flujograma')}>Flujograma</li>
         <li onClick={()=> handleComponentClick('instructivo')}>Instructivo</li>
         <li onClick={()=> handleComponentClick('Planillas')}>Planillas</li>
 
@@ -28,7 +28,7 @@ export default function NavBarTransportin() {
       <div className='lista'>
         {selectedComponent === 'bases' && <Bases />}
         {selectedComponent === 'corredores' && <Corredores />}
-        {selectedComponent === 'flujodrama' && <Flujograma />}
+        {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'instructivo' && <Instructivo />}
         {selectedComponent === 'Planillas' && <Planillas />}
 
