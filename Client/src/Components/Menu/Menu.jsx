@@ -3,7 +3,7 @@ import './Menu.css';
 
 const Menu = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
- 
+
   useEffect(() => {
     const currentPath = window.location.pathname;
     setSelectedRoute(currentPath);
@@ -11,39 +11,36 @@ const Menu = () => {
 
   const handleRouteClick = (route) => {
     setSelectedRoute(route);
-
   };
 
-
   return (
+    <div className="menu">
+      <nav className="burger-menu">
+        <input className="menu-check" type="checkbox" id="menu-check" />
+        <label className="menu-open" htmlFor="menu-check">
+          <span className="burger1"></span>
+          <span className="burger2"></span>
+          <span className="burger3"></span>
+        </label>
 
-      <div className="menu">  
-        <nav className="burger-menu">
-        <input class="menu-check" type="checkbox" name="menu-check" value="" id="menu-check" />
-          <label class="menu-open" htmlFor="menu-check">
-          <span></span>
-          <span></span>
-          <span></span>
-          </label>
-
-          <ul class="menu-options">
-            <li>
-              <a
-                href="/"
-                className={selectedRoute === '/' ? 'active' : ''}
-                onClick={() => handleRouteClick('/')}
-              >
-                Inicio
-              </a>
-            </li>
-            <li>
-              <a
-                href="/derivacion"
-                className={selectedRoute === '/derivacion' ? 'active' : ''}
-                onClick={() => handleRouteClick('/derivacion')}
-              >
-                Derivacion Local
-              </a>
+        <ul className="menu-options">
+          <li>
+            <a
+              href="/"
+              className={selectedRoute === '/' ? 'active' : ''}
+              onClick={() => handleRouteClick('/')}
+            >
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="/derivacion"
+              className={selectedRoute === '/derivacion' ? 'active' : ''}
+              onClick={() => handleRouteClick('/derivacion')}
+            >
+              Derivacion Local
+            </a>
             </li>
             <li>
               <a
