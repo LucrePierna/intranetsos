@@ -1,14 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
-import NavBarDerivacion from '../Tareas/Derivacion/Navbar/NavBarDerivacion';
-import NavBarHome from '../Home/NavBar/NavBarHome';
-import NavBarAtp from '../Tareas/Atp/NavBar/NavBarAtp';
-import NavBarTdc from '../Tareas/TDC/NavBar/NavBarTdc';
-import NavBarExtranjero from '../Tareas/Extranjero/NavBar/NavBarExtranjero';
-import NavBarTP from '../Tareas/TerminalesYPesados/NavBar/NavBarTP';
-import NavBarTrafico from '../Tareas/TraficoNacional/NavBar/NavBarTrafico';
-import NavBarTransportin from '../Tareas/Transportin/NavBar/NavBarTransportin';
-import NavBarViajero from '../Tareas/Viajeros/NavBar/NavBarViajero';
 
 const Menu = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
@@ -25,34 +16,14 @@ const Menu = () => {
 
 
   return (
-    <div>
-      {selectedRoute === '/derivacion' ? (
-        <NavBarDerivacion />
-      ) : selectedRoute === '/atp' ? (
-        <NavBarAtp /> 
-      ) : selectedRoute === '/tdc' ? (
-        <NavBarTdc />
-      ) : selectedRoute === '/extranjero' ? (
-        <NavBarExtranjero /> 
-      ) : selectedRoute === '/terminalypesado' ? (
-        <NavBarTP /> 
-      ) : selectedRoute === '/trafico' ? (
-        <NavBarTrafico />
-      ) : selectedRoute === '/transportin' ? (
-        <NavBarTransportin />
-      ) : selectedRoute === '/viajeros' ? (
-        <NavBarViajero />
-      ) : (
-        <NavBarHome /> 
-      )}
 
       <div className="menu">  
         <nav className="burger-menu">
         <input class="menu-check" type="checkbox" name="menu-check" value="" id="menu-check" />
           <label class="menu-open" htmlFor="menu-check">
-            <span class="burger1"></span>
-            <span class="burger2"></span>
-            <span class="burger3"></span>
+          <span></span>
+          <span></span>
+          <span></span>
           </label>
 
           <ul class="menu-options">
@@ -140,7 +111,6 @@ const Menu = () => {
           </ul>
         </nav>
       </div>
-    </div>
   );
 };
 

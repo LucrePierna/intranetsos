@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import '../../../EstilosGlobales/NavBar.css'
+import React, { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import CalculoKms from '../Secciones/CalculoKms/CalculoKms'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import MicroStrategy from '../Secciones/MicroStrategy/MicroStrategy'
@@ -16,23 +16,61 @@ export default function NavBarTdc() {
 
   return (
     <div>
-      <ul className='navbar'>
-        <li onClick={()=> handleComponentClick('flujograma')}>Flujograma </li>
-        <li onClick={()=> handleComponentClick('calculokms')}>Calculo De Kms </li>
-        <li onClick={()=> handleComponentClick('instructivo')}>Instructivo </li>
-        <li onClick={()=> handleComponentClick('microStrategy')}>MicroStrategy </li>
-        <li onClick={()=> handleComponentClick('planilla')}>Planilla </li>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <ul className="nav nav-tabs just">
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('flujograma')}
+            >
+              Flujograma
+            </button>
+          </li>
 
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'planilla' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('planilla')}
+            >
+              Planilla
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('instructivo')}
+            >
+              Instructivo
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'calculokm' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('calculokm')}
+            >
+              Calculos de Km
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'microStrategy' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('microStrategy')}
+            >
+              MicroStrategy
+            </button>
+          </li>
+        </ul>
+      </nav>
 
-    </ul>
-    <div>
-      {selectedComponent === 'flujograma' && <Flujograma />}
-      {selectedComponent === 'calculokms' && <CalculoKms />}
-      {selectedComponent === 'instructivo' && <Instructivo />}
-      {selectedComponent === 'microStrategy' && <MicroStrategy />}
-      {selectedComponent === 'planilla' && <Planilla />}
+      <div className="container-fluid">
+        {selectedComponent === 'flujograma' && <Flujograma />}
+        {selectedComponent === 'instructivo' && <Instructivo />}
+        {selectedComponent === 'planilla' && <Planilla />}
+        {selectedComponent === 'calculokm' && <CalculoKms />}
+        {selectedComponent === 'microStrategy' && <MicroStrategy />}
+
+      </div>
     </div>
-    </div>
-  
+
   )
 }

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import '../../../EstilosGlobales/NavBar.css'
 import Calculadora from '../Secciones/Calculadora/Calculadora'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
@@ -12,24 +12,55 @@ export default function NavBarViajero() {
     setSelectedComponent(component);
   };
   return (
- <div>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <ul className="nav nav-tabs just">
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('flujograma')}
+            >
+              Flujograma
+            </button>
+          </li>
 
-      <ul className='navbar'>
-        <li onClick={()=> handleComponentClick('calculadora')}>Calculadora</li>
-        <li onClick={()=> handleComponentClick('flujodrama')}>Flujodrama</li>
-        <li onClick={()=> handleComponentClick('links')}>Links</li>
-        <li onClick={()=> handleComponentClick('reintegro')}>Reintegro</li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'calculadora' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('calculadora')}
+            >
+              Calculadora
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'links' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('links')}
+            >
+              Links
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('reintegro')}
+            >
+              Reintegro
+            </button>
+          </li>
 
-      </ul>
+        </ul>
+      </nav>
 
-      <div className='lista'>
+      <div className="container-fluid">
+        {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'calculadora' && <Calculadora />}
-        {selectedComponent === 'flujodrama' && <Flujograma />}
         {selectedComponent === 'links' && <Links />}
         {selectedComponent === 'reintegro' && <Reintegros />}
 
-      </div>
 
+
+      </div>
     </div>
   )
 }
