@@ -18,12 +18,16 @@ export default function NavBarTP() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
               onClick={() => handleComponentClick('flujograma')}
+              style={{
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+              }}
             >
               Flujograma
             </button>
@@ -33,6 +37,10 @@ export default function NavBarTP() {
             <button
               className={`nav-link btn ${selectedComponent === 'bases' ? 'active' : ''}`}
               onClick={() => handleComponentClick('bases')}
+              style={{
+                color: selectedComponent === 'bases' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'bases' ? 'white' : 'initial'
+              }}
             >
               Bases
             </button>
@@ -41,6 +49,10 @@ export default function NavBarTP() {
             <button
               className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
               onClick={() => handleComponentClick('instructivo')}
+              style={{
+                color: selectedComponent === 'instructivo' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
+              }}
             >
               Instructivo
             </button>
@@ -49,6 +61,10 @@ export default function NavBarTP() {
             <button
               className={`nav-link btn ${selectedComponent === 'fichastecnicas' ? 'active' : ''}`}
               onClick={() => handleComponentClick('fichastecnicas')}
+              style={{
+                color: selectedComponent === 'fichastecnicas' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'fichastecnicas' ? 'white' : 'initial'
+              }}
             >
               Fichas Técnicas
             </button>
@@ -57,6 +73,10 @@ export default function NavBarTP() {
             <button
               className={`nav-link btn ${selectedComponent === 'mapas' ? 'active' : ''}`}
               onClick={() => handleComponentClick('mapas')}
+              style={{
+                color: selectedComponent === 'mapas' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'mapas' ? 'white' : 'initial'
+              }}
             >
               Mapas
             </button>
@@ -65,6 +85,10 @@ export default function NavBarTP() {
             <button
               className={`nav-link btn ${selectedComponent === 'categorias' ? 'active' : ''}`}
               onClick={() => handleComponentClick('categorias')}
+              style={{
+                color: selectedComponent === 'categorias' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'categorias' ? 'white' : 'initial'
+              }}
             >
               Categorías
             </button>
@@ -73,6 +97,10 @@ export default function NavBarTP() {
             <button
               className={`nav-link btn ${selectedComponent === 'tiposvhc' ? 'active' : ''}`}
               onClick={() => handleComponentClick('tiposvhc')}
+              style={{
+                color: selectedComponent === 'tiposvhc' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'tiposvhc' ? 'white' : 'initial'
+              }}
             >
               Tipos de Vehiculos
             </button>
@@ -81,6 +109,10 @@ export default function NavBarTP() {
             <button
               className={`nav-link btn ${selectedComponent === 'trasvase' ? 'active' : ''}`}
               onClick={() => handleComponentClick('trasvase')}
+              style={{
+                color: selectedComponent === 'trasvase' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'trasvase' ? 'white' : 'initial'
+              }}
             >
               Trasvase
             </button>

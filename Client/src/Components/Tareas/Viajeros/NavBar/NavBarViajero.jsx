@@ -13,12 +13,16 @@ export default function NavBarViajero() {
   };
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
               onClick={() => handleComponentClick('flujograma')}
+              style={{
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+              }}
             >
               Flujograma
             </button>
@@ -28,6 +32,10 @@ export default function NavBarViajero() {
             <button
               className={`nav-link btn ${selectedComponent === 'calculadora' ? 'active' : ''}`}
               onClick={() => handleComponentClick('calculadora')}
+              style={{
+                color: selectedComponent === 'calculadora' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'calculadora' ? 'white' : 'initial'
+              }}
             >
               Calculadora
             </button>
@@ -36,6 +44,10 @@ export default function NavBarViajero() {
             <button
               className={`nav-link btn ${selectedComponent === 'links' ? 'active' : ''}`}
               onClick={() => handleComponentClick('links')}
+              style={{
+                color: selectedComponent === 'links' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'links' ? 'white' : 'initial'
+              }}
             >
               Links
             </button>
@@ -44,6 +56,10 @@ export default function NavBarViajero() {
             <button
               className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
               onClick={() => handleComponentClick('reintegro')}
+              style={{
+                color: selectedComponent === 'reintegro' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'reintegro' ? 'white' : 'initial'
+              }}
             >
               Reintegro
             </button>

@@ -14,12 +14,16 @@ export default function NavBarHome() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'noticias' ? 'active' : ''}`}
               onClick={() => handleComponentClick('noticias')}
+              style={{
+                color: selectedComponent === 'noticias' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'noticias' ? 'white' : 'initial'
+              }}
             >
               Noticias
             </button>
@@ -28,6 +32,10 @@ export default function NavBarHome() {
             <button
               className={`nav-link btn ${selectedComponent === 'agenda' ? 'active' : ''}`}
               onClick={() => handleComponentClick('agenda')}
+              style={{
+                color: selectedComponent === 'agenda' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'agenda' ? 'white' : 'initial'
+              }}
             >
               Agenda
             </button>
@@ -36,6 +44,10 @@ export default function NavBarHome() {
             <button
               className={`nav-link btn ${selectedComponent === 'informacion' ? 'active' : ''}`}
               onClick={() => handleComponentClick('informacion')}
+              style={{
+                color: selectedComponent === 'informacion' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'informacion' ? 'white' : 'initial'
+              }}
             >
               Información
             </button>
@@ -44,6 +56,10 @@ export default function NavBarHome() {
             <button
               className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
               onClick={() => handleComponentClick('reintegro')}
+              style={{
+                color: selectedComponent === 'reintegro' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'reintegro' ? 'white' : 'initial'
+              }}
             >
               Reintegro
             </button>

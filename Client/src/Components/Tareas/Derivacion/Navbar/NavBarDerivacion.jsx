@@ -15,12 +15,16 @@ export default function NavBarDerivacion() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
               onClick={() => handleComponentClick('flujograma')}
+              style={{
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+              }}
             >
               Flujograma
             </button>
@@ -29,6 +33,10 @@ export default function NavBarDerivacion() {
             <button
               className={`nav-link btn ${selectedComponent === 'consultas' ? 'active' : ''}`}
               onClick={() => handleComponentClick('consultas')}
+              style={{
+                color: selectedComponent === 'consultas' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'consultas' ? 'white' : 'initial'
+              }}
             >
               Consultas
             </button>
@@ -37,6 +45,10 @@ export default function NavBarDerivacion() {
             <button
               className={`nav-link btn ${selectedComponent === 'novedades' ? 'active' : ''}`}
               onClick={() => handleComponentClick('novedades')}
+              style={{
+                color: selectedComponent === 'novedades' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'novedades' ? 'white' : 'initial'
+              }}
             >
               Novedades
             </button>
@@ -45,6 +57,10 @@ export default function NavBarDerivacion() {
             <button
               className={`nav-link btn ${selectedComponent === 'prestadores' ? 'active' : ''}`}
               onClick={() => handleComponentClick('prestadores')}
+              style={{
+                color: selectedComponent === 'prestadores' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'prestadores' ? 'white' : 'initial'
+              }}
             >
               Prestadores
             </button>
@@ -53,6 +69,10 @@ export default function NavBarDerivacion() {
             <button
               className={`nav-link btn ${selectedComponent === 'procedimientos' ? 'active' : ''}`}
               onClick={() => handleComponentClick('procedimientos')}
+              style={{
+                color: selectedComponent === 'procedimientos' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'procedimientos' ? 'white' : 'initial'
+              }}
             >
               Procedimientos
             </button>
