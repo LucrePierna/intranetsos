@@ -2,19 +2,10 @@ import React from 'react'
 
 export default function Flujograma() {
   return (
-    <div>Flujograma
-        <h1>Marcacion</h1>
-        <br />
-        <p>Asignacion de movil</p>
-        <br />
-        <p>Contencion</p>
-        <br />
-        <p>Quitar derivacion</p>
-        <br />
-        <p>Anulaciones</p>
-        <br />
-        <p>Analisis costo/beneficio</p>
-        <p></p>
-    </div>
+    <div className='d-flex flex-column justify-content-center h-50 w-50 m-auto mt-5'>
+    <h1>Flujograma</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam accusantium minima non atque dignissimos est blanditiis dicta ullam sit velit dolore magnam pariatur, eos, voluptates unde at hic, vitae qui.</p>
+    <img src="https://picsum.photos/200/300/?blur" alt="img" />
+  </div>
   )
 }

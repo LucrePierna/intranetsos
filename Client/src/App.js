@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Menu from './Components/Menu/Menu';
+import Menu from './Menu/Menu';
 import NavBarHome from "./Components/Home/NavBar/NavBarHome";
 import NavBarDerivacion from "./Components/Tareas/Derivacion/Navbar/NavBarDerivacion";
 import NavBarTrafico from "./Components/Tareas/TraficoNacional/NavBar/NavBarTrafico";
@@ -9,6 +9,7 @@ import NavBarTdc from "./Components/Tareas/TDC/NavBar/NavBarTdc";
 import NavBarViajero from "./Components/Tareas/Viajeros/NavBar/NavBarViajero";
 import NavBarTP from "./Components/Tareas/TerminalesYPesados/NavBar/NavBarTP";
 import NavBarExtranjero from "./Components/Tareas/Extranjero/NavBar/NavBarExtranjero";
+import Landing from "./Components/Landing/Landing"; 
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div>
       <Menu />
       <Routes>
+        <Route path='/landing' element={<Landing />} /> 
         <Route path='/' element={<NavBarHome />} />
         <Route path='/derivacion' element={<NavBarDerivacion />} />
         <Route path='/trafico' element={<NavBarTrafico />} />
