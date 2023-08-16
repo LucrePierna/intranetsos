@@ -1,7 +1,17 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react'
 
 export default function Mapas() {
   return (
-    <div>Mapas</div>
+    <div>
+      <h1>Mapas</h1>
+  
+      <iframe 
+      src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" 
+      width="640" height="480">
+
+      </iframe>
+      
+    </div>
   )
 }
