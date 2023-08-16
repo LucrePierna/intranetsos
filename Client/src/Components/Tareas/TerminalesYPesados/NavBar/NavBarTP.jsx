@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import '../../../EstilosGlobales/NavBar.css'
+import React, { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Bases from '../Secciones/Bases/Bases'
 import FichasTecnicas from '../Secciones/FichasTecnicas/FichasTecnicas'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
@@ -18,29 +18,119 @@ export default function NavBarTP() {
 
   return (
     <div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+        <ul className="nav nav-tabs just">
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('flujograma')}
+              style={{
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+              }}
+            >
+              Flujograma
+            </button>
+          </li>
 
-      <ul className='navbar'>
-        <li onClick={()=> handleComponentClick('bases')}>Bases</li>
-        <li onClick={()=> handleComponentClick('fichaTecnicas')}>Ficha Técnicas</li>
-        <li onClick={()=> handleComponentClick('flujodrama')}>Flujodrama</li>
-        <li onClick={()=> handleComponentClick('instructivo')}>Instructivo</li>
-        <li onClick={()=> handleComponentClick('categorias')}>Categorías</li>
-        <li onClick={()=> handleComponentClick('mapas')}>Mapas</li>
-        <li onClick={()=> handleComponentClick('tipos')}>Tipos de Vehiculos</li>
-        <li onClick={()=> handleComponentClick('trasvase')}>Trasvase</li>
-      </ul>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'bases' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('bases')}
+              style={{
+                color: selectedComponent === 'bases' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'bases' ? 'white' : 'initial'
+              }}
+            >
+              Bases
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('instructivo')}
+              style={{
+                color: selectedComponent === 'instructivo' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
+              }}
+            >
+              Instructivo
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'fichastecnicas' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('fichastecnicas')}
+              style={{
+                color: selectedComponent === 'fichastecnicas' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'fichastecnicas' ? 'white' : 'initial'
+              }}
+            >
+              Fichas Técnicas
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'mapas' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('mapas')}
+              style={{
+                color: selectedComponent === 'mapas' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'mapas' ? 'white' : 'initial'
+              }}
+            >
+              Mapas
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'categorias' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('categorias')}
+              style={{
+                color: selectedComponent === 'categorias' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'categorias' ? 'white' : 'initial'
+              }}
+            >
+              Categorías
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'tiposvhc' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('tiposvhc')}
+              style={{
+                color: selectedComponent === 'tiposvhc' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'tiposvhc' ? 'white' : 'initial'
+              }}
+            >
+              Tipos de Vehiculos
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'trasvase' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('trasvase')}
+              style={{
+                color: selectedComponent === 'trasvase' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'trasvase' ? 'white' : 'initial'
+              }}
+            >
+              Trasvase
+            </button>
+          </li>
+        </ul>
+      </nav>
 
-      <div className='lista'>
-        {selectedComponent === 'bases' && <Bases />}
-        {selectedComponent === 'fichaTecnicas' && <FichasTecnicas />}
-        {selectedComponent === 'flujodrama' && <Flujograma />}
+      <div className="container-fluid">
+        {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'instructivo' && <Instructivo />}
-        {selectedComponent === 'categorias' && <LivianosPesadosMotos />}
+        {selectedComponent === 'bases' && <Bases />}
+        {selectedComponent === 'fichastecnicas' && <FichasTecnicas />}
         {selectedComponent === 'mapas' && <Mapas />}
-        {selectedComponent === 'tipos' && <TipoDeVehiculos />}
+        {selectedComponent === 'categorias' && <LivianosPesadosMotos />}
+        {selectedComponent === 'tiposvhc' && <TipoDeVehiculos />}
         {selectedComponent === 'trasvase' && <Trasvase />}
-      </div>
 
+      </div>
     </div>
   )
 }

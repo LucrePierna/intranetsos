@@ -1,8 +1,7 @@
 import React from 'react'
 
-
-export default function Mapa() {
+export default function Flujograma() {
   return (
-    <div>Mapa</div>
+    <div>Flujograma</div>
   )
 }

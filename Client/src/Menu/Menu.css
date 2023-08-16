@@ -1,0 +1,103 @@
+.burger-menu {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  z-index: 1000;
+}
+
+.burger-menu .menu-check {
+  display: none;
+}
+
+.burger-menu .menu-open {
+  width: 50px; 
+  height: 50px; 
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.burger-menu .menu-open span {
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dbdbdb;
+  opacity: 1;
+  transition: 0.3s;
+}
+.burger-menu .menu-open span.burger1 {
+  transform: translateY(-8px);
+}
+.burger-menu .menu-open span.burger2 {
+  transform: translate(0, 0);
+}
+.burger-menu .menu-open span.burger3 {
+  transform: translateY(8px);
+}
+.burger-menu .menu-check:checked + .menu-open span.burger1,
+.burger-menu .menu-check:checked + .menu-open span.burger3 {
+  transform: rotate(45deg);
+}
+.burger-menu .menu-check:checked + .menu-open span.burger2 {
+  transform: rotate(-45deg);
+}
+.burger-menu .menu-check:checked + .menu-open span.burger1 {
+  transform: translateY(0) rotate(45deg);
+}
+.burger-menu .menu-check:checked + .menu-open span.burger3 {
+  transform: translateY(0) rotate(-45deg);
+}
+.burger-menu .menu-options {
+  background-color: rgb(33, 37, 41);
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: -100%;
+  padding: 50px 0px 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.burger-menu .menu-check:checked ~ .menu-options {
+  left: 0;
+  opacity: 1;
+}
+
+.burger-menu .menu-options li {
+  color: #fff;
+  text-align: center;
+  list-style: none;
+  display: block;
+  font-weight: normal;
+}
+.burger-menu .menu-options li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.5em;
+  display: block;
+  transition: 0.5s;
+}
+
+.burger-menu .menu-options li a.active {
+  color: #ff5555;
+}
+
+.burger-menu .menu-options li a:hover {
+  background: #ff5555;
+}
+.burger-menu .menu-options li.search {
+  margin-bottom: 1em;
+}
+.burger-menu .menu-options li.search .search-box {
+  width: 80%;
+  max-width: 240px;
+  height: 35px;
+  font-size: 1em;
+  color: #333;
+  padding: 0 10px;
+  border: 2px solid #ff5555;
+  border-radius: 20px;
+}

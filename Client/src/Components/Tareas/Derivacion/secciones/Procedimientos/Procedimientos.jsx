@@ -2,22 +2,10 @@ import React from 'react'
 
 export default function Procedimientos() {
   return (
-    <div>Procedimiento
-        <h1>Svcs con prioridad</h1>
-        <br />
-        <h2>Derivavion por zona</h2>
-        <br />
-        <h3>Svcs especiales</h3>
-        <br />
-        <h4>Svcs con adicional</h4>
-        <br />
-        <h5>Gap</h5>
-        <br />
-        <table> 
-            <tr>
-                <th>Adicional de Servicio</th>
-            </tr>
-        </table>
-    </div>
+    <div className='d-flex flex-column justify-content-center h-50 w-50 m-auto mt-5'>
+    <h1>Procedimientos</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam accusantium minima non atque dignissimos est blanditiis dicta ullam sit velit dolore magnam pariatur, eos, voluptates unde at hic, vitae qui.</p>
+    <img src="https://picsum.photos/200/300/?blur" alt="img" />
+  </div>
   )
 }

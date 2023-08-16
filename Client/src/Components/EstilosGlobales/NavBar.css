@@ -1,42 +1,7 @@
-.conteiner{
-    background: linear-gradient(to right, #00000083, #181818);
-    color: white;
-    padding: 0;
-    width: 100%;
-    height: 100px;
-    position: sticky;
-}
-
-.logo{
-    width: 120px;
-    height: 80px;
-    margin-top: 0;
-    margin-left: 0;
-    padding-right: 5px;
-    position: absolute;
-}
-
-.lista{
+.navbar-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-}
-
-.seccion{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-left: 50px;
-}
-
-a {
- margin: 50px;
- color: aliceblue;
- text-decoration: none;
- line-height: 100px;
-}
-
+    flex-direction: row;
+    width: 100vw;
+  }
