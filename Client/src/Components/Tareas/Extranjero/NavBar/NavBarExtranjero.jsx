@@ -3,6 +3,7 @@ import '../../../EstilosGlobales/NavBar.css'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Planilla from '../Secciones/Planilla/Planilla'
+import Mapas from '../Secciones/Mapas/Mapas'
 
 
 export default function NavBarExtranjero() {
@@ -52,6 +53,18 @@ export default function NavBarExtranjero() {
               Instructivo
             </button>
           </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'Mapas' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('Mapas')}
+              style={{
+                color: selectedComponent === 'Mapas' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'Mapas' ? 'white' : 'initial'
+              }}
+            >
+              Mapa
+            </button>
+          </li>
         </ul>
       </nav>
 
@@ -59,7 +72,7 @@ export default function NavBarExtranjero() {
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'instructivo' && <Instructivo />}
         {selectedComponent === 'planilla' && <Planilla />}
-
+        {selectedComponent === 'Mapas' && <Mapas />}
       </div>
     </div>
   )
