@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Mapas() {
   return (
-    <div>
+    <div className='d-flex flex-column align-items-center justify-content-center mx-auto  mt-5'>
       <h1>Mapas</h1>
   
       <iframe 
