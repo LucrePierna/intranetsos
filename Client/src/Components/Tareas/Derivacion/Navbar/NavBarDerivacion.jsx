@@ -5,7 +5,7 @@ import Consultas from '../secciones/Consultas/Consultas'
 import Novedades from '../secciones/Novedades/Novedades'
 import Prestadores from '../secciones/Prestadores/Prestadores'
 import Procedimientos from '../secciones/Procedimientos/Procedimientos'
-
+import Mapas from '../secciones/Mapas/Mapas';
 export default function NavBarDerivacion() {
   const [selectedComponent, setSelectedComponent] = useState(null);
 
@@ -77,6 +77,19 @@ export default function NavBarDerivacion() {
               Procedimientos
             </button>
           </li>
+
+                    <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'Mapas' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('Mapas')}
+              style={{
+                color: selectedComponent === 'Mapas' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'Mapas' ? 'white' : 'initial'
+              }}
+            >
+              Mapa
+            </button>
+          </li>
         </ul>
       </nav>
 
@@ -86,6 +99,7 @@ export default function NavBarDerivacion() {
         {selectedComponent === 'novedades' && <Novedades />}
         {selectedComponent === 'prestadores' && <Prestadores />}
         {selectedComponent === 'procedimientos' && <Procedimientos />}
+        {selectedComponent === 'Mapas' && <Mapas />}
       </div>
     </div>
   )
