@@ -1,21 +1,12 @@
 import React from 'react'
-import CorredorPais from './CorredorPais/CorredorPais'
-import CorredorTriple from './CorredorTriple/CorredorTriple'
-import CorredorTurista from './CorredorTurista/CorredorTurista'
+
 
 export default function Corredores() {
   return (
-    <div class="btn-group">
-      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Mapas
-      </button>
-      <ul class="dropdown-menu">
-        <li><CorredorPais /></li>
-        <li><CorredorTurista /></li>
-        <li><CorredorTriple /></li>
-      </ul>
+    <div>
+      <h1>Corredor Turista</h1>
+      <iframe src="https://www.google.com/maps/d/embed?mid=15hD9V0JCdH3q58WN8w2lXK1XiUms4O4&ehbc=2E312F" width="640" height="480"></iframe>
     </div>
-
   )
 }
 
