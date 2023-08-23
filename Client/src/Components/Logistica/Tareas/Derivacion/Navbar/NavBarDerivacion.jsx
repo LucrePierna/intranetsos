@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Flujograma from '../secciones/Flujograma/Flujograma'
-import GapLite from '../secciones/GapLite/GapLite';
 import TareasEspeciales from '../secciones/TareasEspeciales/TareasEspeciales';
 import Procedimientos from '../secciones/Procedimientos/Procedimientos'
 import Mapas from '../secciones/Mapas/Mapas';
@@ -40,18 +39,7 @@ export default function NavBarDerivacion() {
               Procedimientos
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'gaplite' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('gaplite')}
-              style={{
-                color: selectedComponent === 'gaplite' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'gaplite' ? 'white' : 'initial'
-              }}
-            >
-              GapLite
-            </button>
-          </li>
+
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'tareas' ? 'active' : ''}`}
@@ -84,7 +72,6 @@ export default function NavBarDerivacion() {
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'procedimientos' && <Procedimientos />}
         {selectedComponent === 'tareas' && <TareasEspeciales />}
-        {selectedComponent === 'gaplite' && <GapLite />}
         {selectedComponent === 'Mapas' && <Mapas />}
       </div>
     </div>
