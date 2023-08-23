@@ -29,21 +29,26 @@ export default function Procedimientos() {
     <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
     <h5>Análisis del servicio</h5>
     <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
-      <ul>Historial de servicios anteriores</ul>
-      <ul>Titular</ul>
-      <ul>Vehículo</ul>
-      <ul>Dominio</ul>
-      <ul>Color</ul>
-      <ul>Falla</ul>
-      <ul>Teléfono</ul>
-      <ul>Ubicación origen y destino</ul>
-      <ul>Cantidad de pasajeros</ul>
-      <ul>Requisitos para que el vehículo viaje solo en caso de solicitar</ul>
-      <ul>Horarios de taller</ul>
-      <ul>Si posee carga</ul>
-      <ul>Dimensiones y si hay alguna otra información extra en referencias</ul>
-      <ul>Cobertura de la asistencia</ul>
-      <ul>Si el trayecto corresponde o no a recorrido de transportin</ul>
+      <table>
+        <tr>
+          <td>Historial de servicios anteriores</td>
+          <td>Titular</td>
+          <td>Vehículo</td>
+          <td>Dominio</td>
+          <td>Color</td>
+          <td>Falla</td>
+          <td>Teléfono</td>
+          <td>Ubicación origen y destino</td>
+          <td>Cantidad de pasajeros</td>
+          <td>Requisitos para que el vehículo viaje solo en caso de solicitar</td>
+          <td>Horarios de taller</td>
+          <td>Si posee carga</td>
+          <td>Dimensiones y si hay alguna otra información extra en referencias</td>
+          <td>Cobertura de la asistencia</td>
+          <td>Si el trayecto corresponde o no a recorrido de transportin</td>
+        </tr>
+      </table>
+
     </p>
     <h5>Contención</h5>
     <p> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
