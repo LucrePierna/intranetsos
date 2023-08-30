@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Transportin from '../Transportin'
 import Bases from '../Secciones/Bases/Bases'
 import Corredores from '../Secciones/Corredores/Corredores'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
@@ -20,14 +19,14 @@ export default function NavBarTransportin() {
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'inicio' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('inicio')}
+              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('instructivo')}
               style={{
-                color: selectedComponent === 'inicio' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'inicio' ? 'white' : 'initial'
+                color: selectedComponent === 'instructivo' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
               }}
             >
-              Inicio
+              Instructivo
             </button>
           </li>
           <li className="nav-item">
@@ -55,18 +54,7 @@ export default function NavBarTransportin() {
               Bases
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('instructivo')}
-              style={{
-                color: selectedComponent === 'instructivo' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
-              }}
-            >
-              Instructivo
-            </button>
-          </li>
+
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'planillas' ? 'active' : ''}`}
@@ -96,10 +84,10 @@ export default function NavBarTransportin() {
       </nav>
 
       <div className="container-fluid">
-        {selectedComponent === 'inicio' && <Transportin />}
+
+        {selectedComponent === 'instructivo' && <Instructivo />}
         {selectedComponent === 'bases' && <Bases />}
         {selectedComponent === 'flujograma' && <Flujograma />}
-        {selectedComponent === 'instructivo' && <Instructivo />}
         {selectedComponent === 'planillas' && <Planillas />}
         {selectedComponent === 'corredores' && <Corredores />}
 

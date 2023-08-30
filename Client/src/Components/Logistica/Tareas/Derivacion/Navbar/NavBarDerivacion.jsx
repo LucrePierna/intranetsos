@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Flujograma from '../secciones/Flujograma/Flujograma'
 import TareasEspeciales from '../secciones/TareasEspeciales/TareasEspeciales';
 import Procedimientos from '../secciones/Procedimientos/Procedimientos'
-import Mapas from '../secciones/Mapas/Mapas';
 export default function NavBarDerivacion() {
   const [selectedComponent, setSelectedComponent] = useState(null);
 
@@ -52,19 +51,6 @@ export default function NavBarDerivacion() {
               Tareas Especiales
             </button>
           </li>
-
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'Mapas' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('Mapas')}
-              style={{
-                color: selectedComponent === 'Mapas' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'Mapas' ? 'white' : 'initial'
-              }}
-            >
-              Mapa
-            </button>
-          </li>
         </ul>
       </nav>
 
@@ -72,7 +58,6 @@ export default function NavBarDerivacion() {
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'procedimientos' && <Procedimientos />}
         {selectedComponent === 'tareas' && <TareasEspeciales />}
-        {selectedComponent === 'Mapas' && <Mapas />}
       </div>
     </div>
   )
