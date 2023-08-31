@@ -48,9 +48,9 @@ export default function Procedimiento() {
   };
 
   return (
-      <div className='d-flex flex-column align-items-center justify-content-center mx-auto h-50 w-50 mt-5'>
-      <nav>
-      <div className="nav nav-tabs" id="nav-tab" role="tablist">
+      <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
+      <nav className='d-flex align-items-start flex-colum'>
+      <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Instrucciones</button>
           <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Puntos principales</button>
           <button className="nav-link" id="nav-copy-tab" data-bs-toggle="tab" data-bs-target="#nav-copy" type="button" role="tab" aria-controls="nav-copy" aria-selected="false">Referencia de servicio:</button>
@@ -72,7 +72,8 @@ export default function Procedimiento() {
             <li>Excepciones.</li>
           </ul>
         </div>
-        <div className="tab-pane fade show active" id="nav-copy" role="tabpanel" aria-labelledby="nav-copy-tab" tabindex="0">
+      </div>
+        <div className="tab-pane fade" id="nav-copy" role="tabpanel" aria-labelledby="nav-copy-tab" tabindex="0">
           <div className='d-flex flex-column mt-5 mx-auto justify-content-center text-start'>
             <div>
               <label className="px-3">Cantidad total de personas:</label>
@@ -137,7 +138,8 @@ export default function Procedimiento() {
             </button>
           </div>
         </div>
-      </div>
     </div>
   )
 }
+
+
