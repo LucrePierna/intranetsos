@@ -9,6 +9,8 @@ export default function Instructivo() {
     setSelectedComponent(component);
   };
 
+
+
   return (
     <div className='d-flex flex-column align-items-center justify-content-center mx-auto  mt-5'>
       <nav>
@@ -32,7 +34,25 @@ export default function Instructivo() {
       </nav>
       <div className="tab-content" id="nav-tabContent">
         <div className="tab-pane fade" id="nav-uruguay" role="tabpanel" aria-labelledby="nav-uruguay-tab" tabindex="0">
-        {selectedComponent === 'mapas' && <Mapas />}
+        {selectedComponent === 'mapas' && 
+        <div className='d-flex flex-row m-auto'> 
+          <div className='d-flex flex-column'>
+            <h1>Via Terrestre</h1>
+            <ul>
+              <li>gola</li>
+              <li>asdasd</li>
+              <li>fdsafdsaf</li>
+            </ul>
+          </div>
+          <div className='d-flex flex-column'>
+            <h1>via fluvial</h1>
+            <ul>
+              <li>gola</li>
+              <li>asdasd</li>
+              <li>fdsafdsaf</li>
+            </ul>
+          </div>
+          </div>}
         </div>
         <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
           {selectedComponent === 'brasil' && 

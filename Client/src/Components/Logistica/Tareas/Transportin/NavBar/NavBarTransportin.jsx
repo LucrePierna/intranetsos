@@ -7,7 +7,7 @@ import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Planillas from '../Secciones/Planillas/Planillas'
 
 export default function NavBarTransportin() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('flujograma');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -17,6 +17,18 @@ export default function NavBarTransportin() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
         <ul className="nav nav-tabs just">
+              <li className="nav-item">
+                <button
+                  className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+                  onClick={() => handleComponentClick('flujograma')}
+                  style={{
+                    color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                    backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+                  }}
+                >
+                  Flujograma
+                </button>
+              </li>
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
@@ -27,18 +39,6 @@ export default function NavBarTransportin() {
               }}
             >
               Instructivo
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('flujograma')}
-              style={{
-                color: selectedComponent === 'flujograma' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
-              }}
-            >
-              Flujograma
             </button>
           </li>
 

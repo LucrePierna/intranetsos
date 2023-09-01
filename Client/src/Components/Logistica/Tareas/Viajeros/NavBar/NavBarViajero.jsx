@@ -7,7 +7,7 @@ import Reintegros from '../Secciones/Reintegros/Reintegros'
 import Procedimiento from '../Secciones/Procedimiento/Procedimiento'
 
 export default function NavBarViajero() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('flujograma');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

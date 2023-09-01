@@ -8,7 +8,7 @@ import Planilla from '../Secciones/Planilla/Planilla'
 
 
 export default function NavBarTrafico() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('flujograma');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

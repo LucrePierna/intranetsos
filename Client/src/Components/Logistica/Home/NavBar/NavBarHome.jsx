@@ -5,7 +5,7 @@ import Reintegro from '../Secciones/Reintegro/Reintegro';
 import Noticias from '../Secciones/Noticias/Noticias';
 
 export default function NavBarHome() {
-  const [selectedComponent, setSelectedComponent] = useState();
+  const [selectedComponent, setSelectedComponent] = useState('noticias');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
