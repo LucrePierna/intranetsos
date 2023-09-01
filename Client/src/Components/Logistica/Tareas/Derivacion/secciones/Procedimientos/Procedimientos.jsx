@@ -135,8 +135,8 @@ export default function Procedimientos() {
             <li>Disminuir el tiempo promedio de derivación de los servicios.</li>
           </ul>
           <h6><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h6>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="640" height="480"></iframe>
         </div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="640" height="480"></iframe>
       </div>
     </div>
   )
