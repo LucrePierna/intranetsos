@@ -1,7 +1,13 @@
 .lista {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    margin-top: 3rem;
-    list-style: none;
-  }
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 3rem;
+  list-style: none;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
