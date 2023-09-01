@@ -3,6 +3,8 @@
 import React from 'react'
 import * as bootstrap from 'bootstrap'
 import '../../../../EstilosGlobales/General.css'
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
+
 
 export default function Procedimientos() {
   const triggerTabList = document.querySelectorAll('#myTab button')
@@ -14,11 +16,21 @@ export default function Procedimientos() {
       tabTrigger.show()
     })
   })
+
+
+
   return (
-    <div className='d-flex flex-column align-items-center justify-content-center mx-auto h-50 w-50 mt-5'>
-      <nav>
-        <div className="nav nav-tabs" id="nav-tab" role="tablist">
-          <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Incial</button>
+    <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
+    <nav className='d-flex align-items-start flex-colum'>
+    <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <li className="nav-item dropdown" id="nav-tabContent nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" variant="bordered" >
+    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Inicial</a>
+    <ul className="dropdown-menu">
+      <li><a className="dropdown-item" href="#">Orden de derivación</a></li>
+      <li><a className="dropdown-item" href="#">Análisis del servicio</a></li>
+      <li><a className="dropdown-item" href="#">Contención</a></li>
+    </ul>
+  </li>
           <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Seleccion de prestador</button>
           <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tipos de asignaciones</button>
           <button className="nav-link" id="nav-cierra-tab" data-bs-toggle="tab" data-bs-target="#nav-vehicles" type="button" role="tab" aria-controls="nav-vehicles" aria-selected="false">Cierre</button>
