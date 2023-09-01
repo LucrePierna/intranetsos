@@ -1,12 +1,19 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react'
+import React, { useState } from 'react'
 import * as bootstrap from 'bootstrap'
 import '../../../../EstilosGlobales/General.css'
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 
 
 export default function Procedimientos() {
+
+  const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const handleComponentClick = (component) => {
+    setSelectedComponent(component);
+  };
+
   const triggerTabList = document.querySelectorAll('#myTab button')
   triggerTabList.forEach(triggerEl => {
     const tabTrigger = new bootstrap.Tab(triggerEl)
@@ -26,7 +33,11 @@ export default function Procedimientos() {
             <li className="nav-item dropdown" id="nav-tabContent nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" variant="bordered" >
     <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Inicial</a>
     <ul className="dropdown-menu">
-      <li><a className="dropdown-item" href="#">Orden de derivación</a></li>
+      <li><button onClick={() => handleComponentClick('mapas')}
+            style={{
+              color: selectedComponent === 'mapas' ? 'black' : 'red',
+              backgroundColor: selectedComponent === 'mapas' ? 'white' : 'initial'
+            }}>Orden de derivación</button></li>
       <li><a className="dropdown-item" href="#">Análisis del servicio</a></li>
       <li><a className="dropdown-item" href="#">Contención</a></li>
     </ul>
@@ -38,6 +49,7 @@ export default function Procedimientos() {
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
+        {selectedComponent === 'mapas' && 
         <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
           <h5 className='mt-3'>Orden de derivación</h5>
           <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
@@ -67,6 +79,7 @@ export default function Procedimientos() {
           <h5>Contención</h5>
           <p className='text-start justify-content-center'> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
         </div>
+        }
 
         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
           <p className='mt-5 fs-4 text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:
