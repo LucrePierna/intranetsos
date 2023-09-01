@@ -30,18 +30,7 @@ export default function Procedimientos() {
     <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
     <nav className='d-flex align-items-start flex-colum'>
     <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <li className="nav-item dropdown" id="nav-tabContent nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" variant="bordered" >
-    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Inicial</a>
-    <ul className="dropdown-menu">
-      <li><button onClick={() => handleComponentClick('mapas')}
-            style={{
-              color: selectedComponent === 'mapas' ? 'black' : 'red',
-              backgroundColor: selectedComponent === 'mapas' ? 'white' : 'initial'
-            }}>Orden de derivación</button></li>
-      <li><a className="dropdown-item" href="#">Análisis del servicio</a></li>
-      <li><a className="dropdown-item" href="#">Contención</a></li>
-    </ul>
-  </li>
+          <button className="nav-link" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Inicial</button>          
           <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Seleccion de prestador</button>
           <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tipos de asignaciones</button>
           <button className="nav-link" id="nav-cierra-tab" data-bs-toggle="tab" data-bs-target="#nav-vehicles" type="button" role="tab" aria-controls="nav-vehicles" aria-selected="false">Cierre</button>
@@ -49,8 +38,7 @@ export default function Procedimientos() {
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
-        {selectedComponent === 'mapas' && 
-        <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <h5 className='mt-3'>Orden de derivación</h5>
           <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
           <h5>Análisis del servicio</h5>
@@ -79,7 +67,6 @@ export default function Procedimientos() {
           <h5>Contención</h5>
           <p className='text-start justify-content-center'> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
         </div>
-        }
 
         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
           <p className='mt-5 fs-4 text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:
