@@ -3,7 +3,6 @@ import '../../../EstilosGlobales/NavBar.css'
 import Calculadora from '../Secciones/Calculadora/Calculadora'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Links from '../Secciones/Links/Links'
-import Reintegros from '../Secciones/Reintegros/Reintegros'
 import Procedimiento from '../Secciones/Procedimiento/Procedimiento'
 
 export default function NavBarViajero() {
@@ -65,18 +64,6 @@ export default function NavBarViajero() {
               Links
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('reintegro')}
-              style={{
-                color: selectedComponent === 'reintegro' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'reintegro' ? 'white' : 'initial'
-              }}
-            >
-              Reintegro
-            </button>
-          </li>
 
         </ul>
       </nav>
@@ -86,9 +73,6 @@ export default function NavBarViajero() {
         {selectedComponent === 'procedimiento' && <Procedimiento />}
         {selectedComponent === 'calculadora' && <Calculadora />}
         {selectedComponent === 'links' && <Links />}
-        {selectedComponent === 'reintegro' && <Reintegros />}
-
-
 
       </div>
     </div>

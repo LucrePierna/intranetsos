@@ -33,7 +33,7 @@ function App() {
           <Route path='/logistica/extranjero' element={<NavBarExtranjero />} />
 
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       
     </div>
   );
