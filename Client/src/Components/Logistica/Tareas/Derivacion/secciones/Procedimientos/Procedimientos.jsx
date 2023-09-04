@@ -89,7 +89,6 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-manual" role="tabpanel" aria-labelledby="nav-manual-tab" tabindex="0">
-              <h5 className='mt-3 fs-4 fw-bold ' >Asignación Manual</h5>
               <ul className='lista fs-5'>
                 <li className='text-center justify-content-center '> <u>Dictado telefónico:</u>
                   <p className='text-start'>Durante el llamado telefónico con el prestador por consulta de disponibilidad, el operador dictará los datos del servicio recorriendo cada pestaña sin olvidar informar código y cobertura completa.</p>
@@ -103,7 +102,6 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-automatica" role="tabpanel" aria-labelledby="nav-automatica-tab" tabindex="0">
-              <h5 className='mt-3 fs-4 fw-bold'>Asignación Automática</h5>
               <ul className='lista fs-5'>
                 <li className='text-center justify-content-center '><u>Sistema:</u>
                   <p className='text-start'>Para las bases que cuentan con este sistema el operador deberá enviar los datos del servicio. De este modo la base deberá aceptar las condiciones del servicio para que queden asignados. El operador deberá informar telefónicamente al prestador la cobertura y las particularidades del servicio que puedan ser de relevancia (Estado de ruedas, personas que acompañan, etc.)</p>
@@ -130,20 +128,16 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-progsvc" role="tabpanel" aria-labelledby="nav-progsvc-tab" tabindex="0">
-              <h5 className='mt-3 fs-4 fw-bold'>Programación del servicio</h5>
+            <div class="tab-pane fade show active px-3 mt-3" id="nav-progsvc" role="tabpanel" aria-labelledby="nav-progsvc-tab" tabindex="0">
               <p>En caso de falta de disponibilidad o por pedido del cliente se indicará la programación, la información se dejará en referencias y de ser posible el servicio se dejará coordinado con un prestador para el horario acordado con el cliente.</p>
             </div>
-            <div class="tab-pane fade" id="nav-demsvc" role="tabpanel" aria-labelledby="nav-demsvc-tab" tabindex="0">
-              <h5 className='mt-3 fs-4 fw-bold'>Demora del servicio </h5>
+            <div class="tab-pane fade px-3 mt-3" id="nav-demsvc" role="tabpanel" aria-labelledby="nav-demsvc-tab" tabindex="0">
               <p>Es obligatorio siempre informar la demora estimada al cliente. Si la misma fue informada en la toma del servicio y varía ± 30 minutos con respecto a la informada por el prestador, se deberá dar aviso al cliente (debiendo tener en cuenta el tiempo transcurrido entre la hora de pedido y asignado).  </p>
             </div>
-            <div class="tab-pane fade" id="nav-cttocl" role="tabpanel" aria-labelledby="nav-cttocl-tab" tabindex="0">
-              <h5 className='mt-3 fs-4 fw-bold'>Contacto con el cliente </h5>
+            <div class="tab-pane fade px-3 mt-3" id="nav-cttocl" role="tabpanel" aria-labelledby="nav-cttocl-tab" tabindex="0">
               <p>Siempre que se tome contacto con el cliente se deberá confirmar la Cobertura de la Asistencia respetando el requisito correspondiente establecido en los <a href="https://redsos.sharepoint.com/sites/SGC/Documentos%20compartidos/Sistema%20de%20Gestion%20de%20Calidad/SGC/RS%20Requisitos%20del%20Servicio%20de%20Asistencia,Rev09.pdf" target='_blank'> <button type="button" class="btn btn-outline-secondary mx-2 ">Requisitos del Servicio de Asistencia</button></a>, fundamentalmente el nombre de la persona con quién nos estamos comunicando y todo otro dato de importancia para el servicio en gestión.</p>
             </div>
-            <div class="tab-pane fade" id="nav-pagos" role="tabpanel" aria-labelledby="nav-pagos-tab" tabindex="0">
-              <h5 className='mt-3 fs-4 fw-bold'>Pagos</h5>
+            <div class="tab-pane fade px-3 mt-3" id="nav-pagos" role="tabpanel" aria-labelledby="nav-pagos-tab" tabindex="0">
               <ul className='text-start fs-6'>
                 <li>En efectivo, se recordará al cliente que debe abonarlo al chofer de la grúa antes de cargar el vehículo para su traslado.</li>
                 <li>Link de pago, el cual será generado por cada derivador, a través de Astor, solicitándole los datos que el sistema requiera.</li>
@@ -151,8 +145,7 @@ export default function Procedimientos() {
                 <li>Pago al prestador, se podrá consultar con prestador posibilidad de realizar el cobro con tarjeta de crédito, débito o transferencia bancaria. En caso de aceptar, el prestador será responsable de coordinar el cobro contactando al cliente. Si surgiese alguna eventualidad o inconveniente en el cobro será responsable el prestador.   </li></ul>
               <h6><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h6>
             </div>
-            <div class="tab-pane fade" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
-              <h5 className='mt-3 fs-4 fw-bold'>Reintegro</h5>
+            <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <p className='text-start fs-6'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
                 <ul><u>El derivador deberá informar la gestión del reintegro:</u>
                   <li>Solicitar ticket o factura con validez fiscal</li>
@@ -174,7 +167,7 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-derivzn" role="tabpanel" aria-labelledby="nav-derivzn-tab" tabindex="0">
+            <div class="tab-pane fade show active px-3 mt-3" id="nav-derivzn" role="tabpanel" aria-labelledby="nav-derivzn-tab" tabindex="0">
               <ul className='text-start mt-4'>
                 <li>Es la operatoria que se utiliza para la coordinación de servicios cuando la demanda lo requiere y sea autorizado por el supervisor / back office de turno. El objetivo es en reducir los tiempos de espera del cliente optimizando los recursos y evitar el rellamado a las bases obteniendo información sobre la situación de cada una. </li>
                 <li>El operador que este asignado a esta tarea deberá marcar todos los servicios de la zona delimitada acordando la cantidad de prestadores a consultar y establecer una ruta acorde a la que recorre el prestador para pasar los servicios en conjunto.</li>
@@ -187,7 +180,7 @@ export default function Procedimientos() {
               </ul>
               <h6><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h6>
             </div>
-            <div class="tab-pane fade" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
+            <div class="tab-pane fade px-3 mt-3" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
 
               <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="640" height="480"></iframe>
             </div>
