@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import * as bootstrap from 'bootstrap'
 import imagenCostos from '../../../../Image/tierradelfuegocostos.png'
+import imagenParalelo from '../../../../Image/Paralelo24Brasil.png'
 
 export default function Instructivo() {
 
@@ -90,7 +91,7 @@ export default function Instructivo() {
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab" tabindex="0">
               <h3>Se debe confirmar con el cliente que el origen sea por debajo del paralelo 24. <b>Si esta por arriba del paralelo 24 no cuenta con servicio</b></h3>
-              <img src="asd" alt="mapaParalelo24" />
+              <img src={imagenParalelo} alt="mapaParalelo24" width={450} height={350}/>
             </div>
             <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
             <ul>
