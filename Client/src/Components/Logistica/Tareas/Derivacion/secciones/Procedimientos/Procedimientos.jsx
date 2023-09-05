@@ -1,28 +1,26 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-target-blank */
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import * as bootstrap from 'bootstrap'
 import '../../../../EstilosGlobales/General.css'
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 
 
 export default function Procedimientos() {
 
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  useEffect(() => {
+    const triggerTabList = document.querySelectorAll('#myTab button')
+    triggerTabList.forEach(triggerEl => {
+      const tabTrigger = new bootstrap.Tab(triggerEl)
 
-  const handleComponentClick = (component) => {
-    setSelectedComponent(component);
-  };
-
-  const triggerTabList = document.querySelectorAll('#myTab button')
-  triggerTabList.forEach(triggerEl => {
-    const tabTrigger = new bootstrap.Tab(triggerEl)
-
-    triggerEl.addEventListener('click', event => {
-      event.preventDefault()
-      tabTrigger.show()
+      triggerEl.addEventListener('click', event => {
+        event.preventDefault()
+        tabTrigger.show()
+      })
     })
-  })
+    const inicialTab = new bootstrap.Tab(document.querySelector('#nav-inicial-tab'));
+    inicialTab.show();
+
+  }, []);
 
 
 

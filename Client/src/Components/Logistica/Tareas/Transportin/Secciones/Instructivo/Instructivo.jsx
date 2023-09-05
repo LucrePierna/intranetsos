@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../../../EstilosGlobales/General.css'
 import * as bootstrap from 'bootstrap'
+import Formato from './Formato/Formato'
 
 export default function Instructivo() {
 
@@ -24,6 +25,7 @@ export default function Instructivo() {
           <button className="nav-link" id="nav-tarea-tab" data-bs-toggle="tab" data-bs-target="#nav-tarea" type="button" role="tab" aria-controls="nav-tarea" aria-selected="false">Tarea del derivador</button>
           <button className="nav-link" id="nav-viajero-tab" data-bs-toggle="tab" data-bs-target="#nav-viajero" type="button" role="tab" aria-controls="nav-viajero" aria-selected="false">Viajero</button>
           <button className="nav-link" id="nav-adicional-tab" data-bs-toggle="tab" data-bs-target="#nav-adicional" type="button" role="tab" aria-controls="nav-adicional" aria-selected="false">Adicionales</button>
+          <button className="nav-link" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
@@ -70,7 +72,11 @@ export default function Instructivo() {
             <li>Transferencia.</li>
           </ul>
         </div>
+        <div className="tab-pane fade" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+          <Formato />
+        </div>
       </div>
     </div>
   )
 }
+
