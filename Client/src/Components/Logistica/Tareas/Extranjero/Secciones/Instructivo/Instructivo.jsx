@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import * as bootstrap from 'bootstrap'
-import Mapas from '../Mapas/Mapas';
+import imagenCostos from '../../../../Image/tierradelfuegocostos.png'
 
 export default function Instructivo() {
 
@@ -82,17 +82,43 @@ export default function Instructivo() {
         <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-coordinacion-tab" data-bs-toggle="tab" data-bs-target="#nav-coordinacion" type="button" role="tab" aria-controls="nav-coordinacion" aria-selected="true">Coordinacion</button>
-              <button class="nav-link" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
+              <button class="nav-link active" id="nav-mapa-tab" data-bs-toggle="tab" data-bs-target="#nav-mapa" type="button" role="tab" aria-controls="nav-mapa" aria-selected="true">Mapa</button>
+              <button class="nav-link" id="nav-coordinacion-tab" data-bs-toggle="tab" data-bs-target="#nav-coordinacion" type="button" role="tab" aria-controls="nav-coordinacion" aria-selected="false">Coordinación de servicio</button>
+              <button class="nav-link" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato de servicio</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
-              <h1>como se coordina el servicio</h1>
+            <div class="tab-pane fade show active" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab" tabindex="0">
+              <h3>Se debe confirmar con el cliente que el origen sea por debajo del paralelo 24. <b>Si esta por arriba del paralelo 24 no cuenta con servicio</b></h3>
+              <img src="asd" alt="mapaParalelo24" />
             </div>
-            <div class="tab-pane fade" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
-
-              formato de servicio
+            <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
+            <ul>
+                <h4>Puntos importantes:</h4>
+                <li>Origen del servicio.</li>
+                <li>Paso fronterizo más próximo</li>
+                <li>Destino final en caso de ir hasta Argentina</li>
+                <li>Dejar registro de la cotización en reales al día de la fecha: <br />
+                  <a href="https://www.bna.com.ar/Personas" target='_blank'><button>Cotización Divisa</button></a>
+                </li>
+                <li>Confirmar el servicio al prestador de Brasil, vía e-mail adjuntando la planilla con los datos del servicio <br />
+                  <a href="https://redsos.sharepoint.com/:x:/r/sites/SGC/_layouts/15/Doc.aspx?sourcedoc=%7B47D48EF1-5CBC-4214-A314-1E45CA0C0361%7D&file=FL-08%20Red%20Nacional%20-%20Planilla%20de%20Cierre%20de%20Servicio%20-%20Brasil%2CRev04.xlsx&action=default&mobileredirect=true" target='_blank'><button>Planilla</button></a>
+                </li>
+                <li>Coordinar traslado en lado argentino.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade show active" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+              <ul>
+                <h6>Bom dia, Solicito orçamento e disponibilidade:</h6>
+                <li>VEICULO:</li>
+                <li>PLACA:</li>
+                <li>COR:</li>
+                <li>SEGURADO:</li>
+                <li>TELEFONES:</li>
+                <li>ORIGEM:</li>
+                <li>FINAL:</li>
+                <li>FALHA DE CARRO:</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -106,13 +132,22 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-local" role="tabpanel" aria-labelledby="nav-local-tab" tabindex="0">
-              Local
+              <h2>Traslado local en Chile</h2>
+              <h4>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h4>
+              <a href="https://www.bna.com.ar/Personas" target='_blank'><button>Verificar dólar oficial</button></a>
             </div>
             <div class="tab-pane fade" id="nav-argentina" role="tabpanel" aria-labelledby="nav-argentina-tab" tabindex="0">
-             frontera
+              <h2>Traslado de Chile hasta Argentina</h2>
+             <h3><b>Tener en cuenta que los prestadores de Chile no cruzan hacia Argentina.</b> Se debe coordinar en dos partes:</h3>
+             <ul>
+              <li>Origen en Chile hasta paso fronterizo más próximo</li>
+              <li>Desde paso frotnerizo a destino final en Argentina</li>
+             </ul>
             </div>
             <div class="tab-pane fade" id="nav-tdfuego" role="tabpanel" aria-labelledby="nav-tdfuego-tab" tabindex="0">
-             tierra del fuego
+             <h2>Servicio que vienen hacia o desde Tierra del Fuego</h2>
+             <p>Los prestadores que pueden cruzar por chile para dirigirse a Tierra del Fuego cuentan con un permiso especial y realizan trámites los cuales tienen costo y son a cargo del cliente.</p>
+             <img src={imagenCostos} alt="costosDeEjemplo" height={350} width={450}/>
             </div>
           </div>
         </div>
@@ -120,15 +155,20 @@ export default function Instructivo() {
           <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <button class="nav-link active" id="nav-asistencia-tab" data-bs-toggle="tab" data-bs-target="#nav-asistencia" type="button" role="tab" aria-controls="nav-asistencia" aria-selected="true">Asistencia</button>
-              <button class="nav-link" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Tipos</button>
+              <button class="nav-link" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Procedimiento</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-asistencia" role="tabpanel" aria-labelledby="nav-asistencia-tab" tabindex="0">
-             asistenciaasistencia
+             <h3>La contraprestaciones son servicios solicitados por nuestros prestadores del extranjero a traves de correo electronico.</h3>
+             <h6>El supervisor de turno asigna el tratamienco de la rpestacion a un Operador de Logistica, quien verificara el e-mail y realiza las siguientes tares:</h6>
+             <ul>
+              <li>Responder el correo informando se trabajara en el pedido y se enviara novedades.</li>
+              <li>Cargar el servicio en el sistema con el radio correspondiente al pestador.</li>
+             </ul>
             </div>
             <div class="tab-pane fade" id="nav-tipos" role="tabpanel" aria-labelledby="nav-tipos-tab" tabindex="0">
-             tipos
+             ul
             </div>
           </div>
         </div>
