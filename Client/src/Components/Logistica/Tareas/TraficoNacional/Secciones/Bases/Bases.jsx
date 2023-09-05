@@ -50,44 +50,36 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3" id="nav-orgzn" role="tabpanel" aria-labelledby="nav-orgzn-tab" tabindex="0">
-            <p>Bahía blanca locales <br></br>
-Bahía blanca interior (este, oeste, norte y sur)  </p>
+              <p>Bahía blanca locales <br></br>
+                Bahía blanca interior (este, oeste, norte y sur)  </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-consgral" role="tabpanel" aria-labelledby="nav-consgral-tab" tabindex="0">
-<p>Tener en cuenta que para aquellos servicios con kilómetros primero se debe consultar a los prestadores eventuales de la zona.   
+              <p>Tener en cuenta que para aquellos servicios con kilómetros primero se debe consultar a los prestadores eventuales de la zona.
 
-Por instrucción del Área de Prestadores la Base 11679 - Giberti Omar tiene prioridad para los servicios con kilómetros, sobre los otros móviles de Bahía. El móvil 705 solo realiza traslados de este tipo, mientras que el 706 también realiza estos servicios, pero dentro de la provincia, ya que no tiene habilitado el permiso para salir.   
+                Por instrucción del Área de Prestadores la Base 11679 - Giberti Omar tiene prioridad para los servicios con kilómetros, sobre los otros móviles de Bahía. El móvil 705 solo realiza traslados de este tipo, mientras que el 706 también realiza estos servicios, pero dentro de la provincia, ya que no tiene habilitado el permiso para salir.
 
-Tener en cuenta que el móvil 1095 correspondiente a la Base 13077 - Briseña Matias, actualmente sale de la localidad de Punta Alta.   
+                Tener en cuenta que el móvil 1095 correspondiente a la Base 13077 - Briseña Matias, actualmente sale de la localidad de Punta Alta.
 
-En aquellos casos de falta de disponibilidad en la ciudad de Bahía Blanca, tener en consideración al prestador de Punta Alta de la Base 11513 - Logística Puerto Rosales, ya que realiza servicios locales en dicha zona.   
+                En aquellos casos de falta de disponibilidad en la ciudad de Bahía Blanca, tener en consideración al prestador de Punta Alta de la Base 11513 - Logística Puerto Rosales, ya que realiza servicios locales en dicha zona.
 
-La ciudad de Bahía Blanca cuenta con un móvil de mecánica.  
+                La ciudad de Bahía Blanca cuenta con un móvil de mecánica.
 
-No todos los móviles pueden dirigirse a la zona de Tornquist, debido a las exigencias de la caminera.   </p>
+                No todos los móviles pueden dirigirse a la zona de Tornquist, debido a las exigencias de la caminera.   </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-zninduc" role="tabpanel" aria-labelledby="nav-zninduc-tab" tabindex="0">
-<p>Con respecto a las inducciones a mecánica, deberán realizarse dentro de la ciudad de Bahía Blanca.   </p>
+              <p>Con respecto a las inducciones a mecánica, deberán realizarse dentro de la ciudad de Bahía Blanca.   </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-zndificil" role="tabpanel" aria-labelledby="nav-zndificil-tab" tabindex="0">
-<p>A continuación, se mencionan las zonas a las cuales no se ingresa, ni cobrando adicional, en estos casos el cliente debe sacarlo por sus medios: </p>  
-
-<li>Laguna de chasco   </li>
-<li>Campos o estancias en la zona de Cabildo – Paso Mayor – Estomba – Ruta 72: El Faro / Gil   </li>
-
-<li>En la zona de Pedro Luro por ordenanza municipal no se ingresa a caminos de ripio cuando llueve.   </li>
-
-<li>Ruta 76, desde Felipe Sola hacia la derecha, en dirección a la Ruta 33   </li>
-
-<li>También hay zonas donde se ingresa cobrando adicional de difícil acceso:  </li>
-
-<li>Ruta 67, en el tramo desde Coronel Suarez hasta General La Madrid, ya que el camino es de ripio y se encuentra en mal estado. En estos casos los prestadores para ir dan la vuelta por camino de asfalto paralelo, aproximadamente recorren 155km lineales.   </li>
-
-<li>Balneario Sauce Grande: el prestador informa si tiene costo o no, dependerá si llovió en la zona.   </li>
-
-<li>Tener en cuenta en servicios cuyo origen o destino sea GUAMINI y tengan que circular sobre ruta 60 en sentido este a oeste, deben ingresar por Ruta 33, ya que la Ruta 85 se considera intransitable.  </li>
-
-<li>Los servicios que tengan como origen o destino Huanguelen y Coronel Suarez, tener en cuenta que deben tomar la Ruta 60 y luego la Ruta 85, ya que el camino Inter localidad se encuentra intransitable.  </li>
+              <p>A continuación, se mencionan las zonas a las cuales no se ingresa, ni cobrando adicional, en estos casos el cliente debe sacarlo por sus medios: </p>
+              <li>Laguna de chasco   </li>
+              <li>Campos o estancias en la zona de Cabildo – Paso Mayor – Estomba – Ruta 72: El Faro / Gil   </li>
+              <li>En la zona de Pedro Luro por ordenanza municipal no se ingresa a caminos de ripio cuando llueve.   </li>
+              <li>Ruta 76, desde Felipe Sola hacia la derecha, en dirección a la Ruta 33   </li>
+              <li>También hay zonas donde se ingresa cobrando adicional de difícil acceso:  </li>
+              <li>Ruta 67, en el tramo desde Coronel Suarez hasta General La Madrid, ya que el camino es de ripio y se encuentra en mal estado. En estos casos los prestadores para ir dan la vuelta por camino de asfalto paralelo, aproximadamente recorren 155km lineales.   </li>
+              <li>Balneario Sauce Grande: el prestador informa si tiene costo o no, dependerá si llovió en la zona.   </li>
+              <li>Tener en cuenta en servicios cuyo origen o destino sea GUAMINI y tengan que circular sobre ruta 60 en sentido este a oeste, deben ingresar por Ruta 33, ya que la Ruta 85 se considera intransitable.  </li>
+              <li>Los servicios que tengan como origen o destino Huanguelen y Coronel Suarez, tener en cuenta que deben tomar la Ruta 60 y luego la Ruta 85, ya que el camino Inter localidad se encuentra intransitable.  </li>
             </div>
           </div>
         </div>
