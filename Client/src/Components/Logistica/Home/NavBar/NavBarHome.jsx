@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Agenda from '../Secciones/Agenda/Agenda';
-import Informacion from '../Secciones/Informacion/Informacion';
 import Reintegro from '../Secciones/Reintegro/Reintegro';
-import CardNoticias from '../Secciones/Noticias/CardNoticias';
+import Noticias from '../Secciones/Noticias/Noticias';
 
 export default function NavBarHome() {
-  const [selectedComponent, setSelectedComponent] = useState();
+  const [selectedComponent, setSelectedComponent] = useState('noticias');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -42,18 +41,6 @@ export default function NavBarHome() {
           </li>
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'informacion' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('informacion')}
-              style={{
-                color: selectedComponent === 'informacion' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'informacion' ? 'white' : 'initial'
-              }}
-            >
-              Información
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
               className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
               onClick={() => handleComponentClick('reintegro')}
               style={{
@@ -69,8 +56,7 @@ export default function NavBarHome() {
 
       <div className="container-fluid">
         {selectedComponent === 'agenda' && <Agenda />}
-        {selectedComponent === 'informacion' && <Informacion />}
-        {selectedComponent === 'noticias' && <CardNoticias />}
+        {selectedComponent === 'noticias' && <Noticias />}
         {selectedComponent === 'reintegro' && <Reintegro />}
       </div>
     </div>

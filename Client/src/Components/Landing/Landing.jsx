@@ -1,27 +1,26 @@
 import React from 'react'
+import './Landing.css'
 
 
 export default function Landing() {
   return (
-    <div >
-      <div className='d-flex flex-column justify-content-center'>
+    <div className='contenedor'>
 
-        <h1 >Operaciones SOS</h1>
+        <h1 >OPERACIONES SOS</h1>
 
-        <div className='d-flex flex-row justify-content-evenly mt-5'>
+        <div className='contenedor-btn'>
           <a href="/logistica">
-            <button type="button" className="btn btn-outline-danger">LOGISTICA</button>
+            <button type="button" className="btn btn-outline-danger mx-5">LOGISTICA</button>
           </a>
 
           <a href="/trafico">
-            <button type="button" className="btn btn-outline-danger">TRAFICO</button>
+            <button type="button" className="btn btn-outline-danger mx-5">TRAFICO</button>
           </a>
 
           <a href="/cat">
-            <button type="button" className="btn btn-outline-danger">CAT</button>
+            <button type="button" className="btn btn-outline-danger mx-5">CAT</button>
           </a>
         </div>
       </div>
-    </div>
   )
 }
