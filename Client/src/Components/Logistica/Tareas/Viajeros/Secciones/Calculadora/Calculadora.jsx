@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Formato from './Formato';
 
-export default function Calculadora({resultado}) {
+export default function Calculadora({ resultado }) {
 
 
   const [formData, setFormData] = useState({
@@ -35,8 +35,21 @@ export default function Calculadora({resultado}) {
 
     navigator.clipboard.writeText(formattedText)
       .then(() => setCopied(true))
-      .catch(err => console.error('Error copying text: ', err));
+      .catch(err => alert('Error copying text: ', err));
   };
+
+  const handleReset = () => {
+    setFormData({
+      cantidadTotal: '',
+      cantidadPorAsistencia: '',
+      origen: '',
+      destino: '',
+      tipoAsistencia: '',
+      topeCIA: '',
+      observaciones: ''
+    })
+    setCopied(false);
+  }
 
   return (
     <div className='d-flex flex-row h-100 justify-content-center align-items-center'>
@@ -105,6 +118,9 @@ export default function Calculadora({resultado}) {
         <div className='pt-3 m-auto h-50 w-50 m-auto'>
           <button className="btn btn-dark mt-3 " onClick={handleCopyClick}>
             {copied ? 'Copiado' : 'Copiar'}
+          </button>
+          <button className="btn btn-dark mt-3 mx-4" onClick={handleReset}>
+            Restablecer
           </button>
         </div>
       </div>
