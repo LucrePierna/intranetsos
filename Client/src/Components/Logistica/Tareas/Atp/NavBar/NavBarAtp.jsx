@@ -6,7 +6,7 @@ import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Anulacion from '../Secciones/Anulación/Anulacion';
 
 export default function NavBarAtp() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('flujograma');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

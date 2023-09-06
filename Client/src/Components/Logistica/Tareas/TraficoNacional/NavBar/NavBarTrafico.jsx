@@ -4,11 +4,11 @@ import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Mapas from '../Secciones/Mapas/Mapas'
 import Noticias from '../Secciones/Noticias/Noticias'
-import Planilla from '../Secciones/Planilla/Planilla'
+import Bases from '../Secciones/Bases/Bases'
 
 
 export default function NavBarTrafico() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('flujograma');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -56,14 +56,14 @@ export default function NavBarTrafico() {
           </li>
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'planillas' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('planillas')}
+              className={`nav-link btn ${selectedComponent === 'bases' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('bases')}
               style={{
-                color: selectedComponent === 'planillas' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'planillas' ? 'white' : 'initial'
+                color: selectedComponent === 'bases' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'bases' ? 'white' : 'initial'
               }}
             >
-              Planillas
+              Bases
             </button>
           </li>
           <li className="nav-item">
@@ -86,7 +86,7 @@ export default function NavBarTrafico() {
         {selectedComponent === 'noticias' && <Noticias />}
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'instructivo' && <Instructivo />}
-        {selectedComponent === 'planilla' && <Planilla />}
+        {selectedComponent === 'bases' && <Bases />}
         {selectedComponent === 'mapas' && <Mapas />}
 
 

@@ -3,10 +3,10 @@ import '../../../EstilosGlobales/NavBar.css'
 import Calculadora from '../Secciones/Calculadora/Calculadora'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Links from '../Secciones/Links/Links'
-import Reintegros from '../Secciones/Reintegros/Reintegros'
+import Procedimiento from '../Secciones/Procedimiento/Procedimiento'
 
 export default function NavBarViajero() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('flujograma');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -25,6 +25,18 @@ export default function NavBarViajero() {
               }}
             >
               Flujograma
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'procedimiento' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('procedimiento')}
+              style={{
+                color: selectedComponent === 'procedimiento' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'procedimiento' ? 'white' : 'initial'
+              }}
+            >
+              Procedimiento
             </button>
           </li>
 
@@ -52,29 +64,15 @@ export default function NavBarViajero() {
               Links
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('reintegro')}
-              style={{
-                color: selectedComponent === 'reintegro' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'reintegro' ? 'white' : 'initial'
-              }}
-            >
-              Reintegro
-            </button>
-          </li>
 
         </ul>
       </nav>
 
       <div className="container-fluid">
         {selectedComponent === 'flujograma' && <Flujograma />}
+        {selectedComponent === 'procedimiento' && <Procedimiento />}
         {selectedComponent === 'calculadora' && <Calculadora />}
         {selectedComponent === 'links' && <Links />}
-        {selectedComponent === 'reintegro' && <Reintegros />}
-
-
 
       </div>
     </div>

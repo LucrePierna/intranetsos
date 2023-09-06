@@ -1,41 +1,29 @@
-import React, { useState } from 'react';
-import './Estilos/Noticias.css';
+import React from 'react';
 
-export default function DataNoticias({ descripcion, imagen, id }) {
-  const [currentImage, setCurrentImage] = useState(1);
-  const numImages = 5;
-
-  const handleLeftClick = () => {
-    setCurrentImage(prevImage => (prevImage === 1 ? numImages : prevImage - 1));
-  };
-
-  const handleRightClick = () => {
-    setCurrentImage(prevImage => (prevImage === numImages ? 1 : prevImage + 1));
-  };
+export default function Noticias() {
 
   return (
-    <div className="center">
-      <div onClick={handleLeftClick}>
-        <svg className="svg-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-          <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-        </svg>
+    <div id="carouselExampleInterval" class="carousel slide h-50 w-50 justify-content-center mx-auto mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://i.pinimg.com/564x/90/52/2b/90522b694ef262ecde1fbf0c04de6496.jpg" className="d-block w-100 h-50" alt="noticia1" />
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="https://i.pinimg.com/564x/d8/11/fb/d811fbc6ac83c704188486c6dc8321a7.jpg" className="d-block w-100 h-50 " alt="noticia2" />
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="https://i.pinimg.com/564x/e4/78/41/e4784108c010d2c0ac86d9eed724198e.jpg" className="d-block w-100 h-50 " alt="noticia3" />
+        </div>
       </div>
-      <div key={id} className="carrousel">
-        {Array.from({ length: numImages }, (_, index) => (
-          <div
-            className={`carrousel-item ${currentImage === index + 1 ? 'visible' : ''}`}
-            key={`carrouselimg${index + 1}`}
-          >
-            <img src={imagen} alt='imagen' />
-            <h2>{descripcion}</h2>
-          </div>
-        ))}
-      </div>
-      <div onClick={handleRightClick}>
-        <svg className="svg-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-          <path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-        </svg>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon text-bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon text-bg-dark " aria-hidden="true" ></span>
+        <span class="visually-hidden" >Next</span>
+      </button>
+
     </div>
   );
 }

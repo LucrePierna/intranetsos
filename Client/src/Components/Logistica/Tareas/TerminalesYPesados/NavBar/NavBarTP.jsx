@@ -10,7 +10,7 @@ import TipoDeVehiculos from '../Secciones/TiposDeVehiculos/TipoDeVehiculos'
 import Trasvase from '../Secciones/Trasvase/Trasvase'
 
 export default function NavBarTP() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('flujograma');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

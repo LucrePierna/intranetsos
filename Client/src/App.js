@@ -11,6 +11,7 @@ import NavBarViajero from "./Components/Logistica/Tareas/Viajeros/NavBar/NavBarV
 import NavBarTP from "./Components/Logistica/Tareas/TerminalesYPesados/NavBar/NavBarTP";
 import NavBarExtranjero from "./Components/Logistica/Tareas/Extranjero/NavBar/NavBarExtranjero";
 import Landing from "./Components/Landing/Landing";
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
           <Route path='/logistica/extranjero' element={<NavBarExtranjero />} />
 
         </Routes>
+        {/* <Footer/> */}
       
     </div>
   );
