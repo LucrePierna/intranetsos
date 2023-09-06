@@ -20,3 +20,41 @@ conteiner-flujograma{
   
 }
 
+
+.nav-link.custom {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+
+.nav-link.custom.active {
+  color: #ffffff !important; 
+  background-color: #ef0505 !important;
+  border-color: #ff0000 !important;
+}
+
+.nav-link.custom:hover {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+
+.nav-link.custosubm {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+
+.nav-link.sub.active {
+  color: #ffffff !important; 
+  background-color: #721212 !important;
+  border-color: #323232 !important;
+}
+
+.nav-link.sub:hover {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
