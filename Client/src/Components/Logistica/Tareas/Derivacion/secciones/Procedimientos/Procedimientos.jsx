@@ -82,7 +82,7 @@ export default function Procedimientos() {
 
         <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-manual-tab" data-bs-toggle="tab" data-bs-target="#nav-manual" type="button" role="tab" aria-controls="nav-manual" aria-selected="true">Asignación Manual</button>
               <button class="nav-link sub" id="nav-automatica-tab" data-bs-toggle="tab" data-bs-target="#nav-automatica" type="button" role="tab" aria-controls="nav-automatica" aria-selected="false">Asignación Automatica</button>
             </div>
@@ -117,25 +117,25 @@ export default function Procedimientos() {
           </div>
         </div>
 
-        <div className="tab-pane fade" id="nav-vehicles" role="tabpanel" aria-labelledby="nav-cierra-tab" tabIndex="0">
+        <div className="tab-pane fade text-start py-2" id="nav-vehicles" role="tabpanel" aria-labelledby="nav-cierra-tab" tabIndex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-progsvc-tab" data-bs-toggle="tab" data-bs-target="#nav-progsvc" type="button" role="tab" aria-controls="nav-progsvc" aria-selected="true">Programación del Servicio</button>
-              <button class="nav-link" id="nav-demsvc-tab" data-bs-toggle="tab" data-bs-target="#nav-demsvc" type="button" role="tab" aria-controls="nav-demsvc" aria-selected="false">Demora del Servicio</button>
-              <button class="nav-link" id="nav-cttocl-tab" data-bs-toggle="tab" data-bs-target="#nav-cttocl" type="button" role="tab" aria-controls="nav-cttocl" aria-selected="false">Contacto con el Cliente</button>
-              <button class="nav-link" id="nav-pagos-tab" data-bs-toggle="tab" data-bs-target="#nav-pagos" type="button" role="tab" aria-controls="nav-pagos" aria-selected="false">Pagos</button>
-              <button class="nav-link" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Reintegro</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-progsvc-tab" data-bs-toggle="tab" data-bs-target="#nav-progsvc" type="button" role="tab" aria-controls="nav-progsvc" aria-selected="true">Programación del Servicio</button>
+              <button class="nav-link sub" id="nav-demsvc-tab" data-bs-toggle="tab" data-bs-target="#nav-demsvc" type="button" role="tab" aria-controls="nav-demsvc" aria-selected="false">Demora del Servicio</button>
+              <button class="nav-link sub" id="nav-cttocl-tab" data-bs-toggle="tab" data-bs-target="#nav-cttocl" type="button" role="tab" aria-controls="nav-cttocl" aria-selected="false">Contacto con el Cliente</button>
+              <button class="nav-link sub" id="nav-pagos-tab" data-bs-toggle="tab" data-bs-target="#nav-pagos" type="button" role="tab" aria-controls="nav-pagos" aria-selected="false">Pagos</button>
+              <button class="nav-link sub" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Reintegro</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3" id="nav-progsvc" role="tabpanel" aria-labelledby="nav-progsvc-tab" tabindex="0">
+            <div class="tab-pane fade show active px-3 mt-3 " id="nav-progsvc" role="tabpanel" aria-labelledby="nav-progsvc-tab" tabindex="0">
               <p>En caso de falta de disponibilidad o por pedido del cliente se indicará la programación, la información se dejará en referencias y de ser posible el servicio se dejará coordinado con un prestador para el horario acordado con el cliente.</p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-demsvc" role="tabpanel" aria-labelledby="nav-demsvc-tab" tabindex="0">
               <p>Es obligatorio siempre informar la demora estimada al cliente. Si la misma fue informada en la toma del servicio y varía ± 30 minutos con respecto a la informada por el prestador, se deberá dar aviso al cliente (debiendo tener en cuenta el tiempo transcurrido entre la hora de pedido y asignado).  </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-cttocl" role="tabpanel" aria-labelledby="nav-cttocl-tab" tabindex="0">
-              <p>Siempre que se tome contacto con el cliente se deberá confirmar la Cobertura de la Asistencia respetando el requisito correspondiente establecido en los <a href="https://redsos.sharepoint.com/sites/SGC/Documentos%20compartidos/Sistema%20de%20Gestion%20de%20Calidad/SGC/RS%20Requisitos%20del%20Servicio%20de%20Asistencia,Rev09.pdf" target='_blank'> <button type="button" class="btn btn-outline-secondary mx-2 ">Requisitos del Servicio de Asistencia</button></a>, fundamentalmente el nombre de la persona con quién nos estamos comunicando y todo otro dato de importancia para el servicio en gestión.</p>
+              <p>Siempre que se tome contacto con el cliente se deberá confirmar la Cobertura de la Asistencia respetando el requisito correspondiente establecido en los <a href="https://redsos.sharepoint.com/sites/SGC/Documentos%20compartidos/Sistema%20de%20Gestion%20de%20Calidad/SGC/RS%20Requisitos%20del%20Servicio%20de%20Asistencia,Rev09.pdf" target='_blank'> <button type="button" class="btn btn-outline-danger mx-2 ">Requisitos del Servicio de Asistencia</button></a>, fundamentalmente el nombre de la persona con quién nos estamos comunicando y todo otro dato de importancia para el servicio en gestión.</p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-pagos" role="tabpanel" aria-labelledby="nav-pagos-tab" tabindex="0">
               <ul className='text-start fs-6'>
@@ -149,7 +149,7 @@ export default function Procedimientos() {
               <p className='text-start fs-6'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
                 <ul><u>El derivador deberá informar la gestión del reintegro:</u>
                   <li>Solicitar ticket o factura con validez fiscal</li>
-                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos <a href="https://tuportal.redsos.com.ar/form" target='_blank'> <button type="button" class="btn btn-outline-secondary mx-2 ">RedSOS</button></a></li>
+                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos <a href="https://tuportal.redsos.com.ar/form" target='_blank'> <button type="button" class="btn btn-outline-danger mx-2 ">RedSOS</button></a></li>
                   <li>Brindar el códgio de servicio</li>
                   <li>Informar el monto de reintegro</li>
                 </ul>
@@ -161,9 +161,9 @@ export default function Procedimientos() {
 
         <div className="tab-pane fade " id="nav-roads" role="tabpanel" aria-labelledby="nav-zona-tab" tabIndex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-derivzn-tab" data-bs-toggle="tab" data-bs-target="#nav-derivzn" type="button" role="tab" aria-controls="nav-derivzn" aria-selected="true">Derivación</button>
-              <button class="nav-link" id="nav-mapazn-tab" data-bs-toggle="tab" data-bs-target="#nav-mapazn" type="button" role="tab" aria-controls="nav-mapazn" aria-selected="false">Mapa por Zona</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-derivzn-tab" data-bs-toggle="tab" data-bs-target="#nav-derivzn" type="button" role="tab" aria-controls="nav-derivzn" aria-selected="true">Derivación</button>
+              <button class="nav-link sub" id="nav-mapazn-tab" data-bs-toggle="tab" data-bs-target="#nav-mapazn" type="button" role="tab" aria-controls="nav-mapazn" aria-selected="false">Mapa por Zona</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
