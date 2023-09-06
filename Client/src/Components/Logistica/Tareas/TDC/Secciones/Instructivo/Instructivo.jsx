@@ -16,11 +16,11 @@ export default function Instructivo() {
       <nav className='d-flex align-items-start flex-colum'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-          <button className="nav-link active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion de la tarea</button>
-          <button className="nav-link" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexion eficaz</button>
-          <button className="nav-link" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Formato de registro</button>
-          <button className="nav-link" id="nav-rechazo-tab" data-bs-toggle="tab" data-bs-target="#nav-rechazo" type="button" role="tab" aria-controls="nav-rechazo" aria-selected="false">Motivos de rechazo</button>
-          <button className="nav-link" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
+          <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion de la tarea</button>
+          <button className="nav-link custom" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexion eficaz</button>
+          <button className="nav-link custom" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Formato de registro</button>
+          <button className="nav-link custom" id="nav-rechazo-tab" data-bs-toggle="tab" data-bs-target="#nav-rechazo" type="button" role="tab" aria-controls="nav-rechazo" aria-selected="false">Motivos de rechazo</button>
+          <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
