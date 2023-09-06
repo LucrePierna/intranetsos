@@ -15,11 +15,11 @@ export default function TareasEspeciales() {
         <div className='d-flex align-items-start text-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5'>
             <nav className='d-flex align-items-start flex-colum'>
                 <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button className="nav-link active" id="nav-cerrajeria-tab" data-bs-toggle="tab" data-bs-target="#nav-cerrajeria" type="button" role="tab" aria-controls="nav-cerrajeria" aria-selected="true">Cerrajeria</button>
-                    <button className="nav-link" id="nav-extraccion-tab" data-bs-toggle="tab" data-bs-target="#nav-extraccion" type="button" role="tab" aria-controls="nav-extraccion" aria-selected="false">Extraccion</button>
-                    <button className="nav-link" id="nav-cristales-tab" data-bs-toggle="tab" data-bs-target="#nav-cristales" type="button" role="tab" aria-controls="nav-cristales" aria-selected="false">Grabado de cristales</button>
-                    <button className="nav-link" id="nav-guardavhc-tab" data-bs-toggle="tab" data-bs-target="#nav-guardavhc" type="button" role="tab" aria-controls="nav-guardavhc" aria-selected="false">Guarda de Vehículos</button>
-                    <button className="nav-link" id="nav-intransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-intransitable" type="button" role="tab" aria-controls="nav-intransitable" aria-selected="false">Caminos Intransitables</button>
+                    <button className="nav-link custom active" id="nav-cerrajeria-tab" data-bs-toggle="tab" data-bs-target="#nav-cerrajeria" type="button" role="tab" aria-controls="nav-cerrajeria" aria-selected="true">Cerrajeria</button>
+                    <button className="nav-link custom" id="nav-extraccion-tab" data-bs-toggle="tab" data-bs-target="#nav-extraccion" type="button" role="tab" aria-controls="nav-extraccion" aria-selected="false">Extraccion</button>
+                    <button className="nav-link custom" id="nav-cristales-tab" data-bs-toggle="tab" data-bs-target="#nav-cristales" type="button" role="tab" aria-controls="nav-cristales" aria-selected="false">Grabado de cristales</button>
+                    <button className="nav-link custom" id="nav-guardavhc-tab" data-bs-toggle="tab" data-bs-target="#nav-guardavhc" type="button" role="tab" aria-controls="nav-guardavhc" aria-selected="false">Guarda de Vehículos</button>
+                    <button className="nav-link custom" id="nav-intransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-intransitable" type="button" role="tab" aria-controls="nav-intransitable" aria-selected="false">Caminos Intransitables</button>
                 </div>
             </nav>
             <div className="tab-content px-3 " id="nav-tabContent">

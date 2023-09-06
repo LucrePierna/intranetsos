@@ -17,12 +17,12 @@ export default function Corredores() {
     <div className='d-flex flex-column align-items-center justify-content-center mx-auto  mt-5'>
       <nav>
         <div className="nav nav-tabs" id="nav-tab" role="tablist">
-          <button className="nav-link active" id="nav-bahiablanca-tab" data-bs-toggle="tab" data-bs-target="#nav-bahiablanca" type="button" role="tab" aria-controls="nav-bahiablanca" aria-selected="true">Bahia Blanca</button>
-          <button className="nav-link" id="nav-costa-tab" data-bs-toggle="tab" data-bs-target="#nav-costa" type="button" role="tab" aria-controls="nav-costa" aria-selected="false">Costa</button>
-          <button className="nav-link" id="nav-cuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-cuyo" type="button" role="tab" aria-controls="nav-cuyo" aria-selected="false">Cuyo</button>
-          <button className="nav-link" id="nav-noa-tab" data-bs-toggle="tab" data-bs-target="#nav-noa" type="button" role="tab" aria-controls="nav-noa" aria-selected="false">NOA</button>
-          <button className="nav-link" id="nav-patagonia-tab" data-bs-toggle="tab" data-bs-target="#nav-patagonia" type="button" role="tab" aria-controls="nav-patagonia" aria-selected="false">Patagonia</button>
-          <button className="nav-link" id="nav-santa-tab" data-bs-toggle="tab" data-bs-target="#nav-santa" type="button" role="tab" aria-controls="nav-santa" aria-selected="false">Santa Fe</button>
+          <button className="nav-link custom active" id="nav-bahiablanca-tab" data-bs-toggle="tab" data-bs-target="#nav-bahiablanca" type="button" role="tab" aria-controls="nav-bahiablanca" aria-selected="true">Bahia Blanca</button>
+          <button className="nav-link custom" id="nav-costa-tab" data-bs-toggle="tab" data-bs-target="#nav-costa" type="button" role="tab" aria-controls="nav-costa" aria-selected="false">Costa</button>
+          <button className="nav-link custom" id="nav-cuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-cuyo" type="button" role="tab" aria-controls="nav-cuyo" aria-selected="false">Cuyo</button>
+          <button className="nav-link custom" id="nav-noa-tab" data-bs-toggle="tab" data-bs-target="#nav-noa" type="button" role="tab" aria-controls="nav-noa" aria-selected="false">NOA</button>
+          <button className="nav-link custom" id="nav-patagonia-tab" data-bs-toggle="tab" data-bs-target="#nav-patagonia" type="button" role="tab" aria-controls="nav-patagonia" aria-selected="false">Patagonia</button>
+          <button className="nav-link custom" id="nav-santa-tab" data-bs-toggle="tab" data-bs-target="#nav-santa" type="button" role="tab" aria-controls="nav-santa" aria-selected="false">Santa Fe</button>
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
