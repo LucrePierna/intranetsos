@@ -55,60 +55,6 @@ export default function Agenda() {
         </TableBody>
       </Table>
 
-      <Table aria-label="Example static collection table" className="d-flex flex-col justify-content-center text-start ">
-        <TableHeader>
-          <TableColumn className="border border-dark bg-danger text-light">NOMBRE</TableColumn>
-          <TableColumn className="border border-dark bg-danger text-light">ROL</TableColumn>
-          <TableColumn className="border border-dark bg-danger text-light">INTERNO</TableColumn>
-        </TableHeader>
-        <TableBody>
-          <TableRow key="1" className="border border-dark">
-            <TableCell>Sorondo Yanina</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>32502</TableCell>
-          </TableRow>
-          <TableRow key="2" className="border border-dark">
-            <TableCell>Bas Mauricio</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Paused</TableCell>
-          </TableRow>
-          <TableRow key="3" className="border border-dark">
-            <TableCell>Baigorri Patricia</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Active</TableCell>
-          </TableRow>
-          <TableRow key="4" className="border border-dark">
-            <TableCell>Gonzalez Marco</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Vacation</TableCell>
-          </TableRow>
-          <TableRow key="5" className="border border-dark">
-            <TableCell>Montenegro Jessica</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Vacation</TableCell>
-          </TableRow>
-          <TableRow key="6" className="border border-dark">
-            <TableCell>Laureano Mariela</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Vacation</TableCell>
-          </TableRow>
-          <TableRow key="7" className="border border-dark">
-            <TableCell>Pierna Lucrecia</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Vacation</TableCell>
-          </TableRow>
-          <TableRow key="8" className="border border-dark">
-            <TableCell>Vargas Lucas</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Vacation</TableCell>
-          </TableRow>
-          <TableRow key="9" className="border border-dark">
-            <TableCell>Suarez Ivana</TableCell>
-            <TableCell>Supervisor</TableCell>
-            <TableCell>Vacation</TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
     </div>
   )
 }
