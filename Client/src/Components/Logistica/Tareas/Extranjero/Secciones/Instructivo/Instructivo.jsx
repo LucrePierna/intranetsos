@@ -24,7 +24,7 @@ export default function Instructivo() {
 
 
   return (
-    <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
+    <div className='d-flex align-items-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5 ' >
       <nav className='d-flex align-items-start flex-colum'>
         <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-uruguay-tab" data-bs-toggle="tab" data-bs-target="#nav-uruguay" type="button" role="tab" aria-controls="nav-uruguay" aria-selected="false">Uruguay</button>
@@ -36,9 +36,9 @@ export default function Instructivo() {
       <div className="tab-content" id="nav-tabContent">
         <div className="tab-pane fade" id="nav-uruguay" role="tabpanel" aria-labelledby="nav-uruguay-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-terrestre-tab" data-bs-toggle="tab" data-bs-target="#nav-terrestre" type="button" role="tab" aria-controls="nav-terrestre" aria-selected="true">Terrestres</button>
-              <button class="nav-link" id="nav-Fluvial-tab" data-bs-toggle="tab" data-bs-target="#nav-Fluvial" type="button" role="tab" aria-controls="nav-Fluvial" aria-selected="false">Fluvial</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-terrestre-tab" data-bs-toggle="tab" data-bs-target="#nav-terrestre" type="button" role="tab" aria-controls="nav-terrestre" aria-selected="true">Terrestres</button>
+              <button class="nav-link sub" id="nav-Fluvial-tab" data-bs-toggle="tab" data-bs-target="#nav-Fluvial" type="button" role="tab" aria-controls="nav-Fluvial" aria-selected="false">Fluvial</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
@@ -83,10 +83,10 @@ export default function Instructivo() {
 
         <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-mapa-tab" data-bs-toggle="tab" data-bs-target="#nav-mapa" type="button" role="tab" aria-controls="nav-mapa" aria-selected="true">Mapa</button>
-              <button class="nav-link" id="nav-coordinacion-tab" data-bs-toggle="tab" data-bs-target="#nav-coordinacion" type="button" role="tab" aria-controls="nav-coordinacion" aria-selected="false">Coordinación de servicio</button>
-              <button class="nav-link" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato de servicio</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-mapa-tab" data-bs-toggle="tab" data-bs-target="#nav-mapa" type="button" role="tab" aria-controls="nav-mapa" aria-selected="true">Mapa</button>
+              <button class="nav-link sub" id="nav-coordinacion-tab" data-bs-toggle="tab" data-bs-target="#nav-coordinacion" type="button" role="tab" aria-controls="nav-coordinacion" aria-selected="false">Coordinación de servicio</button>
+              <button class="nav-link sub" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato de servicio</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
@@ -109,7 +109,7 @@ export default function Instructivo() {
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
             </div>
-            <div class="tab-pane fade show active" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+            <div class="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
               <h3>Formato de servicio</h3>
               <Brasil />
             </div>
@@ -117,10 +117,10 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade" id="nav-chile" role="tabpanel" aria-labelledby="nav-chile-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-local-tab" data-bs-toggle="tab" data-bs-target="#nav-local" type="button" role="tab" aria-controls="nav-local" aria-selected="true">Local</button>
-              <button class="nav-link" id="nav-argentina-tab" data-bs-toggle="tab" data-bs-target="#nav-argentina" type="button" role="tab" aria-controls="nav-argentina" aria-selected="false">Hasta frontera</button>
-              <button class="nav-link" id="nav-tdfuego-tab" data-bs-toggle="tab" data-bs-target="#nav-tdfuego" type="button" role="tab" aria-controls="nav-tdfuego" aria-selected="false">Tierra del fuego</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-local-tab" data-bs-toggle="tab" data-bs-target="#nav-local" type="button" role="tab" aria-controls="nav-local" aria-selected="true">Local</button>
+              <button class="nav-link sub" id="nav-argentina-tab" data-bs-toggle="tab" data-bs-target="#nav-argentina" type="button" role="tab" aria-controls="nav-argentina" aria-selected="false">Hasta frontera</button>
+              <button class="nav-link sub" id="nav-tdfuego-tab" data-bs-toggle="tab" data-bs-target="#nav-tdfuego" type="button" role="tab" aria-controls="nav-tdfuego" aria-selected="false">Tierra del fuego</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
@@ -146,9 +146,9 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade" id="nav-contraprestacion" role="tabpanel" aria-labelledby="nav-contraprestacion-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-asistencia-tab" data-bs-toggle="tab" data-bs-target="#nav-asistencia" type="button" role="tab" aria-controls="nav-asistencia" aria-selected="true">Asistencia</button>
-              <button class="nav-link" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Procedimiento</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-asistencia-tab" data-bs-toggle="tab" data-bs-target="#nav-asistencia" type="button" role="tab" aria-controls="nav-asistencia" aria-selected="true">Asistencia</button>
+              <button class="nav-link sub" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Procedimiento</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">

@@ -53,10 +53,10 @@ export default function Formato() {
 
 
     return (
-        <div className='d-flex flex-column  justify-content-center text-start'>
+        <div className='d-flex flex-column py-2 justify-content-center text-start'>
             <h6 className='my-3'>Formato para prestador Asist Cargo</h6>
             <div>
-                <label className="px-3">Cliente:</label>
+                <label className="px-3 py-2">Cliente:</label>
                 <input
                     type="text"
                     value={formData.cliente}
@@ -64,7 +64,7 @@ export default function Formato() {
                 />
             </div>
             <div>
-                <label className="px-3">Télefono:</label>
+                <label className="px-3 py-2">Télefono:</label>
                 <input
                     type="number"
                     value={formData.telefono}
@@ -72,7 +72,7 @@ export default function Formato() {
                 />
             </div>
             <div>
-                <label className="px-3 pt-2">Patente:</label>
+                <label className="px-3 py-2">Patente:</label>
                 <input
                     type="text"
                     value={formData.patente}
@@ -80,7 +80,7 @@ export default function Formato() {
                 />
             </div>
             <div>
-                <label className="px-3 pt-2">Unidad:</label>
+                <label className="px-3 py-2">Unidad:</label>
                 <input
                     type="text"
                     value={formData.unidad}
@@ -88,7 +88,7 @@ export default function Formato() {
                 />
             </div>
             <div>
-                <label className="px-3 pt-2">Ubicación:</label>
+                <label className="px-3 py-2">Ubicación:</label>
                     <input
                         type="number"
                         value={formData.ubicacion}
@@ -97,7 +97,7 @@ export default function Formato() {
                     
             </div>
             <div>
-                <label className="px-3 pt-2">Tipo de carga:</label>
+                <label className="px-3 py-2">Tipo de carga:</label>
                 <input
                     type="text"
                     value={formData.carga}
@@ -105,7 +105,7 @@ export default function Formato() {
                 />
             </div>
             <div>
-                <label className="px-3 pt-2">Falla:</label>
+                <label className="px-3 py-2">Falla:</label>
                 <input
                     type="text"
                     value={formData.falla}
@@ -113,7 +113,7 @@ export default function Formato() {
                 />
             </div>
             <div>
-                <label className="px-3 pt-2">Observaciones:</label>
+                <label className="px-3 py-2">Observaciones:</label>
                 <input
                     type="text"
                     value={formData.observaciones}

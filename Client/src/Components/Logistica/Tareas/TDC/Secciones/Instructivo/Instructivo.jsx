@@ -12,7 +12,7 @@ export default function Instructivo() {
     })
   })
   return (
-    <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
+    <div className='d-flex align-items-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5 ' >
       <nav className='d-flex align-items-start flex-colum'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
@@ -55,11 +55,11 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade" id="nav-planilla" role="tabpanel" aria-labelledby="nav-planilla-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-ceficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-ceficaz" type="button" role="tab" aria-controls="nav-ceficaz" aria-selected="true">Conexión Eficaz</button>
-              <button class="nav-link" id="nav-traslzn-tab" data-bs-toggle="tab" data-bs-target="#nav-traslzn" type="button" role="tab" aria-controls="nav-traslzn" aria-selected="true">Traslados Locales/Zona</button>
-              <button class="nav-link" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexion</button>
-              <button class="nav-link" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Obervaciones</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-ceficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-ceficaz" type="button" role="tab" aria-controls="nav-ceficaz" aria-selected="true">Conexión Eficaz</button>
+              <button class="nav-link sub" id="nav-traslzn-tab" data-bs-toggle="tab" data-bs-target="#nav-traslzn" type="button" role="tab" aria-controls="nav-traslzn" aria-selected="true">Traslados Locales/Zona</button>
+              <button class="nav-link sub" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexion</button>
+              <button class="nav-link sub" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Obervaciones</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">

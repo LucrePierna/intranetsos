@@ -3,7 +3,7 @@ import * as bootstrap from 'bootstrap'
 
 
 export default function Procedimiento() {
- 
+
 
   const triggerTabList = document.querySelectorAll('#myTab button')
   triggerTabList.forEach(triggerEl => {
@@ -17,9 +17,9 @@ export default function Procedimiento() {
 
 
   return (
-      <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
+    <div className='d-flex align-items-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5 ' >
       <nav className='d-flex align-items-start flex-colum'>
-      <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Instrucciones</button>
           <button className="nav-link custom" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Puntos principales</button>
         </div>

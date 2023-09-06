@@ -15,7 +15,7 @@ export default function Instructivo() {
   })
 
   return (
-    <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
+    <div className='d-flex align-items-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5 ' >
       <nav className='d-flex align-items-start flex-colum'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="true">Inicial</button>
@@ -29,11 +29,11 @@ export default function Instructivo() {
       <div className="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-orderiv-tab" data-bs-toggle="tab" data-bs-target="#nav-orderiv" type="button" role="tab" aria-controls="nav-orderiv" aria-selected="true">Orden de la Derivación</button>
-              <button class="nav-link" id="nav-acepyrech-tab" data-bs-toggle="tab" data-bs-target="#nav-acepyrech" type="button" role="tab" aria-controls="nav-acepyrech" aria-selected="false">Aceptación y Rechazos de Servicios</button>
-              <button class="nav-link" id="nav-prioricoord-tab" data-bs-toggle="tab" data-bs-target="#nav-prioricoord" type="button" role="tab" aria-controls="nav-prioricoord" aria-selected="false">Prioridades Para la Coordinación</button>
-              <button class="nav-link" id="nav-induccion-tab" data-bs-toggle="tab" data-bs-target="#nav-induccion" type="button" role="tab" aria-controls="nav-induccion" aria-selected="false">Inducciones</button>
+            <div class="nav nav-tabs justify-content-center px-3" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-orderiv-tab" data-bs-toggle="tab" data-bs-target="#nav-orderiv" type="button" role="tab" aria-controls="nav-orderiv" aria-selected="true">Orden de la Derivación</button>
+              <button class="nav-link sub" id="nav-acepyrech-tab" data-bs-toggle="tab" data-bs-target="#nav-acepyrech" type="button" role="tab" aria-controls="nav-acepyrech" aria-selected="false">Aceptación y Rechazos de Servicios</button>
+              <button class="nav-link sub" id="nav-prioricoord-tab" data-bs-toggle="tab" data-bs-target="#nav-prioricoord" type="button" role="tab" aria-controls="nav-prioricoord" aria-selected="false">Prioridades Para la Coordinación</button>
+              <button class="nav-link sub" id="nav-induccion-tab" data-bs-toggle="tab" data-bs-target="#nav-induccion" type="button" role="tab" aria-controls="nav-induccion" aria-selected="false">Inducciones</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
@@ -74,11 +74,11 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade" id="nav-asigyprest" role="tabpanel" aria-labelledby="nav-asigyprest-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-altbajmov-tab" data-bs-toggle="tab" data-bs-target="#nav-altbajmov" type="button" role="tab" aria-controls="nav-altbajmov" aria-selected="true">Alta y Baja de Móviles</button>
-              <button class="nav-link" id="nav-prioriasig-tab" data-bs-toggle="tab" data-bs-target="#nav-prioriasig" type="button" role="tab" aria-controls="nav-prioriasig" aria-selected="false">Prioridad de Asignación</button>
-              <button class="nav-link" id="nav-asigautman-tab" data-bs-toggle="tab" data-bs-target="#nav-asigautman" type="button" role="tab" aria-controls="nav-asigautman" aria-selected="false">Asignación Automatica/Manual</button>
-              <button class="nav-link" id="nav-cttomovyprest-tab" data-bs-toggle="tab" data-bs-target="#nav-cttomovyprest" type="button" role="tab" aria-controls="nav-cttomovyprest" aria-selected="false">Contacto con los Móviles o Prestadores</button>
+            <div class="nav nav-tabs justify-content-center px-3" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-altbajmov-tab" data-bs-toggle="tab" data-bs-target="#nav-altbajmov" type="button" role="tab" aria-controls="nav-altbajmov" aria-selected="true">Alta y Baja de Móviles</button>
+              <button class="nav-link sub" id="nav-prioriasig-tab" data-bs-toggle="tab" data-bs-target="#nav-prioriasig" type="button" role="tab" aria-controls="nav-prioriasig" aria-selected="false">Prioridad de Asignación</button>
+              <button class="nav-link sub" id="nav-asigautman-tab" data-bs-toggle="tab" data-bs-target="#nav-asigautman" type="button" role="tab" aria-controls="nav-asigautman" aria-selected="false">Asignación Automatica/Manual</button>
+              <button class="nav-link sub" id="nav-cttomovyprest-tab" data-bs-toggle="tab" data-bs-target="#nav-cttomovyprest" type="button" role="tab" aria-controls="nav-cttomovyprest" aria-selected="false">Contacto con los Móviles o Prestadores</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
@@ -127,9 +127,9 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade" id="nav-seguimiento" role="tabpanel" aria-labelledby="nav-seguimiento-tab" tabindex="0">
         <nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-contyseg-tab" data-bs-toggle="tab" data-bs-target="#nav-contyseg" type="button" role="tab" aria-controls="nav-contyseg" aria-selected="true">Contención y Seguimiento</button>
-    <button class="nav-link" id="nav-llgdayfin-tab" data-bs-toggle="tab" data-bs-target="#nav-llgdayfin" type="button" role="tab" aria-controls="nav-llgdayfin" aria-selected="false">Control de Llegada y Finalización del Servicio</button>
+  <div class="nav nav-tabs justify-content-center px-3" id="nav-tab" role="tablist">
+    <button class="nav-link sub active" id="nav-contyseg-tab" data-bs-toggle="tab" data-bs-target="#nav-contyseg" type="button" role="tab" aria-controls="nav-contyseg" aria-selected="true">Contención y Seguimiento</button>
+    <button class="nav-link sub" id="nav-llgdayfin-tab" data-bs-toggle="tab" data-bs-target="#nav-llgdayfin" type="button" role="tab" aria-controls="nav-llgdayfin" aria-selected="false">Control de Llegada y Finalización del Servicio</button>
   </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">

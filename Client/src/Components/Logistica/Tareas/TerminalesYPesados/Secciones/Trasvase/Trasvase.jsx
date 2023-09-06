@@ -19,7 +19,7 @@ export default function Trasvase() {
   }, []);
 
   return (
-    <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
+    <div className='d-flex align-items-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5 ' >
       <nav className='d-flex align-items-start flex-colum'>
         <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Descripcion</button>
@@ -46,9 +46,9 @@ export default function Trasvase() {
 
         <div className="tab-pane fade" id="nav-derivacion" role="tabpanel" aria-labelledby="nav-derivacion-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-prestadores-tab" data-bs-toggle="tab" data-bs-target="#nav-prestadores" type="button" role="tab" aria-controls="nav-prestadores" aria-selected="true">Prestadores</button>
-              <button class="nav-link" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-prestadores-tab" data-bs-toggle="tab" data-bs-target="#nav-prestadores" type="button" role="tab" aria-controls="nav-prestadores" aria-selected="true">Prestadores</button>
+              <button class="nav-link sub" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
