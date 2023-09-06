@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgPlanillaPesados from '../../../../Image/PlanillaBaseDePesados.png'
+import ImgPlanillaPesados from '../../../../Image/PlanillaDeBasesDePesados.png'
 
 export default function Planilla() {
   return (
