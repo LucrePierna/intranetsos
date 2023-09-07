@@ -1,8 +1,11 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: rgb(43, 48, 53);
+  background: linear-gradient(to right, #7f8492, #aeb1b6);
   color:white;
+  margin: 0;
+  padding: 0;
+
 }
 
 .App-header {

@@ -10,7 +10,7 @@ export default function Flujograma() {
         <a target="_blank" href="https://office.com" rel="noreferrer">Microsoft Office</a> incrustado con tecnología de
         <a target="_blank" href="https://office.com/webapps" rel="noreferrer">Office</a>.</iframe>
       <div className='mt-3'>
-        <button> <a target='blank' href="https://redsos-my.sharepoint.com/:u:/r/personal/pvivas_redsos_com_ar/_layouts/15/Doc.aspx?sourcedoc=%7B62bf8183-24d5-4395-847e-56b0caaa2879%7D&amp=&action=embedview">Vista</a></button>
+      <a target='blank' href="https://redsos-my.sharepoint.com/:u:/r/personal/pvivas_redsos_com_ar/_layouts/15/Doc.aspx?sourcedoc=%7B62bf8183-24d5-4395-847e-56b0caaa2879%7D&amp=&action=embedview"> <button type='button' class="btn btn-danger mt-3">Vista</button></a>
       </div>
     </div>
   )

@@ -22,9 +22,11 @@ conteiner-flujograma{
 
 
 .nav-link.custom {
+  width: 150px;
   color: #333;
   background-color: #fff;
   border: 1px solid #ccc;
+  transition: none;
 }
 
 
@@ -51,10 +53,32 @@ conteiner-flujograma{
   color: #ffffff !important; 
   background-color: rgb(197, 57, 57) !important;
   border-color: #ffffff !important;
+  transition: none;
 }
 
 .nav-link.sub:hover {
   color: #fff;
   background-color: rgb(108, 5, 5);
   border-color: red;
+}
+
+.conteinerNav{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to right, #646565, #414345);
+  padding-bottom: 2rem;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  border-radius: 2%;
+}
+
+.navConteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  position: static;
+  margin-left: 0;
+  padding-left: 0;
 }

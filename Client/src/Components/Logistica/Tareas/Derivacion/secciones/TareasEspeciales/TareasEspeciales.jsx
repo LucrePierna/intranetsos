@@ -12,8 +12,8 @@ export default function TareasEspeciales() {
         })
     })
     return (
-        <div className='d-flex align-items-start text-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5'>
-            <nav className='d-flex align-items-start flex-colum'>
+        <div className='conteinerNav mt-5'>
+            <nav className='navConteiner'>
                 <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button className="nav-link custom active" id="nav-cerrajeria-tab" data-bs-toggle="tab" data-bs-target="#nav-cerrajeria" type="button" role="tab" aria-controls="nav-cerrajeria" aria-selected="true">Cerrajeria</button>
                     <button className="nav-link custom" id="nav-extraccion-tab" data-bs-toggle="tab" data-bs-target="#nav-extraccion" type="button" role="tab" aria-controls="nav-extraccion" aria-selected="false">Extraccion</button>

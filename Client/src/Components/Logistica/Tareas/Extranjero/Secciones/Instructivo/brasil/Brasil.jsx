@@ -115,7 +115,7 @@ export default function Brasil() {
                 <label className="px-3">Observações: </label>
                 <textarea id="Observações" name="Observações" rows="4" cols="50" />
             </div>
-            <div className='d-flex flex-row px-3 pt-3 m-auto h-50 w-50 m-auto'>
+            <div className='d-flex flex-row px-3 py-4 m-auto h-50 w-50 m-auto'>
                 <button className="btn btn-dark mt-3 " onClick={handleCopyClick}>
                     {copied ? 'Copiado' : 'Copiar'}
                 </button>
