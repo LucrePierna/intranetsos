@@ -68,16 +68,16 @@ export default function Procedimientos() {
 
         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
           <p className='mt-5 fs-4 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
-            <ul className='text-start fs-5 mt-3'>
-              <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
-              <li>Si se tuviese que buscar fuera del recorrido de se procede de la siguiente manera:
-                <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
-                <ul>Ruta y transito, hasta 100 km lineales vacíos tanto en origen, recorrido y/o destino.</ul>
-              </li>
-              <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente</li>
-              <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona</li>
-            </ul>
-          
+          <ul className='text-start fs-5 mt-3'>
+            <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
+            <li>Si se tuviese que buscar fuera del recorrido de se procede de la siguiente manera:
+              <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
+              <ul>Ruta y transito, hasta 100 km lineales vacíos tanto en origen, recorrido y/o destino.</ul>
+            </li>
+            <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente</li>
+            <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona</li>
+          </ul>
+
         </div>
 
         <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
@@ -181,8 +181,9 @@ export default function Procedimientos() {
               <h6><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h6>
             </div>
             <div class="tab-pane fade px-3 py-5" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
-
-              <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="600" height="550"></iframe>
+              <div >
+                <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="600" height="550"></iframe>
+              </div>
             </div>
 
           </div>
