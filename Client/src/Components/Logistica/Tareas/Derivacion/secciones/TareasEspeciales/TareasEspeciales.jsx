@@ -73,10 +73,10 @@ export default function TareasEspeciales() {
                 <div className="tab-pane fade" id="nav-intransitable" role="tabpanel" aria-labelledby="nav-intransitable-tab" tabIndex="0">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-camintransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-camintransitable" type="button" role="tab" aria-controls="nav-camintransitable" aria-selected="true">Caminos Intransitables</button>
-                            <button class="nav-link" id="nav-infcliente-tab" data-bs-toggle="tab" data-bs-target="#nav-infcliente" type="button" role="tab" aria-controls="nav-infcliente" aria-selected="false">Información al Cliente</button>
-                            <button class="nav-link" id="nav-posibprest-tab" data-bs-toggle="tab" data-bs-target="#nav-posibprest" type="button" role="tab" aria-controls="nav-posibprest" aria-selected="false">Posibilidades de Prestador</button>
-                            <button class="nav-link" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Reintegro</button>
+                            <button class="nav-link sub active" id="nav-camintransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-camintransitable" type="button" role="tab" aria-controls="nav-camintransitable" aria-selected="true">Caminos Intransitables</button>
+                            <button class="nav-link sub" id="nav-infcliente-tab" data-bs-toggle="tab" data-bs-target="#nav-infcliente" type="button" role="tab" aria-controls="nav-infcliente" aria-selected="false">Información al Cliente</button>
+                            <button class="nav-link sub" id="nav-posibprest-tab" data-bs-toggle="tab" data-bs-target="#nav-posibprest" type="button" role="tab" aria-controls="nav-posibprest" aria-selected="false">Posibilidades de Prestador</button>
+                            <button class="nav-link sub" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Reintegro</button>
                         </div>
                     </nav>
                     <div class="tab-content mt-5" id="nav-tabContent">
