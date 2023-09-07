@@ -46,7 +46,7 @@ export default function Agenda() {
           </TableRow>
           <TableRow key="9" className="border border-dark bg-light text-black">
             <TableCell>Contención</TableCell>
-            <TableCell>9600</TableCell>
+            <TableCell>3220</TableCell>
           </TableRow>
           <TableRow key="10" className="border border-dark bg-light text-black">
             <TableCell>Hogar</TableCell>

@@ -16,8 +16,8 @@ export default function Instructivo() {
   })
 
   return (
-    <div className='d-flex align-items-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5  ' >
-       <nav className='d-flex align-items-start flex-colum'>
+    <div className='conteinerNav mt-5  ' >
+       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion</button>
           <button className="nav-link custom" id="nav-objetivos-tab" data-bs-toggle="tab" data-bs-target="#nav-objetivos" type="button" role="tab" aria-controls="nav-objetivos" aria-selected="false">Objetivos</button>

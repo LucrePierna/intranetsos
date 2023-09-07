@@ -15,8 +15,8 @@ export default function Instructivo() {
   })
 
   return (
-    <div className='d-flex align-items-start flex-colum bg-secondary rounded justify-content-center mx-auto h-50 w-50 mt-5 ' >
-      <nav className='d-flex align-items-start flex-colum'>
+    <div className='conteinerNav mt-5 ' >
+      <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="true">Inicial</button>
           <button className="nav-link custom" id="nav-asigyprest-tab" data-bs-toggle="tab" data-bs-target="#nav-asigyprest" type="button" role="tab" aria-controls="nav-asigyprest" aria-selected="false"> Asignación y Prestador</button>
