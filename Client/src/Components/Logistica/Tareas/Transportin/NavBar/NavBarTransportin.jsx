@@ -15,7 +15,7 @@ export default function NavBarTransportin() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
         <ul className="nav nav-tabs just">
               <li className="nav-item">
                 <button

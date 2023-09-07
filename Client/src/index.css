@@ -22,9 +22,11 @@ conteiner-flujograma{
 
 
 .nav-link.custom {
+  width: 150px;
   color: #333;
   background-color: #fff;
   border: 1px solid #ccc;
+  transition: none;
 }
 
 
@@ -51,6 +53,7 @@ conteiner-flujograma{
   color: #ffffff !important; 
   background-color: rgb(197, 57, 57) !important;
   border-color: #ffffff !important;
+  transition: none;
 }
 
 .nav-link.sub:hover {
@@ -58,3 +61,4 @@ conteiner-flujograma{
   background-color: rgb(108, 5, 5);
   border-color: red;
 }
+
