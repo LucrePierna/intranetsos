@@ -10,6 +10,7 @@ import NavBarTdc from "./Components/Logistica/Tareas/TDC/NavBar/NavBarTdc";
 import NavBarViajero from "./Components/Logistica/Tareas/Viajeros/NavBar/NavBarViajero";
 import NavBarTP from "./Components/Logistica/Tareas/TerminalesYPesados/NavBar/NavBarTP";
 import NavBarExtranjero from "./Components/Logistica/Tareas/Extranjero/NavBar/NavBarExtranjero";
+import NavBarContencion from "./Components/Logistica/Tareas/Contencion/NavBar/NavBarContencion"
 import Landing from "./Components/Landing/Landing";
 import Footer from './Components/Footer/Footer';
 
@@ -31,7 +32,7 @@ function App() {
           <Route path='/logistica/viajeros' element={<NavBarViajero />} />
           <Route path='/logistica/terminalypesado' element={<NavBarTP />} />
           <Route path='/logistica/extranjero' element={<NavBarExtranjero />} />
-
+          <Route path='/logistica/contencion' element={<NavBarContencion />} />
         </Routes>
         {/* <Footer/> */}
       
