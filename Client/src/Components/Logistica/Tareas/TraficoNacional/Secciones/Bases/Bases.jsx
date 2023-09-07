@@ -19,8 +19,8 @@ export default function Procedimientos() {
 
 
   return (
-    <div className='d-flex align-items-start bg-secondary rounded flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
-      <nav className='d-flex align-items-start flex-colum'>
+    <div className='conteinerNav mt-5'>
+      <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button class="nav-link custom active" id="nav-bahia-tab" data-bs-toggle="tab" data-bs-target="#nav-bahia" type="button" role="tab" aria-controls="nav-bahia" aria-selected="true">Bahia Blanca</button>
           <button class="nav-link custom" id="nav-costa-tab" data-bs-toggle="tab" data-bs-target="#nav-costa" type="button" role="tab" aria-controls="nav-costa" aria-selected="false">Costa</button>
@@ -33,7 +33,7 @@ export default function Procedimientos() {
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-bahia" role="tabpanel" aria-labelledby="nav-bahia-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs justify-content-centerr" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgznbb-tab" data-bs-toggle="tab" data-bs-target="#nav-orgznbb" type="button" role="tab" aria-controls="nav-orgznbb" aria-selected="true">Organización de la Zona</button>
               <button class="nav-link sub" id="nav-consultabb-tab" data-bs-toggle="tab" data-bs-target="#nav-consultabb" type="button" role="tab" aria-controls="nav-consultabb" aria-selected="false">Consideraciones Generales</button>
               <button class="nav-link sub" id="nav-inducbb-tab" data-bs-toggle="tab" data-bs-target="#nav-inducbb" type="button" role="tab" aria-controls="nav-inducbb" aria-selected="false">Zona de Induccion</button>
@@ -41,11 +41,11 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3" id="nav-orgznbb" role="tabpanel" aria-labelledby="nav-orgznbb-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="nav-orgznbb" role="tabpanel" aria-labelledby="nav-orgznbb-tab" tabindex="0">
               <p>Bahía Blanca locales <br></br>
                 Bahía Blanca interior (este, oeste, norte y sur)  </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-consultabb" role="tabpanel" aria-labelledby="nav-consultabb-tab" tabindex="0">
+            <div class="tab-pane fade" id="nav-consultabb" role="tabpanel" aria-labelledby="nav-consultabb-tab" tabindex="0">
               <p>Tener en cuenta que para aquellos servicios con kilómetros primero se debe consultar a los prestadores eventuales de la zona.
                 <li>Por instrucción del Área de Prestadores la Base 11679 - Giberti Omar tiene prioridad para los servicios con kilómetros, sobre los otros móviles de Bahía. El móvil 705 solo realiza traslados de este tipo, mientras que el 706 también realiza estos servicios, pero dentro de la provincia, ya que no tiene habilitado el permiso para salir.</li>
                 <li>Tener en cuenta que el móvil 1095 correspondiente a la Base 13077 - Briseña Matias, actualmente sale de la localidad de Punta Alta.</li>
@@ -54,10 +54,10 @@ export default function Procedimientos() {
                 <li>No todos los móviles pueden dirigirse a la zona de Tornquist, debido a las exigencias de la caminera.</li>
               </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-inducbb" role="tabpanel" aria-labelledby="nav-inducbb-tab" tabindex="0">
+            <div class="tab-pane fade" id="nav-inducbb" role="tabpanel" aria-labelledby="nav-inducbb-tab" tabindex="0">
               <p>Con respecto a las inducciones a mecánica, deberán realizarse dentro de la ciudad de Bahía Blanca.</p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-dificilbb" role="tabpanel" aria-labelledby="nav-dificilbb-tab" tabindex="0">
+            <div class="tab-pane fade" id="nav-dificilbb" role="tabpanel" aria-labelledby="nav-dificilbb-tab" tabindex="0">
               <p>A continuación, se mencionan las zonas a las cuales no se ingresa, ni cobrando adicional, en estos casos el cliente debe sacarlo por sus medios: </p>
               <li>Laguna de chasco   </li>
               <li>Campos o estancias en la zona de Cabildo – Paso Mayor – Estomba – Ruta 72: El Faro / Gil   </li>
