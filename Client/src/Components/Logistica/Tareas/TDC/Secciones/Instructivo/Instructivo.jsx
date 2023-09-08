@@ -11,6 +11,7 @@ export default function Instructivo() {
       tabTrigger.show()
     })
   })
+  
   return (
     <div className='conteinerNav mt-5 ' >
       <nav className='navConteiner'>
@@ -165,7 +166,6 @@ export default function Instructivo() {
           </div>
 
         </div>
-
       </div>
     </div>
   )
