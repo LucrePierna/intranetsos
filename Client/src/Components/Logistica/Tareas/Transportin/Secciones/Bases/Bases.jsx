@@ -10,7 +10,7 @@ export default function Planilla() {
       {<img className='img' src={ImgPlanilla} alt="planilla" />}
       <div className='d-grid g-col-2 gap-1 col-2 '>
         <a href="https://redsos-my.sharepoint.com/:x:/r/personal/lugomez_redsos_com_ar/Documents/PRESTADORES%20TRANSPORTIN.xlsx?d=w278b4127b8954618aa1b2f6ee37a1d0f&csf=1&web=1&e=ogxaMj" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="btn btn-light">Bases de Guarda Transportin</button>
+          <button type="button" class="btn btn-danger mt-3">Bases de Guarda Transportin</button>
         </a>
       </div>
     </div>

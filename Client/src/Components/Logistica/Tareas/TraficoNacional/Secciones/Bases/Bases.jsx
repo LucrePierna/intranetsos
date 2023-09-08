@@ -74,8 +74,7 @@ export default function Procedimientos() {
         <div class="tab-pane fade" id="nav-costa" role="tabpanel" aria-labelledby="nav-costa-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link sub active" id="nav-orgzncosta-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncosta" type="button" role="tab" aria-controls="nav-orgzncosta" aria-selected="true">Subdivision de la Zona</button>
-              <button class="nav-link sub" id="nav-automaticosta-tab" data-bs-toggle="tab" data-bs-target="#nav-automaticosta" type="button" role="tab" aria-controls="nav-automaticosta" aria-selected="false">Zona en Automatico</button>
+              <button class="nav-link sub active" id="nav-orgzncosta-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncosta" type="button" role="tab" aria-controls="nav-orgzncosta" aria-selected="true">Organización de la Zona</button>
               <button class="nav-link sub" id="nav-induccosta-tab" data-bs-toggle="tab" data-bs-target="#nav-induccosta" type="button" role="tab" aria-controls="nav-induccosta" aria-selected="false">Zonas de Inducción</button>
               <button class="nav-link sub" id="nav-particularidadcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-particularidadcosta" type="button" role="tab" aria-controls="nav-particularidadcosta" aria-selected="false">Particularidades del Tráfico</button>
               <button class="nav-link sub" id="nav-dificilcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilcosta" type="button" role="tab" aria-controls="nav-dificilcosta" aria-selected="false">Zonas de Dificil Acceso</button>
@@ -83,13 +82,13 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orgzncosta" role="tabpanel" aria-labelledby="nav-orgzncosta-tab" tabindex="0">
+              <h5>Subdivision de la Zona</h5>
               <ul className='text-start'>
                 <li>Ruta 2 Sur (R2S)</li>
                 <li>Costa atlántica (CA)</li>
                 <li>Ruta 2 Norte (R2N)</li>
               </ul>
-            </div>
-            <div class="tab-pane fade" id="nav-automaticosta" role="tabpanel" aria-labelledby="nav-automaticosta-tab" tabindex="0">
+              <h5>Zona en Automatico</h5>
               <p>Dentro de las posibilidades, se trabajarán los servicios de la ciudad de Mar del Plata de manera automática.   </p>
             </div>
             <div class="tab-pane fade" id="nav-induccosta" role="tabpanel" aria-labelledby="nav-induccosta-tab" tabindex="0">
@@ -109,46 +108,48 @@ export default function Procedimientos() {
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgzncuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncuyo" type="button" role="tab" aria-controls="nav-orgzncuyo" aria-selected="true">Organización de la Base</button>
-              <button class="nav-link sub" id="nav-automaticuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-automaticuyo" type="button" role="tab" aria-controls="nav-automaticuyo" aria-selected="false">Zonas en Automatico</button>
-              <button class="nav-link sub" id="nav-induccuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-induccuyo" type="button" role="tab" aria-controls="nav-induccuyo" aria-selected="false">Zonas de Inducción</button>
               <button class="nav-link sub" id="nav-particmza-tab" data-bs-toggle="tab" data-bs-target="#nav-particmza" type="button" role="tab" aria-controls="nav-particmza" aria-selected="false">Particularidades en Mendoza</button>
               <button class="nav-link sub" id="nav-particsj-tab" data-bs-toggle="tab" data-bs-target="#nav-particsj" type="button" role="tab" aria-controls="nav-particsj" aria-selected="false">Particularidades en San Juan</button>
               <button class="nav-link sub" id="nav-fronterizocuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-fronterizocuyo" type="button" role="tab" aria-controls="nav-fronterizocuyo" aria-selected="false">Pasos Fronterizos</button>
-              <button class="nav-link sub" id="nav-dificilcuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilcuyo" type="button" role="tab" aria-controls="nav-dificilcuyo" aria-selected="false">Zonas de Dificil Acceso</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orgzncuyo" role="tabpanel" aria-labelledby="nav-orgzncuyo-tab" tabindex="0">
               <p>
-                En caso de haber más de un colaborador, se recomienda subdividir por zonas
-                <h5>Mendoza:  </h5>
-                Tener en cuenta las siguientes regiones:
-                <li>GRAN MENDOZA: CDAD DE MZA (MZA) – GODOY CRUZ (GCZ) – GUAYMALLEN (GYN) – LAS HERAS (LHS) – MAIPU (MPU) – LAVALLE (LAV) – LUJAN DE CUYO (LDC1)  </li>
-                <li>ZONA ESTE: SAN MARTIN – RIVADAVIA – JUNIN – SANTA ROSA – LA DORMIDA – LA PAZ  </li>
-                <li>VALLE DE UCO: TUNUYAN – TUPUNGATO – SAN CARLOS  </li>
-                <li>ZONA SUR: SAN RAFAEL (SRL 1/SRL2/SRL3) – GRAL ALVEAR – MALARGUE  </li><br></br>
-                <h5>San Juan: </h5>
+                En caso de haber más de un colaborador, se recomienda subdividir por zonas<p><br />
+                  <h5>Mendoza</h5>
+                  <p>Tener en cuenta las siguientes regiones:</p>
+                  <ul>
+                    <li>GRAN MENDOZA: CDAD DE MZA (MZA) – GODOY CRUZ (GCZ) – GUAYMALLEN (GYN) – LAS HERAS (LHS) – MAIPU (MPU) – LAVALLE (LAV) – LUJAN DE CUYO (LDC1)  </li>
+                    <li>ZONA ESTE: SAN MARTIN – RIVADAVIA – JUNIN – SANTA ROSA – LA DORMIDA – LA PAZ  </li>
+                    <li>VALLE DE UCO: TUNUYAN – TUPUNGATO – SAN CARLOS  </li>
+                    <li>ZONA SUR: SAN RAFAEL (SRL 1/SRL2/SRL3) – GRAL ALVEAR – MALARGUE  </li><br />
+                    <h5>Zonas en Automatico</h5>
+                  </ul>
+                  Actualmente se utiliza en automático la zona de Gran Mendoza. Fuera de esta región se usa en aquellos casos donde el móvil este cercano y sea detectado por el SAAM para la asignación. Las demás derivaciones se hacen de manera manual.<br></br>
+                  También puede utilizarse en automático la zona de San Rafael, siempre que la disponibilidad lo permita.<br></br>
+                  Por el momento, San Juan se trabaja de manera manual.
+                </p>
+                <h5>San Juan</h5>
                 (SJ1 - SJ2 - SJ3)
               </p>
             </div>
-            <div class="tab-pane fade" id="nav-automaticuyo" role="tabpanel" aria-labelledby="nav-automaticuyo-tab" tabindex="0">
-              <p>
-                Actualmente se utiliza en automático la zona de Gran Mendoza. Fuera de esta región se usa en aquellos casos donde el móvil este cercano y sea detectado por el SAAM para la asignación. Las demás derivaciones se hacen de manera manual.<br></br>
-                También puede utilizarse en automático la zona de San Rafael, siempre que la disponibilidad lo permita.<br></br>
-                Por el momento, San Juan se trabaja de manera manual.
-              </p>
-            </div>
-            <div class="tab-pane fade" id="nav-induccuyo" role="tabpanel" aria-labelledby="nav-induccuyo-tab" tabindex="0">
+            <div class="tab-pane fade" id="nav-particmza" role="tabpanel" aria-labelledby="nav-particmza-tab" tabindex="0">
+              <ul>
+                <li>La prioridad para servicios en Gran Mendoza la tienen los móviles contratados fijos y en segundo lugar los móviles propios. De acuerdo a la disponibilidad, se consultará con las bases eventuales.</li>
+                <li>Desde Potrerillos hasta el paso internacional Cristo Redentor se considera zona de alta montaña.</li>
+                <li>Se prioriza hacer los servicios con kilómetros con móviles propios.</li>
+                <li>Los servicios locales programados se coordinan con la disponibilidad del momento, pero aquellos que sean con kilómetros deben quedar coordinados desde el turno anterior.</li>
+                <li>En cuanto a los servicios en zona este, primero consultar con los prestadores eventuales de la zona. En caso de no contar con disponibilidad o que las demoras sean elevadas, se podrá utilizar un móvil de Mendoza siempre que no afecte las demoras de la zona.</li>
+              </ul>
+              <h5>Zonas de Inducción</h5>
               <p>
                 Se realizarán las inducciones a mecánica en la zona de Gran Mendoza.
               </p>
-            </div>
-            <div class="tab-pane fade" id="nav-particmza" role="tabpanel" aria-labelledby="nav-particmza-tab" tabindex="0">
-              <li>La prioridad para servicios en Gran Mendoza la tienen los móviles contratados fijos y en segundo lugar los móviles propios. De acuerdo a la disponibilidad, se consultará con las bases eventuales.</li>
-              <li>Desde Potrerillos hasta el paso internacional Cristo Redentor se considera zona de alta montaña.</li>
-              <li>Se prioriza hacer los servicios con kilómetros con móviles propios.</li>
-              <li>Los servicios locales programados se coordinan con la disponibilidad del momento, pero aquellos que sean con kilómetros deben quedar coordinados desde el turno anterior.</li>
-              <li>En cuanto a los servicios en zona este, primero consultar con los prestadores eventuales de la zona. En caso de no contar con disponibilidad o que las demoras sean elevadas, se podrá utilizar un móvil de Mendoza siempre que no afecte las demoras de la zona.</li>
+              <h5>Zonas de Dificil Acceso</h5>
+              <p>
+                Tener en cuenta que hay caminos hacia el sur de la provincia de Mendoza que son considerados de difícil acceso, en algunas ocasiones ingresan cobrando, pero en otras directamente no ingresan. Consultar previamente con los prestadores de la zona.
+              </p>
             </div>
             <div class="tab-pane fade" id="nav-particsj" role="tabpanel" aria-labelledby="nav-particsj-tab" tabindex="0">
               <li>Para las mecánicas y los traslados locales en San Juan (Ciudad de San Juan, Villa Krause, Rivadavia, Sta. Lucia, Chimbas) tiene la prioridad la Base 8015 – Martínez.</li>
@@ -161,11 +162,6 @@ export default function Procedimientos() {
                 Para aquellos servicios que tengan su origen en Chile o en el paso fronterizo Cristo Redentor, hay prestadores que lo realizan. Algunos llegan a la aduana argentina o a la chilena, desentendiendo el caso.
                 <br></br>
                 En caso de haber costos extras por los gastos aduaneros o por esperar la realización de determinados tramites, serán informados por los encargados de las bases.
-              </p>
-            </div>
-            <div class="tab-pane fade" id="nav-dificilcuyo" role="tabpanel" aria-labelledby="nav-dificilcuyo-tab" tabindex="0">
-              <p>
-                Tener en cuenta que hay caminos hacia el sur de la provincia de Mendoza que son considerados de difícil acceso, en algunas ocasiones ingresan cobrando, pero en otras directamente no ingresan. Consultar previamente con los prestadores de la zona.
               </p>
             </div>
           </div>
@@ -249,10 +245,10 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-divpat" role="tabpanel" aria-labelledby="nav-divpat-tab" tabindex="0">
-              <p>
-                <li>Neuquén:  Aquellos que se encuentran en Neuquén, Cipolletti, Rincón de los Sauces, Añelo, Plotter, Centenario, General Roca, Villa Regina, Huego, Zapala, Plaza Huincul, Cutral Co, Choele Choel, San Martin de los Andes, Junín de los Andes y demás ciudades aledañas. (NQN1 - NQN2 – NQN3 – NQN4 - RN1)  </li>
-                <li>Rio Negro: Servicios que se encuentren en Bariloche, Villa la Angostura, El Bolsón, Epuyen. (RN2 RN3 SCB1 SCB2)  </li>
-              </p>
+              <h5>Neuquén</h5>
+              <p>Neuquén, Cipolletti, Rincón de los Sauces, Añelo, Plotter, Centenario, General Roca, Villa Regina, Huego, Zapala, Plaza Huincul, Cutral Co, Choele Choel, San Martin de los Andes, Junín de los Andes y demás ciudades aledañas. (NQN1 - NQN2 – NQN3 – NQN4 - RN1) </p>
+              <h5>Rio Negro</h5>
+              <p>Bariloche, Villa la Angostura, El Bolsón, Epuyen. (RN2 RN3 SCB1 SCB2)  </p>
             </div>
             <div class="tab-pane fade" id="nav-autopat" role="tabpanel" aria-labelledby="nav-autopat-tab" tabindex="0">
               <p>
@@ -300,27 +296,31 @@ export default function Procedimientos() {
             <div class="tab-pane fade show active" id="nav-orgznstafe" role="tabpanel" aria-labelledby="nav-orgznstafe-tab" tabindex="0">
               <p>
                 El tráfico de Santa Fe se subdivide de la siguiente manera:
+              </p>
+              <ul className='mt-3'>
                 <li>Sta. Fe locales (tanto para los servicios que están dentro de la Ciudad de Sta. Fe, como así también aquellos que se encuentren en Monte Vera, Recreo, Sto. Tome, Sauce Viejo)  </li>
                 <li>Sta. fe interior (demás localidades)  </li>
-              </p>
+              </ul>
             </div>
             <div class="tab-pane fade" id="nav-automatistafe" role="tabpanel" aria-labelledby="nav-automatistafe-tab" tabindex="0">
               <p>
                 La zona cuenta con algunos móviles con GAP, se recomienda utilizar el automático para preasignarlos dentro de la ciudad de Sta. Fe y zonas aledañas.
-                <br></br>
+                <br />
                 En los demás casos se deberán asignar y derivar de manera manual.
               </p>
             </div>
             <div class="tab-pane fade" id="nav-particstafe" role="tabpanel" aria-labelledby="nav-particstafe-tab" tabindex="0">
-              <li>Para servicios con kilómetros se recomienda consultar con el móvil 15106 correspondiente a la Base de Martínez, ya que es el móvil que tiene prioridad para estos traslados.   </li>
-              <li>Se solicita alta prioridad para las mecánicas al móvil 1519 correspondiente a la base  </li>
-              <li>Los prestadores de zonas aledañas como Monte Vera, Recreo, Sto Tome, Sauce Viejo, Calchines, entre otras, realizan servicios locales en la Ciudad de Santa Fe.  </li>
-              <li>El móvil 1065 se da de alta en Esperanza, tenerlo en cuenta para los servicios que tengan este origen.  </li>
+              <ul className='mt-3'>
+                <li>Para servicios con kilómetros se recomienda consultar con el móvil 15106 correspondiente a la Base de Martínez, ya que es el móvil que tiene prioridad para estos traslados.   </li>
+                <li>Se solicita alta prioridad para las mecánicas al móvil 1519 correspondiente a la base  </li>
+                <li>Los prestadores de zonas aledañas como Monte Vera, Recreo, Sto Tome, Sauce Viejo, Calchines, entre otras, realizan servicios locales en la Ciudad de Santa Fe.  </li>
+                <li>El móvil 1065 se da de alta en Esperanza, tenerlo en cuenta para los servicios que tengan este origen.  </li>
+              </ul>
             </div>
             <div class="tab-pane fade" id="nav-interstafe" role="tabpanel" aria-labelledby="nav-interstafe-tab" tabindex="0">
               <p>
                 Aquellos traslados cuyo origen o destino se encuentre en Paraná en primera instancia deberán ser consultados con las bases de esa localidad.
-                <br></br>
+                <br />
                 En caso de no contar con disponibilidad o que las demoras sean elevadas, se recomienda consultar con el prestador de Sta. Rosa de Calchines o con el prestador de la Base de Badaracco; ya que son los únicos de tráfico que realizan el cruce.
               </p>
             </div>

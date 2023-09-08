@@ -23,7 +23,7 @@ export default function TareasEspeciales() {
                 </div>
             </nav>
             <div className="tab-content px-3 " id="nav-tabContent">
-                <div className="tab-pane fade show active" id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
+                <div className="tab-pane fade show active px-3 mt-3" id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
                     <p>Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
                     <h5>Tipo de coberturas</h5>
                     <ul className='text-start'>
@@ -39,7 +39,7 @@ export default function TareasEspeciales() {
                     <h5>CERRAJERÍA, con necesidad de traslado. </h5>
                     <p>Estos casos se dan cuando el cliente perdió las llaves del vehículo, por lo cual, a pesar de hacer la apertura, también va a requerir traslado. O en caso de no poder efectuarse la apertura del vehículo.</p>
                 </div>
-                <div className="tab-pane fade" id="nav-extraccion" role="tabpanel" aria-labelledby="nav-extraccion-tab" tabindex="0">
+                <div className="tab-pane fade px-3 mt-3" id="nav-extraccion" role="tabpanel" aria-labelledby="nav-extraccion-tab" tabindex="0">
                     <p>Es una de las asistencias especiales que se brindan cuando el cliente solicita un servicio cuyo vehículo se encuentre atascado, dado vuelta o de costado. El prestador deba realizar maniobras y dejarlo en condiciones de ser trasladado o de volver a rodar por sus medios.</p>
                     <ul className='text-start'>El operador deberá en primera instancia validar si según la cobertura el cliente posee el servicio. Luego se deberá corroborar:
                         <li >Descripción del hecho.</li>
@@ -51,7 +51,7 @@ export default function TareasEspeciales() {
                     <li>Recordar que en este caso siempre firma conformidad de arrastre sin excepción</li>
                     <li>No indicar de antemano a prestador tope de cliente.</li>
                 </div>
-                <div className="tab-pane fade" id="nav-cristales" role="tabpanel" aria-labelledby="nav-cristales-tab" tabindex="0">
+                <div className="tab-pane fade px-3 mt-3" id="nav-cristales" role="tabpanel" aria-labelledby="nav-cristales-tab" tabindex="0">
                     <p>Es un servicio especial que consiste en el grabado de los caracteres que componen la patente, en los cristales del vehículo. El Operador deberá corroborar si según grilla el cuenta con el servicio y su cobertura. La operatoria varía según la ubicación. </p>
                     <ul className='text-start'>Capital Federal y Gran Buenos Aires, el cliente deberá contactarse con nuestro prestador para pedir turno. Si el cliente rechaza realizar el servicio con alguno de nuestros prestadores se brindará el servicio por reintegro.
                         <li>Ag 10643	Station	Capital Federal	Warnes 999 (Villa Crespo)	011 48554442 / 011 48580222 / 011 48578858</li>
@@ -66,13 +66,13 @@ export default function TareasEspeciales() {
                     <li>Teléfonos para pedir turnos</li>
                     <li>Código del servicio</li>
                 </div>
-                <div className="tab-pane fade" id="nav-guardavhc" role="tabpanel" aria-labelledby="nav-guardavhc-tab" tabIndex="0">
+                <div className="tab-pane fade px-3 mt-3" id="nav-guardavhc" role="tabpanel" aria-labelledby="nav-guardavhc-tab" tabIndex="0">
                     <h1>Guarda de Vehículos</h1>
                 </div>
 
                 <div className="tab-pane fade" id="nav-intransitable" role="tabpanel" aria-labelledby="nav-intransitable-tab" tabIndex="0">
                     <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                             <button class="nav-link sub active" id="nav-camintransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-camintransitable" type="button" role="tab" aria-controls="nav-camintransitable" aria-selected="true">Caminos Intransitables</button>
                             <button class="nav-link sub" id="nav-infcliente-tab" data-bs-toggle="tab" data-bs-target="#nav-infcliente" type="button" role="tab" aria-controls="nav-infcliente" aria-selected="false">Información al Cliente</button>
                             <button class="nav-link sub" id="nav-posibprest-tab" data-bs-toggle="tab" data-bs-target="#nav-posibprest" type="button" role="tab" aria-controls="nav-posibprest" aria-selected="false">Posibilidades de Prestador</button>
@@ -80,7 +80,7 @@ export default function TareasEspeciales() {
                         </div>
                     </nav>
                     <div class="tab-content mt-5" id="nav-tabContent">
-                        <div class="tab-pane fade show active " id="nav-camintransitable" role="tabpanel" aria-labelledby="nav-camintransitable-tab" tabindex="0">
+                        <div className="tab-pane fade show active" id="nav-camintransitable" role="tabpanel" aria-labelledby="nav-camintransitable-tab" tabindex="0">
                             <h5>¿Qué es un camino Intransitable?</h5>
                             <p>Los mismos se encuentran marcados a través del mapa Mapsource, señalizado con verde flúor.</p>
                             <ul className='text-start'>Pueden estar compuestos por:
