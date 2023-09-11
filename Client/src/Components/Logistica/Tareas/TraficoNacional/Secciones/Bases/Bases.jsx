@@ -77,8 +77,7 @@ export default function Procedimientos() {
         <div class="tab-pane fade" id="nav-costa" role="tabpanel" aria-labelledby="nav-costa-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link sub active" id="nav-orgzncosta-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncosta" type="button" role="tab" aria-controls="nav-orgzncosta" aria-selected="true">Subdivision de la Zona</button>
-              <button class="nav-link sub" id="nav-automaticosta-tab" data-bs-toggle="tab" data-bs-target="#nav-automaticosta" type="button" role="tab" aria-controls="nav-automaticosta" aria-selected="false">Zona en Automatico</button>
+              <button class="nav-link sub active" id="nav-orgzncosta-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncosta" type="button" role="tab" aria-controls="nav-orgzncosta" aria-selected="true">Organización de la Zona</button>
               <button class="nav-link sub" id="nav-induccosta-tab" data-bs-toggle="tab" data-bs-target="#nav-induccosta" type="button" role="tab" aria-controls="nav-induccosta" aria-selected="false">Zonas de Inducción</button>
               <button class="nav-link sub" id="nav-particularidadcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-particularidadcosta" type="button" role="tab" aria-controls="nav-particularidadcosta" aria-selected="false">Particularidades del Tráfico</button>
               <button class="nav-link sub" id="nav-dificilcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilcosta" type="button" role="tab" aria-controls="nav-dificilcosta" aria-selected="false">Zonas de Dificil Acceso</button>
@@ -91,8 +90,7 @@ export default function Procedimientos() {
                 <li>Costa atlántica (CA)</li>
                 <li>Ruta 2 Norte (R2N)</li>
               </ul>
-            </div>
-            <div class="tab-pane fade" id="nav-automaticosta" role="tabpanel" aria-labelledby="nav-automaticosta-tab" tabindex="0">
+              <h5>Zona en Automatico</h5>
               <p>Dentro de las posibilidades, se trabajarán los servicios de la ciudad de Mar del Plata de manera automática.   </p>
             </div>
             <div class="tab-pane fade" id="nav-induccosta" role="tabpanel" aria-labelledby="nav-induccosta-tab" tabindex="0">
@@ -114,12 +112,9 @@ export default function Procedimientos() {
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgzncuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncuyo" type="button" role="tab" aria-controls="nav-orgzncuyo" aria-selected="true">Organización de la Base</button>
-              <button class="nav-link sub" id="nav-automaticuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-automaticuyo" type="button" role="tab" aria-controls="nav-automaticuyo" aria-selected="false">Zonas en Automatico</button>
-              <button class="nav-link sub" id="nav-induccuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-induccuyo" type="button" role="tab" aria-controls="nav-induccuyo" aria-selected="false">Zonas de Inducción</button>
               <button class="nav-link sub" id="nav-particmza-tab" data-bs-toggle="tab" data-bs-target="#nav-particmza" type="button" role="tab" aria-controls="nav-particmza" aria-selected="false">Particularidades en Mendoza</button>
               <button class="nav-link sub" id="nav-particsj-tab" data-bs-toggle="tab" data-bs-target="#nav-particsj" type="button" role="tab" aria-controls="nav-particsj" aria-selected="false">Particularidades en San Juan</button>
               <button class="nav-link sub" id="nav-fronterizocuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-fronterizocuyo" type="button" role="tab" aria-controls="nav-fronterizocuyo" aria-selected="false">Pasos Fronterizos</button>
-              <button class="nav-link sub" id="nav-dificilcuyo-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilcuyo" type="button" role="tab" aria-controls="nav-dificilcuyo" aria-selected="false">Zonas de Dificil Acceso</button>
             </div>
           </nav>
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
@@ -138,14 +133,15 @@ export default function Procedimientos() {
               </ul>
 
             </div>
-            <div class="tab-pane fade" id="nav-automaticuyo" role="tabpanel" aria-labelledby="nav-automaticuyo-tab" tabindex="0">
-              <p>
-                Actualmente se utiliza en automático la zona de Gran Mendoza. Fuera de esta región se usa en aquellos casos donde el móvil este cercano y sea detectado por el SAAM para la asignación. Las demás derivaciones se hacen de manera manual.<br></br>
-                También puede utilizarse en automático la zona de San Rafael, siempre que la disponibilidad lo permita.<br></br>
-                Por el momento, San Juan se trabaja de manera manual.
-              </p>
-            </div>
-            <div class="tab-pane fade" id="nav-induccuyo" role="tabpanel" aria-labelledby="nav-induccuyo-tab" tabindex="0">
+            <div class="tab-pane fade" id="nav-particmza" role="tabpanel" aria-labelledby="nav-particmza-tab" tabindex="0">
+              <ul>
+                <li>La prioridad para servicios en Gran Mendoza la tienen los móviles contratados fijos y en segundo lugar los móviles propios. De acuerdo a la disponibilidad, se consultará con las bases eventuales.</li>
+                <li>Desde Potrerillos hasta el paso internacional Cristo Redentor se considera zona de alta montaña.</li>
+                <li>Se prioriza hacer los servicios con kilómetros con móviles propios.</li>
+                <li>Los servicios locales programados se coordinan con la disponibilidad del momento, pero aquellos que sean con kilómetros deben quedar coordinados desde el turno anterior.</li>
+                <li>En cuanto a los servicios en zona este, primero consultar con los prestadores eventuales de la zona. En caso de no contar con disponibilidad o que las demoras sean elevadas, se podrá utilizar un móvil de Mendoza siempre que no afecte las demoras de la zona.</li>
+              </ul>
+              <h5>Zonas de Inducción</h5>
               <p>
                 Se realizarán las inducciones a mecánica en la zona de Gran Mendoza.
               </p>
@@ -172,11 +168,6 @@ export default function Procedimientos() {
                 Para aquellos servicios que tengan su origen en Chile o en el paso fronterizo Cristo Redentor, hay prestadores que lo realizan. Algunos llegan a la aduana argentina o a la chilena, desentendiendo el caso.
                 <br />
                 En caso de haber costos extras por los gastos aduaneros o por esperar la realización de determinados tramites, serán informados por los encargados de las bases.
-              </p>
-            </div>
-            <div class="tab-pane fade" id="nav-dificilcuyo" role="tabpanel" aria-labelledby="nav-dificilcuyo-tab" tabindex="0">
-              <p>
-                Tener en cuenta que hay caminos hacia el sur de la provincia de Mendoza que son considerados de difícil acceso, en algunas ocasiones ingresan cobrando, pero en otras directamente no ingresan. Consultar previamente con los prestadores de la zona.
               </p>
             </div>
           </div>

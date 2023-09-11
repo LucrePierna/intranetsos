@@ -11,11 +11,11 @@ export default function Instructivo() {
       tabTrigger.show()
     })
   })
+  
   return (
     <div className='conteinerNav mt-5 ' >
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
           <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion de la tarea</button>
           <button className="nav-link custom" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexion eficaz</button>
           <button className="nav-link custom" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Formato de registro</button>
@@ -166,7 +166,6 @@ export default function Instructivo() {
           </div>
 
         </div>
-
       </div>
     </div>
   )
