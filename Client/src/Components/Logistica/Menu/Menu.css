@@ -70,7 +70,7 @@
 
 .burger-menu .menu-options li {
   color: #fff;
-  text-align: center;
+  text-align: start;
   list-style: none;
   display: block;
   font-weight: normal;

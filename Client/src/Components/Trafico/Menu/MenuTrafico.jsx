@@ -36,7 +36,16 @@ const MenuTrafico = () => {
           </li>
           <li>
             <a
-              href="/trafico/bsaslogistica/derivacion"
+              href="/trafico/herramientas"
+              className={selectedRoute === '/trafico/herramientas' ? 'active' : ''}
+              onClick={() => handleRouteClick('/trafico/herramientas')}
+            >
+              Herramientas
+            </a>
+          </li>
+          <li>
+            <a
+              href="/trafico/bsas"
               className={selectedRoute === '/trafico/bsas' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico/bsas')}
             >
