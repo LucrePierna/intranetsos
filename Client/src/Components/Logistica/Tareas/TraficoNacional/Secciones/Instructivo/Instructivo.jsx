@@ -15,7 +15,7 @@ export default function Instructivo() {
   })
 
   return (
-    <div className='conteinerNav mt-5 ' >
+    <div className='conteinerNav mt-5' >
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="true">Inicial</button>
@@ -36,11 +36,11 @@ export default function Instructivo() {
               <button class="nav-link sub" id="nav-induccion-tab" data-bs-toggle="tab" data-bs-target="#nav-induccion" type="button" role="tab" aria-controls="nav-induccion" aria-selected="false">Inducciones</button>
             </div>
           </nav>
-          <div class="tab-content py-5 px-5" id="nav-tabContent">
+          <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orderiv" role="tabpanel" aria-labelledby="nav-orderiv-tab" tabindex="0">
               <p>
                 El Operador de Tráfico deberá analizar los servicios en pantalla para tener un panorama de la logística en su zona y poder intervenir sobre la automaticidad del sistema a fin de lograr la menor demora y la mejor distribución posible de los recursos disponibles.
-                <br></br>
+                <br />
                 El Supervisor o Back Office de turno asignará a cada Operador de Tráfico la zona sobre la cual deberá trabajar.
               </p>
             </div>
@@ -81,7 +81,7 @@ export default function Instructivo() {
               <button class="nav-link sub" id="nav-cttomovyprest-tab" data-bs-toggle="tab" data-bs-target="#nav-cttomovyprest" type="button" role="tab" aria-controls="nav-cttomovyprest" aria-selected="false">Contacto con los Móviles o Prestadores</button>
             </div>
           </nav>
-          <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active " id="nav-altbajmov" role="tabpanel" aria-labelledby="nav-altbajmov-tab" tabindex="0">
               <p>
                 Al comienzo de la tarea, el Operador de Tráfico deberá controlar la nómina de móviles enviada por Prestadores y realizar la consulta de disponibilidad con los prestadores que debieran estar trabajando y los que no se encuentran en la nómina (eventuales). De esta forma, tendrá un claro panorama de los recursos con los que cuenta para operar la base.
@@ -138,7 +138,7 @@ export default function Instructivo() {
               <button class="nav-link sub" id="nav-llgdayfin-tab" data-bs-toggle="tab" data-bs-target="#nav-llgdayfin" type="button" role="tab" aria-controls="nav-llgdayfin" aria-selected="false">Control de Llegada y Finalización del Servicio</button>
             </div>
           </nav>
-          <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-contyseg" role="tabpanel" aria-labelledby="nav-contyseg-tab" tabindex="0">
               <p>
                 El Operador de CAC durante la toma de servicio informará al cliente que se comunicarán para informarle el tiempo de demora.
@@ -164,8 +164,8 @@ export default function Instructivo() {
           </div>
 
         </div>
-        <div className="tab-pane fade " id="nav-indgral" role="tabpanel" aria-labelledby="nav-indgral-tab" tabindex="0">
-          <ul>
+        <div className="tab-pane fade text-start px-4 mt-4 " id="nav-indgral" role="tabpanel" aria-labelledby="nav-indgral-tab" tabindex="0">
+          <ul className='mt-3'>
             <li>Cuando se coordinen servicios con kilómetros que implique que el móvil salga de la zona del tráfico, se deberá intentar regresar el móvil cargado para optimizar el recurso. </li>
             <li>Cuando se presente la situación de tener varias solicitudes derivadas a un mismo prestador y no se pudieran asignar por no contar con más móviles ficticios nunca se deberá enviar el servicio a red nacional para asignarlo al prestador porque desaparece de la pantalla y peligra su falta de seguimiento y control. Los casos deberán quedar en el tráfico con la referencia correspondiente que indique qué prestador lo ha tomado, con qué demora, y asignarlo cuando se libere un ficticio.  </li>
             <li>Mientras que el sistema no permita programar, tampoco deberán quedar programados los servicios por referencias de operadores. Solo podrá programarse cuando quede con un prestador asignado o cuando se informen demoras condicionales sin horario especifico. </li>
@@ -175,7 +175,7 @@ export default function Instructivo() {
         <div className="tab-pane fade" id="nav-llgdayfin" role="tabpanel" aria-labelledby="nav-llgdayfin-tab" tabIndex="0">
 
         </div>
-        <div className="tab-pane fade" id="nav-atprest" role="tabpanel" aria-labelledby="nav-atprest-tab" tabindex="0">
+        <div className="tab-pane fade text-start px-4 mt-4" id="nav-atprest" role="tabpanel" aria-labelledby="nav-atprest-tab" tabindex="0">
           <p> Se designarán operadores para realizar la tarea de ATP, deberán loguearse con un interno especifico que se encuentre habilitado para recibir las llamadas correspondientes.
             <br />
             Entre las tareas correspondientes, se detallan las siguientes: </p>
@@ -186,7 +186,7 @@ export default function Instructivo() {
           </ul>
         </div>
 
-        <div className="tab-pane fade py-5 px-4" id="nav-inyfinturn" role="tabpanel" aria-labelledby="nav-inyfinturn-tab" tabindex="0">
+        <div className="tab-pane fade text-start px-4 mt-4" id="nav-inyfinturn" role="tabpanel" aria-labelledby="nav-inyfinturn-tab" tabindex="0">
           <p>
             Tanto al inicio como al final del día los Operadores de Tráfico deberán:</p>
           <ul className='mt-3'>

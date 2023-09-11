@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route, useLocation } from "react-router-dom";
 import MenuLogistica from './Components/Logistica/Menu/MenuLogistica';
+import MenuTrafico from './Components/Trafico/Menu/MenuTrafico'
 import NavBarHome from "./Components/Logistica/Home/NavBar/NavBarHome";
 import NavBarDerivacion from "./Components/Logistica/Tareas/Derivacion/Navbar/NavBarDerivacion";
 import NavBarTrafico from "./Components/Logistica/Tareas/TraficoNacional/NavBar/NavBarTrafico";
@@ -17,10 +18,12 @@ import Footer from './Components/Footer/Footer';
 function App() {
   const location = useLocation();
   const isLogisticaRoute = location.pathname.includes('/logistica');
+  const isTraficoRoute = location.pathname.includes('/trafico');
   return (
     <div className="App">
       
         {isLogisticaRoute && <MenuLogistica />}
+        {isTraficoRoute && <MenuTrafico />}
         <Routes>
           <Route path='/' element={<Landing />} />
           <Route path='/logistica' element={<NavBarHome />} />
