@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CalculoKms from '../Secciones/CalculoKms/CalculoKms'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import MicroStrategy from '../Secciones/MicroStrategy/MicroStrategy'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
@@ -57,18 +56,6 @@ export default function NavBarTdc() {
           </li>
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'calculokm' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('calculokm')}
-              style={{
-                color: selectedComponent === 'calculokm' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'calculokm' ? 'white' : 'initial'
-              }}
-            >
-              Calculos de Km
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
               className={`nav-link btn ${selectedComponent === 'microStrategy' ? 'active' : ''}`}
               onClick={() => handleComponentClick('microStrategy')}
               style={{
@@ -86,7 +73,6 @@ export default function NavBarTdc() {
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'instructivo' && <Instructivo />}
         {selectedComponent === 'planilla' && <Planilla />}
-        {selectedComponent === 'calculokm' && <CalculoKms />}
         {selectedComponent === 'microStrategy' && <MicroStrategy />}
 
       </div>

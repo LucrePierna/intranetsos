@@ -1,5 +1,7 @@
 import React from 'react'
 import * as bootstrap from 'bootstrap'
+import imagen1 from '../../../../Image/eficaz1.png'
+import imagen2 from '../../../../Image/eficaz2.png'
 
 export default function Instructivo() {
   const triggerTabList = document.querySelectorAll('#myTab button')
@@ -11,7 +13,7 @@ export default function Instructivo() {
       tabTrigger.show()
     })
   })
-  
+
   return (
     <div className='conteinerNav mt-5 ' >
       <nav className='navConteiner'>
@@ -33,8 +35,18 @@ export default function Instructivo() {
           </ul>
 
         </div>
-        <div className="tab-pane fade" id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
-          <h1>Conexion eficaz</h1>
+        <div className="tab-pane fade " id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
+          <div className='d-flex flex-row justify-content-evenly px-4'>
+            <div className='px-5 mt-5'>
+              <h3>1º Servicio</h3>
+              <img src={imagen1} alt="Eficaz1" height={350} width={450} />
+            </div>
+            <div className='mt-5'>
+              <h3>2º Servicio</h3>
+              <img src={imagen2} alt="Eficaz2" height={350} width={450} />
+            </div>
+          </div>
+          <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base</p>
         </div>
         <div className="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
           <h1>Formato de registro</h1>

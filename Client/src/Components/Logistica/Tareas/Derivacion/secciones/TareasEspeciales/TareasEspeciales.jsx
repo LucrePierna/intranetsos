@@ -67,9 +67,9 @@ export default function TareasEspeciales() {
                     <li>Código del servicio</li>
                 </div>
                 <div className="tab-pane fade px-3 mt-3" id="nav-guardavhc" role="tabpanel" aria-labelledby="nav-guardavhc-tab" tabIndex="0">
-                    <h1>Guarda de Vehículos</h1>
+                    <p className='mt-5'>Es la tarea que se coordina excepcionalmente para dejar en resguardo un vehículo en la base de algún prestador cuando el servicio a realizar implica que el prestador no llegue a destino en horario solicitado o por la demanda de servicios en zona se vea afectada por la falta del mismo. </p>
+<p>El operador deberá verificar con la base si cuenta con lugar para realizarlo y si la base tiene pactada la guarda en grilla (De no verlo reflejado se toma el costo de una movida local) se verifica en línea si es correcta la misma y se evalúa con un supervisor/back office si el costo es a cargo del cliente o absorbe SOS. </p>
                 </div>
-
                 <div className="tab-pane fade" id="nav-intransitable" role="tabpanel" aria-labelledby="nav-intransitable-tab" tabIndex="0">
                     <nav>
                         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
