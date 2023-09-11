@@ -12,7 +12,14 @@ import NavBarViajero from "./Components/Logistica/Tareas/Viajeros/NavBar/NavBarV
 import NavBarTP from "./Components/Logistica/Tareas/TerminalesYPesados/NavBar/NavBarTP";
 import NavBarExtranjero from "./Components/Logistica/Tareas/Extranjero/NavBar/NavBarExtranjero";
 import NavBarContencion from "./Components/Logistica/Tareas/Contencion/NavBar/NavBarContencion"
+import NavBarHTrafico from './Components/Trafico/Home/NavBar/NavBarHTrafico';
+import NavBarHerramientas from './Components/Trafico/Tareas/Herramientas/NavBar/NavBarHerramientas';
+import NavBarBsAs from './Components/Trafico/Tareas/BsAs/NavBar/NavBarBsAs';
+import NavBarMecanica from './Components/Trafico/Tareas/Mecanica/NavBar/NavBarMecanica';
+import NavBarCordoba from './Components/Trafico/Tareas/Cordoba/NavBar/NavBarCordoba'
+import NavBarRosario from './Components/Trafico/Tareas/Rosario/NavBar/NavBarRosario'
 import Landing from "./Components/Landing/Landing";
+
 import Footer from './Components/Footer/Footer';
 
 function App() {
@@ -36,6 +43,12 @@ function App() {
           <Route path='/logistica/terminalypesado' element={<NavBarTP />} />
           <Route path='/logistica/extranjero' element={<NavBarExtranjero />} />
           <Route path='/logistica/contencion' element={<NavBarContencion />} />
+          <Route path='/trafico' element={<NavBarHTrafico />} />
+          <Route path='/trafico/herramientas' element={<NavBarHerramientas />} />
+          <Route path='/trafico/bsas' element={<NavBarBsAs />} />
+          <Route path='/trafico/mecanica' element={<NavBarMecanica />} />
+          <Route path='/trafico/cordoba' element={<NavBarCordoba />} />
+          <Route path='/trafico/rosario' element={<NavBarRosario />} />
         </Routes>
         {/* <Footer/> */}
       

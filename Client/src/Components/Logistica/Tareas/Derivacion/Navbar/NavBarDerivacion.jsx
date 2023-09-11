@@ -48,7 +48,7 @@ export default function NavBarDerivacion() {
                 backgroundColor: selectedComponent === 'tareas' ? 'white' : 'initial'
               }}
             >
-              Tareas Especiales
+              Servicios Especiales
             </button>
           </li>
         </ul>
