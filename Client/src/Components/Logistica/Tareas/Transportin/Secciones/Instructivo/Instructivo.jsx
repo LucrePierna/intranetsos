@@ -17,14 +17,13 @@ export default function Instructivo() {
 
   return (
     <div className='conteinerNav mt-5  ' >
-       <nav className='navConteiner'>
+      <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion</button>
-          <button className="nav-link custom" id="nav-objetivos-tab" data-bs-toggle="tab" data-bs-target="#nav-objetivos" type="button" role="tab" aria-controls="nav-objetivos" aria-selected="false">Objetivos</button>
-          <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
           <button className="nav-link custom" id="nav-tarea-tab" data-bs-toggle="tab" data-bs-target="#nav-tarea" type="button" role="tab" aria-controls="nav-tarea" aria-selected="false">Tarea del derivador</button>
           <button className="nav-link custom" id="nav-viajero-tab" data-bs-toggle="tab" data-bs-target="#nav-viajero" type="button" role="tab" aria-controls="nav-viajero" aria-selected="false">Viajero</button>
           <button className="nav-link custom" id="nav-adicional-tab" data-bs-toggle="tab" data-bs-target="#nav-adicional" type="button" role="tab" aria-controls="nav-adicional" aria-selected="false">Adicionales</button>
+          <button className="nav-link custom" id="nav-gruat-tab" data-bs-toggle="tab" data-bs-target="#nav-gruat" type="button" role="tab" aria-controls="nav-gruat" aria-selected="false">Grúa Triple</button>
           <button className="nav-link custom" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
         </div>
       </nav>
@@ -32,15 +31,13 @@ export default function Instructivo() {
         <div className="tab-pane fade show active w-50 h-50 m-auto mt-5" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
           <p>La modalidad se brinda a todos los vehiculos que se encuentren ... El traslado se realiza para las categorias de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
 
-        </div>
-        <div className="tab-pane fade" id="nav-objetivos" role="tabpanel" aria-labelledby="nav-objetivos-tab" tabindex="0">
+          <h5>Objetivos</h5>
           <ul className='lista'>
             <li>Tener mayor disponibilidades en la zona de mayor demanda para servicios en zona.</li>
             <li>Reducir los tiempos de espera.</li>
             <li>Reducir los costos de servicios.</li>
           </ul>
-        </div>
-        <div className="tab-pane fade" id="nav-etapas" role="tabpanel" aria-labelledby="nav-etapas-tab" tabIndex="0">
+          <h5>Etapas</h5>
           <ul className='lista'>
             <li>Transportin Inicio =  Se realiza la busqueda de la unidad</li>
             <li>Transportin = Traslado de los vehiculos en el camion </li>
@@ -72,11 +69,29 @@ export default function Instructivo() {
             <li>Transferencia.</li>
           </ul>
         </div>
+        <div className="tab-pane fade" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
+          <h5>Descripción</h5>
+          <p>Grúa Tripe (móvil 1211)
+            Es la unidad propia de SOS disponible para trasladar un máximo de 3 vehículos bajo la modalidad trasportín. Tiene sus recorridos propios y se pueden generar otros de acuerdo a la demanda en la zona. Cabe destacar que el móvil no cotiza por servicios y que solo traslada vehículos de clientes de SOS.
+          </p>
+          <h5>Etapas</h5>
+          <p>Una vez recolectados los vehículos se deberá coordinar el móvil con el prestador Vasallo Base 13480 y con los datos de los vehículos a trasladar. Para ello se generará un código de manera manual con los siguientes datos:</p>
+          <ul className='text-center list-unstyled h-50 w-50 m-auto fs-5 py-4'>
+            <li>Cliente: Grúa Triple</li>
+            <li>Patente: TTT001</li>
+            <li>Radio: Servicio Privado Trasportín</li>
+            <li>Tipo de vehículo: Pesado Categoría 1</li>
+            <li>Origen: Desde donde sale el mosquito</li>
+            <li>Destino: Destino Final del mosquito</li>
+          </ul>
+          <p>En referencias de derivación: Registrar los vehículos que traslada en el trayecto.</p>
+          <p>Luego el operador deberá asignar el servicio por reintegro a base 10361 Reintegro Córdoba, pero con el cierre TRANSPORTIN ENLACE.</p>
+        </div>
         <div className="tab-pane fade" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
           <Formato />
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
