@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../EstilosGlobales/General.css'
 
+
 export default function Noticias() {
 
   return (
