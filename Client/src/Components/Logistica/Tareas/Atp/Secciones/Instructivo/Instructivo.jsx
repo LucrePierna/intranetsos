@@ -84,7 +84,7 @@ export default function Procedimientos() {
         <div className="tab-pane fade" id="nav-finturno" role="tabpanel" aria-labelledby="nav-finturno-tab" tabIndex="0">
           <h5>Transferir Chat's</h5>
           <p>Al finalizar la jornada, habiendo quedado consultas pendientes de cerrar, el operador de chattigo deberá transferir chat al operador que esté de turno dando aviso previo al mismo o a un supervisor/back office.</p>
-          <h5>Imprtante</h5>
+          <h5>Importante</h5>
           <p>Al momento de finalizar la tarea y desloguearse, asegurarse de “Finalizar sesión” y que no quede logueado el usuario, ya que continuarán ingresando chats que no serán atendidos generando demoras y posibles reclamos.</p>
         </div>
         <div className="tab-pane fade " id="nav-roads" role="tabpanel" aria-labelledby="nav-zona-tab" tabIndex="0">
