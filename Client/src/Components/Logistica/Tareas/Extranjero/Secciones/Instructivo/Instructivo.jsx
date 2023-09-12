@@ -127,7 +127,7 @@ export default function Instructivo() {
             <div class="tab-pane fade show active" id="nav-local" role="tabpanel" aria-labelledby="nav-local-tab" tabindex="0">
               <h2>Traslado local en Chile</h2>
               <h4>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h4>
-              <a href="https://www.bna.com.ar/Personas" target='_blank'><button>Verificar dólar oficial</button></a>
+              <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Verificar dólar oficial</button></a>
             </div>
             <div class="tab-pane fade" id="nav-argentina" role="tabpanel" aria-labelledby="nav-argentina-tab" tabindex="0">
               <h2>Traslado de Chile hasta Argentina</h2>
@@ -148,7 +148,9 @@ export default function Instructivo() {
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-asistencia-tab" data-bs-toggle="tab" data-bs-target="#nav-asistencia" type="button" role="tab" aria-controls="nav-asistencia" aria-selected="true">Asistencia</button>
-              <button class="nav-link sub" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Procedimiento</button>
+              <button class="nav-link sub" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Tipo de Prestaciones</button>
+              <button class="nav-link sub" id="nav-andisp-tab" data-bs-toggle="tab" data-bs-target="#nav-andisp" type="button" role="tab" aria-controls="nav-andisp" aria-selected="false">Analisis y Disponibilidad</button>
+              <button class="nav-link sub" id="nav-calculos-tab" data-bs-toggle="tab" data-bs-target="#nav-calculos" type="button" role="tab" aria-controls="nav-calculos" aria-selected="false">Calculos de Costos y Devolución</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
@@ -161,7 +163,55 @@ export default function Instructivo() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-tipos" role="tabpanel" aria-labelledby="nav-tipos-tab" tabindex="0">
-              ul
+              <h5>Dentro del territorio argentino </h5>
+              <p>El operador consultará disponibilidad con los prestadores de la zona (ver instructivo de derivación).
+                <br />
+                Calculará el costo del servicio según la información de la grilla del prestador, es decir lo que tiene pactado. </p>
+              <h5>En territorio extranjero</h5>
+              <p>El operador consultará disponibilidad con los prestadores de la zona (ver instructivo de derivación).
+                <br />
+                De acuerdo a la cotización que indique el prestador calcular el 20% y agregar a la cotización final para pasar al prestador que solicita el servicio. </p>
+            </div>
+            <div class="tab-pane fade" id="nav-andisp" role="tabpanel" aria-labelledby="nav-andisp-tab" tabindex="0">
+              <h5>Análisis</h5>
+              <p>El operador verificará que el pedido enviado por el correo tenga los datos necesarios para coordinar el servicio. Estos son:</p>
+              <ul>
+                <li>Datos del titular</li>
+                <li>Datos del vehículo</li>
+                <li>Teléfono de contacto</li>
+                <li>Cantidad de pasajeros en el vehículo</li>
+                <li>Falla (avería o siniestro)</li>
+                <li>Localización de origen y destino con precisión</li>
+              </ul>
+              <h5>Disponibilidad</h5>
+              <p>Se consultará la posibilidad de asistencia al servicio según protocolos general de la derivación.
+                <br />
+                A diferencia de los servicios normales, ante la falta de disponibilidad se podrá consultar fuera del radio de los 100 kilómetros vacíos. Los mismos entran dentro de la cotización que se va a informar al prestador extranjero.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-calculos" role="tabpanel" aria-labelledby="nav-calculos-tab" tabindex="0">
+              <h5>Cálculo de Costos</h5>
+
+              <p>Origen en Argentina
+                <br />
+                El operador deberá ver en la grilla del cliente el radio de contraprestación correspondiente en el apartado “CONTRAPRESTACION”.
+                <br />
+                Deberá sumar los kilómetros recorridos por el cliente + los KMS vacíos del prestador y restar el RADIO DEL SERVICIO.
+                <br />
+                Una vez realizado el cálculo deberá sumar la movida (PRECIO POR SERVICIO) + IVA y el FE DE GESTION U$D 80 +IVA.
+                <br />
+                CALCULO FINAL =  Movida + km excedente + fee de gestion + IVA  </p>
+
+              <p>Origen en el extranjero
+                <br />
+                Se deberá ver en el radio de contraprestación correspondiente en el apartado “SERVICIO EN EL EXTERIOR”.
+                <br />
+                Es de suma importancia ver en la grilla los costos actualizados y solicitar autorizacion de los mismos.  </p>
+
+              <h5>Devolución</h5>
+              <p>El operador deberá especificar vía mail la demora para cargar el vehículo y el costo final de la asistencia. Lugo aguardar la confirmación del pedido para así confirmar la asistencia a nuestro prestador y realizar la asignación de la base correspondiente.</p>
+
+              <h5>IMPORTANTE</h5>
+              <p>Nunca se deberá informar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
             </div>
           </div>
         </div>
