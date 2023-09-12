@@ -166,7 +166,7 @@ export default function Procedimientos() {
               <button class="nav-link sub" id="nav-mapazn-tab" data-bs-toggle="tab" data-bs-target="#nav-mapazn" type="button" role="tab" aria-controls="nav-mapazn" aria-selected="false">Mapa por Zona</button>
             </div>
           </nav>
-          <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content m-auto" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3" id="nav-derivzn" role="tabpanel" aria-labelledby="nav-derivzn-tab" tabindex="0">
               <ul className='text-start mt-4'>
                 <li>Es la operatoria que se utiliza para la coordinación de servicios cuando la demanda lo requiere y sea autorizado por el supervisor / back office de turno. El objetivo es en reducir los tiempos de espera del cliente optimizando los recursos y evitar el rellamado a las bases obteniendo información sobre la situación de cada una. </li>
@@ -180,10 +180,8 @@ export default function Procedimientos() {
               </ul>
               <h6><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h6>
             </div>
-            <div class="tab-pane fade px-3 py-5" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
-              <div >
-                <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="600" height="550"></iframe>
-              </div>
+            <div class="tab-pane fade py-5 h-50 w-50 m-auto" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
+              <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="600" height="550"></iframe>
             </div>
 
           </div>

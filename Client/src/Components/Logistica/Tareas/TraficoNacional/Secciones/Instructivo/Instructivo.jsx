@@ -26,7 +26,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-inyfinturn-tab" data-bs-toggle="tab" data-bs-target="#nav-inyfinturn" type="button" role="tab" aria-controls="nav-inyfinturn" aria-selected="false">Consideraciones de Inicio y Finalización de Turnos</button>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div className="tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center px-3" id="nav-tab" role="tablist">
@@ -51,23 +51,26 @@ export default function Instructivo() {
             </div>
             <div class="tab-pane fade" id="nav-prioricoord" role="tabpanel" aria-labelledby="nav-prioricoord-tab" tabindex="0">
               <p>
-                Tanto para los servicios de mecánica ligera como de traslado, las prioridades para la coordinación son:
+                Tanto para los servicios de mecánica ligera como de traslado, las prioridades para la coordinación son:</p>
+              <ul className='mt-2'>
                 <li>Servicios con prioridad alta (personas en riesgo, zonas peligrosas, contención, VIP);  </li>
                 <li>Terminales (vehículos de porte liviano)   </li>
                 <li>Demora estimada;   </li>
                 <li>Servicios en ruta o transito;  </li>
                 <li>Desperfecto del vehículo;  </li>
                 <li>Servicios derivados por móviles taller (derivado a otro móvil). </li>
-              </p>
-
+              </ul>
             </div>
             <div class="tab-pane fade" id="nav-induccion" role="tabpanel" aria-labelledby="nav-induccion-tab" tabindex="0">
               <p>
                 En las zonas determinadas, aquellos traslados que ingresen con diagnostico/falla eléctrica, de arranque, alternador o batería en general deberán ser sometidos al proceso de inducción a mecánica.  Consideraciones a tener en cuenta:
+              </p>
+              <ul className='mt-2'>                
                 <li>La misma será realizada por el operador de ATP a prestadores o el operador encargado de la base según disponibilidad.   </li>
                 <li>Se deberá dejar registro en la planilla de inducciones.  </li>
                 <li>En los casos correspondiente, los operadores encargados de las bases deberán aguardar que se gestione la inducción antes de derivar el servicio.   </li>
-              </p>
+              </ul>
+
             </div>
           </div>
 
@@ -108,7 +111,7 @@ export default function Instructivo() {
                 <br />
                 En ese caso, tener en cuenta lo siguiente:
               </p>
-              <ul>
+              <ul className='mt-2'>
                 <li>Algunas “Zonas” de tráficos los móviles no cuentan con sistema GAP, por lo cual la derivación es telefónica o por mensajería y los servicios se trabajan de manera manual.  </li>
                 <li>Prioridades de coordinación.  </li>
                 <li>Tipos de servicios (traslados, mecánicas y venta de baterías, relevamientos OSA, extracción).  </li>
@@ -155,7 +158,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-llgdayfin" role="tabpanel" aria-labelledby="nav-llgdayfin-tab" tabindex="0">
               <p>
                 Es responsabilidad del operador controlar llegadas cuando se cumple el tiempo informado por el móvil y luego proceder con las finalizaciones de los servicios teniendo en cuenta lo siguiente:</p>
-              <ul>
+              <ul className='mt-2'>
                 <li>Móvil con GAP: se puede ver la localización del móvil en el mapa del servicio correspondiente. Al derivarse un servicio bajo esta modalidad es el chofer quien asignara la llegada, cambiando el estado del servicio a “Llegada”. Si el móvil no pudiera efectuarlo informará al Operador de Tráfico, quien será responsable de asignarla manualmente. La misma operatoria se aplica para la finalización del servicio, debiendo utilizarse los motivos de cierre específicos para cada caso.   </li>
                 <li>Móvil Ficticio (sin geolocalización): el servicio debe controlarse de manera manual (chat o llamada), tomando como referencia la demora informada por el chofer y realizar el control cuando se cumple la misma.   </li>
                 <li>En caso de derivarse el servicio a una base con sistema antiguo, el mismo pasará a otra pantalla desde la cual deberá realizarse el seguimiento y cumplimiento de la demora estimada.   </li>

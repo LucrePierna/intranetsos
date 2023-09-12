@@ -30,7 +30,7 @@ export default function Procedimientos() {
           <button class="nav-link custom" id="nav-stafe-tab" data-bs-toggle="tab" data-bs-target="#nav-stafe" type="button" role="tab" aria-controls="nav-stafe" aria-selected="false">Santa Fe</button>
         </div>
       </nav>
-      <div class="tab-content" id="nav-tabContent">
+      <div class="tab-content text-start mt-3 m-auto px-5" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-bahia" role="tabpanel" aria-labelledby="nav-bahia-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -85,7 +85,7 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orgzncosta" role="tabpanel" aria-labelledby="nav-orgzncosta-tab" tabindex="0">
-              <ul >
+              <ul className='mt-2'>
                 <li>Ruta 2 Sur (R2S)</li>
                 <li>Costa atlántica (CA)</li>
                 <li>Ruta 2 Norte (R2N)</li>
@@ -97,7 +97,7 @@ export default function Procedimientos() {
               <p>Las inducciones para el envío de un móvil mecánico se realizarán dentro de la ciudad de Mar del Plata.</p>
             </div>
             <div class="tab-pane fade" id="nav-particularidadcosta" role="tabpanel" aria-labelledby="nav-particularidadcosta-tab" tabindex="0">
-              <ul>
+              <ul className='mt-2'>
                 <li>Los servicios correspondientes a las bases 8722 – Vicente Roberto German y 8673 – Vázquez Edgardo serán derivados directamente sin previa consulta con la demora establecida en el sistema, siempre que se encuentren dentro de la ciudad de Mar del Plata.</li>
                 <li>El prestador Vicente cuenta con móviles taller que realizan servicios de mecánica especializados y venta de batería. También realizan “fuera de cochera”, consultar siempre disponibilidad de la base para este servicio.</li>
                 <li>Con la finalidad de disminuir la demora de los traslados en Mar del Plata, se recomienda dejar los móviles con geolocalización para estos servicios, es decir dentro de un radio de 10km.   </li>
@@ -121,33 +121,33 @@ export default function Procedimientos() {
             <div class="tab-pane fade show active" id="nav-orgzncuyo" role="tabpanel" aria-labelledby="nav-orgzncuyo-tab" tabindex="0">
               <p>
                 En caso de haber más de un colaborador, se recomienda subdividir por zonas</p>
-              <h6>Mendoza:  </h6>
-              Tener en cuenta las siguientes regiones:
-              <ul>
+              <h5><u>Mendoza:</u>  </h5>
+              <p>Tener en cuenta las siguientes regiones:</p>
+              <ul className='mt-2'>
                 <li>GRAN MENDOZA: CDAD DE MZA (MZA) – GODOY CRUZ (GCZ) – GUAYMALLEN (GYN) – LAS HERAS (LHS) – MAIPU (MPU) – LAVALLE (LAV) – LUJAN DE CUYO (LDC1)  </li>
                 <li>ZONA ESTE: SAN MARTIN – RIVADAVIA – JUNIN – SANTA ROSA – LA DORMIDA – LA PAZ  </li>
                 <li>VALLE DE UCO: TUNUYAN – TUPUNGATO – SAN CARLOS  </li>
                 <li>ZONA SUR: SAN RAFAEL (SRL 1/SRL2/SRL3) – GRAL ALVEAR – MALARGUE  </li><br></br>
-                <h6>San Juan: </h6>
-                (SJ1 - SJ2 - SJ3)
               </ul>
+                <h5><u>San Juan:</u> </h5>
+                (SJ1 - SJ2 - SJ3)
 
             </div>
             <div class="tab-pane fade" id="nav-particmza" role="tabpanel" aria-labelledby="nav-particmza-tab" tabindex="0">
-              <ul>
+              <ul className='mt-2'>
                 <li>La prioridad para servicios en Gran Mendoza la tienen los móviles contratados fijos y en segundo lugar los móviles propios. De acuerdo a la disponibilidad, se consultará con las bases eventuales.</li>
                 <li>Desde Potrerillos hasta el paso internacional Cristo Redentor se considera zona de alta montaña.</li>
                 <li>Se prioriza hacer los servicios con kilómetros con móviles propios.</li>
                 <li>Los servicios locales programados se coordinan con la disponibilidad del momento, pero aquellos que sean con kilómetros deben quedar coordinados desde el turno anterior.</li>
                 <li>En cuanto a los servicios en zona este, primero consultar con los prestadores eventuales de la zona. En caso de no contar con disponibilidad o que las demoras sean elevadas, se podrá utilizar un móvil de Mendoza siempre que no afecte las demoras de la zona.</li>
               </ul>
-              <h5>Zonas de Inducción</h5>
+              <h5><u>Zonas de Inducción</u></h5>
               <p>
                 Se realizarán las inducciones a mecánica en la zona de Gran Mendoza.
               </p>
             </div>
             <div class="tab-pane fade" id="nav-particmza" role="tabpanel" aria-labelledby="nav-particmza-tab" tabindex="0">
-              <ul>
+              <ul className='mt-2'>
                 <li>La prioridad para servicios en Gran Mendoza la tienen los móviles contratados fijos y en segundo lugar los móviles propios. De acuerdo a la disponibilidad, se consultará con las bases eventuales.</li>
                 <li>Desde Potrerillos hasta el paso internacional Cristo Redentor se considera zona de alta montaña.</li>
                 <li>Se prioriza hacer los servicios con kilómetros con móviles propios.</li>
@@ -156,7 +156,7 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-particsj" role="tabpanel" aria-labelledby="nav-particsj-tab" tabindex="0">
-              <ul>
+              <ul className='mt-2'>
                 <li>Para las mecánicas y los traslados locales en San Juan (Ciudad de San Juan, Villa Krause, Rivadavia, Sta. Lucia, Chimbas) tiene la prioridad la Base 8015 – Martínez.</li>
                 <li>Desde la localidad de Talacasto hacia Jachal al norte y hacia Calingasta al oeste, se considera camino de alta montaña, de acuerdo a lo pactado en las grillas de los prestadores.</li>
                 <li>Para aquellos traslados que se debe cruzar el límite interprovincial debemos tener en cuenta que solo el prestador Base 13235 - Scardino o Base 13360 - Torres cuentan con los permisos para realizarlo.   </li>
@@ -259,7 +259,7 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-divpat" role="tabpanel" aria-labelledby="nav-divpat-tab" tabindex="0">
-              <ul>
+              <ul className='mt-2'>
                 <li>Neuquén:  Aquellos que se encuentran en Neuquén, Cipolletti, Rincón de los Sauces, Añelo, Plotter, Centenario, General Roca, Villa Regina, Huego, Zapala, Plaza Huincul, Cutral Co, Choele Choel, San Martin de los Andes, Junín de los Andes y demás ciudades aledañas. (NQN1 - NQN2 – NQN3 – NQN4 - RN1)  </li>
                 <li>Rio Negro: Servicios que se encuentren en Bariloche, Villa la Angostura, El Bolsón, Epuyen. (RN2 RN3 SCB1 SCB2)  </li>
               </ul>
@@ -279,7 +279,7 @@ export default function Procedimientos() {
               </p>
             </div>
             <div class="tab-pane fade" id="nav-particpat" role="tabpanel" aria-labelledby="nav-particpat-tab" tabindex="0">
-              <ul>
+              <ul className='mt-2'>
                 <li>Aquellos servicios que sean con gran cantidad de kilómetros y se encuentren por fuera de los centros urbanos, en lo posible se deben coordinar con prestadores eventuales evitando perder la disponibilidad de las ciudades.   </li>
                 <li>Si el servicio se encuentra en yacimientos petroleros se deberá informar dicha referencia a los prestadores, para que se indique si tiene algún costo extra por encontrarse en camino de difícil acceso. Se recomienda hacer este tipo de derivaciones con prestadores eventuales.   </li>
                 <li>Los servicios que se encuentren en la zona de 25 de Mayo o zona sur de Epuyen, dentro de lo posible, se intentara coordinar con el tráfico, ya que no cuentan con disponibilidad de prestadores desde Red Nacional.   </li>
@@ -326,7 +326,7 @@ export default function Procedimientos() {
               </p>
             </div>
             <div class="tab-pane fade" id="nav-particstafe" role="tabpanel" aria-labelledby="nav-particstafe-tab" tabindex="0">
-              <ul>
+              <ul className='mt-2'>
                 <li>Para servicios con kilómetros se recomienda consultar con el móvil 15106 correspondiente a la Base de Martínez, ya que es el móvil que tiene prioridad para estos traslados.   </li>
                 <li>Se solicita alta prioridad para las mecánicas al móvil 1519 correspondiente a la base  </li>
                 <li>Los prestadores de zonas aledañas como Monte Vera, Recreo, Sto Tome, Sauce Viejo, Calchines, entre otras, realizan servicios locales en la Ciudad de Santa Fe.  </li>

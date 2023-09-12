@@ -33,7 +33,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestacion</button>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div className="tab-content mt-3 m-auto px-5" id="nav-tabContent">
         <div className="tab-pane fade" id="nav-uruguay" role="tabpanel" aria-labelledby="nav-uruguay-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -90,13 +90,15 @@ export default function Instructivo() {
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab" tabindex="0">
-              <h3>Se debe confirmar con el cliente que el origen sea por debajo del paralelo 24. <b>Si esta por arriba del paralelo 24 no cuenta con servicio</b></h3>
-              <img src={imagenParalelo} alt="mapaParalelo24" width={450} height={350} />
+            <div class="tab-pane fade show active mt-4" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab" tabindex="0">
+              <h4>Se debe confirmar con el cliente que el origen sea por debajo del paralelo 24. <b>Si esta por arriba del paralelo 24 no cuenta con servicio</b></h4>
+              <div className='m-auto px-5 h-50 w-50 mt-5'>
+                <img src={imagenParalelo} alt="mapaParalelo24" width={450} height={350} />
+              </div>
             </div>
             <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
               <ul>
-                <h4>Puntos importantes:</h4>
+                <h5>Puntos importantes:</h5>
                 <li>Origen del servicio.</li>
                 <li>Paso fronterizo más próximo</li>
                 <li>Destino final en caso de ir hasta Argentina</li>
@@ -110,7 +112,7 @@ export default function Instructivo() {
               </ul>
             </div>
             <div class="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
-              <h3>Formato de servicio</h3>
+              <h5>Formato de servicio</h5>
               <Brasil />
             </div>
           </div>
@@ -125,20 +127,20 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-local" role="tabpanel" aria-labelledby="nav-local-tab" tabindex="0">
-              <h2>Traslado local en Chile</h2>
-              <h4>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h4>
+              <h5>Traslado local en Chile</h5>
+              <h5>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h5>
               <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Verificar dólar oficial</button></a>
             </div>
             <div class="tab-pane fade" id="nav-argentina" role="tabpanel" aria-labelledby="nav-argentina-tab" tabindex="0">
-              <h2>Traslado de Chile hasta Argentina</h2>
-              <h3><b>Tener en cuenta que los prestadores de Chile no cruzan hacia Argentina.</b> Se debe coordinar en dos partes:</h3>
-              <ul>
+              <h4>Traslado de Chile hasta Argentina</h4>
+              <h4><b>Tener en cuenta que los prestadores de Chile no cruzan hacia Argentina.</b> Se debe coordinar en dos partes:</h4>
+              <ul className='mt-3'>
                 <li>Origen en Chile hasta paso fronterizo más próximo</li>
                 <li>Desde paso frotnerizo a destino final en Argentina</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-tdfuego" role="tabpanel" aria-labelledby="nav-tdfuego-tab" tabindex="0">
-              <h2>Servicio que vienen hacia o desde Tierra del Fuego</h2>
+              <h4>Servicio que vienen hacia o desde Tierra del Fuego</h4>
               <p>Los prestadores que pueden cruzar por chile para dirigirse a Tierra del Fuego cuentan con un permiso especial y realizan trámites los cuales tienen costo y son a cargo del cliente.</p>
               <img src={imagenCostos} alt="costosDeEjemplo" height={350} width={450} />
             </div>
@@ -157,7 +159,7 @@ export default function Instructivo() {
             <div class="tab-pane fade show active" id="nav-asistencia" role="tabpanel" aria-labelledby="nav-asistencia-tab" tabindex="0">
               <h3>La contraprestaciones son servicios solicitados por nuestros prestadores del extranjero a traves de correo electronico.</h3>
               <h6>El supervisor de turno asigna el tratamienco de la rpestacion a un Operador de Logistica, quien verificara el e-mail y realiza las siguientes tares:</h6>
-              <ul>
+              <ul className='mt-3'>
                 <li>Responder el correo informando se trabajara en el pedido y se enviara novedades.</li>
                 <li>Cargar el servicio en el sistema con el radio correspondiente al pestador.</li>
               </ul>
@@ -175,7 +177,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-andisp" role="tabpanel" aria-labelledby="nav-andisp-tab" tabindex="0">
               <h5>Análisis</h5>
               <p>El operador verificará que el pedido enviado por el correo tenga los datos necesarios para coordinar el servicio. Estos son:</p>
-              <ul>
+              <ul className='mt-3'>
                 <li>Datos del titular</li>
                 <li>Datos del vehículo</li>
                 <li>Teléfono de contacto</li>
@@ -200,25 +202,18 @@ export default function Instructivo() {
                 Una vez realizado el cálculo deberá sumar la movida (PRECIO POR SERVICIO) + IVA y el FE DE GESTION U$D 80 +IVA.
                 <br />
                 CALCULO FINAL =  Movida + km excedente + fee de gestion + IVA  </p>
-
               <p>Origen en el extranjero
                 <br />
                 Se deberá ver en el radio de contraprestación correspondiente en el apartado “SERVICIO EN EL EXTERIOR”.
                 <br />
                 Es de suma importancia ver en la grilla los costos actualizados y solicitar autorizacion de los mismos.  </p>
-
               <h5>Devolución</h5>
               <p>El operador deberá especificar vía mail la demora para cargar el vehículo y el costo final de la asistencia. Lugo aguardar la confirmación del pedido para así confirmar la asistencia a nuestro prestador y realizar la asignación de la base correspondiente.</p>
-
               <h5>IMPORTANTE</h5>
               <p>Nunca se deberá informar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
             </div>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
   )
