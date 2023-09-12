@@ -25,9 +25,9 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div className="tab-content m-auto mt-3 px-5" id="nav-tabContent">
         <div className="tab-pane fade show active px-3 mt-3" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <ul className='text-start'>
+          <ul className='text-start fs-5'>
             <li>Visualización y análisis de la pantallas para la derivacion de servicios.</li>
             <li>Analizar las zonas en donde finalizan los servicios.</li>
             <li>Corroborar que sea conveniente la triangulación de los servicios</li>
@@ -52,8 +52,8 @@ export default function Instructivo() {
           <h1>Formato de registro</h1>
         </div>
         <div className="tab-pane fade px-3 mt-3" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
-          <p>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión Motivo: Cuestiones Operativas Descripción: Prestador ____ no acepta Enganche </p>
-          <ul className='text-start fs-5 mt-3'>
+          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión Motivo: Cuestiones Operativas Descripción: Prestador ____ no acepta Enganche </p>
+          <ul className='text-start fs-6 mt-3'>
             <li>Móvil roto (se averió en el transcurso del servicio inicial)</li>
             <li>Horario de taller (la demora informada no permite llegar a tiempo al taller)</li>
             <li>Demora excesiva (cuando la demora es considerablemente elevada)</li>
