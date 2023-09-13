@@ -7,7 +7,7 @@ import Planilla from '../Secciones/Planilla/Planilla'
 
 
 export default function NavBarTdc() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('instructivo');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

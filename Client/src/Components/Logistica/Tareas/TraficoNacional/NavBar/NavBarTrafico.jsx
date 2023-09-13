@@ -8,7 +8,7 @@ import Bases from '../Secciones/Bases/Bases'
 
 
 export default function NavBarTrafico() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('instructivo');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

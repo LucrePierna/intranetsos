@@ -7,7 +7,7 @@ import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Planillas from '../Secciones/Planillas/Planillas'
 
 export default function NavBarTransportin() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('instructivo');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

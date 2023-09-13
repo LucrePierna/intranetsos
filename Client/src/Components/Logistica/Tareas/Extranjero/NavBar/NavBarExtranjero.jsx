@@ -7,7 +7,7 @@ import Mapas from '../Secciones/Mapas/Mapas'
 
 
 export default function NavBarExtranjero() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('instructivo');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
