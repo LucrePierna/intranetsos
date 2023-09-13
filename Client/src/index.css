@@ -83,3 +83,12 @@ conteiner-flujograma{
   margin-left: 0;
   padding-left: 0;
 }
+
+.titleNav{
+  color: rgba(207, 206, 206, 0.515);
+  font-size: 14px;
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  padding-right: 40px;
+}

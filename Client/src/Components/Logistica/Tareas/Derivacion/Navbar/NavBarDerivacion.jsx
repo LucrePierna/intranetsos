@@ -12,7 +12,7 @@ export default function NavBarDerivacion() {
   };
 
   return (
-    <div>
+    <div >
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
         <h1 className='titleNav'>Derivación General</h1>
         <ul className="nav nav-tabs just">

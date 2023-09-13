@@ -15,6 +15,7 @@ export default function NavBarAtp() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
+        <h1 className='titleNav'>ATP</h1>
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
