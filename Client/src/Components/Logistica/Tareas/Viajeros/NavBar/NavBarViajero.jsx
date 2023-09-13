@@ -6,7 +6,7 @@ import Links from '../Secciones/Links/Links'
 import Procedimiento from '../Secciones/Procedimiento/Procedimiento'
 
 export default function NavBarViajero() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('procedimiento');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

@@ -85,7 +85,7 @@ const MenuTrafico = () => {
               className={selectedRoute === '/' ? 'active' : ''}
               onClick={() => handleRouteClick('/')}
             >
-              Exit
+              Salir
             </a>
           </li>
         </ul>

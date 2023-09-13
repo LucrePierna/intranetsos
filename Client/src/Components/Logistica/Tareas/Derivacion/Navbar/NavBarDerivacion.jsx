@@ -4,7 +4,7 @@ import Flujograma from '../secciones/Flujograma/Flujograma'
 import TareasEspeciales from '../secciones/TareasEspeciales/TareasEspeciales';
 import Procedimientos from '../secciones/Procedimientos/Procedimientos'
 export default function NavBarDerivacion() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('procedimientos');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
