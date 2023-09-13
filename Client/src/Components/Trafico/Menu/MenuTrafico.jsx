@@ -31,7 +31,7 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico')}
             >
-              Inicio
+              Menu Principal
             </a>
           </li>
           <li>
@@ -85,7 +85,7 @@ const MenuTrafico = () => {
               className={selectedRoute === '/' ? 'active' : ''}
               onClick={() => handleRouteClick('/')}
             >
-              Salir
+              Inicio
             </a>
           </li>
         </ul>
