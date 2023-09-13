@@ -29,10 +29,10 @@ export default function Procedimientos() {
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Inicial</button>
-          <button className="nav-link custom" id="nav-selecprest-tab" data-bs-toggle="tab" data-bs-target="#nav-selecprest" type="button" role="tab" aria-controls="nav-selecprest" aria-selected="false">Seleccion de prestador</button>
+          <button className="nav-link custom" id="nav-selecprest-tab" data-bs-toggle="tab" data-bs-target="#nav-selecprest" type="button" role="tab" aria-controls="nav-selecprest" aria-selected="false">Selección de prestador</button>
           <button className="nav-link custom" id="nav-tipoasig-tab" data-bs-toggle="tab" data-bs-target="#nav-tipoasig" type="button" role="tab" aria-controls="nav-contipoasigtact" aria-selected="false">Tipos de asignaciones</button>
           <button className="nav-link custom" id="nav-cierre-tab" data-bs-toggle="tab" data-bs-target="#nav-cierre" type="button" role="tab" aria-controls="nav-cierre" aria-selected="false">Cierre</button>
-          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivacion por zona</button>
+          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
         </div>
       </nav>
       <div className="tab-content px-5" id="nav-tabContent">

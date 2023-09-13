@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../../../EstilosGlobales/General.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Flujograma from '../secciones/Flujograma/Flujograma'
 import TareasEspeciales from '../secciones/TareasEspeciales/TareasEspeciales';
@@ -13,6 +14,7 @@ export default function NavBarDerivacion() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
+        <h1 className='titleNav'>Derivación General</h1>
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
