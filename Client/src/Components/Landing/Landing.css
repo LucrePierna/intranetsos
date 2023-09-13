@@ -11,18 +11,22 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 10rem;
+
 }
 
-.buttonShadow {
+.buttonShadow{
   text-shadow:
-    2px 2px 4px rgba(0, 0, 0, 1),
-    4px 4px 6px rgba(0, 0, 0, 1);
+  0px 2px 4px rgba(0, 0, 0, 1),
+  4px 4px 6px rgba(0, 0, 0, 1);
+  border: 1px solid black;
+  background-color: #cb2128 ;
+  font-size: 40px;
 }
 
 .title {
   font-size: 70px;
   text-shadow:
     2px 2px 4px rgba(0, 0, 0, 1),
-    4px 4px 6px #cb2128,
-    4px 4px 8px #cb2128;
+    4px 4px 6px #26fb00,
+    4px 4px 8px #33ff00;
 }
