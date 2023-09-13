@@ -37,9 +37,9 @@ export default function Procedimientos() {
       </nav>
       <div className="tab-content px-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <h5 className='mt-3 '>Orden de derivación</h5>
+          <h5 className='mt-3 '><u>Orden de derivación</u></h5>
           <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
-          <h5>Análisis del servicio</h5>
+          <h5><u>Análisis del servicio</u></h5>
           <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
             <table className='mt-5 mb-2'>
               <tr className='border border-dark'>
