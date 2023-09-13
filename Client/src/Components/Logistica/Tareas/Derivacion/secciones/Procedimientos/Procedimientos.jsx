@@ -141,7 +141,6 @@ export default function Procedimientos() {
               <ul className='text-start fs-6'>
                 <li>En efectivo, se recordará al cliente que debe abonarlo al chofer de la grúa antes de cargar el vehículo para su traslado.</li>
                 <li>Link de pago, el cual será generado por cada derivador, a través de Astor, solicitándole los datos que el sistema requiera.</li>
-                <li>Transferencia al prestador, previamente consultado con la base.</li>
                 <li>Pago al prestador, se podrá consultar con prestador posibilidad de realizar el cobro con tarjeta de crédito, débito o transferencia bancaria. En caso de aceptar, el prestador será responsable de coordinar el cobro contactando al cliente. Si surgiese alguna eventualidad o inconveniente en el cobro será responsable el prestador.   </li></ul>
               <h6><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h6>
             </div>
@@ -149,7 +148,13 @@ export default function Procedimientos() {
               <p className='text-start fs-6'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
                 <ul><u>El derivador deberá informar la gestión del reintegro:</u>
                   <li>Solicitar ticket o factura con validez fiscal</li>
-                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos <a href="https://tuportal.redsos.com.ar/form" target='_blank'> <button type='button' class="btn btn-danger mt-3">RedSOS</button></a></li>
+                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos
+                    <div className='m-auto p-2'>
+                      <a href="https://tuportal.redsos.com.ar/form" target='_blank'>
+                        <button type='button' className="btn btn-danger mt-3 m-auto h-50 w-20">RedSOS</button>
+                      </a>
+                    </div>
+                  </li>
                   <li>Brindar el códgio de servicio</li>
                   <li>Informar el monto de reintegro</li>
                 </ul>

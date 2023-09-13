@@ -16,18 +16,6 @@ export default function NavBarDerivacion() {
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('flujograma')}
-              style={{
-                color: selectedComponent === 'flujograma' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
-              }}
-            >
-              Flujograma
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
               className={`nav-link btn ${selectedComponent === 'procedimientos' ? 'active' : ''}`}
               onClick={() => handleComponentClick('procedimientos')}
               style={{
@@ -36,6 +24,18 @@ export default function NavBarDerivacion() {
               }}
             >
               Procedimientos
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('flujograma')}
+              style={{
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+              }}
+            >
+              Flujograma
             </button>
           </li>
 

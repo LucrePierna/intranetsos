@@ -24,7 +24,7 @@ export default function NavBarDerivacion() {
                 backgroundColor: selectedComponent === 'Procedimiento' ? 'white' : 'initial'
               }}
             >
-              Procedimiento
+              Procedimientos
             </button>
           </li>
           <li className="nav-item">
@@ -39,6 +39,7 @@ export default function NavBarDerivacion() {
               Flujograma
             </button>
           </li>
+
         </ul>
       </nav>
 
