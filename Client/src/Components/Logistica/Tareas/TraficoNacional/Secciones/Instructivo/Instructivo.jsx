@@ -23,7 +23,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-seguimiento-tab" data-bs-toggle="tab" data-bs-target="#nav-seguimiento" type="button" role="tab" aria-controls="nav-seguimiento" aria-selected="false">Seguimiento de Servicio</button>
           <button className="nav-link custom" id="nav-indgral-tab" data-bs-toggle="tab" data-bs-target="#nav-indgral" type="button" role="tab" aria-controls="nav-indgral" aria-selected="false">Indicaciones Generales</button>
           <button className="nav-link custom" id="nav-atprest-tab" data-bs-toggle="tab" data-bs-target="#nav-atprest" type="button" role="tab" aria-controls="nav-atprest" aria-selected="false">Atención a Prestadores</button>
-          <button className="nav-link custom" id="nav-inyfinturn-tab" data-bs-toggle="tab" data-bs-target="#nav-inyfinturn" type="button" role="tab" aria-controls="nav-inyfinturn" aria-selected="false">Consideraciones de Inicio y Finalización de Turnos</button>
+          <button className="nav-link custom" id="nav-inyfinturn-tab" data-bs-toggle="tab" data-bs-target="#nav-inyfinturn" type="button" role="tab" aria-controls="nav-inyfinturn" aria-selected="false">Inicio y fin de turno</button>
         </div>
       </nav>
       <div className="tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
