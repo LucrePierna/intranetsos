@@ -65,7 +65,7 @@ export default function Instructivo() {
               <p>
                 En las zonas determinadas, aquellos traslados que ingresen con diagnostico/falla eléctrica, de arranque, alternador o batería en general deberán ser sometidos al proceso de inducción a mecánica.  Consideraciones a tener en cuenta:
               </p>
-              <ul className='mt-2'>                
+              <ul className='mt-2'>
                 <li>La misma será realizada por el operador de ATP a prestadores o el operador encargado de la base según disponibilidad.   </li>
                 <li>Se deberá dejar registro en la planilla de inducciones.  </li>
                 <li>En los casos correspondiente, los operadores encargados de las bases deberán aguardar que se gestione la inducción antes de derivar el servicio.   </li>
@@ -79,9 +79,9 @@ export default function Instructivo() {
           <nav>
             <div class="nav nav-tabs justify-content-center px-3" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-altbajmov-tab" data-bs-toggle="tab" data-bs-target="#nav-altbajmov" type="button" role="tab" aria-controls="nav-altbajmov" aria-selected="true">Alta y Baja de Móviles</button>
-              <button class="nav-link sub" id="nav-prioriasig-tab" data-bs-toggle="tab" data-bs-target="#nav-prioriasig" type="button" role="tab" aria-controls="nav-prioriasig" aria-selected="false">Prioridad de Asignación</button>
-              <button class="nav-link sub" id="nav-asigautman-tab" data-bs-toggle="tab" data-bs-target="#nav-asigautman" type="button" role="tab" aria-controls="nav-asigautman" aria-selected="false">Asignación Automatica/Manual</button>
-              <button class="nav-link sub" id="nav-cttomovyprest-tab" data-bs-toggle="tab" data-bs-target="#nav-cttomovyprest" type="button" role="tab" aria-controls="nav-cttomovyprest" aria-selected="false">Contacto con los Móviles o Prestadores</button>
+              <button class="nav-link sub" id="nav-prioriasig-tab" data-bs-toggle="tab" data-bs-target="#nav-prioriasig" type="button" role="tab" aria-controls="nav-prioriasig" aria-selected="false">Prioridad</button>
+              <button class="nav-link sub" id="nav-asigautman-tab" data-bs-toggle="tab" data-bs-target="#nav-asigautman" type="button" role="tab" aria-controls="nav-asigautman" aria-selected="false">Tipo de Asignación</button>
+
             </div>
           </nav>
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
@@ -121,15 +121,6 @@ export default function Instructivo() {
               </ul>
               <br />
               <p>Siempre la prioridad es atender al cliente en la menor demora posible motivo por el cual el paso de asignación automática a manual debe fundarse solo en variables que beneficien la coordinación del servicio.</p>
-
-            </div>
-            <div class="tab-pane fade " id="nav-cttomovyprest" role="tabpanel" aria-labelledby="nav-cttomovyprest-tab" tabindex="0">
-              <p>
-                Los medios de comunicación entre los prestadores y los Operadores de Tráfico son:</p>
-              <ul className='mt-2'>
-                <li>Llamada telefónica por Mitrol;  </li>
-                <li>Servicio de mensajería habilitado. </li>
-              </ul>
 
             </div>
           </div>

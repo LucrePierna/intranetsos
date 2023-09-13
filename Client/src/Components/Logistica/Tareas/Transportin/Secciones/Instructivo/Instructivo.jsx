@@ -19,7 +19,7 @@ export default function Instructivo() {
     <div className='conteinerNav mt-5  ' >
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion</button>
+          <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripción</button>
           <button className="nav-link custom" id="nav-tarea-tab" data-bs-toggle="tab" data-bs-target="#nav-tarea" type="button" role="tab" aria-controls="nav-tarea" aria-selected="false">Tarea del derivador</button>
           <button className="nav-link custom" id="nav-viajero-tab" data-bs-toggle="tab" data-bs-target="#nav-viajero" type="button" role="tab" aria-controls="nav-viajero" aria-selected="false">Viajero</button>
           <button className="nav-link custom" id="nav-adicional-tab" data-bs-toggle="tab" data-bs-target="#nav-adicional" type="button" role="tab" aria-controls="nav-adicional" aria-selected="false">Adicionales</button>
