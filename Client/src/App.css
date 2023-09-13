@@ -1,8 +1,7 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  /* background: linear-gradient(to right, #7f8492, #aeb1b6); */
-  background-color: greenyellow;
+  background: linear-gradient(to right, #7f8492, #aeb1b6); 
   color:white;
   margin: 0;
   padding: 0;
