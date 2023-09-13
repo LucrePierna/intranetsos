@@ -17,6 +17,18 @@ export default function NavBarViajero() {
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
+              className={`nav-link btn ${selectedComponent === 'procedimiento' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('procedimiento')}
+              style={{
+                color: selectedComponent === 'procedimiento' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'procedimiento' ? 'white' : 'initial'
+              }}
+            >
+              Procedimientos
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
               className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
               onClick={() => handleComponentClick('flujograma')}
               style={{
@@ -27,18 +39,7 @@ export default function NavBarViajero() {
               Flujograma
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'procedimiento' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('procedimiento')}
-              style={{
-                color: selectedComponent === 'procedimiento' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'procedimiento' ? 'white' : 'initial'
-              }}
-            >
-              Procedimiento
-            </button>
-          </li>
+
 
           <li className="nav-item">
             <button

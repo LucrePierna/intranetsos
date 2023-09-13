@@ -19,6 +19,18 @@ export default function NavBarTdc() {
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
+              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('instructivo')}
+              style={{
+                color: selectedComponent === 'instructivo' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
+              }}
+            >
+              Procedimientos
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
               className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
               onClick={() => handleComponentClick('flujograma')}
               style={{
@@ -40,18 +52,6 @@ export default function NavBarTdc() {
               }}
             >
               Planilla
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('instructivo')}
-              style={{
-                color: selectedComponent === 'instructivo' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
-              }}
-            >
-              Instructivo
             </button>
           </li>
           <li className="nav-item">

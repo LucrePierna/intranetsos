@@ -18,14 +18,14 @@ export default function NavBarAtp() {
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('flujograma')}
+              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('instructivo')}
               style={{
-                color: selectedComponent === 'flujograma' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+                color: selectedComponent === 'instructivo' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
               }}
             >
-              Flujograma
+              Procedimientos
             </button>
           </li>
           <li className="nav-item">
@@ -52,16 +52,17 @@ export default function NavBarAtp() {
               Chattigo
             </button>
           </li>
+
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('instructivo')}
+              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('flujograma')}
               style={{
-                color: selectedComponent === 'instructivo' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
               }}
             >
-              Instructivo
+              Flujograma
             </button>
           </li>
         </ul>

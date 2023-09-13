@@ -17,18 +17,6 @@ export default function NavBarTransportin() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
         <ul className="nav nav-tabs just">
-              <li className="nav-item">
-                <button
-                  className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
-                  onClick={() => handleComponentClick('flujograma')}
-                  style={{
-                    color: selectedComponent === 'flujograma' ? 'black' : 'red',
-                    backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
-                  }}
-                >
-                  Flujograma
-                </button>
-              </li>
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
@@ -38,9 +26,22 @@ export default function NavBarTransportin() {
                 backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
               }}
             >
-              Instructivo
+              Procedimientos
             </button>
           </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('flujograma')}
+              style={{
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+              }}
+            >
+              Flujograma
+            </button>
+          </li>
+
 
           <li className="nav-item">
             <button
