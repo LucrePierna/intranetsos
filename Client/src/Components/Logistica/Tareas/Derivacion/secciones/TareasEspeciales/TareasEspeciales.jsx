@@ -15,8 +15,8 @@ export default function TareasEspeciales() {
         <div className='conteinerNav mt-5'>
             <nav className='navConteiner'>
                 <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button className="nav-link custom active" id="nav-cerrajeria-tab" data-bs-toggle="tab" data-bs-target="#nav-cerrajeria" type="button" role="tab" aria-controls="nav-cerrajeria" aria-selected="true">Cerrajeria</button>
-                    <button className="nav-link custom" id="nav-extraccion-tab" data-bs-toggle="tab" data-bs-target="#nav-extraccion" type="button" role="tab" aria-controls="nav-extraccion" aria-selected="false">Extraccion</button>
+                    <button className="nav-link custom active" id="nav-cerrajeria-tab" data-bs-toggle="tab" data-bs-target="#nav-cerrajeria" type="button" role="tab" aria-controls="nav-cerrajeria" aria-selected="true">Cerrajería</button>
+                    <button className="nav-link custom" id="nav-extraccion-tab" data-bs-toggle="tab" data-bs-target="#nav-extraccion" type="button" role="tab" aria-controls="nav-extraccion" aria-selected="false">Extracción</button>
                     <button className="nav-link custom" id="nav-cristales-tab" data-bs-toggle="tab" data-bs-target="#nav-cristales" type="button" role="tab" aria-controls="nav-cristales" aria-selected="false">Grabado de cristales</button>
                     <button className="nav-link custom" id="nav-guardavhc-tab" data-bs-toggle="tab" data-bs-target="#nav-guardavhc" type="button" role="tab" aria-controls="nav-guardavhc" aria-selected="false">Guarda de Vehículos</button>
                     <button className="nav-link custom" id="nav-intransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-intransitable" type="button" role="tab" aria-controls="nav-intransitable" aria-selected="false">Caminos Intransitables</button>
