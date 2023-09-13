@@ -12,7 +12,7 @@ export default function NavBarDerivacion() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
@@ -48,7 +48,7 @@ export default function NavBarDerivacion() {
                 backgroundColor: selectedComponent === 'tareas' ? 'white' : 'initial'
               }}
             >
-              Tareas Especiales
+              Servicios Especiales
             </button>
           </li>
         </ul>

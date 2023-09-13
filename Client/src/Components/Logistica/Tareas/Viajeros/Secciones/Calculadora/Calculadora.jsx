@@ -52,7 +52,7 @@ export default function Calculadora({ resultado }) {
   }
 
   return (
-    <div className='d-flex flex-row h-100 justify-content-center align-items-center'>
+    <div className='d-flex flex-row h-100 justify-content-center bg-secondary rounded h-50 w-70 m-auto mt-5 py-5 align-items-center'>
       <div className='d-flex px-5 mt-5 justify-content-center'>
         <Formato />
       </div>

@@ -24,21 +24,21 @@ export default function Instructivo() {
 
 
   return (
-    <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
-      <nav className='d-flex align-items-start flex-colum'>
+    <div className='conteinerNav mt-5' >
+      <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button className="nav-link" id="nav-uruguay-tab" data-bs-toggle="tab" data-bs-target="#nav-uruguay" type="button" role="tab" aria-controls="nav-uruguay" aria-selected="false">Uruguay</button>
-          <button className="nav-link" id="nav-brasil-tab" data-bs-toggle="tab" data-bs-target="#nav-brasil" type="button" role="tab" aria-controls="nav-brasil" aria-selected="false">Brasil</button>
-          <button className="nav-link" id="nav-chile-tab" data-bs-toggle="tab" data-bs-target="#nav-chile" type="button" role="tab" aria-controls="nav-chile" aria-selected="false">Chile</button>
-          <button className="nav-link" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestacion</button>
+          <button className="nav-link custom" id="nav-uruguay-tab" data-bs-toggle="tab" data-bs-target="#nav-uruguay" type="button" role="tab" aria-controls="nav-uruguay" aria-selected="false">Uruguay</button>
+          <button className="nav-link custom" id="nav-brasil-tab" data-bs-toggle="tab" data-bs-target="#nav-brasil" type="button" role="tab" aria-controls="nav-brasil" aria-selected="false">Brasil</button>
+          <button className="nav-link custom" id="nav-chile-tab" data-bs-toggle="tab" data-bs-target="#nav-chile" type="button" role="tab" aria-controls="nav-chile" aria-selected="false">Chile</button>
+          <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestacion</button>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div className="tab-content mt-3 m-auto px-5" id="nav-tabContent">
         <div className="tab-pane fade" id="nav-uruguay" role="tabpanel" aria-labelledby="nav-uruguay-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-terrestre-tab" data-bs-toggle="tab" data-bs-target="#nav-terrestre" type="button" role="tab" aria-controls="nav-terrestre" aria-selected="true">Terrestres</button>
-              <button class="nav-link" id="nav-Fluvial-tab" data-bs-toggle="tab" data-bs-target="#nav-Fluvial" type="button" role="tab" aria-controls="nav-Fluvial" aria-selected="false">Fluvial</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-terrestre-tab" data-bs-toggle="tab" data-bs-target="#nav-terrestre" type="button" role="tab" aria-controls="nav-terrestre" aria-selected="true">Terrestres</button>
+              <button class="nav-link sub" id="nav-Fluvial-tab" data-bs-toggle="tab" data-bs-target="#nav-Fluvial" type="button" role="tab" aria-controls="nav-Fluvial" aria-selected="false">Fluvial</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
@@ -83,20 +83,22 @@ export default function Instructivo() {
 
         <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-mapa-tab" data-bs-toggle="tab" data-bs-target="#nav-mapa" type="button" role="tab" aria-controls="nav-mapa" aria-selected="true">Mapa</button>
-              <button class="nav-link" id="nav-coordinacion-tab" data-bs-toggle="tab" data-bs-target="#nav-coordinacion" type="button" role="tab" aria-controls="nav-coordinacion" aria-selected="false">Coordinación de servicio</button>
-              <button class="nav-link" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato de servicio</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-mapa-tab" data-bs-toggle="tab" data-bs-target="#nav-mapa" type="button" role="tab" aria-controls="nav-mapa" aria-selected="true">Mapa</button>
+              <button class="nav-link sub" id="nav-coordinacion-tab" data-bs-toggle="tab" data-bs-target="#nav-coordinacion" type="button" role="tab" aria-controls="nav-coordinacion" aria-selected="false">Coordinación de servicio</button>
+              <button class="nav-link sub" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato de servicio</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab" tabindex="0">
-              <h3>Se debe confirmar con el cliente que el origen sea por debajo del paralelo 24. <b>Si esta por arriba del paralelo 24 no cuenta con servicio</b></h3>
-              <img src={imagenParalelo} alt="mapaParalelo24" width={450} height={350} />
+            <div class="tab-pane fade show active mt-4" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab" tabindex="0">
+              <h4>Se debe confirmar con el cliente que el origen sea por debajo del paralelo 24. <b>Si esta por arriba del paralelo 24 no cuenta con servicio</b></h4>
+              <div className='m-auto px-5 h-50 w-50 mt-5'>
+                <img src={imagenParalelo} alt="mapaParalelo24" width={450} height={350} />
+              </div>
             </div>
             <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
               <ul>
-                <h4>Puntos importantes:</h4>
+                <h5>Puntos importantes:</h5>
                 <li>Origen del servicio.</li>
                 <li>Paso fronterizo más próximo</li>
                 <li>Destino final en caso de ir hasta Argentina</li>
@@ -109,36 +111,36 @@ export default function Instructivo() {
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
             </div>
-            <div class="tab-pane fade show active" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
-              <h3>Formato de servicio</h3>
+            <div class="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+              <h5>Formato de servicio</h5>
               <Brasil />
             </div>
           </div>
         </div>
         <div className="tab-pane fade" id="nav-chile" role="tabpanel" aria-labelledby="nav-chile-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-local-tab" data-bs-toggle="tab" data-bs-target="#nav-local" type="button" role="tab" aria-controls="nav-local" aria-selected="true">Local</button>
-              <button class="nav-link" id="nav-argentina-tab" data-bs-toggle="tab" data-bs-target="#nav-argentina" type="button" role="tab" aria-controls="nav-argentina" aria-selected="false">Hasta frontera</button>
-              <button class="nav-link" id="nav-tdfuego-tab" data-bs-toggle="tab" data-bs-target="#nav-tdfuego" type="button" role="tab" aria-controls="nav-tdfuego" aria-selected="false">Tierra del fuego</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-local-tab" data-bs-toggle="tab" data-bs-target="#nav-local" type="button" role="tab" aria-controls="nav-local" aria-selected="true">Local</button>
+              <button class="nav-link sub" id="nav-argentina-tab" data-bs-toggle="tab" data-bs-target="#nav-argentina" type="button" role="tab" aria-controls="nav-argentina" aria-selected="false">Hasta frontera</button>
+              <button class="nav-link sub" id="nav-tdfuego-tab" data-bs-toggle="tab" data-bs-target="#nav-tdfuego" type="button" role="tab" aria-controls="nav-tdfuego" aria-selected="false">Tierra del fuego</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-local" role="tabpanel" aria-labelledby="nav-local-tab" tabindex="0">
-              <h2>Traslado local en Chile</h2>
-              <h4>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h4>
-              <a href="https://www.bna.com.ar/Personas" target='_blank'><button>Verificar dólar oficial</button></a>
+              <h5>Traslado local en Chile</h5>
+              <h5>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h5>
+              <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Verificar dólar oficial</button></a>
             </div>
             <div class="tab-pane fade" id="nav-argentina" role="tabpanel" aria-labelledby="nav-argentina-tab" tabindex="0">
-              <h2>Traslado de Chile hasta Argentina</h2>
-              <h3><b>Tener en cuenta que los prestadores de Chile no cruzan hacia Argentina.</b> Se debe coordinar en dos partes:</h3>
-              <ul>
+              <h4>Traslado de Chile hasta Argentina</h4>
+              <h4><b>Tener en cuenta que los prestadores de Chile no cruzan hacia Argentina.</b> Se debe coordinar en dos partes:</h4>
+              <ul className='mt-3'>
                 <li>Origen en Chile hasta paso fronterizo más próximo</li>
                 <li>Desde paso frotnerizo a destino final en Argentina</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-tdfuego" role="tabpanel" aria-labelledby="nav-tdfuego-tab" tabindex="0">
-              <h2>Servicio que vienen hacia o desde Tierra del Fuego</h2>
+              <h4>Servicio que vienen hacia o desde Tierra del Fuego</h4>
               <p>Los prestadores que pueden cruzar por chile para dirigirse a Tierra del Fuego cuentan con un permiso especial y realizan trámites los cuales tienen costo y son a cargo del cliente.</p>
               <img src={imagenCostos} alt="costosDeEjemplo" height={350} width={450} />
             </div>
@@ -146,29 +148,72 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade" id="nav-contraprestacion" role="tabpanel" aria-labelledby="nav-contraprestacion-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-asistencia-tab" data-bs-toggle="tab" data-bs-target="#nav-asistencia" type="button" role="tab" aria-controls="nav-asistencia" aria-selected="true">Asistencia</button>
-              <button class="nav-link" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Procedimiento</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-asistencia-tab" data-bs-toggle="tab" data-bs-target="#nav-asistencia" type="button" role="tab" aria-controls="nav-asistencia" aria-selected="true">Asistencia</button>
+              <button class="nav-link sub" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Tipo de Prestaciones</button>
+              <button class="nav-link sub" id="nav-andisp-tab" data-bs-toggle="tab" data-bs-target="#nav-andisp" type="button" role="tab" aria-controls="nav-andisp" aria-selected="false">Analisis y Disponibilidad</button>
+              <button class="nav-link sub" id="nav-calculos-tab" data-bs-toggle="tab" data-bs-target="#nav-calculos" type="button" role="tab" aria-controls="nav-calculos" aria-selected="false">Calculos de Costos y Devolución</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-asistencia" role="tabpanel" aria-labelledby="nav-asistencia-tab" tabindex="0">
               <h3>La contraprestaciones son servicios solicitados por nuestros prestadores del extranjero a traves de correo electronico.</h3>
               <h6>El supervisor de turno asigna el tratamienco de la rpestacion a un Operador de Logistica, quien verificara el e-mail y realiza las siguientes tares:</h6>
-              <ul>
+              <ul className='mt-3'>
                 <li>Responder el correo informando se trabajara en el pedido y se enviara novedades.</li>
                 <li>Cargar el servicio en el sistema con el radio correspondiente al pestador.</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-tipos" role="tabpanel" aria-labelledby="nav-tipos-tab" tabindex="0">
-              ul
+              <h5>Dentro del territorio argentino </h5>
+              <p>El operador consultará disponibilidad con los prestadores de la zona (ver instructivo de derivación).
+                <br />
+                Calculará el costo del servicio según la información de la grilla del prestador, es decir lo que tiene pactado. </p>
+              <h5>En territorio extranjero</h5>
+              <p>El operador consultará disponibilidad con los prestadores de la zona (ver instructivo de derivación).
+                <br />
+                De acuerdo a la cotización que indique el prestador calcular el 20% y agregar a la cotización final para pasar al prestador que solicita el servicio. </p>
+            </div>
+            <div class="tab-pane fade" id="nav-andisp" role="tabpanel" aria-labelledby="nav-andisp-tab" tabindex="0">
+              <h5>Análisis</h5>
+              <p>El operador verificará que el pedido enviado por el correo tenga los datos necesarios para coordinar el servicio. Estos son:</p>
+              <ul className='mt-3'>
+                <li>Datos del titular</li>
+                <li>Datos del vehículo</li>
+                <li>Teléfono de contacto</li>
+                <li>Cantidad de pasajeros en el vehículo</li>
+                <li>Falla (avería o siniestro)</li>
+                <li>Localización de origen y destino con precisión</li>
+              </ul>
+              <h5>Disponibilidad</h5>
+              <p>Se consultará la posibilidad de asistencia al servicio según protocolos general de la derivación.
+                <br />
+                A diferencia de los servicios normales, ante la falta de disponibilidad se podrá consultar fuera del radio de los 100 kilómetros vacíos. Los mismos entran dentro de la cotización que se va a informar al prestador extranjero.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-calculos" role="tabpanel" aria-labelledby="nav-calculos-tab" tabindex="0">
+              <h5>Cálculo de Costos</h5>
+
+              <p>Origen en Argentina
+                <br />
+                El operador deberá ver en la grilla del cliente el radio de contraprestación correspondiente en el apartado “CONTRAPRESTACION”.
+                <br />
+                Deberá sumar los kilómetros recorridos por el cliente + los KMS vacíos del prestador y restar el RADIO DEL SERVICIO.
+                <br />
+                Una vez realizado el cálculo deberá sumar la movida (PRECIO POR SERVICIO) + IVA y el FE DE GESTION U$D 80 +IVA.
+                <br />
+                CALCULO FINAL =  Movida + km excedente + fee de gestion + IVA  </p>
+              <p>Origen en el extranjero
+                <br />
+                Se deberá ver en el radio de contraprestación correspondiente en el apartado “SERVICIO EN EL EXTERIOR”.
+                <br />
+                Es de suma importancia ver en la grilla los costos actualizados y solicitar autorizacion de los mismos.  </p>
+              <h5>Devolución</h5>
+              <p>El operador deberá especificar vía mail la demora para cargar el vehículo y el costo final de la asistencia. Lugo aguardar la confirmación del pedido para así confirmar la asistencia a nuestro prestador y realizar la asignación de la base correspondiente.</p>
+              <h5>IMPORTANTE</h5>
+              <p>Nunca se deberá informar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
             </div>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
   )

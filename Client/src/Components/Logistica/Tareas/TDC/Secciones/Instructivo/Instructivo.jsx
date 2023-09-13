@@ -1,5 +1,7 @@
 import React from 'react'
 import * as bootstrap from 'bootstrap'
+import imagen1 from '../../../../Image/eficaz1.png'
+import imagen2 from '../../../../Image/eficaz2.png'
 
 export default function Instructivo() {
   const triggerTabList = document.querySelectorAll('#myTab button')
@@ -11,21 +13,21 @@ export default function Instructivo() {
       tabTrigger.show()
     })
   })
-  return (
-    <div className='d-flex align-items-start flex-colum justify-content-center mx-auto h-50 w-50 mt-5'>
-      <nav className='d-flex align-items-start flex-colum'>
-        <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-          <button className="nav-link active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion de la tarea</button>
-          <button className="nav-link" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexion eficaz</button>
-          <button className="nav-link" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Formato de registro</button>
-          <button className="nav-link" id="nav-rechazo-tab" data-bs-toggle="tab" data-bs-target="#nav-rechazo" type="button" role="tab" aria-controls="nav-rechazo" aria-selected="false">Motivos de rechazo</button>
-          <button className="nav-link" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
+  return (
+    <div className='conteinerNav mt-5 ' >
+      <nav className='navConteiner'>
+        <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion de la tarea</button>
+          <button className="nav-link custom" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexion eficaz</button>
+          <button className="nav-link custom" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Formato de registro</button>
+          <button className="nav-link custom" id="nav-rechazo-tab" data-bs-toggle="tab" data-bs-target="#nav-rechazo" type="button" role="tab" aria-controls="nav-rechazo" aria-selected="false">Motivos de rechazo</button>
+          <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div className="tab-content m-auto mt-3 px-5" id="nav-tabContent">
         <div className="tab-pane fade show active px-3 mt-3" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <ul className='text-start'>
+          <ul className='text-start fs-5'>
             <li>Visualización y análisis de la pantallas para la derivacion de servicios.</li>
             <li>Analizar las zonas en donde finalizan los servicios.</li>
             <li>Corroborar que sea conveniente la triangulación de los servicios</li>
@@ -33,15 +35,25 @@ export default function Instructivo() {
           </ul>
 
         </div>
-        <div className="tab-pane fade" id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
-          <h1>Conexion eficaz</h1>
+        <div className="tab-pane fade " id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
+          <div className='d-flex flex-row justify-content-evenly px-4'>
+            <div className='px-5 mt-5'>
+              <h3>1º Servicio</h3>
+              <img src={imagen1} alt="Eficaz1" height={350} width={450} />
+            </div>
+            <div className='mt-5'>
+              <h3>2º Servicio</h3>
+              <img src={imagen2} alt="Eficaz2" height={350} width={450} />
+            </div>
+          </div>
+          <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base</p>
         </div>
         <div className="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
           <h1>Formato de registro</h1>
         </div>
         <div className="tab-pane fade px-3 mt-3" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
-          <p>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión Motivo: Cuestiones Operativas Descripción: Prestador ____ no acepta Enganche </p>
-          <ul className='text-start fs-5 mt-3'>
+          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión Motivo: Cuestiones Operativas Descripción: Prestador ____ no acepta Enganche </p>
+          <ul className='text-start fs-6 mt-3'>
             <li>Móvil roto (se averió en el transcurso del servicio inicial)</li>
             <li>Horario de taller (la demora informada no permite llegar a tiempo al taller)</li>
             <li>Demora excesiva (cuando la demora es considerablemente elevada)</li>
@@ -55,11 +67,11 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade" id="nav-planilla" role="tabpanel" aria-labelledby="nav-planilla-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-ceficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-ceficaz" type="button" role="tab" aria-controls="nav-ceficaz" aria-selected="true">Conexión Eficaz</button>
-              <button class="nav-link" id="nav-traslzn-tab" data-bs-toggle="tab" data-bs-target="#nav-traslzn" type="button" role="tab" aria-controls="nav-traslzn" aria-selected="true">Traslados Locales/Zona</button>
-              <button class="nav-link" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexion</button>
-              <button class="nav-link" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Obervaciones</button>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-ceficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-ceficaz" type="button" role="tab" aria-controls="nav-ceficaz" aria-selected="true">Conexión Eficaz</button>
+              <button class="nav-link sub" id="nav-traslzn-tab" data-bs-toggle="tab" data-bs-target="#nav-traslzn" type="button" role="tab" aria-controls="nav-traslzn" aria-selected="true">Traslados Locales/Zona</button>
+              <button class="nav-link sub" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexion</button>
+              <button class="nav-link sub" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Obervaciones</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
@@ -166,7 +178,6 @@ export default function Instructivo() {
           </div>
 
         </div>
-
       </div>
     </div>
   )

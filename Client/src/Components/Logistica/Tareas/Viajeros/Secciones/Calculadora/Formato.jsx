@@ -1,20 +1,19 @@
-import React, { useState } from 'react'
-import {Button} from "@nextui-org/react";
+import React, { useState } from 'react';
+import { Button } from "@nextui-org/react";
 
 export default function Formato() {
     const [km, setKm] = useState('');
     const [tieneIVA, setTieneIVA] = useState(false);
-    const [tieneTope, setTieneTope] = useState(false);
     const [precio, setPrecio] = useState('');
     const [personas, setPersonas] = useState('');
     const [cobertura, setCobertura] = useState('');
     const [resultado, setResultado] = useState('');
+    const [tieneTopeDeCobertura, setTieneTopeDeCobertura] = useState(false);
+    const [esPorPersona, setEsPorPersona] = useState(false);
+    const [detalleCalculo, setDetalleCalculo] = useState('');
 
     const handleInputChange = (event) => {
-        const target = event.target;
-        const value = target.value;
-        const name = target.name;
-
+        const { name, value } = event.target;
         if (name === 'km') {
             setKm(value);
         } else if (name === 'precio') {
@@ -28,23 +27,46 @@ export default function Formato() {
 
     const calcularResultado = () => {
         let resultadoCalculado = km * precio;
+        let detalleCalculoTexto = `${km} km * $${precio}\n`;
+
         if (tieneIVA) {
             resultadoCalculado *= 1.21;
+            detalleCalculoTexto += '+ IVA';
+        } else {
+            detalleCalculoTexto += 'Sin IVA';
         }
-        if (tieneTope) {
-            resultadoCalculado -= cobertura * personas;
+
+        if (!tieneTopeDeCobertura) {
+            if (esPorPersona && personas && cobertura) {
+                resultadoCalculado -= cobertura * personas;
+                detalleCalculoTexto += `\nCobertura por persona: $${cobertura}\n`;
+                detalleCalculoTexto += `Personas: ${personas}\n`;
+            } else if (!esPorPersona && cobertura) {
+                resultadoCalculado -= cobertura;
+                detalleCalculoTexto += `\nCobertura global: $${cobertura}\n`;
+            }
         }
+
+        resultadoCalculado = Math.max(resultadoCalculado, 0);
+
         setResultado(resultadoCalculado);
+        setDetalleCalculo(detalleCalculoTexto);
     }
 
+    const handleNoTieneTopeChange = (e) => {
+        setTieneTopeDeCobertura(e.target.checked);
+        if (e.target.checked) {
+            calcularResultado();
+        }
+    }
+
+    const handleEsPorPersonaChange = (e) => {
+        setEsPorPersona(e.target.checked);
+    }
 
     return (
         <div className='d-flex flex-column calculadora'>
             <h1>Calculadora de Viajero</h1>
-            <select name="tipoKm" onChange={handleInputChange}>
-                <option value="lineales">Kilómetros Lineales</option>
-                <option value="totales">Kilómetros Totales</option>
-            </select>
             <input type="number" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
 
             <input type="text" name="precio" value={precio} onChange={handleInputChange} placeholder="Cargar precio en $" />
@@ -52,21 +74,25 @@ export default function Formato() {
             <input type="checkbox" name="tieneIVA" checked={tieneIVA} onChange={(e) => setTieneIVA(e.target.checked)} />
             <label htmlFor="tieneIVA">Agregar IVA</label>
 
-            <input type="number" name="personas" value={personas} onChange={handleInputChange} placeholder="Cantidad de personas" />
+            <input type="number" name="personas" value={personas} onChange={handleInputChange} placeholder="Cantidad de personas" disabled={!esPorPersona} />
 
             <input
                 type='checkbox'
                 name='tieneTope'
-                checked={tieneTope}
-                onChange={(e) => {
-                    setTieneTope(e.target.checked);
-                    if (!e.target.checked) {
-                        setCobertura('');
-                    }
-                }}
+                checked={tieneTopeDeCobertura}
+                onChange={handleNoTieneTopeChange}
             />
-            <label htmlFor='tieneTope'>Tiene Tope de Cobertura</label>
-            {tieneTope ? (
+            <label htmlFor='tieneTope'>No tiene tope de cobertura</label>
+
+            <input
+                type='checkbox'
+                name='esPorPersona'
+                checked={esPorPersona}
+                onChange={handleEsPorPersonaChange}
+            />
+            <label htmlFor='esPorPersona'>Cobertura por persona</label>
+
+            {tieneTopeDeCobertura ? (
                 <input
                     type='text'
                     name='cobertura'
@@ -85,9 +111,23 @@ export default function Formato() {
                 />
             )}
 
-            <Button onClick={calcularResultado} color="primary" variant="ghost">Calcular</Button>
-            <div>El valor del viajero es: $ {resultado}</div>
+            {!tieneTopeDeCobertura && (
+                <Button onClick={calcularResultado} color="danger" variant="ghost">Calcular</Button>
+            )}
+
+            <div>
+                {resultado === 0 && !tieneTopeDeCobertura ? (
+                    <div className='text-bg-danger '>Está cubierto para el cliente.</div>
+                ) : (
+                    <div>El costo viajero es: $ {resultado}</div>
+                )}
+            </div>
+
+            {tieneTopeDeCobertura && resultado === 0 ? (
+                <div className='text-bg-danger '>Está cubierto para el cliente.</div>
+            ) : null}
+
+            <div>{detalleCalculo}</div>
         </div>
     );
 }
-
