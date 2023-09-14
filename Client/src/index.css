@@ -94,3 +94,9 @@ conteiner-flujograma {
   margin-left: -40px;
   padding-right: 40px;
 }
+
+.separateLine {
+  border-top: 2px solid #ccc;
+  padding-top: 8px; 
+  margin-top: 8px; 
+}

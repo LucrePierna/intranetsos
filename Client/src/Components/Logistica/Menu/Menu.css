@@ -29,6 +29,7 @@
   transition: 0.3s;
   font-size: 16px;
   display: none;
+  border-radius: 0 20px 20px 0;
 }
 
 .burger-menu .menu-check:checked ~ .menu-options {

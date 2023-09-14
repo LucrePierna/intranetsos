@@ -152,6 +152,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Acepta Modalidad:
                     <input
+                        className='mx-2'
                         type='radio'
                         name='aceptaModalidad'
                         value='si'
@@ -176,6 +177,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Plazos de entrega:
                     <input
+                        className='mx-2'
                         type='text'
                         value={formData.plazos}
                         onChange={(e) => handleFieldChange('plazos', e.target.value)}
@@ -188,6 +190,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Documentación a entregar:
                     <input
+                        className='mx-2'
                         type='checkbox'
                         checked={formData.documentacion.llaves}
                         onChange={() => handleDocumentacionChange('llaves')}
@@ -197,6 +200,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='checkbox'
                         checked={formData.documentacion.autorizacion}
                         onChange={() => handleDocumentacionChange('autorizacion')}
@@ -206,6 +210,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='checkbox'
                         checked={formData.documentacion.cedulaVerde}
                         onChange={() => handleDocumentacionChange('cedulaVerde')}
@@ -215,6 +220,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='checkbox'
                         checked={formData.documentacion.cedulaVerdeDigital}
                         onChange={() => handleDocumentacionChange('cedulaVerdeDigital')}
@@ -228,6 +234,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Método de pago:
                     <input
+                        className='mx-2'
                         type='radio'
                         name='metodoPago'
                         value='transferencia'
@@ -239,6 +246,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='radio'
                         name='metodoPago'
                         value='tarjetaCredito'
@@ -250,6 +258,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='radio'
                         name='metodoPago'
                         value='tarjetaDebito'
@@ -265,6 +274,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Adicional cobrado:
                     <input
+                        className='mx-2'
                         type='radio'
                         name='cobrado'
                         value='si'
@@ -276,6 +286,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='radio'
                         name='cobrado'
                         value='no'
@@ -291,6 +302,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Viajero:
                     <input
+                        className='mx-2'
                         type='radio'
                         name='viajero'
                         value='reintegro'
@@ -302,6 +314,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='radio'
                         name='viajero'
                         value='combiPasajes'
@@ -313,6 +326,7 @@ export default function Formato() {
                 </label>
                 <label className='p-1 mx-1'>
                     <input
+                        className='mx-2'
                         type='radio'
                         name='viajero'
                         value='sinCoordinar'
@@ -323,13 +337,14 @@ export default function Formato() {
                     Sin Coordinar
                 </label>
             </div>
-        
+
 
 
             <div className='form-row py-1'>
                 <label className='p-1 mx-1'>
                     Observaciones:
                     <textarea
+                        className='mx-2'
                         value={formData.observaciones}
                         onChange={(e) => handleFieldChange('observaciones', e.target.value)}
                         disabled={formData.aceptaModalidad === 'no'}

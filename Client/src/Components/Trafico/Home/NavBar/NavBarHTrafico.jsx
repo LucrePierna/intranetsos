@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Agenda from '../Secciones/Agenda/Agenda'
 import DesvioMvl from '../Secciones/DesviosMvl/DesviosMvl'
-import Extraccion from '../Secciones/Extraccion/Extraccion'
+import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
 import Incidencias from '../Secciones/Incidencias/Incidencias'
 import Novedades from '../Secciones/Novedades/Novedades'
-import Reintegro from '../Secciones/Reintegro/Reintegro'
 import Saludos from '../Secciones/Saludos/Saludos'
-import TiempoEspera from '../Secciones/TiempoEspera/TiempoEspera'
+
 
 export default function NavBarHTrafico() {
   const [selectedComponent, setSelectedComponent] = useState('novedades');
@@ -44,40 +43,17 @@ export default function NavBarHTrafico() {
               Agenda
             </button>
           </li>
+
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('reintegro')}
+              className={`nav-link btn ${selectedComponent === 'calculadora' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('calculadora')}
               style={{
-                color: selectedComponent === 'reintegro' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'reintegro' ? 'white' : 'initial'
+                color: selectedComponent === 'calculadora' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'calculadora' ? 'white' : 'initial'
               }}
             >
-              Reintegro
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'extraccion' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('extraccion')}
-              style={{
-                color: selectedComponent === 'extraccion' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'extraccion' ? 'white' : 'initial'
-              }}
-            >
-              Extracción
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'espera' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('espera')}
-              style={{
-                color: selectedComponent === 'espera' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'espera' ? 'white' : 'initial'
-              }}
-            >
-              Tiempo Espera/Trabajo
+              Calculadora
             </button>
           </li>
           <li className="nav-item">
@@ -122,9 +98,7 @@ export default function NavBarHTrafico() {
       <div className="container-fluid">
         {selectedComponent === 'novedades' && <Novedades />}
         {selectedComponent === 'agenda' && <Agenda />}
-        {selectedComponent === 'reintegro' && <Reintegro />}
-        {selectedComponent === 'extraccion' && <Extraccion />}
-        {selectedComponent === 'espera' && <TiempoEspera />}
+        {selectedComponent === 'calculadora' && <Calculadoras />}
         {selectedComponent === 'incidencias' && <Incidencias />}
         {selectedComponent === 'saludos' && <Saludos />}
         {selectedComponent === 'desviomvl' && <DesvioMvl />}
