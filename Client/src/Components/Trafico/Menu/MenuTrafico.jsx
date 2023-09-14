@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
+import bsas from '../Image/Menu Trafico/Iconos/ico_6001.svg'
+import cba from '../Image/Menu Trafico/Iconos/ico_CBA.svg'
+import ros from '../Image/Menu Trafico/Iconos/ico_ROS.svg'
+import home from '../Image/Menu Trafico/Iconos/house-fill.svg'
+import herramientas from '../Image/Menu Trafico/Iconos/nut-fill.svg'
+import mec from '../Image/Menu Trafico/Iconos/tools.svg'
 
 const MenuTrafico = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
@@ -31,7 +37,14 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico')}
             >
-              Menu Principal
+              <img src={home} alt="homeIcon" width={18} height={18} style={{
+                marginLeft: '4px',
+                marginRight: '4px',
+                filter: selectedRoute === '/trafico' ? 'brightness(0) invert(1)' : 'none',
+                color: selectedRoute === '/trafico' ? 'red' : 'white',
+              }}
+              />  
+              Inicio
             </a>
           </li>
           <li>
@@ -40,6 +53,13 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico/herramientas' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico/herramientas')}
             >
+              <img src={herramientas} alt="herramientasIcon" width={18} height={18} style={{
+                marginLeft: '4px',
+                marginRight: '4px',
+                filter: selectedRoute === '/trafico/herramientas' ? 'brightness(0) invert(1)' : 'none',
+                color: selectedRoute === '/trafico/herramientas' ? 'red' : 'white',
+              }}
+              />  
               Herramientas
             </a>
           </li>
@@ -49,6 +69,13 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico/bsas' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico/bsas')}
             >
+              <img src={bsas} alt="bsasIcon" width={18} height={18} style={{
+                marginLeft: '4px',
+                marginRight: '4px',
+                filter: selectedRoute === '/trafico/bsas' ? 'brightness(0) invert(1)' : 'none',
+                color: selectedRoute === '/trafico/bsas' ? 'red' : 'white',
+              }}
+              />  
               6001
             </a>
           </li>
@@ -58,6 +85,13 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico/mecanica' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico/mecanica')}
             >
+              <img src={mec} alt="mecIcon" width={18} height={18} style={{
+                marginLeft: '4px',
+                marginRight: '4px',
+                filter: selectedRoute === '/trafico/mecanica' ? 'brightness(0) invert(1)' : 'none',
+                color: selectedRoute === '/trafico/mecanica' ? 'red' : 'white',
+              }}
+              />  
               Mecanica
             </a>
           </li>
@@ -67,6 +101,13 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico/cordoba' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico/cordoba')}
             >
+              <img src={cba} alt="cbaIcon" width={18} height={18} style={{
+                marginLeft: '4px',
+                marginRight: '4px',
+                filter: selectedRoute === '/trafico/cordoba' ? 'brightness(0) invert(1)' : 'none',
+                color: selectedRoute === '/trafico/cordoba' ? 'red' : 'white',
+              }}
+              />  
               Córdoba
             </a>
           </li>
@@ -76,6 +117,13 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico/rosario' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico/rosario')}
             >
+              <img src={ros} alt="rosarioIcon" width={18} height={18} style={{
+                marginLeft: '4px',
+                marginRight: '4px',
+                filter: selectedRoute === '/trafico/rosario' ? 'brightness(0) invert(1)' : 'none',
+                color: selectedRoute === '/trafico/rosario' ? 'red' : 'white',
+              }}
+              />
               Rosario
             </a>
           </li>
@@ -85,7 +133,11 @@ const MenuTrafico = () => {
               className={selectedRoute === '/' ? 'active' : ''}
               onClick={() => handleRouteClick('/')}
             >
-              Inicio
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-box-arrow-left mx-2 text-white" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+              </svg>
+              Menu Principal
             </a>
           </li>
         </ul>

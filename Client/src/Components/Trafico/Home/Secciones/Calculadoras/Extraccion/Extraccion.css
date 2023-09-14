@@ -1,0 +1,44 @@
+/* Extraccion.css */
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 30px; /* Ajusta el espacio entre el checkbox y el texto */
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; /* Controla el tamaño del checkbox */
+    width: 20px; /* Controla el tamaño del checkbox */
+    background-color: #eee; /* Color de fondo del checkbox no seleccionado */
+    border: 1px solid #ccc; /* Borde del checkbox */
+    border-radius: 50%; /* Hace que el checkbox sea redondo */
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #007bff; /* Color de fondo del checkbox seleccionado */
+    border: 1px solid #007bff; /* Borde del checkbox seleccionado */
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 6px; /* Alinea el marcador de verificación dentro del checkbox */
+    top: 3px; /* Alinea el marcador de verificación dentro del checkbox */
+    width: 6px; /* Tamaño del marcador de verificación */
+    height: 12px; /* Tamaño del marcador de verificación */
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); /* Rota el marcador de verificación */
+  }
+  

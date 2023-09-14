@@ -112,7 +112,7 @@ export default function Formato() {
             )}
 
             {!tieneTopeDeCobertura && (
-                <Button onClick={calcularResultado} color="danger" variant="ghost">Calcular</Button>
+                <Button onClick={calcularResultado} color="danger" >Calcular</Button>
             )}
 
             <div>
