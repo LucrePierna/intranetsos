@@ -103,10 +103,10 @@ export default function Instructivo() {
                 <li>Paso fronterizo más próximo</li>
                 <li>Destino final en caso de ir hasta Argentina</li>
                 <li>Dejar registro de la cotización en reales al día de la fecha: <br />
-                  <a href="https://www.bna.com.ar/Personas" target='_blank'><button>Cotización Divisa</button></a>
+                  <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Cotización Divisa</button></a>
                 </li>
                 <li>Confirmar el servicio al prestador de Brasil, vía e-mail adjuntando la planilla con los datos del servicio <br />
-                  <a href="https://redsos.sharepoint.com/:x:/r/sites/SGC/_layouts/15/Doc.aspx?sourcedoc=%7B47D48EF1-5CBC-4214-A314-1E45CA0C0361%7D&file=FL-08%20Red%20Nacional%20-%20Planilla%20de%20Cierre%20de%20Servicio%20-%20Brasil%2CRev04.xlsx&action=default&mobileredirect=true" target='_blank'><button>Planilla</button></a>
+                  <a href="https://redsos.sharepoint.com/:x:/r/sites/SGC/_layouts/15/Doc.aspx?sourcedoc=%7B47D48EF1-5CBC-4214-A314-1E45CA0C0361%7D&file=FL-08%20Red%20Nacional%20-%20Planilla%20de%20Cierre%20de%20Servicio%20-%20Brasil%2CRev04.xlsx&action=default&mobileredirect=true" target='_blank'><button type="button" class="btn btn-danger mt-3">Planilla</button></a>
                 </li>
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
@@ -193,7 +193,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-calculos" role="tabpanel" aria-labelledby="nav-calculos-tab" tabindex="0">
               <h5>Cálculo de Costos</h5>
 
-              <p>Origen en Argentina
+              <p>ORIGEN EN ARGENTINA
                 <br />
                 El operador deberá ver en la grilla del cliente el radio de contraprestación correspondiente en el apartado “CONTRAPRESTACION”.
                 <br />

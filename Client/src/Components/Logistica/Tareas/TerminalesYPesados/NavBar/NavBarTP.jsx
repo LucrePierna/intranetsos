@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Bases from '../Secciones/Bases/Bases'
-import FichasTecnicas from '../Secciones/FichasTecnicas/FichasTecnicas'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
-import Instructivo from '../Secciones/Instructivo/Instructivo'
-import LivianosPesadosMotos from '../Secciones/LivianosPesadosMotos/LivianosPesadosMotos'
+import Terminales from '../Secciones/Terminales/Terminales'
+import Pesados from '../Secciones/Pesados/Pesados'
 import Mapas from '../Secciones/Mapas/Mapas'
 import TipoDeVehiculos from '../Secciones/TiposDeVehiculos/TipoDeVehiculos'
 import Trasvase from '../Secciones/Trasvase/Trasvase'
@@ -23,14 +22,26 @@ export default function NavBarTP() {
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('instructivo')}
+              className={`nav-link btn ${selectedComponent === 'terminales' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('terminales')}
               style={{
-                color: selectedComponent === 'instructivo' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
+                color: selectedComponent === 'terminales' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'terminales' ? 'white' : 'initial'
               }}
             >
-              Procedimientos
+              Terminales
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'pesados' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('pesados')}
+              style={{
+                color: selectedComponent === 'pesados' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'pesados' ? 'white' : 'initial'
+              }}
+            >
+              Pesados
             </button>
           </li>
           <li className="nav-item">
@@ -45,7 +56,6 @@ export default function NavBarTP() {
               Flujograma
             </button>
           </li>
-
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'bases' ? 'active' : ''}`}
@@ -60,18 +70,6 @@ export default function NavBarTP() {
           </li>
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'fichastecnicas' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('fichastecnicas')}
-              style={{
-                color: selectedComponent === 'fichastecnicas' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'fichastecnicas' ? 'white' : 'initial'
-              }}
-            >
-              Fichas Técnicas
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
               className={`nav-link btn ${selectedComponent === 'mapas' ? 'active' : ''}`}
               onClick={() => handleComponentClick('mapas')}
               style={{
@@ -80,18 +78,6 @@ export default function NavBarTP() {
               }}
             >
               Mapas
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'categorias' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('categorias')}
-              style={{
-                color: selectedComponent === 'categorias' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'categorias' ? 'white' : 'initial'
-              }}
-            >
-              Categorías
             </button>
           </li>
           <li className="nav-item">
@@ -123,11 +109,10 @@ export default function NavBarTP() {
 
       <div className="container-fluid">
         {selectedComponent === 'flujograma' && <Flujograma />}
-        {selectedComponent === 'instructivo' && <Instructivo />}
+        {selectedComponent === 'terminales' && <Terminales />}
         {selectedComponent === 'bases' && <Bases />}
-        {selectedComponent === 'fichastecnicas' && <FichasTecnicas />}
         {selectedComponent === 'mapas' && <Mapas />}
-        {selectedComponent === 'categorias' && <LivianosPesadosMotos />}
+        {selectedComponent === 'pesados' && <Pesados />}
         {selectedComponent === 'tiposvhc' && <TipoDeVehiculos />}
         {selectedComponent === 'trasvase' && <Trasvase />}
 
