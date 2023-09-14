@@ -18,8 +18,8 @@ export default function Instructivo() {
     <div className='conteinerNav mt-5 ' >
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripcion de la tarea</button>
-          <button className="nav-link custom" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexion eficaz</button>
+          <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripción de la tarea</button>
+          <button className="nav-link custom" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexión eficaz</button>
           <button className="nav-link custom" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Formato de registro</button>
           <button className="nav-link custom" id="nav-rechazo-tab" data-bs-toggle="tab" data-bs-target="#nav-rechazo" type="button" role="tab" aria-controls="nav-rechazo" aria-selected="false">Motivos de rechazo</button>
           <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
@@ -52,7 +52,7 @@ export default function Instructivo() {
           <h1>Formato de registro</h1>
         </div>
         <div className="tab-pane fade px-3 mt-3" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
-          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión Motivo: Cuestiones Operativas Descripción: Prestador ____ no acepta Enganche </p>
+          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche </p>
           <ul className='text-start fs-6 mt-3'>
             <li>Móvil roto (se averió en el transcurso del servicio inicial)</li>
             <li>Horario de taller (la demora informada no permite llegar a tiempo al taller)</li>
@@ -70,7 +70,7 @@ export default function Instructivo() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-ceficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-ceficaz" type="button" role="tab" aria-controls="nav-ceficaz" aria-selected="true">Conexión Eficaz</button>
               <button class="nav-link sub" id="nav-traslzn-tab" data-bs-toggle="tab" data-bs-target="#nav-traslzn" type="button" role="tab" aria-controls="nav-traslzn" aria-selected="true">Traslados Locales/Zona</button>
-              <button class="nav-link sub" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexion</button>
+              <button class="nav-link sub" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexión</button>
               <button class="nav-link sub" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Obervaciones</button>
             </div>
           </nav>

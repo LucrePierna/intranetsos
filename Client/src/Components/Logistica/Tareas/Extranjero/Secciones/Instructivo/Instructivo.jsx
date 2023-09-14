@@ -30,7 +30,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-uruguay-tab" data-bs-toggle="tab" data-bs-target="#nav-uruguay" type="button" role="tab" aria-controls="nav-uruguay" aria-selected="false">Uruguay</button>
           <button className="nav-link custom" id="nav-brasil-tab" data-bs-toggle="tab" data-bs-target="#nav-brasil" type="button" role="tab" aria-controls="nav-brasil" aria-selected="false">Brasil</button>
           <button className="nav-link custom" id="nav-chile-tab" data-bs-toggle="tab" data-bs-target="#nav-chile" type="button" role="tab" aria-controls="nav-chile" aria-selected="false">Chile</button>
-          <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestacion</button>
+          <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestación</button>
         </div>
       </nav>
       <div className="tab-content mt-3 m-auto px-5" id="nav-tabContent">
@@ -151,8 +151,8 @@ export default function Instructivo() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-asistencia-tab" data-bs-toggle="tab" data-bs-target="#nav-asistencia" type="button" role="tab" aria-controls="nav-asistencia" aria-selected="true">Asistencia</button>
               <button class="nav-link sub" id="nav-tipos-tab" data-bs-toggle="tab" data-bs-target="#nav-tipos" type="button" role="tab" aria-controls="nav-tipos" aria-selected="false">Tipo de Prestaciones</button>
-              <button class="nav-link sub" id="nav-andisp-tab" data-bs-toggle="tab" data-bs-target="#nav-andisp" type="button" role="tab" aria-controls="nav-andisp" aria-selected="false">Analisis y Disponibilidad</button>
-              <button class="nav-link sub" id="nav-calculos-tab" data-bs-toggle="tab" data-bs-target="#nav-calculos" type="button" role="tab" aria-controls="nav-calculos" aria-selected="false">Calculos de Costos y Devolución</button>
+              <button class="nav-link sub" id="nav-andisp-tab" data-bs-toggle="tab" data-bs-target="#nav-andisp" type="button" role="tab" aria-controls="nav-andisp" aria-selected="false">Análisis y Disponibilidad</button>
+              <button class="nav-link sub" id="nav-calculos-tab" data-bs-toggle="tab" data-bs-target="#nav-calculos" type="button" role="tab" aria-controls="nav-calculos" aria-selected="false">Cálculos de Costos y Devolución</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">

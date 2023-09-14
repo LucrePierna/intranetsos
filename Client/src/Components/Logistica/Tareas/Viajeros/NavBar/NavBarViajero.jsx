@@ -6,7 +6,7 @@ import Links from '../Secciones/Links/Links'
 import Procedimiento from '../Secciones/Procedimiento/Procedimiento'
 
 export default function NavBarViajero() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('procedimiento');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -14,7 +14,20 @@ export default function NavBarViajero() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
+        <h1 className='titleNav'>Viajero</h1>
         <ul className="nav nav-tabs just">
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'procedimiento' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('procedimiento')}
+              style={{
+                color: selectedComponent === 'procedimiento' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'procedimiento' ? 'white' : 'initial'
+              }}
+            >
+              Procedimientos
+            </button>
+          </li>
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
@@ -27,18 +40,7 @@ export default function NavBarViajero() {
               Flujograma
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'procedimiento' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('procedimiento')}
-              style={{
-                color: selectedComponent === 'procedimiento' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'procedimiento' ? 'white' : 'initial'
-              }}
-            >
-              Procedimiento
-            </button>
-          </li>
+
 
           <li className="nav-item">
             <button

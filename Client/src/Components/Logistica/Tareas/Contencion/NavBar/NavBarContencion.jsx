@@ -5,7 +5,7 @@ import Flujograma from '../Secciones/Flujograma/Flujograma'
 
 
 export default function NavBarDerivacion() {
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState('Procedimiento');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -14,6 +14,7 @@ export default function NavBarDerivacion() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
+        <h1 className='titleNav'>Contencion</h1>
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
@@ -24,7 +25,7 @@ export default function NavBarDerivacion() {
                 backgroundColor: selectedComponent === 'Procedimiento' ? 'white' : 'initial'
               }}
             >
-              Procedimiento
+              Procedimientos
             </button>
           </li>
           <li className="nav-item">
@@ -39,6 +40,7 @@ export default function NavBarDerivacion() {
               Flujograma
             </button>
           </li>
+
         </ul>
       </nav>
 

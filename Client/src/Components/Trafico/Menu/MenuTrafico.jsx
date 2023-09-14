@@ -19,9 +19,9 @@ const MenuTrafico = () => {
       <nav className="burger-menu">
         <input className="menu-check" type="checkbox" id="menu-check" />
         <label className="menu-open" htmlFor="menu-check">
-          <span className="burger1"></span>
-          <span className="burger2"></span>
-          <span className="burger3"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-list mx-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
         </label>
 
         <ul className="menu-options">
@@ -31,7 +31,7 @@ const MenuTrafico = () => {
               className={selectedRoute === '/trafico' ? 'active' : ''}
               onClick={() => handleRouteClick('/trafico')}
             >
-              Inicio
+              Menu Principal
             </a>
           </li>
           <li>
@@ -85,7 +85,7 @@ const MenuTrafico = () => {
               className={selectedRoute === '/' ? 'active' : ''}
               onClick={() => handleRouteClick('/')}
             >
-              Exit
+              Inicio
             </a>
           </li>
         </ul>

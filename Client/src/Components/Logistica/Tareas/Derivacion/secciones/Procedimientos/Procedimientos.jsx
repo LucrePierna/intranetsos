@@ -29,17 +29,17 @@ export default function Procedimientos() {
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Inicial</button>
-          <button className="nav-link custom" id="nav-selecprest-tab" data-bs-toggle="tab" data-bs-target="#nav-selecprest" type="button" role="tab" aria-controls="nav-selecprest" aria-selected="false">Seleccion de prestador</button>
+          <button className="nav-link custom" id="nav-selecprest-tab" data-bs-toggle="tab" data-bs-target="#nav-selecprest" type="button" role="tab" aria-controls="nav-selecprest" aria-selected="false">Selección de prestador</button>
           <button className="nav-link custom" id="nav-tipoasig-tab" data-bs-toggle="tab" data-bs-target="#nav-tipoasig" type="button" role="tab" aria-controls="nav-contipoasigtact" aria-selected="false">Tipos de asignaciones</button>
           <button className="nav-link custom" id="nav-cierre-tab" data-bs-toggle="tab" data-bs-target="#nav-cierre" type="button" role="tab" aria-controls="nav-cierre" aria-selected="false">Cierre</button>
-          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivacion por zona</button>
+          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
         </div>
       </nav>
       <div className="tab-content px-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <h5 className='mt-3 '>Orden de derivación</h5>
+          <h5 className='mt-3 '><u>Orden de derivación</u></h5>
           <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
-          <h5>Análisis del servicio</h5>
+          <h5><u>Análisis del servicio</u></h5>
           <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
             <table className='mt-5 mb-2'>
               <tr className='border border-dark'>
@@ -141,7 +141,6 @@ export default function Procedimientos() {
               <ul className='text-start fs-6'>
                 <li>En efectivo, se recordará al cliente que debe abonarlo al chofer de la grúa antes de cargar el vehículo para su traslado.</li>
                 <li>Link de pago, el cual será generado por cada derivador, a través de Astor, solicitándole los datos que el sistema requiera.</li>
-                <li>Transferencia al prestador, previamente consultado con la base.</li>
                 <li>Pago al prestador, se podrá consultar con prestador posibilidad de realizar el cobro con tarjeta de crédito, débito o transferencia bancaria. En caso de aceptar, el prestador será responsable de coordinar el cobro contactando al cliente. Si surgiese alguna eventualidad o inconveniente en el cobro será responsable el prestador.   </li></ul>
               <h6><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h6>
             </div>
@@ -149,7 +148,13 @@ export default function Procedimientos() {
               <p className='text-start fs-6'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
                 <ul><u>El derivador deberá informar la gestión del reintegro:</u>
                   <li>Solicitar ticket o factura con validez fiscal</li>
-                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos <a href="https://tuportal.redsos.com.ar/form" target='_blank'> <button type='button' class="btn btn-danger mt-3">RedSOS</button></a></li>
+                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos
+                    <div className='m-auto p-2'>
+                      <a href="https://tuportal.redsos.com.ar/form" target='_blank'>
+                        <button type='button' className="btn btn-danger mt-3 m-auto h-50 w-20">RedSOS</button>
+                      </a>
+                    </div>
+                  </li>
                   <li>Brindar el códgio de servicio</li>
                   <li>Informar el monto de reintegro</li>
                 </ul>

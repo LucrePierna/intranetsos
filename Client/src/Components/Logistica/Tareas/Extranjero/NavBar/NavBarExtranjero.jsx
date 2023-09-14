@@ -7,7 +7,7 @@ import Mapas from '../Secciones/Mapas/Mapas'
 
 
 export default function NavBarExtranjero() {
-  const [selectedComponent, setSelectedComponent] = useState('flujograma');
+  const [selectedComponent, setSelectedComponent] = useState('instructivo');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -15,7 +15,20 @@ export default function NavBarExtranjero() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
+        <h1 className='titleNav'>Extranjero</h1>
         <ul className="nav nav-tabs just">
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('instructivo')}
+              style={{
+                color: selectedComponent === 'instructivo' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
+              }}
+            >
+              Procedimientos
+            </button>
+          </li>
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
@@ -41,18 +54,7 @@ export default function NavBarExtranjero() {
               Planilla
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'instructivo' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('instructivo')}
-              style={{
-                color: selectedComponent === 'instructivo' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'instructivo' ? 'white' : 'initial'
-              }}
-            >
-              Instructivo
-            </button>
-          </li>
+
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'Mapas' ? 'active' : ''}`}

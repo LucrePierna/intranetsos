@@ -1,4 +1,5 @@
-body, html{
+body,
+html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,12 +13,12 @@ code {
     monospace;
 }
 
-conteiner-flujograma{
+conteiner-flujograma {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
   justify-content: center;
-  
+
 }
 
 
@@ -31,7 +32,7 @@ conteiner-flujograma{
 
 
 .nav-link.custom.active {
-  color: #ffffff !important; 
+  color: #ffffff !important;
   background-color: #cb2128 !important;
   border-color: #ffffff !important;
 }
@@ -51,7 +52,7 @@ conteiner-flujograma{
 
 
 .nav-link.sub.active {
-  color: #ffffff !important; 
+  color: #ffffff !important;
   background-color: rgb(197, 57, 57) !important;
   border-color: #ffffff !important;
   transition: none;
@@ -63,18 +64,18 @@ conteiner-flujograma{
   border-color: red;
 }
 
-.conteinerNav{
+.conteinerNav {
   display: flex;
   flex-direction: row;
   background: linear-gradient(to right, #646565, #414345);
   padding-bottom: 2rem;
-  width: 70%;
+  width: 100%;
   height: auto;
   margin: auto;
   border-radius: 2%;
 }
 
-.navConteiner{
+.navConteiner {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -82,4 +83,14 @@ conteiner-flujograma{
   position: static;
   margin-left: 0;
   padding-left: 0;
+}
+
+.titleNav {
+  color: rgba(232, 232, 232, 0.775);
+  font-size: 14px;
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  margin-left: -40px;
+  padding-right: 40px;
 }
