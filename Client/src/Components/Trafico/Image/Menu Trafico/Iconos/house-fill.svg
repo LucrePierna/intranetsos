@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M8.71,1.5c-0.39-0.39-1.02-0.39-1.41,0L0.65,8.15c-0.2,0.2-0.2,0.51,0,0.71s0.51,0.2,0.71,0l0,0L8,2.21
+	l6.65,6.65c0.2,0.2,0.51,0.2,0.71,0s0.2-0.51,0-0.71L13,5.79V2.5C13,2.22,12.78,2,12.5,2h-1C11.22,2,11,2.22,11,2.5v1.29L8.71,1.5z"
+	/>
+<path class="st0" d="M8,3.29l6,6v4.21c0,0.83-0.67,1.5-1.5,1.5h-9C2.67,15,2,14.33,2,13.5V9.29C2,9.29,8,3.29,8,3.29z"/>
 </svg>
