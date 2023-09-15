@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-conteiner-flujograma {
+.conteinerFlujograma {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
