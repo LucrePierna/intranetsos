@@ -60,7 +60,7 @@ function Extraccion() {
   };
 
   return (
-    <div className="container text-center mt-3 h-70 w-50 bg-secondary rounded-5 p-2">
+    <div className="container text-center mt-3 h-70 w-50 bg-secondary rounded-5 p-5">
       <h1>Calculadora de Extracción</h1>
       <div className='bg-dark border border-black rounded-2'>
         <h2><b>Verificar Condición del IVA</b></h2>
@@ -70,7 +70,7 @@ function Extraccion() {
         </p>
       </div>
       <div className='py-3'>
-        <img src={ivaImagen} alt="ivaImg" height={200} width={450} />
+        <img src={ivaImagen} alt="ivaImg" className="responsiveImg" />
       </div>
       <div className="mt-3 py-2">
         <div className="form-check form-check-inline">

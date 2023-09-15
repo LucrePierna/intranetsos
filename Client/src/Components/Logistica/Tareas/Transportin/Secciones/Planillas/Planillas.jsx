@@ -7,7 +7,7 @@ export default function Planilla() {
   return (
     <div className='d-flex flex-column align-items-center justify-content-center mx-auto  mt-5'>
       <h1>Planilla Transportin</h1>
-      {<img className='img' src={ImgPlanilla} alt="planilla" />}
+      {<img className='responsiveImg' src={ImgPlanilla} alt="planilla" />}
       <div className='d-grid g-col-2 gap-1 col-2 '>
         <a href="https://redsos.sharepoint.com/:x:/r/sites/transportincba/Shared%20Documents/Datos%20adjuntos%20de%20correo%20electr%C3%B3nico/Transportin%202023%20Final.xlsx?d=wb9b66c3dce8446b19467e54ee7c4d521&csf=1&web=1&e=0mUNeB" target="_blank" rel="noopener noreferrer">
           <button button type='button' class="btn btn-danger mt-3">Planilla Transportin</button>

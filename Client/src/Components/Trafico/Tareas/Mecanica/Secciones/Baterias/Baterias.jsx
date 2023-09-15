@@ -12,9 +12,9 @@ export default function Agenda() {
           <button className="nav-link custom" id="nav-bases-tab" data-bs-toggle="tab" data-bs-target="#nav-bases" type="button" role="tab" aria-controls="nav-bases" aria-selected="false">Bases</button>
         </div>
       </nav>
-      <div className="tab-content mt-3 px-5 m-auto text-start" id="nav-tabContent">
+      <div className="tab-content mt-3 px-5 m-auto text-start fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active w-50 h-50 mt-5" id="nav-precios" role="tabpanel" aria-labelledby="nav-precios-tab" tabindex="0">
-          <img src={Precios} alt="Precios" height={350} width={450} />
+          <img src={Precios} alt="Precios" className='responsiveImg' />
         </div>
         <div className="tab-pane fade" id="nav-bases" role="tabpanel" aria-labelledby="nav-bases-tab" tabindex="0">
           <nav>
