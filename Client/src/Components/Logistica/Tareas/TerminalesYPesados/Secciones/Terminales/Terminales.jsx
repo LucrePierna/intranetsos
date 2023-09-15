@@ -34,13 +34,12 @@ export default function Terminales() {
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
         </div>
       </nav>
-      <div className="tab-content px-5" id="nav-tabContent">
+      <div className="tab-content px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <p>Son servicios llamados “Especiales”. Aplica a aquellas terminales con las que se haya acordado este tipo de asistencia. La solicitud de asistencia es procesada por el CAT, los operadores SETA, u operadores específicos destinados a tal función (en caso de Mercedes Benz). Los pedidos ingresaran por: Comunicación telefónica o correo electrónico pedido por la Terminal </p>
         </div>
-
         <div className="tab-pane fade m-auto" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
-          <h5><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h5>
+          <h3><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h3>
           <p>Moto / Liviano / Liviano Excedido / Liviano Especial / Pesado categoría 1 / Pesado categoría 2 / Pesado categoría 3 / Bus</p>
           <h5>Aplica a todas aquellas Terminales Automotrices, siendo actualmente:</h5>
           <ul className='list-unstyled'>
@@ -60,15 +59,15 @@ export default function Terminales() {
           </ul>
         </div>
         <div className="tab-pane fade" id="nav-tareaop" role="tabpanel" aria-labelledby="nav-tareaop-tab" tabindex="0">
-          <h5><u>Lectura completa del servicio.</u></h5>
+          <h3><u>Lectura completa del servicio.</u></h3>
           <br />
           <p>  Previo a realizar la derivación del servicio, deberá leer y analizar todo dato y registro del mismo, asegurando que se contemplen todas las particulares que pudieran existir (dimensiones, estado del vehículo, ruedas y ejes, carga, forma de pago, cobertura, cantidad de personas, etc. (Ver análisis del servicio*).</p>
           <br />
-          <h5><u>Llamado de contención al cliente.</u></h5>
+          <h3><u>Llamado de contención al cliente.</u></h3>
           <br />
           <p>En este tipo de servicios el llamado de contención se realizará solo si el servicio/operadores de SETA lo requieran ya que en estos casos solo SETA se mantendrá en contacto con el cliente, chofer o persona que este junto al vehículo. En este llamado el operador informara el estado o situación del servicio actualizando demoras u horarios de programación para cargar la unidad.</p>
           <br />
-          <h5><u>Prioridades de derivación y motivos de rechazo </u></h5>
+          <h3><u>Prioridades de derivación y motivos de rechazo </u></h3>
           <br />
           <p>Se deberán respetar las prioridades establecidas en sistema respecto a los prestadores para la derivación y registrarse los motivos de rechazo correctos cuando esto sea necesario. </p>
         </div>
@@ -121,13 +120,13 @@ export default function Terminales() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-motos" role="tabpanel" aria-labelledby="nav-motos-tab" tabindex="0">
               <p>En particular el operador deberá verificar que el prestador posea los sunchos y equipamiento necesario para poder asegurar la moto en la plancha. Se deberá enviar el formulario de carga y descarga “FL-10 Red Nacional – Traslado BMW / Ducati”. (FORMULARIO TRASLADO BMW poner link)</p>
-              <h5><u>MOTOS BMW</u></h5>
+              <h3><u>MOTOS BMW</u></h3>
               <ul className='list-unstyled'>
                 <li>-El derivador debe enviar por mail el “formulario de traslado” al prestador. </li>
                 <li>-El prestador debe tomar fotografías y video (en lo posible) de la unidad. </li>
                 <li>-Prestador deberá completar formulario con el cliente en la  entrega y con el concesionario en el destino. </li>
               </ul>
-              <h5><u>MOTOS DUCATI</u></h5>
+              <h3><u>MOTOS DUCATI</u></h3>
               <ul className='list-unstyled'>
                 <li>-No se envía formulario al prestador </li>
                 <li>-El prestador debe tomar fotografías y video (en lo posible) de la unidad. </li>

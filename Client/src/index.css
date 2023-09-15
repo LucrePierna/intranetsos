@@ -73,7 +73,42 @@ conteiner-flujograma {
   height: auto;
   margin: auto;
   border-radius: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+@media (max-width: 576px) {
+  .conteinerNav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .conteinerNav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 993px) {
+  .conteinerNav {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    
+  }
+}
+@media (min-width: 1280px) {
+  .conteinerNav {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    
+  }
+}
+
 
 .navConteiner {
   display: flex;
@@ -97,6 +132,69 @@ conteiner-flujograma {
 
 .separateLine {
   border-top: 2px solid #ccc;
-  padding-top: 8px; 
-  margin-top: 8px; 
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.btnGroup {
+  margin-right: 20px;
+}
+
+.responsiveIframe {
+  width: 750px !important;
+  height: 500px;
+  margin-bottom: 30px; 
+}
+
+@media (max-width: 768px) {
+ 
+  .responsiveIframe {
+    height: 300px;
+    margin: auto; 
+  }
+}
+@media (max-width: 993px) {
+
+  .responsiveIframe {
+    height: 700px;
+    margin: auto;
+  }
+}
+@media (max-width: 1280px) {
+
+  .responsiveIframe {
+    height: 800px;
+    margin: auto;
+  }
+}
+
+
+.responsiveImg {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.responsiveImgBateria {
+  max-width: 100%; 
+  height: auto; 
+}
+
+@media (max-width: 768px) {
+  .responsiveImgBateria {
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .responsiveImgBateria {
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 1201px) {
+  .responsiveImgBateria {
+    max-width: 750px;
+  }
 }

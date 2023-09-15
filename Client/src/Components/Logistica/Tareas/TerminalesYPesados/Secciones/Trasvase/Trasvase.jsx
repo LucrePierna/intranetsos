@@ -27,14 +27,14 @@ export default function Trasvase() {
           <button className="nav-link custom" id="nav-derivacion-tab" data-bs-toggle="tab" data-bs-target="#nav-derivacion" type="button" role="tab" aria-controls="nav-derivacion" aria-selected="false">Derivacion</button>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div className="tab-content fs-5 text-start " id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <h4>Es la prestación que se realiza a las unidades de categoría “pesados” que transportan líquidos/químicos y consiste en traspasar un líquido de un camión cisterna a otro. El servicio se presta porque hay una falla en el camión, acoplado o semirremolque, Puede haber derrame o NO. </h4>
+          <h3>Es la prestación que se realiza a las unidades de categoría “pesados” que transportan líquidos/químicos y consiste en traspasar un líquido de un camión cisterna a otro. El servicio se presta porque hay una falla en el camión, acoplado o semirremolque, Puede haber derrame o NO. </h3>
         </div>
 
         <div className="tab-pane fade" id="nav-etapas" role="tabpanel" aria-labelledby="nav-etapas-tab" tabindex="0">
-          <h4>Analizar el servicio atendiendo principalmente a:</h4>
-          <ul className='text-start '>
+          <h3>Analizar el servicio atendiendo principalmente a:</h3>
+          <ul>
             <li>Origen.</li>
             <li>Marca y modelo de la unidad.</li>
             <li>Tipo de combustible.</li>
@@ -46,7 +46,7 @@ export default function Trasvase() {
 
         <div className="tab-pane fade" id="nav-derivacion" role="tabpanel" aria-labelledby="nav-derivacion-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-prestadores-tab" data-bs-toggle="tab" data-bs-target="#nav-prestadores" type="button" role="tab" aria-controls="nav-prestadores" aria-selected="true">Prestadores</button>
               <button class="nav-link sub" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
             </div>

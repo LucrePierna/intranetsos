@@ -146,88 +146,112 @@ export default function Formato() {
 
 
     return (
-        <div className='formato-container'>
+        <div className='container formato-container'>
             <h1>Formulario</h1>
             <div className='form-row py-1'>
-                <label className='p-1 mx-1'>
-                    Acepta Modalidad:
-                    <input
-                        className='mx-2'
-                        type='radio'
-                        name='aceptaModalidad'
-                        value='si'
-                        checked={formData.aceptaModalidad === 'si'}
-                        onChange={(e) => handleFieldChange('aceptaModalidad', e.target.value)}
-                    />
-                    Sí
-                </label>
-                <label className='p-1 mx-1'>
-                    <input
-                        type='radio'
-                        name='aceptaModalidad'
-                        value='no'
-                        checked={formData.aceptaModalidad === 'no'}
-                        onChange={(e) => handleFieldChange('aceptaModalidad', e.target.value)}
-                    />
-                    No
-                </label>
+                <div className='col-md-6'>
+                    <label className='p-1 mx-1'>
+                        Acepta Modalidad:
+                    </label>
+                </div>
+                <div className='col-md-6'>
+                    <div className='d-flex'>
+                        <label className='p-1 mx-1'>
+                            <input
+                                className='mx-2'
+                                type='radio'
+                                name='aceptaModalidad'
+                                value='si'
+                                checked={formData.aceptaModalidad === 'si'}
+                                onChange={(e) => handleFieldChange('aceptaModalidad', e.target.value)}
+                            />
+                            Sí
+                        </label>
+                        <label className='p-1 mx-1'>
+                            <input
+                                type='radio'
+                                name='aceptaModalidad'
+                                value='no'
+                                checked={formData.aceptaModalidad === 'no'}
+                                onChange={(e) => handleFieldChange('aceptaModalidad', e.target.value)}
+                            />
+                            No
+                        </label>
+                    </div>
+                </div>
             </div>
 
             <div className='form-row py-1'>
-                <label className='p-1 mx-1'>
-                    Plazos de entrega:
-                    <input
-                        className='mx-2'
-                        type='text'
-                        value={formData.plazos}
-                        onChange={(e) => handleFieldChange('plazos', e.target.value)}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                </label>
+                <div className='col-md-6'>
+                    <label className='p-1 mx-1'>
+                        Plazos de entrega:
+                        <input
+                            className='mx-2'
+                            type='text'
+                            value={formData.plazos}
+                            onChange={(e) => handleFieldChange('plazos', e.target.value)}
+                            disabled={formData.aceptaModalidad === 'no'}
+                        />
+                    </label>
+                </div>
             </div>
 
             <div className='form-row py-1'>
-                <label className='p-1 mx-1'>
-                    Documentación a entregar:
-                    <input
-                        className='mx-2'
-                        type='checkbox'
-                        checked={formData.documentacion.llaves}
-                        onChange={() => handleDocumentacionChange('llaves')}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                    Llaves
-                </label>
-                <label className='p-1 mx-1'>
-                    <input
-                        className='mx-2'
-                        type='checkbox'
-                        checked={formData.documentacion.autorizacion}
-                        onChange={() => handleDocumentacionChange('autorizacion')}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                    Autorización
-                </label>
-                <label className='p-1 mx-1'>
-                    <input
-                        className='mx-2'
-                        type='checkbox'
-                        checked={formData.documentacion.cedulaVerde}
-                        onChange={() => handleDocumentacionChange('cedulaVerde')}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                    Cédula Verde
-                </label>
-                <label className='p-1 mx-1'>
-                    <input
-                        className='mx-2'
-                        type='checkbox'
-                        checked={formData.documentacion.cedulaVerdeDigital}
-                        onChange={() => handleDocumentacionChange('cedulaVerdeDigital')}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                    Cédula Verde Digital
-                </label>
+                <div className='col-md-6'>
+                    <label className='p-1 mx-1'>
+                        Documentación a entregar:
+                    </label>
+                </div>
+                <div className='col-md-6'>
+                    <div>
+                        <label className='p-1 mx-1'>
+                            <input
+                                className='mx-2'
+                                type='checkbox'
+                                checked={formData.documentacion.llaves}
+                                onChange={() => handleDocumentacionChange('llaves')}
+                                disabled={formData.aceptaModalidad === 'no'}
+                            />
+                            Llaves
+                        </label>
+                    </div>
+                    <div>
+                        <label className='p-1 mx-1'>
+                            <input
+                                className='mx-2'
+                                type='checkbox'
+                                checked={formData.documentacion.autorizacion}
+                                onChange={() => handleDocumentacionChange('autorizacion')}
+                                disabled={formData.aceptaModalidad === 'no'}
+                            />
+                            Autorización
+                        </label>
+                    </div>
+                    <div>
+                        <label className='p-1 mx-1'>
+                            <input
+                                className='mx-2'
+                                type='checkbox'
+                                checked={formData.documentacion.cedulaVerde}
+                                onChange={() => handleDocumentacionChange('cedulaVerde')}
+                                disabled={formData.aceptaModalidad === 'no'}
+                            />
+                            Cédula Verde
+                        </label>
+                    </div>
+                    <div>
+                        <label className='p-1 mx-1'>
+                            <input
+                                className='mx-2'
+                                type='checkbox'
+                                checked={formData.documentacion.cedulaVerdeDigital}
+                                onChange={() => handleDocumentacionChange('cedulaVerdeDigital')}
+                                disabled={formData.aceptaModalidad === 'no'}
+                            />
+                            Cédula Verde Digital
+                        </label>
+                    </div>
+                </div>
             </div>
 
             <div className='form-row py-1'>
@@ -353,14 +377,15 @@ export default function Formato() {
             </div>
 
             <div className='form-row py-1'>
-                <button className='btn btn-dark mt-3 ' onClick={handleCopyClick}>
+                <button className='btn btn-danger mt-3 ' onClick={handleCopyClick}>
                     {copied ? 'Copiado' : 'Copiar'}
                 </button>
-                <button className='btn btn-dark mt-3 mx-4' onClick={handleReset}>
+                <button className='btn btn-danger mt-3 mx-4' onClick={handleReset}>
                     Restablecer
                 </button>
             </div>
         </div>
+
     );
 }
 
