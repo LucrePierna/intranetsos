@@ -94,7 +94,7 @@ export default function Instructivo() {
             <div class="tab-pane fade show active mt-4" id="nav-mapa" role="tabpanel" aria-labelledby="nav-mapa-tab" tabindex="0">
               <h3>Se debe confirmar con el cliente que el origen sea por debajo del paralelo 24. <b>Si esta por arriba del paralelo 24 no cuenta con servicio</b></h3>
               <div className='m-auto px-5 h-50 w-50 mt-5'>
-                <img src={imagenParalelo} alt="mapaParalelo24" className='responsiveImg' />
+                <img src={imagenParalelo} alt="mapaParalelo24" className='responsiveImgGeneral' />
               </div>
             </div>
             <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
@@ -143,7 +143,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-tdfuego" role="tabpanel" aria-labelledby="nav-tdfuego-tab" tabindex="0">
               <h3>Servicio que vienen hacia o desde Tierra del Fuego</h3>
               <p>Los prestadores que pueden cruzar por chile para dirigirse a Tierra del Fuego cuentan con un permiso especial y realizan trámites los cuales tienen costo y son a cargo del cliente.</p>
-              <img src={imagenCostos} alt="costosDeEjemplo" className='responsiveImg' />
+              <img src={imagenCostos} alt="costosDeEjemplo" className='responsiveImgGeneral' />
             </div>
           </div>
         </div>
