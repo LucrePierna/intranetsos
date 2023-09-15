@@ -144,6 +144,7 @@ conteiner-flujograma {
   width: 750px !important;
   height: 500px;
   margin-bottom: 30px; 
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -165,7 +166,7 @@ conteiner-flujograma {
 
   .responsiveIframe {
     height: 1000px;
-    height: 1200px;
+    width: 1200px;
     margin: auto;
   }
 }
@@ -204,5 +205,6 @@ conteiner-flujograma {
 @media (min-width: 1201px) {
   .responsiveImgBateria {
     max-width: 750px;
+    height: 650px;
   }
 }

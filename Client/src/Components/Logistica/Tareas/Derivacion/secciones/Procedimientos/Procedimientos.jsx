@@ -185,9 +185,9 @@ export default function Procedimientos() {
               </ul>
               <h4><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h4>
             </div>
-            <div class="tab-pane fade py-5 " id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
+            <div class="tab-pane fade py-5 h-50 w-100 m-auto " id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
               <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F"
-                className="responsiveIframe tamañoMap" style={{ width: '100%' }} ></iframe>
+                className="responsiveIframe" style={{ width: '100%' }} ></iframe>
             </div>
           </div>
         </div>
