@@ -2,6 +2,7 @@ import React from 'react'
 import * as bootstrap from 'bootstrap'
 import imagen1 from '../../../../Image/eficaz1.png'
 import imagen2 from '../../../../Image/eficaz2.png'
+import Formato from './Formato/Formato'
 
 export default function Instructivo() {
   const triggerTabList = document.querySelectorAll('#myTab button')
@@ -49,7 +50,7 @@ export default function Instructivo() {
           <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base</p>
         </div>
         <div className="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
-          <h1>Formato de registro</h1>
+          <Formato />
         </div>
         <div className="tab-pane fade px-3 mt-3" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
           <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche </p>
