@@ -93,7 +93,7 @@ export default function Calculadora({ resultado }) {
         <div>
           <label className="px-3 pt-2">Tipo de Asistencia:
             <input
-              type="number"
+              type="text"
               value={formData.tipoAsistencia}
               onChange={e => handleFieldChange('tipoAsistencia', e.target.value)}
             />

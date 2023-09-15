@@ -26,32 +26,47 @@ export default function Formato() {
     }
 
     const calcularResultado = () => {
-        let resultadoCalculado = km * precio;
-        let detalleCalculoTexto = `${km} km * $${precio}\n`;
+        let resultadoCalculado = km * precio * 2;
+        let detalleCalculoTexto = `${km} km * 2 * $${precio} = $${resultadoCalculado}\n`;
 
         if (tieneIVA) {
             resultadoCalculado *= 1.21;
-            detalleCalculoTexto += '+ IVA';
+            detalleCalculoTexto += '+ IVA\n';
         } else {
-            detalleCalculoTexto += 'Sin IVA';
+            detalleCalculoTexto += 'Sin IVA\n';
         }
+
+        let coberturaRestada = 0;
 
         if (!tieneTopeDeCobertura) {
             if (esPorPersona && personas && cobertura) {
-                resultadoCalculado -= cobertura * personas;
-                detalleCalculoTexto += `\nCobertura por persona: $${cobertura}\n`;
+                const coberturaTotal = cobertura * personas;
+                coberturaRestada = coberturaTotal;
+                resultadoCalculado -= coberturaTotal;
+                detalleCalculoTexto += `Cobertura por persona: $${cobertura}\n`;
                 detalleCalculoTexto += `Personas: ${personas}\n`;
+                detalleCalculoTexto += `Restando cobertura del cliente: $${coberturaTotal}\n`;
             } else if (!esPorPersona && cobertura) {
+                coberturaRestada = cobertura;
                 resultadoCalculado -= cobertura;
-                detalleCalculoTexto += `\nCobertura global: $${cobertura}\n`;
+                detalleCalculoTexto += `Cobertura global: $${cobertura}\n`;
+                detalleCalculoTexto += `Restando cobertura del cliente: $${cobertura}\n`;
             }
         }
 
         resultadoCalculado = Math.max(resultadoCalculado, 0);
 
+        if (resultadoCalculado === 0) {
+            detalleCalculoTexto += `Está cubierto para el cliente. Debe abonar cliente $${coberturaRestada}`;
+        } else {
+            detalleCalculoTexto += `Restando la cobertura del cliente $${coberturaRestada}. Debe abonar cliente $${resultadoCalculado}`;
+        }
+
         setResultado(resultadoCalculado);
         setDetalleCalculo(detalleCalculoTexto);
     }
+    
+
 
     const handleNoTieneTopeChange = (e) => {
         setTieneTopeDeCobertura(e.target.checked);
