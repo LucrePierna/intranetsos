@@ -35,49 +35,60 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
         </div>
       </nav>
-      <div className="tab-content px-5" id="nav-tabContent">
+      <div className="tab-content m-auto mt-3 px-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <h5 className='mt-3 '><u>Orden de derivación</u></h5>
-          <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
-          <h5><u>Análisis del servicio</u></h5>
-          <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
-            <table className='mt-5 mb-2'>
-              <tr className='border border-dark'>
-                <td>Historial de servicios anteriores</td>
-                <td>Titular</td>
-                <td>Vehículo</td>
-                <td>Dominio</td>
-                <td>Color</td>
-              </tr>
-              <tr className='border border-dark'><td>Falla</td>
-                <td>Teléfono</td>
-                <td>Ubicación origen y destino</td>
-                <td>Cantidad de pasajeros</td>
-                <td>Requisitos para que el vehículo viaje solo en caso de solicitar</td></tr>
-              <tr className='border border-dark'><td>Horarios de taller</td>
-                <td>Si posee carga</td>
-                <td>Dimensiones y si hay alguna otra información extra en referencias</td>
-                <td>Cobertura de la asistencia</td>
-                <td>Si el trayecto corresponde o no a recorrido de transportin</td></tr>
-            </table>
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
+          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+            <h5 className='mt-3 '><u>Orden de derivación</u></h5>
+            <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
+            <h5><u>Análisis del servicio</u></h5>
+            <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
+              <table className='mt-5 mb-2'>
+                <tr className='border border-dark'>
+                  <td>Historial de servicios anteriores</td>
+                  <td>Titular</td>
+                  <td>Vehículo</td>
+                  <td>Dominio</td>
+                  <td>Color</td>
+                </tr>
+                <tr className='border border-dark'><td>Falla</td>
+                  <td>Teléfono</td>
+                  <td>Ubicación origen y destino</td>
+                  <td>Cantidad de pasajeros</td>
+                  <td>Requisitos para que el vehículo viaje solo en caso de solicitar</td></tr>
+                <tr className='border border-dark'><td>Horarios de taller</td>
+                  <td>Si posee carga</td>
+                  <td>Dimensiones y si hay alguna otra información extra en referencias</td>
+                  <td>Cobertura de la asistencia</td>
+                  <td>Si el trayecto corresponde o no a recorrido de transportin</td></tr>
+              </table>
 
-          </p>
-          <h5>Contención</h5>
-          <p className='text-start justify-content-center'> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
+            </p>
+            <h5>Contención</h5>
+            <p className='text-start justify-content-center'> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
+          </div>
         </div>
 
         <div className="tab-pane fade" id="nav-selecprest" role="tabpanel" aria-labelledby="nav-selecprest-tab" tabindex="0">
-          <p className='mt-5 fs-4 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
-          <ul className='text-start fs-5 mt-3'>
-            <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
-            <li>Si se tuviese que buscar fuera del recorrido de se procede de la siguiente manera:
-              <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
-              <ul>Ruta y transito, hasta 100 km lineales vacíos tanto en origen, recorrido y/o destino.</ul>
-            </li>
-            <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente</li>
-            <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona</li>
-          </ul>
-
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
+          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+            <p className='mt-5 fs-4 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
+            <ul className='text-start fs-5 mt-3'>
+              <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
+              <li>Si se tuviese que buscar fuera del recorrido de se procede de la siguiente manera:
+                <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
+                <ul>Ruta y transito, hasta 100 km lineales vacíos tanto en origen, recorrido y/o destino.</ul>
+              </li>
+              <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente</li>
+              <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona</li>
+            </ul>
+          </div>
         </div>
 
         <div className="tab-pane fade" id="nav-tipoasig" role="tabpanel" aria-labelledby="nav-tipoasig-tab" tabindex="0">
