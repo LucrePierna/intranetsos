@@ -32,14 +32,12 @@ export default function Terminales() {
           <button className="nav-link custom" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" type="button" role="tab" aria-controls="nav-general" aria-selected="false">Generalidades</button>
           <button className="nav-link custom" id="nav-tareaop-tab" data-bs-toggle="tab" data-bs-target="#nav-tareaop" type="button" role="tab" aria-controls="nav-tareaop" aria-selected="false">Tareas del Operador</button>
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
-          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-roads" type="button" role="tab" aria-controls="nav-roads" aria-selected="false">Tarea</button>
         </div>
       </nav>
       <div className="tab-content px-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <p>Son servicios llamados “Especiales”. Aplica a aquellas terminales con las que se haya acordado este tipo de asistencia. La solicitud de asistencia es procesada por el CAT, los operadores SETA, u operadores específicos destinados a tal función (en caso de Mercedes Benz). Los pedidos ingresaran por: Comunicación telefónica o correo electrónico pedido por la Terminal </p>
         </div>
-
         <div className="tab-pane fade m-auto" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
           <h5><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h5>
           <p>Moto / Liviano / Liviano Excedido / Liviano Especial / Pesado categoría 1 / Pesado categoría 2 / Pesado categoría 3 / Bus</p>
