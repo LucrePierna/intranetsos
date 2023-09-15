@@ -32,7 +32,6 @@ export default function Terminales() {
           <button className="nav-link custom" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" type="button" role="tab" aria-controls="nav-general" aria-selected="false">Generalidades</button>
           <button className="nav-link custom" id="nav-tareaop-tab" data-bs-toggle="tab" data-bs-target="#nav-tareaop" type="button" role="tab" aria-controls="nav-tareaop" aria-selected="false">Tareas del Operador</button>
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
-          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-roads" type="button" role="tab" aria-controls="nav-roads" aria-selected="false">Tarea</button>
         </div>
       </nav>
       <div className="tab-content px-5" id="nav-tabContent">
