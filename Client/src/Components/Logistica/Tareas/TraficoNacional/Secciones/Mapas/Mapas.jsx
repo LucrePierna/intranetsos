@@ -26,12 +26,12 @@ export default function Corredores() {
         </div>
       </nav>
       <div className="tab-content mt-4 m-auto float-md-end float-lg-end float-xl-end float-xxl-end" id="nav-tabContent">
-        <div className="tab-pane fade show active" id="nav-bahiablanca" role="tabpanel" aria-labelledby="nav-bahiablanca-tab" tabindex="0"> <iframe src="https://www.google.com/maps/d/embed?mid=1zMZ63NeVY1bLQKvQE3rKVaVQlA9YDVaU&ehbc=2E312F" width="1280" height="700" ></iframe></div>
-        <div className="tab-pane fade m-auto" id="nav-costa" role="tabpanel" aria-labelledby="nav-costa-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=1LkjXc0BbWSPJddZA9qJCyFzkE2-vviD6&ehbc=2E312F" width="1280" height="700"></iframe></div>
-        <div className="tab-pane fade m-auto" id="nav-cuyo" role="tabpanel" aria-labelledby="nav-cuyo-tab" tabindex="0">  <iframe src="https://www.google.com/maps/d/embed?mid=130l-QA7X10ZsnoSnhm7n2KfGweaLVUw&ehbc=2E312F" width="1280" height="700"></iframe></div>
-        <div className="tab-pane fade m-auto" id="nav-noa" role="tabpanel" aria-labelledby="nav-noa-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=1Au9gfAp5Mwvhgi6KVbqJ4qBvCeLTRBGF&ehbc=2E312F" width="1280" height="700"></iframe></div>
-        <div className="tab-pane fade m-auto" id="nav-patagonia" role="tabpanel" aria-labelledby="nav-patagonia-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=11DTLz8bqaL_6JYBhRSeT_VzwJqmzsDw&ehbc=2E312F" width="1280" height="700"></iframe></div>
-        <div className="tab-pane fade m-auto" id="nav-santa" role="tabpanel" aria-labelledby="nav-santa-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=1FKfsygYUdTm4WGAZUby8sn4eeJPZO9Oa&ehbc=2E312F" width="1280" height="700"></iframe></div>
+        <div className="tab-pane fade show active" id="nav-bahiablanca" role="tabpanel" aria-labelledby="nav-bahiablanca-tab" tabindex="0"> <iframe src="https://www.google.com/maps/d/embed?mid=1zMZ63NeVY1bLQKvQE3rKVaVQlA9YDVaU&ehbc=2E312F" className='responsiveIframe' ></iframe></div>
+        <div className="tab-pane fade m-auto" id="nav-costa" role="tabpanel" aria-labelledby="nav-costa-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=1LkjXc0BbWSPJddZA9qJCyFzkE2-vviD6&ehbc=2E312F" className='responsiveIframe'></iframe></div>
+        <div className="tab-pane fade m-auto" id="nav-cuyo" role="tabpanel" aria-labelledby="nav-cuyo-tab" tabindex="0">  <iframe src="https://www.google.com/maps/d/embed?mid=130l-QA7X10ZsnoSnhm7n2KfGweaLVUw&ehbc=2E312F" className='responsiveIframe'></iframe></div>
+        <div className="tab-pane fade m-auto" id="nav-noa" role="tabpanel" aria-labelledby="nav-noa-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=1Au9gfAp5Mwvhgi6KVbqJ4qBvCeLTRBGF&ehbc=2E312F" className='responsiveIframe'></iframe></div>
+        <div className="tab-pane fade m-auto" id="nav-patagonia" role="tabpanel" aria-labelledby="nav-patagonia-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=11DTLz8bqaL_6JYBhRSeT_VzwJqmzsDw&ehbc=2E312F" className='responsiveIframe'></iframe></div>
+        <div className="tab-pane fade m-auto" id="nav-santa" role="tabpanel" aria-labelledby="nav-santa-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=1FKfsygYUdTm4WGAZUby8sn4eeJPZO9Oa&ehbc=2E312F" className='responsiveIframe'></iframe></div>
       </div>
     </div>
   )

@@ -36,16 +36,10 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-hacemos-tab" data-bs-toggle="tab" data-bs-target="#nav-hacemos" type="button" role="tab" aria-controls="nav-hacemos" aria-selected="false">Que Hacemos</button>
         </div>
       </nav>
-      <div className="tab-content m-auto text-start mt-3 px-5" id="nav-tabContent">
+      <div className="tab-content m-auto text-start mt-3 px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
-          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
-            <h5><u>OBJETIVO DEL PROCEDIMIENTO Y ALCANCE DE APLICACIÓN</u></h5>
-            <p>Este procedimiento describe la metodología para realizar la contención a los clientes usuarios durante la coordinación de la asistencia. Alcanza a los servicios de traslado y mecánica ligera, de red nacional, tráficos nacionales y tráficos locales. </p>
-          </div>
+          <h3><u>OBJETIVO DEL PROCEDIMIENTO Y ALCANCE DE APLICACIÓN</u></h3>
+          <p>Este procedimiento describe la metodología para realizar la contención a los clientes usuarios durante la coordinación de la asistencia. Alcanza a los servicios de traslado y mecánica ligera, de red nacional, tráficos nacionales y tráficos locales. </p>
         </div>
         <div className="tab-pane fade" id="nav-redna" role="tabpanel" aria-labelledby="nav-redna-tab" tabindex="0">
           <nav>
@@ -94,7 +88,7 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-cmbdemtn" role="tabpanel" aria-labelledby="nav-cmbdemtn-tab" tabindex="0">
               <p>Para los servicios que se encuentren en los Tráficos Nacionales (tanto servicios de traslado como de mecánica ligera), a los cuales se les modificó la asignación de una base, se deberá realizar un control </p>
-              <h5><u>Control</u></h5>
+              <h3><u>Control</u></h3>
               <p>Dentro de la pantalla ‘Derivados’ se deberán verificar los servicios y controlar los cambios de demora a través del botón ‘Cambios de demora’ de la solapa “5. Horarios / otros”. </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-faltacomtn" role="tabpanel" aria-labelledby="nav-faltacomtn-tab" tabindex="0">
@@ -102,9 +96,9 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-demycierretn" role="tabpanel" aria-labelledby="nav-demycierretn-tab" tabindex="0">
               <p>Para los servicios cuya demora esté próxima a cumplirse o ya se encontrare cumplida y el móvil aún no hubiera llegado, serán aplicables los incisos a continuación. </p>
-              <h5><u>Demora Caída</u></h5>
+              <h3><u>Demora Caída</u></h3>
               <p>El Operador de Contención deberá consultar al móvil el motivo del retraso y el tiempo restante. Posteriormente deberá llamar al cliente para informar lo sucedido. </p>
-              <h5><u>Segumiento, Control y Cierre de Servicios</u></h5>
+              <h3><u>Segumiento, Control y Cierre de Servicios</u></h3>
               <p>Si al realizar el seguimiento del servicio, el Operador de Contención verificare que el móvil ya realizó el servicio, dará llegada y finalización del servicio en el sistema. </p>
             </div>
           </div>

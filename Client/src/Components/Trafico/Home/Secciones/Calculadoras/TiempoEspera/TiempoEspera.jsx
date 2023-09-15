@@ -14,7 +14,7 @@ function TiempoEspera() {
   };
 
   return (
-    <div className='container text-center mt-2 h-100 w-100 bg-secondary rounded-5 p-4'>
+    <div className='container text-center mt-2 h-100 w-100 bg-secondary rounded-5 p-5'>
       <h1>Calculadora de Tiempo de Espera</h1>
       <div className='bg-dark border border-black rounded-2'>
         <p>En tipo de producto seleccionar: </p>
@@ -24,12 +24,20 @@ function TiempoEspera() {
         </ul>
       </div>
       <div className='mt-4'>
-        <label>
+        <label className='px-2'>
           Ingrese la cantidad de productos:
           <input
             type="number"
             value={time}
             onChange={(e) => setTime(e.target.value)}
+            style={{
+              border: '1px solid black',
+              boxShadow: '0 0 5px black',
+              padding: '2px',
+              marginTop: '10px',
+              marginLeft: '5px',
+            }}
+            
           />
         </label>
       </div>

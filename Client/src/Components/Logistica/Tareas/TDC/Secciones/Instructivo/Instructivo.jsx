@@ -2,6 +2,7 @@ import React from 'react'
 import * as bootstrap from 'bootstrap'
 import imagen1 from '../../../../Image/eficaz1.png'
 import imagen2 from '../../../../Image/eficaz2.png'
+import Formato from './Formato/Formato'
 
 export default function Instructivo() {
   const triggerTabList = document.querySelectorAll('#myTab button')
@@ -25,7 +26,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
         </div>
       </nav>
-      <div className="tab-content m-auto mt-3 px-5" id="nav-tabContent">
+      <div className="tab-content m-auto mt-3 px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active px-3 mt-3" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
           <ul className='text-start fs-5'>
             <li>Visualización y análisis de la pantallas para la derivacion de servicios.</li>
@@ -37,19 +38,19 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade " id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
           <div className='d-flex flex-row justify-content-evenly px-4'>
-            <div className='px-5 mt-5'>
+            <div className='px-5 mt-1'>
               <h3>1º Servicio</h3>
-              <img src={imagen1} alt="Eficaz1" height={350} width={450} />
+              <img src={imagen1} alt="Eficaz1" className='responsiveImg' />
             </div>
-            <div className='mt-5'>
+            <div className='mt-1'>
               <h3>2º Servicio</h3>
-              <img src={imagen2} alt="Eficaz2" height={350} width={450} />
+              <img src={imagen2} alt="Eficaz2" className='responsiveImg' />
             </div>
           </div>
           <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base</p>
         </div>
         <div className="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
-          <h1>Formato de registro</h1>
+          <Formato />
         </div>
         <div className="tab-pane fade px-3 mt-3" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
           <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche </p>

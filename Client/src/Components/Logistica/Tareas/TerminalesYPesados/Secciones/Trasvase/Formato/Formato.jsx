@@ -51,88 +51,102 @@ export default function Formato() {
         setCopied(false);
     }
 
-
     return (
-        <div className='d-flex flex-column py-2 justify-content-center text-start'>
+        <div className='container my-5'>
             <h6 className='my-3'>Formato para prestador Asist Cargo</h6>
-            <div>
-                <label className="px-3 py-2">Cliente:</label>
-                <input
-                    type="text"
-                    value={formData.cliente}
-                    onChange={e => handleFieldChange('cliente', e.target.value)}
-                />
+            <div className='row'>
+                <div className='col-md-6'>
+                    <div className='form-group'>
+                        <label>Cliente:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.cliente}
+                            onChange={e => handleFieldChange('cliente', e.target.value)}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <label>Télefono:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.telefono}
+                            onChange={e => handleFieldChange('telefono', e.target.value)}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <label>Patente:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.patente}
+                            onChange={e => handleFieldChange('patente', e.target.value)}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <label>Unidad:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.unidad}
+                            onChange={e => handleFieldChange('unidad', e.target.value)}
+                        />
+                    </div>
+                </div>
+                <div className='col-md-6'>
+                    <div className='form-group'>
+                        <label>Ubicación:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.ubicacion}
+                            onChange={e => handleFieldChange('ubicacion', e.target.value)}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <label>Tipo de carga:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.carga}
+                            onChange={e => handleFieldChange('carga', e.target.value)}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <label>Falla:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.falla}
+                            onChange={e => handleFieldChange('falla', e.target.value)}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <label>Observaciones:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={formData.observaciones}
+                            onChange={e => handleFieldChange('observaciones', e.target.value)}
+                        />
+                    </div>
+                </div>
             </div>
-            <div>
-                <label className="px-3 py-2">Télefono:</label>
-                <input
-                    type="number"
-                    value={formData.telefono}
-                    onChange={e => handleFieldChange('telefono', e.target.value)}
-                />
+            <div className='row justify-content-center'>
+                <div className='col-md-6'>
+                    <div className='d-flex justify-content-between align-items-cente my-3'>
+                        <button className="btn btn-dark" onClick={handleCopyClick}>
+                            {copied ? 'Copiado' : 'Copiar'}
+                        </button>
+                        <button className="btn btn-dark" onClick={handleReset}>
+                            Restablecer
+                        </button>
+                    </div>
+                    <p className='pt-2'>Enviar formato al siguiente correo <b>operaciones@assistcargo.com</b></p>
+                </div>
             </div>
-            <div>
-                <label className="px-3 py-2">Patente:</label>
-                <input
-                    type="text"
-                    value={formData.patente}
-                    onChange={e => handleFieldChange('patente', e.target.value)}
-                />
-            </div>
-            <div>
-                <label className="px-3 py-2">Unidad:</label>
-                <input
-                    type="text"
-                    value={formData.unidad}
-                    onChange={e => handleFieldChange('unidad', e.target.value)}
-                />
-            </div>
-            <div>
-                <label className="px-3 py-2">Ubicación:</label>
-                    <input
-                        type="number"
-                        value={formData.ubicacion}
-                        onChange={e => handleFieldChange('ubicacion', e.target.value)}
-                    />
-                    
-            </div>
-            <div>
-                <label className="px-3 py-2">Tipo de carga:</label>
-                <input
-                    type="text"
-                    value={formData.carga}
-                    onChange={e => handleFieldChange('carga', e.target.value)}
-                />
-            </div>
-            <div>
-                <label className="px-3 py-2">Falla:</label>
-                <input
-                    type="text"
-                    value={formData.falla}
-                    onChange={e => handleFieldChange('falla', e.target.value)}
-                />
-            </div>
-            <div>
-                <label className="px-3 py-2">Observaciones:</label>
-                <input
-                    type="text"
-                    value={formData.observaciones}
-                    onChange={e => handleFieldChange('observaciones', e.target.value)}
-                />
-            </div>
-            <div className='d-flex flex-row pt-3 m-auto h-50 w-50 m-auto'>
-                <button className="btn btn-dark mt-3 " onClick={handleCopyClick}>
-                    {copied ? 'Copiado' : 'Copiar'}
-                </button>
-                <button className="btn btn-dark mt-3 mx-4" onClick={handleReset}>
-                    Restablecer
-                </button>
-            </div>
-
-        <p className='pt-2'>Enviar formato al siguiente correo <b>operaciones@assistcargo.com</b></p>
-
         </div>
-    )
+    );
 }
 
 

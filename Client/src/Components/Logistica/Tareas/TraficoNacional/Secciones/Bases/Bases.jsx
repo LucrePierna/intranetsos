@@ -30,7 +30,7 @@ export default function Procedimientos() {
           <button class="nav-link custom" id="nav-stafe-tab" data-bs-toggle="tab" data-bs-target="#nav-stafe" type="button" role="tab" aria-controls="nav-stafe" aria-selected="false">Santa Fe</button>
         </div>
       </nav>
-      <div class="tab-content text-start mt-3 m-auto px-5" id="nav-tabContent">
+      <div class="tab-content text-start mt-3 m-auto px-5 fs-5" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-bahia" role="tabpanel" aria-labelledby="nav-bahia-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -90,7 +90,7 @@ export default function Procedimientos() {
                 <li>Costa atlántica (CA)</li>
                 <li>Ruta 2 Norte (R2N)</li>
               </ul>
-              <h5>Zona en Automatico</h5>
+              <h3>Zona en Automatico</h3>
               <p>Dentro de las posibilidades, se trabajarán los servicios de la ciudad de Mar del Plata de manera automática.   </p>
             </div>
             <div class="tab-pane fade" id="nav-induccosta" role="tabpanel" aria-labelledby="nav-induccosta-tab" tabindex="0">
@@ -184,7 +184,7 @@ export default function Procedimientos() {
               <button class="nav-link sub" id="nav-inducnoa-tab" data-bs-toggle="tab" data-bs-target="#nav-inducnoa" type="button" role="tab" aria-controls="nav-inducnoa" aria-selected="false">Zonas de Inducción</button>
             </div>
           </nav>
-          <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
+          <div class="tab-content text-start px-4 mt-4 " id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orgznnoa" role="tabpanel" aria-labelledby="nav-orgznnoa-tab" tabindex="0">
               <p>
                 En caso de haber más de un colaborador, se recomienda subdividir por zonas:<br></br>

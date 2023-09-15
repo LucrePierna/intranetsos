@@ -101,104 +101,110 @@ function Reintegro() {
   };
 
   return (
-    <div className="container text-center mt-5 h-50 w-50 bg-secondary rounded-5 p-4">
-      <h1>CALCULO DE REINTEGRO</h1>
-      <p className="bg-danger text-white p-2 border border-danger">
-        <b>Importante!!</b> Recordar informar que debe ser una factura fiscal y el socio debe adjuntarla con sus datos bancarios en www.redsos.com.ar
-      </p>
-      <div className="d-flex justify-content-center">
-        <div className="mr-5 mx-1">
-          <div className="form-check">
-            <input
-              className="form-check-input rounded-circle mx-1"
-              type="checkbox"
-              checked={trasladoChecked}
-              onChange={() => {
-                setTrasladoChecked(!trasladoChecked);
-                if (mecanicaChecked) {
-                  setMecanicaChecked(false);
-                }
-              }}
-            />
-            <label className="form-check-label">Traslado</label>
-          </div>
-        </div>
-        <div>
-          <div className="form-check">
-            <input
-              className="form-check-input rounded-circle mx-1"
-              type="checkbox"
-              checked={mecanicaChecked}
-              onChange={() => {
-                setMecanicaChecked(!mecanicaChecked);
-                if (trasladoChecked) {
-                  setTrasladoChecked(false);
-                }
-              }}
-            />
-            <label className="form-check-label">Mecánica</label>
-          </div>
-        </div>
-      </div>
+    <div className="container text-center mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-8">
+          <div className="bg-secondary rounded-5 p-4">
+            <h1>CALCULO DE REINTEGRO</h1>
+            <p className="bg-danger text-white p-2 border border-danger">
+              <b>Importante!!</b> Recordar informar que debe ser una factura fiscal y el socio debe adjuntarla con sus datos bancarios en www.redsos.com.ar
+            </p>
+            <div className="d-flex justify-content-center">
+              <div className="mr-4">
+                <div className="form-check">
+                  <input
+                    className="form-check-input rounded-circle mx-1"
+                    type="checkbox"
+                    checked={trasladoChecked}
+                    onChange={() => {
+                      setTrasladoChecked(!trasladoChecked);
+                      if (mecanicaChecked) {
+                        setMecanicaChecked(false);
+                      }
+                    }}
+                  />
+                  <label className="form-check-label">Traslado</label>
+                </div>
+              </div>
+              <div>
+                <div className="form-check">
+                  <input
+                    className="form-check-input rounded-circle mx-1"
+                    type="checkbox"
+                    checked={mecanicaChecked}
+                    onChange={() => {
+                      setMecanicaChecked(!mecanicaChecked);
+                      if (trasladoChecked) {
+                        setTrasladoChecked(false);
+                      }
+                    }}
+                  />
+                  <label className="form-check-label">Mecánica</label>
+                </div>
+              </div>
+            </div>
 
-      <div className="mt-3">
-        <label>
-          Compañía:
-          <select className="form-select" value={comp} onChange={(e) => setComp(e.target.value)}>
-            <option value="o">Otras Compañías</option>
-            <option value="f">Federación Patronal</option>
-          </select>
-        </label>
-      </div>
-      <div className="mt-3">
-        <label>
-          Vehículo:
-          <select className="form-select" value={veh} onChange={(e) => setVeh(e.target.value)}>
-            <option value="a">Auto</option>
-            <option value="l">Liviano Excedido</option>
-            <option value="ca">Camiones</option>
-          </select>
-        </label>
-      </div>
-      <div className="mt-3">
-        <label>
-          Zona:
-          <select className="form-select" value={zon} onChange={(e) => setZon(e.target.value)}>
-            <option value="r">Resto del País</option>
-            <option value="p">Patagonia</option>
-          </select>
-        </label>
-      </div>
-      {mecanicaChecked ? (
-        <div className="mt-3">
-          <label>
-            Kilómetros <b>Lineales:</b>
-            <input
-              type="number"
-              className="form-control"
-              value={kms}
-              onChange={(e) => setKms(e.target.value)}
-              disabled
-            />
-          </label>
+            <div className="mt-3">
+              <label>
+                Compañía:
+                <select className="form-select" value={comp} onChange={(e) => setComp(e.target.value)}>
+                  <option value="o">Otras Compañías</option>
+                  <option value="f">Federación Patronal</option>
+                </select>
+              </label>
+            </div>
+            <div className="mt-3">
+              <label>
+                Vehículo:
+                <select className="form-select" value={veh} onChange={(e) => setVeh(e.target.value)}>
+                  <option value="a">Auto</option>
+                  <option value="l">Liviano Excedido</option>
+                  <option value="ca">Camiones</option>
+                </select>
+              </label>
+            </div>
+            <div className="mt-3">
+              <label>
+                Zona:
+                <select className="form-select" value={zon} onChange={(e) => setZon(e.target.value)}>
+                  <option value="r">Resto del País</option>
+                  <option value="p">Patagonia</option>
+                </select>
+              </label>
+            </div>
+            {mecanicaChecked ? (
+              <div className="mt-3">
+                <label>
+                  Kilómetros <b>Lineales:</b>
+                  <input
+                    type="number"
+                    className="form-control"
+                    value={kms}
+                    onChange={(e) => setKms(e.target.value)}
+                    disabled
+                  />
+                </label>
+              </div>
+            ) : (
+              <div className="mt-3">
+                <label>
+                  Kilómetros <b>Lineales:</b>
+                  <input
+                    type="number"
+                    className="form-control"
+                    value={kms}
+                    onChange={(e) => setKms(e.target.value)}
+                  />
+                </label>
+              </div>
+            )}
+            <button className="btn btn-danger mt-3" onClick={calc_reintegro1}>Calcular</button>
+            {resultado && (
+              <div className="mt-3 py-4" dangerouslySetInnerHTML={{ __html: resultado }}></div>
+            )}
+          </div>
         </div>
-      ) : (
-        <div className="mt-3">
-          <label>
-            Kilómetros <b>Lineales:</b>
-            <input
-              type="number"
-              className="form-control"
-              value={kms}
-              onChange={(e) => setKms(e.target.value)}
-            />
-          </label>
-        </div>
-      )}
-      <button className="btn btn-danger mt-3" onClick={calc_reintegro1}>Calcular</button>
-      {resultado && (
-        <div className="mt-3 py-4" dangerouslySetInnerHTML={{ __html: resultado }}></div>
-      )}
+      </div>
     </div>
   );
 }

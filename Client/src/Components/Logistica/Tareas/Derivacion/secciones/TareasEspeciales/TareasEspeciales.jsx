@@ -22,27 +22,27 @@ export default function TareasEspeciales() {
                     <button className="nav-link custom" id="nav-intransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-intransitable" type="button" role="tab" aria-controls="nav-intransitable" aria-selected="false">Caminos Intransitables</button>
                 </div>
             </nav>
-            <div className="tab-content px-3 m-auto h-50 w-70 " id="nav-tabContent">
-                <div className="tab-pane fade show active px-3 mt-3" id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
+            <div className="tab-content px-3 m-auto h-50 w-70 fs-5 " id="nav-tabContent">
+                <div className="tab-pane fade show active px-3 mt-3 " id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
                     <nav>
                         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                         </div>
                     </nav>
                     <div class="tab-content px-3 mt-3 " id="nav-tabContent">
-                        <p className='fs-5'>Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
-                        <h5><u>Tipo de coberturas</u></h5>
+                        <p >Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
+                        <h3><u>Tipo de coberturas</u></h3>
                         <ul className='mt-2 text-start'>
                             <li>Si posee, (en determinadas circunstancias): la grilla brinda el servicio de apertura siempre y cuando existan las circunstancias que indica. Por ejemplo: si la grilla informa que NO se brinda el servicio en caso de robo o hurto de las llaves, debemos consultar al cliente si esto ocurrió, y si así fue, no tendrá el servicio. Puede ser con o sin tope.</li>
                             <li>Si posee: la grilla brinda el servicio de apertura, sin exigir que se den determinadas circunstancias. Puede ser con o sin tope</li>
                             <li>No posee: En cuyo caso se le informará al cliente que debe hacer la apertura por sus medios.  </li>
                         </ul>
-                        <h5><u>Selección de prestador</u></h5>
+                        <h3><u>Selección de prestador</u></h3>
                         <p>El Operador de Logística deberá verificar la disponibilidad de prestadores de cerrajería en la zona que se encuentra el cliente. Se procederá de la siguiente manera:</p>
                         <ul className='mt-2 text-start'>
                             <li>Coordinar el servicio con un prestador de asistencia al hogar. Se deberá contactar al prestador de la localidad o zona aledaña de asistencia al hogar y derivarle el servicio para que envíen un cerrajero, evaluando de esta manera la posibilidad de realizar la apertura del vehículo.</li>
                             <li>No deberá informar cobertura al prestador, el mismo nos brindará un presupuesto en base al trabajo a realizar el cual deberá autorizarlo un supervisor o B.O.</li>
                         </ul>
-                        <h5><u>CERRAJERÍA, con necesidad de traslado.</u></h5>
+                        <h3><u>CERRAJERÍA, con necesidad de traslado.</u></h3>
                         <p>Estos casos se dan cuando el cliente perdió las llaves del vehículo, por lo cual, a pesar de hacer la apertura, también va a requerir traslado. O en caso de no poder efectuarse la apertura del vehículo.</p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ export default function TareasEspeciales() {
                             <li>Verificar si hay bases disponibles en la localidad que el cliente se encuentre, de ser así brindar los datos del prestador para que el cliente saque turno y asista al lugar.</li>
                             <li>En caso de no existir bases o que el cliente no acepte ir al lugar indicado por nosotros, se le brindará el servicio por reintegro.</li>
                         </ul>
-                        <h6>Debemos informar al cliente (según cuadro):</h6>
+                        <h3>Debemos informar al cliente (según cuadro):</h3>
                         <ul className='mt-2 text-start'>
                             <li>Dirección del prestador</li>
                             <li>Teléfonos para pedir turnos</li>
@@ -112,7 +112,7 @@ export default function TareasEspeciales() {
                     </nav>
                     <div class="tab-content fs-5 mt-5" id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-camintransitable" role="tabpanel" aria-labelledby="nav-camintransitable-tab" tabindex="0">
-                            <h5>¿Qué es un camino Intransitable?</h5>
+                            <h3>¿Qué es un camino Intransitable?</h3>
                             <p>Los mismos se encuentran marcados a través del mapa Mapsource, señalizado con verde flúor.</p>
                             <ul className='text-start'>Pueden estar compuestos por:
                                 <li>Pendientes peligrosas.</li>
@@ -129,7 +129,7 @@ export default function TareasEspeciales() {
                             </ul>
                         </div>
                         <div class="tab-pane fade text-start px-5" id="nav-posibprest" role="tabpanel" aria-labelledby="nav-posibprest-tab" tabindex="0">
-                            <h5>Existen dos posibilidades a raíz de lo consultado con el prestador: </h5>
+                            <h3>Existen dos posibilidades a raíz de lo consultado con el prestador: </h3>
                             <ul className='text-start'>
                                 <li>Que los prestadores de la zona cobraren un costo adicional por asumir los riesgos que el rescate en esas condiciones implica. Dicho costo estará a cargo del cliente. Riesgos para el móvil: rotura, mayor demanda de tiempo para realizar el servicio, etc.</li>
                                 <li>Que todos los prestadores de la zona coincidan en la imposibilidad de acceder por el estado del camino. De ser así, el cliente deberá movilizarlo de la zona por sus medios, hasta encontrarse en una ubicación donde pueda ser auxiliado.</li>

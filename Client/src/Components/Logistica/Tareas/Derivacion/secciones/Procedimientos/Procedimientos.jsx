@@ -35,36 +35,31 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
         </div>
       </nav>
-      <div className="tab-content m-auto mt-3 px-5" id="nav-tabContent">
+      <div className="tab-content px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
-          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
-            <h5 className='mt-3 '><u>Orden de derivación</u></h5>
-            <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
-            <h5><u>Análisis del servicio</u></h5>
-            <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
-              <table className='mt-5 mb-2'>
-                <tr className='border border-dark'>
-                  <td>Historial de servicios anteriores</td>
-                  <td>Titular</td>
-                  <td>Vehículo</td>
-                  <td>Dominio</td>
-                  <td>Color</td>
-                </tr>
-                <tr className='border border-dark'><td>Falla</td>
-                  <td>Teléfono</td>
-                  <td>Ubicación origen y destino</td>
-                  <td>Cantidad de pasajeros</td>
-                  <td>Requisitos para que el vehículo viaje solo en caso de solicitar</td></tr>
-                <tr className='border border-dark'><td>Horarios de taller</td>
-                  <td>Si posee carga</td>
-                  <td>Dimensiones y si hay alguna otra información extra en referencias</td>
-                  <td>Cobertura de la asistencia</td>
-                  <td>Si el trayecto corresponde o no a recorrido de transportin</td></tr>
-              </table>
+          <h3 className='mt-3 '><u>Orden de derivación</u></h3>
+          <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
+          <h3><u>Análisis del servicio</u></h3>
+          <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
+            <table className='mt-5 mb-2'>
+              <tr className='border border-dark'>
+                <td>Historial de servicios anteriores</td>
+                <td>Titular</td>
+                <td>Vehículo</td>
+                <td>Dominio</td>
+                <td>Color</td>
+              </tr>
+              <tr className='border border-dark'><td>Falla</td>
+                <td>Teléfono</td>
+                <td>Ubicación origen y destino</td>
+                <td>Cantidad de pasajeros</td>
+                <td>Requisitos para que el vehículo viaje solo en caso de solicitar</td></tr>
+              <tr className='border border-dark'><td>Horarios de taller</td>
+                <td>Si posee carga</td>
+                <td>Dimensiones y si hay alguna otra información extra en referencias</td>
+                <td>Cobertura de la asistencia</td>
+                <td>Si el trayecto corresponde o no a recorrido de transportin</td></tr>
+            </table>
 
             </p>
             <h5>Contención</h5>
@@ -153,7 +148,7 @@ export default function Procedimientos() {
                 <li>En efectivo, se recordará al cliente que debe abonarlo al chofer de la grúa antes de cargar el vehículo para su traslado.</li>
                 <li>Link de pago, el cual será generado por cada derivador, a través de Astor, solicitándole los datos que el sistema requiera.</li>
                 <li>Pago al prestador, se podrá consultar con prestador posibilidad de realizar el cobro con tarjeta de crédito, débito o transferencia bancaria. En caso de aceptar, el prestador será responsable de coordinar el cobro contactando al cliente. Si surgiese alguna eventualidad o inconveniente en el cobro será responsable el prestador.   </li></ul>
-              <h6><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h6>
+              <h3><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h3>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <p className='text-start fs-6'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
@@ -169,7 +164,7 @@ export default function Procedimientos() {
                   <li>Brindar el códgio de servicio</li>
                   <li>Informar el monto de reintegro</li>
                 </ul>
-                <h5><b>Debe dejar registro en el serivio del monto ofrecido y de la autorización del supervisor/Backoffice</b></h5>
+                <h3><b>Debe dejar registro en el serivio del monto ofrecido y de la autorización del supervisor/Backoffice</b></h3>
               </p>
             </div>
           </div>
@@ -194,15 +189,14 @@ export default function Procedimientos() {
                 <li>Identificar zonas críticas por falta de disponibilidad de móviles.</li>
                 <li>Disminuir el tiempo promedio de derivación de los servicios.</li>
               </ul>
-              <h6><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h6>
+              <h4><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h4>
             </div>
-            <div class="tab-pane fade py-5 h-50 w-50 m-auto" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
-              <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" width="600" height="550"></iframe>
+            <div class="tab-pane fade py-5 h-50 w-100 m-auto " id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
+              <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F"
+                className="responsiveIframe" style={{ width: '100%' }} ></iframe>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
   )
 }
