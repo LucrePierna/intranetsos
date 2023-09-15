@@ -137,28 +137,6 @@ export default function Terminales() {
             </div>
           </div>
         </div>
-
-
-
-        <div className="tab-pane fade " id="nav-roads" role="tabpanel" aria-labelledby="nav-zona-tab" tabIndex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link sub active" id="nav-derivzn-tab" data-bs-toggle="tab" data-bs-target="#nav-derivzn" type="button" role="tab" aria-controls="nav-derivzn" aria-selected="true">Tarea</button>
-              <button class="nav-link sub" id="nav-mapazn-tab" data-bs-toggle="tab" data-bs-target="#nav-mapazn" type="button" role="tab" aria-controls="nav-mapazn" aria-selected="false">Tarea</button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3" id="nav-derivzn" role="tabpanel" aria-labelledby="nav-derivzn-tab" tabindex="0">
-              ...contenido...
-            </div>
-            <div class="tab-pane fade px-3 py-5" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabindex="0">
-              ...contenido...
-            </div>
-
-          </div>
-        </div>
-
-
       </div>
     </div>
   )
