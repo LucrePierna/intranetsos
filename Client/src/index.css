@@ -144,6 +144,7 @@ conteiner-flujograma {
   width: 750px !important;
   height: 500px;
   margin-bottom: 30px; 
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -156,6 +157,7 @@ conteiner-flujograma {
 @media (max-width: 993px) {
 
   .responsiveIframe {
+    width: 1500px;
     height: 700px;
     margin: auto;
   }
@@ -163,9 +165,16 @@ conteiner-flujograma {
 @media (max-width: 1280px) {
 
   .responsiveIframe {
-    height: 800px;
+    height: 1000px;
+    width: 1200px;
     margin: auto;
   }
+}
+
+.responsiveImgGeneral{
+  max-width: 500; 
+  height: 400px; 
+  margin: auto;
 }
 
 
@@ -196,5 +205,6 @@ conteiner-flujograma {
 @media (min-width: 1201px) {
   .responsiveImgBateria {
     max-width: 750px;
+    height: 650px;
   }
 }

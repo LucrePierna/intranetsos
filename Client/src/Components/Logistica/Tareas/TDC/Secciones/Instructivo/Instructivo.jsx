@@ -37,11 +37,11 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade " id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
           <div className='d-flex flex-row justify-content-evenly px-4'>
-            <div className='px-5 mt-5'>
+            <div className='px-5 mt-1'>
               <h3>1º Servicio</h3>
               <img src={imagen1} alt="Eficaz1" className='responsiveImg' />
             </div>
-            <div className='mt-5'>
+            <div className='mt-1'>
               <h3>2º Servicio</h3>
               <img src={imagen2} alt="Eficaz2" className='responsiveImg' />
             </div>
