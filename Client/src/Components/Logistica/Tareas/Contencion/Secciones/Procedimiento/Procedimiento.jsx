@@ -25,7 +25,7 @@ export default function Procedimientos() {
 
 
   return (
-    <div className='conteinerNav mt-5 ' >
+    <div className='conteinerNav mt-5 rounded' >
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Objetivos</button>

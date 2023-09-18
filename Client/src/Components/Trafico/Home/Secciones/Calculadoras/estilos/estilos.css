@@ -1,27 +1,24 @@
-label {
-    font-weight: bold; 
-  }
-  
- 
-  input[type="text"],
-  input[type="number"],
-  select {
-    width: 150px; 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    text-align: center; 
-  }
+.label-style {
+  font-weight: bold;
+}
 
-  .conteiner{
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-  }
+.input-style {
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-  .conteinerKM{
-    width: 150px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    justify-content: center;
-    align-items: center;
-  }
+.container-style {
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerKM-style {
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
