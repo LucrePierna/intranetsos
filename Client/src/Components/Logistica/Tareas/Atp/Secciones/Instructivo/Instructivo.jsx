@@ -33,15 +33,23 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Motivo de la Consulta</button>
           <button className="nav-link custom" id="nav-cierrechat-tab" data-bs-toggle="tab" data-bs-target="#nav-cierrechat" type="button" role="tab" aria-controls="nav-cierrechat" aria-selected="false">Cierre de Chat</button>
           <button className="nav-link custom" id="nav-finturno-tab" data-bs-toggle="tab" data-bs-target="#nav-finturno" type="button" role="tab" aria-controls="nav-finturno" aria-selected="false">Fin de Turno</button>
-          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-roads" type="button" role="tab" aria-controls="nav-roads" aria-selected="false">Carga de Productos</button>
+          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Carga de Productos</button>
           <button className="nav-link custom" id="nav-gestiones-tab" data-bs-toggle="tab" data-bs-target="#nav-gestiones" type="button" role="tab" aria-controls="nav-gestiones" aria-selected="false">Otras Gestiones</button>
         </div>
       </nav>
       <div className='tab-content mt-3 m-auto text-start fs-5' id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <p>Requiere la solución especifica de consultas realizadas por prestadores de red nacional a través de llamados o mensajes que ingresan en la plataforma Chattigo, exclusivo para prestadores. En algunas oportunidades, pueden presentarse consultas de móviles que corresponden a tráfico de red nacional cuando se vean colapsados. En estos casos, se verifica en el servicio a que tráfico corresponde el servicio y se da aviso al 9700 (tráfico local) o 9750 (tráfico nacional) según corresponda. </p>
         </div>
         <div className="tab-pane fade" id="nav-ingchat" role="tabpanel" aria-labelledby="nav-ingchat-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>Ingreso de chat/llamado</u></h3>
           <p>Se comunica prestador, el mismo puede estar identificado con su nombre o número de base.</p>
           <p>Ejemplo: “Buen día, por el caso 20230505300100...”</p>
@@ -51,6 +59,10 @@ export default function Procedimientos() {
           </p>
         </div>
         <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <p className='fs-5'>Detectar el motivo de la consulta del prestador, verificar desde que base se está comunicando y cuál es el motivo del contacto. <br />
             Se deberá consultar el código del servicio y a que fecha corresponde. </p>
           <h5><u>Motivos de Contacto</u></h5>
@@ -74,6 +86,10 @@ export default function Procedimientos() {
           </div>
         </div>
         <div className="tab-pane fade" id="nav-cierrechat" role="tabpanel" aria-labelledby="nav-cierrechat-tab" tabIndex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>Confirmar cierre y comprensión de las partes</u></h3>
           <p>Una vez resuelta la consulta, indagar si el prestador requiere ayuda en algo más, en caso de obtener una respuesta negativa, finalizar chat agradeciendo por la comunicación y despedirse amablemente. “¿Puedo ayudarle en algo más?” “Gracias por comunicarse, buenas tardes/noches” </p>
           <h3><u>Registrar datos en el servicio</u></h3>
@@ -82,12 +98,16 @@ export default function Procedimientos() {
           <p>Al finalizar la consulta y luego de dejar los registros, clasificar correctamente el motivo de cierre: Anulación de servicio - Consulta general - Modificación de servicio – Prestadores. </p>
         </div>
         <div className="tab-pane fade" id="nav-finturno" role="tabpanel" aria-labelledby="nav-finturno-tab" tabIndex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>Transferir Chat's</u></h3>
           <p>Al finalizar la jornada, habiendo quedado consultas pendientes de cerrar, el operador de chattigo deberá transferir chat al operador que esté de turno dando aviso previo al mismo o a un supervisor/back office.</p>
           <h3><u>Imprtante</u></h3>
           <p>Al momento de finalizar la tarea y desloguearse, asegurarse de “Finalizar sesión” y que no quede logueado el usuario, ya que continuarán ingresando chats que no serán atendidos generando demoras y posibles reclamos.</p>
         </div>
-        <div className="tab-pane fade " id="nav-roads" role="tabpanel" aria-labelledby="nav-zona-tab" tabIndex="0">
+        <div className="tab-pane fade " id="nav-zona" role="tabpanel" aria-labelledby="nav-zona-tab" tabIndex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-procedimiento-tab" data-bs-toggle="tab" data-bs-target="#nav-procedimiento" type="button" role="tab" aria-controls="nav-procedimiento" aria-selected="true">Procedimiento</button>
@@ -116,6 +136,10 @@ export default function Procedimientos() {
           </div>
         </div>
         <div className="tab-pane fade" id="nav-gestiones" role="tabpanel" aria-labelledby="nav-gestiones-tab" tabIndex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>Cliente envía ubicación/fotos por chat</u></h3>
           <p>Se deberá solicitar al cliente la patente del vehículo y dejar asentado en el servicio la información.</p>
           <h3><u>Cliente solicita un servicio por chattigo</u></h3>

@@ -24,58 +24,82 @@ export default function TareasEspeciales() {
             </nav>
             <div className="tab-content px-3 m-auto h-50 w-70 fs-5 " id="nav-tabContent">
                 <div className="tab-pane fade show active px-3 mt-3 " id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
-                    <p >Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
-                    <h3><u>Tipo de coberturas</u></h3>
-                    <ul className='mt-2 text-start'>
-                        <li>Si posee, (en determinadas circunstancias): la grilla brinda el servicio de apertura siempre y cuando existan las circunstancias que indica. Por ejemplo: si la grilla informa que NO se brinda el servicio en caso de robo o hurto de las llaves, debemos consultar al cliente si esto ocurrió, y si así fue, no tendrá el servicio. Puede ser con o sin tope.</li>
-                        <li>Si posee: la grilla brinda el servicio de apertura, sin exigir que se den determinadas circunstancias. Puede ser con o sin tope</li>
-                        <li>No posee: En cuyo caso se le informará al cliente que debe hacer la apertura por sus medios.  </li>
-                    </ul>
-                    <h3><u>Selección de prestador</u></h3>
-                    <p>El Operador de Logística deberá verificar la disponibilidad de prestadores de cerrajería en la zona que se encuentra el cliente. Se procederá de la siguiente manera:</p>
-                    <ul className='mt-2 text-start'>
-                        <li>Coordinar el servicio con un prestador de asistencia al hogar. Se deberá contactar al prestador de la localidad o zona aledaña de asistencia al hogar y derivarle el servicio para que envíen un cerrajero, evaluando de esta manera la posibilidad de realizar la apertura del vehículo.</li>
-                        <li>No deberá informar cobertura al prestador, el mismo nos brindará un presupuesto en base al trabajo a realizar el cual deberá autorizarlo un supervisor o B.O.</li>
-                    </ul>
-                    <h3><u>CERRAJERÍA, con necesidad de traslado.</u></h3>
-                    <p>Estos casos se dan cuando el cliente perdió las llaves del vehículo, por lo cual, a pesar de hacer la apertura, también va a requerir traslado. O en caso de no poder efectuarse la apertura del vehículo.</p>
+                    <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                        </div>
+                    </nav>
+                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+                        <p >Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
+                        <h3><u>Tipo de coberturas</u></h3>
+                        <ul className='mt-2 text-start'>
+                            <li>Si posee, (en determinadas circunstancias): la grilla brinda el servicio de apertura siempre y cuando existan las circunstancias que indica. Por ejemplo: si la grilla informa que NO se brinda el servicio en caso de robo o hurto de las llaves, debemos consultar al cliente si esto ocurrió, y si así fue, no tendrá el servicio. Puede ser con o sin tope.</li>
+                            <li>Si posee: la grilla brinda el servicio de apertura, sin exigir que se den determinadas circunstancias. Puede ser con o sin tope</li>
+                            <li>No posee: En cuyo caso se le informará al cliente que debe hacer la apertura por sus medios.  </li>
+                        </ul>
+                        <h3><u>Selección de prestador</u></h3>
+                        <p>El Operador de Logística deberá verificar la disponibilidad de prestadores de cerrajería en la zona que se encuentra el cliente. Se procederá de la siguiente manera:</p>
+                        <ul className='mt-2 text-start'>
+                            <li>Coordinar el servicio con un prestador de asistencia al hogar. Se deberá contactar al prestador de la localidad o zona aledaña de asistencia al hogar y derivarle el servicio para que envíen un cerrajero, evaluando de esta manera la posibilidad de realizar la apertura del vehículo.</li>
+                            <li>No deberá informar cobertura al prestador, el mismo nos brindará un presupuesto en base al trabajo a realizar el cual deberá autorizarlo un supervisor o B.O.</li>
+                        </ul>
+                        <h3><u>CERRAJERÍA, con necesidad de traslado.</u></h3>
+                        <p>Estos casos se dan cuando el cliente perdió las llaves del vehículo, por lo cual, a pesar de hacer la apertura, también va a requerir traslado. O en caso de no poder efectuarse la apertura del vehículo.</p>
+                    </div>
                 </div>
                 <div className="tab-pane fade px-3 mt-3 text-start" id="nav-extraccion" role="tabpanel" aria-labelledby="nav-extraccion-tab" tabindex="0">
-                    <p>Es una de las asistencias especiales que se brindan cuando el cliente solicita un servicio cuyo vehículo se encuentre atascado, dado vuelta o de costado. El prestador deba realizar maniobras y dejarlo en condiciones de ser trasladado o de volver a rodar por sus medios.</p>
-                    <p>El operador deberá en primera instancia validar si según la cobertura el cliente posee el servicio. Luego se deberá corroborar:</p>
-                    <ul className='text-start m-auto py-2'>
-                        <li >Descripción del hecho.</li>
-                        <li>Estado de ruedas.</li>
-                        <li>Estado del vehículo.</li>
-                        <li>Estado del camino.</li>
-                    </ul>
-                    <p className='mt-2'>El operador deberá buscar prestador informando explícitamente la situación. El prestador debe informarnos la cotización cuando llega al lugar una vez evaluada la condición del vehículo, la misma es autorizada por supervisor/Back Office. </p>
-                    <ul className='mt-2 text-start'>
-                        <li>Recordar que en este caso siempre firma conformidad de arrastre sin excepción</li>
-                        <li>No indicar de antemano a prestador tope de cliente.</li>
-                    </ul>
+                    <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                        </div>
+                    </nav>
+                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+                        <p>Es una de las asistencias especiales que se brindan cuando el cliente solicita un servicio cuyo vehículo se encuentre atascado, dado vuelta o de costado. El prestador deba realizar maniobras y dejarlo en condiciones de ser trasladado o de volver a rodar por sus medios.</p>
+                        <p>El operador deberá en primera instancia validar si según la cobertura el cliente posee el servicio. Luego se deberá corroborar:</p>
+                        <ul className='text-start m-auto py-2'>
+                            <li >Descripción del hecho.</li>
+                            <li>Estado de ruedas.</li>
+                            <li>Estado del vehículo.</li>
+                            <li>Estado del camino.</li>
+                        </ul>
+                        <p className='mt-2'>El operador deberá buscar prestador informando explícitamente la situación. El prestador debe informarnos la cotización cuando llega al lugar una vez evaluada la condición del vehículo, la misma es autorizada por supervisor/Back Office. </p>
+                        <ul className='mt-2 text-start'>
+                            <li>Recordar que en este caso siempre firma conformidad de arrastre sin excepción</li>
+                            <li>No indicar de antemano a prestador tope de cliente.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="tab-pane fade px-3 mt-3 text-start" id="nav-cristales" role="tabpanel" aria-labelledby="nav-cristales-tab" tabindex="0">
-                    <p className='fs-5'>Es un servicio especial que consiste en el grabado de los caracteres que componen la patente, en los cristales del vehículo. El Operador deberá corroborar si según grilla el cuenta con el servicio y su cobertura. La operatoria varía según la ubicación. </p>
-                    <p className='mt-2'>Capital Federal y Gran Buenos Aires, el cliente deberá contactarse con nuestro prestador para pedir turno. Si el cliente rechaza realizar el servicio con alguno de nuestros prestadores se brindará el servicio por reintegro.</p>
-                    <ul className='text-start mt-2'>
-                        <li>Ag 10643	Station	Capital Federal	Warnes 999 (Villa Crespo)	011 48554442 / 011 48580222 / 011 48578858</li>
-                        <li>Ag 10837	Auto Radio Alarma	La Plata	Calle 66 y 138	0221-155411491 / 0221 4502326</li>
-                    </ul>
-                    <ul className='text-start mt-2'>Red Nacional
-                        <li>Verificar si hay bases disponibles en la localidad que el cliente se encuentre, de ser así brindar los datos del prestador para que el cliente saque turno y asista al lugar.</li>
-                        <li>En caso de no existir bases o que el cliente no acepte ir al lugar indicado por nosotros, se le brindará el servicio por reintegro.</li>
-                    </ul>
-                    <h3>Debemos informar al cliente (según cuadro):</h3>
-                    <ul className='mt-2 text-start'>
-                        <li>Dirección del prestador</li>
-                        <li>Teléfonos para pedir turnos</li>
-                        <li>Código del servicio</li>
-                    </ul>
+                    <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                        </div>
+                    </nav>
+                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+                        <p className='fs-5'>Es un servicio especial que consiste en el grabado de los caracteres que componen la patente, en los cristales del vehículo. El Operador deberá corroborar si según grilla el cuenta con el servicio y su cobertura. La operatoria varía según la ubicación. </p>
+                        <p className='mt-2'>Capital Federal y Gran Buenos Aires, el cliente deberá contactarse con nuestro prestador para pedir turno. Si el cliente rechaza realizar el servicio con alguno de nuestros prestadores se brindará el servicio por reintegro.</p>
+                        <ul className='text-start mt-2'>
+                            <li>Ag 10643	Station	Capital Federal	Warnes 999 (Villa Crespo)	011 48554442 / 011 48580222 / 011 48578858</li>
+                            <li>Ag 10837	Auto Radio Alarma	La Plata	Calle 66 y 138	0221-155411491 / 0221 4502326</li>
+                        </ul>
+                        <ul className='text-start mt-2'>Red Nacional
+                            <li>Verificar si hay bases disponibles en la localidad que el cliente se encuentre, de ser así brindar los datos del prestador para que el cliente saque turno y asista al lugar.</li>
+                            <li>En caso de no existir bases o que el cliente no acepte ir al lugar indicado por nosotros, se le brindará el servicio por reintegro.</li>
+                        </ul>
+                        <h3>Debemos informar al cliente (según cuadro):</h3>
+                        <ul className='mt-2 text-start'>
+                            <li>Dirección del prestador</li>
+                            <li>Teléfonos para pedir turnos</li>
+                            <li>Código del servicio</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="tab-pane fade px-3 mt-3 text-start" id="nav-guardavhc" role="tabpanel" aria-labelledby="nav-guardavhc-tab" tabIndex="0">
-                    <p className='mt-5'>Es la tarea que se coordina excepcionalmente para dejar en resguardo un vehículo en la base de algún prestador cuando el servicio a realizar implica que el prestador no llegue a destino en horario solicitado o por la demanda de servicios en zona se vea afectada por la falta del mismo. </p>
-                    <p>El operador deberá verificar con la base si cuenta con lugar para realizarlo y si la base tiene pactada la guarda en grilla (De no verlo reflejado se toma el costo de una movida local) se verifica en línea si es correcta la misma y se evalúa con un supervisor/back office si el costo es a cargo del cliente o absorbe SOS. </p>
+                    <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                        </div>
+                    </nav>
+                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+                        <p className='mt-5'>Es la tarea que se coordina excepcionalmente para dejar en resguardo un vehículo en la base de algún prestador cuando el servicio a realizar implica que el prestador no llegue a destino en horario solicitado o por la demanda de servicios en zona se vea afectada por la falta del mismo. </p>
+                        <p>El operador deberá verificar con la base si cuenta con lugar para realizarlo y si la base tiene pactada la guarda en grilla (De no verlo reflejado se toma el costo de una movida local) se verifica en línea si es correcta la misma y se evalúa con un supervisor/back office si el costo es a cargo del cliente o absorbe SOS. </p>
+                    </div>
                 </div>
                 <div className="tab-pane fade" id="nav-intransitable" role="tabpanel" aria-labelledby="nav-intransitable-tab" tabIndex="0">
                     <nav>

@@ -107,7 +107,7 @@ function Reintegro() {
         <div className="col-md-8">
           <div className="bg-secondary rounded-5 p-4">
             <h1>CALCULO DE REINTEGRO</h1>
-            <p className="bg-danger text-white p-2 border border-danger">
+            <p className="bg-danger text-white p-2 border border-danger label-style">
               <b>Importante!!</b> Recordar informar que debe ser una factura fiscal y el socio debe adjuntarla con sus datos bancarios en www.redsos.com.ar
             </p>
             <div className="d-flex justify-content-center">
@@ -145,10 +145,10 @@ function Reintegro() {
               </div>
             </div>
 
-            <div className="mt-3 ">
+            <div className="mt-3">
               <label>
                 Compañía:
-                <select className="form-select conteiner " value={comp} onChange={(e) => setComp(e.target.value)}>
+                <select className="form-select container-style" value={comp} onChange={(e) => setComp(e.target.value)}>
                   <option value="o">Otras Compañías</option>
                   <option value="f">Federación Patronal</option>
                 </select>
@@ -157,7 +157,7 @@ function Reintegro() {
             <div className="mt-3">
               <label>
                 Vehículo:
-                <select className="form-select conteiner " value={veh} onChange={(e) => setVeh(e.target.value)}>
+                <select className="form-select container-style" value={veh} onChange={(e) => setVeh(e.target.value)}>
                   <option value="a">Auto</option>
                   <option value="l">Liviano Excedido</option>
                   <option value="ca">Camiones</option>
@@ -167,7 +167,7 @@ function Reintegro() {
             <div className="mt-3">
               <label>
                 Zona:
-                <select className="form-select conteiner" value={zon} onChange={(e) => setZon(e.target.value)}>
+                <select className="form-select container-style" value={zon} onChange={(e) => setZon(e.target.value)}>
                   <option value="r">Resto del País</option>
                   <option value="p">Patagonia</option>
                 </select>
@@ -179,7 +179,7 @@ function Reintegro() {
                   Kilómetros <b>Lineales:</b>
                   <input
                     type="number"
-                    className="form-control"
+                    className="form-control input-style"
                     value={kms}
                     onChange={(e) => setKms(e.target.value)}
                     disabled
@@ -192,7 +192,7 @@ function Reintegro() {
                   Kilómetros <b>Lineales:</b>
                   <input
                     type="number"
-                    className="form-control "
+                    className="form-control input-style"
                     value={kms}
                     onChange={(e) => setKms(e.target.value)}
                   />

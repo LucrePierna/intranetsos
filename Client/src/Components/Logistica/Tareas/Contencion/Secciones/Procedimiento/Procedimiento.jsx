@@ -25,7 +25,7 @@ export default function Procedimientos() {
 
 
   return (
-    <div className='conteinerNav mt-5 ' >
+    <div className='conteinerNav mt-5 rounded' >
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Objetivos</button>
@@ -33,10 +33,15 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-trafnac-tab" data-bs-toggle="tab" data-bs-target="#nav-trafnac" type="button" role="tab" aria-controls="nav-trafnac" aria-selected="false">Tráficos Nacionales</button>
           <button className="nav-link custom" id="nav-trafloc-tab" data-bs-toggle="tab" data-bs-target="#nav-trafloc" type="button" role="tab" aria-controls="nav-trafloc" aria-selected="false">Tráfico Local</button>
           <button className="nav-link custom" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" type="button" role="tab" aria-controls="nav-general" aria-selected="false">Generalidades</button>
+          <button className="nav-link custom" id="nav-hacemos-tab" data-bs-toggle="tab" data-bs-target="#nav-hacemos" type="button" role="tab" aria-controls="nav-hacemos" aria-selected="false">Que Hacemos</button>
         </div>
       </nav>
       <div className="tab-content m-auto text-start mt-3 px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>OBJETIVO DEL PROCEDIMIENTO Y ALCANCE DE APLICACIÓN</u></h3>
           <p>Este procedimiento describe la metodología para realizar la contención a los clientes usuarios durante la coordinación de la asistencia. Alcanza a los servicios de traslado y mecánica ligera, de red nacional, tráficos nacionales y tráficos locales. </p>
         </div>
@@ -139,6 +144,75 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3 py-5" id="nav-espyprog" role="tabpanel" aria-labelledby="nav-espyprog-tab" tabindex="0">
               <p>En todos los casos de servicios solicitados para Directivos, Presidente, personal de compañía de seguro / terminal automotriz, o S.O.S. S.A., independientemente del medio de ingreso de la solicitud, el Operador deberá enviar un correo electrónico informando la prioridad del mismo a las casillas supervisorescat@redsos.com.ar y supervisoresderivacion@redsos.com.ar, supervisorestrafico@redsos.com.ar, supervisoresdepiso@redsos.com.ar, a fin de que se le brinde la prioridad y contención necesaria y verificar respuesta por parte de algún supervisores vía mail corroborando están al tanto del servicio.</p>
+            </div>
+          </div>
+        </div>
+        <div className="tab-pane fade " id="nav-hacemos" role="tabpanel" aria-labelledby="nav-hacemos-tab" tabIndex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-contener-tab" data-bs-toggle="tab" data-bs-target="#nav-contener" type="button" role="tab" aria-controls="nav-contener" aria-selected="true">Casos a Contener</button>
+              <button class="nav-link sub" id="nav-criticos-tab" data-bs-toggle="tab" data-bs-target="#nav-criticos" type="button" role="tab" aria-controls="nav-criticos" aria-selected="false">Casos Criticos</button>
+              <button class="nav-link sub" id="nav-ofrecemos-tab" data-bs-toggle="tab" data-bs-target="#nav-ofrecemos" type="button" role="tab" aria-controls="nav-ofrecemos" aria-selected="false">Ofrecemos</button>
+              <button class="nav-link sub" id="nav-comunicacion-tab" data-bs-toggle="tab" data-bs-target="#nav-comunicacion" type="button" role="tab" aria-controls="nav-comunicacion" aria-selected="false">Tipos de Comunicación</button>
+              <button class="nav-link sub" id="nav-speech-tab" data-bs-toggle="tab" data-bs-target="#nav-speech" type="button" role="tab" aria-controls="nav-speech" aria-selected="false">Speech Orientativos</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active px-3 mt-3" id="nav-contener" role="tabpanel" aria-labelledby="nav-contener-tab" tabindex="0">
+              <ul className='text-start fs-5'>
+                <li>Servicio de Red Nacional</li>
+                <li>Servicio de Tráficos Nacionales</li>
+                <li>Servicio en Espera de Aceptación por Parte de Logistica</li>
+                <li>Trafico Local Móvil Acepta</li>
+                <li>Unicamente en Tránsito o Ruta</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade px-3 mt-3" id="nav-criticos" role="tabpanel" aria-labelledby="nav-criticos-tab" tabindex="0">
+              <h5><u>Clientes en Tránsito o Ruta que Contemplen</u></h5>
+              <ul className='text-start fs-5'>
+                <li>Servicios con Niños o Mujeres Embarazadas.</li>
+                <li>Personas de Riesgo o con Discapacidad.</li>
+                <li>Zonas de Riesgo Como Zonas Peligrosas o Asentamientos.</li>
+                <li>Condiciones Climáticas Extremas.</li>
+                <li>Servicios Originados por Siniestro.</li>
+                <li>Demora Elevada (+180 min).</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade px-3 mt-3" id="nav-ofrecemos" role="tabpanel" aria-labelledby="nav-ofrecemos-tab" tabindex="0">
+              <ul className='text-start fs-5'>
+                <li>Reintegro de traslado  o programación.</li>
+                <li>Coordinación de remis para traslado a estación de servicio.</li>
+                <li>Hospedaje si corresponde.</li>
+                <li>Refrigerio (promedio de $1000 por persona según situación).</li>
+                <li>Ofrecer aviso a defensa civil, policia o bomberos de acuerdo a la situación.</li>
+                <li>Ofrecer aviso a familiar.</li>
+                <li>Analizar otras alternativas /excepciones con supervisor.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade px-3 mt-3" id="nav-comunicacion" role="tabpanel" aria-labelledby="nav-comunicacion-tab" tabindex="0">
+              <ul className='text-start fs-5'>
+                <li>Escuchar al cliente, la indagación es clave.</li>
+                <li>Realizar preguntas cerradas (posibles respuestas sí/no).</li>
+                <li>Siempre ofrecer de manera escalonada con alternativas coherentes.</li>
+                <li>Rebatir objeciones haciéndole saber al cliente que la alternativa ofrecida es su mejor opción.</li>
+                <li>Dejar que el cliente tome su elección, nunca imponer.</li>
+                <li>Buscá toda la información posible.</li>
+                <li>Anticipate.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade px-3 mt-3" id="nav-speech" role="tabpanel" aria-labelledby="nav-speech-tab" tabindex="0">
+              <h5>Mujeres embarazadas, niños o ancianos.</h5>
+              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”</p>
+              <p><u>Situaciones especiales añadir:</u> <br />
+                “Comprendemos la situación y queremos ofrecerle la posibilidad de que consuma un refrigerio a cargo nuestro de $xxx por persona mientras espera el móvil. Solicite ticket fiscal o factura para proceder al reintegro”</p>
+              <h5>Clientes con problemas de salud.</h5>
+              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”</p>
+              <p><u>Situaciones especiales añadir:</u><br />
+                “Comprendemos su situacion, si necesita que nos comuniquemos con alguien por usted no dude en decirnos y nosotros dejaremos el mensaje mientras espera la asistencia”</p>
+              <h5>Clientes en zonas desfavorables.</h5>
+              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”</p>
+              <p><u>Situaciones especiales añadir:</u><br />
+                “Comprendemos su situación, le ofrecemos llamar a la policiía o defensa civil para solicitar que le hagan acompañamiento mientras espera nuestra asistencia”</p>
             </div>
           </div>
         </div>
