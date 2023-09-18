@@ -29,6 +29,10 @@ export default function Instructivo() {
       </nav>
       <div className="tab-content mt-3 px-5 m-auto text-start fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active w-50 h-50 m-auto mt-5" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <p className='fs-5'>La modalidad se brinda a todos los vehiculos que se encuentren ... El traslado se realiza para las categorias de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
 
           <h3><u>Objetivos</u></h3>
@@ -45,6 +49,10 @@ export default function Instructivo() {
           </ul>
         </div>
         <div className="tab-pane fade" id="nav-tarea" role="tabpanel" aria-labelledby="nav-tarea-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <ul className='lista h-50 w-50 m-auto mt-5'>
             <li>Analisis de servicio</li>
             <li>Contencion e informacion de la modalidad</li>
@@ -53,6 +61,10 @@ export default function Instructivo() {
           </ul>
         </div>
         <div className="tab-pane fade" id="nav-viajero" role="tabpanel" aria-labelledby="nav-viajero-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3 className='mt-5'><u>Procedimiento de asistencia al viajero</u></h3>
           <ul className='mt-4'>
             <li>2 acompañantes completamente cubiertos. </li>
@@ -61,6 +73,10 @@ export default function Instructivo() {
           </ul>
         </div>
         <div className="tab-pane fade" id="nav-adicional" role="tabpanel" aria-labelledby="nav-adicional-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3 className='mt-5'><u>Los adicionales se abonan de la siguiente manera: </u></h3>
           <ul className='mt-3'>
             <li>Tarjeta de credito o debito.</li>
@@ -69,6 +85,10 @@ export default function Instructivo() {
           </ul>
         </div>
         <div className="tab-pane fade" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>Descripción</u></h3>
           <p>Grúa Tripe (móvil 1211)
             Es la unidad propia de SOS disponible para trasladar un máximo de 3 vehículos bajo la modalidad trasportín. Tiene sus recorridos propios y se pueden generar otros de acuerdo a la demanda en la zona. Cabe destacar que el móvil no cotiza por servicios y que solo traslada vehículos de clientes de SOS.

@@ -36,6 +36,10 @@ export default function Pesados() {
       </nav>
       <div className="tab-content px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <p>Son servicios llamados “Especiales” que se coordinan para vehículos pesados destinados a la carga y el transporte en los cuales se deberá buscar un prestador en la zona con mejor disponibilidad y capacidad para trasladar la categoría de la unidad. </p>
         </div>
 
@@ -78,6 +82,10 @@ export default function Pesados() {
         </div >
 
         <div className="tab-pane fade" id="nav-tareaop" role="tabpanel" aria-labelledby="nav-tareaop-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>Lectura completa del servicio.</u></h3>
           <br />
           <p>  Previo a realizar la derivación del servicio, deberá leer y analizar todo dato y registro del mismo, asegurando que se contemplen todas las particulares que pudieran existir (dimensiones, estado del vehículo, ruedas y ejes, carga, forma de pago, cobertura, cantidad de personas, etc. (Ver análisis del servicio*).</p>
@@ -125,8 +133,8 @@ export default function Pesados() {
               <p><u>En caso de no tener disponibilidad de prestadores de pesados, ver y consultar con prestadores del recorrido o de la zona la posibilidad de TERCERIZAR LA ASISTENCIA. </u></p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
-             <p>En caso de no tener disponibilidad de prestadores de pesados o de disponibilidad de tercerizar, se evalúa la opción de brindar el servicio por Reintegro, los cuales se dan de manera:  EXCEPCIONAL, SIEMPRE CON AUTORIZACION DE UN SUPERVISOR.<br/> 
-              Dar aviso del estado del servicio o de alguna particularidad (dejando registro correspondiente de lo informado, en servicio), al operador de S.E.T.A de turno para su posterior seguimiento (hasta que llega al concesionario)</p>
+              <p>En caso de no tener disponibilidad de prestadores de pesados o de disponibilidad de tercerizar, se evalúa la opción de brindar el servicio por Reintegro, los cuales se dan de manera:  EXCEPCIONAL, SIEMPRE CON AUTORIZACION DE UN SUPERVISOR.<br />
+                Dar aviso del estado del servicio o de alguna particularidad (dejando registro correspondiente de lo informado, en servicio), al operador de S.E.T.A de turno para su posterior seguimiento (hasta que llega al concesionario)</p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-programacion" role="tabpanel" aria-labelledby="nav-programacion-tab" tabindex="0">
               <p>En caso de falta de disponibilidad, o por horarios de los concesionarios o por pedido del cliente. Se podrán programar los servicios, dejando claramente indicado el motivo en una referencia de derivación (Previamente visto y autorizado por un Supervisor o área de S.E.T.A)</p>
