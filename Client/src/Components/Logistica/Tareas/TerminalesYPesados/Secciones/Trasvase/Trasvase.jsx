@@ -22,17 +22,24 @@ export default function Trasvase() {
     <div className='conteinerNav mt-5 ' >
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button className="nav-link custom" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Descripcion</button>
+          <button className="nav-link custom" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="false">Descripcion</button>
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
           <button className="nav-link custom" id="nav-derivacion-tab" data-bs-toggle="tab" data-bs-target="#nav-derivacion" type="button" role="tab" aria-controls="nav-derivacion" aria-selected="false">Derivacion</button>
         </div>
       </nav>
       <div className="tab-content fs-5 text-start " id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3>Es la prestación que se realiza a las unidades de categoría “pesados” que transportan líquidos/químicos y consiste en traspasar un líquido de un camión cisterna a otro. El servicio se presta porque hay una falla en el camión, acoplado o semirremolque, Puede haber derrame o NO. </h3>
         </div>
-
         <div className="tab-pane fade" id="nav-etapas" role="tabpanel" aria-labelledby="nav-etapas-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3>Analizar el servicio atendiendo principalmente a:</h3>
           <ul>
             <li>Origen.</li>
@@ -43,7 +50,6 @@ export default function Trasvase() {
             <li>Teléfono de contacto del chofer o persona junto a la unidad.</li>
           </ul>
         </div>
-
         <div className="tab-pane fade" id="nav-derivacion" role="tabpanel" aria-labelledby="nav-derivacion-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -64,7 +70,6 @@ export default function Trasvase() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )
