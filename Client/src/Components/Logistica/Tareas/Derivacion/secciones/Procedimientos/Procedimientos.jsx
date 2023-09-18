@@ -37,6 +37,11 @@ export default function Procedimientos() {
       </nav>
       <div className="tab-content px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
+        <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                        </div>
+                    </nav>
+                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
           <h3 className='mt-3 '><u>Orden de derivación</u></h3>
           <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
           <h3><u>Análisis del servicio</u></h3>
@@ -65,8 +70,8 @@ export default function Procedimientos() {
             <h5>Contención</h5>
             <p className='text-start justify-content-center'> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
           </div>
+          </div>
         </div>
-
         <div className="tab-pane fade" id="nav-selecprest" role="tabpanel" aria-labelledby="nav-selecprest-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -122,7 +127,6 @@ export default function Procedimientos() {
             </div>
           </div>
         </div>
-
         <div className="tab-pane fade text-start py-2" id="nav-cierre" role="tabpanel" aria-labelledby="nav-cierre-tab" tabIndex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -169,7 +173,6 @@ export default function Procedimientos() {
             </div>
           </div>
         </div>
-
         <div className="tab-pane fade " id="nav-zona" role="tabpanel" aria-labelledby="nav-zona-tab" tabIndex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">

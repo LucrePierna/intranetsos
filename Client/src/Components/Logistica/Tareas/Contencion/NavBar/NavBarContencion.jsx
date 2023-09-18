@@ -31,7 +31,7 @@ export default function NavBarDerivacion() {
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'Flujograma' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('consultas')}
+              onClick={() => handleComponentClick('Flujograma')}
               style={{
                 color: selectedComponent === 'Flujograma' ? 'black' : 'red',
                 backgroundColor: selectedComponent === 'Flujograma' ? 'white' : 'initial'
