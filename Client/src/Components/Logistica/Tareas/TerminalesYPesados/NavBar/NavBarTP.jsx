@@ -18,7 +18,7 @@ export default function NavBarTP() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
-        <h1 className='titleNav'>Terminales y Pesado</h1>
+        <h1 className='titleNav'>Terminales y Pesados</h1>
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
