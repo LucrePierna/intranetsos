@@ -56,7 +56,7 @@ export default function Chattigo() {
               </TableBody>
             </Table>
             <div>
-              <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://login.chattigo.com/" target="_blank" rel="noopener noreferrer">
                 <button type='button' className="btn btn-danger mt-3">Link a Chattigo</button>
               </a>
             </div>
