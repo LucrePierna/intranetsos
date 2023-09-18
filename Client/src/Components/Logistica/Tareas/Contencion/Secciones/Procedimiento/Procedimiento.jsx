@@ -38,6 +38,10 @@ export default function Procedimientos() {
       </nav>
       <div className="tab-content m-auto text-start mt-3 px-5 fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            </div>
+          </nav>
           <h3><u>OBJETIVO DEL PROCEDIMIENTO Y ALCANCE DE APLICACIÓN</u></h3>
           <p>Este procedimiento describe la metodología para realizar la contención a los clientes usuarios durante la coordinación de la asistencia. Alcanza a los servicios de traslado y mecánica ligera, de red nacional, tráficos nacionales y tráficos locales. </p>
         </div>
