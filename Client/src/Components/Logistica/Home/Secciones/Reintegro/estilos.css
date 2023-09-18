@@ -1,0 +1,27 @@
+label {
+    font-weight: bold; 
+  }
+  
+ 
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 150px; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+
+  .conteiner{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteinerKM{
+    width: 150px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
