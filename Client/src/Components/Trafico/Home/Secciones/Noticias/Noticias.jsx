@@ -3,7 +3,7 @@ import Card from './Card';
 import { noticias } from './Data/Data';
 import ReactPaginate from 'react-paginate';
 import SearchBar from './SearchBar/SearchBar';
-import './EstilosPagination/noticias.css'
+import '../../../../EstilosGlobal/noticias.css'
 
 export default function Noticias() {
   const itemsPerPage = 3;

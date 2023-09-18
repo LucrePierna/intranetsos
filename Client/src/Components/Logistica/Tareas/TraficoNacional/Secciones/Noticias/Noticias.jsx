@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import { noticias } from './Data/Data';
 import ReactPaginate from 'react-paginate';
 import SearchBar from './SearchBar/SearchBar';
-import './EstilosPagination/noticias.css'
+import '../../../../../EstilosGlobal/noticias.css';
 
 export default function Noticias() {
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(0);
   const [filteredNoticias, setFilteredNoticias] = useState(noticias);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(() => {
+    const newPageCount = Math.ceil(filteredNoticias.length / itemsPerPage);
+    if (currentPage >= newPageCount) {
+      setCurrentPage(newPageCount - 1);
+    }
+  }, [filteredNoticias]);
 
   const handlePageChange = (selectedPage) => {
     setCurrentPage(selectedPage.selected);
@@ -24,12 +34,14 @@ export default function Noticias() {
       noticia.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredNoticias(filtered);
-    setCurrentPage(0);
+    setSearchTerm(searchTerm);
+    setCurrentPage(0); 
   };
 
   const handleRefresh = () => {
+    setSearchTerm('');
     setFilteredNoticias(noticias);
-    setCurrentPage(0);
+    setCurrentPage(0); 
   };
 
   return (
@@ -58,6 +70,7 @@ export default function Noticias() {
 
       <div className='pagination-container'>
         <ReactPaginate
+          key={filteredNoticias.length}
           previousLabel={'Anterior'}
           nextLabel={'Siguiente'}
           breakLabel={'...'}
@@ -71,6 +84,7 @@ export default function Noticias() {
           previousLinkClassName={'page-link'}
           nextClassName={'page-item'}
           nextLinkClassName={'page-link'}
+          forcePage={currentPage} 
         />
       </div>
     </div>
