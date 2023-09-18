@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './estilos.css'
 
 function Reintegro() {
   const [comp, setComp] = useState('o');
@@ -113,7 +114,7 @@ function Reintegro() {
               <div className="mr-4">
                 <div className="form-check">
                   <input
-                    className="form-check-input rounded-circle mx-1"
+                    className="form-check-input  rounded-circle mx-1"
                     type="checkbox"
                     checked={trasladoChecked}
                     onChange={() => {
@@ -129,7 +130,7 @@ function Reintegro() {
               <div>
                 <div className="form-check">
                   <input
-                    className="form-check-input rounded-circle mx-1"
+                    className="form-check-input  rounded-circle mx-1"
                     type="checkbox"
                     checked={mecanicaChecked}
                     onChange={() => {
@@ -144,10 +145,10 @@ function Reintegro() {
               </div>
             </div>
 
-            <div className="mt-3">
+            <div className="mt-3 ">
               <label>
                 Compañía:
-                <select className="form-select" value={comp} onChange={(e) => setComp(e.target.value)}>
+                <select className="form-select conteiner " value={comp} onChange={(e) => setComp(e.target.value)}>
                   <option value="o">Otras Compañías</option>
                   <option value="f">Federación Patronal</option>
                 </select>
@@ -156,7 +157,7 @@ function Reintegro() {
             <div className="mt-3">
               <label>
                 Vehículo:
-                <select className="form-select" value={veh} onChange={(e) => setVeh(e.target.value)}>
+                <select className="form-select conteiner " value={veh} onChange={(e) => setVeh(e.target.value)}>
                   <option value="a">Auto</option>
                   <option value="l">Liviano Excedido</option>
                   <option value="ca">Camiones</option>
@@ -166,7 +167,7 @@ function Reintegro() {
             <div className="mt-3">
               <label>
                 Zona:
-                <select className="form-select" value={zon} onChange={(e) => setZon(e.target.value)}>
+                <select className="form-select conteiner" value={zon} onChange={(e) => setZon(e.target.value)}>
                   <option value="r">Resto del País</option>
                   <option value="p">Patagonia</option>
                 </select>
@@ -191,7 +192,7 @@ function Reintegro() {
                   Kilómetros <b>Lineales:</b>
                   <input
                     type="number"
-                    className="form-control"
+                    className="form-control "
                     value={kms}
                     onChange={(e) => setKms(e.target.value)}
                   />

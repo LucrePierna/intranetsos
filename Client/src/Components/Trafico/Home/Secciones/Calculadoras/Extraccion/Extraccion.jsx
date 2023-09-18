@@ -106,26 +106,14 @@ function Extraccion() {
           <input
             id="cotizado"
             type="text"
-            style={{
-              border: '1px solid black',
-              boxShadow: '0 0 5px black',
-              padding: '2px',
-              marginTop: '10px',
-              marginLeft: '5px',
-            }} />
+            className="input-custom" />
         </label>
         <label >
           Cobertura del cliente:
           <input
             id="cobertura"
             type="text"
-            style={{
-              border: '1px solid black',
-              boxShadow: '0 0 5px black',
-              padding: '2px',
-              marginTop: '10px',
-              marginLeft: '5px',
-            }} />
+            className="input-custom" />
         </label>
         <button className="btn btn-danger mt-4 my-3" onClick={handleCalcular}>Calcular</button>
 
