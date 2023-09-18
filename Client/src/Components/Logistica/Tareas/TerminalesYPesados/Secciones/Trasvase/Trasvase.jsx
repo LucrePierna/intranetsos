@@ -15,7 +15,6 @@ export default function Trasvase() {
     })
     const inicialTab = new bootstrap.Tab(document.querySelector('#nav-descripcion-tab'));
     inicialTab.show();
-
   }, []);
 
   return (
