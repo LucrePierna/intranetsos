@@ -1,28 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Card from './Card';
+import { noticias } from './Data/Data';
+import ReactPaginate from 'react-paginate';
+import './EstilosPagination/noticias.css'
 
 export default function Noticias() {
-  return (
-    <div id="carouselExampleInterval" class="carousel slide h-50 w-50 justify-content-center mx-auto mt-5" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://i.pinimg.com/564x/90/52/2b/90522b694ef262ecde1fbf0c04de6496.jpg" className="d-block w-100 style={{ height: '500px' }}" alt="noticia1" />
-        </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img src="https://i.pinimg.com/564x/d8/11/fb/d811fbc6ac83c704188486c6dc8321a7.jpg" className="d-block w-100 style={{ height: '500px' }} " alt="noticia2" />
-        </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img src="https://i.pinimg.com/564x/e4/78/41/e4784108c010d2c0ac86d9eed724198e.jpg" className="d-block w-100 style={{ height: '500px' }} " alt="noticia3" />
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon text-bg-dark" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon text-bg-dark " aria-hidden="true" ></span>
-        <span class="visually-hidden" >Next</span>
-      </button>
+  const itemsPerPage = 3;
+  const [currentPage, setCurrentPage] = useState(0);
 
+  const handlePageChange = (selectedPage) => {
+    setCurrentPage(selectedPage.selected);
+  };
+
+  const pageCount = Math.ceil(noticias.length / itemsPerPage);
+  const offset = currentPage * itemsPerPage;
+
+  const currentNoticias = noticias.slice(offset, offset + itemsPerPage);
+
+  return (
+    <div className='container conteinerMargin'>
+      <div className='row'>
+        {currentNoticias.map((el, index) => (
+          <div className='col-md-4' key={index}>
+            <Card
+              title={el.title}
+              description={el.description}
+              image={el.image}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div className='pagination-container'>
+        <ReactPaginate
+          previousLabel={'Anterior'}
+          nextLabel={'Siguiente'}
+          breakLabel={'...'}
+          pageCount={pageCount}
+          onPageChange={handlePageChange}
+          containerClassName={'pagination'}
+          activeClassName={'active'}
+          pageClassName={'page-item'}
+          pageLinkClassName={'page-link'}
+          previousClassName={'page-item'}
+          previousLinkClassName={'page-link'}
+          nextClassName={'page-item'}
+          nextLinkClassName={'page-link'}
+        />
+      </div>
     </div>
-  )
+  );
 }

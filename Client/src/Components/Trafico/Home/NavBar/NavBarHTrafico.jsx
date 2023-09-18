@@ -4,7 +4,7 @@ import Agenda from '../Secciones/Agenda/Agenda'
 import DesvioMvl from '../Secciones/DesviosMvl/DesviosMvl'
 import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
 import Incidencias from '../Secciones/Incidencias/Incidencias'
-import Novedades from '../Secciones/Novedades/Novedades'
+import Noticias from '../Secciones/Noticias/Noticias'
 import Saludos from '../Secciones/Saludos/Saludos'
 
 
@@ -28,7 +28,7 @@ export default function NavBarHTrafico() {
                 backgroundColor: selectedComponent === 'novedades' ? 'white' : 'initial'
               }}
             >
-              Novedades
+              Noticias
             </button>
           </li>
           <li className="nav-item">
@@ -96,7 +96,7 @@ export default function NavBarHTrafico() {
       </nav>
 
       <div className="container-fluid">
-        {selectedComponent === 'novedades' && <Novedades />}
+        {selectedComponent === 'novedades' && <Noticias />}
         {selectedComponent === 'agenda' && <Agenda />}
         {selectedComponent === 'calculadora' && <Calculadoras />}
         {selectedComponent === 'incidencias' && <Incidencias />}

@@ -58,7 +58,7 @@ export default function Formato() {
                         />
                     </div>
                     <div className='py-1'>
-                        <label className='px-3'>Km de Svc: </label>
+                        <label className='px-3'>Km tt de Svc: </label>
                         <input
                             type='text'
                             className='form-control'
@@ -67,7 +67,7 @@ export default function Formato() {
                         />
                     </div>
                     <div className='py-1'>
-                        <label className='px-3'>Km de Mvl:</label>
+                        <label className='px-3'>Km tt de Mvl:</label>
                         <input
                             type='text'
                             className='form-control'
