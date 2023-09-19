@@ -27,11 +27,7 @@ export default function Instructivo() {
         </div>
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
-        <div className="tab-pane fade show active px-3 mt-3" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-        <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade show active px-3 mt-3 lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
           <ul className='text-start fs-5'>
             <li>Visualización y análisis de la pantallas para la derivacion de servicios.</li>
             <li>Analizar las zonas en donde finalizan los servicios.</li>
@@ -41,8 +37,8 @@ export default function Instructivo() {
 
         </div>
         <div className="tab-pane fade " id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
-          <div className='d-flex flex-row justify-content-evenly px-4'>
-            <div className='px-5 mt-1'>
+          <div className='d-flex flex-row justify-content-evenly px-4 lineaGeneral'>
+            <div className='px-5 mt-3'>
               <h3>1º Servicio</h3>
               <img src={imagen1} alt="Eficaz1" className='responsiveImg' />
             </div>
@@ -53,14 +49,10 @@ export default function Instructivo() {
           </div>
           <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base</p>
         </div>
-        <div className="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
+        <div className="tab-pane fade lineaGeneral" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
           <Formato />
         </div>
-        <div className="tab-pane fade px-3 mt-3" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
-        <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade px-3 mt-3 lineaGeneral" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
           <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche </p>
           <ul className='text-start fs-6 mt-3'>
             <li>Móvil roto (se averió en el transcurso del servicio inicial)</li>

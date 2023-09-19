@@ -23,13 +23,9 @@ export default function TareasEspeciales() {
                 </div>
             </nav>
             <div className="h-100 w-100 tab-content px-3 m-auto h-50 w-70 fs-5 " id="nav-tabContent">
-                <div className="tab-pane fade show active px-3 mt-3 " id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
-                    <nav>
-                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                        </div>
-                    </nav>
-                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
-                        <p >Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
+                <div className="tab-pane fade show active " id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
+                    <div class="tab-content lineaGeneral  " id="nav-tabContent">
+                        <p className='mt-5'>Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
                         <h3><u>Tipo de coberturas</u></h3>
                         <ul className='mt-2 text-start'>
                             <li>Si posee, (en determinadas circunstancias): la grilla brinda el servicio de apertura siempre y cuando existan las circunstancias que indica. Por ejemplo: si la grilla informa que NO se brinda el servicio en caso de robo o hurto de las llaves, debemos consultar al cliente si esto ocurrió, y si así fue, no tendrá el servicio. Puede ser con o sin tope.</li>
@@ -46,13 +42,9 @@ export default function TareasEspeciales() {
                         <p>Estos casos se dan cuando el cliente perdió las llaves del vehículo, por lo cual, a pesar de hacer la apertura, también va a requerir traslado. O en caso de no poder efectuarse la apertura del vehículo.</p>
                     </div>
                 </div>
-                <div className="tab-pane fade px-3 mt-3 text-start" id="nav-extraccion" role="tabpanel" aria-labelledby="nav-extraccion-tab" tabindex="0">
-                    <nav>
-                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                        </div>
-                    </nav>
-                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
-                        <p>Es una de las asistencias especiales que se brindan cuando el cliente solicita un servicio cuyo vehículo se encuentre atascado, dado vuelta o de costado. El prestador deba realizar maniobras y dejarlo en condiciones de ser trasladado o de volver a rodar por sus medios.</p>
+                <div className="tab-pane fade " id="nav-extraccion" role="tabpanel" aria-labelledby="nav-extraccion-tab" tabindex="0">
+                    <div class="tab-content lineaGeneral " id="nav-tabContent">
+                        <p className='mt-5'>Es una de las asistencias especiales que se brindan cuando el cliente solicita un servicio cuyo vehículo se encuentre atascado, dado vuelta o de costado. El prestador deba realizar maniobras y dejarlo en condiciones de ser trasladado o de volver a rodar por sus medios.</p>
                         <p>El operador deberá en primera instancia validar si según la cobertura el cliente posee el servicio. Luego se deberá corroborar:</p>
                         <ul className='text-start m-auto py-2'>
                             <li >Descripción del hecho.</li>
@@ -67,13 +59,9 @@ export default function TareasEspeciales() {
                         </ul>
                     </div>
                 </div>
-                <div className="tab-pane fade px-3 mt-3 text-start" id="nav-cristales" role="tabpanel" aria-labelledby="nav-cristales-tab" tabindex="0">
-                    <nav>
-                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                        </div>
-                    </nav>
-                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
-                        <p className='fs-5'>Es un servicio especial que consiste en el grabado de los caracteres que componen la patente, en los cristales del vehículo. El Operador deberá corroborar si según grilla el cuenta con el servicio y su cobertura. La operatoria varía según la ubicación. </p>
+                <div className="tab-pane fade " id="nav-cristales" role="tabpanel" aria-labelledby="nav-cristales-tab" tabindex="0">
+                    <div class="tab-content lineaGeneral " id="nav-tabContent">
+                        <p className='fs-5 mt-5'>Es un servicio especial que consiste en el grabado de los caracteres que componen la patente, en los cristales del vehículo. El Operador deberá corroborar si según grilla el cuenta con el servicio y su cobertura. La operatoria varía según la ubicación. </p>
                         <p className='mt-2'>Capital Federal y Gran Buenos Aires, el cliente deberá contactarse con nuestro prestador para pedir turno. Si el cliente rechaza realizar el servicio con alguno de nuestros prestadores se brindará el servicio por reintegro.</p>
                         <ul className='text-start mt-2'>
                             <li>Ag 10643	Station	Capital Federal	Warnes 999 (Villa Crespo)	011 48554442 / 011 48580222 / 011 48578858</li>
@@ -91,12 +79,8 @@ export default function TareasEspeciales() {
                         </ul>
                     </div>
                 </div>
-                <div className="tab-pane fade px-3 mt-3 text-start" id="nav-guardavhc" role="tabpanel" aria-labelledby="nav-guardavhc-tab" tabIndex="0">
-                    <nav>
-                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                        </div>
-                    </nav>
-                    <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+                <div className="tab-pane fade " id="nav-guardavhc" role="tabpanel" aria-labelledby="nav-guardavhc-tab" tabIndex="0">
+                    <div class="tab-content lineaGeneral " id="nav-tabContent">
                         <p className='mt-5'>Es la tarea que se coordina excepcionalmente para dejar en resguardo un vehículo en la base de algún prestador cuando el servicio a realizar implica que el prestador no llegue a destino en horario solicitado o por la demanda de servicios en zona se vea afectada por la falta del mismo. </p>
                         <p>El operador deberá verificar con la base si cuenta con lugar para realizarlo y si la base tiene pactada la guarda en grilla (De no verlo reflejado se toma el costo de una movida local) se verifica en línea si es correcta la misma y se evalúa con un supervisor/back office si el costo es a cargo del cliente o absorbe SOS. </p>
                     </div>
@@ -110,7 +94,7 @@ export default function TareasEspeciales() {
                             <button class="nav-link sub" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Reintegro</button>
                         </div>
                     </nav>
-                    <div class="tab-content fs-5 mt-5" id="nav-tabContent">
+                    <div class="tab-content fs-5 " id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-camintransitable" role="tabpanel" aria-labelledby="nav-camintransitable-tab" tabindex="0">
                             <h3>¿Qué es un camino Intransitable?</h3>
                             <p>Los mismos se encuentran marcados a través del mapa Mapsource, señalizado con verde flúor.</p>

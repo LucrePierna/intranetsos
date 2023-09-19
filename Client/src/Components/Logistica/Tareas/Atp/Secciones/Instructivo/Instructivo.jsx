@@ -38,18 +38,10 @@ export default function Procedimientos() {
         </div>
       </nav>
       <div className='h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5' id="nav-tabContent">
-        <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade show active lineaGeneral" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <p>Requiere la solución especifica de consultas realizadas por prestadores de red nacional a través de llamados o mensajes que ingresan en la plataforma Chattigo, exclusivo para prestadores. En algunas oportunidades, pueden presentarse consultas de móviles que corresponden a tráfico de red nacional cuando se vean colapsados. En estos casos, se verifica en el servicio a que tráfico corresponde el servicio y se da aviso al 9700 (tráfico local) o 9750 (tráfico nacional) según corresponda. </p>
         </div>
-        <div className="tab-pane fade" id="nav-ingchat" role="tabpanel" aria-labelledby="nav-ingchat-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-ingchat" role="tabpanel" aria-labelledby="nav-ingchat-tab" tabindex="0">
           <h3><u>Ingreso de chat/llamado</u></h3>
           <p>Se comunica prestador, el mismo puede estar identificado con su nombre o número de base.</p>
           <p>Ejemplo: “Buen día, por el caso 20230505300100...”</p>
@@ -58,11 +50,7 @@ export default function Procedimientos() {
           <p>Se considerará válido en tanto respete los parámetros de trato con el prestador y contenga el nombre del operador que lo atiende. Se evaluará la profesionalidad de la comunicación con el prestador desde lo que marca el SGC de amabilidad y trato. Tutear está permitido, dentro de los límites del respeto y el profesionalismo.
           </p>
         </div>
-        <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
           <p className='fs-5'>Detectar el motivo de la consulta del prestador, verificar desde que base se está comunicando y cuál es el motivo del contacto. <br />
             Se deberá consultar el código del servicio y a que fecha corresponde. </p>
           <h5><u>Motivos de Contacto</u></h5>
@@ -85,11 +73,7 @@ export default function Procedimientos() {
             </ul>
           </div>
         </div>
-        <div className="tab-pane fade" id="nav-cierrechat" role="tabpanel" aria-labelledby="nav-cierrechat-tab" tabIndex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-cierrechat" role="tabpanel" aria-labelledby="nav-cierrechat-tab" tabIndex="0">
           <h3><u>Confirmar cierre y comprensión de las partes</u></h3>
           <p>Una vez resuelta la consulta, indagar si el prestador requiere ayuda en algo más, en caso de obtener una respuesta negativa, finalizar chat agradeciendo por la comunicación y despedirse amablemente. “¿Puedo ayudarle en algo más?” “Gracias por comunicarse, buenas tardes/noches” </p>
           <h3><u>Registrar datos en el servicio</u></h3>
@@ -97,11 +81,7 @@ export default function Procedimientos() {
           <h3><u>Cerrar/ finalizar</u></h3>
           <p>Al finalizar la consulta y luego de dejar los registros, clasificar correctamente el motivo de cierre: Anulación de servicio - Consulta general - Modificación de servicio – Prestadores. </p>
         </div>
-        <div className="tab-pane fade" id="nav-finturno" role="tabpanel" aria-labelledby="nav-finturno-tab" tabIndex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-finturno" role="tabpanel" aria-labelledby="nav-finturno-tab" tabIndex="0">
           <h3><u>Transferir Chat's</u></h3>
           <p>Al finalizar la jornada, habiendo quedado consultas pendientes de cerrar, el operador de chattigo deberá transferir chat al operador que esté de turno dando aviso previo al mismo o a un supervisor/back office.</p>
           <h3><u>Imprtante</u></h3>
@@ -135,11 +115,7 @@ export default function Procedimientos() {
             </div>
           </div>
         </div>
-        <div className="tab-pane fade" id="nav-gestiones" role="tabpanel" aria-labelledby="nav-gestiones-tab" tabIndex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-gestiones" role="tabpanel" aria-labelledby="nav-gestiones-tab" tabIndex="0">
           <h3><u>Cliente envía ubicación/fotos por chat</u></h3>
           <p>Se deberá solicitar al cliente la patente del vehículo y dejar asentado en el servicio la información.</p>
           <h3><u>Cliente solicita un servicio por chattigo</u></h3>
