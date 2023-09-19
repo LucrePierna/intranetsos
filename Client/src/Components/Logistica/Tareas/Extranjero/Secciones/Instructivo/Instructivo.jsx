@@ -45,7 +45,7 @@ export default function Instructivo() {
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-terrestre" role="tabpanel" aria-labelledby="nav-terrestre-tab" tabindex="0">
               <ul>
-                <h3>Puntos importantes.</h3>
+                <h3><u>Puntos importantes.</u></h3>
                 <li>Origen en Uruguay.</li>
                 <li>Destino final en Argentina.</li>
                 <li>Paso fronterizo mas próximo.</li>
@@ -55,16 +55,16 @@ export default function Instructivo() {
               </ul>
 
               <ul>
-                <h3>Pasos fronterizos: </h3>
-                <li>Fray Bentos - Gualeguaychú</li>
-                <li>Paysandú - Colon</li>
-                <li>Salto grande - concordia</li>
+                <h3><u>Pasos fronterizos:</u></h3>
+                <li>Fray Bentos - Gualeguaychú.</li>
+                <li>Paysandú - Colon.</li>
+                <li>Salto Grande - Concordia.</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-Fluvial" role="tabpanel" aria-labelledby="nav-Fluvial-tab" tabindex="0">
               <h3 className='mt-3 fs-4 fw-bold'>Los traslados se realizan por medio de Buque-Bus</h3>
               <ul>
-                <h3>Puntos importantes:</h3>
+                <h3><u>Puntos importantes:</u></h3>
                 <li>Horario de salida en puerto y dársena.</li>
                 <li>Horario de llegada a destino en Pto. Madero.</li>
                 <li>El vehiculo debe estar 2hs antes del horario de salida.</li>
@@ -73,15 +73,14 @@ export default function Instructivo() {
               </ul>
 
               <ul>
-                <h3>Puertos: </h3>
-                <li>Colonia Sacramento (Acepta vehiculos con ruedas que no giren, cliente debe consultar con puerto)</li>
-                <li>Montevideo</li>
-                <li>Puerto Piriápolis</li>
+                <h3><u>Puertos:</u></h3>
+                <li>Colonia Sacramento (Acepta vehiculos con ruedas que no giren, cliente debe consultar con puerto).</li>
+                <li>Montevideo.</li>
+                <li>Puerto Piriápolis.</li>
               </ul>
             </div>
           </div>
         </div>
-
         <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -99,10 +98,10 @@ export default function Instructivo() {
             </div>
             <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
               <ul>
-                <h3>Puntos importantes:</h3>
+                <h3><u>Puntos importantes:</u></h3>
                 <li>Origen del servicio.</li>
-                <li>Paso fronterizo más próximo</li>
-                <li>Destino final en caso de ir hasta Argentina</li>
+                <li>Paso fronterizo más próximo.</li>
+                <li>Destino final en caso de ir hasta Argentina.</li>
                 <li>Dejar registro de la cotización en reales al día de la fecha: <br />
                   <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Cotización Divisa</button></a>
                 </li>
@@ -128,12 +127,12 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-local" role="tabpanel" aria-labelledby="nav-local-tab" tabindex="0">
-              <h3>Traslado local en Chile</h3>
+              <h3><u>Traslado local en Chile</u></h3>
               <h3>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h3>
               <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Verificar dólar oficial</button></a>
             </div>
             <div class="tab-pane fade" id="nav-argentina" role="tabpanel" aria-labelledby="nav-argentina-tab" tabindex="0">
-              <h3>Traslado de Chile hasta Argentina</h3>
+              <h3><u>Traslado de Chile hasta Argentina</u></h3>
               <h3><b>Tener en cuenta que los prestadores de Chile no cruzan hacia Argentina.</b> Se debe coordinar en dos partes:</h3>
               <ul className='mt-3'>
                 <li>Origen en Chile hasta paso fronterizo más próximo</li>
@@ -141,7 +140,7 @@ export default function Instructivo() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-tdfuego" role="tabpanel" aria-labelledby="nav-tdfuego-tab" tabindex="0">
-              <h3>Servicio que vienen hacia o desde Tierra del Fuego</h3>
+              <h3><u>Servicio que vienen hacia o desde Tierra del Fuego</u></h3>
               <p>Los prestadores que pueden cruzar por chile para dirigirse a Tierra del Fuego cuentan con un permiso especial y realizan trámites los cuales tienen costo y son a cargo del cliente.</p>
               <img src={imagenCostos} alt="costosDeEjemplo" className='responsiveImgGeneral' />
             </div>
@@ -166,35 +165,34 @@ export default function Instructivo() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-tipos" role="tabpanel" aria-labelledby="nav-tipos-tab" tabindex="0">
-              <h3>Dentro del territorio argentino </h3>
+              <h3><u>Dentro del territorio argentino</u></h3>
               <p>El operador consultará disponibilidad con los prestadores de la zona (ver instructivo de derivación).
                 <br />
                 Calculará el costo del servicio según la información de la grilla del prestador, es decir lo que tiene pactado. </p>
-              <h3>En territorio extranjero</h3>
+              <h3><u>En territorio extranjero</u></h3>
               <p>El operador consultará disponibilidad con los prestadores de la zona (ver instructivo de derivación).
                 <br />
                 De acuerdo a la cotización que indique el prestador calcular el 20% y agregar a la cotización final para pasar al prestador que solicita el servicio. </p>
             </div>
             <div class="tab-pane fade" id="nav-andisp" role="tabpanel" aria-labelledby="nav-andisp-tab" tabindex="0">
-              <h3>Análisis</h3>
+              <h3><u>Análisis</u></h3>
               <p>El operador verificará que el pedido enviado por el correo tenga los datos necesarios para coordinar el servicio. Estos son:</p>
               <ul className='mt-3'>
-                <li>Datos del titular</li>
-                <li>Datos del vehículo</li>
-                <li>Teléfono de contacto</li>
-                <li>Cantidad de pasajeros en el vehículo</li>
-                <li>Falla (avería o siniestro)</li>
-                <li>Localización de origen y destino con precisión</li>
+                <li>Datos del titular.</li>
+                <li>Datos del vehículo.</li>
+                <li>Teléfono de contacto.</li>
+                <li>Cantidad de pasajeros en el vehículo.</li>
+                <li>Falla (avería o siniestro).</li>
+                <li>Localización de origen y destino con precisión.</li>
               </ul>
-              <h3>Disponibilidad</h3>
+              <h3><u>Disponibilidad</u></h3>
               <p>Se consultará la posibilidad de asistencia al servicio según protocolos general de la derivación.
                 <br />
                 A diferencia de los servicios normales, ante la falta de disponibilidad se podrá consultar fuera del radio de los 100 kilómetros vacíos. Los mismos entran dentro de la cotización que se va a informar al prestador extranjero.</p>
             </div>
             <div class="tab-pane fade" id="nav-calculos" role="tabpanel" aria-labelledby="nav-calculos-tab" tabindex="0">
-              <h3>Cálculo de Costos</h3>
-
-              <p>ORIGEN EN ARGENTINA
+              <h3><u>Cálculo de Costos</u></h3>
+              <p><u>ORIGEN EN ARGENTINA</u>
                 <br />
                 El operador deberá ver en la grilla del cliente el radio de contraprestación correspondiente en el apartado “CONTRAPRESTACION”.
                 <br />
@@ -202,16 +200,16 @@ export default function Instructivo() {
                 <br />
                 Una vez realizado el cálculo deberá sumar la movida (PRECIO POR SERVICIO) + IVA y el FE DE GESTION U$D 80 +IVA.
                 <br />
-                CALCULO FINAL =  Movida + km excedente + fee de gestion + IVA  </p>
-              <p>Origen en el extranjero
+                CALCULO FINAL =  Movida + km excedente + fee de gestion + IVA.  </p>
+              <p><u>ORIGEN EN EL EXTRANJERO</u>
                 <br />
                 Se deberá ver en el radio de contraprestación correspondiente en el apartado “SERVICIO EN EL EXTERIOR”.
                 <br />
                 Es de suma importancia ver en la grilla los costos actualizados y solicitar autorizacion de los mismos.  </p>
-              <h3>Devolución</h3>
-              <p>El operador deberá especificar vía mail la demora para cargar el vehículo y el costo final de la asistencia. Lugo aguardar la confirmación del pedido para así confirmar la asistencia a nuestro prestador y realizar la asignación de la base correspondiente.</p>
-              <h3>IMPORTANTE</h3>
-              <p>Nunca se deberá informar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
+              <h3><u>Devolución</u></h3>
+              <p>El operador deber especificar vía mail la demora para cargar el vehículo y el costo final de la asistencia. Lugo aguardar la confirmación del pedido para así confirmar la asistencia a nuestro prestador y realizar la asignación de la base correspondiente.</p>
+              <h3><u>IMPORTANTE</u></h3>
+              <p>Nunca se deberá iformar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
             </div>
           </div>
         </div>

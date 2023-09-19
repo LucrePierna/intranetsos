@@ -16,19 +16,19 @@ export default function Anulacion() {
                 Ante esta situación el operador deberá informar al cliente que no cuenta con el servicio y solicitar la autorización de un supervisor/Back Office para que la grúa se retire. </p>
 
               <h5><u>Derivado a Otro Móvil</u></h5>
-              <p>Se utiliza cuando se detecta que, por algún motivo, la grúa no tiene la capacidad para realizar el servicio, pero si corresponde brindar servicio al cliente.  Por ejemplo, por dimensiones, por falta de carros</p>
+              <p>Se utiliza cuando se detecta que, por algún motivo, la grúa no tiene la capacidad para realizar el servicio, pero si corresponde brindar servicio al cliente.  Por ejemplo, por dimensiones, por falta de carros.</p>
 
               <h5><u>Imposible Transitar el Servicio</u></h5>
               <p>Aplica esta anulación cuando la grúa llega al lugar de asistencia y detecta que no puede acceder al vehículo en, por ejemplo, algún caso de inundación. <br />
-                De no existir camino alternativo el móvil debe enviar fotos y se debe autorizar la retirada con un supervisor/Back Office <br />
-                Se informa la situación al cliente y que debe solicitar el servicio cuando el camino se encuentre en condiciones </p>
+                De no existir camino alternativo el móvil debe enviar fotos y se debe autorizar la retirada con un supervisor/Back Office. <br />
+                Se informa la situación al cliente y que debe solicitar el servicio cuando el camino se encuentre en condiciones. </p>
             </ul>
             <ul>
               <h5><u>Colisión Móvil Asignado</u></h5>
               <p>Se asigna este cierre cuando en casos de que el prestador no pueda realizar el servicio, por ejemplo, que se le rompió la grúa, el operador deberá indagar si la grúa se encontraba en viaje a destino o si ya cargo al vehículo. <br />
                 Solicitar a prestador ubicación y registrarla en el nuevo servicio.<br />
                 Informar al cliente buscaremos Alternativa. <br />
-                Registrar lo informado </p>
+                Registrar lo informado. </p>
 
               <h5><u>Derivado a Otro Móvil</u></h5>
               <p>Se utiliza al enviar móvil mecánico que no dio solución y se necesita realizar el traslado; o al llegar la grúa, que no tiene la capacidad para trasladarlo, pero si corresponde brindar servicio.   </p>
@@ -38,7 +38,7 @@ export default function Anulacion() {
                 Recordar se debe intentar llamar al menos 3 veces al cliente.   </p>
 
               <h5><u>Al Llegar Móvil Cliente</u></h5>
-              <p>Móvil llega en tiempo y forma al lugar, pero por motivos ajenos a SOS y al prestador no puede realizarse el servicio   </p>
+              <p>Móvil llega en tiempo y forma al lugar, pero por motivos ajenos a SOS y al prestador no puede realizarse el servicio.   </p>
             </ul>
           </div>
         </div>

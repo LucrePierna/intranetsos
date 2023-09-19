@@ -43,9 +43,9 @@ export default function Instructivo() {
           </ul>
           <h3><u>Etapas</u></h3>
           <ul className='lista'>
-            <li>Transportin Inicio =  Se realiza la busqueda de la unidad</li>
-            <li>Transportin = Traslado de los vehiculos en el camion </li>
-            <li>Transportin Distribucion = Traslado de base de guarda hasta destino del cliente</li>
+            <li>Transportin Inicio =  Se realiza la busqueda de la unidad.</li>
+            <li>Transportin = Traslado de los vehiculos en el camion. </li>
+            <li>Transportin Distribucion = Traslado de base de guarda hasta destino del cliente.</li>
           </ul>
         </div>
         <div className="tab-pane fade" id="nav-tarea" role="tabpanel" aria-labelledby="nav-tarea-tab" tabindex="0">
@@ -54,9 +54,10 @@ export default function Instructivo() {
             </div>
           </nav>
           <ul className='lista h-50 w-50 m-auto mt-5'>
-            <li>Analisis de servicio</li>
-            <li>Contencion e informacion de la modalidad</li>
-            <h3 className='mt-3'><u>Speech</u></h3>
+            <h4><u>Tareas del Derivador</u></h4>
+            <li>Analisis de servicio.</li>
+            <li>Contencion e informacion de la modalidad.</li>
+            <h4 className='mt-3'><u>Speech</u></h4>
             <p>“Sr/a, debido a la demanda de servicios en la zona (COSTA)y/o por la cantidad de km que tiene el traslado (PAIS), para evitarle demoras excesivas o no tener disponibilidad, no es posible realizar el traslado de forma directa, por este motivo la asistencia se brindará bajo la siguiente modalidad: retiramos su vehículo de donde se encuentra en este momento, quedará en resguardo en la base en la localidad y el mismo será entregado en 72/96 hs hábiles”.</p>
           </ul>
         </div>
@@ -90,18 +91,18 @@ export default function Instructivo() {
             </div>
           </nav>
           <h3><u>Descripción</u></h3>
-          <p>Grúa Tripe (móvil 1211)
+          <p>Grúa Tripe (móvil 1211).
             Es la unidad propia de SOS disponible para trasladar un máximo de 3 vehículos bajo la modalidad trasportín. Tiene sus recorridos propios y se pueden generar otros de acuerdo a la demanda en la zona. Cabe destacar que el móvil no cotiza por servicios y que solo traslada vehículos de clientes de SOS.
           </p>
           <h3><u>Etapas</u></h3>
           <p>Una vez recolectados los vehículos se deberá coordinar el móvil con el prestador Vasallo Base 13480 y con los datos de los vehículos a trasladar. Para ello se generará un código de manera manual con los siguientes datos:</p>
           <ul className='text-center list-unstyled h-50 w-50 m-auto fs-5 py-4'>
-            <li>Cliente: Grúa Triple</li>
-            <li>Patente: TTT001</li>
-            <li>Radio: Servicio Privado Trasportín</li>
-            <li>Tipo de vehículo: Pesado Categoría 1</li>
-            <li>Origen: Desde donde sale el mosquito</li>
-            <li>Destino: Destino Final del mosquito</li>
+            <li>Cliente: Grúa Triple.</li>
+            <li>Patente: TTT001.</li>
+            <li>Radio: Servicio Privado Trasportín.</li>
+            <li>Tipo de vehículo: Pesado Categoría 1.</li>
+            <li>Origen: Desde donde sale el mosquito.</li>
+            <li>Destino: Destino Final del mosquito.</li>
           </ul>
           <p>En referencias de derivación: Registrar los vehículos que traslada en el trayecto.</p>
           <p>Luego el operador deberá asignar el servicio por reintegro a base 10361 Reintegro Córdoba, pero con el cierre TRANSPORTIN ENLACE.</p>

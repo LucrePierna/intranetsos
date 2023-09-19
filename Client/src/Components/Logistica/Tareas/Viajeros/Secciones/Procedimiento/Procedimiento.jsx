@@ -38,7 +38,7 @@ export default function Procedimiento() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             </div>
           </nav>
-          <h3 className='fs-4 text-start mt-3'>El operador deberá realizar el análisis correspondiente del servicio de asistencia al viajero cuando lo marque, teniendo en cuenta servicios anteriores, cobertura, situación particular del socio</h3>
+          <h3 className='fs-4 text-start mt-3'>El operador deberá realizar el análisis correspondiente del servicio de asistencia al viajero cuando lo marque, teniendo en cuenta servicios anteriores, cobertura, situación particular del socio.</h3>
           <ul className='d-flex flex-column text-start justify-content-center m-auto h-50 w-50'>
             <li>Contencion.</li>
             <li>Corroborar disponibilidad de doble cabina.</li>

@@ -53,12 +53,12 @@ export default function Instructivo() {
               <p>
                 Tanto para los servicios de mecánica ligera como de traslado, las prioridades para la coordinación son:</p>
               <ul className='mt-2'>
-                <li>Servicios con prioridad alta (personas en riesgo, zonas peligrosas, contención, VIP);  </li>
-                <li>Terminales (vehículos de porte liviano)   </li>
-                <li>Demora estimada;   </li>
-                <li>Servicios en ruta o transito;  </li>
-                <li>Desperfecto del vehículo;  </li>
-                <li>Servicios derivados por móviles taller (derivado a otro móvil). </li>
+                <li>Servicios con prioridad alta (personas en riesgo, zonas peligrosas, contención, VIP).</li>
+                <li>Terminales (vehículos de porte liviano).</li>
+                <li>Demora estimada.</li>
+                <li>Servicios en ruta o transito.</li>
+                <li>Desperfecto del vehículo.</li>
+                <li>Servicios derivados por móviles taller (derivado a otro móvil).</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-induccion" role="tabpanel" aria-labelledby="nav-induccion-tab" tabindex="0">
@@ -98,9 +98,9 @@ export default function Instructivo() {
               <p>
                 La prioridad de asignación estará dada por el tipo de contrato que tenga el móvil. No obstante, se deberá tener en cuenta equiparar la cantidad de servicios entre todos los móviles que tengamos trabajando para evitar tener activos que no realicen ni uno solo.</p>
               <ul className='mt-2'>
-                <li>Contratados fijos;  </li>
-                <li>Propios;  </li>
-                <li>Eventuales. </li>
+                <li>Contratados fijos.</li>
+                <li>Propios.</li>
+                <li>Eventuales.</li>
               </ul>
             </div>
             <div class="tab-pane fade " id="nav-asigautman" role="tabpanel" aria-labelledby="nav-asigautman-tab" tabindex="0">
@@ -109,15 +109,15 @@ export default function Instructivo() {
                 <br />
                 Deberá intervenir para asignar manualmente interpretando los indicadores que muestra el sistema en la pantalla (demoras, cantidad de móviles activos, prioridades, tipos de clientes y vehículos, etc.).
                 <br />
-                En ese caso, tener en cuenta lo siguiente:
+                <u>En ese caso, tener en cuenta lo siguiente:</u>
               </p>
               <ul className='mt-2'>
                 <li>Algunas “Zonas” de tráficos los móviles no cuentan con sistema GAP, por lo cual la derivación es telefónica o por mensajería y los servicios se trabajan de manera manual.  </li>
-                <li>Prioridades de coordinación.  </li>
-                <li>Tipos de servicios (traslados, mecánicas y venta de baterías, relevamientos OSA, extracción).  </li>
-                <li>Tipos de clientes (VIP, terminales automotrices, casos solicitados por comercial, etc)  </li>
-                <li>Distancia que se encuentre el móvil y zonas que se derivan en automático.  </li>
-                <li>Servicios de traslado que corresponda hacer inducción  </li>
+                <li>Prioridades de coordinación.</li>
+                <li>Tipos de servicios (traslados, mecánicas y venta de baterías, relevamientos OSA, extracción).</li>
+                <li>Tipos de clientes (VIP, terminales automotrices, casos solicitados por comercial, etc).</li>
+                <li>Distancia que se encuentre el móvil y zonas que se derivan en automático.</li>
+                <li>Servicios de traslado que corresponda hacer inducción.</li>
               </ul>
               <br />
               <p>Siempre la prioridad es atender al cliente en la menor demora posible motivo por el cual el paso de asignación automática a manual debe fundarse solo en variables que beneficien la coordinación del servicio.</p>
@@ -139,19 +139,21 @@ export default function Instructivo() {
                 <br />
                 Asignado el prestador, puede suceder que el cumpla o no la demora y deba extenderse por distintos motivos por lo que se aplicarán los siguientes criterios de seguimiento, información y contención:
                 <br />
-                Contención al cliente en servicios aun no derivados: si transcurrieron 45/60 minutos o más desde el ingreso del servicio a la pantalla, el Operador de Tráfico deberá contactar al cliente para informarle que una vez que tenga móvil para la asistencia se comunicará e indicará el tiempo de espera. Aprovechará el contacto para verificar que los registros estén completos y correctos y que cuenta con la información necesaria para la coordinación.
+                Contención al cliente en servicios aun no derivados: si transcurrieron 45/60 minutos o más desde el ingreso del servicio a la pantalla, el Operador de Tráfico deberá contactar al cliente para informarle que una vez que tenga móvil para la asistencia se comunicará e indicará el tiempo de espera.
+                <br />
+                Aprovechará el contacto para verificar que los registros estén completos y correctos y que cuenta con la información necesaria para la coordinación.
                 <br />
                 Información de la demora: al asignar móvil deberá informar al cliente el tiempo de arribo del mismo al origen, colocando la demora en la solapa y el registro correspondiente.
                 <br />
-                Cuando el operador detecte que la simultaneidad de servicios exceda la capacidad operativa de la base: el Supervisor/BO de Logística solicitará apoyo a otros agentes específicos para contactar al cliente, sea por contenciones o por controles de cierres.
+                Cuando el operador detecte que la simultaneidad de servicios exceda la capacidad operativa de la base: el Supervisor/Back Office de Logística solicitará apoyo a otros agentes específicos para contactar al cliente, sea por contenciones o por controles de cierres.
               </p>
             </div>
             <div class="tab-pane fade" id="nav-llgdayfin" role="tabpanel" aria-labelledby="nav-llgdayfin-tab" tabindex="0">
               <p>
                 Es responsabilidad del operador controlar llegadas cuando se cumple el tiempo informado por el móvil y luego proceder con las finalizaciones de los servicios teniendo en cuenta lo siguiente:</p>
               <ul className='mt-2'>
-                <li>Móvil con GAP: se puede ver la localización del móvil en el mapa del servicio correspondiente. Al derivarse un servicio bajo esta modalidad es el chofer quien asignara la llegada, cambiando el estado del servicio a “Llegada”. Si el móvil no pudiera efectuarlo informará al Operador de Tráfico, quien será responsable de asignarla manualmente. La misma operatoria se aplica para la finalización del servicio, debiendo utilizarse los motivos de cierre específicos para cada caso.   </li>
-                <li>Móvil Ficticio (sin geolocalización): el servicio debe controlarse de manera manual (chat o llamada), tomando como referencia la demora informada por el chofer y realizar el control cuando se cumple la misma.   </li>
+                <li><u>Móvil con GAP:</u> se puede ver la localización del móvil en el mapa del servicio correspondiente. Al derivarse un servicio bajo esta modalidad es el chofer quien asignara la llegada, cambiando el estado del servicio a “Llegada”. Si el móvil no pudiera efectuarlo informará al Operador de Tráfico, quien será responsable de asignarla manualmente. La misma operatoria se aplica para la finalización del servicio, debiendo utilizarse los motivos de cierre específicos para cada caso.   </li>
+                <li><u>Móvil Ficticio (sin geolocalización):</u> el servicio debe controlarse de manera manual (chat o llamada), tomando como referencia la demora informada por el chofer y realizar el control cuando se cumple la misma.   </li>
                 <li>En caso de derivarse el servicio a una base con sistema antiguo, el mismo pasará a otra pantalla desde la cual deberá realizarse el seguimiento y cumplimiento de la demora estimada.   </li>
               </ul>
             </div>
@@ -179,9 +181,9 @@ export default function Instructivo() {
             <br />
             Entre las tareas correspondientes, se detallan las siguientes: </p>
           <ul className='mt-3'>
-            <li>Gestionar consultas de prestadores y de operadores de otras áreas;  </li>
-            <li>Administrar las anulaciones y consultas de demoras de servicios, con los operadores y/o directamente con los prestadores asignados al servicio; </li>
-            <li>Realizar las contenciones e inducciones, cuando así se designase.   </li>
+            <li>Gestionar consultas de prestadores y de operadores de otras áreas.</li>
+            <li>Administrar las anulaciones y consultas de demoras de servicios, con los operadores y/o directamente con los prestadores asignados al servicio.</li>
+            <li>Realizar las contenciones e inducciones, cuando así se designase.</li>
           </ul>
         </div>
         <div className="tab-pane fade text-start px-4 mt-4" id="nav-inyfinturn" role="tabpanel" aria-labelledby="nav-inyfinturn-tab" tabindex="0">
@@ -189,8 +191,7 @@ export default function Instructivo() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             </div>
           </nav>
-          <p>
-            Tanto al inicio como al final del día los Operadores de Tráfico deberán:</p>
+          <p><u>Tanto al inicio como al final del día los Operadores de Tráfico deberán:</u></p>
           <ul className='mt-3'>
             <li>A primera hora de la mañana; chequear que no queden pendientes móviles activos y chats del turno anterior, comenzar a disparar las consultas y verificar las nóminas correspondientes, a fin de tener un panorama de disponibilidad con la que enfrentará el turno.    </li>
             <li>En cambios de turnos (medio día, intermedio, noche); pasar las novedades correspondientes de manera prolija al compañero/a que toma la posta y comienza a operar la zona, a fin de dejarlo informado de qué móviles tiene.  </li>
