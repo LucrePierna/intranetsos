@@ -184,12 +184,15 @@ export default function Procedimientos() {
               </ul>
               <h4><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h4>
             </div>
-            <div className="tab-pane fade py-5 h-100 w-100" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
-              <iframe
-                src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F"
-                className='responsiveIframe'
-              ></iframe>
+            <div className="tab-pane fade" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
+              <div className="d-flex justify-content-center align-items-center h-100">
+                <iframe
+                  src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F"
+                  className='responsiveIframe'
+                ></iframe>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
