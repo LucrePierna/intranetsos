@@ -53,7 +53,7 @@ export default function Instructivo() {
           <Formato />
         </div>
         <div className="tab-pane fade px-3 mt-3 lineaGeneral" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
-          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche </p>
+          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche. </p>
           <ul className='text-start fs-6 mt-3'>
             <li>Móvil roto (se averió en el transcurso del servicio inicial).</li>
             <li>Horario de taller (la demora informada no permite llegar a tiempo al taller).</li>
