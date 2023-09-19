@@ -3,7 +3,7 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from 
 
 export default function Agenda() {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 h-50 w-50">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <Table aria-label="Example static collection table" >
@@ -57,7 +57,7 @@ export default function Agenda() {
                 <TableCell>3500</TableCell>
               </TableRow>
               <TableRow key="12" className="border border-dark bg-light text-black">
-                <TableCell>Chat Cat Alfred</TableCell>
+                <TableCell>Chat Cat PIPE</TableCell>
                 <TableCell>1128080012</TableCell>
               </TableRow>
               <TableRow key="13" className="border border-dark bg-light text-black">

@@ -22,7 +22,7 @@ export default function TareasEspeciales() {
                     <button className="nav-link custom" id="nav-intransitable-tab" data-bs-toggle="tab" data-bs-target="#nav-intransitable" type="button" role="tab" aria-controls="nav-intransitable" aria-selected="false">Caminos Intransitables</button>
                 </div>
             </nav>
-            <div className="tab-content px-3 m-auto h-50 w-70 fs-5 " id="nav-tabContent">
+            <div className="h-100 w-100 tab-content px-3 m-auto h-50 w-70 fs-5 " id="nav-tabContent">
                 <div className="tab-pane fade show active px-3 mt-3 " id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
                     <nav>
                         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">

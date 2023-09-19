@@ -26,7 +26,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
         </div>
       </nav>
-      <div className="tab-content m-auto mt-3 px-5 fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active px-3 mt-3" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
         <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">

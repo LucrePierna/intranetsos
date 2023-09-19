@@ -36,7 +36,7 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-hacemos-tab" data-bs-toggle="tab" data-bs-target="#nav-hacemos" type="button" role="tab" aria-controls="nav-hacemos" aria-selected="false">Que Hacemos</button>
         </div>
       </nav>
-      <div className="tab-content m-auto text-start mt-3 px-5 fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
         <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
