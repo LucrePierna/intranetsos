@@ -223,3 +223,11 @@ code {
   text-decoration: none; 
   color: inherit; 
 }
+
+.logoTrafico{
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end; 
+  margin-right: 5px; 
+  padding-left: 10px; 
+}

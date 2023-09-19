@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ChatEvoltis from '../Secciones/Chat/ChatEvoltis';
 import MobilFinder from '../Secciones/Finder/MobilFinder';
+import logo from '../../../Image/Menu Trafico/Iconos/logoTrafinet.png'
 
 export default function NavBarHerramientas() {
   const [selectedComponent, setSelectedComponent] = useState('chat');
@@ -13,6 +14,7 @@ export default function NavBarHerramientas() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center ">
+      <div></div>
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
@@ -39,6 +41,9 @@ export default function NavBarHerramientas() {
             </button>
           </li>
         </ul>
+        <div className='logoTrafico'>
+          <img src={logo} alt="logoTrafinet" height={50} width={60} />
+        </div>
       </nav>
 
       <div className="container-fluid">
