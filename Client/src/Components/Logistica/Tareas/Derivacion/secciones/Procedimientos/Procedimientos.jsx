@@ -35,13 +35,9 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
         </div>
       </nav>
-      <div className="tab-content px-5 fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
-          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+          <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
             <h3 className='mt-3 '><u>Orden de derivación</u></h3>
             <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente.</p>
             <h3><u>Análisis del servicio</u></h3>
@@ -72,11 +68,7 @@ export default function Procedimientos() {
           </div>
         </div>
         <div className="tab-pane fade" id="nav-selecprest" role="tabpanel" aria-labelledby="nav-selecprest-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
-          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+          <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
             <p className='mt-5 fs-4 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
             <ul className='text-start fs-5 mt-3'>
               <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
@@ -192,8 +184,8 @@ export default function Procedimientos() {
               </ul>
               <h4><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente.</b></h4>
             </div>
-            <div className="tab-pane fade py-5" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
-              <div className="d-flex justify-content-start align-items-start">
+            <div className="tab-pane fade" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
+              <div className="d-flex justify-content-center align-items-center h-100">
                 <iframe
                   src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F"
                   className='responsiveIframe'

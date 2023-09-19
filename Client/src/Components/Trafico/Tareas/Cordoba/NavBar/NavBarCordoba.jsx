@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Mapas from '../Secciones/Mapas/Mapas'
 import Procedimientos from '../Secciones/Procedimientos/Procedimientos'
 import Prestadores from '../Secciones/Prestadores/Prestadores'
+import logo from '../../../Image/Menu Trafico/Iconos/logoTrafinet.png'
 
 
 export default function NavBarBsAs() {
@@ -14,7 +15,8 @@ export default function NavBarBsAs() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center ">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-between ">
+        <div></div>
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
@@ -55,6 +57,9 @@ export default function NavBarBsAs() {
           </li>
 
         </ul>
+        <div className='logoTrafico'>
+          <img src={logo} alt="logoTrafinet" height={50} width={60} />
+        </div>
       </nav>
 
       <div className="container-fluid">

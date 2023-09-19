@@ -27,12 +27,8 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
         </div>
       </nav>
-      <div className="tab-content mt-3 px-5 m-auto text-start fs-5" id="nav-tabContent">
-        <div className="tab-pane fade show active w-50 h-50 m-auto mt-5" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+        <div className="tab-pane fade show active lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
           <p className='fs-5'>La modalidad se brinda a todos los vehiculos que se encuentren ... El traslado se realiza para las categorias de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
 
           <h3><u>Objetivos</u></h3>
@@ -48,24 +44,13 @@ export default function Instructivo() {
             <li>Transportin Distribucion = Traslado de base de guarda hasta destino del cliente.</li>
           </ul>
         </div>
-        <div className="tab-pane fade" id="nav-tarea" role="tabpanel" aria-labelledby="nav-tarea-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
-          <ul className='lista h-50 w-50 m-auto mt-5'>
-            <h4><u>Tareas del Derivador</u></h4>
-            <li>Analisis de servicio.</li>
-            <li>Contencion e informacion de la modalidad.</li>
-            <h4 className='mt-3'><u>Speech</u></h4>
+        <div className="tab-pane fade lineaGeneral" id="nav-tarea" role="tabpanel" aria-labelledby="nav-tarea-tab" tabindex="0">
+            <h3>Analisis de servicio</h3>
+            <h3>Contencion e informacion de la modalidad</h3>
+            <h3 className='mt-3'><u>Speech</u></h3>
             <p>“Sr/a, debido a la demanda de servicios en la zona (COSTA)y/o por la cantidad de km que tiene el traslado (PAIS), para evitarle demoras excesivas o no tener disponibilidad, no es posible realizar el traslado de forma directa, por este motivo la asistencia se brindará bajo la siguiente modalidad: retiramos su vehículo de donde se encuentra en este momento, quedará en resguardo en la base en la localidad y el mismo será entregado en 72/96 hs hábiles”.</p>
-          </ul>
         </div>
-        <div className="tab-pane fade" id="nav-viajero" role="tabpanel" aria-labelledby="nav-viajero-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-viajero" role="tabpanel" aria-labelledby="nav-viajero-tab" tabindex="0">
           <h3 className='mt-5'><u>Procedimiento de asistencia al viajero</u></h3>
           <ul className='mt-4'>
             <li>2 acompañantes completamente cubiertos. </li>
@@ -73,11 +58,7 @@ export default function Instructivo() {
             <li>Combis para algunos corredores. Se respeta la cobertura de convenio y no se tiene en cuenta el tope.</li>
           </ul>
         </div>
-        <div className="tab-pane fade" id="nav-adicional" role="tabpanel" aria-labelledby="nav-adicional-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-adicional" role="tabpanel" aria-labelledby="nav-adicional-tab" tabindex="0">
           <h3 className='mt-5'><u>Los adicionales se abonan de la siguiente manera: </u></h3>
           <ul className='mt-3'>
             <li>Tarjeta de credito o debito.</li>
@@ -85,11 +66,7 @@ export default function Instructivo() {
             <li>Transferencia.</li>
           </ul>
         </div>
-        <div className="tab-pane fade" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
           <h3><u>Descripción</u></h3>
           <p>Grúa Tripe (móvil 1211).
             Es la unidad propia de SOS disponible para trasladar un máximo de 3 vehículos bajo la modalidad trasportín. Tiene sus recorridos propios y se pueden generar otros de acuerdo a la demanda en la zona. Cabe destacar que el móvil no cotiza por servicios y que solo traslada vehículos de clientes de SOS.
@@ -107,7 +84,7 @@ export default function Instructivo() {
           <p>En referencias de derivación: Registrar los vehículos que traslada en el trayecto.</p>
           <p>Luego el operador deberá asignar el servicio por reintegro a base 10361 Reintegro Córdoba, pero con el cierre TRANSPORTIN ENLACE.</p>
         </div>
-        <div className="tab-pane fade" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+        <div className="tab-pane fade lineaGeneral" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
           <Formato />
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function Trasvase() {
           <button className="nav-link custom" id="nav-derivacion-tab" data-bs-toggle="tab" data-bs-target="#nav-derivacion" type="button" role="tab" aria-controls="nav-derivacion" aria-selected="false">Derivacion</button>
         </div>
       </nav>
-      <div className="tab-content fs-5 text-start " id="nav-tabContent">
+      <div className="tab-content h-100 w-100 fs-5 text-start " id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">

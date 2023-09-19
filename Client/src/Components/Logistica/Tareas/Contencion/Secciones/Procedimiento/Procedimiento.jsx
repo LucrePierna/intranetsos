@@ -25,7 +25,7 @@ export default function Procedimientos() {
 
 
   return (
-    <div className='conteinerNav mt-5 ' >
+    <div className='conteinerNav mt-5 rounded' >
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Objetivos</button>
@@ -36,12 +36,8 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-hacemos-tab" data-bs-toggle="tab" data-bs-target="#nav-hacemos" type="button" role="tab" aria-controls="nav-hacemos" aria-selected="false">Que Hacemos</button>
         </div>
       </nav>
-      <div className="tab-content m-auto text-start mt-3 px-5 fs-5" id="nav-tabContent">
-        <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-        <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+        <div className="tab-pane fade show active lineaGeneral" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <h3><u>OBJETIVO DEL PROCEDIMIENTO Y ALCANCE DE APLICACIÓN</u></h3>
           <p>Este procedimiento describe la metodología para realizar la contención a los clientes usuarios durante la coordinación de la asistencia. Alcanza a los servicios de traslado y mecánica ligera, de red nacional, tráficos nacionales y tráficos locales. </p>
         </div>

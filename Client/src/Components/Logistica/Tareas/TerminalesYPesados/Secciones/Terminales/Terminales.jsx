@@ -34,23 +34,15 @@ export default function Terminales() {
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
         </div>
       </nav>
-      <div className="tab-content px-5 fs-5" id="nav-tabContent">
-        <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
-          <p>Son servicios llamados “Especiales”. Aplica a aquellas terminales con las que se haya acordado este tipo de asistencia. La solicitud de asistencia es procesada por el CAT, los operadores SETA, u operadores específicos destinados a tal función (en caso de Mercedes Benz). Los pedidos ingresaran por: Comunicación telefónica o correo electrónico pedido por la Terminal. </p>
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+        <div className="tab-pane fade show active lineaGeneral" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
+          <p>Son servicios llamados “Especiales”. Aplica a aquellas terminales con las que se haya acordado este tipo de asistencia. La solicitud de asistencia es procesada por el CAT, los operadores SETA, u operadores específicos destinados a tal función (en caso de Mercedes Benz). Los pedidos ingresaran por: Comunicación telefónica o correo electrónico pedido por la Terminal </p>
         </div>
-        <div className="tab-pane fade m-auto" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade m-auto lineaGeneral" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
           <h3><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h3>
           <p>Moto / Liviano / Liviano Excedido / Liviano Especial / Pesado categoría 1 / Pesado categoría 2 / Pesado categoría 3 / Bus</p>
           <h5>Aplica a todas aquellas Terminales Automotrices, siendo actualmente:</h5>
-          <ul className='list-unstyled'>
+          <ul className='list-unstyled text-center justify-content-center'>
             <li>Mercedes Benz (autos, vans , sprinter, camiones) </li>
             <li>Iveco (camiones) </li>
             <li>Volkswagen (camiones o autos pedidos por la terminal) </li>
@@ -66,11 +58,7 @@ export default function Terminales() {
             <li>La Emilia (motos: Benelli , Keeway, Suzuki Sym ) </li>
           </ul>
         </div>
-        <div className="tab-pane fade" id="nav-tareaop" role="tabpanel" aria-labelledby="nav-tareaop-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-tareaop" role="tabpanel" aria-labelledby="nav-tareaop-tab" tabindex="0">
           <h3><u>Lectura completa del servicio.</u></h3>
           <br />
           <p>  Previo a realizar la derivación del servicio, deberá leer y analizar todo dato y registro del mismo, asegurando que se contemplen todas las particulares que pudieran existir (dimensiones, estado del vehículo, ruedas y ejes, carga, forma de pago, cobertura, cantidad de personas, etc. (Ver análisis del servicio*).</p>

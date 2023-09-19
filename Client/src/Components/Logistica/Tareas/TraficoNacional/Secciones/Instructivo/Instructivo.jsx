@@ -26,7 +26,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-inyfinturn-tab" data-bs-toggle="tab" data-bs-target="#nav-inyfinturn" type="button" role="tab" aria-controls="nav-inyfinturn" aria-selected="false">Inicio y fin de turno</button>
         </div>
       </nav>
-      <div className="tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center px-3" id="nav-tab" role="tablist">
@@ -160,11 +160,7 @@ export default function Instructivo() {
           </div>
 
         </div>
-        <div className="tab-pane fade text-start px-4 mt-4 " id="nav-indgral" role="tabpanel" aria-labelledby="nav-indgral-tab" tabindex="0">
-        <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade text-start px-4 mt-4 lineaGeneral " id="nav-indgral" role="tabpanel" aria-labelledby="nav-indgral-tab" tabindex="0">
           <ul className='mt-3'>
             <li>Cuando se coordinen servicios con kilómetros que implique que el móvil salga de la zona del tráfico, se deberá intentar regresar el móvil cargado para optimizar el recurso. </li>
             <li>Cuando se presente la situación de tener varias solicitudes derivadas a un mismo prestador y no se pudieran asignar por no contar con más móviles ficticios nunca se deberá enviar el servicio a red nacional para asignarlo al prestador porque desaparece de la pantalla y peligra su falta de seguimiento y control. Los casos deberán quedar en el tráfico con la referencia correspondiente que indique qué prestador lo ha tomado, con qué demora, y asignarlo cuando se libere un ficticio.  </li>
@@ -172,11 +168,7 @@ export default function Instructivo() {
             <li>En cuanto al pase de información de número de contacto del cliente hacia el prestador, se recomienda evitar facilitarlo, salvo que, el operador tenga en cuenta la complejidad del servicio y las circunstancias para coordinarlo sea necesario (Ej: ubicaciones en zonas rurales). Los prestadores que tengan acceso a Gap, Gap Lite y sistema antiguo (f8) tienen a su alcance los contactos y se pueden contactar directamente. </li>
           </ul>
         </div>
-        <div className="tab-pane fade text-start px-4 mt-4" id="nav-atprest" role="tabpanel" aria-labelledby="nav-atprest-tab" tabindex="0">
-        <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade text-start px-4 mt-4 lineaGeneral" id="nav-atprest" role="tabpanel" aria-labelledby="nav-atprest-tab" tabindex="0">
           <p> Se designarán operadores para realizar la tarea de ATP, deberán loguearse con un interno especifico que se encuentre habilitado para recibir las llamadas correspondientes.
             <br />
             Entre las tareas correspondientes, se detallan las siguientes: </p>
@@ -186,12 +178,9 @@ export default function Instructivo() {
             <li>Realizar las contenciones e inducciones, cuando así se designase.</li>
           </ul>
         </div>
-        <div className="tab-pane fade text-start px-4 mt-4" id="nav-inyfinturn" role="tabpanel" aria-labelledby="nav-inyfinturn-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
-          <p><u>Tanto al inicio como al final del día los Operadores de Tráfico deberán:</u></p>
+        <div className="tab-pane fade text-start px-4 mt-4 lineaGeneral" id="nav-inyfinturn" role="tabpanel" aria-labelledby="nav-inyfinturn-tab" tabindex="0">
+          <p>
+            Tanto al inicio como al final del día los Operadores de Tráfico deberán:</p>
           <ul className='mt-3'>
             <li>A primera hora de la mañana; chequear que no queden pendientes móviles activos y chats del turno anterior, comenzar a disparar las consultas y verificar las nóminas correspondientes, a fin de tener un panorama de disponibilidad con la que enfrentará el turno.    </li>
             <li>En cambios de turnos (medio día, intermedio, noche); pasar las novedades correspondientes de manera prolija al compañero/a que toma la posta y comienza a operar la zona, a fin de dejarlo informado de qué móviles tiene.  </li>

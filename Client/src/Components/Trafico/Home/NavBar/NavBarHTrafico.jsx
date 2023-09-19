@@ -6,6 +6,7 @@ import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
 import Incidencias from '../Secciones/Incidencias/Incidencias'
 import Noticias from '../Secciones/Noticias/Noticias'
 import Saludos from '../Secciones/Saludos/Saludos'
+import logo from '../../Image/Menu Trafico/Iconos/logoTrafinet.png'
 
 
 export default function NavBarHTrafico() {
@@ -17,7 +18,9 @@ export default function NavBarHTrafico() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center ">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-between ">
+        <div>  
+        </div>
         <ul className="nav nav-tabs just">
           <li className="nav-item">
             <button
@@ -93,6 +96,9 @@ export default function NavBarHTrafico() {
             </button>
           </li>
         </ul>
+        <div className='logoTrafico'>
+        <img src={logo} alt="logoTrafinet" height={50} width={60}/>
+        </div>
       </nav>
 
       <div className="container-fluid">
