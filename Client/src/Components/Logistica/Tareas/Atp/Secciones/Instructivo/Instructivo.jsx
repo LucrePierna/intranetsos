@@ -56,20 +56,20 @@ export default function Procedimientos() {
           <h5><u>Motivos de Contacto</u></h5>
           <div className='text-start d-flex flex-row mt-3 px-5'>
             <ul className='px-5'>
-              <li>Prestador informa tener disponibilidad</li>
-              <li>Prestador informa que el servicio fue finalizado </li>
-              <li>Uso de carros</li>
-              <li>Hora de trabajo</li>
-              <li>Hora de espera</li>
-              <li>Modificación de origen/destino</li>
+              <li>Prestador informa tener disponibilidad.</li>
+              <li>Prestador informa que el servicio fue finalizado. </li>
+              <li>Uso de carros.</li>
+              <li>Hora de trabajo.</li>
+              <li>Hora de espera.</li>
+              <li>Modificación de origen/destino.</li>
             </ul>
             <ul >
-              <li>Móvil está junto al vehículo sólo </li>
-              <li>No puede realizar la asistencia</li>
-              <li>Estar en el lugar, pero no tiene capacidad operativa para realizar el servicio </li>
-              <li>No hay nadie en destino para recibir</li>
-              <li>Llego al lugar, pero el cliente anulo el servicio</li>
-              <li>Se necesita realizar trabajo de extracción</li>
+              <li>Móvil está junto al vehículo sólo. </li>
+              <li>No puede realizar la asistencia.</li>
+              <li>Estar en el lugar, pero no tiene capacidad operativa para realizar el servicio. </li>
+              <li>No hay nadie en destino para recibir.</li>
+              <li>Llego al lugar, pero el cliente anulo el servicio.</li>
+              <li>Se necesita realizar trabajo de extracción.</li>
             </ul>
           </div>
         </div>

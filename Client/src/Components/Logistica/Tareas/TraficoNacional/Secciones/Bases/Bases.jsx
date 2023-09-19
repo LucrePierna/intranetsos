@@ -36,14 +36,15 @@ export default function Procedimientos() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgznbb-tab" data-bs-toggle="tab" data-bs-target="#nav-orgznbb" type="button" role="tab" aria-controls="nav-orgznbb" aria-selected="true">Organización de la Zona</button>
               <button class="nav-link sub" id="nav-consultabb-tab" data-bs-toggle="tab" data-bs-target="#nav-consultabb" type="button" role="tab" aria-controls="nav-consultabb" aria-selected="false">Consideraciones Generales</button>
-              <button class="nav-link sub" id="nav-inducbb-tab" data-bs-toggle="tab" data-bs-target="#nav-inducbb" type="button" role="tab" aria-controls="nav-inducbb" aria-selected="false">Zona de Induccion</button>
               <button class="nav-link sub" id="nav-dificilbb-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilbb" type="button" role="tab" aria-controls="nav-dificilbb" aria-selected="false">Zona de Dificil Acceso</button>
             </div>
           </nav>
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orgznbb" role="tabpanel" aria-labelledby="nav-orgznbb-tab" tabindex="0">
-              <p>Bahía Blanca locales <br />
-                Bahía Blanca interior (este, oeste, norte y sur)  </p>
+              <p>Bahía Blanca locales. <br />
+                Bahía Blanca interior (este, oeste, norte y sur).  </p>
+              <h5><u>Zonas de Inducción</u></h5>
+              <p>Con respecto a las inducciones a mecánica, deberán realizarse dentro de la ciudad de Bahía Blanca.</p>
             </div>
             <div class="tab-pane fade" id="nav-consultabb" role="tabpanel" aria-labelledby="nav-consultabb-tab" tabindex="0">
               <p>Tener en cuenta que para aquellos servicios con kilómetros primero se debe consultar a los prestadores eventuales de la zona.</p>
@@ -55,17 +56,16 @@ export default function Procedimientos() {
                 <li>No todos los móviles pueden dirigirse a la zona de Tornquist, debido a las exigencias de la caminera.</li>
               </ul>
             </div>
-            <div class="tab-pane fade" id="nav-inducbb" role="tabpanel" aria-labelledby="nav-inducbb-tab" tabindex="0">
-              <p>Con respecto a las inducciones a mecánica, deberán realizarse dentro de la ciudad de Bahía Blanca.</p>
-            </div>
             <div class="tab-pane fade" id="nav-dificilbb" role="tabpanel" aria-labelledby="nav-dificilbb-tab" tabindex="0">
               <p>A continuación, se mencionan las zonas a las cuales no se ingresa, ni cobrando adicional, en estos casos el cliente debe sacarlo por sus medios: </p>
               <ul className='mt-2'>
-                <li>Laguna de chasco   </li>
-                <li>Campos o estancias en la zona de Cabildo – Paso Mayor – Estomba – Ruta 72: El Faro / Gil   </li>
+                <li>Laguna de chasco.</li>
+                <li>Campos o estancias en la zona de Cabildo – Paso Mayor – Estomba – Ruta 72: El Faro / Gil.   </li>
                 <li>En la zona de Pedro Luro por ordenanza municipal no se ingresa a caminos de ripio cuando llueve.   </li>
-                <li>Ruta 76, desde Felipe Sola hacia la derecha, en dirección a la Ruta 33   </li>
-                <li>También hay zonas donde se ingresa cobrando adicional de difícil acceso:  </li>
+                <li>Ruta 76, desde Felipe Sola hacia la derecha, en dirección a la Ruta 33.</li>
+              </ul>
+              <p><u>También hay zonas donde se ingresa cobrando adicional de difícil acceso:</u></p>
+              <ul className='mt-2'>
                 <li>Ruta 67, en el tramo desde Coronel Suarez hasta General La Madrid, ya que el camino es de ripio y se encuentra en mal estado. En estos casos los prestadores para ir dan la vuelta por camino de asfalto paralelo, aproximadamente recorren 155km lineales.   </li>
                 <li>Balneario Sauce Grande: el prestador informa si tiene costo o no, dependerá si llovió en la zona.   </li>
                 <li>Tener en cuenta en servicios cuyo origen o destino sea GUAMINI y tengan que circular sobre ruta 60 en sentido este a oeste, deben ingresar por Ruta 33, ya que la Ruta 85 se considera intransitable.  </li>
@@ -78,7 +78,6 @@ export default function Procedimientos() {
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgzncosta-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncosta" type="button" role="tab" aria-controls="nav-orgzncosta" aria-selected="true">Organización de la Zona</button>
-              <button class="nav-link sub" id="nav-induccosta-tab" data-bs-toggle="tab" data-bs-target="#nav-induccosta" type="button" role="tab" aria-controls="nav-induccosta" aria-selected="false">Zonas de Inducción</button>
               <button class="nav-link sub" id="nav-particularidadcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-particularidadcosta" type="button" role="tab" aria-controls="nav-particularidadcosta" aria-selected="false">Particularidades del Tráfico</button>
               <button class="nav-link sub" id="nav-dificilcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilcosta" type="button" role="tab" aria-controls="nav-dificilcosta" aria-selected="false">Zonas de Dificil Acceso</button>
             </div>
@@ -86,14 +85,13 @@ export default function Procedimientos() {
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orgzncosta" role="tabpanel" aria-labelledby="nav-orgzncosta-tab" tabindex="0">
               <ul className='mt-2'>
-                <li>Ruta 2 Sur (R2S)</li>
-                <li>Costa atlántica (CA)</li>
-                <li>Ruta 2 Norte (R2N)</li>
+                <li>Ruta 2 Sur (R2S).</li>
+                <li>Costa atlántica (CA).</li>
+                <li>Ruta 2 Norte (R2N).</li>
               </ul>
-              <h3>Zona en Automatico</h3>
-              <p>Dentro de las posibilidades, se trabajarán los servicios de la ciudad de Mar del Plata de manera automática.   </p>
-            </div>
-            <div class="tab-pane fade" id="nav-induccosta" role="tabpanel" aria-labelledby="nav-induccosta-tab" tabindex="0">
+              <h5><u>Zona en Automatico</u></h5>
+              <p>Dentro de las posibilidades, se trabajarán los servicios de la ciudad de Mar del Plata de manera automática.</p>
+              <h5><u>Zona de Inducción</u></h5>
               <p>Las inducciones para el envío de un móvil mecánico se realizarán dentro de la ciudad de Mar del Plata.</p>
             </div>
             <div class="tab-pane fade" id="nav-particularidadcosta" role="tabpanel" aria-labelledby="nav-particularidadcosta-tab" tabindex="0">
@@ -104,7 +102,8 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-dificilcosta" role="tabpanel" aria-labelledby="nav-dificilcosta-tab" tabindex="0">
-              <p>En épocas de temporales de lluvia, se deberá consultar a los móviles el acceso a la zona de campos. También se deberán consultar el acceso a Chapadmalal o zona sur de Mar del Plata (Bº Acantilados), ya que muchas calles son de ripio. </p>
+              <p>En épocas de temporales de lluvia, se deberá consultar a los móviles el acceso a la zona de campos. <br />
+                También se deberán consultar el acceso a Chapadmalal o zona sur de Mar del Plata (Bº Acantilados), ya que muchas calles son de ripio. </p>
             </div>
           </div>
         </div>
@@ -129,8 +128,8 @@ export default function Procedimientos() {
                 <li>VALLE DE UCO: TUNUYAN – TUPUNGATO – SAN CARLOS  </li>
                 <li>ZONA SUR: SAN RAFAEL (SRL 1/SRL2/SRL3) – GRAL ALVEAR – MALARGUE  </li><br></br>
               </ul>
-                <h5><u>San Juan:</u> </h5>
-                (SJ1 - SJ2 - SJ3)
+              <h5><u>San Juan:</u> </h5>
+              (SJ1 - SJ2 - SJ3)
 
             </div>
             <div class="tab-pane fade" id="nav-particmza" role="tabpanel" aria-labelledby="nav-particmza-tab" tabindex="0">
@@ -181,15 +180,18 @@ export default function Procedimientos() {
               <button class="nav-link sub" id="nav-tucumannoa-tab" data-bs-toggle="tab" data-bs-target="#nav-tucumannoa" type="button" role="tab" aria-controls="nav-tucumannoa" aria-selected="false">Tucuman</button>
               <button class="nav-link sub" id="nav-saltanoa-tab" data-bs-toggle="tab" data-bs-target="#nav-saltanoa" type="button" role="tab" aria-controls="nav-saltanoa" aria-selected="false">Salta</button>
               <button class="nav-link sub" id="nav-jujuynoa-tab" data-bs-toggle="tab" data-bs-target="#nav-jujuynoa" type="button" role="tab" aria-controls="nav-jujuynoa" aria-selected="false">Jujuy</button>
-              <button class="nav-link sub" id="nav-inducnoa-tab" data-bs-toggle="tab" data-bs-target="#nav-inducnoa" type="button" role="tab" aria-controls="nav-inducnoa" aria-selected="false">Zonas de Inducción</button>
             </div>
           </nav>
           <div class="tab-content text-start px-4 mt-4 " id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-orgznnoa" role="tabpanel" aria-labelledby="nav-orgznnoa-tab" tabindex="0">
               <p>
                 En caso de haber más de un colaborador, se recomienda subdividir por zonas:<br></br>
-                Tucumán <br />
-                Salta y Jujuy
+                Tucumán. <br />
+                Salta y Jujuy.
+              </p>
+              <h5><u>Zona de Inducción</u></h5>
+              <p>
+                Se tomará para inducción la zona correspondiente a San miguel de Tucumán. Incluyendo Yerba buena, Banda del Rio Sali, Las talitas, Manantiales, San Pablo, Tafí Viejo y demás zonas que se encuentren dentro del radio de 10km.
               </p>
             </div>
             <div class="tab-pane fade" id="nav-vaciosnoa" role="tabpanel" aria-labelledby="nav-vaciosnoa-tab" tabindex="0">
@@ -214,9 +216,11 @@ export default function Procedimientos() {
                 Tener en cuenta las siguientes particularidades al momento de trabajar esta zona:</p>
               <ul className='mt-2'>
                 <li>Los servicios correspondientes a San Miguel de Tucumán y alrededores, en un radio de 10km, serán trabajados de manera automática.</li>
-                <li>Aquellos servicios que se encuentren en la zona sur de Tucumán (ruta38, ruta157, ruta307) serán consultados con prioridad a la Base eventual Azul Emergencias. En caso de que no puedan realizarlo, según disponibilidad se enviara un móvil de San Miguel, reintegro o programación.   </li>
+                <li>Aquellos servicios que se encuentren en la zona sur de Tucumán (ruta38, ruta157, ruta307) serán consultados con prioridad a la Base eventual Azul Emergencias. <br />
+                  En caso de que no puedan realizarlo, según disponibilidad se enviara un móvil de San Miguel, reintegro o programación.   </li>
                 <li>Cuando el traslado sea de la región de Tafí del Valle, se consultará con prioridad a la Base eventual Azul Emergencias, para mantener la disponibilidad de móviles propios en San Miguel.   </li>
-                <li>Los móviles de mecánica 4198 y 4061 se turnarán los fines de semana, para cubrir la guardia. Además, estarán disponibles 24hs. Todos los días al ingresa al turno debemos verificar la cantidad de servicios realizados por cada móvil para podes asignarlos de manera equitativa.  </li>
+                <li>Los móviles de mecánica 4198 y 4061 se turnarán los fines de semana, para cubrir la guardia. Además, estarán disponibles 24hs. <br />
+                  Todos los días al ingresa al turno debemos verificar la cantidad de servicios realizados por cada móvil para podes asignarlos de manera equitativa.  </li>
               </ul>
 
             </div>
@@ -225,9 +229,11 @@ export default function Procedimientos() {
                 Tener en cuenta las siguientes particularidades al momento de trabajar esta zona:</p>
               <ul className='mt-2'>
                 <li>El móvil 4393 correspondiente a la Base 13450 Pedrazzoli Martin (contratado fijo), los días lunes deberá realizar como mínimo 6 (seis) servicios locales, ya que cuenta con tarifa especial para esos días.   </li>
-                <li>Los traslados en la zona de Cafayate, Payogasta y alrededores, suelen tener adicional por camino de difícil acceso. Por lo general, estos servicios son realizados por la Base 12746 Remolques el Vasco, que cuenta con móviles propios. Como alternativa, consultar con el móvil propio 695 de la Base 12488 Maine Marcelo.  </li>
+                <li>Los traslados en la zona de Cafayate, Payogasta y alrededores, suelen tener adicional por camino de difícil acceso. Por lo general, estos servicios son realizados por la Base 12746 Remolques el Vasco, que cuenta con móviles propios. <br />
+                  Como alternativa, consultar con el móvil propio 695 de la Base 12488 Maine Marcelo.  </li>
                 <li>La zona en cuestión no cuenta con móvil de mecánica, este servicio lo realizan los móviles de traslado.   </li>
-                <li>Cuando el traslado sea desde la zona de San Antonio de los Cobres, se deberá tener en cuenta que a partir del cruce de la Ruta 51 y la Ruta 40 hacia el oeste se considera camino de difícil acceso. De acuerdo a la disponibilidad y a las consideraciones del operador encargado del tráfico, se recomienda programar estos servicios.   </li>
+                <li>Cuando el traslado sea desde la zona de San Antonio de los Cobres, se deberá tener en cuenta que a partir del cruce de la Ruta 51 y la Ruta 40 hacia el oeste se considera camino de difícil acceso. <br />
+                  De acuerdo a la disponibilidad y a las consideraciones del operador encargado del tráfico, se recomienda programar estos servicios.   </li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-jujuynoa" role="tabpanel" aria-labelledby="nav-jujuynoa-tab" tabindex="0">
@@ -238,20 +244,12 @@ export default function Procedimientos() {
               </ul>
 
             </div>
-            <div class="tab-pane fade" id="nav-inducnoa" role="tabpanel" aria-labelledby="nav-inducnoa-tab" tabindex="0">
-              <p>
-                Se tomará para inducción la zona correspondiente a San miguel de Tucumán. Incluyendo Yerba buena, Banda del Rio Sali, Las talitas, Manantiales, San Pablo, Tafí Viejo y demás zonas que se encuentren dentro del radio de 10km.
-              </p>
-            </div>
           </div>
         </div>
-
         <div class="tab-pane fade" id="nav-patagonia" role="tabpanel" aria-labelledby="nav-patagonia-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-divpat-tab" data-bs-toggle="tab" data-bs-target="#nav-divpat" type="button" role="tab" aria-controls="nav-divpat" aria-selected="true">Subdivisión de Zonas</button>
-              <button class="nav-link sub" id="nav-autopat-tab" data-bs-toggle="tab" data-bs-target="#nav-autopat" type="button" role="tab" aria-controls="nav-autopat" aria-selected="false">Zona en Automatico</button>
-              <button class="nav-link sub" id="nav-inducpat-tab" data-bs-toggle="tab" data-bs-target="#nav-inducpat" type="button" role="tab" aria-controls="nav-inducpat" aria-selected="false">Zonas de Inducción</button>
               <button class="nav-link sub" id="nav-dificilpat-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilpat" type="button" role="tab" aria-controls="nav-dificilpat" aria-selected="false">Zonas de Dificil Acceso</button>
               <button class="nav-link sub" id="nav-particpat-tab" data-bs-toggle="tab" data-bs-target="#nav-particpat" type="button" role="tab" aria-controls="nav-particpat" aria-selected="false">Particularidades del Tráfico</button>
               <button class="nav-link sub" id="nav-fronterapat-tab" data-bs-toggle="tab" data-bs-target="#nav-fronterapat" type="button" role="tab" aria-controls="nav-fronterapat" aria-selected="false">Pasos Fronterizos</button>
@@ -263,15 +261,12 @@ export default function Procedimientos() {
                 <li>Neuquén:  Aquellos que se encuentran en Neuquén, Cipolletti, Rincón de los Sauces, Añelo, Plotter, Centenario, General Roca, Villa Regina, Huego, Zapala, Plaza Huincul, Cutral Co, Choele Choel, San Martin de los Andes, Junín de los Andes y demás ciudades aledañas. (NQN1 - NQN2 – NQN3 – NQN4 - RN1)  </li>
                 <li>Rio Negro: Servicios que se encuentren en Bariloche, Villa la Angostura, El Bolsón, Epuyen. (RN2 RN3 SCB1 SCB2)  </li>
               </ul>
-            </div>
-            <div class="tab-pane fade" id="nav-autopat" role="tabpanel" aria-labelledby="nav-autopat-tab" tabindex="0">
+              <h5><u>Zona en Automatico</u></h5>
               <p>
-                Los llamados para las inducciones de mecánica deberán ser realizados tanto en la ciudad de Neuquén como también en la de Bariloche. En esta última se cuenta con un móvil taller propio.
+                Tanto Neuquén como Bariloche están habilitadas para ser utilizadas en automático, en la medida de lo posible, siempre que los servicios y los móviles así lo permitan.
               </p>
-            </div>
-            <div class="tab-pane fade" id="nav-inducpat" role="tabpanel" aria-labelledby="nav-inducpat-tab" tabindex="0">
-              <p>
-                Los llamados para las inducciones de mecánica deberán ser realizados tanto en la ciudad de Neuquén como también en la de Bariloche. En esta última se cuenta con un móvil taller propio.</p>
+              <h5><u>Zona de Inducción</u></h5>
+              <p>Los llamados para las inducciones de mecánica deberán ser realizados tanto en la ciudad de Neuquén como también en la de Bariloche. En esta última se cuenta con un móvil taller propio.</p>
             </div>
             <div class="tab-pane fade" id="nav-dificilpat" role="tabpanel" aria-labelledby="nav-dificilpat-tab" tabindex="0">
               <p>
@@ -288,17 +283,17 @@ export default function Procedimientos() {
             <div class="tab-pane fade" id="nav-fronterapat" role="tabpanel" aria-labelledby="nav-fronterapat-tab" tabindex="0">
               <p>El tráfico de Patagonia tiene contacto con los siguientes pasos fronterizos:</p>
               <ul className='mt-2'>
-                <li>Paso Cardenal Samore (Villa la angostura),   </li>
-                <li>Paso Hua hum (San Martin de los andes),   </li>
-                <li>Paso Tromen (ruta 60),   </li>
-                <li>Paso Icamla (Villa Pehuenia),   </li>
+                <li>Paso Cardenal Samore (Villa la angostura).   </li>
+                <li>Paso Hua hum (San Martin de los andes).   </li>
+                <li>Paso Tromen (ruta 60).   </li>
+                <li>Paso Icamla (Villa Pehuenia).   </li>
                 <li>Paso pinco hachado (las lajas).   </li>
               </ul>
-              <p>Dependiendo los casos, algunos prestadores llegan hasta aduana argentina y otros cruzan aduana chilena también. Los costos por gastos aduaneros o kilómetros de difícil acceso serán comunicados por cada base.</p>
+              <p>Dependiendo los casos, algunos prestadores llegan hasta aduana argentina y otros cruzan aduana chilena también. <br />
+                Los costos por gastos aduaneros o kilómetros de difícil acceso serán comunicados por cada base.</p>
             </div>
           </div>
         </div>
-
         <div class="tab-pane fade" id="nav-stafe" role="tabpanel" aria-labelledby="nav-stafe-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -316,7 +311,6 @@ export default function Procedimientos() {
                 <li>Sta. Fe locales (tanto para los servicios que están dentro de la Ciudad de Sta. Fe, como así también aquellos que se encuentren en Monte Vera, Recreo, Sto. Tome, Sauce Viejo)  </li>
                 <li>Sta. fe interior (demás localidades)  </li>
               </ul>
-
             </div>
             <div class="tab-pane fade" id="nav-automatistafe" role="tabpanel" aria-labelledby="nav-automatistafe-tab" tabindex="0">
               <p>

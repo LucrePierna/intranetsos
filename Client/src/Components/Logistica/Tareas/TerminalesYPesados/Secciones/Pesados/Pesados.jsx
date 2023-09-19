@@ -55,12 +55,12 @@ export default function Pesados() {
               <p>
                 En este caso, para la derivación de camiones (pesados) por Compañía, los pasos a seguir son similares al de Terminales de camiones; con la diferencia que aquí no opera el área de SETA. Por lo tanto, es el mismo operador de logística el encargado de comenzar y culminar la derivación del mismo.
               </p>
-              <h3><u>Las Compañías de Seguros que poseen radios para camiones son</u></h3>
+              <h3><u>Las Compañías de Seguros que poseen radios para camiones son:</u></h3>
               <ul className='list-unstyled'>
-                <li>Nación Seguros </li>
+                <li>Nación Seguros. </li>
                 <li>Provincias Seguros. </li>
-                <li>Santander, a través de Meridional Seguros  </li>
-                <li>Zúrich </li>
+                <li>Santander, a través de Meridional Seguros.  </li>
+                <li>Zúrich. </li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-difter" role="tabpanel" aria-labelledby="nav-difter-tab" tabindex="0">
@@ -112,7 +112,7 @@ export default function Pesados() {
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3 " id="nav-analisis" role="tabpanel" aria-labelledby="nav-analisis-tab" tabindex="0">
               <p>Una vez marcado y previo a la aceptación del servicio, el operador de Logística de terminales deberá realizar un análisis del mismo, con el objetivo de asegurarse la correcta información registrada en el Sistema ASTOR e inmediatamente aceptarlo o rechazarlo (en este último caso, siempre deberá contar con autorización de un Back Office o Supervisor). Al aceptarlo, inmediatamente y sin demora, deberá comenzar a trabajar en el servicio.  </p>
-              <h3>Puntos a Analizar</h3>
+              <h3><u>Puntos a Analizar</u></h3>
               <p><u>Datos del vehículo</u> (tipo: modelo, chasis, tractor, combi, auto, moto etc), cinturones de seguridad, dimensiones (alto, largo, ancho, ruedas: si giran, si tiene duales, eje simple o doble.), verificar si posee semirremolque o acoplado, también el peso y naturaleza de la carga (en este último caso el cliente debe desenganchar y descargar SI O SI ) ACLARACION: las excepciones se realizan solo en casos puntuales autorizados por supervisor o área de seta y debe estar las fotos de unidad cargada en ASTOR o registro del pedido de las misma). (Medidas exteriores Mercedes Benz y Smart, Iveco Dimensiones, Grilla de Dimensiones, Cinturones Utilitarios,) </p>
               <p><u>Correcta aplicación del convenio, ver grilla:</u> la unidad tiene que estar dentro del período de garantía, y el destino siempre debe ser a un concesionario más próximo o a domicilio (para este último caso; solo de ser fin de semana, feriados o fuera de horarios del concesionario) y si fuera conveniente llevarlo a ese destino. Sino en caso de corresponder debe estar cargado el servicio de:  Asistencia al viajero  o salvo registro de autorización de un supervisor). </p>
               <p><u>Traslados de vehículos sin acompañantes:</u> deberá detallarse; autorización, tarjeta verde, llaves, nombre de la persona que entrega la unidad, dirección de destino, nombre del responsable que recibe la unidad, teléfonos de contacto, horarios del concesionario (este último caso viaje solo o no, debe estar esa información), </p>
@@ -122,8 +122,8 @@ export default function Pesados() {
               <p>Una vez ya realizado el previo análisis del servicio y/o completado los datos faltantes (por medio: de un llamado de contención, por consulta con área de S.E.T.A o/u con operador que cargo el servicio). El operador de logística de terminales deberá proceder a la búsqueda para la asignación de un prestador adecuado para dicho servicio. </p>
               <p><u>Realizar lectura de grilla del prestador</u>, ya que algunos poseen Tarifas Pactadas para pesados, otros cotizan en el momento (ver en grilla de prestador: en Observaciones). En este último caso, cuando prestador informa la cotización, consultar si la misma es precio final o si tiene el IVA incluido (Previamente antes, enviar fotos y dimensiones de unidad para que prestador pueda confirmar, que puede realizar la asistencia con su móvil y pasar cotización correcta de acuerdo al móvil que enviara).  </p>
               <p><u>Enviar vía mail al prestador</u> los datos del servicio, fotos y dimensiones de la unidad, solo en caso de camiones (con copia a derivación) y confirmar recepción con el prestador. Siempre dejar cargado en el servicio, las fotos de la unidad y captura de pantalla del envío del mail al prestador de consulta de disponibilidad y cotización para realizar asistencia con la respuesta de la confirmación del mismo. </p>
-              <p><u>En caso de derivación de servicios de camiones, pedir autorización de la cotización a:</u> Supervisores de turno o Ejecutivo de Prestadores, dejando registro de la cotización informada por el prestador y quien Autoriza la misma. </p>
-              <p>En estos casos, se debe cargar el producto en el servicio, de la siguiente manera: </p>
+              <p><u>En caso de derivación de servicios de camiones, pedir autorización de la cotización a:</u> Supervisores de turno o Ejecutivo de Prestadores, dejando registro de la cotización informada por el prestador y quien Autoriza la misma. <br />
+              En estos casos, se debe cargar el producto en el servicio, de la siguiente manera: </p>
               <ul className='list-unstyled'>
                 <li>1- Se cargará este producto para cualquier servicio cuyo costo sea autorizado por fuera de la grilla del prestador.</li>
                 <li>2- El producto a cargar es " MOVIDA-AUT.ESPECIAL" </li>
@@ -134,10 +134,10 @@ export default function Pesados() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <p>En caso de no tener disponibilidad de prestadores de pesados o de disponibilidad de tercerizar, se evalúa la opción de brindar el servicio por Reintegro, los cuales se dan de manera:  EXCEPCIONAL, SIEMPRE CON AUTORIZACION DE UN SUPERVISOR.<br />
-                Dar aviso del estado del servicio o de alguna particularidad (dejando registro correspondiente de lo informado, en servicio), al operador de S.E.T.A de turno para su posterior seguimiento (hasta que llega al concesionario)</p>
+                Dar aviso del estado del servicio o de alguna particularidad (dejando registro correspondiente de lo informado, en servicio), al operador de S.E.T.A de turno para su posterior seguimiento (hasta que llega al concesionario).</p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-programacion" role="tabpanel" aria-labelledby="nav-programacion-tab" tabindex="0">
-              <p>En caso de falta de disponibilidad, o por horarios de los concesionarios o por pedido del cliente. Se podrán programar los servicios, dejando claramente indicado el motivo en una referencia de derivación (Previamente visto y autorizado por un Supervisor o área de S.E.T.A)</p>
+              <p>En caso de falta de disponibilidad, o por horarios de los concesionarios o por pedido del cliente. Se podrán programar los servicios, dejando claramente indicado el motivo en una referencia de derivación (Previamente visto y autorizado por un Supervisor o área de S.E.T.A).</p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-trbjoprest" role="tabpanel" aria-labelledby="nav-trbjoprest-tab" tabindex="0">
               <p>(sacar cardan. Dar aire a la unidad, uso de carros, hora de trabajo/espera, extracción). El prestador al momento de cotizar deberá incluir en la misma cualquier tipo de estos trabajos extras, e informar si la cotización que pasa es con o sin I.V.A. incluido. En caso de llegar al lugar y verificar que tiene que realizar algunas de las intervenciones mencionadas anteriormente, tiene que comunicarnos e informarnos antes de realizarla, para verificar grilla, cobertura o informar a área S.E.T.A de situación.</p>
