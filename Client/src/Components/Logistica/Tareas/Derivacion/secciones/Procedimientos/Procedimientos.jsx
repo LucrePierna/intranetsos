@@ -37,7 +37,7 @@ export default function Procedimientos() {
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+          <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
             <h3 className='mt-3 '><u>Orden de derivación</u></h3>
             <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
             <h3><u>Análisis del servicio</u></h3>
@@ -68,7 +68,7 @@ export default function Procedimientos() {
           </div>
         </div>
         <div className="tab-pane fade" id="nav-selecprest" role="tabpanel" aria-labelledby="nav-selecprest-tab" tabindex="0">
-          <div class="tab-content px-3 mt-3 " id="nav-tabContent">
+          <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
             <p className='mt-5 fs-4 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
             <ul className='text-start fs-5 mt-3'>
               <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
