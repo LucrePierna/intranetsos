@@ -147,8 +147,7 @@ code {
 
 .responsiveIframe {
   width: 70% !important;
-  height: 80vh;
-  margin-bottom: 30px; 
+  height: 65vh;
   align-items: center;
   margin: auto;
 }

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Mapas from '../Secciones/Mapas/Mapas'
-import Procedimientos from '../Secciones/Procedimientos/Procedimientos'
+/* import Procedimientos from '../Secciones/Procedimientos/Procedimientos' */
 import Prestadores from '../Secciones/Prestadores/Prestadores'
 
 
 export default function NavBarBsAs() {
-  const [selectedComponent, setSelectedComponent] = useState('procedimientos');
+  const [selectedComponent, setSelectedComponent] = useState('mapas');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
@@ -16,7 +16,7 @@ export default function NavBarBsAs() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center ">
         <ul className="nav nav-tabs just">
-          <li className="nav-item">
+   {/*        <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'procedimientos' ? 'active' : ''}`}
               onClick={() => handleComponentClick('procedimientos')}
@@ -27,7 +27,7 @@ export default function NavBarBsAs() {
             >
               Procedimientos
             </button>
-          </li>
+          </li> */}
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'mapas' ? 'active' : ''}`}
@@ -58,7 +58,7 @@ export default function NavBarBsAs() {
       </nav>
 
       <div className="container-fluid">
-        {selectedComponent === 'procedimientos' && <Procedimientos />}
+       {/*  {selectedComponent === 'procedimientos' && <Procedimientos />} */}
         {selectedComponent === 'mapas' && <Mapas />}
         {selectedComponent === 'prestadores' && <Prestadores />}
 
