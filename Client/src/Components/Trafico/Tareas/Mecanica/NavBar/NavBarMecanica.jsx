@@ -15,7 +15,7 @@ export default function NavBarBsAs() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center ">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-between ">
         <div></div>
         <ul className="nav nav-tabs just">
           {/*           <li className="nav-item">
