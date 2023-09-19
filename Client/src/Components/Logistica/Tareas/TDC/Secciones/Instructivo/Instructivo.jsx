@@ -31,7 +31,7 @@ export default function Instructivo() {
           <ul className='text-start fs-5'>
             <li>Visualización y análisis de la pantallas para la derivacion de servicios.</li>
             <li>Analizar las zonas en donde finalizan los servicios.</li>
-            <li>Corroborar que sea conveniente la triangulación de los servicios</li>
+            <li>Corroborar que sea conveniente la triangulación de los servicios.</li>
             <li>Ofrecer a los prestadores la posibilidad de asistir a los clientes a través de este “enganche” de servicios.</li>
           </ul>
 
@@ -43,26 +43,26 @@ export default function Instructivo() {
               <img src={imagen1} alt="Eficaz1" className='responsiveImg' />
             </div>
             <div className='mt-1'>
-              <h3>2º Servicio</h3>
+              <h3>2º Servicio.</h3>
               <img src={imagen2} alt="Eficaz2" className='responsiveImg' />
             </div>
           </div>
-          <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base</p>
+          <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base.</p>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
           <Formato />
         </div>
         <div className="tab-pane fade px-3 mt-3 lineaGeneral" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
-          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche </p>
+          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche. </p>
           <ul className='text-start fs-6 mt-3'>
-            <li>Móvil roto (se averió en el transcurso del servicio inicial)</li>
-            <li>Horario de taller (la demora informada no permite llegar a tiempo al taller)</li>
-            <li>Demora excesiva (cuando la demora es considerablemente elevada)</li>
-            <li>Viaje largo (tiene otro viaje asignado o programado con kilómetros)</li>
-            <li>Horario nocturno (prestador no realiza servicios en horarios nocturnos)</li>
-            <li>Fin de turno (prestador finaliza su turno con el servicio inicial)</li>
-            <li>Volvio a Base (prestador ya retornó o está retornando a base)</li>
-            <li>No acepta Conexión (prestador no toma el servicio como conexión) </li>
+            <li>Móvil roto (se averió en el transcurso del servicio inicial).</li>
+            <li>Horario de taller (la demora informada no permite llegar a tiempo al taller).</li>
+            <li>Demora excesiva (cuando la demora es considerablemente elevada).</li>
+            <li>Viaje largo (tiene otro viaje asignado o programado con kilómetros).</li>
+            <li>Horario nocturno (prestador no realiza servicios en horarios nocturnos).</li>
+            <li>Fin de turno (prestador finaliza su turno con el servicio inicial).</li>
+            <li>Volvio a Base (prestador ya retornó o está retornando a base).</li>
+            <li>No acepta Conexión (prestador no toma el servicio como conexión). </li>
           </ul>
 
         </div>
@@ -77,7 +77,7 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-5" id="nav-ceficaz" role="tabpanel" aria-labelledby="nav-ceficaz-tab" tabindex="0">
-              <p>LUEGO DE ASIGNADA LA BASE CORRESPONDIENTE, SE DEBE CARGAR EN LA PLANILLA</p>
+              <p>LUEGO DE ASIGNADA LA BASE CORRESPONDIENTE, SE DEBE CARGAR EN LA PLANILLA:</p>
               <table className='mt-5 mb-2' >
                 <tr className='border border-dark'>
                   <td className='border border-black px-2'>1º servicio</td>
@@ -97,7 +97,7 @@ export default function Instructivo() {
               <p>
                 Se puede dar que le pasemos varios servicios en una misma zona a un prestador que está finalizando en zona o yendo a hacer uno a alguna localidad cercana, en ese caso se conecta por más que no tenga ganancias de kms, para cubrir la zona y optimizar un móvil, pasando uno o más servicios.
                 <br></br>
-                Esto se carga en planilla en la sección “Locales / svc en zona” <br></br>
+                Esto se carga en planilla en la sección “Locales / svc en zona”: <br/>
                 En este caso se dejan vacíos los casilleros de  kms sin conexión – kms con conexión – kms ganados.
               </p>
               <table className='mt-5 mb-2' >
@@ -114,9 +114,8 @@ export default function Instructivo() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-noacepta" role="tabpanel" aria-labelledby="nav-noacepta-tab" tabindex="0">
               <p>
-                En caso de que prestador no acepte la conexión por distintos motivos, debemos dejar el registro en planilla, en la sección de “Anulados”
+                En caso de que prestador no acepte la conexión por distintos motivos, debemos dejar el registro en planilla, en la sección de “Anulados”:
               </p>
-
               <table className='mt-5 mb-2' >
                 <tr className='border border-dark'>
                   <td className='border border-black px-2'>1º servicio</td>
@@ -128,7 +127,7 @@ export default function Instructivo() {
                   <td className='border border-black px-2'>Observación</td>
                 </tr>
               </table>
-              <h5>TIPOS DE ANULACIONES</h5>
+              <h5><u>TIPOS DE ANULACIONES</u></h5>
               <div className='text-start d-flex flex-row fs-5 mt-3 px-5'>
                 <ul className='px-5'>
                   <li>ANULADO </li>

@@ -39,31 +39,31 @@ export default function Procedimientos() {
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
             <h3 className='mt-3 '><u>Orden de derivación</u></h3>
-            <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente</p>
+            <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente.</p>
             <h3><u>Análisis del servicio</u></h3>
-            <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo
+            <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo.
               <table className='mt-5 mb-2'>
-                <tr className='border border-dark'>
-                  <td>Historial de servicios anteriores</td>
-                  <td>Titular</td>
-                  <td>Vehículo</td>
-                  <td>Dominio</td>
-                  <td>Color</td>
+                <tr className='tabla '>
+                  <td className='border border-black px-3'>Historial de servicios</td>
+                  <td className='border border-black px-3'>Titular</td>
+                  <td className='border border-black px-3'>Vehículo</td>
+                  <td className='border border-black px-3'>Dominio</td>
+                  <td className='border border-black px-3'>Color</td>
                 </tr>
-                <tr className='border border-dark'><td>Falla</td>
-                  <td>Teléfono</td>
-                  <td>Ubicación origen y destino</td>
-                  <td>Cantidad de pasajeros</td>
-                  <td>Requisitos para que el vehículo viaje solo en caso de solicitar</td></tr>
-                <tr className='border border-dark'><td>Horarios de taller</td>
-                  <td>Si posee carga</td>
-                  <td>Dimensiones y si hay alguna otra información extra en referencias</td>
-                  <td>Cobertura de la asistencia</td>
-                  <td>Si el trayecto corresponde o no a recorrido de transportin</td></tr>
+                <tr className='tabla'><td>Falla</td>
+                  <td className='border border-black px-3'>Teléfono</td>
+                  <td className='border border-black px-3'>Ubicación Origen y Destino</td>
+                  <td className='border border-black px-3'>Cantidad de Pasajeros</td>
+                  <td className='border border-black px-3'>Requisitos Si Vehículo Viaja Sólo</td></tr>
+                <tr className='tabla'><td>Horarios de taller</td>
+                  <td className='border border-black px-3'>Si posee carga</td>
+                  <td className='border border-black px-3'>Dimensiones e Información Extra en Referencias</td>
+                  <td className='border border-black px-3'>Cobertura de la Asistencia</td>
+                  <td className='border border-black px-3'>Si Corresponde o No a Transportin</td></tr>
               </table>
 
             </p>
-            <h5>Contención</h5>
+            <h5><u>Contención</u></h5>
             <p className='text-start justify-content-center'> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
           </div>
         </div>
@@ -76,8 +76,8 @@ export default function Procedimientos() {
                 <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
                 <ul>Ruta y transito, hasta 100 km lineales vacíos tanto en origen, recorrido y/o destino.</ul>
               </li>
-              <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente</li>
-              <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona</li>
+              <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente.</li>
+              <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona.</li>
             </ul>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function Procedimientos() {
             <div class="tab-pane fade" id="nav-automatica" role="tabpanel" aria-labelledby="nav-automatica-tab" tabindex="0">
               <ul className='lista fs-5'>
                 <li className='text-center justify-content-center '><u>Sistema</u>
-                  <p className='text-start'>Para las bases que cuentan con este sistema el operador deberá enviar los datos del servicio. De este modo la base deberá aceptar las condiciones del servicio para que queden asignados. El operador deberá informar telefónicamente al prestador la cobertura y las particularidades del servicio que puedan ser de relevancia (Estado de ruedas, personas que acompañan, etc.)</p>
+                  <p className='text-start'>Para las bases que cuentan con este sistema el operador deberá enviar los datos del servicio. De este modo la base deberá aceptar las condiciones del servicio para que queden asignados. El operador deberá informar telefónicamente al prestador la cobertura y las particularidades del servicio que puedan ser de relevancia (Estado de ruedas, personas que acompañan, etc.).</p>
                 </li>
                 <li className='text-center justify-content-center '><u>GapLite</u>
                   <p className='text-start'>Es una aplicación web diseñada para el cursado de servicios por la cual el prestador podrá acceder y cursar la asistencia asignada. El operador deberá corroborar si la base consultada se encuentra en el listado de prestadores activos <a href="https://redsos-my.sharepoint.com/:x:/r/personal/jmolinari_redsos_com_ar/Documents/Prestadores%20con%20GAP%20Lite/PRESTADORES%20GAP%20Lite.xlsx?d=w03ab3d1ddfe14e43a534d851f9e06532&csf=1&web=1&e=zWm82z" target='_blank'><button type='button' class="customBTN mx-2">Prestador GapLite</button></a>
@@ -147,18 +147,18 @@ export default function Procedimientos() {
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <p className='text-start fs-6'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
                 <ul><u>El derivador deberá informar la gestión del reintegro:</u>
-                  <li>Solicitar ticket o factura con validez fiscal</li>
-                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos
+                  <li>Solicitar ticket o factura con validez fiscal.</li>
+                  <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos:
                     <div className='m-auto p-2'>
                       <a href="https://tuportal.redsos.com.ar/form" target='_blank'>
                         <button type='button' className="customBTN mx-2">RedSOS</button>
                       </a>
                     </div>
                   </li>
-                  <li>Brindar el códgio de servicio</li>
-                  <li>Informar el monto de reintegro</li>
+                  <li>Brindar el código de servicio.</li>
+                  <li>Informar el monto de reintegro.</li>
                 </ul>
-                <h3><b>Debe dejar registro en el serivio del monto ofrecido y de la autorización del supervisor/Backoffice</b></h3>
+                <h3><b>Debe dejar registro en el serivcio del monto ofrecido y de la autorización del supervisor/Backoffice.</b></h3>
               </p>
             </div>
           </div>
@@ -175,14 +175,14 @@ export default function Procedimientos() {
               <ul className='text-start mt-4'>
                 <li>Es la operatoria que se utiliza para la coordinación de servicios cuando la demanda lo requiere y sea autorizado por el supervisor / back office de turno. El objetivo es en reducir los tiempos de espera del cliente optimizando los recursos y evitar el rellamado a las bases obteniendo información sobre la situación de cada una. </li>
                 <li>El operador que este asignado a esta tarea deberá marcar todos los servicios de la zona delimitada acordando la cantidad de prestadores a consultar y establecer una ruta acorde a la que recorre el prestador para pasar los servicios en conjunto.</li>
-                <li>Se deberá priorizar los servicios que se encuentren más demorados priorizando situación de ruta / tránsito y luego en domicilio respetando los tiempos de contención y registros</li>
+                <li>Se deberá priorizar los servicios que se encuentren más demorados priorizando situación de ruta / tránsito y luego en domicilio respetando los tiempos de contención y registros.</li>
                 <li>Focalización de la atención en zonas de alta recurrencia de servicios. </li>
                 <li>Disminuir la cantidad de llamadas del derivador para resolver un servicio.</li>
                 <li>Posibilidad de implementar la utilización de conexiones.</li>
                 <li>Identificar zonas críticas por falta de disponibilidad de móviles.</li>
                 <li>Disminuir el tiempo promedio de derivación de los servicios.</li>
               </ul>
-              <h4><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente</b></h4>
+              <h4><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente.</b></h4>
             </div>
             <div className="tab-pane fade" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
               <div className="d-flex justify-content-center align-items-center h-100">

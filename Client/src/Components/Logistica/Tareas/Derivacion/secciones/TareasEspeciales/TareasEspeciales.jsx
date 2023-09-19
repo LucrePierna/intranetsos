@@ -29,7 +29,7 @@ export default function TareasEspeciales() {
                         <h3><u>Tipo de coberturas</u></h3>
                         <ul className='mt-2 text-start'>
                             <li>Si posee, (en determinadas circunstancias): la grilla brinda el servicio de apertura siempre y cuando existan las circunstancias que indica. Por ejemplo: si la grilla informa que NO se brinda el servicio en caso de robo o hurto de las llaves, debemos consultar al cliente si esto ocurrió, y si así fue, no tendrá el servicio. Puede ser con o sin tope.</li>
-                            <li>Si posee: la grilla brinda el servicio de apertura, sin exigir que se den determinadas circunstancias. Puede ser con o sin tope</li>
+                            <li>Si posee: la grilla brinda el servicio de apertura, sin exigir que se den determinadas circunstancias. Puede ser con o sin tope.</li>
                             <li>No posee: En cuyo caso se le informará al cliente que debe hacer la apertura por sus medios.  </li>
                         </ul>
                         <h3><u>Selección de prestador</u></h3>
@@ -54,7 +54,7 @@ export default function TareasEspeciales() {
                         </ul>
                         <p className='mt-2'>El operador deberá buscar prestador informando explícitamente la situación. El prestador debe informarnos la cotización cuando llega al lugar una vez evaluada la condición del vehículo, la misma es autorizada por supervisor/Back Office. </p>
                         <ul className='mt-2 text-start'>
-                            <li>Recordar que en este caso siempre firma conformidad de arrastre sin excepción</li>
+                            <li>Recordar que en este caso siempre firma conformidad de arrastre sin excepción.</li>
                             <li>No indicar de antemano a prestador tope de cliente.</li>
                         </ul>
                     </div>
@@ -67,15 +67,15 @@ export default function TareasEspeciales() {
                             <li>Ag 10643	Station	Capital Federal	Warnes 999 (Villa Crespo)	011 48554442 / 011 48580222 / 011 48578858</li>
                             <li>Ag 10837	Auto Radio Alarma	La Plata	Calle 66 y 138	0221-155411491 / 0221 4502326</li>
                         </ul>
-                        <ul className='text-start mt-2'>Red Nacional
+                        <ul className='text-start mt-2'><u>Red Nacional</u>
                             <li>Verificar si hay bases disponibles en la localidad que el cliente se encuentre, de ser así brindar los datos del prestador para que el cliente saque turno y asista al lugar.</li>
                             <li>En caso de no existir bases o que el cliente no acepte ir al lugar indicado por nosotros, se le brindará el servicio por reintegro.</li>
                         </ul>
-                        <h3>Debemos informar al cliente (según cuadro):</h3>
+                        <h3><u>Debemos informar al cliente (según cuadro):</u></h3>
                         <ul className='mt-2 text-start'>
-                            <li>Dirección del prestador</li>
-                            <li>Teléfonos para pedir turnos</li>
-                            <li>Código del servicio</li>
+                            <li>Dirección del prestador.</li>
+                            <li>Teléfonos para pedir turnos.</li>
+                            <li>Código del servicio.</li>
                         </ul>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ export default function TareasEspeciales() {
                     </nav>
                     <div class="tab-content fs-5 " id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-camintransitable" role="tabpanel" aria-labelledby="nav-camintransitable-tab" tabindex="0">
-                            <h3>¿Qué es un camino Intransitable?</h3>
+                            <h3><u>¿Qué es un camino Intransitable?</u></h3>
                             <p>Los mismos se encuentran marcados a través del mapa Mapsource, señalizado con verde flúor.</p>
                             <ul className='text-start'>Pueden estar compuestos por:
                                 <li>Pendientes peligrosas.</li>
@@ -113,7 +113,7 @@ export default function TareasEspeciales() {
                             </ul>
                         </div>
                         <div class="tab-pane fade text-start px-5" id="nav-posibprest" role="tabpanel" aria-labelledby="nav-posibprest-tab" tabindex="0">
-                            <h3>Existen dos posibilidades a raíz de lo consultado con el prestador: </h3>
+                            <h3><u>Existen dos posibilidades a raíz de lo consultado con el prestador:</u></h3>
                             <ul className='text-start'>
                                 <li>Que los prestadores de la zona cobraren un costo adicional por asumir los riesgos que el rescate en esas condiciones implica. Dicho costo estará a cargo del cliente. Riesgos para el móvil: rotura, mayor demanda de tiempo para realizar el servicio, etc.</li>
                                 <li>Que todos los prestadores de la zona coincidan en la imposibilidad de acceder por el estado del camino. De ser así, el cliente deberá movilizarlo de la zona por sus medios, hasta encontrarse en una ubicación donde pueda ser auxiliado.</li>

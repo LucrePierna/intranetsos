@@ -39,9 +39,9 @@ export default function Instructivo() {
           </ul>
           <h3><u>Etapas</u></h3>
           <ul className='lista'>
-            <li>Transportin Inicio =  Se realiza la busqueda de la unidad</li>
-            <li>Transportin = Traslado de los vehiculos en el camion </li>
-            <li>Transportin Distribucion = Traslado de base de guarda hasta destino del cliente</li>
+            <li>Transportin Inicio =  Se realiza la busqueda de la unidad.</li>
+            <li>Transportin = Traslado de los vehiculos en el camion. </li>
+            <li>Transportin Distribucion = Traslado de base de guarda hasta destino del cliente.</li>
           </ul>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-tarea" role="tabpanel" aria-labelledby="nav-tarea-tab" tabindex="0">
@@ -68,18 +68,18 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
           <h3><u>Descripción</u></h3>
-          <p>Grúa Tripe (móvil 1211)
+          <p>Grúa Tripe (móvil 1211).
             Es la unidad propia de SOS disponible para trasladar un máximo de 3 vehículos bajo la modalidad trasportín. Tiene sus recorridos propios y se pueden generar otros de acuerdo a la demanda en la zona. Cabe destacar que el móvil no cotiza por servicios y que solo traslada vehículos de clientes de SOS.
           </p>
           <h3><u>Etapas</u></h3>
           <p>Una vez recolectados los vehículos se deberá coordinar el móvil con el prestador Vasallo Base 13480 y con los datos de los vehículos a trasladar. Para ello se generará un código de manera manual con los siguientes datos:</p>
           <ul className='text-center list-unstyled h-50 w-50 m-auto fs-5 py-4'>
-            <li>Cliente: Grúa Triple</li>
-            <li>Patente: TTT001</li>
-            <li>Radio: Servicio Privado Trasportín</li>
-            <li>Tipo de vehículo: Pesado Categoría 1</li>
-            <li>Origen: Desde donde sale el mosquito</li>
-            <li>Destino: Destino Final del mosquito</li>
+            <li>Cliente: Grúa Triple.</li>
+            <li>Patente: TTT001.</li>
+            <li>Radio: Servicio Privado Trasportín.</li>
+            <li>Tipo de vehículo: Pesado Categoría 1.</li>
+            <li>Origen: Desde donde sale el mosquito.</li>
+            <li>Destino: Destino Final del mosquito.</li>
           </ul>
           <p>En referencias de derivación: Registrar los vehículos que traslada en el trayecto.</p>
           <p>Luego el operador deberá asignar el servicio por reintegro a base 10361 Reintegro Córdoba, pero con el cierre TRANSPORTIN ENLACE.</p>

@@ -87,7 +87,7 @@ export default function Procedimientos() {
               <p>Cuando el servicio sea rechazado y pasado a Red Nacional por cualquier motivo, será responsabilidad del Operador de Tráfico realizar la contención correspondiente al cliente, informando la situación del servicio. </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-cmbdemtn" role="tabpanel" aria-labelledby="nav-cmbdemtn-tab" tabindex="0">
-              <p>Para los servicios que se encuentren en los Tráficos Nacionales (tanto servicios de traslado como de mecánica ligera), a los cuales se les modificó la asignación de una base, se deberá realizar un control </p>
+              <p>Para los servicios que se encuentren en los Tráficos Nacionales (tanto servicios de traslado como de mecánica ligera), a los cuales se les modificó la asignación de una base, se deberá realizar un control. </p>
               <h3><u>Control</u></h3>
               <p>Dentro de la pantalla ‘Derivados’ se deberán verificar los servicios y controlar los cambios de demora a través del botón ‘Cambios de demora’ de la solapa “5. Horarios / otros”. </p>
             </div>
@@ -156,11 +156,11 @@ export default function Procedimientos() {
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3" id="nav-contener" role="tabpanel" aria-labelledby="nav-contener-tab" tabindex="0">
               <ul className='text-start fs-5'>
-                <li>Servicio de Red Nacional</li>
-                <li>Servicio de Tráficos Nacionales</li>
-                <li>Servicio en Espera de Aceptación por Parte de Logistica</li>
-                <li>Trafico Local Móvil Acepta</li>
-                <li>Unicamente en Tránsito o Ruta</li>
+                <li>Servicio de Red Nacional.</li>
+                <li>Servicio de Tráficos Nacionales.</li>
+                <li>Servicio en Espera de Aceptación por Parte de Logistica.</li>
+                <li>Trafico Local Móvil Acepta.</li>
+                <li>Unicamente en Tránsito o Ruta.</li>
               </ul>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-criticos" role="tabpanel" aria-labelledby="nav-criticos-tab" tabindex="0">
@@ -197,18 +197,18 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-speech" role="tabpanel" aria-labelledby="nav-speech-tab" tabindex="0">
-              <h5>Mujeres embarazadas, niños o ancianos.</h5>
-              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”</p>
+              <h4><u>Mujeres embarazadas, niños o ancianos.</u></h4>
+              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u> <br />
-                “Comprendemos la situación y queremos ofrecerle la posibilidad de que consuma un refrigerio a cargo nuestro de $xxx por persona mientras espera el móvil. Solicite ticket fiscal o factura para proceder al reintegro”</p>
-              <h5>Clientes con problemas de salud.</h5>
-              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”</p>
+                “Comprendemos la situación y queremos ofrecerle la posibilidad de que consuma un refrigerio a cargo nuestro de $xxx por persona mientras espera el móvil. Solicite ticket fiscal o factura para proceder al reintegro”.</p>
+              <h4><u>Clientes con problemas de salud.</u></h4>
+              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u><br />
-                “Comprendemos su situacion, si necesita que nos comuniquemos con alguien por usted no dude en decirnos y nosotros dejaremos el mensaje mientras espera la asistencia”</p>
-              <h5>Clientes en zonas desfavorables.</h5>
-              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”</p>
+                “Comprendemos su situacion, si necesita que nos comuniquemos con alguien por usted no dude en decirnos y nosotros dejaremos el mensaje mientras espera la asistencia”.</p>
+              <h4><u>Clientes en zonas desfavorables.</u></h4>
+              <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u><br />
-                “Comprendemos su situación, le ofrecemos llamar a la policiía o defensa civil para solicitar que le hagan acompañamiento mientras espera nuestra asistencia”</p>
+                “Comprendemos su situación, le ofrecemos llamar a la policiía o defensa civil para solicitar que le hagan acompañamiento mientras espera nuestra asistencia”.</p>
             </div>
           </div>
         </div>

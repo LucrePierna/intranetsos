@@ -39,13 +39,13 @@ export default function Trasvase() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             </div>
           </nav>
-          <h3>Analizar el servicio atendiendo principalmente a:</h3>
+          <h3><u>Analizar el servicio atendiendo principalmente a:</u></h3>
           <ul>
             <li>Origen.</li>
             <li>Marca y modelo de la unidad.</li>
             <li>Tipo de combustible.</li>
             <li>Cantidad de litros.</li>
-            <li>Dettame SI / NO</li>
+            <li>Dettame SI / NO.</li>
             <li>Teléfono de contacto del chofer o persona junto a la unidad.</li>
           </ul>
         </div>
@@ -58,10 +58,10 @@ export default function Trasvase() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-prestadores" role="tabpanel" aria-labelledby="nav-prestadores-tab" tabindex="0">
-              <h3>Una vez analizado y corroborado los datos el operador consultará disponibilidad con las bases</h3>
+              <h3><u>Una vez analizado y corroborado los datos el operador consultará disponibilidad con las bases</u></h3>
               <ul>
                 <li>13191 - J & D SERVICIOS AMBIENTALES SRL = Llamado telefónico.</li>
-                <li>11620 - ASIST CARGO SA = por correo electronico</li>
+                <li>11620 - ASIST CARGO SA = por correo electronico.</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
