@@ -51,16 +51,16 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3 " id="nav-sinderiv" role="tabpanel" aria-labelledby="nav-sinderiv-tab" tabindex="0">
+            <div class="tab-pane fade show active px-3 " id="nav-sinderiv" role="tabpanel" aria-labelledby="nav-sinderiv-tab" tabindex="0">
               <p>Si el operador de Contención detecta en el análisis que transcurrieron 60’ o más desde la toma del servicio, deberá establecer un primer contacto con el cliente.</p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-svcacept" role="tabpanel" aria-labelledby="nav-svcacept-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-svcacept" role="tabpanel" aria-labelledby="nav-svcacept-tab" tabindex="0">
               <p>Cuando el servicio este aceptado y/ siendo trabajado por el Operador de Logística, la contención, seguimiento y llegada del servicio será responsabilidad del mismo, sin intervención del operador de contención. </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-ctto" role="tabpanel" aria-labelledby="nav-ctto-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-ctto" role="tabpanel" aria-labelledby="nav-ctto-tab" tabindex="0">
               <p>Transcurridos 20’ desde la toma del servicio, el operador de Contención deberá establecer un primer contacto con el cliente para informarle que se está trabajando en su pedido de asistencia. Transcurridos 40/60’ de la última contención, deberá volver a contactar al cliente y notificar el estado del servicio. </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-seguimiento" role="tabpanel" aria-labelledby="nav-seguimiento-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-seguimiento" role="tabpanel" aria-labelledby="nav-seguimiento-tab" tabindex="0">
               <p>Si al realizar el seguimiento del servicio, el Operador de Contención detecta que el móvil ya realizó el servicio, deberá dar llegada y finalización del servicio en el sistema.  </p>
             </div>
           </div>
@@ -77,24 +77,24 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3" id="nav-svcacepttn" role="tabpanel" aria-labelledby="nav-svcacepttn-tab" tabindex="0">
+            <div class="tab-pane fade show active px-3 " id="nav-svcacepttn" role="tabpanel" aria-labelledby="nav-svcacepttn-tab" tabindex="0">
               <p>Cuando el servicio este aceptado y/o siendo trabajado por el Operador de Logística, la contención, seguimiento y llegada del servicio será responsabilidad del mismo, sin intervención del operador de contención.</p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-cttotn" role="tabpanel" aria-labelledby="nav-cttotn-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-cttotn" role="tabpanel" aria-labelledby="nav-cttotn-tab" tabindex="0">
               <p>Transcurridos 20’ desde la toma del servicio, el operador de Contención deberá establecer un primer contacto con el cliente para informarle que se está trabajando en su pedido de asistencia.  </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-rechsvctn" role="tabpanel" aria-labelledby="nav-rechsvctn-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-rechsvctn" role="tabpanel" aria-labelledby="nav-rechsvctn-tab" tabindex="0">
               <p>Cuando el servicio sea rechazado y pasado a Red Nacional por cualquier motivo, será responsabilidad del Operador de Tráfico realizar la contención correspondiente al cliente, informando la situación del servicio. </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-cmbdemtn" role="tabpanel" aria-labelledby="nav-cmbdemtn-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-cmbdemtn" role="tabpanel" aria-labelledby="nav-cmbdemtn-tab" tabindex="0">
               <p>Para los servicios que se encuentren en los Tráficos Nacionales (tanto servicios de traslado como de mecánica ligera), a los cuales se les modificó la asignación de una base, se deberá realizar un control. </p>
               <h3><u>Control</u></h3>
               <p>Dentro de la pantalla ‘Derivados’ se deberán verificar los servicios y controlar los cambios de demora a través del botón ‘Cambios de demora’ de la solapa “5. Horarios / otros”. </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-faltacomtn" role="tabpanel" aria-labelledby="nav-faltacomtn-tab" tabindex="0">
+            <div class="tab-pane fade px-3" id="nav-faltacomtn" role="tabpanel" aria-labelledby="nav-faltacomtn-tab" tabindex="0">
               <p>En caso de que el Operador no lograra contacto con el cliente, deberá intentar nuevamente la comunicación transcurridos 10 minutos. </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-demycierretn" role="tabpanel" aria-labelledby="nav-demycierretn-tab" tabindex="0">
+            <div class="tab-pane fade px-3" id="nav-demycierretn" role="tabpanel" aria-labelledby="nav-demycierretn-tab" tabindex="0">
               <p>Para los servicios cuya demora esté próxima a cumplirse o ya se encontrare cumplida y el móvil aún no hubiera llegado, serán aplicables los incisos a continuación. </p>
               <h3><u>Demora Caída</u></h3>
               <p>El Operador de Contención deberá consultar al móvil el motivo del retraso y el tiempo restante. Posteriormente deberá llamar al cliente para informar lo sucedido. </p>
@@ -112,13 +112,13 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3 " id="nav-mvlasigtl" role="tabpanel" aria-labelledby="nav-mvlasigtl-tab" tabindex="0">
+            <div class="tab-pane fade show active px-3 " id="nav-mvlasigtl" role="tabpanel" aria-labelledby="nav-mvlasigtl-tab" tabindex="0">
               <p>Si el servicio es en tránsito, será responsabilidad del Operador de Contención dar aviso al cliente de la aceptación del móvil. Si es en lugar a resguardo, o es servicio de mecánica o motos, será responsabilidad del Operador de Tráfico dar aviso al cliente de la aceptación del móvil, indicando el tiempo de arribo del mismo y corroborando origen y destino del servicio. </p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-sinmvltl" role="tabpanel" aria-labelledby="nav-sinmvltl-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-sinmvltl" role="tabpanel" aria-labelledby="nav-sinmvltl-tab" tabindex="0">
               <p>Será responsabilidad del Operador de Tráfico dar aviso al cliente de la situación del servicio, independientemente de si está a resguardo o en tránsito.</p>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-eventualtl" role="tabpanel" aria-labelledby="nav-eventualtl-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-eventualtl" role="tabpanel" aria-labelledby="nav-eventualtl-tab" tabindex="0">
               <p>Será responsabilidad del Operador de Tráfico dar aviso al cliente de la situación del servicio, independientemente de si está a resguardo o en tránsito. </p>
             </div>
           </div>
@@ -132,13 +132,13 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3" id="nav-alternativas" role="tabpanel" aria-labelledby="nav-alternativas-tab" tabindex="0">
+            <div class="tab-pane fade show active px-3 " id="nav-alternativas" role="tabpanel" aria-labelledby="nav-alternativas-tab" tabindex="0">
               <p>Considerando la criticidad del servicio, el Derivador/Operador de Contención podrá hacer uso de las alternativas de contención en el primer contacto con el cliente. Por ejemplo taxi, reintegros, etc. </p>
             </div>
-            <div class="tab-pane fade px-3 py-5" id="nav-registros" role="tabpanel" aria-labelledby="nav-registros-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-registros" role="tabpanel" aria-labelledby="nav-registros-tab" tabindex="0">
               <p>Siempre se deberá dejar registro claro y completo de lo informado u ofrecido al cliente y su aceptación/rechazo en una referencia de contención, así como tipificar correctamente la llamada en IPPad y registrar la patente en CRM. </p>
             </div>
-            <div class="tab-pane fade px-3 py-5" id="nav-espyprog" role="tabpanel" aria-labelledby="nav-espyprog-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-espyprog" role="tabpanel" aria-labelledby="nav-espyprog-tab" tabindex="0">
               <p>En todos los casos de servicios solicitados para Directivos, Presidente, personal de compañía de seguro / terminal automotriz, o S.O.S. S.A., independientemente del medio de ingreso de la solicitud, el Operador deberá enviar un correo electrónico informando la prioridad del mismo a las casillas supervisorescat@redsos.com.ar y supervisoresderivacion@redsos.com.ar, supervisorestrafico@redsos.com.ar, supervisoresdepiso@redsos.com.ar, a fin de que se le brinde la prioridad y contención necesaria y verificar respuesta por parte de algún supervisores vía mail corroborando están al tanto del servicio.</p>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function Procedimientos() {
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active px-3 mt-3" id="nav-contener" role="tabpanel" aria-labelledby="nav-contener-tab" tabindex="0">
+            <div class="tab-pane fade show active px-3 " id="nav-contener" role="tabpanel" aria-labelledby="nav-contener-tab" tabindex="0">
               <ul className='text-start fs-5'>
                 <li>Servicio de Red Nacional.</li>
                 <li>Servicio de Tráficos Nacionales.</li>
@@ -163,7 +163,7 @@ export default function Procedimientos() {
                 <li>Unicamente en Tránsito o Ruta.</li>
               </ul>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-criticos" role="tabpanel" aria-labelledby="nav-criticos-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-criticos" role="tabpanel" aria-labelledby="nav-criticos-tab" tabindex="0">
               <h5><u>Clientes en Tránsito o Ruta que Contemplen</u></h5>
               <ul className='text-start fs-5'>
                 <li>Servicios con Niños o Mujeres Embarazadas.</li>
@@ -174,7 +174,7 @@ export default function Procedimientos() {
                 <li>Demora Elevada (+180 min).</li>
               </ul>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-ofrecemos" role="tabpanel" aria-labelledby="nav-ofrecemos-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-ofrecemos" role="tabpanel" aria-labelledby="nav-ofrecemos-tab" tabindex="0">
               <ul className='text-start fs-5'>
                 <li>Reintegro de traslado  o programación.</li>
                 <li>Coordinación de remis para traslado a estación de servicio.</li>
@@ -185,7 +185,7 @@ export default function Procedimientos() {
                 <li>Analizar otras alternativas /excepciones con supervisor.</li>
               </ul>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-comunicacion" role="tabpanel" aria-labelledby="nav-comunicacion-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-comunicacion" role="tabpanel" aria-labelledby="nav-comunicacion-tab" tabindex="0">
               <ul className='text-start fs-5'>
                 <li>Escuchar al cliente, la indagación es clave.</li>
                 <li>Realizar preguntas cerradas (posibles respuestas sí/no).</li>
@@ -196,7 +196,7 @@ export default function Procedimientos() {
                 <li>Anticipate.</li>
               </ul>
             </div>
-            <div class="tab-pane fade px-3 mt-3" id="nav-speech" role="tabpanel" aria-labelledby="nav-speech-tab" tabindex="0">
+            <div class="tab-pane fade px-3 " id="nav-speech" role="tabpanel" aria-labelledby="nav-speech-tab" tabindex="0">
               <h4><u>Mujeres embarazadas, niños o ancianos.</u></h4>
               <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u> <br />
