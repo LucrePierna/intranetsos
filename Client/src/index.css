@@ -66,14 +66,16 @@ code {
 }
 
 .conteinerNav {
-  display: flex;
-  flex-direction: row;
   background: linear-gradient(to right, #646565, #414345);
   padding-bottom: 2rem;
   width: 100%;
   height: auto;
   margin: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 
@@ -109,15 +111,18 @@ code {
   }
 }
 
+.tab-pane {
+  padding: 1rem; 
+  margin: 0; 
+}
 
 .navConteiner {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  position: static;
+  align-self: flex-start; 
   margin-left: 0;
   padding-left: 0;
+ 
 }
 
 .titleNav {
@@ -141,35 +146,18 @@ code {
 }
 
 .responsiveIframe {
-  width: 1000px !important;
-  height: 700px;
+  width: 70% !important;
+  height: 80vh;
   margin-bottom: 30px; 
+  align-items: center;
   margin: auto;
 }
 
-@media (max-width: 768px) {
- 
-  .responsiveIframe {
-    height: 300px;
-    margin: auto; 
-  }
+.mapaGeneral{
+  width: 70% !important;
+  height: 70vh;
 }
-@media (max-width: 993px) {
 
-  .responsiveIframe {
-    width: 800px;
-    height: 500px;
-    margin: auto;
-  }
-}
-@media (max-width: 1280px) {
-
-  .responsiveIframe {
-    height: 1000px;
-    width: 1200px;
-    margin: auto;
-  }
-}
 
 .responsiveImgGeneral{
   max-width: 500px; 
@@ -182,7 +170,7 @@ code {
 
 .responsiveImg {
   max-width: 100%; 
-  height: auto; 
+  height: 50vh; 
 }
 
 .responsiveImgBateria {

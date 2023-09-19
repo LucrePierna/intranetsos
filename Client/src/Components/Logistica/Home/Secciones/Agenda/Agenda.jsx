@@ -5,7 +5,7 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from 
 export default function Agenda() {
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 h-50 w-50">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <Table aria-label="Example static collection table">
@@ -23,7 +23,7 @@ export default function Agenda() {
                 <TableCell>9750</TableCell>
               </TableRow>
               <TableRow key="3" className="border border-dark bg-light text-black">
-                <TableCell>Tráfico</TableCell>
+                <TableCell>Tráfico Local</TableCell>
                 <TableCell>9700</TableCell>
               </TableRow>
               <TableRow key="4" className="border border-dark bg-light text-black">
@@ -35,22 +35,26 @@ export default function Agenda() {
                 <TableCell>98008</TableCell>
               </TableRow>
               <TableRow key="6" className="border border-dark bg-light text-black">
-                <TableCell>Chat CAT Alfred</TableCell>
+                <TableCell>Chat CAT PIPE</TableCell>
                 <TableCell>1128080012</TableCell>
               </TableRow>
               <TableRow key="7" className="border border-dark bg-light text-black">
-                <TableCell>Chattigo</TableCell>
+                <TableCell>Chattigo(Para Prestadores)</TableCell>
                 <TableCell>3512002585</TableCell>
               </TableRow>
               <TableRow key="8" className="border border-dark bg-light text-black">
+                <TableCell>Atención a Prestadores</TableCell>
+                <TableCell>08108101234</TableCell>
+              </TableRow>
+              <TableRow key="9" className="border border-dark bg-light text-black">
                 <TableCell>Soporte Gap</TableCell>
                 <TableCell>9600</TableCell>
               </TableRow>
-              <TableRow key="9" className="border border-dark bg-light text-black">
+              <TableRow key="10" className="border border-dark bg-light text-black">
                 <TableCell>Contención</TableCell>
                 <TableCell>3220</TableCell>
               </TableRow>
-              <TableRow key="10" className="border border-dark bg-light text-black">
+              <TableRow key="11" className="border border-dark bg-light text-black">
                 <TableCell>Hogar</TableCell>
                 <TableCell>9790</TableCell>
               </TableRow>

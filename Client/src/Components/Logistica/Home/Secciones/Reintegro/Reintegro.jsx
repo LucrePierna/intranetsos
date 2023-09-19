@@ -158,7 +158,7 @@ function Reintegro() {
               <label>
                 Vehículo:
                 <select className="form-select container-style" value={veh} onChange={(e) => setVeh(e.target.value)}>
-                  <option value="a">Auto</option>
+                  <option value="a">Auto/Moto</option>
                   <option value="l">Liviano Excedido</option>
                   <option value="ca">Camiones</option>
                 </select>

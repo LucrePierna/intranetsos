@@ -53,7 +53,7 @@ export default function Formato() {
 
     return (
         <div className='container my-5'>
-            <h6 className='my-3'>Formato para prestador Asist Cargo</h6>
+            <h2 className='my-3 fw-bold'><u>Formato para prestador Asist Cargo</u></h2>
             <div className='row'>
                 <div className='col-md-6'>
                     <div className='form-group'>

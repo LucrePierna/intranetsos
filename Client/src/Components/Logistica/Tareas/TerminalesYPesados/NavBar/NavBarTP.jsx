@@ -9,7 +9,7 @@ import TipoDeVehiculos from '../Secciones/TiposDeVehiculos/TipoDeVehiculos'
 import Trasvase from '../Secciones/Trasvase/Trasvase'
 
 export default function NavBarTP() {
-  const [selectedComponent, setSelectedComponent] = useState('instructivo');
+  const [selectedComponent, setSelectedComponent] = useState('terminales');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

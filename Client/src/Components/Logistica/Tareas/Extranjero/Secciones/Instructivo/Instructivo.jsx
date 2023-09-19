@@ -34,7 +34,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestación</button>
         </div>
       </nav>
-      <div className="tab-content mt-3 m-auto px-5 fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
         <div className="tab-pane fade" id="nav-uruguay" role="tabpanel" aria-labelledby="nav-uruguay-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -113,7 +113,7 @@ export default function Instructivo() {
               </ul>
             </div>
             <div class="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
-              <h3>Formato de servicio</h3>
+              <h3 className='fw-bold'><u>Formato de servicio</u></h3>
               <Brasil />
             </div>
           </div>
