@@ -48,7 +48,7 @@
   justify-content: flex-center;
   align-items: flex-center;
   border-radius: 10px;
-  width: 300px;
+  width: 350px;
   height: 100px;  
   background: #cb2128;
   box-shadow: 
@@ -61,9 +61,9 @@
 .btnLogo{
   position: relative;
   padding: 10px 20px;
-  width: 300px;
+  width: 350px;
   height: 100px;
-  font-size: 28px;
+  font-size: 37px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -77,7 +77,7 @@
     background-color: #d5070e;
     color: rgb(0, 0, 0);
     transition: .5s;
-    width: 300px;
+    width: 350px;
     height: 100px;
     box-shadow:  
     0 10px 18px #ffffff,
