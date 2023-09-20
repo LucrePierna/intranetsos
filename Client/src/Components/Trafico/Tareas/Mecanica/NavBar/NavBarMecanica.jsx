@@ -7,7 +7,7 @@ import Baterias from '../Secciones/Baterias/Baterias'
 import logo from '../../../Image/Menu Trafico/Iconos/logoTrafinet.png'
 
 export default function NavBarBsAs() {
-  const [selectedComponent, setSelectedComponent] = useState('procedimientos');
+  const [selectedComponent, setSelectedComponent] = useState('baterias');
 
   const handleComponentClick = (component) => {
     setSelectedComponent(component);

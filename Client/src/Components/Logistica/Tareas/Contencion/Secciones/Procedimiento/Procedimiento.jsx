@@ -147,7 +147,7 @@ export default function Procedimientos() {
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-contener-tab" data-bs-toggle="tab" data-bs-target="#nav-contener" type="button" role="tab" aria-controls="nav-contener" aria-selected="true">Casos a Contener</button>
-              <button class="nav-link sub" id="nav-criticos-tab" data-bs-toggle="tab" data-bs-target="#nav-criticos" type="button" role="tab" aria-controls="nav-criticos" aria-selected="false">Casos Criticos</button>
+              <button class="nav-link sub" id="nav-criticos-tab" data-bs-toggle="tab" data-bs-target="#nav-criticos" type="button" role="tab" aria-controls="nav-criticos" aria-selected="false">Casos Críticos</button>
               <button class="nav-link sub" id="nav-ofrecemos-tab" data-bs-toggle="tab" data-bs-target="#nav-ofrecemos" type="button" role="tab" aria-controls="nav-ofrecemos" aria-selected="false">Ofrecemos</button>
               <button class="nav-link sub" id="nav-comunicacion-tab" data-bs-toggle="tab" data-bs-target="#nav-comunicacion" type="button" role="tab" aria-controls="nav-comunicacion" aria-selected="false">Tipos de Comunicación</button>
               <button class="nav-link sub" id="nav-speech-tab" data-bs-toggle="tab" data-bs-target="#nav-speech" type="button" role="tab" aria-controls="nav-speech" aria-selected="false">Speech Orientativos</button>

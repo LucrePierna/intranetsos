@@ -6,11 +6,11 @@
   background-color: rgb(186, 186, 186);
 }
 
-.contenedor-btn {
+/* .contenedor-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .buttonShadow {
@@ -30,9 +30,163 @@
     2px 2px 2px 4px rgba(0, 0, 0, 1),
     4px 4px 4px 4px #cb2128,
     6px 6px 6px 8px #cb2128;
-}
+} */
 
 .logo {
   height: 300px;
   width: 350px;
+}
+
+.conteinerbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-center;
+  align-items: flex-center;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  margin-left: 2%;
+  background: #cb2128;
+  box-shadow: 
+  0 2px 4px #000000,
+  0 4px 6px #000000,
+  0 6px 8px #000000;
+}
+
+@media (min-width: 350px) {
+  .conteinerbtn {
+    margin-left: 2rem;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 720px) {
+  .conteinerbtn {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .conteinerbtn {
+    margin-left: 3rem;
+    margin-right: auto;
+
+  }
+}
+
+@media (min-width: 1280px) {
+  .conteinerbtn {
+    margin-left: 4rem;
+    margin-right: auto;
+  }
+}
+
+.btnLogo{
+  position: relative;
+  padding: 10px 20px;
+  width: 300px;
+  height: 100px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: width 0.3s, height 0.3s;
+  letter-spacing: 4px;
+  background-color: #cb2128;
+  color: wheat;
+  border-radius: 10px;
+  &:hover {
+    background-color: #d5070e;
+    color: whitesmoke;
+    transition: .5s;
+    width: 300px;
+    height: 100px;
+    box-shadow:  
+    0 10px 18px #ffffff,
+    0 12px 20px #ffffff,  
+    0 14px 22px #a5a5a5;
+  }
+}
+
+.conteinerbtn a span {
+  position: absolute;
+  display: block;
+}
+
+.conteinerbtn a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff);
+  animation: btn-anim1 2s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+.conteinerbtn a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffffff);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+.conteinerbtn a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffffff);
+  animation: btn-anim3 2s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+.conteinerbtn a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffffff);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
 }
