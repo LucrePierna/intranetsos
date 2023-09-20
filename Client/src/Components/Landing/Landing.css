@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 .buttonShadow {
@@ -29,13 +29,10 @@
   box-shadow:
     2px 2px 2px 4px rgba(0, 0, 0, 1),
     4px 4px 4px 4px #cb2128,
-    6px 6px 6px 8px #cb2128; 
+    6px 6px 6px 8px #cb2128;
 }
 
-.title {
-  font-size: 70px;
-  text-shadow:
-    2px 2px 4px rgba(0, 0, 0, 1),
-    4px 4px 6px rgba(0, 0, 0, 1),
-    4px 4px 8px rgba(0, 0, 0, 1);
+.logo {
+  height: 300px;
+  width: 350px;
 }

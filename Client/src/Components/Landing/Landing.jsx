@@ -1,16 +1,18 @@
 import React from 'react'
+import logo from './image/logo-operaciones.png'
 import './Landing.css'
 
 
 export default function Landing() {
   return (
     <div className='contenedor'>
-
-      <h2 className='title'>OPERACIONES SOS</h2>
+      <div>
+        <img src={logo} className='logo' alt="logoOperaciones" />
+      </div>
 
       <div className='contenedor-btn'>
         <a href="/cat">
-          <button type="button" className="btn btn-danger buttonShadow mx-5 ">CAT</button>
+          <button type="button" className="btn btn-danger buttonShadow mx-5 ">ESPACIO CAC</button>
         </a>
 
         <a href="/logistica">
