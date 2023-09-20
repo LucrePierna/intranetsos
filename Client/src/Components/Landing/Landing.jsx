@@ -9,7 +9,7 @@ export default function Landing() {
       <div>
         <img src={logo} className='logo' alt="logoOperaciones" />
       </div>
-      <div className='d-flex flex-row'>
+      <div className='d-flex flex-row justify-content-evenly'>
         <div className='conteinerbtn'>
           <a href="/cat">
             <button type="button" className="btnLogo">

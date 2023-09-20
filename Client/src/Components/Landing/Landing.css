@@ -37,6 +37,8 @@
 .logo {
   height: 300px;
   width: 350px;
+  margin-top: -10rem;
+  margin-bottom: 10rem;
 }
 
 .conteinerbtn {
@@ -48,8 +50,7 @@
   align-items: flex-center;
   border-radius: 10px;
   width: 300px;
-  height: 100px;
-  margin-left: 2%;
+  height: 100px;  
   background: #cb2128;
   box-shadow: 
   0 2px 4px #000000,
@@ -57,42 +58,13 @@
   0 6px 8px #000000;
 }
 
-@media (min-width: 350px) {
-  .conteinerbtn {
-    margin-left: 2rem;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 720px) {
-  .conteinerbtn {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  .conteinerbtn {
-    margin-left: 3rem;
-    margin-right: auto;
-
-  }
-}
-
-@media (min-width: 1280px) {
-  .conteinerbtn {
-    margin-left: 4rem;
-    margin-right: auto;
-  }
-}
 
 .btnLogo{
   position: relative;
   padding: 10px 20px;
   width: 300px;
   height: 100px;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -126,7 +98,7 @@
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #ffffff);
-  animation: btn-anim1 2s linear infinite;
+  animation: btn-anim1 4s linear infinite;
 }
 
 @keyframes btn-anim1 {
@@ -144,7 +116,7 @@
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #ffffff);
-  animation: btn-anim2 1s linear infinite;
+  animation: btn-anim2 3s linear infinite;
   animation-delay: .25s;
 }
 
@@ -163,7 +135,7 @@
   width: 100%;
   height: 2px;
   background: linear-gradient(270deg, transparent, #ffffff);
-  animation: btn-anim3 2s linear infinite;
+  animation: btn-anim3 4s linear infinite;
   animation-delay: .5s;
 }
 
@@ -182,7 +154,7 @@
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #ffffff);
-  animation: btn-anim4 1s linear infinite;
+  animation: btn-anim4 3s linear infinite;
   animation-delay: .75s;
 }
 
