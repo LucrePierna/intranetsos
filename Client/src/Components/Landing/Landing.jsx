@@ -12,7 +12,7 @@ export default function Landing() {
       <div className='d-flex flex-row'>
         <div className='conteinerbtn'>
           <a href="/cat">
-            <button type="button" className="btn">
+            <button type="button" className="btnLogo">
               <span></span>
               <span></span>
               <span></span>
@@ -22,7 +22,7 @@ export default function Landing() {
         </div>
         <div className='conteinerbtn'>
           <a href="/logistica">
-            <button type="button" className="btn">
+            <button type="button" className="btnLogo">
               <span></span>
               <span></span>
               <span></span>
@@ -33,7 +33,7 @@ export default function Landing() {
         <div className='conteinerbtn'>
 
           <a href="/trafico">
-            <button type="button" className="btn">
+            <button type="button" className="btnLogo">
               <span></span>
               <span></span>
               <span></span>
