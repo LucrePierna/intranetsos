@@ -11,7 +11,7 @@ export default function Landing() {
       </div>
       <div className='d-flex flex-row justify-content-evenly'>
         <div className='conteinerbtn'>
-          <a href="/cat">
+          <a>
             <button type="button" className="btnLogo">
               <span></span>
               <span></span>
