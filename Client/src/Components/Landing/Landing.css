@@ -10,68 +10,32 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
-
-.cac{
-  border: 1px solid black;
-  background-color: #cb2128;
-  height: 200px;
-  width: 250px;
-  font-size: 70px;
-  box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 1),
-    2px 4px 6px rgba(0, 0, 0, 1),
-    4px 4px 6px rgba(0, 0, 0, 1);
-}
-
-.cac:hover {
-  box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 1),
-    2px 4px 6px rgba(0, 0, 0, 1),
-    4px 4px 8px rgba(0, 0, 0, 1); 
-}
-
 
 .buttonShadow {
   border: 1px solid black;
   background-color: #cb2128;
-  font-size: 40px;
-  height: 200px;
-  width: 250px;
+  font-size: 30px;
+  height: 100px;
+  width: 300px;
   box-shadow:
     0px 2px 4px rgba(0, 0, 0, 1),
     2px 4px 6px rgba(0, 0, 0, 1),
     4px 4px 6px rgba(0, 0, 0, 1);
 }
 
-
 .buttonShadow:hover {
   box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 1),
-    2px 4px 6px rgba(0, 0, 0, 1),
-    4px 4px 8px rgba(0, 0, 0, 1); 
+    2px 2px 2px 4px rgba(0, 0, 0, 1),
+    4px 4px 4px 4px #cb2128,
+    6px 6px 6px 8px #cb2128; 
 }
 
 .title {
   font-size: 70px;
-  margin-bottom: 6rem;
   text-shadow:
     2px 2px 4px rgba(0, 0, 0, 1),
     4px 4px 6px rgba(0, 0, 0, 1),
     4px 4px 8px rgba(0, 0, 0, 1);
-}
-
-@media (max-width: 767px) {
-  .title {
-    font-size: 50px;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 460px) {
-  .title {
-    font-size: 50px;
-    margin-bottom: 2rem;
-  }
 }
