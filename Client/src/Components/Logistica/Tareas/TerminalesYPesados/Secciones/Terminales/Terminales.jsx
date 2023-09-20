@@ -34,14 +34,14 @@ export default function Terminales() {
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
         </div>
       </nav>
-      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
         <div className="tab-pane fade show active lineaGeneral" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <p>Son servicios llamados “Especiales”. Aplica a aquellas terminales con las que se haya acordado este tipo de asistencia. La solicitud de asistencia es procesada por el CAT, los operadores SETA, u operadores específicos destinados a tal función (en caso de Mercedes Benz). Los pedidos ingresaran por: Comunicación telefónica o correo electrónico pedido por la Terminal </p>
         </div>
         <div className="tab-pane fade m-auto lineaGeneral" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
-          <h3><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h3>
+          <h1><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h1>
           <p>Moto / Liviano / Liviano Excedido / Liviano Especial / Pesado categoría 1 / Pesado categoría 2 / Pesado categoría 3 / Bus</p>
-          <h5>Aplica a todas aquellas Terminales Automotrices, siendo actualmente:</h5>
+          <h1>Aplica a todas aquellas Terminales Automotrices, siendo actualmente:</h1>
           <ul className='list-unstyled text-center justify-content-center'>
             <li>Mercedes Benz (autos, vans , sprinter, camiones) </li>
             <li>Iveco (camiones) </li>
@@ -59,15 +59,15 @@ export default function Terminales() {
           </ul>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-tareaop" role="tabpanel" aria-labelledby="nav-tareaop-tab" tabindex="0">
-          <h3><u>Lectura completa del servicio.</u></h3>
+          <h1><u>Lectura completa del servicio.</u></h1>
           <br />
           <p>  Previo a realizar la derivación del servicio, deberá leer y analizar todo dato y registro del mismo, asegurando que se contemplen todas las particulares que pudieran existir (dimensiones, estado del vehículo, ruedas y ejes, carga, forma de pago, cobertura, cantidad de personas, etc. (Ver análisis del servicio*).</p>
           <br />
-          <h3><u>Llamado de contención al cliente.</u></h3>
+          <h1><u>Llamado de contención al cliente.</u></h1>
           <br />
           <p>En este tipo de servicios el llamado de contención se realizará solo si el servicio/operadores de SETA lo requieran ya que en estos casos solo SETA se mantendrá en contacto con el cliente, chofer o persona que este junto al vehículo. En este llamado el operador informara el estado o situación del servicio actualizando demoras u horarios de programación para cargar la unidad.</p>
           <br />
-          <h3><u>Prioridades de derivación y motivos de rechazo </u></h3>
+          <h1><u>Prioridades de derivación y motivos de rechazo </u></h1>
           <br />
           <p>Se deberán respetar las prioridades establecidas en sistema respecto a los prestadores para la derivación y registrarse los motivos de rechazo correctos cuando esto sea necesario. </p>
         </div>
@@ -85,7 +85,7 @@ export default function Terminales() {
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3 " id="nav-analisis" role="tabpanel" aria-labelledby="nav-analisis-tab" tabindex="0">
               <p>Una vez marcado y previo a la aceptación del servicio, el operador de Logística de terminales deberá realizar un análisis del mismo, con el objetivo de asegurarse la correcta información registrada en el Sistema ASTOR e inmediatamente aceptarlo o rechazarlo (en este último caso, siempre deberá contar con autorización de un Back Office o Supervisor). Al aceptarlo, inmediatamente y sin demora, deberá comenzar a trabajar en el servicio.  </p>
-              <h5><u>Puntos a Analizar:</u></h5>
+              <h1><u>Puntos a Analizar:</u></h1>
               <p><u>Datos del vehículo</u> (tipo: modelo, chasis, tractor, combi, auto, moto etc), cinturones de seguridad, dimensiones (alto, largo, ancho, ruedas: si giran, si tiene duales, eje simple o doble.), verificar si posee semirremolque o acoplado, también el peso y naturaleza de la carga (en este último caso el cliente debe desenganchar y descargar SI O SI ) ACLARACION: las excepciones se realizan solo en casos puntuales autorizados por supervisor o área de seta y debe estar las fotos de unidad cargada en ASTOR o registro del pedido de las misma).</p>
               <p><u>Correcta aplicación del convenio, ver grilla:</u> la unidad tiene que estar dentro del período de garantía, y el destino siempre debe ser a un concesionario más próximo o a domicilio (para este último caso; solo de ser fin de semana, feriados o fuera de horarios del concesionario) y si fuera conveniente llevarlo a ese destino. Sino en caso de corresponder debe estar cargado el servicio de:  Asistencia al viajero (ver punto: q )  o salvo registro de autorización de un supervisor). </p>
               <p><u>Traslados de vehículos sin acompañantes:</u> deberá detallarse; autorización, tarjeta verde, llaves, nombre de la persona que entrega la unidad, dirección de destino, nombre del responsable que recibe la unidad, teléfonos de contacto, horarios del concesionario (este último caso viaje solo o no, debe estar esa información). </p>
@@ -121,13 +121,13 @@ export default function Terminales() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-motos" role="tabpanel" aria-labelledby="nav-motos-tab" tabindex="0">
               <p>En particular el operador deberá verificar que el prestador posea los sunchos y equipamiento necesario para poder asegurar la moto en la plancha. Se deberá enviar el formulario de carga y descarga “FL-10 Red Nacional – Traslado BMW / Ducati”. (FORMULARIO TRASLADO BMW poner link)</p>
-              <h3><u>MOTOS BMW</u></h3>
+              <h1><u>MOTOS BMW</u></h1>
               <ul className='list-unstyled'>
                 <li>-El derivador debe enviar por mail el “formulario de traslado” al prestador. </li>
                 <li>-El prestador debe tomar fotografías y video (en lo posible) de la unidad. </li>
                 <li>-Prestador deberá completar formulario con el cliente en la  entrega y con el concesionario en el destino. </li>
               </ul>
-              <h3><u>MOTOS DUCATI</u></h3>
+              <h1><u>MOTOS DUCATI</u></h1>
               <ul className='list-unstyled'>
                 <li>-No se envía formulario al prestador </li>
                 <li>-El prestador debe tomar fotografías y video (en lo posible) de la unidad. </li>

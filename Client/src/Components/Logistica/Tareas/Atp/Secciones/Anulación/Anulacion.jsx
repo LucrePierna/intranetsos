@@ -9,7 +9,7 @@ export default function Anulacion() {
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-          <div className='tab-content d-flex flex-row mt-3 m-auto fs-5'>
+          <div className='tab-content d-flex flex-row mt-3 m-auto '>
             <ul>
               <h5><u>Vehículo Modificado</u></h5>
               <p>Se utilizará cuando la grúa esté en origen y detecte que el vehículo sufrió alguna modificación que imposibilite cargar al vehículo, por ejemplo, suspensión, cajas o cupulas que excedan el alto de vehículo de fábrica. <br />

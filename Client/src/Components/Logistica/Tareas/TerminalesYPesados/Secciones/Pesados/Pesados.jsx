@@ -34,7 +34,7 @@ export default function Pesados() {
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
         </div>
       </nav>
-      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto " id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -55,7 +55,7 @@ export default function Pesados() {
               <p>
                 En este caso, para la derivación de camiones (pesados) por Compañía, los pasos a seguir son similares al de Terminales de camiones; con la diferencia que aquí no opera el área de SETA. Por lo tanto, es el mismo operador de logística el encargado de comenzar y culminar la derivación del mismo.
               </p>
-              <h3><u>Las Compañías de Seguros que poseen radios para camiones son:</u></h3>
+              <h1><u>Las Compañías de Seguros que poseen radios para camiones son:</u></h1>
               <ul className='list-unstyled'>
                 <li>Nación Seguros. </li>
                 <li>Provincias Seguros. </li>
@@ -86,15 +86,15 @@ export default function Pesados() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             </div>
           </nav>
-          <h3><u>Lectura completa del servicio.</u></h3>
+          <h1><u>Lectura completa del servicio.</u></h1>
           <br />
           <p>  Previo a realizar la derivación del servicio, deberá leer y analizar todo dato y registro del mismo, asegurando que se contemplen todas las particulares que pudieran existir (dimensiones, estado del vehículo, ruedas y ejes, carga, forma de pago, cobertura, cantidad de personas, etc. (Ver análisis del servicio*).</p>
           <br />
-          <h3><u>Llamado de contención al cliente.</u></h3>
+          <h1><u>Llamado de contención al cliente.</u></h1>
           <br />
           <p>En este tipo de servicios el llamado de contención se realizará solo si el servicio/operadores de SETA lo requieran ya que en estos casos solo SETA se mantendrá en contacto con el cliente, chofer o persona que este junto al vehículo. En este llamado el operador informara el estado o situación del servicio actualizando demoras u horarios de programación para cargar la unidad.</p>
           <br />
-          <h3><u>Prioridades de derivación y motivos de rechazo </u></h3>
+          <h1><u>Prioridades de derivación y motivos de rechazo </u></h1>
           <br />
           <p>Se deberán respetar las prioridades establecidas en sistema respecto a los prestadores para la derivación y registrarse los motivos de rechazo correctos cuando esto sea necesario. </p>
         </div>
@@ -112,7 +112,7 @@ export default function Pesados() {
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3 " id="nav-analisis" role="tabpanel" aria-labelledby="nav-analisis-tab" tabindex="0">
               <p>Una vez marcado y previo a la aceptación del servicio, el operador de Logística de terminales deberá realizar un análisis del mismo, con el objetivo de asegurarse la correcta información registrada en el Sistema ASTOR e inmediatamente aceptarlo o rechazarlo (en este último caso, siempre deberá contar con autorización de un Back Office o Supervisor). Al aceptarlo, inmediatamente y sin demora, deberá comenzar a trabajar en el servicio.  </p>
-              <h3><u>Puntos a Analizar</u></h3>
+              <h1><u>Puntos a Analizar</u></h1>
               <p><u>Datos del vehículo</u> (tipo: modelo, chasis, tractor, combi, auto, moto etc), cinturones de seguridad, dimensiones (alto, largo, ancho, ruedas: si giran, si tiene duales, eje simple o doble.), verificar si posee semirremolque o acoplado, también el peso y naturaleza de la carga (en este último caso el cliente debe desenganchar y descargar SI O SI ) ACLARACION: las excepciones se realizan solo en casos puntuales autorizados por supervisor o área de seta y debe estar las fotos de unidad cargada en ASTOR o registro del pedido de las misma). (Medidas exteriores Mercedes Benz y Smart, Iveco Dimensiones, Grilla de Dimensiones, Cinturones Utilitarios,) </p>
               <p><u>Correcta aplicación del convenio, ver grilla:</u> la unidad tiene que estar dentro del período de garantía, y el destino siempre debe ser a un concesionario más próximo o a domicilio (para este último caso; solo de ser fin de semana, feriados o fuera de horarios del concesionario) y si fuera conveniente llevarlo a ese destino. Sino en caso de corresponder debe estar cargado el servicio de:  Asistencia al viajero  o salvo registro de autorización de un supervisor). </p>
               <p><u>Traslados de vehículos sin acompañantes:</u> deberá detallarse; autorización, tarjeta verde, llaves, nombre de la persona que entrega la unidad, dirección de destino, nombre del responsable que recibe la unidad, teléfonos de contacto, horarios del concesionario (este último caso viaje solo o no, debe estar esa información), </p>
