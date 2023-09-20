@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -39,6 +41,8 @@
 
 .conteinerbtn {
   display: flex;
+  color: rgb(0, 0, 0);
+  font-family: 'Love Ya Like A Sister', sans-serif;
   flex-direction: row;
   justify-content: flex-center;
   align-items: flex-center;
@@ -88,19 +92,19 @@
   padding: 10px 20px;
   width: 300px;
   height: 100px;
-  color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: width 0.3s, height 0.3s;
   letter-spacing: 4px;
   background-color: #cb2128;
-  color: wheat;
+  color: rgb(0, 0, 0);
   border-radius: 10px;
   &:hover {
     background-color: #d5070e;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     transition: .5s;
     width: 300px;
     height: 100px;
