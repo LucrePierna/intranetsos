@@ -92,7 +92,7 @@ const MenuTrafico = () => {
                 color: selectedRoute === '/trafico/mecanica' ? 'red' : 'white',
               }}
               />
-              Mecanica
+              Mecánica
             </a>
           </li>
           <li>
