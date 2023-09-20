@@ -102,7 +102,7 @@ function Reintegro() {
   };
 
   return (
-    <div className="container text-center mt-5">
+    <div className="container text-center mt-5 py-3">
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className="bg-secondary rounded-5 p-4">

@@ -15,9 +15,9 @@ export default function Agenda() {
   ];
 
   const dataPart2 = [
-    { nombre: "CAT", numero: "98008" },
+    { nombre: "CAC", numero: "98008" },
     { nombre: "Supervisores Derivación", numero: "3500" },
-    { nombre: "Chat Cat PIPE", numero: "1128080012" },
+    { nombre: "Chat CAC PIPE", numero: "1128080012" },
     { nombre: "At. a Moviles/Prestadores", numero: "0351-4858393 / 011-48358191 op.2" },
     { nombre: "Chat Eventuales", numero: "1166703706" },
     { nombre: "Chat Cba", numero: "3513881005" },

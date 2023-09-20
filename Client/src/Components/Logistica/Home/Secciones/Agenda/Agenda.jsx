@@ -31,11 +31,11 @@ export default function Agenda() {
                 <TableCell>3800</TableCell>
               </TableRow>
               <TableRow key="5" className="border border-dark bg-light text-black">
-                <TableCell>CAT</TableCell>
+                <TableCell>CAC</TableCell>
                 <TableCell>98008</TableCell>
               </TableRow>
               <TableRow key="6" className="border border-dark bg-light text-black">
-                <TableCell>Chat CAT PIPE</TableCell>
+                <TableCell>Chat CAC PIPE</TableCell>
                 <TableCell>1128080012</TableCell>
               </TableRow>
               <TableRow key="7" className="border border-dark bg-light text-black">

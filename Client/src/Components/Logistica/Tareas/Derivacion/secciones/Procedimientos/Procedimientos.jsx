@@ -35,42 +35,43 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
         </div>
       </nav>
-      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
         <div className="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
-            <h3 className='mt-3 '><u>Orden de derivación</u></h3>
+            <h1 ><u>Orden de derivación</u></h1>
             <p>El Operador de Logística deberá derivar los servicios de acuerdo a la hora de pedido en orden ascendente.</p>
-            <h3><u>Análisis del servicio</u></h3>
+            <h1><u>Análisis del servicio</u></h1>
             <p>Una vez marcado y previo a la aceptación del servicio, el Operador de Logística deberá realizar un análisis del mismo.
-              <table className='mt-5 mb-2'>
-                <tr className='tabla '>
-                  <td className='border border-black px-3'>Historial de servicios</td>
-                  <td className='border border-black px-3'>Titular</td>
-                  <td className='border border-black px-3'>Vehículo</td>
-                  <td className='border border-black px-3'>Dominio</td>
-                  <td className='border border-black px-3'>Color</td>
-                </tr>
-                <tr className='tabla'><td>Falla</td>
-                  <td className='border border-black px-3'>Teléfono</td>
-                  <td className='border border-black px-3'>Ubicación Origen y Destino</td>
-                  <td className='border border-black px-3'>Cantidad de Pasajeros</td>
-                  <td className='border border-black px-3'>Requisitos Si Vehículo Viaja Sólo</td></tr>
-                <tr className='tabla'><td>Horarios de taller</td>
-                  <td className='border border-black px-3'>Si posee carga</td>
-                  <td className='border border-black px-3'>Dimensiones e Información Extra en Referencias</td>
-                  <td className='border border-black px-3'>Cobertura de la Asistencia</td>
-                  <td className='border border-black px-3'>Si Corresponde o No a Transportin</td></tr>
-              </table>
-
+              <div className='table-responsive'>
+                <table className='mt-5 mb-2'>
+                  <tr className='tabla '>
+                    <td className='border border-light px-3'>Historial de servicios</td>
+                    <td className='border border-light px-3'>Titular</td>
+                    <td className='border border-light px-3'>Vehículo</td>
+                    <td className='border border-light px-3'>Dominio</td>
+                    <td className='border border-light px-3'>Color</td>
+                  </tr>
+                  <tr className='tabla'><td className='border border-light px-3'>Falla</td>
+                    <td className='border border-light px-3'>Teléfono</td>
+                    <td className='border border-light px-3'>Ubicación origen y destino</td>
+                    <td className='border border-light px-3'>Cantidad de pasajeros</td>
+                    <td className='border border-light px-3'>Requisitos Si vehículo viaja sólo</td></tr>
+                  <tr className='tabla'><td className='border border-light px-3'>Horarios de taller</td>
+                    <td className='border border-light px-3'>Si posee carga</td>
+                    <td className='border border-light px-3'>Dimensiones e información extra en referencias</td>
+                    <td className='border border-light px-3'>Cobertura de la asistencia</td>
+                    <td className='border border-light px-3'>Si corresponde o no a transportin</td></tr>
+                </table>
+              </div>
             </p>
-            <h5><u>Contención</u></h5>
+            <h1><u>Contención</u></h1>
             <p className='text-start justify-content-center'> Si pasaron 20 minutos o más desde la toma del servicio, el Operador deberá realizar contención al cliente, confirmando que los datos registrados sean correctos y en caso de faltar alguno, completarlo en esta instancia. Y se volverá a realizar cada 40 minutos desde el último contacto. </p>
           </div>
         </div>
         <div className="tab-pane fade" id="nav-selecprest" role="tabpanel" aria-labelledby="nav-selecprest-tab" tabindex="0">
           <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
-            <p className='mt-5 fs-4 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
-            <ul className='text-start fs-5 mt-3'>
+            <p className='mt-5 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
+            <ul className='text-start mt-3'>
               <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
               <li>Si se tuviese que buscar fuera del recorrido de se procede de la siguiente manera:
                 <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
@@ -90,24 +91,24 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-manual" role="tabpanel" aria-labelledby="nav-manual-tab" tabindex="0">
-              <ul className='lista fs-5'>
-                <li className='text-center justify-content-center '> <u>Dictado telefónico</u>
+              <ul className='lista'>
+                <li className='text-center justify-content-center '><h1> <u>Dictado telefónico</u></h1>
                   <p className='text-start'>Durante el llamado telefónico con el prestador por consulta de disponibilidad, el operador dictará los datos del servicio recorriendo cada pestaña sin olvidar informar código y cobertura completa.</p>
                 </li>
-                <li className='text-center justify-content-center '><u>Mail</u>
+                <li className='text-center justify-content-center '><h1><u>Mail</u></h1>
                   <p className='text-start'>A través del sistema de Astor el operador podrá enviar resumen de los datos del servicio al prestador consultado. Primero el operador deberá validar que la casilla de mail sea correcta y una vez enviado el resumen, confirmar la recepción.</p>
                 </li>
-                <li className='text-center justify-content-center '><u>WhatsApp</u>
+                <li className='text-center justify-content-center '><h1><u>WhatsApp</u></h1>
                   <p className='text-start'>A través del sistema de Astor el operador podrá enviar resumen de los datos del servicio al prestador consultado. Primero el operador deberá validar que el número de teléfono sea correcto y una vez enviado el resumen, confirmar la recepción.</p>
                 </li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-automatica" role="tabpanel" aria-labelledby="nav-automatica-tab" tabindex="0">
-              <ul className='lista fs-5'>
-                <li className='text-center justify-content-center '><u>Sistema</u>
+              <ul className='lista '>
+                <li className='text-center justify-content-center '><h1><u>Sistema</u></h1>
                   <p className='text-start'>Para las bases que cuentan con este sistema el operador deberá enviar los datos del servicio. De este modo la base deberá aceptar las condiciones del servicio para que queden asignados. El operador deberá informar telefónicamente al prestador la cobertura y las particularidades del servicio que puedan ser de relevancia (Estado de ruedas, personas que acompañan, etc.).</p>
                 </li>
-                <li className='text-center justify-content-center '><u>GapLite</u>
+                <li className='text-center justify-content-center '><h1><u>GapLite</u></h1>
                   <p className='text-start'>Es una aplicación web diseñada para el cursado de servicios por la cual el prestador podrá acceder y cursar la asistencia asignada. El operador deberá corroborar si la base consultada se encuentra en el listado de prestadores activos <a href="https://redsos-my.sharepoint.com/:x:/r/personal/jmolinari_redsos_com_ar/Documents/Prestadores%20con%20GAP%20Lite/PRESTADORES%20GAP%20Lite.xlsx?d=w03ab3d1ddfe14e43a534d851f9e06532&csf=1&web=1&e=zWm82z" target='_blank'><button type='button' class="customBTN mx-2">Prestador GapLite</button></a>
                     Una vez confirmado el uso de la aplicación, definirá a través de que medio enviar un link al usuario y validando los mismos (mail o número de whats app).
                     Si la asignación del servicio al prestador se realizó por sistema/Gap Lite y éste lo rechaza o no lo acepta, pasando el estado del servicio a “Rechazado”, el Operador de Logística que realizó la derivación deberá continuar trabajando sobre el mismo. El servicio podrá ser marcado y derivado por otro Operador solo si aquel hubiera terminado su turno o se hubiera deslogueado por otro motivo.
@@ -138,14 +139,14 @@ export default function Procedimientos() {
               <p>Siempre que se tome contacto con el cliente se deberá confirmar la Cobertura de la Asistencia respetando el requisito correspondiente establecido en los <a href="https://redsos.sharepoint.com/sites/SGC/Documentos%20compartidos/Sistema%20de%20Gestion%20de%20Calidad/SGC/RS%20Requisitos%20del%20Servicio%20de%20Asistencia,Rev09.pdf" target='_blank'> <button type='button' class="customBTN mx-2">Requisitos del Servicio de Asistencia</button></a>, fundamentalmente el nombre de la persona con quién nos estamos comunicando y todo otro dato de importancia para el servicio en gestión.</p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-pagos" role="tabpanel" aria-labelledby="nav-pagos-tab" tabindex="0">
-              <ul className='text-start fs-6'>
+              <ul className='text-start'>
                 <li>En efectivo, se recordará al cliente que debe abonarlo al chofer de la grúa antes de cargar el vehículo para su traslado.</li>
                 <li>Link de pago, el cual será generado por cada derivador, a través de Astor, solicitándole los datos que el sistema requiera.</li>
                 <li>Pago al prestador, se podrá consultar con prestador posibilidad de realizar el cobro con tarjeta de crédito, débito o transferencia bancaria. En caso de aceptar, el prestador será responsable de coordinar el cobro contactando al cliente. Si surgiese alguna eventualidad o inconveniente en el cobro será responsable el prestador.   </li></ul>
-              <h3><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h3>
+              <h3 className='fs-3'><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h3>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
-              <p className='text-start fs-6'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
+              <p className='text-start'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
                 <ul><u>El derivador deberá informar la gestión del reintegro:</u>
                   <li>Solicitar ticket o factura con validez fiscal.</li>
                   <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos:
@@ -158,7 +159,7 @@ export default function Procedimientos() {
                   <li>Brindar el código de servicio.</li>
                   <li>Informar el monto de reintegro.</li>
                 </ul>
-                <h3><b>Debe dejar registro en el serivcio del monto ofrecido y de la autorización del supervisor/Backoffice.</b></h3>
+                <h3 className='fs-3'><b>Debe dejar registro en el serivcio del monto ofrecido y de la autorización del supervisor/Backoffice.</b></h3>
               </p>
             </div>
           </div>
@@ -182,7 +183,7 @@ export default function Procedimientos() {
                 <li>Identificar zonas críticas por falta de disponibilidad de móviles.</li>
                 <li>Disminuir el tiempo promedio de derivación de los servicios.</li>
               </ul>
-              <h4><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente.</b></h4>
+              <h3 className='fs-3'><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente.</b></h3>
             </div>
             <div className="tab-pane fade" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
               <div className="d-flex justify-content-center align-items-center h-100">

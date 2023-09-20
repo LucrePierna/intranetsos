@@ -26,9 +26,9 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
         </div>
       </nav>
-      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
         <div className="tab-pane fade show active px-3 mt-3 lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <ul className='text-start fs-5'>
+          <ul className='text-start'>
             <li>Visualización y análisis de la pantallas para la derivacion de servicios.</li>
             <li>Analizar las zonas en donde finalizan los servicios.</li>
             <li>Corroborar que sea conveniente la triangulación de los servicios.</li>
@@ -39,11 +39,11 @@ export default function Instructivo() {
         <div className="tab-pane fade " id="nav-eficaz" role="tabpanel" aria-labelledby="nav-eficaz-tab" tabindex="0">
           <div className='d-flex flex-row justify-content-evenly px-4 lineaGeneral'>
             <div className='px-5 mt-3'>
-              <h3>1º Servicio</h3>
+              <h1>1º Servicio</h1>
               <img src={imagen1} alt="Eficaz1" className='responsiveImg' />
             </div>
             <div className='mt-1'>
-              <h3>2º Servicio.</h3>
+              <h1>2º Servicio.</h1>
               <img src={imagen2} alt="Eficaz2" className='responsiveImg' />
             </div>
           </div>
@@ -53,8 +53,8 @@ export default function Instructivo() {
           <Formato />
         </div>
         <div className="tab-pane fade px-3 mt-3 lineaGeneral" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
-          <p className='fs-5'>El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche. </p>
-          <ul className='text-start fs-6 mt-3'>
+          <p >El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche. </p>
+          <ul className='text-start mt-3'>
             <li>Móvil roto (se averió en el transcurso del servicio inicial).</li>
             <li>Horario de taller (la demora informada no permite llegar a tiempo al taller).</li>
             <li>Demora excesiva (cuando la demora es considerablemente elevada).</li>
@@ -127,8 +127,8 @@ export default function Instructivo() {
                   <td className='border border-black px-2'>Observación</td>
                 </tr>
               </table>
-              <h5><u>TIPOS DE ANULACIONES</u></h5>
-              <div className='text-start d-flex flex-row fs-5 mt-3 px-5'>
+              <h1><u>TIPOS DE ANULACIONES</u></h1>
+              <div className='text-start d-flex flex-row mt-3 px-5'>
                 <ul className='px-5'>
                   <li>ANULADO </li>
                   <li>CAMBIO DE DESTINO </li>

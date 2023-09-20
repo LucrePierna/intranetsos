@@ -36,9 +36,9 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-hacemos-tab" data-bs-toggle="tab" data-bs-target="#nav-hacemos" type="button" role="tab" aria-controls="nav-hacemos" aria-selected="false">Que Hacemos</button>
         </div>
       </nav>
-      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto 5" id="nav-tabContent">
         <div className="tab-pane fade show active lineaGeneral" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <h3><u>OBJETIVO DEL PROCEDIMIENTO Y ALCANCE DE APLICACIÓN</u></h3>
+          <h1><u>OBJETIVO DEL PROCEDIMIENTO Y ALCANCE DE APLICACIÓN</u></h1>
           <p>Este procedimiento describe la metodología para realizar la contención a los clientes usuarios durante la coordinación de la asistencia. Alcanza a los servicios de traslado y mecánica ligera, de red nacional, tráficos nacionales y tráficos locales. </p>
         </div>
         <div className="tab-pane fade" id="nav-redna" role="tabpanel" aria-labelledby="nav-redna-tab" tabindex="0">
@@ -88,7 +88,7 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3 " id="nav-cmbdemtn" role="tabpanel" aria-labelledby="nav-cmbdemtn-tab" tabindex="0">
               <p>Para los servicios que se encuentren en los Tráficos Nacionales (tanto servicios de traslado como de mecánica ligera), a los cuales se les modificó la asignación de una base, se deberá realizar un control. </p>
-              <h3><u>Control</u></h3>
+              <h1><u>Control</u></h1>
               <p>Dentro de la pantalla ‘Derivados’ se deberán verificar los servicios y controlar los cambios de demora a través del botón ‘Cambios de demora’ de la solapa “5. Horarios / otros”. </p>
             </div>
             <div class="tab-pane fade px-3" id="nav-faltacomtn" role="tabpanel" aria-labelledby="nav-faltacomtn-tab" tabindex="0">
@@ -96,9 +96,9 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3" id="nav-demycierretn" role="tabpanel" aria-labelledby="nav-demycierretn-tab" tabindex="0">
               <p>Para los servicios cuya demora esté próxima a cumplirse o ya se encontrare cumplida y el móvil aún no hubiera llegado, serán aplicables los incisos a continuación. </p>
-              <h3><u>Demora Caída</u></h3>
+              <h1><u>Demora Caída</u></h1>
               <p>El Operador de Contención deberá consultar al móvil el motivo del retraso y el tiempo restante. Posteriormente deberá llamar al cliente para informar lo sucedido. </p>
-              <h3><u>Segumiento, Control y Cierre de Servicios</u></h3>
+              <h1><u>Segumiento, Control y Cierre de Servicios</u></h1>
               <p>Si al realizar el seguimiento del servicio, el Operador de Contención verificare que el móvil ya realizó el servicio, dará llegada y finalización del servicio en el sistema. </p>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 " id="nav-contener" role="tabpanel" aria-labelledby="nav-contener-tab" tabindex="0">
-              <ul className='text-start fs-5'>
+              <ul className='text-start'>
                 <li>Servicio de Red Nacional.</li>
                 <li>Servicio de Tráficos Nacionales.</li>
                 <li>Servicio en Espera de Aceptación por Parte de Logistica.</li>
@@ -164,8 +164,8 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-criticos" role="tabpanel" aria-labelledby="nav-criticos-tab" tabindex="0">
-              <h5><u>Clientes en Tránsito o Ruta que Contemplen</u></h5>
-              <ul className='text-start fs-5'>
+              <h1><u>Clientes en Tránsito o Ruta que Contemplen</u></h1>
+              <ul className='text-start'>
                 <li>Servicios con Niños o Mujeres Embarazadas.</li>
                 <li>Personas de Riesgo o con Discapacidad.</li>
                 <li>Zonas de Riesgo Como Zonas Peligrosas o Asentamientos.</li>
@@ -175,7 +175,7 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-ofrecemos" role="tabpanel" aria-labelledby="nav-ofrecemos-tab" tabindex="0">
-              <ul className='text-start fs-5'>
+              <ul className='text-start '>
                 <li>Reintegro de traslado  o programación.</li>
                 <li>Coordinación de remis para traslado a estación de servicio.</li>
                 <li>Hospedaje si corresponde.</li>
@@ -186,7 +186,7 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-comunicacion" role="tabpanel" aria-labelledby="nav-comunicacion-tab" tabindex="0">
-              <ul className='text-start fs-5'>
+              <ul className='text-start'>
                 <li>Escuchar al cliente, la indagación es clave.</li>
                 <li>Realizar preguntas cerradas (posibles respuestas sí/no).</li>
                 <li>Siempre ofrecer de manera escalonada con alternativas coherentes.</li>
@@ -197,15 +197,15 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-speech" role="tabpanel" aria-labelledby="nav-speech-tab" tabindex="0">
-              <h4><u>Mujeres embarazadas, niños o ancianos.</u></h4>
+              <h1><u>Mujeres embarazadas, niños o ancianos.</u></h1>
               <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u> <br />
                 “Comprendemos la situación y queremos ofrecerle la posibilidad de que consuma un refrigerio a cargo nuestro de $xxx por persona mientras espera el móvil. Solicite ticket fiscal o factura para proceder al reintegro”.</p>
-              <h4><u>Clientes con problemas de salud.</u></h4>
+              <h1><u>Clientes con problemas de salud.</u></h1>
               <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u><br />
                 “Comprendemos su situacion, si necesita que nos comuniquemos con alguien por usted no dude en decirnos y nosotros dejaremos el mensaje mientras espera la asistencia”.</p>
-              <h4><u>Clientes en zonas desfavorables.</u></h4>
+              <h1><u>Clientes en zonas desfavorables.</u></h1>
               <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u><br />
                 “Comprendemos su situación, le ofrecemos llamar a la policiía o defensa civil para solicitar que le hagan acompañamiento mientras espera nuestra asistencia”.</p>

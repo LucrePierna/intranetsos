@@ -26,7 +26,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-inyfinturn-tab" data-bs-toggle="tab" data-bs-target="#nav-inyfinturn" type="button" role="tab" aria-controls="nav-inyfinturn" aria-selected="false">Inicio y fin de turno</button>
         </div>
       </nav>
-      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto fs-5" id="nav-tabContent">
+      <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center px-3" id="nav-tab" role="tablist">
