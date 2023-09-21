@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "@nextui-org/react";
 
 export default function Formato() {
@@ -11,6 +11,7 @@ export default function Formato() {
     const [tieneTopeDeCobertura, setTieneTopeDeCobertura] = useState(false);
     const [esPorPersona, setEsPorPersona] = useState(false);
     const [detalleCalculo, setDetalleCalculo] = useState('');
+    const [copied, setCopied] = useState(false);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -51,10 +52,10 @@ export default function Formato() {
                 resultadoCalculado -= cobertura;
                 detalleCalculoTexto += `Cobertura global: $${cobertura}\n`;
                 detalleCalculoTexto += `Restando cobertura del cliente: $${cobertura}\n`;
-            }  
-            if(tieneTopeDeCobertura){
+            }
+            if (tieneTopeDeCobertura) {
                 setResultado(0)
-            }else{
+            } else {
                 setResultado(resultadoCalculado)
             }
             setDetalleCalculo(detalleCalculoTexto)
@@ -71,20 +72,58 @@ export default function Formato() {
         setResultado(resultadoCalculado);
         setDetalleCalculo(detalleCalculoTexto);
     }
-    
+
 
 
     const handleNoTieneTopeChange = (e) => {
         setTieneTopeDeCobertura(e.target.checked);
+
         if (e.target.checked) {
-            calcularResultado(0);
-            setDetalleCalculo('Esta cubierto para el cliente.')
+            const resultadoCalculadoST = km * 2 * precio;
+
+            if (tieneIVA) {
+                const resultadoCalculadoConIVA = resultadoCalculadoST * 1.21;
+                setResultado(resultadoCalculadoConIVA);
+                setDetalleCalculo(`${km} km * 2 * $${precio} = $${resultadoCalculadoST}\n+ IVA (21%)\n`);
+            } else {
+                setResultado(resultadoCalculadoST);
+                setDetalleCalculo(`${km} km * 2 * $${precio} = $${resultadoCalculadoST}\nSin IVA\n`);
+            }
+        } else {
+            setResultado('');
+            setDetalleCalculo('');
         }
     }
+
+    useEffect(() => {
+        setCopied(false);
+    }, [km, precio, tieneIVA, personas, cobertura, tieneTopeDeCobertura, esPorPersona]);
+
+
 
     const handleEsPorPersonaChange = (e) => {
         setEsPorPersona(e.target.checked);
     }
+
+    const copyToClipboard = () => {
+        const textToCopy = `${detalleCalculo}\nEl costo viajero es: $${resultado}`;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            setCopied(true);
+        });
+    };
+
+    const resetResult = () => {
+        setCobertura('')
+        setTieneTopeDeCobertura('')
+        setPrecio('')
+        setKm('');
+        setTieneIVA('')
+        setEsPorPersona('')
+        setPersonas('')
+        setResultado('');
+        setDetalleCalculo('');
+        setCopied(false);
+    };
 
     return (
         <div className='d-flex flex-column calculadora'>
@@ -141,7 +180,7 @@ export default function Formato() {
                 {resultado === 0 && !tieneTopeDeCobertura ? (
                     <div className='text-bg-danger '>Está cubierto para el cliente.</div>
                 ) : (
-                    <div>El costo viajero es: $ {resultado}</div>
+                    <div className='text-bg-danger text-white fw-semi-bold'>El costo viajero es: $ {resultado}</div>
                 )}
             </div>
 
@@ -150,6 +189,21 @@ export default function Formato() {
             ) : null}
 
             <div>{detalleCalculo}</div>
+            <div className='form-group mt-3'>
+                {!copied ? (
+                    <button className='btn btn-dark btnGroup' onClick={copyToClipboard} >
+                        Copiar Resultado
+                    </button>
+                ) : (
+                    <div className='text-white' style={{ backgroundColor: 'green' }}>¡Resultado copiado al portapapeles!</div>
+                )}
+
+                <button className='btn btn-dark btnGroup' onClick={resetResult} >
+                    Restablecer Resultado
+                </button>
+            </div>
         </div>
+
+
     );
 }
