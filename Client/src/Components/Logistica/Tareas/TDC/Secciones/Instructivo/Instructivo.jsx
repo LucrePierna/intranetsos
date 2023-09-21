@@ -28,7 +28,7 @@ export default function Instructivo() {
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
         <div className="tab-pane fade show active px-3 mt-3 lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <ul className='text-start'>
+          <ul className='text-start listaGral'>
             <li>Visualización y análisis de la pantallas para la derivacion de servicios.</li>
             <li>Analizar las zonas en donde finalizan los servicios.</li>
             <li>Corroborar que sea conveniente la triangulación de los servicios.</li>
@@ -54,14 +54,14 @@ export default function Instructivo() {
         </div>
         <div className="tab-pane fade px-3 mt-3 lineaGeneral" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
           <p >El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche. </p>
-          <ul className='text-start mt-3'>
+          <ul className='text-start mt-3 listaGral'>
             <li>Móvil roto (se averió en el transcurso del servicio inicial).</li>
             <li>Horario de taller (la demora informada no permite llegar a tiempo al taller).</li>
             <li>Demora excesiva (cuando la demora es considerablemente elevada).</li>
             <li>Viaje largo (tiene otro viaje asignado o programado con kilómetros).</li>
             <li>Horario nocturno (prestador no realiza servicios en horarios nocturnos).</li>
             <li>Fin de turno (prestador finaliza su turno con el servicio inicial).</li>
-            <li>Volvio a Base (prestador ya retornó o está retornando a base).</li>
+            <li>Volvió a Base (prestador ya retornó o está retornando a base).</li>
             <li>No acepta Conexión (prestador no toma el servicio como conexión). </li>
           </ul>
 
@@ -72,7 +72,7 @@ export default function Instructivo() {
               <button class="nav-link sub active" id="nav-ceficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-ceficaz" type="button" role="tab" aria-controls="nav-ceficaz" aria-selected="true">Conexión Eficaz</button>
               <button class="nav-link sub" id="nav-traslzn-tab" data-bs-toggle="tab" data-bs-target="#nav-traslzn" type="button" role="tab" aria-controls="nav-traslzn" aria-selected="true">Traslados Locales/Zona</button>
               <button class="nav-link sub" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexión</button>
-              <button class="nav-link sub" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Obervaciones</button>
+              <button class="nav-link sub" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Observaciones</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
@@ -129,7 +129,7 @@ export default function Instructivo() {
               </table>
               <h1><u>TIPOS DE ANULACIONES</u></h1>
               <div className='text-start d-flex flex-row mt-3 px-5'>
-                <ul className='px-5'>
+                <ul className='px-5 listaGral'>
                   <li>ANULADO </li>
                   <li>CAMBIO DE DESTINO </li>
                   <li>CAPACIDAD OPERATIVA </li>
@@ -142,7 +142,7 @@ export default function Instructivo() {
                   <li>NO TRASLADA MOTOS </li>
                   <li>PROGRAMADO </li>
                 </ul>
-                <ul >
+                <ul className='listaGral'>
                   <li>MOVIL ROTO </li>
                   <li>SIN DISPONIBILIDAD </li>
                   <li>SIN RESPUESTA </li>
@@ -166,7 +166,7 @@ export default function Instructivo() {
                 <tr className='border border-dark'>
                   <td className='border border-black px-2'>Código del servicio</td>
                   <td className='border border-black px-2'>Patente </td>
-                  <td className='border border-black px-2'>Origen (donde está en guarda el vehiculo)</td>
+                  <td className='border border-black px-2'>Origen (donde está en guarda el vehículo)</td>
                   <td className='border border-black px-2'>Destino Real</td>
                   <td className='border border-black px-2'>Día (en el cual se puso en guarda)</td>
                   <td className='border border-black px-2'>Observaciones (datos complementarios del servicio)</td>

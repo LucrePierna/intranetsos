@@ -33,7 +33,7 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Motivo de la Consulta</button>
           <button className="nav-link custom" id="nav-cierrechat-tab" data-bs-toggle="tab" data-bs-target="#nav-cierrechat" type="button" role="tab" aria-controls="nav-cierrechat" aria-selected="false">Cierre de Chat</button>
           <button className="nav-link custom" id="nav-finturno-tab" data-bs-toggle="tab" data-bs-target="#nav-finturno" type="button" role="tab" aria-controls="nav-finturno" aria-selected="false">Fin de Turno</button>
-          <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Carga de Productos</button>
+          <button className="nav-link custom" id="nav-productos-tab" data-bs-toggle="tab" data-bs-target="#nav-productos" type="button" role="tab" aria-controls="nav-productos" aria-selected="false">Carga de Productos</button>
           <button className="nav-link custom" id="nav-gestiones-tab" data-bs-toggle="tab" data-bs-target="#nav-gestiones" type="button" role="tab" aria-controls="nav-gestiones" aria-selected="false">Otras Gestiones</button>
         </div>
       </nav>
@@ -55,7 +55,7 @@ export default function Procedimientos() {
             Se deberá consultar el código del servicio y a que fecha corresponde. </p>
           <h1><u>Motivos de Contacto</u></h1>
           <div className='text-start d-flex flex-row mt-3 px-5'>
-            <ul className='px-5'>
+            <ul className='px-5 listaGral'>
               <li>Prestador informa tener disponibilidad.</li>
               <li>Prestador informa que el servicio fue finalizado. </li>
               <li>Uso de carros.</li>
@@ -63,7 +63,7 @@ export default function Procedimientos() {
               <li>Hora de espera.</li>
               <li>Modificación de origen/destino.</li>
             </ul>
-            <ul >
+            <ul className='listaGral'>
               <li>Móvil está junto al vehículo sólo. </li>
               <li>No puede realizar la asistencia.</li>
               <li>Estar en el lugar, pero no tiene capacidad operativa para realizar el servicio. </li>
@@ -84,10 +84,10 @@ export default function Procedimientos() {
         <div className="tab-pane fade lineaGeneral" id="nav-finturno" role="tabpanel" aria-labelledby="nav-finturno-tab" tabIndex="0">
           <h1><u>Transferir Chat's</u></h1>
           <p>Al finalizar la jornada, habiendo quedado consultas pendientes de cerrar, el operador de chattigo deberá transferir chat al operador que esté de turno dando aviso previo al mismo o a un supervisor/back office.</p>
-          <h1><u>Imprtante</u></h1>
+          <h1><u>Importante</u></h1>
           <p>Al momento de finalizar la tarea y desloguearse, asegurarse de “Finalizar sesión” y que no quede logueado el usuario, ya que continuarán ingresando chats que no serán atendidos generando demoras y posibles reclamos.</p>
         </div>
-        <div className="tab-pane fade " id="nav-zona" role="tabpanel" aria-labelledby="nav-zona-tab" tabIndex="0">
+        <div className="tab-pane fade " id="nav-productos" role="tabpanel" aria-labelledby="nav-productos-tab" tabIndex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-procedimiento-tab" data-bs-toggle="tab" data-bs-target="#nav-procedimiento" type="button" role="tab" aria-controls="nav-procedimiento" aria-selected="true">Procedimiento</button>
@@ -103,7 +103,7 @@ export default function Procedimientos() {
               </p>
             </div>
             <div class="tab-pane fade px-3 py-5" id="nav-hstrabesp" role="tabpanel" aria-labelledby="nav-hstrabesp-tab" tabindex="0">
-              <p>Al seleccionar el producto, aparecerá automáticamente el precio unitario según lo que se haya pactado con el prestador, esto no se modifica. Luego se debe indicar la cantidad de horas de trabajo/espera que solicite el prestador, una vez cargado esto no se debe modificar nada más, solo tocar “Guardar”</p>
+              <p>Al seleccionar el producto, aparecerá automáticamente el precio unitario según lo que se haya pactado con el prestador, esto no se modifica. Luego se debe indicar la cantidad de horas de trabajo/espera que solicite el prestador, una vez cargado esto no se debe modificar nada más, solo tocar “Guardar”.</p>
             </div>
             <div class="tab-pane fade px-3 py-5" id="nav-carros" role="tabpanel" aria-labelledby="nav-carros-tab" tabindex="0">
               <p>Al seleccionar el producto, aparecerá automáticamente el precio unitario según lo que se haya pactado con el prestador, esto no se modifica. Si el prestador nos indica que debe usar 1 o 2 carros, se debe cargar como “Uso de carros”. Si el prestador debe usar 3 o 4 carros, se debe cargar “Uso de 4 carros”. No se debe modificar más nada, solo tocar “Guardar”.</p>

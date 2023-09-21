@@ -66,7 +66,7 @@ export default function Formato() {
                         />
                     </div>
                     <div className='form-group'>
-                        <label>Télefono:</label>
+                        <label>Teléfono:</label>
                         <input
                             type="text"
                             className="form-control"

@@ -29,38 +29,38 @@ export default function Instructivo() {
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto " id="nav-tabContent">
         <div className="tab-pane fade show active lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <p>La modalidad se brinda a todos los vehiculos que se encuentren ... El traslado se realiza para las categorias de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
+          <p>La modalidad se brinda a todos los vehículos que se encuentren ... El traslado se realiza para las categorías de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
 
           <h1><u>Objetivos</u></h1>
-          <ul className='lista'>
+          <ul className=' listaGral'>
             <li>Tener mayor disponibilidades en la zona de mayor demanda para servicios en zona.</li>
             <li>Reducir los tiempos de espera.</li>
             <li>Reducir los costos de servicios.</li>
           </ul>
           <h1><u>Etapas</u></h1>
-          <ul className='lista'>
+          <ul className=' listaGral'>
             <li>Transportin Inicio =  Se realiza la busqueda de la unidad.</li>
             <li>Transportin = Traslado de los vehiculos en el camion. </li>
             <li>Transportin Distribucion = Traslado de base de guarda hasta destino del cliente.</li>
           </ul>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-tarea" role="tabpanel" aria-labelledby="nav-tarea-tab" tabindex="0">
-            <h1>Analisis de servicio</h1>
-            <h1>Contencion e informacion de la modalidad</h1>
+            <h1>Análisis de servicio</h1>
+            <h1>Contención e información de la modalidad</h1>
             <h1 className='mt-3'><u>Speech</u></h1>
             <p>“Sr/a, debido a la demanda de servicios en la zona (COSTA)y/o por la cantidad de km que tiene el traslado (PAIS), para evitarle demoras excesivas o no tener disponibilidad, no es posible realizar el traslado de forma directa, por este motivo la asistencia se brindará bajo la siguiente modalidad: retiramos su vehículo de donde se encuentra en este momento, quedará en resguardo en la base en la localidad y el mismo será entregado en 72/96 hs hábiles”.</p>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-viajero" role="tabpanel" aria-labelledby="nav-viajero-tab" tabindex="0">
           <h1 className='mt-5'><u>Procedimiento de asistencia al viajero</u></h1>
-          <ul className='mt-4'>
+          <ul className='mt-4 listaGral'>
             <li>2 acompañantes completamente cubiertos. </li>
-            <li>Resto de ocupantes se aplica cobertura segun grilla.</li>
+            <li>Resto de ocupantes se aplica cobertura según grilla.</li>
             <li>Combis para algunos corredores. Se respeta la cobertura de convenio y no se tiene en cuenta el tope.</li>
           </ul>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-adicional" role="tabpanel" aria-labelledby="nav-adicional-tab" tabindex="0">
           <h1 className='mt-5'><u>Los adicionales se abonan de la siguiente manera: </u></h1>
-          <ul className='mt-3'>
+          <ul className='mt-3 listaGral'>
             <li>Tarjeta de credito o debito.</li>
             <li>Efectivo = solo cuando el prestador realiza las 3 etapas del servicio.</li>
             <li>Transferencia.</li>
@@ -73,7 +73,7 @@ export default function Instructivo() {
           </p>
           <h1><u>Etapas</u></h1>
           <p>Una vez recolectados los vehículos se deberá coordinar el móvil con el prestador Vasallo Base 13480 y con los datos de los vehículos a trasladar. Para ello se generará un código de manera manual con los siguientes datos:</p>
-          <ul className='text-center list-unstyled h-50 w-50 m-auto py-4'>
+          <ul className='text-center list-unstyled h-50 w-50 m-auto py-4 listaGral'>
             <li>Cliente: Grúa Triple.</li>
             <li>Patente: TTT001.</li>
             <li>Radio: Servicio Privado Trasportín.</li>

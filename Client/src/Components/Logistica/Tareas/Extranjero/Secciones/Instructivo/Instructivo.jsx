@@ -44,17 +44,17 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-terrestre" role="tabpanel" aria-labelledby="nav-terrestre-tab" tabindex="0">
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puntos importantes.</u></h1>
                 <li>Origen en Uruguay.</li>
                 <li>Destino final en Argentina.</li>
-                <li>Paso fronterizo mas próximo.</li>
+                <li>Paso fronterizo más próximo.</li>
                 <li>Estado del paso y horarios para cruzar la frontera.</li>
-                <li>Cliente debe acompañar el trasaldo.</li>
+                <li>Cliente debe acompañar el traslado.</li>
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
 
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Pasos fronterizos:</u></h1>
                 <li>Fray Bentos - Gualeguaychú.</li>
                 <li>Paysandú - Colon.</li>
@@ -63,18 +63,18 @@ export default function Instructivo() {
             </div>
             <div class="tab-pane fade" id="nav-Fluvial" role="tabpanel" aria-labelledby="nav-Fluvial-tab" tabindex="0">
               <h1 className='mt-3 fw-bold'>Los traslados se realizan por medio de Buque-Bus</h1>
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puntos importantes:</u></h1>
                 <li>Horario de salida en puerto y dársena.</li>
                 <li>Horario de llegada a destino en Pto. Madero.</li>
-                <li>El vehiculo debe estar 2hs antes del horario de salida.</li>
-                <li>Cliente debe acompañar el trasaldo.</li>
+                <li>El vehículo debe estar 2hs antes del horario de salida.</li>
+                <li>Cliente debe acompañar el traslado.</li>
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
 
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puertos:</u></h1>
-                <li>Colonia Sacramento (Acepta vehiculos con ruedas que no giren, cliente debe consultar con puerto).</li>
+                <li>Colonia Sacramento (Acepta vehículos con ruedas que no giren, cliente debe consultar con puerto).</li>
                 <li>Montevideo.</li>
                 <li>Puerto Piriápolis.</li>
               </ul>
@@ -97,7 +97,7 @@ export default function Instructivo() {
               </div>
             </div>
             <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puntos importantes:</u></h1>
                 <li>Origen del servicio.</li>
                 <li>Paso fronterizo más próximo.</li>
@@ -128,7 +128,7 @@ export default function Instructivo() {
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-local" role="tabpanel" aria-labelledby="nav-local-tab" tabindex="0">
               <h1><u>Traslado local en Chile</u></h1>
-              <h1>Se debe confirmar origen y destinon, solicitar cotización y pedir autorizacion en caso de haber kilómetros vacíos.</h1>
+              <h1>Se debe confirmar origen y destino, solicitar cotización y pedir autorización en caso de haber kilómetros vacíos.</h1>
               <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Verificar dólar oficial</button></a>
             </div>
             <div class="tab-pane fade" id="nav-argentina" role="tabpanel" aria-labelledby="nav-argentina-tab" tabindex="0">
@@ -136,7 +136,7 @@ export default function Instructivo() {
               <h1><b>Tener en cuenta que los prestadores de Chile no cruzan hacia Argentina.</b> Se debe coordinar en dos partes:</h1>
               <ul className='mt-3'>
                 <li>Origen en Chile hasta paso fronterizo más próximo</li>
-                <li>Desde paso frotnerizo a destino final en Argentina</li>
+                <li>Desde paso fronterizo a destino final en Argentina</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-tdfuego" role="tabpanel" aria-labelledby="nav-tdfuego-tab" tabindex="0">
@@ -159,7 +159,7 @@ export default function Instructivo() {
             <div class="tab-pane fade show active" id="nav-asistencia" role="tabpanel" aria-labelledby="nav-asistencia-tab" tabindex="0">
               <h1>La contraprestaciones son servicios solicitados por nuestros prestadores del extranjero a traves de correo electronico.</h1>
               <h1>El supervisor de turno asigna el tratamienco de la rpestacion a un Operador de Logistica, quien verificara el e-mail y realiza las siguientes tares:</h1>
-              <ul className='mt-3'>
+              <ul className='mt-3 listaGral'>
                 <li>Responder el correo informando se trabajara en el pedido y se enviara novedades.</li>
                 <li>Cargar el servicio en el sistema con el radio correspondiente al pestador.</li>
               </ul>
@@ -177,7 +177,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-andisp" role="tabpanel" aria-labelledby="nav-andisp-tab" tabindex="0">
               <h1><u>Análisis</u></h1>
               <p>El operador verificará que el pedido enviado por el correo tenga los datos necesarios para coordinar el servicio. Estos son:</p>
-              <ul className='mt-3'>
+              <ul className='mt-3 listaGral'>
                 <li>Datos del titular.</li>
                 <li>Datos del vehículo.</li>
                 <li>Teléfono de contacto.</li>
@@ -200,16 +200,16 @@ export default function Instructivo() {
                 <br />
                 Una vez realizado el cálculo deberá sumar la movida (PRECIO POR SERVICIO) + IVA y el FE DE GESTION U$D 80 +IVA.
                 <br />
-                CALCULO FINAL =  Movida + km excedente + fee de gestion + IVA.  </p>
+                CALCULO FINAL =  Movida + km excedente + fee de gestión + IVA.  </p>
               <p><u>ORIGEN EN EL EXTRANJERO</u>
                 <br />
                 Se deberá ver en el radio de contraprestación correspondiente en el apartado “SERVICIO EN EL EXTERIOR”.
                 <br />
-                Es de suma importancia ver en la grilla los costos actualizados y solicitar autorizacion de los mismos.  </p>
+                Es de suma importancia ver en la grilla los costos actualizados y solicitar autorización de los mismos.  </p>
               <h1><u>Devolución</u></h1>
               <p>El operador deber especificar vía mail la demora para cargar el vehículo y el costo final de la asistencia. Lugo aguardar la confirmación del pedido para así confirmar la asistencia a nuestro prestador y realizar la asignación de la base correspondiente.</p>
               <h1><u>IMPORTANTE</u></h1>
-              <p>Nunca se deberá iformar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
+              <p>Nunca se deberá informar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
             </div>
           </div>
         </div>

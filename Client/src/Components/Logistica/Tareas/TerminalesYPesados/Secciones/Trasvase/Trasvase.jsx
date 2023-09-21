@@ -27,20 +27,12 @@ export default function Trasvase() {
         </div>
       </nav>
       <div className="tab-content h-100 w-100 fs-5 text-start " id="nav-tabContent">
-        <div className="tab-pane fade show active" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade show active lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
           <h3>Es la prestación que se realiza a las unidades de categoría “pesados” que transportan líquidos/químicos y consiste en traspasar un líquido de un camión cisterna a otro. El servicio se presta porque hay una falla en el camión, acoplado o semirremolque, Puede haber derrame o NO. </h3>
         </div>
-        <div className="tab-pane fade" id="nav-etapas" role="tabpanel" aria-labelledby="nav-etapas-tab" tabindex="0">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            </div>
-          </nav>
+        <div className="tab-pane fade lineaGeneral" id="nav-etapas" role="tabpanel" aria-labelledby="nav-etapas-tab" tabindex="0">
           <h3><u>Analizar el servicio atendiendo principalmente a:</u></h3>
-          <ul>
+          <ul className='listaGral'>
             <li>Origen.</li>
             <li>Marca y modelo de la unidad.</li>
             <li>Tipo de combustible.</li>
@@ -49,9 +41,9 @@ export default function Trasvase() {
             <li>Teléfono de contacto del chofer o persona junto a la unidad.</li>
           </ul>
         </div>
-        <div className="tab-pane fade" id="nav-derivacion" role="tabpanel" aria-labelledby="nav-derivacion-tab" tabindex="0">
+        <div className="tab-pane " id="nav-derivacion" role="tabpanel" aria-labelledby="nav-derivacion-tab" tabindex="0">
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-prestadores-tab" data-bs-toggle="tab" data-bs-target="#nav-prestadores" type="button" role="tab" aria-controls="nav-prestadores" aria-selected="true">Prestadores</button>
               <button class="nav-link sub" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
             </div>
@@ -59,9 +51,9 @@ export default function Trasvase() {
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-prestadores" role="tabpanel" aria-labelledby="nav-prestadores-tab" tabindex="0">
               <h3><u>Una vez analizado y corroborado los datos el operador consultará disponibilidad con las bases</u></h3>
-              <ul>
+              <ul className='listaGral'>
                 <li>13191 - J & D SERVICIOS AMBIENTALES SRL = Llamado telefónico.</li>
-                <li>11620 - ASIST CARGO SA = por correo electronico.</li>
+                <li>11620 - ASIST CARGO SA = por correo electrónico.</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">

@@ -17,7 +17,7 @@ export default function Landing() {
               <span></span>
               <span></span>
               <span></span>
-              ESPACIO CAC</button>
+              ESPACIO CAT</button>
           </a>
         </div>
         <div className='conteinerbtn'>

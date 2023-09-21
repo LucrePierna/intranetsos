@@ -36,7 +36,7 @@ export default function Procedimientos() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgznbb-tab" data-bs-toggle="tab" data-bs-target="#nav-orgznbb" type="button" role="tab" aria-controls="nav-orgznbb" aria-selected="true">Organización de la Zona</button>
               <button class="nav-link sub" id="nav-consultabb-tab" data-bs-toggle="tab" data-bs-target="#nav-consultabb" type="button" role="tab" aria-controls="nav-consultabb" aria-selected="false">Consideraciones Generales</button>
-              <button class="nav-link sub" id="nav-dificilbb-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilbb" type="button" role="tab" aria-controls="nav-dificilbb" aria-selected="false">Zona de Dificil Acceso</button>
+              <button class="nav-link sub" id="nav-dificilbb-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilbb" type="button" role="tab" aria-controls="nav-dificilbb" aria-selected="false">Zona de Difícil Acceso</button>
             </div>
           </nav>
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
@@ -79,7 +79,7 @@ export default function Procedimientos() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgzncosta-tab" data-bs-toggle="tab" data-bs-target="#nav-orgzncosta" type="button" role="tab" aria-controls="nav-orgzncosta" aria-selected="true">Organización de la Zona</button>
               <button class="nav-link sub" id="nav-particularidadcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-particularidadcosta" type="button" role="tab" aria-controls="nav-particularidadcosta" aria-selected="false">Particularidades del Tráfico</button>
-              <button class="nav-link sub" id="nav-dificilcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilcosta" type="button" role="tab" aria-controls="nav-dificilcosta" aria-selected="false">Zonas de Dificil Acceso</button>
+              <button class="nav-link sub" id="nav-dificilcosta-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilcosta" type="button" role="tab" aria-controls="nav-dificilcosta" aria-selected="false">Zonas de Difícil Acceso</button>
             </div>
           </nav>
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
@@ -89,7 +89,7 @@ export default function Procedimientos() {
                 <li>Costa atlántica (CA).</li>
                 <li>Ruta 2 Norte (R2N).</li>
               </ul>
-              <h5><u>Zona en Automatico</u></h5>
+              <h5><u>Zona en Automático</u></h5>
               <p>Dentro de las posibilidades, se trabajarán los servicios de la ciudad de Mar del Plata de manera automática.</p>
               <h5><u>Zona de Inducción</u></h5>
               <p>Las inducciones para el envío de un móvil mecánico se realizarán dentro de la ciudad de Mar del Plata.</p>
@@ -175,9 +175,9 @@ export default function Procedimientos() {
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-orgznnoa-tab" data-bs-toggle="tab" data-bs-target="#nav-orgznnoa" type="button" role="tab" aria-controls="nav-orgznnoa" aria-selected="true">Organización de la Base</button>
-              <button class="nav-link sub" id="nav-vaciosnoa-tab" data-bs-toggle="tab" data-bs-target="#nav-vaciosnoa" type="button" role="tab" aria-controls="nav-vaciosnoa" aria-selected="false">Servicios con KM Vacios</button>
+              <button class="nav-link sub" id="nav-vaciosnoa-tab" data-bs-toggle="tab" data-bs-target="#nav-vaciosnoa" type="button" role="tab" aria-controls="nav-vaciosnoa" aria-selected="false">Servicios con KM Vacíos</button>
               <button class="nav-link sub" id="nav-considnoa-tab" data-bs-toggle="tab" data-bs-target="#nav-considnoa" type="button" role="tab" aria-controls="nav-considnoa" aria-selected="false">Consideraciones Generales</button>
-              <button class="nav-link sub" id="nav-tucumannoa-tab" data-bs-toggle="tab" data-bs-target="#nav-tucumannoa" type="button" role="tab" aria-controls="nav-tucumannoa" aria-selected="false">Tucuman</button>
+              <button class="nav-link sub" id="nav-tucumannoa-tab" data-bs-toggle="tab" data-bs-target="#nav-tucumannoa" type="button" role="tab" aria-controls="nav-tucumannoa" aria-selected="false">Tucumán</button>
               <button class="nav-link sub" id="nav-saltanoa-tab" data-bs-toggle="tab" data-bs-target="#nav-saltanoa" type="button" role="tab" aria-controls="nav-saltanoa" aria-selected="false">Salta</button>
               <button class="nav-link sub" id="nav-jujuynoa-tab" data-bs-toggle="tab" data-bs-target="#nav-jujuynoa" type="button" role="tab" aria-controls="nav-jujuynoa" aria-selected="false">Jujuy</button>
             </div>
@@ -250,7 +250,7 @@ export default function Procedimientos() {
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-divpat-tab" data-bs-toggle="tab" data-bs-target="#nav-divpat" type="button" role="tab" aria-controls="nav-divpat" aria-selected="true">Subdivisión de Zonas</button>
-              <button class="nav-link sub" id="nav-dificilpat-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilpat" type="button" role="tab" aria-controls="nav-dificilpat" aria-selected="false">Zonas de Dificil Acceso</button>
+              <button class="nav-link sub" id="nav-dificilpat-tab" data-bs-toggle="tab" data-bs-target="#nav-dificilpat" type="button" role="tab" aria-controls="nav-dificilpat" aria-selected="false">Zonas de Difícil Acceso</button>
               <button class="nav-link sub" id="nav-particpat-tab" data-bs-toggle="tab" data-bs-target="#nav-particpat" type="button" role="tab" aria-controls="nav-particpat" aria-selected="false">Particularidades del Tráfico</button>
               <button class="nav-link sub" id="nav-fronterapat-tab" data-bs-toggle="tab" data-bs-target="#nav-fronterapat" type="button" role="tab" aria-controls="nav-fronterapat" aria-selected="false">Pasos Fronterizos</button>
             </div>
@@ -261,7 +261,7 @@ export default function Procedimientos() {
                 <li>Neuquén:  Aquellos que se encuentran en Neuquén, Cipolletti, Rincón de los Sauces, Añelo, Plotter, Centenario, General Roca, Villa Regina, Huego, Zapala, Plaza Huincul, Cutral Co, Choele Choel, San Martin de los Andes, Junín de los Andes y demás ciudades aledañas. (NQN1 - NQN2 – NQN3 – NQN4 - RN1)  </li>
                 <li>Rio Negro: Servicios que se encuentren en Bariloche, Villa la Angostura, El Bolsón, Epuyen. (RN2 RN3 SCB1 SCB2)  </li>
               </ul>
-              <h5><u>Zona en Automatico</u></h5>
+              <h5><u>Zona en Automático</u></h5>
               <p>
                 Tanto Neuquén como Bariloche están habilitadas para ser utilizadas en automático, en la medida de lo posible, siempre que los servicios y los móviles así lo permitan.
               </p>
@@ -297,8 +297,8 @@ export default function Procedimientos() {
         <div class="tab-pane fade" id="nav-stafe" role="tabpanel" aria-labelledby="nav-stafe-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link sub active" id="nav-orgznstafe-tab" data-bs-toggle="tab" data-bs-target="#nav-orgznstafe" type="button" role="tab" aria-controls="nav-orgznstafe" aria-selected="true">Subdivision de la Zona</button>
-              <button class="nav-link sub" id="nav-automatistafe-tab" data-bs-toggle="tab" data-bs-target="#nav-automatistafe" type="button" role="tab" aria-controls="nav-automatistafe" aria-selected="false">Zona en Automatico</button>
+              <button class="nav-link sub active" id="nav-orgznstafe-tab" data-bs-toggle="tab" data-bs-target="#nav-orgznstafe" type="button" role="tab" aria-controls="nav-orgznstafe" aria-selected="true">Subdivisión de la Zona</button>
+              <button class="nav-link sub" id="nav-automatistafe-tab" data-bs-toggle="tab" data-bs-target="#nav-automatistafe" type="button" role="tab" aria-controls="nav-automatistafe" aria-selected="false">Zona en Automático</button>
               <button class="nav-link sub" id="nav-particstafe-tab" data-bs-toggle="tab" data-bs-target="#nav-particstafe" type="button" role="tab" aria-controls="nav-particstafe" aria-selected="false">Particularidades de la Zona</button>
               <button class="nav-link sub" id="nav-interstafe-tab" data-bs-toggle="tab" data-bs-target="#nav-interstafe" type="button" role="tab" aria-controls="nav-interstafe" aria-selected="false">Servicios Interprovinciales</button>
             </div>
