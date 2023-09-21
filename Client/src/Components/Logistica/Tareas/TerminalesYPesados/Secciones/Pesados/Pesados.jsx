@@ -102,8 +102,8 @@ export default function Pesados() {
         <div className="tab-pane fade text-start py-2" id="nav-etapas" role="tabpanel" aria-labelledby="nav-etapas-tab" tabIndex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link sub active" id="nav-analisis-tab" data-bs-toggle="tab" data-bs-target="#nav-analisis" type="button" role="tab" aria-controls="nav-analisis" aria-selected="true">Analisis del Servicio</button>
-              <button class="nav-link sub" id="nav-busqprest-tab" data-bs-toggle="tab" data-bs-target="#nav-busqprest" type="button" role="tab" aria-controls="nav-busqprest" aria-selected="false">Busqueda del Prestador</button>
+              <button class="nav-link sub active" id="nav-analisis-tab" data-bs-toggle="tab" data-bs-target="#nav-analisis" type="button" role="tab" aria-controls="nav-analisis" aria-selected="true">Análisis del Servicio</button>
+              <button class="nav-link sub" id="nav-busqprest-tab" data-bs-toggle="tab" data-bs-target="#nav-busqprest" type="button" role="tab" aria-controls="nav-busqprest" aria-selected="false">Búsqueda del Prestador</button>
               <button class="nav-link sub" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Servicio Por Reintegro</button>
               <button class="nav-link sub" id="nav-programacion-tab" data-bs-toggle="tab" data-bs-target="#nav-programacion" type="button" role="tab" aria-controls="nav-programacion" aria-selected="false">Programación del Servicio</button>
               <button class="nav-link sub" id="nav-trbjoprest-tab" data-bs-toggle="tab" data-bs-target="#nav-trbjoprest" type="button" role="tab" aria-controls="nav-trbjoprest" aria-selected="false">Trabajo del Prestador</button>

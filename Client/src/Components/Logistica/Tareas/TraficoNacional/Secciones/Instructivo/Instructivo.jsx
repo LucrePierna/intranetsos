@@ -56,7 +56,7 @@ export default function Instructivo() {
                 <li>Servicios con prioridad alta (personas en riesgo, zonas peligrosas, contención, VIP).</li>
                 <li>Terminales (vehículos de porte liviano).</li>
                 <li>Demora estimada.</li>
-                <li>Servicios en ruta o transito.</li>
+                <li>Servicios en ruta o tránsito.</li>
                 <li>Desperfecto del vehículo.</li>
                 <li>Servicios derivados por móviles taller (derivado a otro móvil).</li>
               </ul>

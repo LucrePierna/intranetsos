@@ -73,7 +73,7 @@ export default function Procedimientos() {
               <button class="nav-link sub" id="nav-rechsvctn-tab" data-bs-toggle="tab" data-bs-target="#nav-rechsvctn" type="button" role="tab" aria-controls="nav-rechsvctn" aria-selected="false">Rechazo de Servicios</button>
               <button class="nav-link sub" id="nav-cmbdemtn-tab" data-bs-toggle="tab" data-bs-target="#nav-cmbdemtn" type="button" role="tab" aria-controls="nav-cmbdemtn" aria-selected="false">Cambios de Demora</button>
               <button class="nav-link sub" id="nav-faltacomtn-tab" data-bs-toggle="tab" data-bs-target="#nav-faltacomtn" type="button" role="tab" aria-controls="nav-faltacomtn" aria-selected="false">Falta de Comunicación</button>
-              <button class="nav-link sub" id="nav-demycierretn-tab" data-bs-toggle="tab" data-bs-target="#nav-demycierretn" type="button" role="tab" aria-controls="nav-demycierretn" aria-selected="false">Demora Caida y Cierre</button>
+              <button class="nav-link sub" id="nav-demycierretn-tab" data-bs-toggle="tab" data-bs-target="#nav-demycierretn" type="button" role="tab" aria-controls="nav-demycierretn" aria-selected="false">Demora Caída y Cierre</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
@@ -98,7 +98,7 @@ export default function Procedimientos() {
               <p>Para los servicios cuya demora esté próxima a cumplirse o ya se encontrare cumplida y el móvil aún no hubiera llegado, serán aplicables los incisos a continuación. </p>
               <h1><u>Demora Caída</u></h1>
               <p>El Operador de Contención deberá consultar al móvil el motivo del retraso y el tiempo restante. Posteriormente deberá llamar al cliente para informar lo sucedido. </p>
-              <h1><u>Segumiento, Control y Cierre de Servicios</u></h1>
+              <h1><u>Seguimiento, Control y Cierre de Servicios</u></h1>
               <p>Si al realizar el seguimiento del servicio, el Operador de Contención verificare que el móvil ya realizó el servicio, dará llegada y finalización del servicio en el sistema. </p>
             </div>
           </div>
@@ -158,9 +158,9 @@ export default function Procedimientos() {
               <ul className='text-start listaGral'>
                 <li>Servicio de Red Nacional.</li>
                 <li>Servicio de Tráficos Nacionales.</li>
-                <li>Servicio en Espera de Aceptación por Parte de Logistica.</li>
+                <li>Servicio en Espera de Aceptación por Parte de Logística.</li>
                 <li>Trafico Local Móvil Acepta.</li>
-                <li>Unicamente en Tránsito o Ruta.</li>
+                <li>Únicamente en Tránsito o Ruta.</li>
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-criticos" role="tabpanel" aria-labelledby="nav-criticos-tab" tabindex="0">
@@ -180,7 +180,7 @@ export default function Procedimientos() {
                 <li>Coordinación de remis para traslado a estación de servicio.</li>
                 <li>Hospedaje si corresponde.</li>
                 <li>Refrigerio (promedio de $1000 por persona según situación).</li>
-                <li>Ofrecer aviso a defensa civil, policia o bomberos de acuerdo a la situación.</li>
+                <li>Ofrecer aviso a defensa civil, polícia o bomberos de acuerdo a la situación.</li>
                 <li>Ofrecer aviso a familiar.</li>
                 <li>Analizar otras alternativas /excepciones con supervisor.</li>
               </ul>
@@ -193,7 +193,7 @@ export default function Procedimientos() {
                 <li>Rebatir objeciones haciéndole saber al cliente que la alternativa ofrecida es su mejor opción.</li>
                 <li>Dejar que el cliente tome su elección, nunca imponer.</li>
                 <li>Buscá toda la información posible.</li>
-                <li>Anticipate.</li>
+                <li>Anticípate.</li>
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-speech" role="tabpanel" aria-labelledby="nav-speech-tab" tabindex="0">
@@ -204,11 +204,11 @@ export default function Procedimientos() {
               <h1><u>Clientes con problemas de salud.</u></h1>
               <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u><br />
-                “Comprendemos su situacion, si necesita que nos comuniquemos con alguien por usted no dude en decirnos y nosotros dejaremos el mensaje mientras espera la asistencia”.</p>
+                “Comprendemos su situación, si necesita que nos comuniquemos con alguien por usted no dude en decirnos y nosotros dejaremos el mensaje mientras espera la asistencia”.</p>
               <h1><u>Clientes en zonas desfavorables.</u></h1>
               <p>"Señor/a. Estamos trabajando para brindarle el servicio a la mayor brevedad posible. El tiempo estimado de demora es xxx minutos.”.</p>
               <p><u>Situaciones especiales añadir:</u><br />
-                “Comprendemos su situación, le ofrecemos llamar a la policiía o defensa civil para solicitar que le hagan acompañamiento mientras espera nuestra asistencia”.</p>
+                “Comprendemos su situación, le ofrecemos llamar a la policía o defensa civil para solicitar que le hagan acompañamiento mientras espera nuestra asistencia”.</p>
             </div>
           </div>
         </div>

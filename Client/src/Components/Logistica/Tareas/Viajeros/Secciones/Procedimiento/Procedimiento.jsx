@@ -34,7 +34,7 @@ export default function Procedimiento() {
           <ul className='d-flex flex-column text-start justify-content-center m-auto h-50 w-50 listaGral'>
             <li>Contencion.</li>
             <li>Corroborar disponibilidad de doble cabina.</li>
-            <li>Buscar otras opciones segun cantidad de kilometros.</li>
+            <li>Buscar otras opciones según cantidad de kilómetros.</li>
             <li>Hospedaje.</li>
             <li>Servicio por reintegro.</li>
             <li>Excepciones.</li>

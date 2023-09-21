@@ -29,7 +29,7 @@ export default function Instructivo() {
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto " id="nav-tabContent">
         <div className="tab-pane fade show active lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <p>La modalidad se brinda a todos los vehiculos que se encuentren ... El traslado se realiza para las categorias de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
+          <p>La modalidad se brinda a todos los vehículos que se encuentren ... El traslado se realiza para las categorías de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
 
           <h1><u>Objetivos</u></h1>
           <ul className=' listaGral'>
@@ -45,8 +45,8 @@ export default function Instructivo() {
           </ul>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-tarea" role="tabpanel" aria-labelledby="nav-tarea-tab" tabindex="0">
-            <h1>Analisis de servicio</h1>
-            <h1>Contencion e informacion de la modalidad</h1>
+            <h1>Análisis de servicio</h1>
+            <h1>Contención e información de la modalidad</h1>
             <h1 className='mt-3'><u>Speech</u></h1>
             <p>“Sr/a, debido a la demanda de servicios en la zona (COSTA)y/o por la cantidad de km que tiene el traslado (PAIS), para evitarle demoras excesivas o no tener disponibilidad, no es posible realizar el traslado de forma directa, por este motivo la asistencia se brindará bajo la siguiente modalidad: retiramos su vehículo de donde se encuentra en este momento, quedará en resguardo en la base en la localidad y el mismo será entregado en 72/96 hs hábiles”.</p>
         </div>
@@ -54,7 +54,7 @@ export default function Instructivo() {
           <h1 className='mt-5'><u>Procedimiento de asistencia al viajero</u></h1>
           <ul className='mt-4 listaGral'>
             <li>2 acompañantes completamente cubiertos. </li>
-            <li>Resto de ocupantes se aplica cobertura segun grilla.</li>
+            <li>Resto de ocupantes se aplica cobertura según grilla.</li>
             <li>Combis para algunos corredores. Se respeta la cobertura de convenio y no se tiene en cuenta el tope.</li>
           </ul>
         </div>

@@ -36,7 +36,7 @@ export default function Terminales() {
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
         <div className="tab-pane fade show active lineaGeneral" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <p>Son servicios llamados “Especiales”. Aplica a aquellas terminales con las que se haya acordado este tipo de asistencia. La solicitud de asistencia es procesada por el CAT, los operadores SETA, u operadores específicos destinados a tal función (en caso de Mercedes Benz). Los pedidos ingresaran por: Comunicación telefónica o correo electrónico pedido por la Terminal </p>
+          <p>Son servicios llamados “Especiales”. Aplica a aquellas terminales con las que se haya acordado este tipo de asistencia. La solicitud de asistencia es procesada por el CAT, los operadores SETA, u operadores específicos destinados a tal función (en caso de Mercedes Benz). Los pedidos ingresaran por: Comunicación telefónica o correo electrónico pedido por la Terminal.</p>
         </div>
         <div className="tab-pane fade m-auto lineaGeneral" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
           <h3 className='fs-4'><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h3>
@@ -55,7 +55,7 @@ export default function Terminales() {
             <li>Mini </li>
             <li>Toyota </li>
             <li>Jaguar </li>
-            <li>La Emilia (motos: Benelli , Keeway, Suzuki Sym ) </li>
+            <li>La Emilia (motos: Benelli, Keeway, Suzuki Sym ) </li>
           </ul>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-tareaop" role="tabpanel" aria-labelledby="nav-tareaop-tab" tabindex="0">

@@ -61,7 +61,7 @@ export default function Instructivo() {
             <li>Viaje largo (tiene otro viaje asignado o programado con kilómetros).</li>
             <li>Horario nocturno (prestador no realiza servicios en horarios nocturnos).</li>
             <li>Fin de turno (prestador finaliza su turno con el servicio inicial).</li>
-            <li>Volvio a Base (prestador ya retornó o está retornando a base).</li>
+            <li>Volvió a Base (prestador ya retornó o está retornando a base).</li>
             <li>No acepta Conexión (prestador no toma el servicio como conexión). </li>
           </ul>
 
@@ -72,7 +72,7 @@ export default function Instructivo() {
               <button class="nav-link sub active" id="nav-ceficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-ceficaz" type="button" role="tab" aria-controls="nav-ceficaz" aria-selected="true">Conexión Eficaz</button>
               <button class="nav-link sub" id="nav-traslzn-tab" data-bs-toggle="tab" data-bs-target="#nav-traslzn" type="button" role="tab" aria-controls="nav-traslzn" aria-selected="true">Traslados Locales/Zona</button>
               <button class="nav-link sub" id="nav-noacepta-tab" data-bs-toggle="tab" data-bs-target="#nav-noacepta" type="button" role="tab" aria-controls="nav-noacepta" aria-selected="false">Prestador No Acepta Conexión</button>
-              <button class="nav-link sub" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Obervaciones</button>
+              <button class="nav-link sub" id="nav-obervaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-obervaciones" type="button" role="tab" aria-controls="nav-obervaciones" aria-selected="false">Observaciones</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
@@ -166,7 +166,7 @@ export default function Instructivo() {
                 <tr className='border border-dark'>
                   <td className='border border-black px-2'>Código del servicio</td>
                   <td className='border border-black px-2'>Patente </td>
-                  <td className='border border-black px-2'>Origen (donde está en guarda el vehiculo)</td>
+                  <td className='border border-black px-2'>Origen (donde está en guarda el vehículo)</td>
                   <td className='border border-black px-2'>Destino Real</td>
                   <td className='border border-black px-2'>Día (en el cual se puso en guarda)</td>
                   <td className='border border-black px-2'>Observaciones (datos complementarios del servicio)</td>
