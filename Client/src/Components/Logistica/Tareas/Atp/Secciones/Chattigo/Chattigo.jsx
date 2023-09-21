@@ -3,10 +3,10 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from 
 
 export default function Chattigo() {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 h-50 w-50 m-auto">
       <div className="row justify-content-center">
         <div className="col-md-8">
-          <div className="d-flex flex-column gap-3 p-2 justify-content-center mx-auto">
+          <div className="d-flex flex-column gap-3 p-2  justify-content-center mx-auto">
             <Table aria-label="Example static collection table">
               <TableHeader>
                 <TableColumn className="border border-dark bg-danger text-light">USUARIO</TableColumn>
@@ -55,7 +55,7 @@ export default function Chattigo() {
                 </TableRow>
               </TableBody>
             </Table>
-            <div>
+            <div className='h-50 w-50 m-auto'> 
               <a href="https://login.chattigo.com/" target="_blank" rel="noopener noreferrer">
                 <button type='button' className="btn btn-danger mt-3">Link a Chattigo</button>
               </a>

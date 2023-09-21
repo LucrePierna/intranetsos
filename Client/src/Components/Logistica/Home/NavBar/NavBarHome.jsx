@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Agenda from '../Secciones/Agenda/Agenda';
-import Reintegro from '../Secciones/Reintegro/Reintegro';
+import Calculadoras from '../Secciones/Calculadoras/Calculadora';
 import Noticias from '../Secciones/Noticias/Noticias';
 
 export default function NavBarHome() {
@@ -42,14 +42,14 @@ export default function NavBarHome() {
           </li>
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'reintegro' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('reintegro')}
+              className={`nav-link btn ${selectedComponent === 'calculadoras' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('calculadoras')}
               style={{
-                color: selectedComponent === 'reintegro' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'reintegro' ? 'white' : 'initial'
+                color: selectedComponent === 'calculadoras' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'calculadoras' ? 'white' : 'initial'
               }}
             >
-              Reintegro
+              Calculadoras
             </button>
           </li>
         </ul>
@@ -58,7 +58,7 @@ export default function NavBarHome() {
       <div className="container-fluid">
         {selectedComponent === 'agenda' && <Agenda />}
         {selectedComponent === 'noticias' && <Noticias />}
-        {selectedComponent === 'reintegro' && <Reintegro />}
+        {selectedComponent === 'calculadoras' && <Calculadoras />}
       </div>
     </div>
   );

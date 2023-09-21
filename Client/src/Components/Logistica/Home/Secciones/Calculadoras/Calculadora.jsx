@@ -2,11 +2,11 @@
 import React from 'react'
 import * as bootstrap from 'bootstrap'
 import Reintegro from './Reintegro/Reintegro'
-import TiempoEspera from './TiempoEspera/TiempoEspera'
 import Extraccion from './Extraccion/Extraccion'
+import ViajeroReintegro from './ViajeroReintegro/ViajeroReintegro'
 
 
-export default function Calculadora() {
+export default function Calculadoras() {
   const triggerTabList = document.querySelectorAll('#myTab button')
   triggerTabList.forEach(triggerEl => {
     const tabTrigger = new bootstrap.Tab(triggerEl)
@@ -31,7 +31,7 @@ export default function Calculadora() {
               aria-controls='nav-home'
               aria-selected='true'
             >
-              Reintegro
+              Reintegro Km
             </button>
             <button
               className='nav-link custom'
@@ -43,7 +43,7 @@ export default function Calculadora() {
               aria-controls='nav-profile'
               aria-selected='false'
             >
-              Tiempo Espera/Trabajo
+              Viajero por Reintegro
             </button>
             <button
               className='nav-link custom'
@@ -76,7 +76,7 @@ export default function Calculadora() {
             aria-labelledby='nav-profile-tab'
             tabIndex='0'
           >
-            <TiempoEspera />
+            <ViajeroReintegro />
           </div>
           <div
             className='tab-pane fade'
