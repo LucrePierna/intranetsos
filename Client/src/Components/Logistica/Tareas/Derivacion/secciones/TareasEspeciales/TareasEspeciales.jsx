@@ -97,7 +97,7 @@ export default function TareasEspeciales() {
                     <div class="tab-content " id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-camintransitable" role="tabpanel" aria-labelledby="nav-camintransitable-tab" tabindex="0">
                             <h1><u>¿Qué es un camino Intransitable?</u></h1>
-                            <p>Los mismos se encuentran marcados a través del mapa Mapsource, señalizado con verde flúor.</p>
+                            <p>Los mismos se encuentran marcados a través del mapa Map Source, señalizado con verde flúor.</p>
                             <ul className='text-start'>Pueden estar compuestos por:
                                 <li>Pendientes peligrosas.</li>
                                 <li>Curvas de visibilidad reducida. </li>
@@ -109,7 +109,7 @@ export default function TareasEspeciales() {
                         <div class="tab-pane fade" id="nav-infcliente" role="tabpanel" aria-labelledby="nav-infcliente-tab" tabindex="0">
                             <ul className='text-start'>
                                 <li>Estos caminos se encuentran excluidos del servicio, no obstante, se consultará con el prestador sobre la accesibilidad del mismo y luego de ello se notificará la posibilidad de coordinar la asistencia.</li>
-                                <li>Ante disconformidad del cliente con el punto,se podrá informar que estos caminos no pertenecen a la red de tránsito pesado y que, si bien podría suceder que un vehículo liviano pueda acceder, debe considerar que las grúas son vehículos pesados, que deberá realizar dicho tramo cargado y que ello conlleva riesgos.</li>
+                                <li>Ante disconformidad del cliente con el punto, se podrá informar que estos caminos no pertenecen a la red de tránsito pesado y que, si bien podría suceder que un vehículo liviano pueda acceder, debe considerar que las grúas son vehículos pesados, que deberá realizar dicho tramo cargado y que ello conlleva riesgos.</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade text-start px-5" id="nav-posibprest" role="tabpanel" aria-labelledby="nav-posibprest-tab" tabindex="0">
@@ -120,7 +120,7 @@ export default function TareasEspeciales() {
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
-                            <p className='mt-2 px-5'>Si el cliente solicitara la alternativa del reintegro, el operador informara que podrá acceder al reintegro del servicio solo por los kilómetros de ruta transitable o en buen estado, de acuerdo a la calduladora de reintegro. El servicio, en caso de utilizarse esta opción, se debe cerrar por reintegro y referenciar lo anterior.</p>
+                            <p className='mt-2 px-5'>Si el cliente solicitara la alternativa del reintegro, el operador informará que podrá acceder al reintegro del servicio solo por los kilómetros de ruta transitable o en buen estado, de acuerdo a la calculadora de reintegro. El servicio, en caso de utilizarse esta opción, se debe cerrar por reintegro y referenciar lo anterior.</p>
                         </div>
                     </div>
                 </div>

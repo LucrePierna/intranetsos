@@ -61,7 +61,7 @@ export default function Trasvase() {
               <h3><u>Una vez analizado y corroborado los datos el operador consultará disponibilidad con las bases</u></h3>
               <ul>
                 <li>13191 - J & D SERVICIOS AMBIENTALES SRL = Llamado telefónico.</li>
-                <li>11620 - ASIST CARGO SA = por correo electronico.</li>
+                <li>11620 - ASIST CARGO SA = por correo electrónico.</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
