@@ -51,13 +51,19 @@ export default function Formato() {
                 resultadoCalculado -= cobertura;
                 detalleCalculoTexto += `Cobertura global: $${cobertura}\n`;
                 detalleCalculoTexto += `Restando cobertura del cliente: $${cobertura}\n`;
+            }  
+            if(tieneTopeDeCobertura){
+                setResultado(0)
+            }else{
+                setResultado(resultadoCalculado)
             }
+            setDetalleCalculo(detalleCalculoTexto)
         }
 
         resultadoCalculado = Math.max(resultadoCalculado, 0);
 
         if (resultadoCalculado === 0) {
-            detalleCalculoTexto += `Está cubierto para el cliente. Debe abonar cliente $${coberturaRestada}`;
+            detalleCalculoTexto += `Está cubierto para el cliente. `;
         } else {
             detalleCalculoTexto += `Restando la cobertura del cliente $${coberturaRestada}. Debe abonar cliente $${resultadoCalculado}`;
         }
@@ -71,7 +77,8 @@ export default function Formato() {
     const handleNoTieneTopeChange = (e) => {
         setTieneTopeDeCobertura(e.target.checked);
         if (e.target.checked) {
-            calcularResultado();
+            calcularResultado(0);
+            setDetalleCalculo('Esta cubierto para el cliente.')
         }
     }
 
@@ -81,7 +88,7 @@ export default function Formato() {
 
     return (
         <div className='d-flex flex-column calculadora'>
-            <h1>Calculadora de Viajero</h1>
+            <h1 className='text-center m-auto mb-3'>Calculadora de Viajero</h1>
             <input type="number" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
 
             <input type="text" name="precio" value={precio} onChange={handleInputChange} placeholder="Cargar precio en $" />

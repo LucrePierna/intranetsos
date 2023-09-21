@@ -15,9 +15,9 @@ function TiempoEspera() {
 
   return (
     <div className='container text-center mt-2 h-100 w-100 bg-secondary rounded-5 p-5'>
-      <h1>Calculadora de Tiempo de Espera</h1>
-      <div className='bg-dark border border-black rounded-2'>
-        <p>En tipo de producto seleccionar: </p>
+      <h1 className='text-center mt-3'>CALCULADORA DE TIEMPO DE ESPERA</h1>
+      <div className='bg-dark border border-black rounded-2 '>
+        <h1 className='text-center'>En tipo de producto seleccionar: </h1>
         <ul className='mt-2 list-unstyled text-center fs-bold'>
           <li>HORA DE ESPERA</li>
           <li>HORA DE TRABAJO</li>
@@ -37,7 +37,7 @@ function TiempoEspera() {
               marginTop: '10px',
               marginLeft: '5px',
             }}
-            
+
           />
         </label>
       </div>

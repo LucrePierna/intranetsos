@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ivaImagen from '../../../../Image/iva.png'
+import imgIva from '../../../../Image/Imagenes/iva.png'
 import './Extraccion.css'
 
 function Extraccion() {
@@ -61,7 +61,7 @@ function Extraccion() {
 
   return (
     <div className="container text-center mt-3 h-50 w-50 bg-secondary rounded-5 p-4">
-      <h1 className="text-center mt-3">Calculadora de Extracción</h1>
+      <h1 className="text-center my-3">CALCULADORA DE EXTRACCIÓN</h1>
       <div className='bg-dark border border-black rounded-2 p-2 mt-3'>
         <h2 className="fs-5"><b>Verificar Condición del IVA</b></h2>
         <p className="fs-6">
@@ -70,7 +70,7 @@ function Extraccion() {
         </p>
       </div>
       <div className='py-3'>
-        <img src={ivaImagen} alt="ivaImg" className="imgExtraccion" />
+        <img src={imgIva} alt="ivaImg" className="imgExtraccion" />
       </div>
       <div className="mt-3 py-2">
         <div className="form-check form-check-inline">

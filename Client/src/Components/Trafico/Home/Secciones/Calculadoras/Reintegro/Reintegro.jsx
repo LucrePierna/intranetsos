@@ -102,11 +102,11 @@ function Reintegro() {
   };
 
   return (
-    <div className="container text-center mt-5 py-3">
+    <div className="container text-center mt-2 py-3">
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className="bg-secondary rounded-5 p-4">
-            <h1>CALCULO DE REINTEGRO</h1>
+            <h1 className='text-center mt-3'>CALCULO DE REINTEGRO</h1>
             <p className="bg-danger text-white p-2 border border-danger label-style">
               <b>Importante!!</b> Recordar informar que debe ser una factura fiscal y el socio debe adjuntarla con sus datos bancarios en www.redsos.com.ar
             </p>
