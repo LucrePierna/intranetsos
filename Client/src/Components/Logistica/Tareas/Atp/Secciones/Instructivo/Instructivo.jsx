@@ -55,7 +55,7 @@ export default function Procedimientos() {
             Se deberá consultar el código del servicio y a que fecha corresponde. </p>
           <h1><u>Motivos de Contacto</u></h1>
           <div className='text-start d-flex flex-row mt-3 px-5'>
-            <ul className='px-5'>
+            <ul className='px-5 listaGral'>
               <li>Prestador informa tener disponibilidad.</li>
               <li>Prestador informa que el servicio fue finalizado. </li>
               <li>Uso de carros.</li>
@@ -63,7 +63,7 @@ export default function Procedimientos() {
               <li>Hora de espera.</li>
               <li>Modificación de origen/destino.</li>
             </ul>
-            <ul >
+            <ul className='listaGral'>
               <li>Móvil está junto al vehículo sólo. </li>
               <li>No puede realizar la asistencia.</li>
               <li>Estar en el lugar, pero no tiene capacidad operativa para realizar el servicio. </li>

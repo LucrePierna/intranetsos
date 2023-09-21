@@ -50,7 +50,7 @@ export default function Noticias() {
         <div className='col-md-12'>
           <div className='d-flex justify-content-center align-items-center'>
             <SearchBar onSearch={handleSearch} />
-            <button className='btn custom-button' onClick={handleRefresh}>
+            <button className='btn buttoNoticia' onClick={handleRefresh}>
               Actualizar
             </button>
           </div>

@@ -56,7 +56,7 @@ export default function Pesados() {
                 En este caso, para la derivación de camiones (pesados) por Compañía, los pasos a seguir son similares al de Terminales de camiones; con la diferencia que aquí no opera el área de SETA. Por lo tanto, es el mismo operador de logística el encargado de comenzar y culminar la derivación del mismo.
               </p>
               <h1><u>Las Compañías de Seguros que poseen radios para camiones son:</u></h1>
-              <ul className='list-unstyled'>
+              <ul className='list-unstyled listaGral'>
                 <li>Nación Seguros. </li>
                 <li>Provincias Seguros. </li>
                 <li>Santander, a través de Meridional Seguros.  </li>
@@ -124,7 +124,7 @@ export default function Pesados() {
               <p><u>Enviar vía mail al prestador</u> los datos del servicio, fotos y dimensiones de la unidad, solo en caso de camiones (con copia a derivación) y confirmar recepción con el prestador. Siempre dejar cargado en el servicio, las fotos de la unidad y captura de pantalla del envío del mail al prestador de consulta de disponibilidad y cotización para realizar asistencia con la respuesta de la confirmación del mismo. </p>
               <p><u>En caso de derivación de servicios de camiones, pedir autorización de la cotización a:</u> Supervisores de turno o Ejecutivo de Prestadores, dejando registro de la cotización informada por el prestador y quien Autoriza la misma. <br />
               En estos casos, se debe cargar el producto en el servicio, de la siguiente manera: </p>
-              <ul className='list-unstyled'>
+              <ul className='list-unstyled listaGral'>
                 <li>1- Se cargará este producto para cualquier servicio cuyo costo sea autorizado por fuera de la grilla del prestador.</li>
                 <li>2- El producto a cargar es " MOVIDA-AUT.ESPECIAL" </li>
                 <li>3- Cantidad de producto = 1 </li>

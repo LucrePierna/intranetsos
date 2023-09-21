@@ -52,7 +52,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-prioricoord" role="tabpanel" aria-labelledby="nav-prioricoord-tab" tabindex="0">
               <p>
                 Tanto para los servicios de mecánica ligera como de traslado, las prioridades para la coordinación son:</p>
-              <ul className='mt-2'>
+              <ul className='mt-2 listaGral'>
                 <li>Servicios con prioridad alta (personas en riesgo, zonas peligrosas, contención, VIP).</li>
                 <li>Terminales (vehículos de porte liviano).</li>
                 <li>Demora estimada.</li>
@@ -65,7 +65,7 @@ export default function Instructivo() {
               <p>
                 En las zonas determinadas, aquellos traslados que ingresen con diagnostico/falla eléctrica, de arranque, alternador o batería en general deberán ser sometidos al proceso de inducción a mecánica.  Consideraciones a tener en cuenta:
               </p>
-              <ul className='mt-2'>
+              <ul className='mt-2 listaGral'>
                 <li>La misma será realizada por el operador de ATP a prestadores o el operador encargado de la base según disponibilidad.   </li>
                 <li>Se deberá dejar registro en la planilla de inducciones.  </li>
                 <li>En los casos correspondiente, los operadores encargados de las bases deberán aguardar que se gestione la inducción antes de derivar el servicio.   </li>
@@ -97,7 +97,7 @@ export default function Instructivo() {
             <div class="tab-pane fade " id="nav-prioriasig" role="tabpanel" aria-labelledby="nav-prioriasig-tab" tabindex="0">
               <p>
                 La prioridad de asignación estará dada por el tipo de contrato que tenga el móvil. No obstante, se deberá tener en cuenta equiparar la cantidad de servicios entre todos los móviles que tengamos trabajando para evitar tener activos que no realicen ni uno solo.</p>
-              <ul className='mt-2'>
+              <ul className='mt-2 listaGral'>
                 <li>Contratados fijos.</li>
                 <li>Propios.</li>
                 <li>Eventuales.</li>
@@ -111,7 +111,7 @@ export default function Instructivo() {
                 <br />
                 <u>En ese caso, tener en cuenta lo siguiente:</u>
               </p>
-              <ul className='mt-2'>
+              <ul className='mt-2 listaGral'>
                 <li>Algunas “Zonas” de tráficos los móviles no cuentan con sistema GAP, por lo cual la derivación es telefónica o por mensajería y los servicios se trabajan de manera manual.  </li>
                 <li>Prioridades de coordinación.</li>
                 <li>Tipos de servicios (traslados, mecánicas y venta de baterías, relevamientos OSA, extracción).</li>
@@ -151,7 +151,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-llgdayfin" role="tabpanel" aria-labelledby="nav-llgdayfin-tab" tabindex="0">
               <p>
                 Es responsabilidad del operador controlar llegadas cuando se cumple el tiempo informado por el móvil y luego proceder con las finalizaciones de los servicios teniendo en cuenta lo siguiente:</p>
-              <ul className='mt-2'>
+              <ul className='mt-2 listaGral'>
                 <li><u>Móvil con GAP:</u> se puede ver la localización del móvil en el mapa del servicio correspondiente. Al derivarse un servicio bajo esta modalidad es el chofer quien asignara la llegada, cambiando el estado del servicio a “Llegada”. Si el móvil no pudiera efectuarlo informará al Operador de Tráfico, quien será responsable de asignarla manualmente. La misma operatoria se aplica para la finalización del servicio, debiendo utilizarse los motivos de cierre específicos para cada caso.   </li>
                 <li><u>Móvil Ficticio (sin geolocalización):</u> el servicio debe controlarse de manera manual (chat o llamada), tomando como referencia la demora informada por el chofer y realizar el control cuando se cumple la misma.   </li>
                 <li>En caso de derivarse el servicio a una base con sistema antiguo, el mismo pasará a otra pantalla desde la cual deberá realizarse el seguimiento y cumplimiento de la demora estimada.   </li>
@@ -161,7 +161,7 @@ export default function Instructivo() {
 
         </div>
         <div className="tab-pane fade text-start px-4 mt-4 lineaGeneral " id="nav-indgral" role="tabpanel" aria-labelledby="nav-indgral-tab" tabindex="0">
-          <ul className='mt-3'>
+          <ul className='mt-3 listaGral'>
             <li>Cuando se coordinen servicios con kilómetros que implique que el móvil salga de la zona del tráfico, se deberá intentar regresar el móvil cargado para optimizar el recurso. </li>
             <li>Cuando se presente la situación de tener varias solicitudes derivadas a un mismo prestador y no se pudieran asignar por no contar con más móviles ficticios nunca se deberá enviar el servicio a red nacional para asignarlo al prestador porque desaparece de la pantalla y peligra su falta de seguimiento y control. Los casos deberán quedar en el tráfico con la referencia correspondiente que indique qué prestador lo ha tomado, con qué demora, y asignarlo cuando se libere un ficticio.  </li>
             <li>Mientras que el sistema no permita programar, tampoco deberán quedar programados los servicios por referencias de operadores. Solo podrá programarse cuando quede con un prestador asignado o cuando se informen demoras condicionales sin horario especifico. </li>
@@ -172,7 +172,7 @@ export default function Instructivo() {
           <p> Se designarán operadores para realizar la tarea de ATP, deberán loguearse con un interno especifico que se encuentre habilitado para recibir las llamadas correspondientes.
             <br />
             Entre las tareas correspondientes, se detallan las siguientes: </p>
-          <ul className='mt-3'>
+          <ul className='mt-3 listaGral'>
             <li>Gestionar consultas de prestadores y de operadores de otras áreas.</li>
             <li>Administrar las anulaciones y consultas de demoras de servicios, con los operadores y/o directamente con los prestadores asignados al servicio.</li>
             <li>Realizar las contenciones e inducciones, cuando así se designase.</li>
@@ -181,7 +181,7 @@ export default function Instructivo() {
         <div className="tab-pane fade text-start px-4 mt-4 lineaGeneral" id="nav-inyfinturn" role="tabpanel" aria-labelledby="nav-inyfinturn-tab" tabindex="0">
           <p>
             Tanto al inicio como al final del día los Operadores de Tráfico deberán:</p>
-          <ul className='mt-3'>
+          <ul className='mt-3 listaGral'>
             <li>A primera hora de la mañana; chequear que no queden pendientes móviles activos y chats del turno anterior, comenzar a disparar las consultas y verificar las nóminas correspondientes, a fin de tener un panorama de disponibilidad con la que enfrentará el turno.    </li>
             <li>En cambios de turnos (medio día, intermedio, noche); pasar las novedades correspondientes de manera prolija al compañero/a que toma la posta y comienza a operar la zona, a fin de dejarlo informado de qué móviles tiene.  </li>
             <li>A última hora del día y a medida que se van cerrando los tráficos (exceptuando los que funcionen 24hs); archivar chats pendientes y dar de baja móviles, evitando que queden móviles activos durante la madrugada que en la práctica no están trabajando. </li>

@@ -44,7 +44,7 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-terrestre" role="tabpanel" aria-labelledby="nav-terrestre-tab" tabindex="0">
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puntos importantes.</u></h1>
                 <li>Origen en Uruguay.</li>
                 <li>Destino final en Argentina.</li>
@@ -54,7 +54,7 @@ export default function Instructivo() {
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
 
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Pasos fronterizos:</u></h1>
                 <li>Fray Bentos - Gualeguaychú.</li>
                 <li>Paysandú - Colon.</li>
@@ -63,7 +63,7 @@ export default function Instructivo() {
             </div>
             <div class="tab-pane fade" id="nav-Fluvial" role="tabpanel" aria-labelledby="nav-Fluvial-tab" tabindex="0">
               <h1 className='mt-3 fw-bold'>Los traslados se realizan por medio de Buque-Bus</h1>
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puntos importantes:</u></h1>
                 <li>Horario de salida en puerto y dársena.</li>
                 <li>Horario de llegada a destino en Pto. Madero.</li>
@@ -72,7 +72,7 @@ export default function Instructivo() {
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
 
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puertos:</u></h1>
                 <li>Colonia Sacramento (Acepta vehiculos con ruedas que no giren, cliente debe consultar con puerto).</li>
                 <li>Montevideo.</li>
@@ -97,7 +97,7 @@ export default function Instructivo() {
               </div>
             </div>
             <div class="tab-pane fade" id="nav-coordinacion" role="tabpanel" aria-labelledby="nav-coordinacion-tab" tabindex="0">
-              <ul>
+              <ul className='listaGral'>
                 <h1><u>Puntos importantes:</u></h1>
                 <li>Origen del servicio.</li>
                 <li>Paso fronterizo más próximo.</li>
@@ -159,7 +159,7 @@ export default function Instructivo() {
             <div class="tab-pane fade show active" id="nav-asistencia" role="tabpanel" aria-labelledby="nav-asistencia-tab" tabindex="0">
               <h1>La contraprestaciones son servicios solicitados por nuestros prestadores del extranjero a traves de correo electronico.</h1>
               <h1>El supervisor de turno asigna el tratamienco de la rpestacion a un Operador de Logistica, quien verificara el e-mail y realiza las siguientes tares:</h1>
-              <ul className='mt-3'>
+              <ul className='mt-3 listaGral'>
                 <li>Responder el correo informando se trabajara en el pedido y se enviara novedades.</li>
                 <li>Cargar el servicio en el sistema con el radio correspondiente al pestador.</li>
               </ul>
@@ -177,7 +177,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-andisp" role="tabpanel" aria-labelledby="nav-andisp-tab" tabindex="0">
               <h1><u>Análisis</u></h1>
               <p>El operador verificará que el pedido enviado por el correo tenga los datos necesarios para coordinar el servicio. Estos son:</p>
-              <ul className='mt-3'>
+              <ul className='mt-3 listaGral'>
                 <li>Datos del titular.</li>
                 <li>Datos del vehículo.</li>
                 <li>Teléfono de contacto.</li>

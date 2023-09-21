@@ -42,7 +42,7 @@ export default function Terminales() {
           <h3 className='fs-4'><ul>El Operador de Logística deberá buscar un prestador según el tipo de vehículo a asistir:</ul></h3>
           <p>Moto / Liviano / Liviano Excedido / Liviano Especial / Pesado categoría 1 / Pesado categoría 2 / Pesado categoría 3 / Bus</p>
           <h3 className='fs-4'>Aplica a todas aquellas Terminales Automotrices, siendo actualmente:</h3>
-          <ul className='list-unstyled text-center justify-content-center'>
+          <ul className='list-unstyled text-center justify-content-center listaGral'>
             <li>Mercedes Benz (autos, vans , sprinter, camiones) </li>
             <li>Iveco (camiones) </li>
             <li>Volkswagen (camiones o autos pedidos por la terminal) </li>
@@ -97,7 +97,7 @@ export default function Terminales() {
               <p><u>Enviar vía mail al prestador</u> los datos del servicio, fotos y dimensiones de la unidad, solo en caso de camiones (con copia a derivación) y confirmar recepción con el prestador. Siempre dejar cargado en el servicio, las fotos de la unidad y captura de pantalla del envío del mail al prestador de consulta de disponibilidad y cotización para realizar asistencia con la respuesta de la confirmación del mismo. </p>
               <p><u>En caso de derivación de servicios de camiones, pedir autorización de la cotización a:</u> Supervisores de turno o Ejecutivo de Prestadores, dejando registro de la cotización informada por el prestador y quien Autoriza la misma. <br />
               En estos casos, se debe cargar el producto en el servicio, de la siguiente manera: </p>
-              <ul className='list-unstyled'>
+              <ul className='list-unstyled listaGral'>
                 <li>1- Se cargará este producto para cualquier servicio cuyo costo sea autorizado por fuera de la grilla del prestador.</li>
                 <li>2- El producto a cargar es " MOVIDA-AUT.ESPECIAL" </li>
                 <li>3- Cantidad de producto = 1 </li>
@@ -122,13 +122,13 @@ export default function Terminales() {
             <div class="tab-pane fade px-3 mt-3" id="nav-motos" role="tabpanel" aria-labelledby="nav-motos-tab" tabindex="0">
               <p>En particular el operador deberá verificar que el prestador posea los sunchos y equipamiento necesario para poder asegurar la moto en la plancha. Se deberá enviar el formulario de carga y descarga “FL-10 Red Nacional – Traslado BMW / Ducati”. (FORMULARIO TRASLADO BMW poner link)</p>
               <h1><u>MOTOS BMW</u></h1>
-              <ul className='list-unstyled'>
+              <ul className='list-unstyled listaGral'>
                 <li>-El derivador debe enviar por mail el “formulario de traslado” al prestador. </li>
                 <li>-El prestador debe tomar fotografías y video (en lo posible) de la unidad. </li>
                 <li>-Prestador deberá completar formulario con el cliente en la  entrega y con el concesionario en el destino. </li>
               </ul>
               <h1><u>MOTOS DUCATI</u></h1>
-              <ul className='list-unstyled'>
+              <ul className='list-unstyled listaGral'>
                 <li>-No se envía formulario al prestador </li>
                 <li>-El prestador debe tomar fotografías y video (en lo posible) de la unidad. </li>
                 <li>-Se debe hacer firmar a cliente, en la planilla de solicitud de servicio las condiciones en que entrega su unidad al chofer de la grúa. Tanto así también en destino a la persona del concesionario encargada de recibir la unidad, como recibe la misma. </li>

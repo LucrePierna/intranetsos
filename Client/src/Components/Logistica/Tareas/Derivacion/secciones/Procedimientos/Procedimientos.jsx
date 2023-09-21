@@ -71,7 +71,7 @@ export default function Procedimientos() {
         <div className="tab-pane fade" id="nav-selecprest" role="tabpanel" aria-labelledby="nav-selecprest-tab" tabindex="0">
           <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
             <p className='mt-5 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
-            <ul className='text-start mt-3'>
+            <ul className='text-start mt-3 listaGral'>
               <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
               <li>Si se tuviese que buscar fuera del recorrido de se procede de la siguiente manera:
                 <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
@@ -91,7 +91,7 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-manual" role="tabpanel" aria-labelledby="nav-manual-tab" tabindex="0">
-              <ul className='lista'>
+              <ul className='lista listaGral'>
                 <li className='text-center justify-content-center '><h1> <u>Dictado telefónico</u></h1>
                   <p className='text-start'>Durante el llamado telefónico con el prestador por consulta de disponibilidad, el operador dictará los datos del servicio recorriendo cada pestaña sin olvidar informar código y cobertura completa.</p>
                 </li>
@@ -104,7 +104,7 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-automatica" role="tabpanel" aria-labelledby="nav-automatica-tab" tabindex="0">
-              <ul className='lista '>
+              <ul className='lista listaGral '>
                 <li className='text-center justify-content-center '><h1><u>Sistema</u></h1>
                   <p className='text-start'>Para las bases que cuentan con este sistema el operador deberá enviar los datos del servicio. De este modo la base deberá aceptar las condiciones del servicio para que queden asignados. El operador deberá informar telefónicamente al prestador la cobertura y las particularidades del servicio que puedan ser de relevancia (Estado de ruedas, personas que acompañan, etc.).</p>
                 </li>
@@ -139,7 +139,7 @@ export default function Procedimientos() {
               <p>Siempre que se tome contacto con el cliente se deberá confirmar la Cobertura de la Asistencia respetando el requisito correspondiente establecido en los <a href="https://redsos.sharepoint.com/sites/SGC/Documentos%20compartidos/Sistema%20de%20Gestion%20de%20Calidad/SGC/RS%20Requisitos%20del%20Servicio%20de%20Asistencia,Rev09.pdf" target='_blank'> <button type='button' class="customBTN mx-2">Requisitos del Servicio de Asistencia</button></a>, fundamentalmente el nombre de la persona con quién nos estamos comunicando y todo otro dato de importancia para el servicio en gestión.</p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-pagos" role="tabpanel" aria-labelledby="nav-pagos-tab" tabindex="0">
-              <ul className='text-start'>
+              <ul className='text-start listaGral'>
                 <li>En efectivo, se recordará al cliente que debe abonarlo al chofer de la grúa antes de cargar el vehículo para su traslado.</li>
                 <li>Link de pago, el cual será generado por cada derivador, a través de Astor, solicitándole los datos que el sistema requiera.</li>
                 <li>Pago al prestador, se podrá consultar con prestador posibilidad de realizar el cobro con tarjeta de crédito, débito o transferencia bancaria. En caso de aceptar, el prestador será responsable de coordinar el cobro contactando al cliente. Si surgiese alguna eventualidad o inconveniente en el cobro será responsable el prestador.   </li></ul>
@@ -147,7 +147,7 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <p className='text-start'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
-                <ul><u>El derivador deberá informar la gestión del reintegro:</u>
+                <ul className='listaGral'><u>El derivador deberá informar la gestión del reintegro:</u>
                   <li>Solicitar ticket o factura con validez fiscal.</li>
                   <li>Adjuntar comprobante en la página, redsos.com.ar, en la sección de Sugerencias y reclamos:
                     <div className='m-auto p-2'>
@@ -173,7 +173,7 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content m-auto" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3" id="nav-derivzn" role="tabpanel" aria-labelledby="nav-derivzn-tab" tabindex="0">
-              <ul className='text-start mt-4'>
+              <ul className='text-start mt-4 listaGral'>
                 <li>Es la operatoria que se utiliza para la coordinación de servicios cuando la demanda lo requiere y sea autorizado por el supervisor / back office de turno. El objetivo es en reducir los tiempos de espera del cliente optimizando los recursos y evitar el rellamado a las bases obteniendo información sobre la situación de cada una. </li>
                 <li>El operador que este asignado a esta tarea deberá marcar todos los servicios de la zona delimitada acordando la cantidad de prestadores a consultar y establecer una ruta acorde a la que recorre el prestador para pasar los servicios en conjunto.</li>
                 <li>Se deberá priorizar los servicios que se encuentren más demorados priorizando situación de ruta / tránsito y luego en domicilio respetando los tiempos de contención y registros.</li>

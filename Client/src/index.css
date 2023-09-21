@@ -1,9 +1,9 @@
+
+
 body,
 html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto Slab', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,7 +17,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin: auto;
   margin-top: 2rem;
 }
@@ -66,7 +66,7 @@ code {
   border-color: red;
 }
 
-.lineaGeneral{
+.lineaGeneral {
   border-top: 2px white solid;
 }
 
@@ -76,11 +76,10 @@ code {
   width: 100%;
   height: auto;
   margin: auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: row; 
-  justify-content: center; 
-  align-items: center; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -104,30 +103,31 @@ code {
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 2rem;
-    
+
   }
 }
+
 @media (min-width: 1280px) {
   .conteinerNav {
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 2rem;
-    
+
   }
 }
 
 .tab-pane {
-  padding: 1rem; 
-  margin: 0; 
+  padding: 1rem;
+  margin: 0;
 }
 
 .navConteiner {
   display: flex;
   flex-direction: column;
-  align-self: flex-start; 
+  align-self: flex-start;
   margin-left: 0;
   padding-left: 0;
- 
+
 }
 
 .titleNav {
@@ -157,15 +157,15 @@ code {
   margin: auto;
 }
 
-.mapaGeneral{
+.mapaGeneral {
   width: 70% !important;
   height: 70vh;
 }
 
 
-.responsiveImgGeneral{
-  max-width: 500px; 
-  height: 400px; 
+.responsiveImgGeneral {
+  max-width: 500px;
+  height: 400px;
   margin: auto;
 }
 
@@ -173,13 +173,13 @@ code {
 
 
 .responsiveImg {
-  max-width: 100%; 
-  height: 50vh; 
+  max-width: 100%;
+  height: 50vh;
 }
 
 .responsiveImgBateria {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -204,30 +204,34 @@ code {
 }
 
 .customBTN {
-  font-size: 16px; 
-  padding: 5px 5px; 
+  font-size: 16px;
+  padding: 5px 5px;
   margin-top: 5px;
-  background-color: #cb2128; 
-  color: #fff; 
-  border: none; 
-  border-radius: 10px; 
-  cursor: pointer; 
+  background-color: #cb2128;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .customBTN:hover {
-  background-color: #ce0606; 
+  background-color: #ce0606;
 }
 
 
 .customBTN a {
-  text-decoration: none; 
-  color: inherit; 
+  text-decoration: none;
+  color: inherit;
 }
 
-.logoTrafico{
+.logoTrafico {
   display: flex;
-  align-items: center; 
-  justify-content: flex-end; 
-  margin-right: 5px; 
-  padding-left: 10px; 
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+
+.listaGral {
+  font-size: 20px;
 }

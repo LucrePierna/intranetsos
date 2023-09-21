@@ -155,7 +155,7 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 " id="nav-contener" role="tabpanel" aria-labelledby="nav-contener-tab" tabindex="0">
-              <ul className='text-start'>
+              <ul className='text-start listaGral'>
                 <li>Servicio de Red Nacional.</li>
                 <li>Servicio de Tráficos Nacionales.</li>
                 <li>Servicio en Espera de Aceptación por Parte de Logistica.</li>
@@ -165,7 +165,7 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3 " id="nav-criticos" role="tabpanel" aria-labelledby="nav-criticos-tab" tabindex="0">
               <h1><u>Clientes en Tránsito o Ruta que Contemplen</u></h1>
-              <ul className='text-start'>
+              <ul className='text-start listaGral'>
                 <li>Servicios con Niños o Mujeres Embarazadas.</li>
                 <li>Personas de Riesgo o con Discapacidad.</li>
                 <li>Zonas de Riesgo Como Zonas Peligrosas o Asentamientos.</li>
@@ -186,7 +186,7 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-comunicacion" role="tabpanel" aria-labelledby="nav-comunicacion-tab" tabindex="0">
-              <ul className='text-start'>
+              <ul className='text-start listaGral'>
                 <li>Escuchar al cliente, la indagación es clave.</li>
                 <li>Realizar preguntas cerradas (posibles respuestas sí/no).</li>
                 <li>Siempre ofrecer de manera escalonada con alternativas coherentes.</li>
