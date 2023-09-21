@@ -131,10 +131,10 @@ export default function Calculadora({ resultado }) {
               />
             </div>
             <div className='form-group mt-3'>
-              <button className='btn btn-dark btnGroup' onClick={handleCopyClick}>
+              <button className='btn btn-dark btnGroup' type='button' onClick={handleCopyClick}>
                 {copied ? 'Copiado' : 'Copiar'}
               </button>
-              <button className='btn btn-dark btnGroup' onClick={handleReset}>
+              <button className='btn btn-dark btnGroup' type='button' onClick={handleReset}>
                 Restablecer
               </button>
             </div>
