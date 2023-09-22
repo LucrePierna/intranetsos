@@ -1,62 +1,64 @@
-import React, { useState } from "react";
-import imgIva from '../../../../Image/Imagenes/iva.png'
-import './Extraccion.css'
+import React, { useState } from 'react';
+import ivaImagen from '../../../../Image/Imagenes/iva.png'
 
 function Extraccion() {
-  const [monto, setMonto] = useState(0);
-  const [iva, setIva] = useState(false);
+  const [tipoResponsable, setTipoResponsable] = useState('responsableInscripto');
+  const [importeCotizado, setImporteCotizado] = useState(0);
+  const [coberturaCliente, setCoberturaCliente] = useState(0);
+  const [resultado, setResultado] = useState(null);
+  const [mensajeCubierto, setMensajeCubierto] = useState(null);
 
-  const handleCalcular = () => {
-    const cotizado = parseFloat(document.getElementById("cotizado").value);
-    const cobertura = parseFloat(document.getElementById("cobertura").value);
+  const handleTipoResponsableChange = (event) => {
+    setTipoResponsable(event.target.value);
+  };
 
-    // Utiliza el valor actualizado de iva
-    if (iva) {
-      if (cobertura * 0.0001 > cotizado * 0.0001) {
-        setMonto(cotizado);
-        document.getElementById("resultado").style.color = "white";
-        document.getElementById("resultado").innerHTML =
-          "IMPORTE CORREGIDO: $" +
-          Math.round(monto) +
-          "<br/>-El socio no debe abonar nada-";
+  const handleImporteCotizadoChange = (event) => {
+    setImporteCotizado(parseFloat(event.target.value));
+  };
+
+  const handleCoberturaClienteChange = (event) => {
+    setCoberturaCliente(parseFloat(event.target.value));
+  };
+
+  const calcularValor = () => {
+    if (tipoResponsable === 'responsableInscripto') {
+      const iva = 0.21;
+      let valorFinal = 0;
+
+      if (importeCotizado > coberturaCliente) {
+        valorFinal = importeCotizado - (coberturaCliente * (1 + iva));
       } else {
-        setMonto(cobertura);
-        document.getElementById("resultado").style.color = "white";
-        document.getElementById("resultado").innerHTML =
-          "IMPORTE CORREGIDO: $" +
-          Math.round(monto) +
-          "<br/>-El socio debe abonar: $" +
-          (cotizado - cobertura) +
-          "-";
+        valorFinal = (importeCotizado * (1 - iva)) - coberturaCliente;
+      }
+
+      if (valorFinal <= 0) {
+        setResultado(0);
+        setMensajeCubierto('CUBIERTO PARA CLIENTE');
+      } else {
+        setResultado(valorFinal);
+        setMensajeCubierto(null);
       }
     } else {
-      // Utiliza el valor actualizado de iva en lugar de verificar nuevamente
-      calculo(cotizado, cobertura, iva);
+      const valorFinal = importeCotizado - coberturaCliente;
+
+      if (valorFinal <= 0) {
+        setResultado(0);
+        setMensajeCubierto('CUBIERTO PARA CLIENTE');
+      } else {
+        setResultado(valorFinal);
+        setMensajeCubierto(null);
+      }
     }
   };
 
-  const calculo = (cotizado, cobertura, iva) => {
-    if (cobertura * 0.0001 > cotizado * 0.0001) {
-      setMonto(cotizado / 1.21);
-      document.getElementById("resultado").style.color = "white";
-      document.getElementById("resultado").innerHTML =
-        "IMPORTE CORREGIDO: $" +
-        Math.round(monto) +
-        "<br/>-El socio no debe abonar nada-";
-    } else {
-      setMonto(cobertura / 1.21);
-      document.getElementById("resultado").style.color = "white";
-      document.getElementById("resultado").innerHTML =
-        "IMPORTE CORREGIDO: $" +
-        Math.round(monto) +
-        "<br/>-El socio debe abonar: $" +
-        (cotizado - cobertura) +
-        "-";
-    }
-  };
 
-  const handleIvaChange = (e) => {
-    setIva(e.target.id === "monot");
+  const calcularImporteCorregido = () => {
+    if (tipoResponsable === 'responsableInscripto') {
+      const iva = 0.21;
+      const importeCorregido = importeCotizado - (importeCotizado * iva);
+      return importeCorregido.toFixed(1);
+    }
+    return importeCotizado.toFixed(1);
   };
 
   return (
@@ -70,53 +72,54 @@ function Extraccion() {
         </p>
       </div>
       <div className='py-3'>
-        <img src={imgIva} alt="ivaImg" className="imgExtraccion" />
+        <img src={ivaImagen} alt="ivaImg" className="imgExtraccion" />
       </div>
-      <div className="mt-3 py-2">
+      <div>
         <div className="form-check form-check-inline">
           <label className="form-check-label">
-            <div className="custom-checkbox">
-              Responsable Incripto
-              <input
-                type="checkbox"
-                id="respit"
-                checked={!iva}
-                onChange={handleIvaChange}
-              />
-              <span className="checkmark"></span>
-            </div>
+            <input
+              type="radio"
+              name="tipoResponsable"
+              value="responsableInscripto"
+              checked={tipoResponsable === 'responsableInscripto'}
+              onChange={handleTipoResponsableChange}
+              className='mx-1 '
+              style={{ backgroundColor: tipoResponsable === 'responsableInscripto' ? 'red' : 'transparent' }}
+            />
+            Responsable Inscripto
           </label>
-          <label className="form-check-label mx-3">
-            <div className="custom-checkbox">
-              Monotributista
-              <input
-                type="checkbox"
-                id="monot"
-                checked={iva}
-                onChange={handleIvaChange}
-              />
-              <span className="checkmark"></span>
-            </div>
+        </div>
+        <div className="form-check form-check-inline">
+          <label className="form-check-label">
+            <input
+              type="radio"
+              name="tipoResponsable"
+              value="monotributista"
+              checked={tipoResponsable === 'monotributista'}
+              onChange={handleTipoResponsableChange}
+              className='mx-1'
+              style={{ backgroundColor: tipoResponsable === 'monotributista' ? 'red' : 'transparent' }}
+            />
+            Monotributista
           </label>
         </div>
       </div>
       <div className="d-flex flex-column">
-        <label className="mx-4">
+        <label className="mx-4 mt-3 fw-bold">
           Importe Cotizado:
-          <input
-            id="cotizado"
-            type="text"
-            className="inputCustom" />
         </label>
-        <label className="mt-3">
-          Cobertura del cliente:
-          <input
-            id="cobertura"
-            type="text"
-            className="input-custom" />
+        <input type="number" value={importeCotizado} onChange={handleImporteCotizadoChange} className="inputCustom" />
+        <label className="mt-3 fw-bold">
+          Cobertura de Cliente:
         </label>
+        <input type="number" value={coberturaCliente} onChange={handleCoberturaClienteChange} className="input-custom" />
         <div className="mt-3">
-          <button className="btn btn-danger buttonExt" onClick={handleCalcular}>Calcular</button>
+          <button className="btn btn-danger buttonExt" onClick={calcularValor}>Calcular</button>
+        </div>
+        <div>
+          {resultado !== null && <h2 className="my-3 text-bg-danger">IMPORTE CORREGIDO: ${calcularImporteCorregido()}</h2>}
+          {resultado !== null && <h2 className="my-3 text-bg-danger">CLIENTE DEBE ABONAR: ${resultado}</h2>}
+          {mensajeCubierto && <p className="text-center text-bg-success">{mensajeCubierto}</p>}
         </div>
       </div>
     </div>
