@@ -30,6 +30,13 @@ function Extraccion() {
         valorFinal = importeCotizado - (coberturaCliente * (1 + iva));
       } else {
         valorFinal = (importeCotizado * (1 - iva)) - coberturaCliente;
+
+        // Agregamos la corrección del mensaje aquí
+        if (valorFinal <= 0) {
+          setResultado(0);
+          setMensajeCubierto('CUBIERTO PARA CLIENTE');
+          return;
+        }
       }
 
       if (valorFinal <= 0) {
@@ -52,14 +59,15 @@ function Extraccion() {
     }
   };
 
-
   const calcularImporteCorregido = () => {
     if (tipoResponsable === 'responsableInscripto') {
       const iva = 0.21;
-      const importeCorregido = importeCotizado - (importeCotizado * iva);
-      return importeCorregido.toFixed(1);
+      const importeCorregido = (importeCotizado - importeCotizado * iva).toFixed(0);
+      return importeCorregido;
+    } else {
+      const importeCorregido = (coberturaCliente - coberturaCliente * 0.21).toFixed(0);
+      return importeCorregido;
     }
-    return importeCotizado.toFixed(1);
   };
 
   return (
