@@ -29,8 +29,6 @@ export default function Instructivo() {
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto " id="nav-tabContent">
         <div className="tab-pane fade show active lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
-          <p>La modalidad se brinda a todos los vehículos que se encuentren ... El traslado se realiza para las categorías de liviano, liviano excedido y liviano especial. Se requiere un control y seguimiento continuo hasta la entrega de la unidad.</p>
-
           <h1><u>Objetivos</u></h1>
           <ul className=' listaGral'>
             <li>Tener mayor disponibilidades en la zona de mayor demanda para servicios en zona.</li>
