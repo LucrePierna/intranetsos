@@ -71,7 +71,7 @@ export default function TareasEspeciales() {
                             <li>Verificar si hay bases disponibles en la localidad que el cliente se encuentre, de ser así brindar los datos del prestador para que el cliente saque turno y asista al lugar.</li>
                             <li>En caso de no existir bases o que el cliente no acepte ir al lugar indicado por nosotros, se le brindará el servicio por reintegro.</li>
                         </ul>
-                        <h1><u>Debemos informar al cliente (según cuadro):</u></h1>
+                        <h1><u>Debemos informar al cliente:</u></h1>
                         <ul className='mt-2 text-start listaGral'>
                             <li>Dirección del prestador.</li>
                             <li>Teléfonos para pedir turnos.</li>
