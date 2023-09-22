@@ -142,6 +142,7 @@ export default function Instructivo() {
             <div class="tab-pane fade" id="nav-tdfuego" role="tabpanel" aria-labelledby="nav-tdfuego-tab" tabindex="0">
               <h1><u>Servicio que vienen hacia o desde Tierra del Fuego</u></h1>
               <p>Los prestadores que pueden cruzar por chile para dirigirse a Tierra del Fuego cuentan con un permiso especial y realizan trámites los cuales tienen costo y son a cargo del cliente.</p>
+              <h3 className='fs-6 fw-bold'>LOS MONTOS SON A MODO DE EJEMPLO, SE DEBE SIEMPRE CONSULTAR CON EL PRESTADOR YA QUE LOS MISMOS PUEDEN VARIAR</h3>
               <img src={imagenCostos} alt="costosDeEjemplo" className='responsiveImgGeneral' />
             </div>
           </div>
