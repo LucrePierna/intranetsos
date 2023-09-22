@@ -32,7 +32,8 @@ export default function Formato() {
 
         if (tieneIVA) {
             resultadoCalculado *= 1.21;
-            detalleCalculoTexto += '+ IVA\n';
+            detalleCalculoTexto += ` + IVA = $${resultadoCalculado}   `
+            
         } else {
             detalleCalculoTexto += 'Sin IVA\n';
         }
@@ -46,19 +47,11 @@ export default function Formato() {
                 resultadoCalculado -= coberturaTotal;
                 detalleCalculoTexto += `Cobertura por persona: $${cobertura}\n`;
                 detalleCalculoTexto += `Personas: ${personas}\n`;
-                detalleCalculoTexto += `Restando cobertura del cliente: $${coberturaTotal}\n`;
             } else if (!esPorPersona && cobertura) {
                 coberturaRestada = cobertura;
                 resultadoCalculado -= cobertura;
                 detalleCalculoTexto += `Cobertura global: $${cobertura}\n`;
-                detalleCalculoTexto += `Restando cobertura del cliente: $${cobertura}\n`;
             }
-            if (tieneTopeDeCobertura) {
-                setResultado(0)
-            } else {
-                setResultado(resultadoCalculado)
-            }
-            setDetalleCalculo(detalleCalculoTexto)
         }
 
         resultadoCalculado = Math.max(resultadoCalculado, 0);
