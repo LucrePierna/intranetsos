@@ -4,63 +4,59 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from 
 
 export default function Agenda() {
 
+  const dataPart1 = [
+    { nombre: "Supervisor Logística", numero: "3500" },
+    { nombre: "Tráfico Nacional", numero: "9750" },
+    { nombre: "Tráfico Local", numero: "9700" },
+    { nombre: "Supervisor Tráfico", numero: "3800" },
+    { nombre: "CAT", numero: "98009" },
+  ];
+
+  const dataPart2 = [
+    { nombre: "Chat CAT PIPE", numero: "3512002585" },
+    { nombre: "Chattigo (Para Prestadores)", numero: "1128080012" },
+    { nombre: "Atención a Prestadores", numero: "08108101234" },
+    { nombre: "Soporte Gap", numero: "0351-4858393 / 011-48358191 op.2" },
+    { nombre: "At. a Moviles/Prestadores", numero: "9600" },
+    { nombre: "Contención", numero: "3220" },
+    { nombre: "Hogar", numero: "9790" },
+    { nombre: "Guardia sistemas", numero: "3515121692" },
+  ];
+
   return (
-    <div className="container mt-5 h-50 w-50">
+    <div className="container mt-5 h-100 w-100">
       <div className="row justify-content-center">
-        <div className="col-md-6">
-          <Table aria-label="Example static collection table">
+        <div className="d-flex flex-row col-md-4">
+          <Table aria-label="Tabla 1" >
             <TableHeader>
-              <TableColumn className="border border-dark bg-danger text-light">ROTATIVOS</TableColumn>
-              <TableColumn className="border border-dark bg-danger text-light">INTERNO</TableColumn>
+              <TableColumn className="border border-dark bg-danger text-light">Area/Nombre</TableColumn>
+              <TableColumn className="border border-dark bg-danger text-light">INTERNO/Nro</TableColumn>
             </TableHeader>
-            <TableBody >
-              <TableRow key="1" className="border border-dark bg-light text-black">
-                <TableCell>Supervisor Logística</TableCell>
-                <TableCell>3500</TableCell>
-              </TableRow>
-              <TableRow key="2" className="border border-dark bg-light text-black">
-                <TableCell>Tráfico Nacional</TableCell>
-                <TableCell>9750</TableCell>
-              </TableRow>
-              <TableRow key="3" className="border border-dark bg-light text-black">
-                <TableCell>Tráfico Local</TableCell>
-                <TableCell>9700</TableCell>
-              </TableRow>
-              <TableRow key="4" className="border border-dark bg-light text-black">
-                <TableCell>Supervisor Tráfico</TableCell>
-                <TableCell>3800</TableCell>
-              </TableRow>
-              <TableRow key="5" className="border border-dark bg-light text-black">
-                <TableCell>CAC</TableCell>
-                <TableCell>98008</TableCell>
-              </TableRow>
-              <TableRow key="6" className="border border-dark bg-light text-black">
-                <TableCell>Chat CAC PIPE</TableCell>
-                <TableCell>1128080012</TableCell>
-              </TableRow>
-              <TableRow key="7" className="border border-dark bg-light text-black">
-                <TableCell>Chattigo(Para Prestadores)</TableCell>
-                <TableCell>3512002585</TableCell>
-              </TableRow>
-              <TableRow key="8" className="border border-dark bg-light text-black">
-                <TableCell>Atención a Prestadores</TableCell>
-                <TableCell>08108101234</TableCell>
-              </TableRow>
-              <TableRow key="9" className="border border-dark bg-light text-black">
-                <TableCell>Soporte Gap</TableCell>
-                <TableCell>9600</TableCell>
-              </TableRow>
-              <TableRow key="10" className="border border-dark bg-light text-black">
-                <TableCell>Contención</TableCell>
-                <TableCell>3220</TableCell>
-              </TableRow>
-              <TableRow key="11" className="border border-dark bg-light text-black">
-                <TableCell>Hogar</TableCell>
-                <TableCell>9790</TableCell>
-              </TableRow>
+            <TableBody className='d-flex flex-column'>
+              {dataPart1.map((item, index) => (
+                <TableRow key={index} className="border border-dark bg-light text-black">
+                  <TableCell>{item.nombre}</TableCell>
+                  <TableCell>{item.numero}</TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
-
+        </div>
+        <div className="d-flex flex-row col-md-6">
+          <Table aria-label="Tabla 2">
+            <TableHeader>
+              <TableColumn className="border border-dark bg-danger text-light">Area/Nombre</TableColumn>
+              <TableColumn className="border border-dark bg-danger text-light">INTERNO/Nro</TableColumn>
+            </TableHeader>
+            <TableBody className='d-flex flex-column'>
+              {dataPart2.map((item, index) => (
+                <TableRow key={index} className="border border-dark bg-light text-black">
+                  <TableCell>{item.nombre}</TableCell>
+                  <TableCell>{item.numero}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
       </div>
     </div>

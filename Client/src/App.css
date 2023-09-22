@@ -2,7 +2,10 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #7f8492, #aeb1b6); 
+  background-image: url('../public/FondoPages.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color:white;
   margin: 0;
   padding: 0;
