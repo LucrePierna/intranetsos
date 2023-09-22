@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './image/logo-operaciones.png'
+import logo from './image/LOG_IntraOper_mixto.png'
 import './Landing.css'
 
 
