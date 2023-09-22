@@ -46,7 +46,7 @@ export default function Instructivo() {
             </div>
             <div class="tab-pane fade" id="nav-acepyrech" role="tabpanel" aria-labelledby="nav-acepyrech-tab" tabindex="0">
               <p>
-                Al ingresar un servicio en la pantalla del tráfico deberá ser aceptado o rechazado por el operador, esto dependerá de si cumple las condiciones para ser trabajado o no. En caso de ser rechazado, tendrá que quedar en la pantalla del F10, para ser revisado.
+                Al ingresar un servicio en la pantalla del tráfico deberá ser aceptado o rechazado por el operador, esto dependerá de si cumple las condiciones para ser trabajado o no. En caso de ser rechazado, especificar en el servicio el motivo del mismo y tendrá que quedar en la pantalla del F10, para ser revisado.
               </p>
             </div>
             <div class="tab-pane fade" id="nav-prioricoord" role="tabpanel" aria-labelledby="nav-prioricoord-tab" tabindex="0">

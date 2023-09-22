@@ -24,22 +24,52 @@ export default function TareasEspeciales() {
             </nav>
             <div className="h-100 w-100 tab-content px-3 m-auto h-50 w-70" id="nav-tabContent">
                 <div className="tab-pane fade show active " id="nav-cerrajeria" role="tabpanel" aria-labelledby="nav-cerrajeria-tab" tabindex="0">
-                    <div class="tab-content lineaGeneral  " id="nav-tabContent">
-                        <p className='mt-5'>Es un servicio especial por el cual se coordina la apertura del vehículo cuando la grilla del cliente así lo indique. El cliente deberá siempre acreditar la identidad y la titularidad del vehículo mediante una de las siguientes posibilidades: cédula verde, cédula azul, título de propiedad, exposición policial autorizante de la apertura.</p>
-                        <h1><u>Tipo de coberturas</u></h1>
-                        <ul className='mt-2 text-start listaGral'>
-                            <li>Si posee, (en determinadas circunstancias): la grilla brinda el servicio de apertura siempre y cuando existan las circunstancias que indica. Por ejemplo: si la grilla informa que NO se brinda el servicio en caso de robo o hurto de las llaves, debemos consultar al cliente si esto ocurrió, y si así fue, no tendrá el servicio. Puede ser con o sin tope.</li>
-                            <li>Si posee: la grilla brinda el servicio de apertura, sin exigir que se den determinadas circunstancias. Puede ser con o sin tope.</li>
-                            <li>No posee: En cuyo caso se le informará al cliente que debe hacer la apertura por sus medios.  </li>
-                        </ul>
-                        <h1><u>Selección de prestador</u></h1>
-                        <p>El Operador de Logística deberá verificar la disponibilidad de prestadores de cerrajería en la zona que se encuentra el cliente. Se procederá de la siguiente manera:</p>
-                        <ul className='mt-2 text-start listaGral'>
-                            <li>Coordinar el servicio con un prestador de asistencia al hogar. Se deberá contactar al prestador de la localidad o zona aledaña de asistencia al hogar y derivarle el servicio para que envíen un cerrajero, evaluando de esta manera la posibilidad de realizar la apertura del vehículo.</li>
-                            <li>No deberá informar cobertura al prestador, el mismo nos brindará un presupuesto en base al trabajo a realizar el cual deberá autorizarlo un supervisor o B.O.</li>
-                        </ul>
-                        <h1><u>CERRAJERÍA, con necesidad de traslado.</u></h1>
-                        <p>Estos casos se dan cuando el cliente perdió las llaves del vehículo, por lo cual, a pesar de hacer la apertura, también va a requerir traslado. O en caso de no poder efectuarse la apertura del vehículo.</p>
+                    <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                            <button class="nav-link sub active" id="nav-condiciones-tab" data-bs-toggle="tab" data-bs-target="#nav-condiciones" type="button" role="tab" aria-controls="nav-condiciones" aria-selected="true">Condiciones</button>
+                            <button class="nav-link sub" id="nav-selecprest-tab" data-bs-toggle="tab" data-bs-target="#nav-selecprest" type="button" role="tab" aria-controls="nav-selecprest" aria-selected="false">Selección de Prestador</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content " id="nav-tabContent">
+                        <div className="tab-pane fade show active" id="nav-condiciones" role="tabpanel" aria-labelledby="nav-condiciones-tab" tabindex="0">
+                            <p> Se coordina la apertura del vehículo, cuando las llaves del mismo sean extraviadas/robadas o quedasen dentro, Siempre y cuando este contemplado por la póliza, se deberá abrir grilla y verificar cobertura de " cerrajería ".</p>
+                            <div className='d-flex flex-row justify-content-center'>
+                                <div className='d-flex flex-column px-5 py-2 text-center justify-content-center'>
+                                    <h3 className='text-start'>Acreditacion de Indentidad</h3>
+                                    <ul className='listaTE'>
+                                        <li>Registro de Conducir</li>
+                                        <li>D.N.I</li>
+                                        <li>Cedula Verde</li>
+                                        <li>Pasaporte</li>
+                                    </ul>
+                                </div>
+                                <div className='d-flex flex-column px-5 py-2 text-center justify-content-center'>
+                                    <h3 className='text-start'>Acreditación de Titularidad</h3>
+                                    <ul className='listaTE'>
+                                        <li >Titulo de Propiedad</li>
+                                        <li>Tarjeta Verde</li>
+                                        <li>Tarjeta Azul</li>
+                                        <li>Póliza Original</li>
+                                        <li>Exposición Policial</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>Algunas Compañías cubren totalmente y otras parcialmente este tipo de asistencia</p>
+                            <p><u>Si posee</u>: la grilla brinda el servicio de apertura, sin exigir que se den determinadas circunstancias. Puede ser con o sin tope </p>
+                            <p><u>Si posee(según circunstancias)</u>:si la grilla informa que NO se brinda el servicio en caso de robo o hurto de las llaves, debemos consultar al cliente si esto ocurrió, y si así fue, no tendrá el servicio. </p>
+                            <p><u>No posee</u>: En cuyo caso se le informará al cliente que debe hacer la apertura por sus medios.</p>
+                            <p><b> No se consideran servicio de cerrajería cuando la llave está decodificada (no reconoce el código y por ende no arranca el vehículo), tampoco las fallas vinculadas al tambor de arranque, ambas fallas no requieren apertura.</b></p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-selecprest" role="tabpanel" aria-labelledby="nav-selecprest-tab" tabindex="0">
+                            <p>Consultar con un prestador de la red de vehículos si puede coordinar el envío de un cerrajero para que realice la apertura del vehículo.<br />
+                                En el caso que éste pueda gestionar el servicio de cerrajería, deberá informar el costo del mismo para que sea autorizado por un Supervisor de Logística o Back Office. <br /></p>
+                            <h1><u>MODALIDAD PAGO ANTICIPADO</u></h1>
+                            <p>Es una opción que se brinda al prestador en ocasiones eventuales, donde podrá recibir el pago por fuera de los circuitos habituales, en un menor tiempo (generalmente entre 7 y 10 días hábiles) previamente observado con un supervisor/back office.<br />
+                                Una vez finalizado el servicio, el prestador debe comunicarlo a nuestra área para que se gestione el mismo por un Supervisor el cual debe enviar e-mail al mismo detallando código del servicio y base del prestador.</p>
+
+                            <h1><u>REINTEGRO</u></h1>
+                            <p>En caso de brindar servicio por reintegro,indicara tope del mismo.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="tab-pane fade " id="nav-extraccion" role="tabpanel" aria-labelledby="nav-extraccion-tab" tabindex="0">
@@ -125,6 +155,6 @@ export default function TareasEspeciales() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
