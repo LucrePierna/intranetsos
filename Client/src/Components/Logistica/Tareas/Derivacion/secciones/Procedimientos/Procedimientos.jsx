@@ -31,7 +31,7 @@ export default function Procedimientos() {
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Inicial</button>
           <button className="nav-link custom" id="nav-selecprest-tab" data-bs-toggle="tab" data-bs-target="#nav-selecprest" type="button" role="tab" aria-controls="nav-selecprest" aria-selected="false">Selección de prestador</button>
           <button className="nav-link custom" id="nav-tipoasig-tab" data-bs-toggle="tab" data-bs-target="#nav-tipoasig" type="button" role="tab" aria-controls="nav-contipoasigtact" aria-selected="false">Tipos de asignaciones</button>
-          <button className="nav-link custom" id="nav-cierre-tab" data-bs-toggle="tab" data-bs-target="#nav-cierre" type="button" role="tab" aria-controls="nav-cierre" aria-selected="false">Cierre</button>
+          <button className="nav-link custom" id="nav-devolucion-tab" data-bs-toggle="tab" data-bs-target="#nav-devolucion" type="button" role="tab" aria-controls="nav-devolucion" aria-selected="false">Devolución al cliente</button>
           <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
         </div>
       </nav>
@@ -118,7 +118,7 @@ export default function Procedimientos() {
             </div>
           </div>
         </div>
-        <div className="tab-pane fade text-start py-2" id="nav-cierre" role="tabpanel" aria-labelledby="nav-cierre-tab" tabIndex="0">
+        <div className="tab-pane fade text-start py-2" id="nav-devolucion" role="tabpanel" aria-labelledby="nav-devolucion-tab" tabIndex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-progsvc-tab" data-bs-toggle="tab" data-bs-target="#nav-progsvc" type="button" role="tab" aria-controls="nav-progsvc" aria-selected="true">Programación del Servicio</button>
