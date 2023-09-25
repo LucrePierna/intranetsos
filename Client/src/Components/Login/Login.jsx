@@ -2,26 +2,24 @@ import {
     ClerkProvider,
     SignedIn,
     SignedOut,
-    UserButton,
-    useUser,
-    RedirectToSignIn,
-} from "@clerk/clerk-react";
+    SignIn,
+} from '@clerk/clerk-react'
+import React from 'react';
+import Landing from '../Landing/Landing'
+
 
 export default function Login() {
-    if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
-        throw "Missing Publishable Key"
-    }
-
-    const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
+    const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY
 
     return (
         <ClerkProvider publishableKey={clerkPubKey}>
             <SignedIn>
-                <h1>Bienvenidos a Intranet Operaciones</h1>
+                <Landing />
             </SignedIn>
             <SignedOut>
-                <RedirectToSignIn />
+                <SignIn />
             </SignedOut>
         </ClerkProvider>
-    )
-}
+    );
+};
+
