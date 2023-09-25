@@ -125,6 +125,7 @@ export default function Procedimientos() {
               <button class="nav-link sub" id="nav-demsvc-tab" data-bs-toggle="tab" data-bs-target="#nav-demsvc" type="button" role="tab" aria-controls="nav-demsvc" aria-selected="false">Demora del Servicio</button>
               <button class="nav-link sub" id="nav-cttocl-tab" data-bs-toggle="tab" data-bs-target="#nav-cttocl" type="button" role="tab" aria-controls="nav-cttocl" aria-selected="false">Contacto con el Cliente</button>
               <button class="nav-link sub" id="nav-pagos-tab" data-bs-toggle="tab" data-bs-target="#nav-pagos" type="button" role="tab" aria-controls="nav-pagos" aria-selected="false">Pagos</button>
+              <button class="nav-link sub" id="nav-gestor-tab" data-bs-toggle="tab" data-bs-target="#nav-gestor" type="button" role="tab" aria-controls="nav-gestor" aria-selected="false">Gestor de Pago</button>
               <button class="nav-link sub" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Reintegro</button>
             </div>
           </nav>
@@ -144,6 +145,19 @@ export default function Procedimientos() {
                 <li>Link de pago, el cual será generado por cada derivador, a través de Astor, solicitándole los datos que el sistema requiera.</li>
                 <li>Pago al prestador, se podrá consultar con prestador posibilidad de realizar el cobro con tarjeta de crédito, débito o transferencia bancaria. En caso de aceptar, el prestador será responsable de coordinar el cobro contactando al cliente. Si surgiese alguna eventualidad o inconveniente en el cobro será responsable el prestador.   </li></ul>
               <h3 className='fs-3'><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h3>
+            </div>
+            <div class="tab-pane fade px-3 mt-3" id="nav-gestor" role="tabpanel" aria-labelledby="nav-gestor-tab" tabindex="0">
+              <p>En solapa 4 y sin dar en editar al servicio van a registrar en el recuadro de tarjeta de crédito el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
+                <b>*tienen que estar sumamente atentos a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)*</b> <br />
+                Una vez registrado el valor, van a hacer click en el cartelito azul<br />
+                Y allí los redirecciona al gestor de pagos. En esta primera solapa que abre registrarán los datos del titular de la tarjeta. Si el link el cliente lo quiere por WhatsAp si o si van a tener que solicitarle de igual manera una casilla de correo (esto es obligatorio ya que la factura se envía por este medio). Si el cliente informa que no tiene y no sabe ninguna de familiar ni nada, se registra la de "supervisoresderivacion@redsos.com.ar". <br />
+                Al dar click en siguiente nos habilita la pestaña para la facturación… <br />
+                - Si la factura va a nombre de la misma persona que la tarjeta deben dejar la tilde y les trae los datos antes escritos, solo van a tener que llenar el domicilio. <br />
+                - Si la factura va a nombre de otra persona o razón social retiran la tilde y llenan todos los campos. <br />
+                Cuando el cliente haya realizado el pago de adicional les va a aparecer en el servicio de la siguiente manera: <br />
+                (van a ver que el adicional es distinto porque el print es de un svc ya cobrado ya que el anterior fue cargado solo de prueba). <br />
+                Recuerden que el prestador no deberá salir hasta que dicho pago no se haya visto impactado en el servicio, para eso deberán a los 10 minutos revisar el servicio. Si pasado este tiempo no impactó, deben llamar al cliente para verificar si hay algún inconveniente.<br />
+              </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <p className='text-start'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
@@ -173,17 +187,83 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content m-auto" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3" id="nav-derivzn" role="tabpanel" aria-labelledby="nav-derivzn-tab" tabindex="0">
-              <ul className='text-start mt-4 listaGral'>
-                <li>Es la operatoria que se utiliza para la coordinación de servicios cuando la demanda lo requiere y sea autorizado por el supervisor / back office de turno. El objetivo es en reducir los tiempos de espera del cliente optimizando los recursos y evitar el rellamado a las bases obteniendo información sobre la situación de cada una. </li>
-                <li>El operador que este asignado a esta tarea deberá marcar todos los servicios de la zona delimitada acordando la cantidad de prestadores a consultar y establecer una ruta acorde a la que recorre el prestador para pasar los servicios en conjunto.</li>
-                <li>Se deberá priorizar los servicios que se encuentren más demorados priorizando situación de ruta / tránsito y luego en domicilio respetando los tiempos de contención y registros.</li>
-                <li>Focalización de la atención en zonas de alta recurrencia de servicios. </li>
-                <li>Disminuir la cantidad de llamadas del derivador para resolver un servicio.</li>
-                <li>Posibilidad de implementar la utilización de conexiones.</li>
-                <li>Identificar zonas críticas por falta de disponibilidad de móviles.</li>
-                <li>Disminuir el tiempo promedio de derivación de los servicios.</li>
-              </ul>
-              <h3 className='fs-3'><b>Es necesario que se registren los rechazos de las bases, con el código de referencia correspondiente.</b></h3>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active " id="nav-pag1" role="tabpanel" aria-labelledby="nav-pag1-tab" tabindex="0">
+                  <h1 className='mt-2'><u>Objetivos</u></h1>
+                  <div className='text-start d-flex flex-row mt-3'>
+                    <ul className='px-5 listaGral'>
+                      <li>Centralizar la zona en 1 o 2 derivadores (según la demanda de la zona). </li>
+                      <li>Brindar la prioridad que le corresponde a los servicios en ruta. </li>
+                      <li>Tener información en cuanto la disponibilidad de cada zona. </li>
+                    </ul>
+                    <ul className='px-5 listaGral'>
+                      <li>Evitar el re llamado al prestador por servicios en la misma zona.</li>
+                      <li>Compartir información sobre la zona al turno siguiente. </li>
+                      <li>Agilizar el tiempo de trabajo en la derivación. </li>
+                      <li>Disminuir la demora de marcación. </li>
+                    </ul>
+                  </div>
+                  <h1><u>¿Cuándo se activa?</u></h1>
+                  <ul className='px-5 listaGral'>
+                    <li>Cuando haya más de 5 servicios por zona, de lo contrario el derivador ayudara
+                      en la zona que sea necesario o por demora de marcación. </li>
+                  </ul>
+                  <h1><u>Importante:</u></h1>
+                  <div className='text-start d-flex flex-row mt-3'>
+                    <ul className='px-5 listaGral'>
+                      <li>Contención en los servicios. </li>
+                      <li>Logística de los servicios en zona (conexiones en caso de percatarse alguno). </li>
+                      <li>Registrar en la planilla compartida el estado de cada prestador en la zona. </li>
+                      <li>Se deberán incluir los servicios caídos. </li>
+                    </ul>
+                    <ul className='px-5 listaGral'>
+                      <li>Marcar servicios programados de la zona que tenga asignada. </li>
+                      <li>El resto de los derivadores que no tenga asignado zonas, derivara por demora
+                        de manera normal. </li>
+                      <li>Sera responsabilidad del Derivador ingresar a la pantalla de la zona que le
+                        corresponda según la asignación del cronograma. </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="tab-pane fade" id="nav-pag2" role="tabpanel" aria-labelledby="nav-pag2-tab" tabindex="0">
+                  <h1 className='mt-2'><u>Zonas</u></h1>
+                  <div className='text-start d-flex flex-row mt-3'>
+                    <ul className='px-5 listaGral'>
+                      <li>Bs as Gral.</li>
+                      <li>Bs As Norte.</li>
+                      <li>Córdoba.</li>
+                      <li>Entre Ríos</li>
+                    </ul>
+                    <ul className='px-5 listaGral'>
+                      <li>Patagonia</li>
+                      <li>Santa Fe</li>
+                      <li>Misiones</li>
+                    </ul>
+                  </div>
+                  <h1><u>Orden de Prioridades:</u></h1>
+                  <ol className='px-5 listaGral'>
+                    <li>Ruta</li>
+                    <li>Transito</li>
+                    <li>Domicilio/Estacionamiento.</li>
+                  </ol>
+                  <h1><u>Debilidades</u></h1>
+                  <p><u>Servicios con km:</u> Al tener días con gran demanda de servicios, esto con más de
+                    200 km y viajeros, quizás se complique trabajar con esta modalidad, ya que al
+                    igual que los tráficos Nacionales complica la gestión en zona.
+                    Por esto consideramos que la derivación con esta modalidad sean dentro de los
+                    200 km. <br />
+                    <u>Recursos:</u> Si bien algunos días estaremos limitados de derivadores por zona,
+                    debido a la planificación general, se procederá a dar prioridad a zonas con más
+                    concentración de servicios.
+                  </p>
+                </div>
+                <nav>
+                  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link sub active" id="nav-pag1-tab" data-bs-toggle="tab" data-bs-target="#nav-pag1" type="button" role="tab" aria-controls="nav-pag1" aria-selected="true">Pág 1</button>
+                    <button class="nav-link sub" id="nav-pag2-tab" data-bs-toggle="tab" data-bs-target="#nav-pag2" type="button" role="tab" aria-controls="nav-pag2" aria-selected="true">Pág 2</button>
+                  </div>
+                </nav>
+              </div>
             </div>
             <div className="tab-pane fade" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
               <div className="d-flex justify-content-center align-items-center h-100">
@@ -194,6 +274,6 @@ export default function Procedimientos() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
