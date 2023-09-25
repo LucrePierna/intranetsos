@@ -10,12 +10,13 @@ export default function Agenda() {
     { nombre: "Nieto", numero: "30511" },
     { nombre: "Sacchi", numero: "30345" },
     { nombre: "Silva", numero: "40223" },
-    { nombre: "Videlap", numero: "30510" },
+    { nombre: "Videla", numero: "30510" },
     { nombre: "Zarate", numero: "40318" },
   ];
 
   const dataPart2 = [
     { nombre: "CAT", numero: "98008" },
+    {nombre: "Mesa de ayuda", numero: "8800"},
     { nombre: "Supervisores Derivación", numero: "3500" },
     { nombre: "Chat CAT PIPE", numero: "1128080012" },
     { nombre: "At. a Moviles/Prestadores", numero: "0351-4858393 / 011-48358191 op.2" },
@@ -39,7 +40,7 @@ export default function Agenda() {
               {dataPart1.map((item, index) => (
                 <TableRow key={index} className="border border-dark bg-light text-black">
                   <TableCell>{item.nombre}</TableCell>
-                  <TableCell>{item.numero}</TableCell>
+                  <TableCell className='text-end'>{item.numero}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
@@ -55,7 +56,7 @@ export default function Agenda() {
               {dataPart2.map((item, index) => (
                 <TableRow key={index} className="border border-dark bg-light text-black">
                   <TableCell>{item.nombre}</TableCell>
-                  <TableCell>{item.numero}</TableCell>
+                  <TableCell className='text-end'>{item.numero}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

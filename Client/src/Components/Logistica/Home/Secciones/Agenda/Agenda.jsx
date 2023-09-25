@@ -9,7 +9,8 @@ export default function Agenda() {
     { nombre: "Tráfico Nacional", numero: "9750" },
     { nombre: "Tráfico Local", numero: "9700" },
     { nombre: "Supervisor Tráfico", numero: "3800" },
-    { nombre: "CAT", numero: "98009" },
+    { nombre: "CAT", numero: "98008" },
+    {nombre: "Mesa de ayuda", numero: "8800"}
   ];
 
   const dataPart2 = [
@@ -35,7 +36,7 @@ export default function Agenda() {
               {dataPart1.map((item, index) => (
                 <TableRow key={index} className="border border-dark bg-light text-black">
                   <TableCell>{item.nombre}</TableCell>
-                  <TableCell>{item.numero}</TableCell>
+                  <TableCell className='text-end'>{item.numero}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
@@ -51,7 +52,7 @@ export default function Agenda() {
               {dataPart2.map((item, index) => (
                 <TableRow key={index} className="border border-dark bg-light text-black">
                   <TableCell>{item.nombre}</TableCell>
-                  <TableCell>{item.numero}</TableCell>
+                  <TableCell className='text-end'>{item.numero}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
