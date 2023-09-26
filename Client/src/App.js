@@ -30,9 +30,9 @@ function App () {
   return (
     <div className='App'>
       <ClerkProvider publishableKey={clerkPubKey}>
+        <SignedIn>
         {isLogisticaRoute && <MenuLogistica />}
         {isTraficoRoute && <MenuTrafico />}
-        <SignedIn>
           <Routes>
             <Route path='/' element={<Landing />} />
             <Route path='/logistica' element={<NavBarHome />} />
