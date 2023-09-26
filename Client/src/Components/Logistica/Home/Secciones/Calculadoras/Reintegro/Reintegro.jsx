@@ -6,7 +6,7 @@ function Reintegro() {
   const [veh, setVeh] = useState('a');
   const [zon, setZon] = useState('r');
   const [kms, setKms] = useState('');
-  const [trasladoChecked, setTrasladoChecked] = useState(false);
+  const [trasladoChecked, setTrasladoChecked] = useState(true);
   const [mecanicaChecked, setMecanicaChecked] = useState(false);
   const [resultado, setResultado] = useState(null);
 
