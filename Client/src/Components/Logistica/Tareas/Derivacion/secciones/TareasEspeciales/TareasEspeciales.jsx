@@ -34,7 +34,7 @@ export default function TareasEspeciales() {
                         <div className="tab-pane fade show active" id="nav-condiciones" role="tabpanel" aria-labelledby="nav-condiciones-tab" tabindex="0">
                             <p> Se coordina la apertura del vehículo, cuando las llaves del mismo sean extraviadas/robadas o quedasen dentro, Siempre y cuando este contemplado por la póliza, se deberá abrir grilla y verificar cobertura de " cerrajería ".</p>
                             <div className='d-flex flex-row justify-content-center'>
-                                <div className='d-flex flex-column px-5 py-2 text-center justify-content-center'>
+                                <div className='d-flex flex-column text-center px-5 py-2'>
                                     <h3 className='text-start'>Acreditacion de Indentidad</h3>
                                     <ul className='listaTE'>
                                         <li>Registro de Conducir</li>
@@ -43,7 +43,7 @@ export default function TareasEspeciales() {
                                         <li>Pasaporte</li>
                                     </ul>
                                 </div>
-                                <div className='d-flex flex-column px-5 py-2 text-center justify-content-center'>
+                                <div className='d-flex flex-column text-center px-5 py-2'>
                                     <h3 className='text-start'>Acreditación de Titularidad</h3>
                                     <ul className='listaTE'>
                                         <li >Titulo de Propiedad</li>
