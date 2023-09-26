@@ -164,9 +164,10 @@ const MenuLogistica = () => {
               Volver a Operaciones
             </a>
           </li>
-          <li>
+
+           {/* <li>
             <UserButton className='bg-text-white' />
-          </li>
+          </li>  */}
         </ul>
       </nav>
     </div>
