@@ -147,16 +147,17 @@ export default function Procedimientos() {
               <h3 className='fs-3'><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h3>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-gestor" role="tabpanel" aria-labelledby="nav-gestor-tab" tabindex="0">
-              <p>En solapa 4 y sin dar en editar al servicio van a registrar en el recuadro de tarjeta de crédito el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
-                <b>*tienen que estar sumamente atentos a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)*</b> <br />
-                Una vez registrado el valor, van a hacer click en el cartelito azul<br />
-                Y allí los redirecciona al gestor de pagos. En esta primera solapa que abre registrarán los datos del titular de la tarjeta. Si el link el cliente lo quiere por WhatsAp si o si van a tener que solicitarle de igual manera una casilla de correo (esto es obligatorio ya que la factura se envía por este medio). Si el cliente informa que no tiene y no sabe ninguna de familiar ni nada, se registra la de "supervisoresderivacion@redsos.com.ar". <br />
-                Al dar click en siguiente nos habilita la pestaña para la facturación… <br />
+              <p>En la solapa de "Adicionales" y sin dar en editar al servicio, se debe registrar en el recuadro de "tarjeta de crédito" el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
+                <b>Se debe estar sumamente atento a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)</b> <br />
+                Una vez registrado el valor, van a hacer click en el cartelito azul que dice "Tarjeta de crédito"<br />
+                Y allí los redirecciona al gestor de pagos. <br />
+                En esta primera solapa que abre registrarán los datos del titular de la tarjeta.<br/> 
+                Si el cliente quiere el link por WhatsAp,se debe solicitar de igual manera una casilla de correo (esto es obligatorio ya que la factura se envía por este medio), si el cliente informa que no tiene y no sabe de ningun familiar o cercano, se registra la de "supervisoresderivacion@redsos.com.ar". <br />
+                Al dar click en "siguiente" nos habilita la pestaña para la facturación<br />
                 - Si la factura va a nombre de la misma persona que la tarjeta deben dejar la tilde y les trae los datos antes escritos, solo van a tener que llenar el domicilio. <br />
                 - Si la factura va a nombre de otra persona o razón social retiran la tilde y llenan todos los campos. <br />
-                Cuando el cliente haya realizado el pago de adicional les va a aparecer en el servicio de la siguiente manera: <br />
-                (van a ver que el adicional es distinto porque el print es de un svc ya cobrado ya que el anterior fue cargado solo de prueba). <br />
-                Recuerden que el prestador no deberá salir hasta que dicho pago no se haya visto impactado en el servicio, para eso deberán a los 10 minutos revisar el servicio. Si pasado este tiempo no impactó, deben llamar al cliente para verificar si hay algún inconveniente.<br />
+                Cuando el cliente haya realizado el pago del adicional, en solapa de "Adicionales", en la parte inferior les va a aparecer un recuadro con los datos del cliente y al final el logo de MercadoPago.<br />
+                <b>El prestador no debe salir hasta que dicho pago no se haya visto impactado en el servicio, para eso deberán a los 10 minutos revisar el servicio. Si pasado este tiempo no impactó, deben llamar al cliente para verificar si hay algún inconveniente.</b>
               </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
