@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
+import {
+  UserButton
+} from '@clerk/clerk-react'
 
 const MenuLogistica = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
@@ -160,6 +163,9 @@ const MenuLogistica = () => {
               </svg>
               Volver a Operaciones
             </a>
+          </li>
+          <li>
+            <UserButton className='bg-text-white' />
           </li>
         </ul>
       </nav>

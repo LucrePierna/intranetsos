@@ -6,6 +6,9 @@ import ros from '../Image/Menu Trafico/Iconos/ico_ROS.svg'
 import home from '../Image/Menu Trafico/Iconos/house-fill.svg'
 import herramientas from '../Image/Menu Trafico/Iconos/nut-fill.svg'
 import mec from '../Image/Menu Trafico/Iconos/tools.svg'
+import {
+  UserButton
+} from '@clerk/clerk-react'
 
 const MenuTrafico = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
@@ -19,7 +22,6 @@ const MenuTrafico = () => {
     setSelectedRoute(route);
   };
 
-
   return (
     <div className="menu">
       <nav className="burger-menu">
@@ -30,7 +32,7 @@ const MenuTrafico = () => {
           </svg>
         </label>
 
-        <ul className="menu-options">
+        <ul className="menu-options px-1">
           <li>
             <a
               href="/trafico"
@@ -139,6 +141,9 @@ const MenuTrafico = () => {
               </svg>
               Volver a Operaciones
             </a>
+          </li>
+          <li className='px-2 mt-2 '>
+            <UserButton className='bg-white'/>
           </li>
         </ul>
       </nav>
