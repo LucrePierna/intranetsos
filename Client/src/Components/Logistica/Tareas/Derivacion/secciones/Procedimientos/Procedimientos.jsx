@@ -268,7 +268,7 @@ export default function Procedimientos() {
             </div>
             <div className="tab-pane fade" id="nav-mapazn" role="tabpanel" aria-labelledby="nav-mapazn-tab" tabIndex="0">
               <div className="d-flex justify-content-center align-items-center h-100">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1fvBNJlPnYFfKVW3SWlN7WtMdNqqI8R8&ehbc=2E312F" className='responsiveIframe'></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1kTgBQfIB1Gzr8QlydjfE9dXr0UnfjAc&ehbc=2E312F&noprof=1" className='responsiveIframe'></iframe>
               </div>
             </div>
 
