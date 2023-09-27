@@ -271,7 +271,6 @@ export default function Procedimientos() {
                 <iframe src="https://www.google.com/maps/d/embed?mid=1kTgBQfIB1Gzr8QlydjfE9dXr0UnfjAc&ehbc=2E312F&noprof=1" className='responsiveIframe'></iframe>
               </div>
             </div>
-
           </div>
         </div>
       </div>

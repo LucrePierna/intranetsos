@@ -165,9 +165,9 @@ const MenuLogistica = () => {
             </a>
           </li>
 
-          <li className='py-2 px-2'>
+        {/*   <li className='py-2 px-2'>
             <UserButton className='bg-text-white' />
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>
