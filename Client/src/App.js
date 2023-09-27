@@ -1,5 +1,5 @@
 import './App.css'
-/* import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
+import { Routes, Route, useLocation} from 'react-router-dom'
 import MenuLogistica from './Components/Logistica/Menu/MenuLogistica'
 import MenuTrafico from './Components/Trafico/Menu/MenuTrafico'
 import NavBarHome from './Components/Logistica/Home/NavBar/NavBarHome'
@@ -18,20 +18,20 @@ import NavBarBsAs from './Components/Trafico/Tareas/BsAs/NavBar/NavBarBsAs'
 import NavBarMecanica from './Components/Trafico/Tareas/Mecanica/NavBar/NavBarMecanica'
 import NavBarCordoba from './Components/Trafico/Tareas/Cordoba/NavBar/NavBarCordoba'
 import NavBarRosario from './Components/Trafico/Tareas/Rosario/NavBar/NavBarRosario'
-import Landing from './Components/Landing/Landing' */
-import { ClerkProvider } from '@clerk/clerk-react'
-import Login from './Components/Login/Login'
+import Landing from './Components/Landing/Landing' 
+/* import { ClerkProvider } from '@clerk/clerk-react'
+import Login from './Components/Login/Login' */
 
 function App () {
-  /*   const location = useLocation()
+  const location = useLocation()
   const isLogisticaRoute = location.pathname.includes('/logistica')
-  const isTraficoRoute = location.pathname.includes('/trafico') */
-  const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY
+  const isTraficoRoute = location.pathname.includes('/trafico') 
+ /*  const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY */
 
   return (
     <div className='App'>
-      <ClerkProvider publishableKey={clerkPubKey}>
-        {/*       {isLogisticaRoute && <MenuLogistica />}
+      {/* <ClerkProvider publishableKey={clerkPubKey}> */}
+      {isLogisticaRoute && <MenuLogistica />}
       {isTraficoRoute && <MenuTrafico />}
       <Routes>
         <Route path='/' element={<Landing />} />
@@ -53,8 +53,8 @@ function App () {
         <Route path='/trafico/rosario' element={<NavBarRosario />} />
       </Routes>
       {/* <Footer/> */}
-        <Login />
-      </ClerkProvider>
+      {/*   <Login /> */}
+      {/* </ClerkProvider> */}
     </div>
   )
 }

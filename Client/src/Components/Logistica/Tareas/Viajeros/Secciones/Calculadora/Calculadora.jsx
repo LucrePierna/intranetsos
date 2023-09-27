@@ -62,7 +62,7 @@ export default function Calculadora({ resultado }) {
               <label htmlFor='cantidadTotal'>Cantidad total de personas:</label>
               <input
                 type='number'
-                className='form-control'
+                className='form-control text-center'
                 id='cantidadTotal'
                 value={formData.cantidadTotal}
                 onChange={(e) => handleFieldChange('cantidadTotal', e.target.value)}
@@ -72,7 +72,7 @@ export default function Calculadora({ resultado }) {
               <label htmlFor='cantidadPorAsistencia'>Cantidad de personas por asistencia al viajero:</label>
               <input
                 type='number'
-                className='form-control'
+                className='form-control text-center'
                 id='cantidadPorAsistencia'
                 value={formData.cantidadPorAsistencia}
                 onChange={(e) => handleFieldChange('cantidadPorAsistencia', e.target.value)}
@@ -82,7 +82,7 @@ export default function Calculadora({ resultado }) {
               <label htmlFor='origen'>Origen de las personas:</label>
               <input
                 type='text'
-                className='form-control'
+                className='form-control text-center'
                 id='origen'
                 value={formData.origen}
                 onChange={(e) => handleFieldChange('origen', e.target.value)}
@@ -92,7 +92,7 @@ export default function Calculadora({ resultado }) {
               <label htmlFor='destino'>Destino de las personas:</label>
               <input
                 type='text'
-                className='form-control'
+                className='form-control text-center'
                 id='destino'
                 value={formData.destino}
                 onChange={(e) => handleFieldChange('destino', e.target.value)}
@@ -103,7 +103,7 @@ export default function Calculadora({ resultado }) {
               <div className='input-group'>
                 <input
                   type='text'
-                  className='form-control'
+                  className='form-control text-center'
                   id='tipoAsistencia'
                   value={formData.tipoAsistencia}
                   onChange={(e) => handleFieldChange('tipoAsistencia', e.target.value)}
@@ -114,7 +114,7 @@ export default function Calculadora({ resultado }) {
               <label htmlFor='topeCIA'>Tope establecido por la CIA:</label>
               <input
                 type='text'
-                className='form-control'
+                className='form-control text-center'
                 id='topeCIA'
                 value={formData.topeCIA}
                 onChange={(e) => handleFieldChange('topeCIA', e.target.value)}
@@ -124,7 +124,7 @@ export default function Calculadora({ resultado }) {
               <label htmlFor='observaciones'>Observaciones:</label>
               <input
                 type='text'
-                className='form-control'
+                className='form-control text-center'
                 id='observaciones'
                 value={formData.observaciones}
                 onChange={(e) => handleFieldChange('observaciones', e.target.value)}
