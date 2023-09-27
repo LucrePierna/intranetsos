@@ -121,14 +121,14 @@ export default function Formato() {
     return (
         <div className='d-flex flex-column calculadora'>
             <h1 className='text-center m-auto mb-3'>Calculadora de Viajero</h1>
-            <input type="number" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
+            <input className='inputViajero' type="number" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
 
-            <input type="text" name="precio" value={precio} onChange={handleInputChange} placeholder="Cargar precio en $" />
+            <input className='inputViajero' type="text" name="precio" value={precio} onChange={handleInputChange} placeholder="Cargar precio en $" />
 
             <input type="checkbox" name="tieneIVA" checked={tieneIVA} onChange={(e) => setTieneIVA(e.target.checked)} />
             <label htmlFor="tieneIVA">Agregar IVA</label>
 
-            <input type="number" name="personas" value={personas} onChange={handleInputChange} placeholder="Cantidad de personas" disabled={!esPorPersona} />
+            <input className='inputViajero' type="number" name="personas" value={personas} onChange={handleInputChange} placeholder="Cantidad de personas" disabled={!esPorPersona} />
 
             <input
                 type='checkbox'
@@ -149,6 +149,7 @@ export default function Formato() {
             {tieneTopeDeCobertura ? (
                 <input
                     type='text'
+                    className='inputViajero'
                     name='cobertura'
                     value={cobertura}
                     onChange={handleInputChange}
@@ -162,11 +163,12 @@ export default function Formato() {
                     value={cobertura}
                     onChange={handleInputChange}
                     placeholder='Cobertura del cliente'
+                    className='inputViajero'
                 />
             )}
 
             {!tieneTopeDeCobertura && (
-                <Button onClick={calcularResultado} color="danger" >Calcular</Button>
+                <button onClick={calcularResultado} className="btn btn-danger mt-3" >Calcular</button>
             )}
 
             <div>
