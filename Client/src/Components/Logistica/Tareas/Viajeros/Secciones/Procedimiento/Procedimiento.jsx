@@ -22,6 +22,7 @@ export default function Procedimiento() {
         <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Instrucciones</button>
           <button className="nav-link custom" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Puntos principales</button>
+          <button className="nav-link custom" id="nav-links-tab" data-bs-toggle="tab" data-bs-target="#nav-links" type="button" role="tab" aria-controls="nav-links" aria-selected="false">Enlaces principales</button>
         </div>
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto " id="nav-tabContent">
@@ -39,6 +40,19 @@ export default function Procedimiento() {
             <li>Servicio por reintegro.</li>
             <li>Excepciones.</li>
           </ul>
+        </div>
+        <div className="tab-pane fade lineaGeneral" id="nav-links" role="tabpanel" aria-labelledby="nav-links-tab" tabindex="0">
+          <div className='d-flex flex-column py-4 m-auto mt-5 justify-content-center text-center'>
+            <a href="https://www.centraldepasajes.com.ar" target='_blank'>
+              <button type="button" className="btn btn-danger my-2">Central de Pasajes</button>
+            </a>
+            <a href="https://www.plataforma10.com.ar" target='_blank'>
+              <button type="button" className="btn btn-danger my-2">Plataforma 10</button>
+            </a>
+            <a href="https://www.telexplorer.com.ar/" target='_blank'>
+              <button type="button" className="btn btn-danger my-2">Telexplorer</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

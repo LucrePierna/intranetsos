@@ -46,10 +46,10 @@ export default function Formato() {
             <div className='row'>
                 <div className='col-lg-6'>
                     <div className='py-1'>
-                        <label className='px-3'>TORRE DE CONEXION:</label>
+                        <label className='px-3 fs-4'>TORRE DE CONEXION:</label>
                     </div>
                     <div className='py-1'>
-                        <label className='px-3'>Código:</label>
+                        <label className='px-3 fs-4'>Código:</label>
                         <input
                             type='text'
                             className='form-control'
@@ -58,7 +58,7 @@ export default function Formato() {
                         />
                     </div>
                     <div className='py-1'>
-                        <label className='px-3'>Km tt de Svc: </label>
+                        <label className='px-3 fs-4'>Km tt de Svc: </label>
                         <input
                             type='text'
                             className='form-control'
@@ -67,7 +67,7 @@ export default function Formato() {
                         />
                     </div>
                     <div className='py-1'>
-                        <label className='px-3'>Km tt de Mvl:</label>
+                        <label className='px-3 fs-4'>Km tt de Mvl:</label>
                         <input
                             type='text'
                             className='form-control'
@@ -76,7 +76,7 @@ export default function Formato() {
                         />
                     </div>
                     <div className='py-1'>
-                        <label className='px-3'>Observaciones: </label>
+                        <label className='px-3 fs-4'>Observaciones: </label>
                         <textarea
                             id='Observaciones'
                             name='Observaciones'

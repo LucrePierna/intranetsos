@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
+import { Routes, Route, useLocation} from 'react-router-dom'
 import MenuLogistica from './Components/Logistica/Menu/MenuLogistica'
 import MenuTrafico from './Components/Trafico/Menu/MenuTrafico'
 import NavBarHome from './Components/Logistica/Home/NavBar/NavBarHome'

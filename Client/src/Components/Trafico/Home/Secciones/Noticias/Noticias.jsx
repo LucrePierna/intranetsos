@@ -46,7 +46,7 @@ export default function Noticias() {
       </div>
       <div className='row'>
         {currentNoticias.map((el, index) => (
-          <div className='col-md-4' key={index}>
+          <div className='col-md-4 my-3' key={index}>
             <Card
               title={el.title}
               description={el.description}

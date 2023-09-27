@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 export default function Formato() {
 
     const [formData, setFormData] = useState({
-        aceptaModalidad: 'no',
-        plazos: '',
+        aceptaModalidad: 'si',
+        plazos: '5 días hábiles',
         documentacion: {
             llaves: false,
             autorizacion: false,
@@ -13,7 +13,7 @@ export default function Formato() {
         },
         metodopago: '',
         cobrado: 'no',
-        viajero: 'reintegro',
+        viajero: '',
         observaciones: ''
     })
     const [copied, setCopied] = useState(false)
@@ -67,6 +67,23 @@ export default function Formato() {
         }
     }
 
+    const handleReintegroChange = () => {
+        handleFieldChange('viajero', 'reintegro');
+    };
+
+    const handleCombiChange = () => {
+        handleFieldChange('viajero', 'combi');
+    };
+
+    const handlePasajeChange = () => {
+        handleFieldChange('viajero', 'micro');
+    };
+
+    const handleSinCoordinarChange = () => {
+        handleFieldChange('viajero', 'sinCoordinar');
+    };
+
+
     const handleCopyClick = () => {
         let formattedText = '';
 
@@ -113,7 +130,7 @@ export default function Formato() {
         } else if (formData.viajero === 'combi') {
             formattedText += 'Combi \n';
         } else if (formData.viajero === 'micro') {
-            formattedText += 'Pasakes en micro \n';
+            formattedText += 'Pasajes en micro \n';
         } else if (formData.viajero === 'sinCoordinar') {
             formattedText += 'Sin Coordinar - Viajero pendiente de coordinación\n';
         }
@@ -128,8 +145,8 @@ export default function Formato() {
 
     const handleReset = () => {
         setFormData({
-            aceptaModalidad: 'no',
-            plazos: '',
+            aceptaModalidad: 'si',
+            plazos: '5 días hábiles',
             documentacion: {
                 llaves: false,
                 autorizacion: false,
@@ -187,7 +204,6 @@ export default function Formato() {
                         Plazos de entrega:
                         <input
                             className='mx-2'
-                            type='text'
                             value={formData.plazos}
                             onChange={(e) => handleFieldChange('plazos', e.target.value)}
                             disabled={formData.aceptaModalidad === 'no'}
@@ -331,7 +347,7 @@ export default function Formato() {
                         name='viajero'
                         value='reintegro'
                         checked={formData.viajero === 'reintegro'}
-                        onChange={(e) => handleFieldChange('viajero', e.target.value)}
+                        onChange={handleReintegroChange}
                         disabled={formData.aceptaModalidad === 'no'}
                     />
                     Reintegro
@@ -341,12 +357,24 @@ export default function Formato() {
                         className='mx-2'
                         type='radio'
                         name='viajero'
-                        value='combiPasajes'
-                        checked={formData.viajero === 'combiPasajes'}
-                        onChange={(e) => handleFieldChange('viajero', e.target.value)}
+                        value='combi'
+                        checked={formData.viajero === 'combi'}
+                        onChange={handleCombiChange}
                         disabled={formData.aceptaModalidad === 'no'}
                     />
-                    Combi Pasajes
+                    Combi
+                </label>
+                <label className='p-1 mx-1'>
+                    <input
+                        className='mx-2'
+                        type='radio'
+                        name='viajero'
+                        value='micro'
+                        checked={formData.viajero === 'micro'}
+                        onChange={handlePasajeChange}
+                        disabled={formData.aceptaModalidad === 'no'}
+                    />
+                    Pasaje en micro
                 </label>
                 <label className='p-1 mx-1'>
                     <input
@@ -355,7 +383,7 @@ export default function Formato() {
                         name='viajero'
                         value='sinCoordinar'
                         checked={formData.viajero === 'sinCoordinar'}
-                        onChange={(e) => handleFieldChange('viajero', e.target.value)}
+                        onChange={handleSinCoordinarChange}
                         disabled={formData.aceptaModalidad === 'no'}
                     />
                     Sin Coordinar

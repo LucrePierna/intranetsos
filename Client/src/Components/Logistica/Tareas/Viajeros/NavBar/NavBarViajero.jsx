@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import '../../../EstilosGlobales/NavBar.css'
 import Calculadora from '../Secciones/Calculadora/Calculadora'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
-import Links from '../Secciones/Links/Links'
 import Procedimiento from '../Secciones/Procedimiento/Procedimiento'
 
 export default function NavBarViajero() {
@@ -54,19 +53,6 @@ export default function NavBarViajero() {
               Calculadora
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'links' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('links')}
-              style={{
-                color: selectedComponent === 'links' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'links' ? 'white' : 'initial'
-              }}
-            >
-              Links
-            </button>
-          </li>
-
         </ul>
       </nav>
 
@@ -74,7 +60,6 @@ export default function NavBarViajero() {
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'procedimiento' && <Procedimiento />}
         {selectedComponent === 'calculadora' && <Calculadora />}
-        {selectedComponent === 'links' && <Links />}
 
       </div>
     </div>
