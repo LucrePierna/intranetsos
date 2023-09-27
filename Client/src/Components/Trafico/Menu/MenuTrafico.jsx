@@ -142,9 +142,9 @@ const MenuTrafico = () => {
               Volver a Operaciones
             </a>
           </li>
-{/*           <li className='p-2 '>
+          <li className='p-2 '>
             <UserButton className='bg-white' />
-          </li> */}
+          </li>
         </ul>
       </nav>
     </div>
