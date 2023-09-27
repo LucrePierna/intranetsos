@@ -18,15 +18,19 @@ import NavBarBsAs from './Components/Trafico/Tareas/BsAs/NavBar/NavBarBsAs'
 import NavBarMecanica from './Components/Trafico/Tareas/Mecanica/NavBar/NavBarMecanica'
 import NavBarCordoba from './Components/Trafico/Tareas/Cordoba/NavBar/NavBarCordoba'
 import NavBarRosario from './Components/Trafico/Tareas/Rosario/NavBar/NavBarRosario'
-import Landing from './Components/Landing/Landing'
+import Landing from './Components/Landing/Landing' 
+/* import { ClerkProvider } from '@clerk/clerk-react'
+import Login from './Components/Login/Login' */
 
 function App () {
   const location = useLocation()
   const isLogisticaRoute = location.pathname.includes('/logistica')
-  const isTraficoRoute = location.pathname.includes('/trafico')
+  const isTraficoRoute = location.pathname.includes('/trafico') 
+ /*  const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY */
 
   return (
     <div className='App'>
+      {/* <ClerkProvider publishableKey={clerkPubKey}> */}
       {isLogisticaRoute && <MenuLogistica />}
       {isTraficoRoute && <MenuTrafico />}
       <Routes>
@@ -49,6 +53,8 @@ function App () {
         <Route path='/trafico/rosario' element={<NavBarRosario />} />
       </Routes>
       {/* <Footer/> */}
+      {/*   <Login /> */}
+      {/* </ClerkProvider> */}
     </div>
   )
 }
