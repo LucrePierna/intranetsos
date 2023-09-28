@@ -1,6 +1,6 @@
 export const noticias = [
     {
-      title: 'Tenemos nuevo espacio!',
+      title: 'Tenemos un nuevo espacio!',
       description: 'Lanzamos nuestra Intranet de operaciones, con la colaboración de todos ustedes. ',
       image: 'https://res.cloudinary.com/dbjswngeh/image/upload/v1695823481/yjf5ejhymishlau0ybeg.png',
     },
