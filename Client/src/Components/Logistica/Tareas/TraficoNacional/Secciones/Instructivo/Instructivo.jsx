@@ -19,10 +19,10 @@ export default function Instructivo() {
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="true">Inicial</button>
-          <button className="nav-link custom" id="nav-asigyprest-tab" data-bs-toggle="tab" data-bs-target="#nav-asigyprest" type="button" role="tab" aria-controls="nav-asigyprest" aria-selected="false"> Asignación y Prestador</button>
-          <button className="nav-link custom" id="nav-seguimiento-tab" data-bs-toggle="tab" data-bs-target="#nav-seguimiento" type="button" role="tab" aria-controls="nav-seguimiento" aria-selected="false">Seguimiento de Servicio</button>
-          <button className="nav-link custom" id="nav-indgral-tab" data-bs-toggle="tab" data-bs-target="#nav-indgral" type="button" role="tab" aria-controls="nav-indgral" aria-selected="false">Indicaciones Generales</button>
-          <button className="nav-link custom" id="nav-atprest-tab" data-bs-toggle="tab" data-bs-target="#nav-atprest" type="button" role="tab" aria-controls="nav-atprest" aria-selected="false">Atención a Prestadores</button>
+          <button className="nav-link custom" id="nav-asigyprest-tab" data-bs-toggle="tab" data-bs-target="#nav-asigyprest" type="button" role="tab" aria-controls="nav-asigyprest" aria-selected="false"> Asignación y prestador</button>
+          <button className="nav-link custom" id="nav-seguimiento-tab" data-bs-toggle="tab" data-bs-target="#nav-seguimiento" type="button" role="tab" aria-controls="nav-seguimiento" aria-selected="false">Seguimiento de servicio</button>
+          <button className="nav-link custom" id="nav-indgral-tab" data-bs-toggle="tab" data-bs-target="#nav-indgral" type="button" role="tab" aria-controls="nav-indgral" aria-selected="false">Indicaciones generales</button>
+          <button className="nav-link custom" id="nav-atprest-tab" data-bs-toggle="tab" data-bs-target="#nav-atprest" type="button" role="tab" aria-controls="nav-atprest" aria-selected="false">Atención a prestadores</button>
           <button className="nav-link custom" id="nav-inyfinturn-tab" data-bs-toggle="tab" data-bs-target="#nav-inyfinturn" type="button" role="tab" aria-controls="nav-inyfinturn" aria-selected="false">Inicio y fin de turno</button>
         </div>
       </nav>
