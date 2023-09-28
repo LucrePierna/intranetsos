@@ -29,11 +29,11 @@ export default function Procedimientos() {
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Objetivos</button>
-          <button className="nav-link custom" id="nav-redna-tab" data-bs-toggle="tab" data-bs-target="#nav-redna" type="button" role="tab" aria-controls="nav-redna" aria-selected="false">Red Nacional</button>
-          <button className="nav-link custom" id="nav-trafnac-tab" data-bs-toggle="tab" data-bs-target="#nav-trafnac" type="button" role="tab" aria-controls="nav-trafnac" aria-selected="false">Tráficos Nacionales</button>
-          <button className="nav-link custom" id="nav-trafloc-tab" data-bs-toggle="tab" data-bs-target="#nav-trafloc" type="button" role="tab" aria-controls="nav-trafloc" aria-selected="false">Tráfico Local</button>
+          <button className="nav-link custom" id="nav-redna-tab" data-bs-toggle="tab" data-bs-target="#nav-redna" type="button" role="tab" aria-controls="nav-redna" aria-selected="false">Red nacional</button>
+          <button className="nav-link custom" id="nav-trafnac-tab" data-bs-toggle="tab" data-bs-target="#nav-trafnac" type="button" role="tab" aria-controls="nav-trafnac" aria-selected="false">Tráfico nacional</button>
+          <button className="nav-link custom" id="nav-trafloc-tab" data-bs-toggle="tab" data-bs-target="#nav-trafloc" type="button" role="tab" aria-controls="nav-trafloc" aria-selected="false">Tráfico local</button>
           <button className="nav-link custom" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" type="button" role="tab" aria-controls="nav-general" aria-selected="false">Generalidades</button>
-          <button className="nav-link custom" id="nav-hacemos-tab" data-bs-toggle="tab" data-bs-target="#nav-hacemos" type="button" role="tab" aria-controls="nav-hacemos" aria-selected="false">Que Hacemos</button>
+          <button className="nav-link custom" id="nav-hacemos-tab" data-bs-toggle="tab" data-bs-target="#nav-hacemos" type="button" role="tab" aria-controls="nav-hacemos" aria-selected="false">Que hacemos</button>
         </div>
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto 5" id="nav-tabContent">

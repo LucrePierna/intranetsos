@@ -97,7 +97,7 @@ export default function Instructivo() {
               <p>
                 Se puede dar que le pasemos varios servicios en una misma zona a un prestador que está finalizando en zona o yendo a hacer uno a alguna localidad cercana, en ese caso se conecta por más que no tenga ganancias de kms, para cubrir la zona y optimizar un móvil, pasando uno o más servicios.
                 <br></br>
-                Esto se carga en planilla en la sección “Locales / svc en zona”: <br/>
+                Esto se carga en planilla en la sección “Locales / svc en zona”: <br />
                 En este caso se dejan vacíos los casilleros de  kms sin conexión – kms con conexión – kms ganados.
               </p>
               <table className='mt-5 mb-2' >
@@ -176,7 +176,6 @@ export default function Instructivo() {
 
             </div>
           </div>
-
         </div>
       </div>
     </div>
