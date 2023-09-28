@@ -5,9 +5,9 @@ import React from 'react';
 export default function Flujograma() {
   return (
     <div className='conteinerFlujograma'>
-      <iframe src="https://redsos-my.sharepoint.com/personal/lugomez_redsos_com_ar/_layouts/15/Doc.aspx?sourcedoc={c9f803dc-1971-4ca1-936a-f8b7ba27cc84}&amp;action=embedview" width="1200px" height="700px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+      <iframe src="https://redsos.sharepoint.com/_layouts/15/Doc.aspx?sourcedoc={c305a058-31b3-4032-933d-7dfba9ebad1c}&amp;action=embedview" width="1200px" height="700px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> diagram, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
       <div className='mt-3'>
-      <a target='blank' href="https://redsos-my.sharepoint.com/personal/pvivas_redsos_com_ar/_layouts/15/Doc.aspx?sourcedoc={62bf8183-24d5-4395-847e-56b0caaa2879}&action=embedview"> <button type='button' class="btn btn-danger mt-3">Acceso</button></a>
+        <a target='blank' href="https://redsos.sharepoint.com/_layouts/15/Doc.aspx?sourcedoc={c305a058-31b3-4032-933d-7dfba9ebad1c}&action=embedview"> <button type='button' class="btn btn-danger mt-3">Acceso</button></a>
       </div>
     </div>
   );
