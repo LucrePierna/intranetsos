@@ -1,10 +1,10 @@
 export default function Card({ title, description, image }) {
     return (
-        <div className='card mb-3'>
+        <div className='card cardConteiner mb-3'>
             <img src={image} className='card-img-top' alt='imagen' style={{ height: '400px' }} />
-            <div className='card-body'>
-                <h5 className='card-title'>{title}</h5>
-                <p className='card-text'>{description}</p>
+            <div className='card-body mt-3'>
+                <h5 className='card-title text-bg-danger rounded'>{title}</h5>
+                <p className='card-text fs-5'>{description}</p>
             </div>
         </div>
     );

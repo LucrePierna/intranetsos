@@ -90,7 +90,7 @@ export default function Formato() {
         if (formData.aceptaModalidad === 'si') {
             formattedText += 'Acepta Modalidad: Sí\n';
         } else {
-            formattedText += 'Se ofrece la modalidad al Cliente, no acepta modalidad. Se le informa que solo cuenta con traslado de zona.\n';
+            formattedText += 'Se ofrece modalidad al Cliente, no acepta modalidad. Se le informa que solo cuenta con traslado en zona.\n';
             navigator.clipboard
                 .writeText(formattedText)
                 .then(() => setCopied(true))

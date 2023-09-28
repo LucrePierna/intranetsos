@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
-import {
+/* import {
   UserButton
-} from '@clerk/clerk-react'
+} from '@clerk/clerk-react' */
 
 const MenuLogistica = () => {
   const [selectedRoute, setSelectedRoute] = useState('');

@@ -29,12 +29,12 @@ export default function Procedimientos() {
       <nav className='navConteiner'>
         <div className='nav flex-column nav-tabs me-3' id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Objetivo</button>
-          <button className="nav-link custom" id="nav-ingchat-tab" data-bs-toggle="tab" data-bs-target="#nav-ingchat" type="button" role="tab" aria-controls="nav-ingchat" aria-selected="false">Ingreso de Chat</button>
-          <button className="nav-link custom" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Motivo de la Consulta</button>
-          <button className="nav-link custom" id="nav-cierrechat-tab" data-bs-toggle="tab" data-bs-target="#nav-cierrechat" type="button" role="tab" aria-controls="nav-cierrechat" aria-selected="false">Cierre de Chat</button>
-          <button className="nav-link custom" id="nav-finturno-tab" data-bs-toggle="tab" data-bs-target="#nav-finturno" type="button" role="tab" aria-controls="nav-finturno" aria-selected="false">Fin de Turno</button>
-          <button className="nav-link custom" id="nav-productos-tab" data-bs-toggle="tab" data-bs-target="#nav-productos" type="button" role="tab" aria-controls="nav-productos" aria-selected="false">Carga de Productos</button>
-          <button className="nav-link custom" id="nav-gestiones-tab" data-bs-toggle="tab" data-bs-target="#nav-gestiones" type="button" role="tab" aria-controls="nav-gestiones" aria-selected="false">Otras Gestiones</button>
+          <button className="nav-link custom" id="nav-ingchat-tab" data-bs-toggle="tab" data-bs-target="#nav-ingchat" type="button" role="tab" aria-controls="nav-ingchat" aria-selected="false">Ingreso de chat</button>
+          <button className="nav-link custom" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Motivo de la consulta</button>
+          <button className="nav-link custom" id="nav-cierrechat-tab" data-bs-toggle="tab" data-bs-target="#nav-cierrechat" type="button" role="tab" aria-controls="nav-cierrechat" aria-selected="false">Cierre de chat</button>
+          <button className="nav-link custom" id="nav-finturno-tab" data-bs-toggle="tab" data-bs-target="#nav-finturno" type="button" role="tab" aria-controls="nav-finturno" aria-selected="false">Fin de turno</button>
+          <button className="nav-link custom" id="nav-productos-tab" data-bs-toggle="tab" data-bs-target="#nav-productos" type="button" role="tab" aria-controls="nav-productos" aria-selected="false">Carga de productos</button>
+          <button className="nav-link custom" id="nav-gestiones-tab" data-bs-toggle="tab" data-bs-target="#nav-gestiones" type="button" role="tab" aria-controls="nav-gestiones" aria-selected="false">Otras gestiones</button>
         </div>
       </nav>
       <div className='h-100 w-100 tab-content text-start mt-3 px-5 m-auto' id="nav-tabContent">

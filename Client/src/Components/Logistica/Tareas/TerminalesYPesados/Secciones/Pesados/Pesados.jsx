@@ -30,7 +30,7 @@ export default function Pesados() {
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Descripción</button>
           <button className="nav-link custom" id="nav-generalidades-tab" data-bs-toggle="tab" data-bs-target="#nav-generalidades" type="button" role="tab" aria-controls="nav-generalidades" aria-selected="false">Generalidades</button>
-          <button className="nav-link custom" id="nav-tareaop-tab" data-bs-toggle="tab" data-bs-target="#nav-tareaop" type="button" role="tab" aria-controls="nav-tareaop" aria-selected="false">Tareas del Operador</button>
+          <button className="nav-link custom" id="nav-tareaop-tab" data-bs-toggle="tab" data-bs-target="#nav-tareaop" type="button" role="tab" aria-controls="nav-tareaop" aria-selected="false">Tareas del operador</button>
           <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Etapas</button>
         </div>
       </nav>
