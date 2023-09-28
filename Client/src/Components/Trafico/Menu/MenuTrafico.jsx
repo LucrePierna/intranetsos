@@ -6,9 +6,9 @@ import ros from '../Image/Menu Trafico/Iconos/ico_ROS.svg'
 import home from '../Image/Menu Trafico/Iconos/house-fill.svg'
 import herramientas from '../Image/Menu Trafico/Iconos/nut-fill.svg'
 import mec from '../Image/Menu Trafico/Iconos/tools.svg'
-import {
+/* import {
   UserButton
-} from '@clerk/clerk-react'
+} from '@clerk/clerk-react' */
 
 const MenuTrafico = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
