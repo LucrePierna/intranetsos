@@ -1,13 +1,6 @@
-import React, { useState } from 'react';
-import { Spinner } from "@nextui-org/react";
+import React from 'react';
 
 export default function Flujograma() {
-  const [flujogramaCargado, setFlujogramaCargado] = useState(false);
-
-  const handleIframeLoad = () => {
-    setFlujogramaCargado(true)
-  }
-
   return (
     <div className='conteinerFlujograma'>
         <iframe 
