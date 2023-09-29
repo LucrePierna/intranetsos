@@ -206,6 +206,7 @@ export default function Formato() {
                             className='mx-2'
                             value={formData.plazos}
                             onChange={(e) => handleFieldChange('plazos', e.target.value)}
+                            readOnly={true}
                             disabled={formData.aceptaModalidad === 'no'}
                         />
                     </label>
