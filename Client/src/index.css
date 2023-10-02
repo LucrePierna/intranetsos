@@ -179,6 +179,13 @@ code {
   max-width: 100%;
   height: 50vh;
 }
+.responsiveImgSaludos {
+  max-width: 100%;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
 
 .responsiveImgBateria {
   max-width: 100%;
