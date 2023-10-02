@@ -94,8 +94,8 @@ export default function TareasEspeciales() {
                         <p className=' mt-5'>Es un servicio especial que consiste en el grabado de los caracteres que componen la patente, en los cristales del vehículo. El Operador deberá corroborar si según grilla el cuenta con el servicio y su cobertura. La operatoria varía según la ubicación. </p>
                         <p className='mt-2'>Capital Federal y Gran Buenos Aires, el cliente deberá contactarse con nuestro prestador para pedir turno. Si el cliente rechaza realizar el servicio con alguno de nuestros prestadores se brindará el servicio por reintegro.</p>
                         <ul className='text-start mt-2 listaGral'>
-                            <li>Ag 10643	Station	Capital Federal	Warnes 999 (Villa Crespo)	011 48554442 / 011 48580222 / 011 48578858</li>
-                            <li>Ag 10837	Auto Radio Alarma	La Plata	Calle 66 y 138	0221-155411491 / 0221 4502326</li>
+                            <li>AG 10643 - Station - Capital Federal - Warnes 999 (Villa Crespo) - 011 48554442 / 011 48580222 / 011 48578858</li>
+                            <li>AG 10837 - Auto Radio Alarma - La Plata - Calle 66 y 138 - 0221 155411491 / 0221 4502326</li>
                         </ul>
                         <ul className='text-start mt-2 listaGral'><u>Red Nacional</u>
                             <li>Verificar si hay bases disponibles en la localidad que el cliente se encuentre, de ser así brindar los datos del prestador para que el cliente saque turno y asista al lugar.</li>
