@@ -78,7 +78,7 @@ export default function Instructivo() {
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-5" id="nav-ceficaz" role="tabpanel" aria-labelledby="nav-ceficaz-tab" tabindex="0">
               <p>LUEGO DE ASIGNADA LA BASE CORRESPONDIENTE, SE DEBE CARGAR EN LA PLANILLA:</p>
-              <table className='mt-5 mb-2 text-break' >
+              <table className='mt-5 mb-2' >
                 <tr className='border border-dark'>
                   <td className='border border-black px-2'>1º servicio</td>
                   <td className='border border-black px-2'>2º servicio</td>
@@ -102,12 +102,12 @@ export default function Instructivo() {
               </p>
               <table className='mt-5 mb-2' >
                 <tr className='border border-dark'>
-                  <td className='border border-black px-2'>1º servicio</td>
-                  <td className='border border-black px-2'>2º servicio</td>
-                  <td className='border border-black px-2'>fecha</td>
-                  <td className='border border-black px-2'>nº de base</td>
-                  <td className='border border-black px-2'>condición</td>
-                  <td className='border border-black px-2'>operador que realizó la conexión</td>
+                  <td className='border border-black px-2'>1º Servicio</td>
+                  <td className='border border-black px-2'>2º Servicio</td>
+                  <td className='border border-black px-2'>Fecha</td>
+                  <td className='border border-black px-2'>Nº de base</td>
+                  <td className='border border-black px-2'>Condición</td>
+                  <td className='border border-black px-2'>Operador que realizó la conexión</td>
                   <td className='border border-black px-2'>Observación en caso de ser necesario</td>
                 </tr>
               </table>
@@ -118,12 +118,12 @@ export default function Instructivo() {
               </p>
               <table className='mt-5 mb-2' >
                 <tr className='border border-dark'>
-                  <td className='border border-black px-2'>1º servicio</td>
-                  <td className='border border-black px-2'>2º servicio</td>
-                  <td className='border border-black px-2'>fecha</td>
-                  <td className='border border-black px-2'>nº de base</td>
-                  <td className='border border-black px-2'>condición</td>
-                  <td className='border border-black px-2'>operador</td>
+                  <td className='border border-black px-2'>1º Servicio</td>
+                  <td className='border border-black px-2'>2º Servicio</td>
+                  <td className='border border-black px-2'>Fecha</td>
+                  <td className='border border-black px-2'>Nº de base</td>
+                  <td className='border border-black px-2'>Condición</td>
+                  <td className='border border-black px-2'>Operador</td>
                   <td className='border border-black px-2'>Observación</td>
                 </tr>
               </table>
@@ -167,7 +167,7 @@ export default function Instructivo() {
                   <td className='border border-black px-2'>Código del servicio</td>
                   <td className='border border-black px-2'>Patente </td>
                   <td className='border border-black px-2'>Origen (donde está en guarda el vehículo)</td>
-                  <td className='border border-black px-2'>Destino Real</td>
+                  <td className='border border-black px-2'>Destino real</td>
                   <td className='border border-black px-2'>Día (en el cual se puso en guarda)</td>
                   <td className='border border-black px-2'>Observaciones (datos complementarios del servicio)</td>
                   <td className='border border-black px-2'>Estado</td>
