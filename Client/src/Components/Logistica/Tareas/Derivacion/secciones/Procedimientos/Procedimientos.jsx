@@ -149,7 +149,7 @@ export default function Procedimientos() {
             <div class="tab-pane fade px-3 mt-3" id="nav-gestor" role="tabpanel" aria-labelledby="nav-gestor-tab" tabindex="0">
               <p>En la solapa de "Adicionales" y sin dar en editar al servicio, se debe registrar en el recuadro de "tarjeta de crédito" el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
                 <b>Se debe estar sumamente atento a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)</b> <br />
-                Una vez registrado el valor, van a hacer click en el cartelito azul que dice "Tarjeta de crédito"<br />
+                Una vez registrado el valor, van a hacer click en el cartel azul que dice "Tarjeta de crédito"<br />
                 Y allí los redirecciona al gestor de pagos. <br />
                 En esta primera solapa que abre registrarán los datos del titular de la tarjeta.<br/> 
                 Si el cliente quiere el link por WhatsAp,se debe solicitar de igual manera una casilla de correo (esto es obligatorio ya que la factura se envía por este medio), si el cliente informa que no tiene y no sabe de ningun familiar o cercano, se registra la de "supervisoresderivacion@redsos.com.ar". <br />
@@ -230,21 +230,21 @@ export default function Procedimientos() {
                   <h1 className='mt-2'><u>Zonas</u></h1>
                   <div className='text-start d-flex flex-row mt-3'>
                     <ul className='px-5 listaGral'>
-                      <li>Bs as Gral.</li>
-                      <li>Bs As Norte.</li>
+                      <li>Buenos Aires General.</li>
+                      <li>Buenos Aires Norte.</li>
                       <li>Córdoba.</li>
-                      <li>Entre Ríos</li>
+                      <li>Entre Ríos.</li>
                     </ul>
                     <ul className='px-5 listaGral'>
-                      <li>Patagonia</li>
-                      <li>Santa Fe</li>
-                      <li>Misiones</li>
+                      <li>Patagonia.</li>
+                      <li>Santa Fe.</li>
+                      <li>Misiones.</li>
                     </ul>
                   </div>
                   <h1><u>Orden de Prioridades:</u></h1>
                   <ol className='px-5 listaGral'>
-                    <li>Ruta</li>
-                    <li>Transito</li>
+                    <li>Ruta.</li>
+                    <li>Transito.</li>
                     <li>Domicilio/Estacionamiento.</li>
                   </ol>
                   <h1><u>Debilidades</u></h1>
