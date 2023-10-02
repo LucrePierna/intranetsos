@@ -69,21 +69,21 @@ function Reintegro() {
 
         if (vehValue === 'a') {
           if (zonValue === 'r') {
-            valorMecanica = 2050; // Nacional
+            valorMecanica = 2850; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 2690; // Patagonia
+            valorMecanica = 3800; // Patagonia
           }
         } else if (vehValue === 'l') {
           if (zonValue === 'r') {
-            valorMecanica = 2300; // Nacional
+            valorMecanica = 3200; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 2826; // Patagonia
+            valorMecanica = 3950; // Patagonia
           }
         } else if (vehValue === 'ca') {
           if (zonValue === 'r') {
-            valorMecanica = 7500; // Nacional
+            valorMecanica = 10500; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 8000; // Patagonia
+            valorMecanica = 11250; // Patagonia
           }
         }
 
