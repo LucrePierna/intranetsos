@@ -14,8 +14,8 @@ export default function Agenda() {
   ];
 
   const dataPart2 = [
-    { nombre: "Chat CAT PIPE", numero: "3512002585" },
-    { nombre: "Chattigo (Para Prestadores)", numero: "1128080012" },
+    { nombre: "Chat CAT PIPE", numero: "1128080012" },
+    { nombre: "Chattigo (Para Prestadores)", numero: "3512002585" },
     { nombre: "Atención a Prestadores", numero: "08108101234" },
     { nombre: "Soporte Gap", numero: "9600" },
     { nombre: "Contención", numero: "3220" },

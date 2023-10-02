@@ -27,11 +27,10 @@ function Extraccion() {
       let valorFinal = 0;
 
       if (importeCotizado > coberturaCliente) {
-        valorFinal = importeCotizado - (coberturaCliente * (1 + iva));
+        valorFinal = importeCotizado - coberturaCliente
       } else {
-        valorFinal = (importeCotizado * (1 - iva)) - coberturaCliente;
+        valorFinal = (importeCotizado / (1 + iva)) - coberturaCliente;
 
-        // Agregamos la corrección del mensaje aquí
         if (valorFinal <= 0) {
           setResultado(0);
           setMensajeCubierto('CUBIERTO PARA CLIENTE');
@@ -59,17 +58,19 @@ function Extraccion() {
     }
   };
 
+
   const calcularImporteCorregido = () => {
     if (tipoResponsable === 'responsableInscripto') {
       const iva = 0.21;
-      const importeCorregido = (importeCotizado - importeCotizado * iva).toFixed(0);
-      return importeCorregido;
+      if (coberturaCliente < importeCotizado) {
+        return (coberturaCliente / (1 + iva)).toFixed(0);
+      } else {
+        return (importeCotizado / (1 + iva)).toFixed(0);
+      }
     } else {
-      const importeCorregido = (coberturaCliente - coberturaCliente * 0.21).toFixed(0);
-      return importeCorregido;
+      return coberturaCliente;
     }
   };
-
   return (
     <div className="container text-center mt-3 h-50 w-50 bg-secondary rounded-5 p-4">
       <h1 className="text-center my-3">CALCULADORA DE EXTRACCIÓN</h1>
@@ -134,5 +135,4 @@ function Extraccion() {
     </div>
   );
 }
-
 export default Extraccion;

@@ -80,3 +80,12 @@ td{
     margin-bottom: 2rem;
   }
 }
+
+.loading{
+  margin-top: 20%;
+}
+
+.chattigoTable{
+  width: 700px ;
+  height: auto;
+}
