@@ -23,22 +23,29 @@ export default function Brasil() {
     };
 
     const handleCopyClick = () => {
-        const formattedText = `
-         ${formData.presentacion}
-        Veiculo: ${formData.vehiculo}
-        Placa: ${formData.patente}
-        Cor: ${formData.color}
-        Segurado: ${formData.titular}
-        Telefones: ${formData.telefono}
-        Origem: ${formData.origen}
-        Final: ${formData.destino}
-        Falha De Carro: ${formData.falla}
-        Observações: ${formData.observaciones}
-        `;
-        navigator.clipboard.writeText(formattedText)
+        let formattedText = '';
+
+        if (formData.saludo) {
+            formattedText += `${formData.saludo}, `;
+        }
+
+        formattedText += `Solicito orçamento e disponibilidade:
+          Veiculo: ${formData.vehiculo}
+          Placa: ${formData.patente}
+          Cor: ${formData.color}
+          Segurado: ${formData.titular}
+          Telefones: ${formData.telefono}
+          Origem: ${formData.origen}
+          Final: ${formData.destino}
+          Falha De Carro: ${formData.falla}
+          Observações: ${formData.observaciones}`;
+
+        navigator.clipboard
+            .writeText(formattedText)
             .then(() => setCopied(true))
-            .catch(err => alert('Error en copiar texto ', err))
+            .catch((err) => alert('Error en copiar texto ', err));
     }
+
 
     const handleReset = () => {
         setFormData({
@@ -61,8 +68,65 @@ export default function Brasil() {
             <div className="row">
                 <div className="d-flex flex-row">
                     <div className='flex-column px-4'>
-                        <div className="py-1">
-                            <label className="px-3">Bom dia, Solicito orçamento e disponibilidade:</label>
+                        <div className='py-1'>
+                            <label className='px-3'>Saludo:</label>
+                            <div className='form-check'>
+                                <input
+                                    type='checkbox'
+                                    className='form-check-input'
+                                    id='bomDia'
+                                    value='Bom dia'
+                                    checked={formData.saludo === 'Bom dia'}
+                                    onChange={(e) =>
+                                        handleFieldChange(
+                                            'saludo',
+                                            e.target.checked ? 'Bom dia' : ''
+                                        )
+                                    }
+                                />
+                                <label className='form-check-label' htmlFor='bomDia'>
+                                    Bom dia
+                                </label>
+                            </div>
+                            <div className='form-check'>
+                                <input
+                                    type='checkbox'
+                                    className='form-check-input'
+                                    id='boaTarde'
+                                    value='Boa tarde'
+                                    checked={formData.saludo === 'Boa tarde'}
+                                    onChange={(e) =>
+                                        handleFieldChange(
+                                            'saludo',
+                                            e.target.checked ? 'Boa tarde' : ''
+                                        )
+                                    }
+                                />
+                                <label className='form-check-label' htmlFor='boaTarde'>
+                                    Boa tarde
+                                </label>
+                            </div>
+                            <div className='form-check'>
+                                <input
+                                    type='checkbox'
+                                    className='form-check-input'
+                                    id='boaNoite'
+                                    value='Boa noite'
+                                    checked={formData.saludo === 'Boa noite'}
+                                    onChange={(e) =>
+                                        handleFieldChange(
+                                            'saludo',
+                                            e.target.checked ? 'Boa noite' : ''
+                                        )
+                                    }
+                                />
+                                <label className='form-check-label' htmlFor='boaNoite'>
+                                    Boa noite
+                                </label>
+                            </div>
+                        </div>
+                        <div className='py-1'>
+                            <label className='px-3'>Solicito orçamento e disponibilidade:</label>
                         </div>
                         <div className='py-1'>
                             <label className='px-3'>Veiculo:</label>

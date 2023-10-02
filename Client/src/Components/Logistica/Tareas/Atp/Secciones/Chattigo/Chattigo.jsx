@@ -3,11 +3,11 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from 
 
 export default function Chattigo() {
   return (
-    <div className="container mt-5 h-50 w-50 m-auto">
-      <div className="row justify-content-center">
+    <div className="container  mt-5 h-50 w-50 m-auto">
+      <div className="row justify-content-center m-auto ">
         <div className="col-md-8">
-          <div className="d-flex flex-column gap-3 p-2  justify-content-center mx-auto">
-            <Table aria-label="Example static collection table">
+          <div className="d-flex flex-column gap-3 p-2 mx-auto">
+            <Table className='chattigoTable' aria-label="Example static collection table">
               <TableHeader>
                 <TableColumn className="border border-dark bg-danger text-light">USUARIO</TableColumn>
                 <TableColumn className="border border-dark bg-danger text-light">CONTRASEÑA</TableColumn>
