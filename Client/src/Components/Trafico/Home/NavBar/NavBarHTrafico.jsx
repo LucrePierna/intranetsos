@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Agenda from '../Secciones/Agenda/Agenda'
-import DesvioMvl from '../Secciones/DesviosMvl/DesviosMvl'
-import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
 import Incidencias from '../Secciones/Incidencias/Incidencias'
+import Procedimientos from '../Secciones/Procedimientos/Procedimientos';
+import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
 import Noticias from '../Secciones/Noticias/Noticias'
 import Saludos from '../Secciones/Saludos/Saludos'
 import logo from '../../Image/Menu Trafico/Iconos/logoTrafinet.png'
@@ -85,14 +85,14 @@ export default function NavBarHTrafico() {
           </li>
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'desviomvl' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('desviomvl')}
+              className={`nav-link btn ${selectedComponent === 'procedimientos' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('procedimientos')}
               style={{
-                color: selectedComponent === 'desviomvl' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'desviomvl' ? 'white' : 'initial'
+                color: selectedComponent === 'procedimientos' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'procedimientos' ? 'white' : 'initial'
               }}
             >
-              Desvio de móviles
+              Procedimientos
             </button>
           </li>
         </ul>
@@ -107,7 +107,7 @@ export default function NavBarHTrafico() {
         {selectedComponent === 'calculadora' && <Calculadoras />}
         {selectedComponent === 'incidencias' && <Incidencias />}
         {selectedComponent === 'saludos' && <Saludos />}
-        {selectedComponent === 'desviomvl' && <DesvioMvl />}
+        {selectedComponent === 'procedimientos' && <Procedimientos />}
       </div>
     </div>
   );

@@ -160,6 +160,13 @@ code {
   margin: auto;
 }
 
+.responsiveIncidencias {
+  width: 70% !important;
+  height: 80vh;
+  align-items: center;
+  margin: auto;
+}
+
 .mapaGeneral {
   width: 70% !important;
   height: 70vh;
