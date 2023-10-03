@@ -3,7 +3,8 @@ import React, { useEffect } from 'react'
 import * as bootstrap from 'bootstrap'
 import imagenCostos from '../../../../Image/tierradelfuegocostos.png'
 import imagenParalelo from '../../../../Image/Paralelo24Brasil.png'
-import Brasil from './brasil/Brasil';
+import Brasil from './Formatos/brasil/Brasil';
+import Solicitud from './Formatos/Solicitud/Solicitud';
 
 export default function Instructivo() {
 
@@ -34,6 +35,7 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-chile-tab" data-bs-toggle="tab" data-bs-target="#nav-chile" type="button" role="tab" aria-controls="nav-chile" aria-selected="false">Chile</button>
           <button className="nav-link custom" id="nav-paraguay-tab" data-bs-toggle="tab" data-bs-target="#nav-paraguay" type="button" role="tab" aria-controls="nav-paraguay" aria-selected="false">Paraguay</button>
           <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestación</button>
+          <button className="nav-link custom" id="nav-formatos-tab" data-bs-toggle="tab" data-bs-target="#nav-formatos" type="button" role="tab" aria-controls="nav-formatos" aria-selected="false">Formato</button>
         </div>
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
@@ -151,7 +153,6 @@ export default function Instructivo() {
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-mapa-tab" data-bs-toggle="tab" data-bs-target="#nav-mapa" type="button" role="tab" aria-controls="nav-mapa" aria-selected="true">Mapa</button>
               <button class="nav-link sub" id="nav-coordinacion-tab" data-bs-toggle="tab" data-bs-target="#nav-coordinacion" type="button" role="tab" aria-controls="nav-coordinacion" aria-selected="false">Coordinación de servicio</button>
-              <button class="nav-link sub" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato de servicio</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
@@ -175,10 +176,6 @@ export default function Instructivo() {
                 </li>
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
-            </div>
-            <div class="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
-              <h1 className='fw-bold'><u>Formato de servicio</u></h1>
-              <Brasil />
             </div>
           </div>
         </div>
@@ -295,6 +292,23 @@ export default function Instructivo() {
               <p>El operador deber especificar vía mail la demora para cargar el vehículo y el costo final de la asistencia. Lugo aguardar la confirmación del pedido para así confirmar la asistencia a nuestro prestador y realizar la asignación de la base correspondiente.</p>
               <h1><u>IMPORTANTE</u></h1>
               <p>Nunca se deberá informar el código del servicio a nuestro prestador antes de la confirmación del pedido.</p>
+            </div>
+          </div>
+
+        </div>
+        <div className="tab-pane fade" id="nav-formatos" role="tabpanel" aria-labelledby="nav-formatos-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub" id="nav-solicitud-tab" data-bs-toggle="tab" data-bs-target="#nav-solicitud" type="button" role="tab" aria-controls="nav-solicitud" aria-selected="false">Solicitud por e-mail o whatsapp</button>
+              <button class="nav-link sub active" id="nav-formatobrasil-tab" data-bs-toggle="tab" data-bs-target="#nav-formatobrasil" type="button" role="tab" aria-controls="nav-formatobrasil" aria-selected="true">Formato Brasil</button>
+            </div>
+          </nav>
+          <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-solicitud" role="tabpanel" aria-labelledby="nav-solicitud-tab" tabindex="0">
+              <Solicitud />
+            </div>
+            <div class="tab-pane fade" id="nav-formatobrasil" role="tabpanel" aria-labelledby="nav-formatobrasil-tab" tabindex="0">
+             <Brasil />
             </div>
           </div>
         </div>

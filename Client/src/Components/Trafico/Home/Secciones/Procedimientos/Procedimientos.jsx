@@ -22,8 +22,6 @@ export default function Procedimientos() {
         })
     })
 
-
-
     return (
         <div className='d-flex flex-column align-items-center justify-content-center mx-auto mt-4'>
             <nav>
@@ -40,7 +38,7 @@ export default function Procedimientos() {
                     <button className="nav-link custom" id="nav-anulacion-tab" data-bs-toggle="tab" data-bs-target="#nav-anulacion" type="button" role="tab" aria-controls="nav-anulacion" aria-selected="false">Anulación</button>
                 </div>
             </nav>
-            <div className="h-100 w-50 tab-content mt-1" id="nav-tabContent">
+            <div className="h-100 w-100 tab-content mt-1" id="nav-tabContent">
                 <div className="tab-pane fade show active" id="nav-productoPrestador" role="tabpanel" aria-labelledby="nav-productoPrestador-tab" tabindex="0">
                     <img src={productos} alt="Productos Prestador" className='responsiveImgSaludos' />
                 </div>

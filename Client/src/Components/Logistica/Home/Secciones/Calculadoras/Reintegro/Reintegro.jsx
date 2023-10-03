@@ -17,7 +17,7 @@ function Reintegro() {
     const kmsValue = parseFloat(kms) * 2;
 
 
-const valores = {
+    const valores = {
       // Valores para Otras Compañías
       o: {
         // Valores para Resto del País
@@ -37,15 +37,9 @@ const valores = {
       f: {
         // Valores para Resto del País
         r: {
-          a: { valor: 4100, km: 183.33 },
-          l: { valor: 4600, km: 183.33 },
-          ca: { valor: 15000, km: 183.33 },
-        },
-        // Valores para Patagonia
-        p: {
-          a: { valor: 5380, km: 183.33 },
-          l: { valor: 5652, km: 183.33 },
-          ca: { valor: 16000, km: 183.33 },
+          a: { valor: 5700, km: 227 },
+          l: { valor: 6400, km: 227 },
+          ca: { valor: 21000, km: 227 },
         },
       },
     };
@@ -67,7 +61,7 @@ const valores = {
 
         let valorMecanica = 0;
 
-       if (vehValue === 'a') {
+        if (vehValue === 'a') {
           if (zonValue === 'r') {
             valorMecanica = 2850; // Nacional
           } else if (zonValue === 'p') {
@@ -169,7 +163,7 @@ const valores = {
                 Zona:
                 <select className="form-select container-style" value={zon} onChange={(e) => setZon(e.target.value)}>
                   <option value="r">Resto del País</option>
-                  <option value="p">Patagonia</option>
+                  {comp === 'o' && <option value="p">Patagonia</option>}
                 </select>
               </label>
             </div>
