@@ -53,9 +53,9 @@ export default function Procedimientos() {
                   </tr>
                   <tr className='tabla'><td className='border border-light px-3'>Falla</td>
                     <td className='border border-light px-3'>Teléfono</td>
-                    <td className='border border-light px-3'>Ubicación origen y destino</td>
+                    <td className='border border-light px-3'>Ubicación de origen y destino</td>
                     <td className='border border-light px-3'>Cantidad de pasajeros</td>
-                    <td className='border border-light px-3'>Requisitos Si vehículo viaja sólo</td></tr>
+                    <td className='border border-light px-3'>Requisitos si vehículo viaja sólo</td></tr>
                   <tr className='tabla'><td className='border border-light px-3'>Horarios de taller</td>
                     <td className='border border-light px-3'>Si posee carga</td>
                     <td className='border border-light px-3'>Dimensiones e información extra en referencias</td>

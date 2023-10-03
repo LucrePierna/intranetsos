@@ -175,7 +175,7 @@ export default function Procedimientos() {
               </ul>
             </div>
             <div class="tab-pane fade px-3 " id="nav-ofrecemos" role="tabpanel" aria-labelledby="nav-ofrecemos-tab" tabindex="0">
-              <ul className='text-start '>
+              <ul className='text-start listaGral'>
                 <li>Reintegro de traslado  o programación.</li>
                 <li>Coordinación de remis para traslado a estación de servicio.</li>
                 <li>Hospedaje si corresponde.</li>

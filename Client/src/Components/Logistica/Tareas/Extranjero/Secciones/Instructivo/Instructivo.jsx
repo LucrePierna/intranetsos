@@ -17,7 +17,7 @@ export default function Instructivo() {
         tabTrigger.show()
       })
     })
-    const inicialTab = new bootstrap.Tab(document.querySelector('#nav-uruguay-tab'));
+    const inicialTab = new bootstrap.Tab(document.querySelector('#nav-analisis-tab'));
     inicialTab.show();
 
   }, []);
@@ -28,18 +28,70 @@ export default function Instructivo() {
     <div className='conteinerNav mt-5' >
       <nav className='navConteiner'>
         <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button className="nav-link custom" id="nav-analisis-tab" data-bs-toggle="tab" data-bs-target="#nav-analisis" type="button" role="tab" aria-controls="nav-analisis" aria-selected="false">Analisis del servicio</button>
           <button className="nav-link custom" id="nav-uruguay-tab" data-bs-toggle="tab" data-bs-target="#nav-uruguay" type="button" role="tab" aria-controls="nav-uruguay" aria-selected="false">Uruguay</button>
           <button className="nav-link custom" id="nav-brasil-tab" data-bs-toggle="tab" data-bs-target="#nav-brasil" type="button" role="tab" aria-controls="nav-brasil" aria-selected="false">Brasil</button>
           <button className="nav-link custom" id="nav-chile-tab" data-bs-toggle="tab" data-bs-target="#nav-chile" type="button" role="tab" aria-controls="nav-chile" aria-selected="false">Chile</button>
+          <button className="nav-link custom" id="nav-paraguay-tab" data-bs-toggle="tab" data-bs-target="#nav-paraguay" type="button" role="tab" aria-controls="nav-paraguay" aria-selected="false">Paraguay</button>
           <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestación</button>
         </div>
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
+        <div className="tab-pane fade" id="nav-analisis" role="tabpanel" aria-labelledby="nav-analisis-tab" tabindex="0">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-particul-tab" data-bs-toggle="tab" data-bs-target="#nav-particul" type="button" role="tab" aria-controls="nav-particul" aria-selected="true">Particularidades</button>
+              <button class="nav-link sub" id="nav-gralsvc-tab" data-bs-toggle="tab" data-bs-target="#nav-gralsvc" type="button" role="tab" aria-controls="nav-gralsvc" aria-selected="false">Generalidades al analizar servicio</button>
+              <button class="nav-link sub" id="nav-reintegro-tab" data-bs-toggle="tab" data-bs-target="#nav-reintegro" type="button" role="tab" aria-controls="nav-reintegro" aria-selected="false">Reintegro</button>
+              <button class="nav-link sub" id="nav-extraccion-tab" data-bs-toggle="tab" data-bs-target="#nav-extraccion" type="button" role="tab" aria-controls="nav-extraccion" aria-selected="false">Extracción</button>
+              <button class="nav-link sub" id="nav-coberturas-tab" data-bs-toggle="tab" data-bs-target="#nav-coberturas" type="button" role="tab" aria-controls="nav-coberturas" aria-selected="false">Coberturas</button>
+              <button class="nav-link sub" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Registro de Cobertura</button>
+            </div>
+          </nav>
+          <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-particul" role="tabpanel" aria-labelledby="nav-particul-tab" tabindex="0">
+              <p>A diferencia de la derivación de un servicio en Argentina, en el caso de servicios en el exterior será necesario contar con una cotización previo a efectuar la asignación al prestador. En todos los casos que se consulte cotización, la misma será manejada en dólares (u$s) o reales (r$). No es posible retornar al país cruzando por dos países del exterior, por ejemplo, el vehículo quedó en Brasil y quiere retornar por Uruguay para tomar Buquebus.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-gralsvc" role="tabpanel" aria-labelledby="nav-gralsvc-tab" tabindex="0">
+              <ul className='mt-3 listaGral'>
+                <li>Ubicación de origen correcta y precisa. </li>
+                <li>Los vehículos que retornan al país pueden viajar sin acompañantes en territorio extranjero (bajo las mismas condiciones que un traslado en Argentina) pero, sin excepción, debe esperar en la frontera titular o apoderado para completar los trámites aduaneros.</li>
+                <li>Si estaba regresando del viaje o estaba iniciándolo al momento de la urgencia:<br />
+                  Vehículos que se encuentran en localidades “destino”. Esto corre para vehículos que están en localidades donde el cliente se encuentra, siendo su destino (hospedado por el motivo que fuera, ej.: vacaciones) y deben ser trasladados dentro o fuera de la misma:</li>
+                <ul className='listaGral'>
+                  <li>En estas condiciones, el servicio se brindará con las particularidades habituales, solicitando cotización al prestador y brindando la cobertura en el extranjero según grilla de cada compañía.</li>
+                </ul>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
+              <ul className='mt-3 listaGral'>
+                <li><b><u>Federación Patronal:</u></b> km recorridos por valor de km adicional, para mecánicas o movimientos locales el costo del servicio adicional.  </li>
+                <li><b><u>Resto de Compañías:</u></b> se realiza el cálculo con planilla de reintegro </li>
+              </ul>
+              <p><b>Cuando se brinda la cobertura por reintegro siempre expresarse en pesos argentinos, NO convertir a moneda extranjera y respetando la cobertura según grilla.</b></p>
+            </div>
+            <div class="tab-pane fade" id="nav-extraccion" role="tabpanel" aria-labelledby="nav-extraccion-tab" tabindex="0">
+              <ul className='mt-3 listaGral'>
+                <li>Para las compañías que el ítem "extracción" no tiene tope, se brinda sin costo. </li>
+                <li>Para las que tienen tope económico se cobra la totalidad de la extracción. </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="nav-coberturas" role="tabpanel" aria-labelledby="nav-coberturas-tab" tabindex="0">
+              <ul className='mt-3 listaGral'>
+                <li>Si el cliente tiene cobertura en kilómetros, se respeta los kms recorridos. </li>
+                <li>Si tiene cobertura en dinero, se transfiere al cliente la totalidad de la cotización con kms vacíos incluidos. </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabindex="0">
+              {/* ...FORMATO AUTOCMPLETAR.... */}
+            </div>
+          </div>
+        </div>
         <div className="tab-pane fade" id="nav-uruguay" role="tabpanel" aria-labelledby="nav-uruguay-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link sub active" id="nav-terrestre-tab" data-bs-toggle="tab" data-bs-target="#nav-terrestre" type="button" role="tab" aria-controls="nav-terrestre" aria-selected="true">Terrestres</button>
-              <button class="nav-link sub" id="nav-Fluvial-tab" data-bs-toggle="tab" data-bs-target="#nav-Fluvial" type="button" role="tab" aria-controls="nav-Fluvial" aria-selected="false">Fluvial</button>
+              <button class="nav-link sub active" id="nav-terrestre-tab" data-bs-toggle="tab" data-bs-target="#nav-terrestre" type="button" role="tab" aria-controls="nav-terrestre" aria-selected="true">Terrestre</button>
+              <button class="nav-link sub" id="nav-fluvial-tab" data-bs-toggle="tab" data-bs-target="#nav-fluvial" type="button" role="tab" aria-controls="nav-fluvial" aria-selected="false">Fluvial</button>
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
@@ -61,7 +113,7 @@ export default function Instructivo() {
                 <li>Salto Grande - Concordia.</li>
               </ul>
             </div>
-            <div class="tab-pane fade" id="nav-Fluvial" role="tabpanel" aria-labelledby="nav-Fluvial-tab" tabindex="0">
+            <div class="tab-pane fade" id="nav-fluvial" role="tabpanel" aria-labelledby="nav-fluvial-tab" tabindex="0">
               <h1 className='mt-3 fw-bold'>Los traslados se realizan por medio de Buque-Bus</h1>
               <ul className='listaGral'>
                 <h1><u>Puntos importantes:</u></h1>
@@ -79,6 +131,7 @@ export default function Instructivo() {
                 <li>Puerto Piriápolis.</li>
               </ul>
             </div>
+
           </div>
         </div>
         <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
@@ -146,6 +199,8 @@ export default function Instructivo() {
               <img src={imagenCostos} alt="costosDeEjemplo" className='responsiveImgGeneral' />
             </div>
           </div>
+        </div>
+        <div className="tab-pane fade" id="nav-paraguay" role="tabpanel" aria-labelledby="nav-paraguay-tab" tabindex="0">
         </div>
         <div className="tab-pane fade" id="nav-contraprestacion" role="tabpanel" aria-labelledby="nav-contraprestacion-tab" tabindex="0">
           <nav>
@@ -215,6 +270,6 @@ export default function Instructivo() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
