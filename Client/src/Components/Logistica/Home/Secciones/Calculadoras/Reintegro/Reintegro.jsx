@@ -41,12 +41,6 @@ function Reintegro() {
           l: { valor: 6400, km: 227 },
           ca: { valor: 21000, km: 227 },
         },
-        // Valores para Patagonia
-        p: {
-          a: { valor: 5380, km: 183.33 },
-          l: { valor: 5652, km: 183.33 },
-          ca: { valor: 16000, km: 183.33 },
-        },
       },
     };
 
