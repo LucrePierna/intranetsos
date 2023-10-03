@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './estilos.css'
+import '../estilos/estilos.css'
 
 function Reintegro() {
   const [comp, setComp] = useState('o');
