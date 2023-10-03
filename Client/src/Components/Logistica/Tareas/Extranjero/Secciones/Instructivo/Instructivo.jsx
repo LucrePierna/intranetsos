@@ -83,7 +83,19 @@ export default function Instructivo() {
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabindex="0">
-              {/* ...FORMATO AUTOCMPLETAR.... */}
+              <p>Deben quedar en una referencia operativa los registros correspondientes a la cobertura y excedentes en caso de que los hubiere.</p>
+              <p><b>El formato a utilizar es:</b></p>
+              <ul className='mt-3 listaGral'>
+                <u>Para las coberturas de dinero:</u>
+                <li>Cobertura en dinero:</li>
+                <li>Cotización del dólar o real del día: </li>
+                <li>Cobertura en dólares o reales: </li>
+              </ul>
+              <ul className='mt-3 listaGral'>
+                <u>Para coberturas en kilómetros:</u>
+                <li>Kilómetros totales cubiertos:</li>
+                <li>Precio del kilómetro excedente:</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -201,6 +213,23 @@ export default function Instructivo() {
           </div>
         </div>
         <div className="tab-pane fade" id="nav-paraguay" role="tabpanel" aria-labelledby="nav-paraguay-tab" tabindex="0">
+          <h1><b><u>Destino y situaciones a tener en cuenta</u></b></h1>
+          <ul className='mt-3 listaGral'>
+          <li>Regreso vía terrestre, tener en cuenta si hay restricción horaria en el paso fronterizo por el cual regresará al país y si está habilitado. <br/>
+          <a href="https://www.argentina.gob.ar/seguridad/pasosinternacionales" target='_blank'><button type="button" class="btn btn-danger mt-3">Verificar Pasos Fronterizos</button></a>
+          </li>
+          <li>Solicitar cotización telefónicamente (prestador activo: AG 9505  - DOMINGO ESCAURIZA CASABIANCA).  <br />
+            Si no hay contacto telefónico cotizar a través de WhatsApp con el formato en la sección "Formato"</li>
+          <li>Dejar registro de cobertura en referencia operativa. </li>
+          <li>Los pasos fronterizos son:</li>
+            <ul className='mt-3 listaGral'>
+              <li>Puerto José Falcón </li>
+              <li>Puente Internacional Posadas - Encarnación (ARG) </li>
+              <li>Foz de Iguazú a Salto del Guaira (este paso no se usa, generalmente, ya que NO hacemos retorno a Argentina por doble frontera).</li>
+              <b>DICHOS COSTOS ESTÁN EN LA GRILLA DEL PRESTADOR Y SE TRASLADA A LA COTIZACIÓN FINAL PARA EL CLIENTE</b>
+            </ul>
+            <p>Puentes internacionales donde las aduanas están unificadas, la grúa de Paraguay SÍ cruza el puente (la grúa de Argentina NO cruza el puente)</p>
+            </ul>
         </div>
         <div className="tab-pane fade" id="nav-contraprestacion" role="tabpanel" aria-labelledby="nav-contraprestacion-tab" tabindex="0">
           <nav>
