@@ -52,7 +52,8 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-particul" role="tabpanel" aria-labelledby="nav-particul-tab" tabindex="0">
-              <p>A diferencia de la derivación de un servicio en Argentina, en el caso de servicios en el exterior será necesario contar con una cotización previo a efectuar la asignación al prestador. En todos los casos que se consulte cotización, la misma será manejada en dólares (u$s) o reales (r$). No es posible retornar al país cruzando por dos países del exterior, por ejemplo, el vehículo quedó en Brasil y quiere retornar por Uruguay para tomar Buquebus.</p>
+              <p>A diferencia de la derivación de un servicio en Argentina, en el caso de servicios en el exterior será necesario contar con una cotización previo a efectuar la asignación al prestador. En todos los casos que se consulte cotización, la misma será manejada en dólares (u$s) o reales (r$).<br />
+                No es posible retornar al país cruzando por dos países del exterior, por ejemplo, el vehículo quedó en Brasil y quiere retornar por Uruguay para tomar Buquebus.</p>
             </div>
             <div class="tab-pane fade" id="nav-gralsvc" role="tabpanel" aria-labelledby="nav-gralsvc-tab" tabindex="0">
               <ul className='mt-3 listaGral'>
@@ -110,22 +111,28 @@ export default function Instructivo() {
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-terrestre" role="tabpanel" aria-labelledby="nav-terrestre-tab" tabindex="0">
+              <h1><b><u>CAR·UP</u></b></h1>
+              <p>Solicitar cotización telefónicamente (90059826141555).<br />
+                En caso de que no haya contacto enviar email solicitando cotización a operaciones@carup.com.uy con copia a: derivacioncba@redsos.com.ar prestadorescba@redsos.com.ar y supervisoresderivacion@redsos.com.ar con el formato que figura en la sección "Formato". </p>
               <ul className='listaGral'>
-                <h1><u>Puntos importantes.</u></h1>
-                <li>Origen en Uruguay.</li>
-                <li>Destino final en Argentina.</li>
+                <h1><u>Puntos importantes:</u></h1>
                 <li>Paso fronterizo más próximo.</li>
-                <li>Estado del paso y horarios para cruzar la frontera.</li>
+                <li>Regreso vía terrestre tener en cuenta si hay restricción horaria en el paso fronterizo por el cual regresará al país y si está habilitado.
+                  <a href="https://www.argentina.gob.ar/seguridad/pasosinternacionales" target='_blank'><button type="button" class="btn btn-danger mt-1">Horarios Pasos Fronterizos</button></a>
+                </li>
                 <li>Cliente debe acompañar el traslado.</li>
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
-
               <ul className='listaGral'>
                 <h1><u>Pasos fronterizos:</u></h1>
                 <li>Fray Bentos - Gualeguaychú.</li>
                 <li>Paysandú - Colon.</li>
                 <li>Salto Grande - Concordia.</li>
               </ul>
+              <p><u>Puentes internacionales donde las aduanas están unificadas y la grúa de Uruguay no cruza el puente, debe hacerlo la grúa de Argentina.</u></p>
+              <p><b>Tener en cuenta que hay peajes internacionales y el costo es muy diferente al valor de un peaje convencional.</b>
+                <a href="https://www.caru.org.uy/web/servicios/tarifas-de-los-puentes/" target='_blank'><button type="button" class="customBTN mx-3">Valor del Peaje</button></a>
+              </p>
             </div>
             <div class="tab-pane fade" id="nav-fluvial" role="tabpanel" aria-labelledby="nav-fluvial-tab" tabindex="0">
               <h1 className='mt-3 fw-bold'>Los traslados se realizan por medio de Buque-Bus</h1>
@@ -144,8 +151,8 @@ export default function Instructivo() {
                 <li>Montevideo.</li>
                 <li>Puerto Piriápolis.</li>
               </ul>
+              <p><b>Tener en cuenta en regreso vía fluvial:</b> el cliente ya debe tener el pasaje con bodega adquirido y debemos constatar horario de embarque y desembarque. Tener en cuenta que las ruedas tienen que girar para subir a bodega, caso contrario que el cliente averigüe si la empresa (Buquebus) acepta subir dicho vehículo bajo responsabilidad de él (requisitos de embarque).</p>
             </div>
-
           </div>
         </div>
         <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
@@ -168,11 +175,12 @@ export default function Instructivo() {
                 <li>Origen del servicio.</li>
                 <li>Paso fronterizo más próximo.</li>
                 <li>Destino final en caso de ir hasta Argentina.</li>
+                <li>En caso de vehículos siniestrados y que no se cuente con la documentación, es posible realizar el traslado solamente con la constancia de denuncia “Boletín de Ocorrencia” (denuncia policial).</li>
                 <li>Dejar registro de la cotización en reales al día de la fecha: <br />
-                  <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-3">Cotización Divisa</button></a>
+                  <a href="https://www.bna.com.ar/Personas" target='_blank'><button type="button" class="btn btn-danger mt-1">Cotización Divisa</button></a>
                 </li>
-                <li>Confirmar el servicio al prestador de Brasil, vía e-mail adjuntando la planilla con los datos del servicio <br />
-                  <a href="https://redsos.sharepoint.com/:x:/r/sites/SGC/_layouts/15/Doc.aspx?sourcedoc=%7B47D48EF1-5CBC-4214-A314-1E45CA0C0361%7D&file=FL-08%20Red%20Nacional%20-%20Planilla%20de%20Cierre%20de%20Servicio%20-%20Brasil%2CRev04.xlsx&action=default&mobileredirect=true" target='_blank'><button type="button" class="btn btn-danger mt-3">Planilla</button></a>
+                <li>Confirmar el servicio al prestador de Brasil, vía e-mail adjuntando la planilla con los datos del servicio: <br />
+                  <a href="https://redsos.sharepoint.com/:x:/r/sites/SGC/_layouts/15/Doc.aspx?sourcedoc=%7B47D48EF1-5CBC-4214-A314-1E45CA0C0361%7D&file=FL-08%20Red%20Nacional%20-%20Planilla%20de%20Cierre%20de%20Servicio%20-%20Brasil%2CRev04.xlsx&action=default&mobileredirect=true" target='_blank'><button type="button" class="btn btn-danger mt-1">Planilla</button></a>
                 </li>
                 <li>Coordinar traslado en lado argentino.</li>
               </ul>
@@ -212,13 +220,13 @@ export default function Instructivo() {
         <div className="tab-pane fade" id="nav-paraguay" role="tabpanel" aria-labelledby="nav-paraguay-tab" tabindex="0">
           <h1><b><u>Destino y situaciones a tener en cuenta</u></b></h1>
           <ul className='mt-3 listaGral'>
-          <li>Regreso vía terrestre, tener en cuenta si hay restricción horaria en el paso fronterizo por el cual regresará al país y si está habilitado. <br/>
-          <a href="https://www.argentina.gob.ar/seguridad/pasosinternacionales" target='_blank'><button type="button" class="btn btn-danger mt-3">Verificar Pasos Fronterizos</button></a>
-          </li>
-          <li>Solicitar cotización telefónicamente (prestador activo: AG 9505  - DOMINGO ESCAURIZA CASABIANCA).  <br />
-            Si no hay contacto telefónico cotizar a través de WhatsApp con el formato en la sección "Formato"</li>
-          <li>Dejar registro de cobertura en referencia operativa. </li>
-          <li>Los pasos fronterizos son:</li>
+            <li>Regreso vía terrestre, tener en cuenta si hay restricción horaria en el paso fronterizo por el cual regresará al país y si está habilitado. <br />
+              <a href="https://www.argentina.gob.ar/seguridad/pasosinternacionales" target='_blank'><button type="button" class="btn btn-danger mt-1">Verificar Pasos Fronterizos</button></a>
+            </li>
+            <li>Solicitar cotización telefónicamente (prestador activo: AG 9505  - DOMINGO ESCAURIZA CASABIANCA).  <br />
+              Si no hay contacto telefónico cotizar a través de WhatsApp con el formato en la sección "Formato"</li>
+            <li>Dejar registro de cobertura en referencia operativa. </li>
+            <li>Los pasos fronterizos son:</li>
             <ul className='mt-3 listaGral'>
               <li>Puerto José Falcón </li>
               <li>Puente Internacional Posadas - Encarnación (ARG) </li>
@@ -226,7 +234,7 @@ export default function Instructivo() {
               <b>DICHOS COSTOS ESTÁN EN LA GRILLA DEL PRESTADOR Y SE TRASLADA A LA COTIZACIÓN FINAL PARA EL CLIENTE</b>
             </ul>
             <p>Puentes internacionales donde las aduanas están unificadas, la grúa de Paraguay SÍ cruza el puente (la grúa de Argentina NO cruza el puente)</p>
-            </ul>
+          </ul>
         </div>
         <div className="tab-pane fade" id="nav-contraprestacion" role="tabpanel" aria-labelledby="nav-contraprestacion-tab" tabindex="0">
           <nav>
@@ -308,7 +316,7 @@ export default function Instructivo() {
               <Solicitud />
             </div>
             <div class="tab-pane fade" id="nav-formatobrasil" role="tabpanel" aria-labelledby="nav-formatobrasil-tab" tabindex="0">
-             <Brasil />
+              <Brasil />
             </div>
           </div>
         </div>
