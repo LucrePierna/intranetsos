@@ -61,7 +61,7 @@ export default function Pesados() {
                 <li>Nación Seguros.</li>
                 <li>Provincia Seguros.</li>
                 <li>Santander, a través de Meridional Seguros.</li>
-                <li>Zúrich</li>
+                <li>Zúrich.</li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-difter" role="tabpanel" aria-labelledby="nav-difter-tab" tabindex="0">
