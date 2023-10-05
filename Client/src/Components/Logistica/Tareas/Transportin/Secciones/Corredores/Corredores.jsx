@@ -23,10 +23,15 @@ export default function Corredores() {
         </div>
       </nav>
       <div className="h-100 w-100 tab-content mt-3" id="nav-tabContent">
-        <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">  <iframe src="https://www.google.com/maps/d/embed?mid=1tFFeKr1DrrYGLdAMZgQauzG5u6QjRKc&ehbc=2E312F" className='mapaGeneral'></iframe></div>
-        <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><iframe src="https://www.google.com/maps/d/embed?mid=15hD9V0JCdH3q58WN8w2lXK1XiUms4O4&ehbc=2E312F"
-         className='mapaGeneral'></iframe></div>
-        <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">  <iframe src="https://www.google.com/maps/d/embed?mid=1NvIICBDj5Q1ld5q2pSRSHEJk1sPSnhY&ehbc=2E312F" className='mapaGeneral'></iframe></div>
+        <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1tFFeKr1DrrYGLdAMZgQauzG5u6QjRKc&ehbc=2E312F" className='mapaGeneral'></iframe>
+          </div>
+        <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+          <iframe src="https://www.google.com/maps/d/embed?mid=15hD9V0JCdH3q58WN8w2lXK1XiUms4O4&ehbc=2E312F" className='mapaGeneral'></iframe>
+         </div>
+        <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1BcCIVizUczjWAlltulnokYL4SeQsvLo&ehbc=2E312F&noprof=1" className='mapaGeneral'></iframe>
+        </div>
       </div>
     </div>
   )
