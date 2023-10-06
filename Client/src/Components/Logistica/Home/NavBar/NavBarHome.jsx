@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Agenda from '../Secciones/Agenda/Agenda';
 import Calculadoras from '../Secciones/Calculadoras/Calculadora';
 import Noticias from '../Secciones/Noticias/Noticias';
+import Saludos from '../Secciones/Saludos/Saludos'
 
 export default function NavBarHome() {
   const [selectedComponent, setSelectedComponent] = useState('noticias');
@@ -52,6 +53,18 @@ export default function NavBarHome() {
               Calculadoras
             </button>
           </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'saludos' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('saludos')}
+              style={{
+                color: selectedComponent === 'saludos' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'saludos' ? 'white' : 'initial'
+              }}
+            >
+              Saludos
+            </button>
+          </li>
         </ul>
       </nav>
 
@@ -59,6 +72,7 @@ export default function NavBarHome() {
         {selectedComponent === 'agenda' && <Agenda />}
         {selectedComponent === 'noticias' && <Noticias />}
         {selectedComponent === 'calculadoras' && <Calculadoras />}
+        {selectedComponent === 'saludos' && <Saludos />}
       </div>
     </div>
   );

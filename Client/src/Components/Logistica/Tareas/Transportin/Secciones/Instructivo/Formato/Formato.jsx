@@ -9,11 +9,11 @@ export default function Formato() {
             llaves: false,
             autorizacion: false,
             cedulaVerde: false,
-            cedulaVerdeDigital: false
         },
         metodopago: '',
         cobrado: 'no',
         viajero: '',
+        pertenencias: 'no',
         observaciones: ''
     })
     const [copied, setCopied] = useState(false)
@@ -111,9 +111,7 @@ export default function Formato() {
         if (formData.documentacion.cedulaVerde) {
             formattedText += 'Cédula Verde, ';
         }
-        if (formData.documentacion.cedulaVerdeDigital) {
-            formattedText += 'Cédula Verde Digital, ';
-        }
+
         formattedText = formattedText.replace(/, $/, '\n');
 
         formattedText += `Método de pago: ${formData.metodoPago}\n`;
@@ -133,6 +131,12 @@ export default function Formato() {
             formattedText += 'Pasajes en micro \n';
         } else if (formData.viajero === 'sinCoordinar') {
             formattedText += 'Sin Coordinar - Viajero pendiente de coordinación\n';
+        }
+
+        if (formData.pertenencias === 'si') {
+            formattedText += 'Se informa que la compañía no se responsabiliza por las pertenencias: Sí\n';
+        } else {
+            formattedText += 'Se informa que la compañía no se responsabiliza por las pertenencias: No\n';
         }
 
         formattedText += `Observaciones: ${formData.observaciones}\n`;
@@ -156,6 +160,7 @@ export default function Formato() {
             metodopago: '',
             cobrado: 'no',
             viajero: 'reintegro',
+            pertenencias: 'no',
             observaciones: ''
         })
         setCopied(false);
@@ -256,36 +261,12 @@ export default function Formato() {
                             Cédula Verde
                         </label>
                     </div>
-                    <div>
-                        <label className='p-1 mx-1'>
-                            <input
-                                className='mx-2'
-                                type='checkbox'
-                                checked={formData.documentacion.cedulaVerdeDigital}
-                                onChange={() => handleDocumentacionChange('cedulaVerdeDigital')}
-                                disabled={formData.aceptaModalidad === 'no'}
-                            />
-                            Cédula Verde Digital
-                        </label>
-                    </div>
                 </div>
             </div>
 
             <div className='form-row py-1'>
                 <label className='p-1 mx-1'>
                     Método de pago:
-                    <input
-                        className='mx-2'
-                        type='radio'
-                        name='metodoPago'
-                        value='transferencia'
-                        checked={formData.metodoPago === 'transferencia'}
-                        onChange={() => handleMetodoPagoChange('transferencia')}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                    Transferencia
-                </label>
-                <label className='p-1 mx-1'>
                     <input
                         className='mx-2'
                         type='radio'
@@ -391,6 +372,33 @@ export default function Formato() {
                 </label>
             </div>
 
+            <div className='form-row py-1'>
+                <label className='p-1 mx-1'>
+                    Se informa que la compañía no se responsabiliza por las pertenencias:
+                    <input
+                        className='mx-2'
+                        type='radio'
+                        name='pertenencias'
+                        value='si'
+                        checked={formData.pertenencias === 'si'}
+                        onChange={(e) => handleFieldChange('pertenencias', e.target.value)}
+                        disabled={formData.aceptaModalidad === 'no'}
+                    />
+                    Sí
+                </label>
+                <label className='p-1 mx-1'>
+                    <input
+                        className='mx-2'
+                        type='radio'
+                        name='pertenencias'
+                        value='no'
+                        checked={formData.pertenencias === 'no'}
+                        onChange={(e) => handleFieldChange('pertenencias', e.target.value)}
+                        disabled={formData.aceptaModalidad === 'no'}
+                    />
+                    No
+                </label>
+            </div>
 
 
             <div className='form-row py-1'>
