@@ -31,6 +31,18 @@ export default function NavBarAtp() {
           </li>
           <li className="nav-item">
             <button
+              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('flujograma')}
+              style={{
+                color: selectedComponent === 'flujograma' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
+              }}
+            >
+              Flujograma
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
               className={`nav-link btn ${selectedComponent === 'anulacion' ? 'active' : ''}`}
               onClick={() => handleComponentClick('anulacion')}
               style={{
@@ -54,18 +66,6 @@ export default function NavBarAtp() {
             </button>
           </li>
 
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'flujograma' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('flujograma')}
-              style={{
-                color: selectedComponent === 'flujograma' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'flujograma' ? 'white' : 'initial'
-              }}
-            >
-              Flujograma
-            </button>
-          </li>
         </ul>
       </nav>
 
