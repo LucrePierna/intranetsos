@@ -10,7 +10,7 @@ export default function Formato() {
             autorizacion: false,
             cedulaVerde: false,
         },
-        metodopago: 'Link de pago',
+        metodoPago: 'Link de pago',
         cobrado: 'no',
         viajero: '',
         pertenencias: 'no',
@@ -52,20 +52,6 @@ export default function Formato() {
     };
 
 
-    const handleMetodoPagoChange = (value) => {
-        if (formData.aceptaModalidad === 'no') {
-            setFormData((prevData) => ({
-                ...prevData,
-                metodoPago: value,
-                aceptaModalidad: 'si',
-            }));
-        } else {
-            setFormData((prevData) => ({
-                ...prevData,
-                metodoPago: value,
-            }));
-        }
-    }
 
     const handleReintegroChange = () => {
         handleFieldChange('viajero', 'reintegro');
@@ -157,7 +143,7 @@ export default function Formato() {
                 cedulaVerde: false,
                 cedulaVerdeDigital: false
             },
-            metodopago: 'Link de pago',
+            metodoPago: 'Link de pago',
             cobrado: 'no',
             viajero: 'reintegro',
             pertenencias: 'no',
@@ -269,8 +255,8 @@ export default function Formato() {
                     Método de pago:
                     <input
                             className='mx-2'
-                            value={formData.metodopago}
-                            onChange={(e) => handleFieldChange('metodopago', e.target.value)}
+                            value={formData.metodoPago}
+                            onChange={(e) => handleFieldChange('metodoPago', e.target.value)}
                             readOnly={true}
                             disabled={formData.aceptaModalidad === 'no'}
                         />
