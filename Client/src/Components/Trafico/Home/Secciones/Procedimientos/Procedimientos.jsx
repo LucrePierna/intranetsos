@@ -26,7 +26,7 @@ export default function Procedimientos() {
         <div className='d-flex flex-column align-items-center justify-content-center mx-auto mt-4'>
             
             <div className="h-100 w-100 tab-content mt-1" id="nav-tabContent">
-<iframe src="https://redsos.sharepoint.com/_layouts/15/Doc.aspx?sourcedoc={3c88f482-5c4b-41ef-b893-fbd2af7333e2}&amp;action=embedview" width="1650px" height="800px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> diagram, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>            </div>
+<iframe src="https://redsos.sharepoint.com/_layouts/15/Doc.aspx?sourcedoc={3c88f482-5c4b-41ef-b893-fbd2af7333e2}&amp;action=embedview" width="1400px" height="700px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> diagram, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>            </div>
         </div>
     )
 }
