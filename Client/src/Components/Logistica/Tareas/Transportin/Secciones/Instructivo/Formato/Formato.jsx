@@ -10,7 +10,7 @@ export default function Formato() {
             autorizacion: false,
             cedulaVerde: false,
         },
-        metodopago: '',
+        metodoPago: 'Link de pago',
         cobrado: 'no',
         viajero: '',
         pertenencias: 'no',
@@ -52,20 +52,6 @@ export default function Formato() {
     };
 
 
-    const handleMetodoPagoChange = (value) => {
-        if (formData.aceptaModalidad === 'no') {
-            setFormData((prevData) => ({
-                ...prevData,
-                metodoPago: value,
-                aceptaModalidad: 'si',
-            }));
-        } else {
-            setFormData((prevData) => ({
-                ...prevData,
-                metodoPago: value,
-            }));
-        }
-    }
 
     const handleReintegroChange = () => {
         handleFieldChange('viajero', 'reintegro');
@@ -157,7 +143,7 @@ export default function Formato() {
                 cedulaVerde: false,
                 cedulaVerdeDigital: false
             },
-            metodopago: '',
+            metodoPago: 'Link de pago',
             cobrado: 'no',
             viajero: 'reintegro',
             pertenencias: 'no',
@@ -268,27 +254,12 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Método de pago:
                     <input
-                        className='mx-2'
-                        type='radio'
-                        name='metodoPago'
-                        value='tarjetaCredito'
-                        checked={formData.metodoPago === 'tarjetaCredito'}
-                        onChange={() => handleMetodoPagoChange('tarjetaCredito')}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                    Tarjeta de Crédito
-                </label>
-                <label className='p-1 mx-1'>
-                    <input
-                        className='mx-2'
-                        type='radio'
-                        name='metodoPago'
-                        value='tarjetaDebito'
-                        checked={formData.metodoPago === 'tarjetaDebito'}
-                        onChange={() => handleMetodoPagoChange('tarjetaDebito')}
-                        disabled={formData.aceptaModalidad === 'no'}
-                    />
-                    Tarjeta de Débito
+                            className='mx-2'
+                            value={formData.metodoPago}
+                            onChange={(e) => handleFieldChange('metodoPago', e.target.value)}
+                            readOnly={true}
+                            disabled={formData.aceptaModalidad === 'no'}
+                        />
                 </label>
             </div>
 
