@@ -389,7 +389,7 @@ export default function Formato() {
                     {copied ? 'Copiado' : 'Copiar'}
                 </button>
                 <button className='btn btn-danger mt-3 mx-4' onClick={handleReset}>
-                    Restablecer
+                    Limpiar
                 </button>
             </div>
         </div>
