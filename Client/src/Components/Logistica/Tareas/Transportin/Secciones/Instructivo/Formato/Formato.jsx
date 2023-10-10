@@ -377,6 +377,7 @@ export default function Formato() {
                     Observaciones:
                     <textarea
                         className='mx-2'
+                        maxlength="218"
                         value={formData.observaciones}
                         onChange={(e) => handleFieldChange('observaciones', e.target.value)}
                         disabled={formData.aceptaModalidad === 'no'}
