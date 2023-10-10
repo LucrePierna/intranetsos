@@ -77,7 +77,7 @@ export default function TareasEspeciales() {
                         <p className='mt-5'>Es una de las asistencias especiales que se brindan cuando el cliente solicita un servicio cuyo vehículo se encuentre atascado, dado vuelta o de costado. El prestador deba realizar maniobras y dejarlo en condiciones de ser trasladado o de volver a rodar por sus medios.</p>
                         <p>El operador deberá en primera instancia validar si según la cobertura el cliente posee el servicio. Luego se deberá corroborar:</p>
                         <ul className='text-start m-auto py-2 listaGral'>
-                            <li >Descripción del hecho.</li>
+                            <li>Descripción del hecho.</li>
                             <li>Estado de ruedas.</li>
                             <li>Estado del vehículo.</li>
                             <li>Estado del camino.</li>

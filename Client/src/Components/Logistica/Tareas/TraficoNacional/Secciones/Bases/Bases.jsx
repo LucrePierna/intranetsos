@@ -258,8 +258,8 @@ export default function Procedimientos() {
           <div class="tab-content text-start px-4 mt-4" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-divpat" role="tabpanel" aria-labelledby="nav-divpat-tab" tabindex="0">
               <ul className='mt-2'>
-                <li>Neuquén:  Aquellos que se encuentran en Neuquén, Cipolletti, Rincón de los Sauces, Añelo, Plotter, Centenario, General Roca, Villa Regina, Huego, Zapala, Plaza Huincul, Cutral Co, Choele Choel, San Martin de los Andes, Junín de los Andes y demás ciudades aledañas. (NQN1 - NQN2 – NQN3 – NQN4 - RN1)  </li>
-                <li>Rio Negro: Servicios que se encuentren en Bariloche, Villa la Angostura, El Bolsón, Epuyen. (RN2 RN3 SCB1 SCB2)  </li>
+                <li><b><u>Neuquén:</u></b>  Aquellos que se encuentran en Neuquén, Cipolletti, Rincón de los Sauces, Añelo, Plotter, Centenario, General Roca, Villa Regina, Huego, Zapala, Plaza Huincul, Cutral Co, Choele Choel, San Martin de los Andes, Junín de los Andes y demás ciudades aledañas. (NQN1 - NQN2 – NQN3 – NQN4 - RN1)  </li>
+                <li><b><u>Rio Negro:</u></b> Servicios que se encuentren en Bariloche, Villa la Angostura, El Bolsón, Epuyen. (RN2 RN3 SCB1 SCB2)  </li>
               </ul>
               <h5><u>Zona en Automático</u></h5>
               <p>
@@ -308,8 +308,8 @@ export default function Procedimientos() {
               <p>
                 El tráfico de Santa Fe se subdivide de la siguiente manera:</p>
               <ul className='mt-2'>
-                <li>Sta. Fe locales (tanto para los servicios que están dentro de la Ciudad de Sta. Fe, como así también aquellos que se encuentren en Monte Vera, Recreo, Sto. Tome, Sauce Viejo)  </li>
-                <li>Sta. fe interior (demás localidades)  </li>
+                <li>Santa Fe locales (tanto para los servicios que están dentro de la Ciudad de Sta. Fe, como así también aquellos que se encuentren en Monte Vera, Recreo, Sto. Tome, Sauce Viejo)  </li>
+                <li>Santa Fe interior (demás localidades)  </li>
               </ul>
             </div>
             <div class="tab-pane fade" id="nav-automatistafe" role="tabpanel" aria-labelledby="nav-automatistafe-tab" tabindex="0">
