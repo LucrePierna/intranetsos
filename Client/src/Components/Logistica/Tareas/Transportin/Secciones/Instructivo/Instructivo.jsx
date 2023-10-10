@@ -16,7 +16,7 @@ export default function Instructivo() {
   })
 
   return (
-    <div className='conteinerNav mt-5  ' >
+    <div className='conteinerNav mt-5 '>
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripción</button>
