@@ -47,7 +47,7 @@ export default function Moviles() {
               
               <div className='d-grid g-col-2 gap-1 col-2 '>
                 <a href="https://redsos-my.sharepoint.com/:x:/r/personal/gcordeiro_redsos_com_ar/Documents/MEJORA%20DE%20PROCESOS/Relevamiento%20Equipamiento.xlsx?d=wb1cf8c11f579414795cac1f48f288d43&csf=1&web=1&e=Vm8CUb" target="_blank" rel="noopener noreferrer">
-                  <button button type='button' class="btn btn-danger mt-3">Acceso a Implementos y Dimensiones de Móviles</button>
+                  <button button type='button' class="btn btn-danger mt-3">Acceso a Planilla</button>
                 </a>
               </div>
             </div></div>
