@@ -2,7 +2,7 @@ import React from 'react'
 import * as bootstrap from 'bootstrap'
 
 
-export default function Instructivo() {
+export default function Procedimientos() {
 
     const triggerTabList = document.querySelectorAll('#myTab button')
     triggerTabList.forEach(triggerEl => {
