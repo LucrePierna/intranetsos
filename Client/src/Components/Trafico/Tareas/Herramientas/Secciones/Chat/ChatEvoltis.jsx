@@ -33,10 +33,11 @@ export default function ChatEvoltis() {
           </TableRow>
         </TableBody>
       </Table>
-      <a href="http://moviochat.evoltis.com" target="_blank" rel="noopener noreferrer">
-        <button type='button' class="btn btn-danger mt-3">Abrir Movio</button>
-      </a>
-
+      <div>
+        <a href="http://moviochat.evoltis.com" target="_blank" rel="noopener noreferrer">
+          <button type='button' class="btn btn-danger mt-3">Abrir Movio</button>
+        </a>
+      </div>
     </div>
   )
 }

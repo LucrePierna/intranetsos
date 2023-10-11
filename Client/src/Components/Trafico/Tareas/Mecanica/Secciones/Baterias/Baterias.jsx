@@ -9,7 +9,7 @@ export default function Agenda() {
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-precios-tab" data-bs-toggle="tab" data-bs-target="#nav-precios" type="button" role="tab" aria-controls="nav-precios" aria-selected="true">Precios</button>
-          <button className="nav-link custom" id="nav-bases-tab" data-bs-toggle="tab" data-bs-target="#nav-bases" type="button" role="tab" aria-controls="nav-bases" aria-selected="false">Bases</button>
+          <button className="nav-link custom" id="nav-bases-tab" data-bs-toggle="tab" data-bs-target="#nav-bases" type="button" role="tab" aria-controls="nav-bases" aria-selected="false">Centros Moura</button>
         </div>
       </nav>
       <div className="h-100 w-100 tab-content mt-3 px-5 m-auto text-start" id="nav-tabContent">
@@ -21,14 +21,14 @@ export default function Agenda() {
         <div className="tab-pane fade" id="nav-bases" role="tabpanel" aria-labelledby="nav-bases-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link sub active" id="nav-batmza-tab" data-bs-toggle="tab" data-bs-target="#nav-batmza" type="button" role="tab" aria-controls="nav-batmza" aria-selected="true">Mendoza</button>
-              <button class="nav-link sub" id="nav-batstafe-tab" data-bs-toggle="tab" data-bs-target="#nav-batstafe" type="button" role="tab" aria-controls="nav-batstafe" aria-selected="true">Santa Fe</button>
+              {/* <button class="nav-link sub active" id="nav-batmza-tab" data-bs-toggle="tab" data-bs-target="#nav-batmza" type="button" role="tab" aria-controls="nav-batmza" aria-selected="true">Mendoza</button> */}
+              <button class="nav-link sub active" id="nav-batstafe-tab" data-bs-toggle="tab" data-bs-target="#nav-batstafe" type="button" role="tab" aria-controls="nav-batstafe" aria-selected="true">Rosario</button>
               <button class="nav-link sub" id="nav-batcba-tab" data-bs-toggle="tab" data-bs-target="#nav-batcba" type="button" role="tab" aria-controls="nav-batcba" aria-selected="false">Córdoba</button>
               <button class="nav-link sub" id="nav-batbsas-tab" data-bs-toggle="tab" data-bs-target="#nav-batbsas" type="button" role="tab" aria-controls="nav-batbsas" aria-selected="false">Buenos Aires</button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active " id="nav-batmza" role="tabpanel" aria-labelledby="nav-batmza-tab" tabindex="0">
+            {/* <div class="tab-pane fade show active " id="nav-batmza" role="tabpanel" aria-labelledby="nav-batmza-tab" tabindex="0">
               <Table aria-label="Example static collection table" className="d-flex flex-col justify-content-center">
                 <TableHeader>
                   <TableColumn className="border border-dark bg-danger text-light">RAZÓN SOCIAL</TableColumn>
@@ -138,8 +138,8 @@ export default function Agenda() {
                   </TableRow>
                 </TableBody>
               </Table>
-            </div>
-            <div className="tab-pane fade" id="nav-batstafe" role="tabpanel" aria-labelledby="nav-batstafe-tab" tabindex="0">
+            </div> */}
+            <div className="tab-pane fade show active" id="nav-batstafe" role="tabpanel" aria-labelledby="nav-batstafe-tab" tabindex="0">
               <Table aria-label="Example static collection table" className="d-flex flex-col justify-content-center">
                 <TableHeader>
                   <TableColumn className="border border-dark bg-danger text-light">RAZÓN SOCIAL</TableColumn>
@@ -149,7 +149,7 @@ export default function Agenda() {
                   <TableColumn className="border border-dark bg-danger text-light">TELÉFONO</TableColumn>
                 </TableHeader>
                 <TableBody >
-                  <TableRow key="1" className="border border-dark bg-light text-black">
+                  {/* <TableRow key="1" className="border border-dark bg-light text-black">
                     <TableCell>Gardeñes Oscar Jose</TableCell>
                     <TableCell>Rivadavia 1779</TableCell>
                     <TableCell>Santa Fe</TableCell>
@@ -184,6 +184,13 @@ export default function Agenda() {
                     <TableCell>Santa Fe</TableCell>
                     <TableCell>3424893514</TableCell>
                   </TableRow>
+                  <TableRow key="12" className="border border-dark bg-light text-black">
+                    <TableCell>Halfaman Antonio</TableCell>
+                    <TableCell>Facundo Zuviria 8185</TableCell>
+                    <TableCell>Santa Fe</TableCell>
+                    <TableCell>Santa Fe</TableCell>
+                    <TableCell>3425488517</TableCell>
+                  </TableRow> */}
                   <TableRow key="6" className="border border-dark bg-light text-black">
                     <TableCell>Brachetta Marcelo Luis</TableCell>
                     <TableCell>27 de febrero 2427</TableCell>
@@ -225,13 +232,6 @@ export default function Agenda() {
                     <TableCell>Santa Fe</TableCell>
                     <TableCell>Rosario</TableCell>
                     <TableCell>3413063508</TableCell>
-                  </TableRow>
-                  <TableRow key="12" className="border border-dark bg-light text-black">
-                    <TableCell>Halfaman Antonio</TableCell>
-                    <TableCell>Facundo Zuviria 8185</TableCell>
-                    <TableCell>Santa Fe</TableCell>
-                    <TableCell>Santa Fe</TableCell>
-                    <TableCell>3425488517</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
