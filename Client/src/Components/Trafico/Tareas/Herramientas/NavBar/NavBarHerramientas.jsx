@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ChatEvoltis from '../Secciones/Chat/ChatEvoltis';
 import MobilFinder from '../Secciones/Finder/MobilFinder';
-// import Consultas from '../Secciones/Consultas/Consultas';
+
+
+ import Consultas from '../Secciones/Consultas/Consultas';
+
+
 import logo from '../../../Image/Menu Trafico/Iconos/logoTrafinet.png'
 
 export default function NavBarHerramientas() {
@@ -41,7 +45,9 @@ export default function NavBarHerramientas() {
               Mobil Finder
             </button>
           </li>
-          {/* <li className="nav-item">
+
+
+          <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'consultas' ? 'active' : ''}`}
               onClick={() => handleComponentClick('consultas')}
@@ -52,7 +58,9 @@ export default function NavBarHerramientas() {
             >
               Preguntas Frecuentes
             </button>
-          </li> */}
+          </li>
+
+
         </ul>
         <div className='logoTrafico'>
           <img src={logo} alt="logoTrafinet" height={50} width={60} />
@@ -62,7 +70,11 @@ export default function NavBarHerramientas() {
       <div className="container-fluid">
         {selectedComponent === 'chat' && <ChatEvoltis />}
         {selectedComponent === 'finder' && <MobilFinder />}
-        {/* {selectedComponent === 'consultas' && <Consultas />} */}
+
+
+        {selectedComponent === 'consultas' && <Consultas />}
+
+
       </div>
     </div>
   );
