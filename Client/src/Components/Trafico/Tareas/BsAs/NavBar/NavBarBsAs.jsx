@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Mapas from '../Secciones/Mapas/Mapas'
 import Procedimientos from '../Secciones/Procedimientos/Procedimientos'
-import Manual from '../Secciones/Manual/Manual'
+// import Manual from '../Secciones/Manual/Manual'
 import Moviles from '../Secciones/Moviles/Moviles'
 import logo from '../../../Image/Menu Trafico/Iconos/logoTrafinet.png'
 
@@ -43,7 +43,7 @@ export default function NavBarBsAs() {
             </button>
           </li>
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <buttonmanual
               className={`nav-link btn ${selectedComponent === 'manual' ? 'active' : ''}`}
               onClick={() => handleComponentClick('manual')}
@@ -54,7 +54,7 @@ export default function NavBarBsAs() {
             >
               Manual
             </buttonmanual>
-          </li>
+          </li> */}
           <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'moviles' ? 'active' : ''}`}
@@ -76,7 +76,7 @@ export default function NavBarBsAs() {
       <div className="container-fluid">
         {selectedComponent === 'procedimientos' && <Procedimientos />}
         {selectedComponent === 'mapas' && <Mapas />}
-        {selectedComponent === 'manual' && <Manual />}
+        {/* {selectedComponent === 'manual' && <Manual />} */}
         {selectedComponent === 'moviles' && <Moviles />}
 
       </div>
