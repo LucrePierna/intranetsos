@@ -56,7 +56,7 @@ export default function NavBarHerramientas() {
                 backgroundColor: selectedComponent === 'consultas' ? 'white' : 'initial'
               }}
             >
-              Preguntas Frecuentes
+              FAQs
             </button>
           </li>
 
