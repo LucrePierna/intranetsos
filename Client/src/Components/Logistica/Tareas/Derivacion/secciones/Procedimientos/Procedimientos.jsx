@@ -111,7 +111,10 @@ export default function Procedimientos() {
                   <p>Se utilizará cuando el prestador por la particularidad del servicio no cuente con un tipo de móvil adecuado o no posea las herramientas necesarias para poder realizar el traslado/mecánica.</p>
 
                   <h5><u>Cuestiones operativas</u></h5>
-                  <p>Cuestiones internas o externas que no estén contempladas en el resto de los rechazos. Ej: que nos llame un prestador informando que está junto a un vehículo y en la prioridad nos figure primero otro prestador.</p>
+                  <p>Cuestiones internas o externas que no estén contempladas en el resto de los rechazos.</p>
+
+                  <h5><u>Falta de Comunicación</u></h5>
+                  <p>Se utiliza cuando no se logra contacto con el prestador.</p>
                 </ul>
               </div>
             </div>
@@ -127,7 +130,7 @@ export default function Procedimientos() {
                   <h5><u>Sin combustible</u></h5>
                   <p>Cuando el prestador informe que en la zona no hay combustible.</p>
 
-                  <h5><u>Tarifa</u></h5>
+                  <h5><u>Tarifas</u></h5>
                   <p>Cuando el prestador nos informe que no está trabajando por no tener tarifas acordadas o actualizadas.</p>
 
                   <h5><u>Móvil averiado</u></h5>
@@ -137,7 +140,7 @@ export default function Procedimientos() {
                   <h5><u>Viaje largo</u></h5>
                   <p>Cuando el prestador nos informe que está realizando un traslado largo</p>
 
-                  <h5><u>Ya no trabaja más para SOS</u></h5>
+                  <h5><u>Ya no trabaja para SOS</u></h5>
                   <p>Cuando el prestador informe que tiene suspendido el servicio para S.O.S.</p>
 
                   <h5><u>Horario nocturno</u></h5>

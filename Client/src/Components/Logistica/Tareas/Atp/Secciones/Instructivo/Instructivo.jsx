@@ -39,7 +39,9 @@ export default function Procedimientos() {
       </nav>
       <div className='h-100 w-100 tab-content text-start mt-3 px-5 m-auto' id="nav-tabContent">
         <div className="tab-pane fade show active lineaGeneral" id="nav-inicial" role="tabpanel" aria-labelledby="nav-inicial-tab" tabindex="0">
-          <p>Requiere la solución especifica de consultas realizadas por prestadores de red nacional a través de llamados o mensajes que ingresan en la plataforma Chattigo, exclusivo para prestadores. En algunas oportunidades, pueden presentarse consultas de móviles que corresponden a tráfico de red nacional cuando se vean colapsados. En estos casos, se verifica en el servicio a que tráfico corresponde el servicio y se da aviso al 9700 (tráfico local) o 9750 (tráfico nacional) según corresponda. </p>
+          <p>Es la tarea que requiere la solución especifica de consultas realizadas por prestadores de red nacional a través de llamados al 0810-810-1234 o mensajes que ingresan en la plataforma Chattigo 3512002585, exclusivo para prestadores.<br />
+            En algunos casos pueden presentarse consultas de móviles que corresponden a tráfico local o trafico de red nacional, se verificara en el servicio a que tráfico corresponde para luego dar aviso a 9700 (tráfico local) o 9750 (tráfico nacional) según corresponda.
+          </p>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-ingchat" role="tabpanel" aria-labelledby="nav-ingchat-tab" tabindex="0">
           <h1><u>Ingreso de chat/llamado</u></h1>
