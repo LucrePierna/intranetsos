@@ -135,7 +135,7 @@ export default function Calculadora({ resultado }) {
                 {copied ? 'Copiado' : 'Copiar'}
               </button>
               <button className='btn btn-dark btnGroup' type='button' onClick={handleReset}>
-                Restablecer
+                Limpiar
               </button>
             </div>
           </form>
