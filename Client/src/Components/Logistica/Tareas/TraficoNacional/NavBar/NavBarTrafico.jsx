@@ -49,7 +49,7 @@ export default function NavBarTrafico() {
               onClick={() => handleComponentClick('noticias')}
               style={{
                 color: selectedComponent === 'noticias' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'noticias' ? 'white' : 'initial'
+                backgroundColor: selectedComponent === 'noticias' ? 'white' : 'red'
               }}
             >
               Noticias
