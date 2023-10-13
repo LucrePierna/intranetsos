@@ -80,10 +80,10 @@ export default function Consultas() {
                 <div className="tab-pane fade lineaGeneral" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
                     <p>Para coordinar cualquier servicio de pesados debes tener SI O SI foto de la unidad, caso contrario no el servicio queda en espera hasta recibirla.</p>
                 </div>
-                <div className="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
                     <p>Los vehículos que se encuentren sin motor no tienen servicio. El mismo debe estar colocado o dentro del vehículo para poder realizar la asistencia.</p>
                 </div>
-                <div className="tab-pane fade " id="nav-fc" role="tabpanel" aria-labelledby="nav-fc-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-fc" role="tabpanel" aria-labelledby="nav-fc-tab" tabindex="0">
                 <h1>Recordar que este servicio lo brinda SOS a modo de cortesía hacia el cliente, no estamos obligados y se consulta
                         disponibilidad es de lunes a viernes de 9 a 17hs, NO se programan estos servicios. </h1>
                     <br />
@@ -108,14 +108,13 @@ export default function Consultas() {
                     <li>Cuando esté en cocheras particulares (Ejemplo: cochera de una casa)</li>
                     </ul>
                 </div>
-                <div className="tab-pane fade " id="nav-patente" role="tabpanel" aria-labelledby="nav-patente-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-patente" role="tabpanel" aria-labelledby="nav-patente-tab" tabindex="0">
                 <p>Cuando un móvil llega a realizar una asistencia y nos indica que no le coincide la patente, debemos llamar al 8800 o 98008 e indicarles la situación 
                         para que corroboren si el socio cuenta con asistencia con dicha patente, le indicamos al móvil que aguarde 15min mientras se realiza la gestión y se 
                         comunique nuevamente, en caso de tener servicio realizaremos la asistencia. En caso de no tener servicio se anulará el mismo como 
                         "servicio mal tomado/duplicado" (dar aviso a supervisor para esta anulación) en el caso de que la patente corresponda a otro asegurado, en el caso 
                         de que sea otro vehículo del cliente y el haya dado mal la patente se anula como "al llegar móvil cliente" ya que es su responsabilidad el haber
                          brindado una patente incorrecta. </p>
-
                 </div>
             </div >
         </div>
