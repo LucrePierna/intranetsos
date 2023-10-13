@@ -25,7 +25,10 @@ export default function Consultas() {
                     <button className="nav-link custom" id="nav-contencion-tab" data-bs-toggle="tab" data-bs-target="#nav-contencion" type="button" role="tab" aria-controls="nav-contencion" aria-selected="false">Servicios de Peritaje</button>
                     {/* <button className="nav-link custom" id="nav-refesvc-tab" data-bs-toggle="tab" data-bs-target="#nav-refesvc" type="button" role="tab" aria-controls="nav-refesvc" aria-selected="false">Vehiculos en Parking</button> */}
                     <button className="nav-link custom" id="nav-gruat-tab" data-bs-toggle="tab" data-bs-target="#nav-gruat" type="button" role="tab" aria-controls="nav-gruat" aria-selected="false">Coordinación pesados</button>
-                    {/*<button className="nav-link custom" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Tarea</button> */}
+                    <button className="nav-link custom" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Vehículos sin motor</button>
+                    <button className="nav-link custom" id="nav-fc-tab" data-bs-toggle="tab" data-bs-target="#nav-fc" type="button" role="tab" aria-controls="nav-fc" aria-selected="false">Fuera Cochera</button>
+                    <button className="nav-link custom" id="nav-patente-tab" data-bs-toggle="tab" data-bs-target="#nav-patente" type="button" role="tab" aria-controls="nav-patente" aria-selected="false">Patente incorrecta</button>
+
                 </div>
             </nav>
             <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
@@ -77,9 +80,39 @@ export default function Consultas() {
                 <div className="tab-pane fade lineaGeneral" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
                     <p>Para coordinar cualquier servicio de pesados debes tener SI O SI foto de la unidad, caso contrario no el servicio queda en espera hasta recibirla.</p>
                 </div>
-                {/* <div className="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
-                    ...
-                </div> */}
+                <div className="tab-pane fade " id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+                    <p>Los vehículos que se encuentren sin motor no tienen servicio. El mismo debe estar colocado o dentro del vehículo para poder realizar la asistencia.</p>
+                </div>
+                <div className="tab-pane fade " id="nav-fc" role="tabpanel" aria-labelledby="nav-fc-tab" tabindex="0">
+                <h1>Recordar que este servicio lo brinda SOS a modo de cortesía hacia el cliente, no estamos obligados y se consulta
+                        disponibilidad es de lunes a viernes de 9 a 17hs, NO se programan estos servicios. </h1>
+                    <br />
+                    <p>¿En qué consiste el procedimiento?</p>
+                    <p>Se envía un móvil de menor porte (Por lo general, una camioneta con un tenedor adaptado para enganchar el auto) para sacar el vehículo de donde se
+                        encuentra y una vez que el vehículo está en la calle, se carga en grúa y es trasladado hasta el destino que nos indica el cliente.</p>
+                    <br />
+                    <p>Algunas consideraciones a tener en cuenta cuando les consulten disponibilidad:</p>
+                    <p>• Lugar físico en donde se encuentre el vehículo (planta alta, planta baja, 1er subsuelo, 2do subsuelo, etc.).</p>
+                    <p>• Cómo se encuentra estacionado el vehículo (de frente o de culata).</p>
+                    <p>• Altura de la cochera debe ser mayor a 2.5m.</p>
+                    <p>• Condiciones de las rampas (curvas, empinadas, etc.)</p>
+                    <br />
+                    <p>¿Cuándo NO lo podemos brindar?</p>
+                    <p>• Cuando el vehículo se encuentre en la planta alta de un estacionamiento, en este caso el cliente deberá sacarlo por sus medios</p>
+                    <p> • Cuando se encuentre en un estacionamiento a nivel de la calle, aquí también deberá sacarlo por sus medios.</p>
+                    <p> • Cuando las ruedas del vehículo no giren. En este caso deberá sacarlo por sus medios.</p>
+                    <p> • Cuando el vehículo este en niveles más abajo del primer subsuelo.</p>
+                    <p> • Cuando esté en cocheras particulares (Ejemplo: cochera de una casa)</p>
+                </div>
+                <div className="tab-pane fade " id="nav-patente" role="tabpanel" aria-labelledby="nav-patente-tab" tabindex="0">
+                <p>Cuando un móvil llega a realizar una asistencia y nos indica que no le coincide la patente, debemos llamar al 8800 o 98008 e indicarles la situación 
+                        para que corroboren si el socio cuenta con asistencia con dicha patente, le indicamos al móvil que aguarde 15min mientras se realiza la gestión y se 
+                        comunique nuevamente, en caso de tener servicio realizaremos la asistencia. En caso de no tener servicio se anulará el mismo como 
+                        "servicio mal tomado/duplicado" (dar aviso a supervisor para esta anulación) en el caso de que la patente corresponda a otro asegurado, en el caso 
+                        de que sea otro vehículo del cliente y el haya dado mal la patente se anula como "al llegar móvil cliente" ya que es su responsabilidad el haber
+                         brindado una patente incorrecta. </p>
+
+                </div>
             </div >
         </div>
     )
