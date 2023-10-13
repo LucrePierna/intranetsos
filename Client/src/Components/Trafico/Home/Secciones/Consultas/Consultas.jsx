@@ -91,18 +91,22 @@ export default function Consultas() {
                     <p>Se envía un móvil de menor porte (Por lo general, una camioneta con un tenedor adaptado para enganchar el auto) para sacar el vehículo de donde se
                         encuentra y una vez que el vehículo está en la calle, se carga en grúa y es trasladado hasta el destino que nos indica el cliente.</p>
                     <br />
-                    <p>Algunas consideraciones a tener en cuenta cuando les consulten disponibilidad:</p>
-                    <p>• Lugar físico en donde se encuentre el vehículo (planta alta, planta baja, 1er subsuelo, 2do subsuelo, etc.).</p>
-                    <p>• Cómo se encuentra estacionado el vehículo (de frente o de culata).</p>
-                    <p>• Altura de la cochera debe ser mayor a 2.5m.</p>
-                    <p>• Condiciones de las rampas (curvas, empinadas, etc.)</p>
+                    <p><u>Algunas consideraciones a tener en cuenta cuando les consulten disponibilidad:</u></p>
+                    <ul className='mt-2 listaGral'>
+                    <li>Lugar físico en donde se encuentre el vehículo (planta alta, planta baja, 1er subsuelo, 2do subsuelo, etc.).</li>
+                    <li>Cómo se encuentra estacionado el vehículo (de frente o de culata).</li>
+                    <li>Altura de la cochera debe ser mayor a 2.5m.</li>
+                    <li>Condiciones de las rampas (curvas, empinadas, etc.)</li>
+                    </ul>
                     <br />
-                    <p>¿Cuándo NO lo podemos brindar?</p>
-                    <p>• Cuando el vehículo se encuentre en la planta alta de un estacionamiento, en este caso el cliente deberá sacarlo por sus medios</p>
-                    <p> • Cuando se encuentre en un estacionamiento a nivel de la calle, aquí también deberá sacarlo por sus medios.</p>
-                    <p> • Cuando las ruedas del vehículo no giren. En este caso deberá sacarlo por sus medios.</p>
-                    <p> • Cuando el vehículo este en niveles más abajo del primer subsuelo.</p>
-                    <p> • Cuando esté en cocheras particulares (Ejemplo: cochera de una casa)</p>
+                    <p><u>¿Cuándo NO lo podemos brindar?</u></p>
+                    <ul className='mt-2 listaGral'>
+                    <li>Cuando el vehículo se encuentre en la planta alta de un estacionamiento, en este caso el cliente deberá sacarlo por sus medios</li>
+                    <li>Cuando se encuentre en un estacionamiento a nivel de la calle, aquí también deberá sacarlo por sus medios.</li>
+                    <li>Cuando las ruedas del vehículo no giren. En este caso deberá sacarlo por sus medios.</li>
+                    <li>Cuando el vehículo este en niveles más abajo del primer subsuelo.</li>
+                    <li>Cuando esté en cocheras particulares (Ejemplo: cochera de una casa)</li>
+                    </ul>
                 </div>
                 <div className="tab-pane fade " id="nav-patente" role="tabpanel" aria-labelledby="nav-patente-tab" tabindex="0">
                 <p>Cuando un móvil llega a realizar una asistencia y nos indica que no le coincide la patente, debemos llamar al 8800 o 98008 e indicarles la situación 
