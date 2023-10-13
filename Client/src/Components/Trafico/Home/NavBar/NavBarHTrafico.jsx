@@ -87,7 +87,7 @@ export default function NavBarHTrafico() {
               className={`nav-link btn ${selectedComponent === 'consultas' ? 'active' : ''}`}
               onClick={() => handleComponentClick('consultas')}
               style={{
-                color: selectedComponent === 'consultas' ? 'black' : 'red',
+                color: selectedComponent === 'consultas' ? 'black' : 'skyblue',
                 backgroundColor: selectedComponent === 'consultas' ? 'white' : 'initial'
               }}
             >
