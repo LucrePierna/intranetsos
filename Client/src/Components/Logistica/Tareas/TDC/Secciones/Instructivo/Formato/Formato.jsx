@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function Formato() {
     const [formData, setFormData] = useState({
-        presentacion: 'TORRE DE CONEXIONES:',
+        presentacion: 'TORRE DE CONEXIONES  ',
         codigo: '',
         kmDeSvc: '',
         kmDeMvl: '',
@@ -32,7 +32,7 @@ export default function Formato() {
 
     const handleReset = () => {
         setFormData({
-            presentacion: 'TORRE DE CONEXION:',
+            presentacion: 'TORRE DE CONEXIONES:',
             codigo: '',
             kmDeSvc: '',
             kmDeMvl: '',
