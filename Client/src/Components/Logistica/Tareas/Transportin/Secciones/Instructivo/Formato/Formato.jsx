@@ -104,6 +104,8 @@ export default function Formato() {
 
         if (formData.cobrado === 'si') {
             formattedText += 'Adicional cobrado: Sí\n';
+        } else if (formData.cobrado === 'sin adicional') {
+            formattedText += 'Adicional: Sin adicional.\n';
         } else {
             formattedText += 'Adicional cobrado: No - Pago pendiente.\n';
         }
@@ -254,12 +256,12 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Método de pago:
                     <input
-                            className='mx-2'
-                            value={formData.metodoPago}
-                            onChange={(e) => handleFieldChange('metodoPago', e.target.value)}
-                            readOnly={true}
-                            disabled={formData.aceptaModalidad === 'no'}
-                        />
+                        className='mx-2'
+                        value={formData.metodoPago}
+                        onChange={(e) => handleFieldChange('metodoPago', e.target.value)}
+                        readOnly={true}
+                        disabled={formData.aceptaModalidad === 'no'}
+                    />
                 </label>
             </div>
 
@@ -288,6 +290,18 @@ export default function Formato() {
                         disabled={formData.aceptaModalidad === 'no'}
                     />
                     No
+                </label>
+                <label className='p-1 mx-1'>
+                    <input
+                        className='mx-2'
+                        type='radio'
+                        name='cobrado'
+                        value='sin adicional'
+                        checked={formData.cobrado === 'sin adicional'}
+                        onChange={(e) => handleFieldChange('cobrado', e.target.value)}
+                        disabled={formData.aceptaModalidad === 'no'}
+                    />
+                    Sin adicional
                 </label>
             </div>
 
@@ -397,4 +411,6 @@ export default function Formato() {
 
     );
 }
+
+
 
