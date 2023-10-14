@@ -16,7 +16,7 @@ export default function Instructivo() {
   })
 
   return (
-    <div className='conteinerNav mt-5  ' >
+    <div className='conteinerNav mt-5 '>
       <nav className='navConteiner'>
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripción</button>
@@ -45,7 +45,7 @@ export default function Instructivo() {
           <h1><u>ETAPAS</u></h1>
           <ol className='px-5 listaGral'>
             <li><u>TRANSPORTIN INICIO:</u> En esta etapa realizamos la búsqueda de la unidad en la zona de origen, en el corredor delimitado para este tipo de asistencia, el destino será la base en la cual el vehículo queda a resguardo, quedando a si el primer servicio como Multitraslado y TRANSPORTIN inicio.</li>
-            <li><u>TRANSPORTÍN:</u> Es el traslado del bloque de vehículos en un camión de Gran porte (Grúa mosquito) desde la base de recolección hasta la base de distribución asignada, quedando asi el segundo servicio como multitraslado y Transportin.</li>
+            <li><u>TRANSPORTIN:</u> Es el traslado del bloque de vehículos en un camión de Gran porte (Grúa mosquito) desde la base de recolección hasta la base de distribución asignada, quedando asi el segundo servicio como multitraslado y Transportin.</li>
             <li><u>TRANSPORTIN DISTRIBUCION:</u> coordinación del traslado del vehículo al destino final que indico el cliente</li>
           </ol>
           <h1><u>ALCANCE DE APLICACIÓN</u></h1>

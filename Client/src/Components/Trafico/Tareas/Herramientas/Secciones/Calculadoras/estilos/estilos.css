@@ -1,0 +1,24 @@
+.label-style {
+  font-weight: bold;
+}
+
+.input-style {
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container-style {
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerKM-style {
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}

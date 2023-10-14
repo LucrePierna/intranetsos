@@ -30,6 +30,7 @@ export default function Procedimientos() {
         <div class="nav flex-column nav-tabs me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom" id="nav-inicial-tab" data-bs-toggle="tab" data-bs-target="#nav-inicial" type="button" role="tab" aria-controls="nav-inicial" aria-selected="false">Inicial</button>
           <button className="nav-link custom" id="nav-selecprest-tab" data-bs-toggle="tab" data-bs-target="#nav-selecprest" type="button" role="tab" aria-controls="nav-selecprest" aria-selected="false">Selección de prestador</button>
+          <button className="nav-link custom" id="nav-rechazos-tab" data-bs-toggle="tab" data-bs-target="#nav-rechazos" type="button" role="tab" aria-controls="nav-rechazos" aria-selected="false">Rechazo de prestador</button>
           <button className="nav-link custom" id="nav-tipoasig-tab" data-bs-toggle="tab" data-bs-target="#nav-tipoasig" type="button" role="tab" aria-controls="nav-contipoasigtact" aria-selected="false">Tipos de asignaciones</button>
           <button className="nav-link custom" id="nav-devolucion-tab" data-bs-toggle="tab" data-bs-target="#nav-devolucion" type="button" role="tab" aria-controls="nav-devolucion" aria-selected="false">Devolución al cliente</button>
           <button className="nav-link custom" id="nav-zona-tab" data-bs-toggle="tab" data-bs-target="#nav-zona" type="button" role="tab" aria-controls="nav-zona" aria-selected="false">Derivación por zona</button>
@@ -53,9 +54,9 @@ export default function Procedimientos() {
                   </tr>
                   <tr className='tabla'><td className='border border-light px-3'>Falla</td>
                     <td className='border border-light px-3'>Teléfono</td>
-                    <td className='border border-light px-3'>Ubicación origen y destino</td>
+                    <td className='border border-light px-3'>Ubicación de origen y destino</td>
                     <td className='border border-light px-3'>Cantidad de pasajeros</td>
-                    <td className='border border-light px-3'>Requisitos Si vehículo viaja sólo</td></tr>
+                    <td className='border border-light px-3'>Requisitos si vehículo viaja sólo</td></tr>
                   <tr className='tabla'><td className='border border-light px-3'>Horarios de taller</td>
                     <td className='border border-light px-3'>Si posee carga</td>
                     <td className='border border-light px-3'>Dimensiones e información extra en referencias</td>
@@ -80,6 +81,85 @@ export default function Procedimientos() {
               <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente.</li>
               <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona.</li>
             </ul>
+          </div>
+        </div>
+        <div className="tab-pane fade" id="nav-rechazos" role="tabpanel" aria-labelledby="nav-rechazos-tab" tabindex="0">
+          <div class="tab-content px-3 mt-3 lineaGeneral " id="nav-tabContent">
+            <div class="tab-pane fade show active " id="nav-p1" role="tabpanel" aria-labelledby="nav-p1-tab" tabindex="0">
+              <h5><u> Motivos de rechazo</u></h5>
+              <p> Si el prestador rechaza el servicio, se deberá codificar el motivo de la manera más precisa posible, registrando el nombre del contacto del prestador y la demora informada si el rechazo se debe a la misma. Los motivos de rechazo utilizables son los siguientes:</p>
+
+              <div className='tab-content d-flex flex-row mt-3 m-auto '>
+                <ul>
+                  <h5><u>Búsqueda de móvil doble cabina</u></h5>
+                  <p>Se utiliza cuando el servicio cuenta con asistencia al viajero o por la eventualidad del servicio debemos coordinar con este tipo de móviles.</p>
+
+                  <h5><u>Uso de GAP Lite</u></h5>
+                  <p>
+                    Cuando se le va a pasar el servicio a un prestador de nuestro listado y este se niega a darle curso por este medio. Se aplica el rechazo con el justificativo que el prestador les de y a posterior se le deriva el servicio.<br />
+                    El rechazo, lo que hace es disparar un mail automático a Soporte Gap para que se comuniquen con la base y resuelvan la negativa para casos futuros.
+                  </p>
+
+                  <h5><u>Demora excesiva</u></h5>
+                  <p>Dependiendo del día, la zona y las demoras que se manejen, el Operador de Logística podrá utilizar criteriosamente si considera que la demora es elevada o cuenta con otra opción para coordinar el servicio con demora inferior.</p>
+                </ul>
+                <ul>
+                  <h5><u>Estado del camino</u></h5>
+                  <p>Cuando, por las condiciones del camino en el origen o destino del servicio, el prestador nos informe no poder realizar el mismo.</p>
+
+                  <h5><u>Falta de capacidad operativa</u></h5>
+                  <p>Se utilizará cuando el prestador por la particularidad del servicio no cuente con un tipo de móvil adecuado o no posea las herramientas necesarias para poder realizar el traslado/mecánica.</p>
+
+                  <h5><u>Cuestiones operativas</u></h5>
+                  <p>Cuestiones internas o externas que no estén contempladas en el resto de los rechazos.</p>
+
+                  <h5><u>Falta de Comunicación</u></h5>
+                  <p>Se utiliza cuando no se logra contacto con el prestador.</p>
+                </ul>
+              </div>
+            </div>
+            <div className="tab-pane fade" id="nav-p2" role="tabpanel" aria-labelledby="nav-pa2-tab" tabindex="0">
+              <div className='tab-content d-flex flex-row mt-3 m-auto '>
+                <ul>
+                  <h5><u>No tiene disponibilidad</u></h5>
+                  <p>Cuando el prestador informa no tener disponibilidad durante la jornada y no esté contemplado dentro de los otros motivos de rechazo.</p>
+
+                  <h5><u>Servicios sin excedente</u></h5>
+                  <p>Cuando por tratarse de un servicio con muchos kilómetros sin excedente el prestador no pueda asumir el costo del 100 % del servicio. </p>
+
+                  <h5><u>Sin combustible</u></h5>
+                  <p>Cuando el prestador informe que en la zona no hay combustible.</p>
+
+                  <h5><u>Tarifas</u></h5>
+                  <p>Cuando el prestador nos informe que no está trabajando por no tener tarifas acordadas o actualizadas.</p>
+
+                  <h5><u>Móvil averiado</u></h5>
+                  <p>Cuando el prestador nos informe no tener disponibilidad por tener el móvil roto/en reparación.</p>
+                </ul>
+                <ul>
+                  <h5><u>Viaje largo</u></h5>
+                  <p>Cuando el prestador nos informe que está realizando un traslado largo</p>
+
+                  <h5><u>Ya no trabaja para SOS</u></h5>
+                  <p>Cuando el prestador informe que tiene suspendido el servicio para S.O.S.</p>
+
+                  <h5><u>Horario nocturno</u></h5>
+                  <p>Cuando el prestador expresamente manifiesta no trabajar en horario nocturno.</p>
+
+                  <h5><u>Dimensiones del vehículo</u></h5>
+                  <p>Cuando el prestador no cuente con móviles adecuados para hacer el traslado por las dimensiones del vehículo a asistir.</p>
+
+                  <h5><u>Zona peligrosa</u></h5>
+                  <p>Cuando el prestador nos informa que no podrá realizar el servicio porque el origen o destino es una zona peligrosa.</p>
+                </ul>
+              </div>
+            </div>
+            <nav>
+              <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <button class="nav-link sub active" id="nav-p1-tab" data-bs-toggle="tab" data-bs-target="#nav-p1" type="button" role="tab" aria-controls="nav-p1" aria-selected="true">Pág 1</button>
+                <button class="nav-link sub" id="nav-p2-tab" data-bs-toggle="tab" data-bs-target="#nav-p2" type="button" role="tab" aria-controls="nav-p2" aria-selected="true">Pág 2</button>
+              </div>
+            </nav>
           </div>
         </div>
         <div className="tab-pane fade " id="nav-tipoasig" role="tabpanel" aria-labelledby="nav-tipoasig-tab" tabindex="0">
@@ -149,9 +229,9 @@ export default function Procedimientos() {
             <div class="tab-pane fade px-3 mt-3" id="nav-gestor" role="tabpanel" aria-labelledby="nav-gestor-tab" tabindex="0">
               <p>En la solapa de "Adicionales" y sin dar en editar al servicio, se debe registrar en el recuadro de "tarjeta de crédito" el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
                 <b>Se debe estar sumamente atento a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)</b> <br />
-                Una vez registrado el valor, van a hacer click en el cartelito azul que dice "Tarjeta de crédito"<br />
+                Una vez registrado el valor, van a hacer click en el cartel azul que dice "Tarjeta de crédito"<br />
                 Y allí los redirecciona al gestor de pagos. <br />
-                En esta primera solapa que abre registrarán los datos del titular de la tarjeta.<br/> 
+                En esta primera solapa que abre registrarán los datos del titular de la tarjeta.<br />
                 Si el cliente quiere el link por WhatsAp,se debe solicitar de igual manera una casilla de correo (esto es obligatorio ya que la factura se envía por este medio), si el cliente informa que no tiene y no sabe de ningun familiar o cercano, se registra la de "supervisoresderivacion@redsos.com.ar". <br />
                 Al dar click en "siguiente" nos habilita la pestaña para la facturación<br />
                 - Si la factura va a nombre de la misma persona que la tarjeta deben dejar la tilde y les trae los datos antes escritos, solo van a tener que llenar el domicilio. <br />
@@ -230,21 +310,21 @@ export default function Procedimientos() {
                   <h1 className='mt-2'><u>Zonas</u></h1>
                   <div className='text-start d-flex flex-row mt-3'>
                     <ul className='px-5 listaGral'>
-                      <li>Bs as Gral.</li>
-                      <li>Bs As Norte.</li>
+                      <li>Buenos Aires General.</li>
+                      <li>Buenos Aires Norte.</li>
                       <li>Córdoba.</li>
-                      <li>Entre Ríos</li>
+                      <li>Entre Ríos.</li>
                     </ul>
                     <ul className='px-5 listaGral'>
-                      <li>Patagonia</li>
-                      <li>Santa Fe</li>
-                      <li>Misiones</li>
+                      <li>Patagonia.</li>
+                      <li>Santa Fe.</li>
+                      <li>Misiones.</li>
                     </ul>
                   </div>
                   <h1><u>Orden de Prioridades:</u></h1>
                   <ol className='px-5 listaGral'>
-                    <li>Ruta</li>
-                    <li>Transito</li>
+                    <li>Ruta.</li>
+                    <li>Transito.</li>
                     <li>Domicilio/Estacionamiento.</li>
                   </ol>
                   <h1><u>Debilidades</u></h1>

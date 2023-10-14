@@ -160,6 +160,13 @@ code {
   margin: auto;
 }
 
+.responsiveIncidencias {
+  width: 70% !important;
+  height: 80vh;
+  align-items: center;
+  margin: auto;
+}
+
 .mapaGeneral {
   width: 70% !important;
   height: 70vh;
@@ -178,6 +185,13 @@ code {
 .responsiveImg {
   max-width: 100%;
   height: 50vh;
+}
+.responsiveImgSaludos {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
 .responsiveImgBateria {

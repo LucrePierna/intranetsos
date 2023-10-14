@@ -42,16 +42,24 @@ export default function Procedimiento() {
           </ul>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-links" role="tabpanel" aria-labelledby="nav-links-tab" tabindex="0">
-          <div className='d-flex flex-column py-4 m-auto mt-5 justify-content-center text-center'>
-            <a href="https://www.centraldepasajes.com.ar" target='_blank'>
-              <button type="button" className="btn btn-danger my-2">Central de Pasajes</button>
-            </a>
-            <a href="https://www.plataforma10.com.ar" target='_blank'>
-              <button type="button" className="btn btn-danger my-2">Plataforma 10</button>
-            </a>
-            <a href="https://www.telexplorer.com.ar/" target='_blank'>
-              <button type="button" className="btn btn-danger my-2">Telexplorer</button>
-            </a>
+          <div className='d-flex flex-column py-4 m-auto justify-content-center text-center'>
+            <p>Para coordinar servicio de asistencia al viajero con pasajes de micro se consultará disponibilidad con las plataformas y luego se solicitara a Supoervisor o Back Office que gestione la compra para luego enviar los pasajes al cliente via mail.</p>
+            <div>
+              <a href="https://www.centraldepasajes.com.ar" target='_blank'>
+                <button type="button" className="btn btn-danger my-2">Central de Pasajes</button>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.plataforma10.com.ar" target='_blank'>
+                <button type="button" className="btn btn-danger my-2">Plataforma 10</button>
+              </a>
+            </div>
+            <p>En caso de que el cliente acepte coordinar asistencia al viajero por reintegro, se podrá consultar a la siguiente guia telefonica "Telexplorer" numeros telefonicos de taxi/remis de la zona. Para ello se deberá consultar en busqueda comercial "rubro" Taxi y seleccionar provincia/localidad para filtrar la busqueda.</p>
+            <div>
+              <a href="https://www.telexplorer.com.ar/" target='_blank'>
+                <button type="button" className="btn btn-danger my-2">Telexplorer</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
