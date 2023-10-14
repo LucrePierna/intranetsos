@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function Formato() {
     const [formData, setFormData] = useState({
-        presentacion: 'TORRE DE CONEXION:',
+        presentacion: 'TORRE DE CONEXIONES:',
         codigo: '',
         kmDeSvc: '',
         kmDeMvl: '',
@@ -46,7 +46,7 @@ export default function Formato() {
             <div className='row'>
                 <div className='col-lg-6'>
                     <div className='py-1'>
-                        <label className='px-3 fs-4'>TORRE DE CONEXION:</label>
+                        <label className='px-3 fs-4'>TORRE DE CONEXIONES:</label>
                     </div>
                     <div className='py-1'>
                         <label className='px-3 fs-4'>Código:</label>
