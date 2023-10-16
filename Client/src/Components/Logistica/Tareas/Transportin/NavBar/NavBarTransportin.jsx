@@ -5,6 +5,7 @@ import Corredores from '../Secciones/Corredores/Corredores'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Planillas from '../Secciones/Planillas/Planillas'
+import Calculadora from '../Secciones/Calculadora/Calculadora';
 
 export default function NavBarTransportin() {
   const [selectedComponent, setSelectedComponent] = useState('instructivo');
@@ -40,6 +41,18 @@ export default function NavBarTransportin() {
               }}
             >
               Flujograma
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className={`nav-link btn ${selectedComponent === 'calculadora' ? 'active' : ''}`}
+              onClick={() => handleComponentClick('calculadora')}
+              style={{
+                color: selectedComponent === 'calculadora' ? 'black' : 'red',
+                backgroundColor: selectedComponent === 'calculadora' ? 'white' : 'initial'
+              }}
+            >
+              Calculadora
             </button>
           </li>
 
@@ -90,6 +103,7 @@ export default function NavBarTransportin() {
         {selectedComponent === 'instructivo' && <Instructivo />}
         {selectedComponent === 'bases' && <Bases />}
         {selectedComponent === 'flujograma' && <Flujograma />}
+        {selectedComponent === 'calculadora' && <Calculadora />}
         {selectedComponent === 'planillas' && <Planillas />}
         {selectedComponent === 'corredores' && <Corredores />}
 
