@@ -6,10 +6,10 @@ import ros from '../Image/Menu Trafico/Iconos/ico_ROS.svg'
 import home from '../Image/Menu Trafico/Iconos/house-fill.svg'
 import herramientas from '../Image/Menu Trafico/Iconos/nut-fill.svg'
 import mec from '../Image/Menu Trafico/Iconos/tools.svg'
-import {
+/* import {
   UserButton
 } from '@clerk/clerk-react' 
-
+ */
 const MenuTrafico = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
 
@@ -142,9 +142,9 @@ const MenuTrafico = () => {
               Volver a Operaciones
             </a>
           </li>
-          <li className='p-2 '>
+          {/*           <li className='p-2 '>
             <UserButton className='bg-white' />
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
-import {
+/* import {
   UserButton
-} from '@clerk/clerk-react' 
+} from '@clerk/clerk-react'  */
 
 const MenuLogistica = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
@@ -165,9 +165,9 @@ const MenuLogistica = () => {
             </a>
           </li>
 
-          <li className='py-2 px-2'>
+          {/*    <li className='py-2 px-2'>
             <UserButton className='bg-text-white' />
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

@@ -17,6 +17,7 @@ function App () {
 }
 
 export default App */
+
 import './App.css'
 import { Routes, Route, useLocation} from 'react-router-dom'
 import MenuLogistica from './Components/Logistica/Menu/MenuLogistica'
@@ -38,18 +39,14 @@ import NavBarMecanica from './Components/Trafico/Tareas/Mecanica/NavBar/NavBarMe
 import NavBarCordoba from './Components/Trafico/Tareas/Cordoba/NavBar/NavBarCordoba'
 import NavBarRosario from './Components/Trafico/Tareas/Rosario/NavBar/NavBarRosario'
 import Landing from './Components/Landing/Landing' 
-/* import { ClerkProvider } from '@clerk/clerk-react'
-import Login from './Components/Login/Login' */
 
 function App () {
   const location = useLocation()
   const isLogisticaRoute = location.pathname.includes('/logistica')
   const isTraficoRoute = location.pathname.includes('/trafico') 
- /*  const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY */
 
   return (
     <div className='App'>
-      {/* <ClerkProvider publishableKey={clerkPubKey}> */}
       {isLogisticaRoute && <MenuLogistica />}
       {isTraficoRoute && <MenuTrafico />}
       <Routes>
@@ -71,9 +68,6 @@ function App () {
         <Route path='/trafico/cordoba' element={<NavBarCordoba />} />
         <Route path='/trafico/rosario' element={<NavBarRosario />} />
       </Routes>
-      {/* <Footer/> */}
-      {/*   <Login /> */}
-      {/* </ClerkProvider> */}
     </div>
   )
 }
