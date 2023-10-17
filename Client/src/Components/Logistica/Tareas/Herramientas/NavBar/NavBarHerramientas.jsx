@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import '../../../EstilosGlobales/General.css'
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Calculadoras from '../secciones/Calculadoras/Calculadoras'
-import Formatos from '../secciones/Formatos/Formatos'
-import Mapas from '../secciones/Mapas/Mapas'
-import Links from '../Secciones/Links/Links'
+import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
+import Formatos from '../Secciones/Formatos/Formatos';
+import Mapas from '../Secciones/Mapas/Mapas';
+import Links from '../Secciones/Links/Links';
 
 export default function NavBarHerramientas() {
     const [selectedComponent, setSelectedComponent] = useState('calculadoras');
@@ -14,8 +13,8 @@ export default function NavBarHerramientas() {
     };
 
     return (
-        <div >
-            <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center ">
                 <h1 className='titleNav'>Herramientas</h1>
                 <ul className="nav nav-tabs just">
                     <li className="nav-item">
@@ -42,7 +41,6 @@ export default function NavBarHerramientas() {
                             Formatos
                         </button>
                     </li>
-
                     <li className="nav-item">
                         <button
                             className={`nav-link btn ${selectedComponent === 'mapas' ? 'active' : ''}`}
@@ -77,5 +75,5 @@ export default function NavBarHerramientas() {
                 {selectedComponent === 'links' && <Links />}
             </div>
         </div>
-    )
+    );
 }
