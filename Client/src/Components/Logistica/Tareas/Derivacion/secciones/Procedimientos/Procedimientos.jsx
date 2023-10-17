@@ -74,12 +74,12 @@ export default function Procedimientos() {
             <p className='mt-5 fw-bold text-start'>El operador deberá consultar las bases respetando el orden dado por el sistema. Si consultó a todas las bases, se puede aceptar alguna de las ya rechazadas, o buscarlas por localidad adoptando el siguiente criterio:</p>
             <ul className='text-start mt-3 listaGral'>
               <li>Elegir el prestador que encuentre más cercano al lugar de urgencia, dentro del recorrido origen-destino del cliente (económicamente conveniente).</li>
-              <li>Si se tuviese que buscar fuera del recorrido de se procede de la siguiente manera:
+              <li>Si se tuviese que buscar fuera del recorrido se procede de la siguiente manera:
                 <ul>Servicios locales y mecánica, hasta 60 km lineales vacíos.</ul>
                 <ul>Ruta y tránsito, hasta 100 km lineales vacíos tanto en origen, recorrido y/o destino.</ul>
               </li>
-              <li>En caso de que tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o B.O para pedir la autorización correspondiente.</li>
-              <li>El operador podrá consultar con torre de conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona.</li>
+              <li>En caso de tener disponibilidad con un prestador que se encuentre a más de 100 km vacíos y en la zona consultada anteriormente no haya disponibilidad. consultar con supervisor o Back Office para pedir la autorización correspondiente.</li>
+              <li>El operador podrá consultar con Torre de Conexión si existe disponibilidad de enlazar el servicio con alguna base que tenga grúa disponible en la zona.</li>
             </ul>
           </div>
         </div>
