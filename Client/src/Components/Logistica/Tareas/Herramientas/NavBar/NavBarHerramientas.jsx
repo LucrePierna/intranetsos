@@ -55,6 +55,18 @@ export default function NavBarHerramientas() {
                     </li>
                     <li className="nav-item">
                         <button
+                            className={`nav-link btn ${selectedComponent === 'planillas' ? 'active' : ''}`}
+                            onClick={() => handleComponentClick('planillas')}
+                            style={{
+                                color: selectedComponent === 'planillas' ? 'black' : 'red',
+                                backgroundColor: selectedComponent === 'planillas' ? 'white' : 'initial'
+                            }}
+                        >
+                            Planillas
+                        </button>
+                    </li>
+                    <li className="nav-item">
+                        <button
                             className={`nav-link btn ${selectedComponent === 'links' ? 'active' : ''}`}
                             onClick={() => handleComponentClick('links')}
                             style={{
@@ -72,6 +84,7 @@ export default function NavBarHerramientas() {
                 {selectedComponent === 'calculadoras' && <Calculadoras />}
                 {selectedComponent === 'formatos' && <Formatos />}
                 {selectedComponent === 'mapas' && <Mapas />}
+                {selectedComponent === 'planillas' && <Planillas />}
                 {selectedComponent === 'links' && <Links />}
             </div>
         </div>
