@@ -32,6 +32,7 @@ import NavBarViajero from './Components/Logistica/Tareas/Viajeros/NavBar/NavBarV
 import NavBarTP from './Components/Logistica/Tareas/TerminalesYPesados/NavBar/NavBarTP'
 import NavBarExtranjero from './Components/Logistica/Tareas/Extranjero/NavBar/NavBarExtranjero'
 import NavBarContencion from './Components/Logistica/Tareas/Contencion/NavBar/NavBarContencion'
+import NavBarHerramientasRN from './Components/Logistica/Tareas/Herramientas/NavBar/NavBarHerramientas'
 import NavBarHTrafico from './Components/Trafico/Home/NavBar/NavBarHTrafico'
 import NavBarHerramientas from './Components/Trafico/Tareas/Herramientas/NavBar/NavBarHerramientas'
 import NavBarBsAs from './Components/Trafico/Tareas/BsAs/NavBar/NavBarBsAs'
@@ -61,6 +62,7 @@ function App () {
         <Route path='/logistica/terminalypesado' element={<NavBarTP />} />
         <Route path='/logistica/extranjero' element={<NavBarExtranjero />} />
         <Route path='/logistica/contencion' element={<NavBarContencion />} />
+        <Route path='/logistica/herramientas' element={<NavBarHerramientasRN />} />
         <Route path='/trafico' element={<NavBarHTrafico />} />
         <Route path='/trafico/herramientas' element={<NavBarHerramientas />} />
         <Route path='/trafico/bsas' element={<NavBarBsAs />} />
