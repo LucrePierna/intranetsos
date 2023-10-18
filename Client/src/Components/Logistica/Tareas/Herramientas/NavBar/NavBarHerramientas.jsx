@@ -4,7 +4,6 @@ import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
 import Formatos from '../Secciones/Formatos/Formatos';
 import Mapas from '../Secciones/Mapas/Mapas';
 import Links from '../Secciones/Links/Links';
-import Planillas from '../Secciones/Planillas/Planillas';
 
 export default function NavBarHerramientas() {
     const [selectedComponent, setSelectedComponent] = useState('calculadoras');
@@ -85,7 +84,7 @@ export default function NavBarHerramientas() {
                 {selectedComponent === 'calculadoras' && <Calculadoras />}
                 {selectedComponent === 'formatos' && <Formatos />}
                 {selectedComponent === 'mapas' && <Mapas />}
-                {selectedComponent === 'planillas' && <Planillas />}
+                {/* {selectedComponent === 'planillas' && <Planillas />} */}
                 {selectedComponent === 'links' && <Links />}
             </div>
         </div>
