@@ -1,6 +1,6 @@
 import React from 'react'
 import * as bootstrap from 'bootstrap'
-import adic from '../../../../Image/PagoAdicional.JPG'
+
 
 
 export default function Consultas() {
@@ -65,9 +65,7 @@ export default function Consultas() {
                         DEBE ser rechazado con una referencia que indique "Adicional sin cobrar, una vez cobrado pasar a base con xx minutos".</p>
                     <p>xx = (cantidad de minutos que tenía el servicio al momento de ingresar a pantalla).</p>
 
-                    <div className='d-flex flex-column align-items-center justify-content-center mx-auto  mt-5'>
-                        {<img className='responsiveImg' src={adic} alt="PagoAdicional" />}
-                    </div>
+                 
 
                 </div>
                 <div className="tab-pane fade lineaGeneral" id="nav-contencion" role="tabpanel" aria-labelledby="nav-contencion-tab" tabindex="0">
