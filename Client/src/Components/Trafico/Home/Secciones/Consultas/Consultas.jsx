@@ -1,5 +1,6 @@
 import React from 'react'
 import * as bootstrap from 'bootstrap'
+import adic from '../../../../Image/PagoAdicional.JPG'
 
 
 export default function Consultas() {
@@ -63,6 +64,11 @@ export default function Consultas() {
                     <p>si tienen adicional y el mismo se abona con tarjeta, verificar que este cobrado, de no estarlo el servicio
                         DEBE ser rechazado con una referencia que indique "Adicional sin cobrar, una vez cobrado pasar a base con xx minutos".</p>
                     <p>xx = (cantidad de minutos que tenía el servicio al momento de ingresar a pantalla).</p>
+
+                    <div className='d-flex flex-column align-items-center justify-content-center mx-auto  mt-5'>
+                        {<img className='responsiveImg' src={adic} alt="PagoAdicional" />}
+                    </div>
+
                 </div>
                 <div className="tab-pane fade lineaGeneral" id="nav-contencion" role="tabpanel" aria-labelledby="nav-contencion-tab" tabindex="0">
                     <p> Cuando un socio solicita un servicio por peritaje, el mismo tiene una tolerancia de 30min en destino mientras lo peritan para que luego el mismo móvil
@@ -86,7 +92,7 @@ export default function Consultas() {
                 </div>
                 <div className="tab-pane fade lineaGeneral" id="nav-fc" role="tabpanel" aria-labelledby="nav-fc-tab" tabindex="0">
                     <h1>Recordar que este servicio lo brinda SOS a modo de cortesía hacia el cliente, no estamos obligados y se consulta
-                        disponibilidad es de lunes a viernes de 9 a 17hs, NO se programan estos servicios. </h1>
+                        disponibilidad de lunes a viernes de 9 a 17hs, NO se programan estos servicios. </h1>
                     <br />
                     <p>¿En qué consiste el procedimiento?</p>
                     <p>Se envía un móvil de menor porte (Por lo general, una camioneta con un tenedor adaptado para enganchar el auto) para sacar el vehículo de donde se
