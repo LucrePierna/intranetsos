@@ -30,7 +30,7 @@ export default function Mapas() {
           <div class="tab-content" id="nav-tabContent">
             <nav>
               <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                <button class="nav-link sub active" id="nav-logrn-tab" data-bs-toggle="tab" data-bs-target="#nav-logrn" type="button" role="tab" aria-controls="nav-logrn" aria-selected="true">Logistica-Red Nacional</button>
+                <button class="nav-link sub active" id="nav-logrn-tab" data-bs-toggle="tab" data-bs-target="#nav-logrn" type="button" role="tab" aria-controls="nav-logrn" aria-selected="true">Mapas Unificados</button>
                 <button class="nav-link sub" id="nav-xzona-tab" data-bs-toggle="tab" data-bs-target="#nav-xzona" type="button" role="tab" aria-controls="nav-xzona" aria-selected="true">Derivacion por Zona</button>
               </div>
             </nav>
