@@ -20,7 +20,7 @@ export default function PlanillasyLinks() {
                 <TableCell>
                   {/* <a href="https://redsos-my.sharepoint.com/:x:/g/personal/framirez_redsos_com_ar/EWOq5sAqsPxBp5j2y5ExzmoB3ingUpKlTBOTCt0M03dyng?e=uZkpVn" target='_blank'><button type='button' className='btn btn-danger'>Grilla de Dimensiones</button></a> */}
                 </TableCell>
-                <TableCell><a href="https://redsos-my.sharepoint.com/:x:/r/personal/jmolinari_redsos_com_ar/Documents/Prestadores%20con%20GAP%20Lite/PRESTADORES%20GAP%20Lite.xlsx?d=w03ab3d1ddfe14e43a534d851f9e06532&csf=1&web=1&e=zWm82z" target='_blank'><button type='button' className='btn btn-danger'>Prestador GapLite</button></a></TableCell>
+                <TableCell><a href="https://redsos-my.sharepoint.com/:x:/r/personal/jmolinari_redsos_com_ar/Documents/Prestadores%20con%20GAP%20Lite/PRESTADORES%20GAP%20Lite.xlsx?d=w03ab3d1ddfe14e43a534d851f9e06532&csf=1&web=1&e=zWm82z" target='_blank'><button type='button' className='btn btn-danger'>Planilla Prestadores GapLite</button></a></TableCell>
               </TableRow>
               <TableRow key="2" className="border border-dark bg-light text-black">
                 <TableCell>Torre de Conexión</TableCell>
@@ -77,9 +77,10 @@ export default function PlanillasyLinks() {
                 <TableCell></TableCell>
                 <TableCell></TableCell>
                 <TableCell><a href="https://redsos-my.sharepoint.com/:x:/g/personal/lpierna_redsos_com_ar/EYIESn0usSxBo8vNI2MIRsIBv6Bljn5VrWUiaSC-8IGhcg?e=lkcLdm" target="_blank" rel="noopener noreferrer">
-                  <button type='button' class="btn btn-danger">Acceso a Planilla Transportin</button>
-                </a>  <a href="https://redsos-my.sharepoint.com/:x:/r/personal/lugomez_redsos_com_ar/Documents/PRESTADORES%20TRANSPORTIN.xlsx?d=w278b4127b8954618aa1b2f6ee37a1d0f&csf=1&web=1&e=ogxaMj" target="_blank" rel="noopener noreferrer">
-                    <button type='button' class="btn btn-danger">Acceso a Bases de Guarda Transportin</button>
+                  <button type='button' class="btn btn-danger">Planilla Transportin</button>
+                </a>
+                  <a href="https://redsos-my.sharepoint.com/:x:/r/personal/lugomez_redsos_com_ar/Documents/PRESTADORES%20TRANSPORTIN.xlsx?d=w278b4127b8954618aa1b2f6ee37a1d0f&csf=1&web=1&e=ogxaMj" target="_blank" rel="noopener noreferrer">
+                    <button type='button' class="btn btn-danger">Planilla Bases de Guarda Transportin</button>
                   </a>
                 </TableCell>
               </TableRow>

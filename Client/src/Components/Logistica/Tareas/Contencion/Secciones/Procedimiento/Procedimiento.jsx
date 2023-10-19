@@ -55,7 +55,7 @@ export default function Procedimientos() {
               <p>Si el operador de Contención detecta en el análisis que transcurrieron 60’ o más desde la toma del servicio, deberá establecer un primer contacto con el cliente.</p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-svcacept" role="tabpanel" aria-labelledby="nav-svcacept-tab" tabindex="0">
-              <p>Cuando el servicio este aceptado y/ siendo trabajado por el Operador de Logística, la contención, seguimiento y llegada del servicio será responsabilidad del mismo, sin intervención del operador de contención. </p>
+              <p>Cuando el servicio este aceptado y/ siendo trabajado por el Derivador de Logística, la contención, seguimiento y llegada del servicio será responsabilidad del mismo, sin intervención del operador de contención. </p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-ctto" role="tabpanel" aria-labelledby="nav-ctto-tab" tabindex="0">
               <p>Transcurridos 20’ desde la toma del servicio, el operador de Contención deberá establecer un primer contacto con el cliente para informarle que se está trabajando en su pedido de asistencia. Transcurridos 40/60’ de la última contención, deberá volver a contactar al cliente y notificar el estado del servicio. </p>
@@ -78,13 +78,13 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 " id="nav-svcacepttn" role="tabpanel" aria-labelledby="nav-svcacepttn-tab" tabindex="0">
-              <p>Cuando el servicio este aceptado y/o siendo trabajado por el Operador de Logística, la contención, seguimiento y llegada del servicio será responsabilidad del mismo, sin intervención del operador de contención.</p>
+              <p>Cuando el servicio este aceptado y/o siendo trabajado por el Derivador de Logística, la contención, seguimiento y llegada del servicio será responsabilidad del mismo, sin intervención del operador de contención.</p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-cttotn" role="tabpanel" aria-labelledby="nav-cttotn-tab" tabindex="0">
-              <p>Transcurridos 20’ desde la toma del servicio, el operador de Contención deberá establecer un primer contacto con el cliente para informarle que se está trabajando en su pedido de asistencia.  </p>
+              <p>Transcurridos 20’ desde la toma del servicio, el Derivador de Contención deberá establecer un primer contacto con el cliente para informarle que se está trabajando en su pedido de asistencia.  </p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-rechsvctn" role="tabpanel" aria-labelledby="nav-rechsvctn-tab" tabindex="0">
-              <p>Cuando el servicio sea rechazado y pasado a Red Nacional por cualquier motivo, será responsabilidad del Operador de Tráfico realizar la contención correspondiente al cliente, informando la situación del servicio. </p>
+              <p>Cuando el servicio sea rechazado y pasado a Red Nacional por cualquier motivo, será responsabilidad del Derivador de Tráfico realizar la contención correspondiente al cliente, informando la situación del servicio. </p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-cmbdemtn" role="tabpanel" aria-labelledby="nav-cmbdemtn-tab" tabindex="0">
               <p>Para los servicios que se encuentren en los Tráficos Nacionales (tanto servicios de traslado como de mecánica ligera), a los cuales se les modificó la asignación de una base, se deberá realizar un control. </p>
@@ -92,14 +92,14 @@ export default function Procedimientos() {
               <p>Dentro de la pantalla ‘Derivados’ se deberán verificar los servicios y controlar los cambios de demora a través del botón ‘Cambios de demora’ de la solapa “5. Horarios / otros”. </p>
             </div>
             <div class="tab-pane fade px-3" id="nav-faltacomtn" role="tabpanel" aria-labelledby="nav-faltacomtn-tab" tabindex="0">
-              <p>En caso de que el Operador no lograra contacto con el cliente, deberá intentar nuevamente la comunicación transcurridos 10 minutos. </p>
+              <p>En caso de que el Derivador no lograra contacto con el cliente, deberá intentar nuevamente la comunicación transcurridos 10 minutos. </p>
             </div>
             <div class="tab-pane fade px-3" id="nav-demycierretn" role="tabpanel" aria-labelledby="nav-demycierretn-tab" tabindex="0">
               <p>Para los servicios cuya demora esté próxima a cumplirse o ya se encontrare cumplida y el móvil aún no hubiera llegado, serán aplicables los incisos a continuación. </p>
               <h1><u>Demora Caída</u></h1>
-              <p>El Operador de Contención deberá consultar al móvil el motivo del retraso y el tiempo restante. Posteriormente deberá llamar al cliente para informar lo sucedido. </p>
+              <p>El Derivador de Contención deberá consultar al móvil el motivo del retraso y el tiempo restante. Posteriormente deberá llamar al cliente para informar lo sucedido. </p>
               <h1><u>Seguimiento, Control y Cierre de Servicios</u></h1>
-              <p>Si al realizar el seguimiento del servicio, el Operador de Contención verificare que el móvil ya realizó el servicio, dará llegada y finalización del servicio en el sistema. </p>
+              <p>Si al realizar el seguimiento del servicio, el Derivador de Contención verificare que el móvil ya realizó el servicio, dará llegada y finalización del servicio en el sistema. </p>
             </div>
           </div>
         </div>
