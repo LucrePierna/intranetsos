@@ -55,9 +55,9 @@ export default function Solicitud() {
     }
 
     return (
-        <div className="container mt-5">
-            <div className="row">
-                <div className="d-flex flex-row">
+        <div className="container mt-3">
+            <div className="row justify-content-center">
+                <div className="d-flex flex-row justify-content-center">
                     <div className='flex-column px-4'>
                         <div className='py-1'>
                             <label className='px-3'>Vehículo:</label>

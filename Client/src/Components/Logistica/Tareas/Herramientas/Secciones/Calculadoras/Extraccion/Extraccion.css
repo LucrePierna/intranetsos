@@ -1,0 +1,73 @@
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 30px; 
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; 
+    width: 20px; 
+    background-color: #eee; 
+    border: 1px solid #ccc; 
+    border-radius: 50%; 
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #cb2128; 
+    border: 1px solid #010101; 
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 6px; 
+    top: 3px; 
+    width: 6px; 
+    height: 12px; 
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); 
+  }
+  
+  .input-custom {
+    width: 70%;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .inputCustom {
+    width: 70%;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .imgExtraccion{
+    width: 500px;
+    height: 250px;
+  }
+
+  .buttonExt{
+    width: 100px;
+    height: 50px;
+    margin: auto;
+  }

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Calculadoras from '../Secciones/Calculadoras/Calculadoras';
+import Calculadoras from '../Secciones/Calculadoras/Calculadora';
 import Formatos from '../Secciones/Formatos/Formatos';
 import Mapas from '../Secciones/Mapas/Mapas';
 import Links from '../Secciones/Links/Links';
+
 
 export default function NavBarHerramientas() {
     const [selectedComponent, setSelectedComponent] = useState('calculadoras');
@@ -55,18 +56,6 @@ export default function NavBarHerramientas() {
                     </li>
                     <li className="nav-item">
                         <button
-                            className={`nav-link btn ${selectedComponent === 'planillas' ? 'active' : ''}`}
-                            onClick={() => handleComponentClick('planillas')}
-                            style={{
-                                color: selectedComponent === 'planillas' ? 'black' : 'red',
-                                backgroundColor: selectedComponent === 'planillas' ? 'white' : 'initial'
-                            }}
-                        >
-                            Planillas
-                        </button>
-                    </li>
-                    <li className="nav-item">
-                        <button
                             className={`nav-link btn ${selectedComponent === 'links' ? 'active' : ''}`}
                             onClick={() => handleComponentClick('links')}
                             style={{
@@ -74,7 +63,7 @@ export default function NavBarHerramientas() {
                                 backgroundColor: selectedComponent === 'links' ? 'white' : 'initial'
                             }}
                         >
-                            Links
+                            Planillas Y Links
                         </button>
                     </li>
                 </ul>
@@ -84,7 +73,6 @@ export default function NavBarHerramientas() {
                 {selectedComponent === 'calculadoras' && <Calculadoras />}
                 {selectedComponent === 'formatos' && <Formatos />}
                 {selectedComponent === 'mapas' && <Mapas />}
-                {/* {selectedComponent === 'planillas' && <Planillas />} */}
                 {selectedComponent === 'links' && <Links />}
             </div>
         </div>
