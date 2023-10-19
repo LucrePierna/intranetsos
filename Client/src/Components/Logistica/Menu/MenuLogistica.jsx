@@ -151,7 +151,7 @@ const MenuLogistica = () => {
               Contención
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
               href="/logistica/Herramientas"
               className={selectedRoute === '/logistica/Herramientas' ? 'active' : ''}
@@ -162,7 +162,7 @@ const MenuLogistica = () => {
               </svg>
               Herramientas
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               href="/"

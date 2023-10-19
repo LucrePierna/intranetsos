@@ -312,10 +312,10 @@ export default function Instructivo() {
             </div>
           </nav>
           <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-solicitud" role="tabpanel" aria-labelledby="nav-solicitud-tab" tabindex="0">
+            <div class="tab-pane fade" id="nav-solicitud" role="tabpanel" aria-labelledby="nav-solicitud-tab" tabindex="0">
               <Solicitud />
             </div>
-            <div class="tab-pane fade" id="nav-formatobrasil" role="tabpanel" aria-labelledby="nav-formatobrasil-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="nav-formatobrasil" role="tabpanel" aria-labelledby="nav-formatobrasil-tab" tabindex="0">
               <Brasil />
             </div>
           </div>

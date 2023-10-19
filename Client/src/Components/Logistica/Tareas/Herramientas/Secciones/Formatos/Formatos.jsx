@@ -49,10 +49,10 @@ export default function Formatos() {
             <nav>
               <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                 <button class="nav-link sub active" id="nav-mailwsp-tab" data-bs-toggle="tab" data-bs-target="#nav-mailwsp" type="button" role="tab" aria-controls="nav-mailwsp" aria-selected="true">Solicitud por e-mail o whatsapp</button>
-                <button class="nav-link sub" id="nav-brasil-tab" data-bs-toggle="tab" data-bs-target="#nav-brasil" type="button" role="tab" aria-controls="nav-brasil" aria-selected="true">Formato Brasil</button>
+                <button class="nav-link sub" id="nav-brasil-tab" data-bs-toggle="tab" data-bs-target="#nav-brasil" type="button" role="tab" aria-controls="nav-brasil" aria-selected="false">Formato Brasil</button>
               </div>
             </nav>
-            <div class="tab-pane fade show active " id="nav-mailwsp" role="tabpanel" aria-labelledby="nav-mailwsp-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="nav-mailwsp" role="tabpanel" aria-labelledby="nav-mailwsp-tab" tabindex="0">
               <FormatoSolicitud />
             </div>
             <div className="tab-pane fade" id="nav-brasil" role="tabpanel" aria-labelledby="nav-brasil-tab" tabindex="0">
