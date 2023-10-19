@@ -4,6 +4,10 @@ export default function ViajeroReintegro() {
     const [selectedOption, setSelectedOption] = useState('');
     const [km, setKm] = useState('');
     const [resultado, setResultado] = useState(null);
+    const [formData, setFormData] = useState({
+        resultadoFinal: ''
+    });
+    const [copied, setCopied] = useState(false);
 
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
@@ -11,26 +15,52 @@ export default function ViajeroReintegro() {
         setKm('');
     };
 
+
     const calcularResultado = () => {
+        let resultadoCalculado = null;
+        let detalleCalculoTexto = '';
+
         if (selectedOption === 'remis') {
             if (km <= 20) {
-                setResultado(1500);
+                resultadoCalculado = 1500;
             } else if (km > 20 && km <= 60) {
-                setResultado(km * 120);
+                resultadoCalculado = km * 120;
             } else {
-                setResultado('Debe calcular con Micro');
+                resultadoCalculado = 'Debe calcular con Micro';
             }
         } else if (selectedOption === 'micro') {
             if (km > 60) {
-                setResultado(km * 18);
+                resultadoCalculado = km * 18;
             } else {
-                setResultado('Debe calcular con Remis');
+                resultadoCalculado = 'Debe calcular con Remis';
             }
+        }
+
+        setResultado(resultadoCalculado);
+
+        if (resultadoCalculado !== null) {
+            setFormData({ resultadoFinal: resultadoCalculado.toString() });
         }
     };
 
+    const handleCopyClick = () => {
+        const formattedText = `
+        Sr/a le informamos que el reintegro de su servicio es de $: ${formData.resultadoFinal}
+        `;
+        navigator.clipboard.writeText(formattedText)
+            .then(() => setCopied(true))
+            .catch(err => alert('Error en copiar texto ', err))
+    }
+
+    const handleReset = () => {
+        setFormData({
+            resultadoFinal: ''
+        });
+        setCopied(false);
+    }
+
     return (
-        <div className="container d-flex flex-column align-items-center justify-content-center mt-5  bg-secondary rounded p-5">
+        <div className="container d-flex flex-column align-items-center justify-content-center mt-5 bg-secondary rounded p-5">
             <h1 className='text-center mb-4'>REINTEGRO DE VIAJERO</h1>
             <div className="form-group">
                 <label htmlFor="transporte" className='mb-3 fs-4'>Medio de transporte:</label>
@@ -40,10 +70,16 @@ export default function ViajeroReintegro() {
                     <option value="micro">Micro</option>
                 </select>
             </div>
-
+            {selectedOption === 'micro' && (
+                <div className='text-center my-4'>
+                    <div className="bg-danger bg-gradient text-white p-3 rounded">
+                        <h1 className="fs-6">De 0 a 4 años no abonan pasaje, solo coseguro. A cargo del cliente.</h1>
+                    </div>
+                </div>
+            )}
             {selectedOption && (
                 <div className="form-group">
-                    <label htmlFor="km" className='my-4 fs-4'>Cantidad de kilómetros:</label>
+                    <label htmlFor="km" className='my-4 fs-4'>Cantidad de kilómetros lineales:</label>
                     <input
                         type="number"
                         id="km"
@@ -61,12 +97,25 @@ export default function ViajeroReintegro() {
             {resultado !== null && (
                 <div className="mt-3">
                     {typeof resultado === 'number' ? (
-                        <p className="alert alert-success">El reintegro es de ${resultado}</p>
+                        <p className="alert alert-success">
+                            Sr/a le informamos que el reintegro de su servicio es de ${resultado}.
+                        </p>
                     ) : (
                         <p className="alert alert-danger">{resultado}</p>
                     )}
                 </div>
             )}
+
+            <div className='d-flex justify-content-center align-items-center mt-3'>
+                {resultado !== null && (
+                    <button className='btn btn-danger me-3' onClick={handleCopyClick}>
+                        {copied ? 'Copiado' : 'Copiar'}
+                    </button>
+                )}
+                <button className='btn btn-danger' onClick={handleReset}>
+                    Limpiar
+                </button>
+            </div>
         </div>
     );
 }
