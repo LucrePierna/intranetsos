@@ -1,3 +1,4 @@
+/* eslint-disable no-const-assign */
 import React, { useState } from 'react';
 
 export default function ViajeroReintegro() {
@@ -40,10 +41,16 @@ export default function ViajeroReintegro() {
                     <option value="micro">Micro</option>
                 </select>
             </div>
-
+            {selectedOption === 'micro' && (
+                <div className='text-center my-4'>
+                    <div className="bg-danger bg-gradient text-white p-3 rounded">
+                        <h1 className="fs-6">De 0 a 4 años no abonan pasaje, solo coseguro. A cargo del cliente.</h1>
+                    </div>
+                </div>
+            )}
             {selectedOption && (
                 <div className="form-group">
-                    <label htmlFor="km" className='my-4 fs-4'>Cantidad de kilómetros:</label>
+                    <label htmlFor="km" className='my-4 fs-4'>Cantidad de kilómetros lineales:</label>
                     <input
                         type="number"
                         id="km"
