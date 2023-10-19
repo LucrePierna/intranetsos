@@ -32,8 +32,7 @@ export default function Formato() {
 
         if (tieneIVA) {
             resultadoCalculado *= 1.21;
-            detalleCalculoTexto += ` + IVA = $${resultadoCalculado}   `
-            
+            detalleCalculoTexto += ` + IVA = $${resultadoCalculado}   `;
         } else {
             detalleCalculoTexto += 'Sin IVA\n';
         }
@@ -55,6 +54,7 @@ export default function Formato() {
         }
 
         resultadoCalculado = Math.max(resultadoCalculado, 0);
+        resultadoCalculado = parseInt(resultadoCalculado);
 
         if (resultadoCalculado === 0) {
             detalleCalculoTexto += `Está cubierto para el cliente. `;
@@ -97,9 +97,10 @@ export default function Formato() {
     const handleEsPorPersonaChange = (e) => {
         setEsPorPersona(e.target.checked);
     }
-
     const copyToClipboard = () => {
-        const textToCopy = `${detalleCalculo}\nEl costo viajero es: $${resultado}`;
+        const resultadoEntero = Math.floor(resultado);
+
+        const textToCopy = `${detalleCalculo}\nEl costo viajero es: $${resultadoEntero}`;
         navigator.clipboard.writeText(textToCopy).then(() => {
             setCopied(true);
         });
@@ -175,7 +176,7 @@ export default function Formato() {
                 {resultado === 0 && !tieneTopeDeCobertura ? (
                     <div className='text-bg-danger '>Está cubierto para el cliente.</div>
                 ) : (
-                    <div className='text-bg-danger text-white fw-semi-bold'>El costo viajero es: $ {resultado}</div>
+                    <div className='text-bg-danger text-white fw-semi-bold'>El costo viajero es: $ {Math.floor(resultado)}</div>
                 )}
             </div>
 
