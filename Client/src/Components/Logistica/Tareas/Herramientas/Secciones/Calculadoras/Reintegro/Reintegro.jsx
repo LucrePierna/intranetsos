@@ -85,9 +85,9 @@ function Reintegro() {
       }
 
       setResultado(
-        `SPEECH: Sr/a. Le informamos que se le va a cubrir el monto de <strong>$${montototal.toFixed(
-          2
-        )}</strong> correspondiente a ${trasladoChecked ? 'traslado' : ''} ${trasladoChecked && mecanicaChecked ? 'y' : ''
+        `SPEECH: Sr/a. Le informamos que se le va a cubrir el monto de <strong>$${Math.floor(montototal)/* .toFixed(
+          0
+        ) */}</strong> correspondiente a ${trasladoChecked ? 'traslado' : ''} ${trasladoChecked && mecanicaChecked ? 'y' : ''
         } ${mecanicaChecked ? 'mecánica' : ''} de ${kmsValue} kms totales`
       );
     } else {
