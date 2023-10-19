@@ -3,8 +3,6 @@ import React, { useEffect } from 'react'
 import * as bootstrap from 'bootstrap'
 import imagenCostos from '../../../../Image/tierradelfuegocostos.png'
 import imagenParalelo from '../../../../Image/Paralelo24Brasil.png'
-import Brasil from './Formatos/brasil/Brasil';
-import Solicitud from './Formatos/Solicitud/Solicitud';
 
 export default function Instructivo() {
 
@@ -35,7 +33,6 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-chile-tab" data-bs-toggle="tab" data-bs-target="#nav-chile" type="button" role="tab" aria-controls="nav-chile" aria-selected="false">Chile</button>
           <button className="nav-link custom" id="nav-paraguay-tab" data-bs-toggle="tab" data-bs-target="#nav-paraguay" type="button" role="tab" aria-controls="nav-paraguay" aria-selected="false">Paraguay</button>
           <button className="nav-link custom" id="nav-contraprestacion-tab" data-bs-toggle="tab" data-bs-target="#nav-contraprestacion" type="button" role="tab" aria-controls="nav-contraprestacion" aria-selected="false">Contraprestación</button>
-          <button className="nav-link custom" id="nav-formatos-tab" data-bs-toggle="tab" data-bs-target="#nav-formatos" type="button" role="tab" aria-controls="nav-formatos" aria-selected="false">Formato</button>
         </div>
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
@@ -311,14 +308,6 @@ export default function Instructivo() {
               <button class="nav-link sub active" id="nav-formatobrasil-tab" data-bs-toggle="tab" data-bs-target="#nav-formatobrasil" type="button" role="tab" aria-controls="nav-formatobrasil" aria-selected="true">Formato Brasil</button>
             </div>
           </nav>
-          <div class="tab-content text-start px-2 mt-3" id="nav-tabContent">
-            <div class="tab-pane fade" id="nav-solicitud" role="tabpanel" aria-labelledby="nav-solicitud-tab" tabindex="0">
-              <Solicitud />
-            </div>
-            <div class="tab-pane fade show active" id="nav-formatobrasil" role="tabpanel" aria-labelledby="nav-formatobrasil-tab" tabindex="0">
-              <Brasil />
-            </div>
-          </div>
         </div>
       </div>
     </div >

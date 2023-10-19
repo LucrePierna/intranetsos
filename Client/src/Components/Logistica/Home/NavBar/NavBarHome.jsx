@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Agenda from '../Secciones/Agenda/Agenda';
-import Calculadoras from '../Secciones/Calculadoras/Calculadora';
 import Noticias from '../Secciones/Noticias/Noticias';
 
 export default function NavBarHome() {
@@ -40,25 +39,12 @@ export default function NavBarHome() {
               Agenda
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'calculadoras' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('calculadoras')}
-              style={{
-                color: selectedComponent === 'calculadoras' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'calculadoras' ? 'white' : 'initial'
-              }}
-            >
-              Calculadoras
-            </button>
-          </li>
         </ul>
       </nav>
 
       <div className="container-fluid">
         {selectedComponent === 'agenda' && <Agenda />}
         {selectedComponent === 'noticias' && <Noticias />}
-        {selectedComponent === 'calculadoras' && <Calculadoras />}
       </div>
     </div>
   );

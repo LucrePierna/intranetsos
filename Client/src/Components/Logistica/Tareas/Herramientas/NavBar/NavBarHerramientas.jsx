@@ -4,6 +4,7 @@ import Calculadoras from '../Secciones/Calculadoras/Calculadora';
 import Formatos from '../Secciones/Formatos/Formatos';
 import Mapas from '../Secciones/Mapas/Mapas';
 import Links from '../Secciones/Links/Links';
+import CalculadoraV from '../Secciones/CalculadoraViajero/CalculadoraV';
 
 
 export default function NavBarHerramientas() {
@@ -28,6 +29,18 @@ export default function NavBarHerramientas() {
                             }}
                         >
                             Calculadoras
+                        </button>
+                    </li>
+                    <li className="nav-item">
+                        <button
+                            className={`nav-link btn ${selectedComponent === 'calculadoraviajero' ? 'active' : ''}`}
+                            onClick={() => handleComponentClick('calculadoraviajero')}
+                            style={{
+                                color: selectedComponent === 'calculadoraviajero' ? 'black' : 'red',
+                                backgroundColor: selectedComponent === 'calculadoraviajero' ? 'white' : 'initial'
+                            }}
+                        >
+                            Calculadora de Viajero
                         </button>
                     </li>
                     <li className="nav-item">
@@ -71,6 +84,7 @@ export default function NavBarHerramientas() {
 
             <div className="container-fluid">
                 {selectedComponent === 'calculadoras' && <Calculadoras />}
+                {selectedComponent === 'calculadoraviajero' && <CalculadoraV />}
                 {selectedComponent === 'formatos' && <Formatos />}
                 {selectedComponent === 'mapas' && <Mapas />}
                 {selectedComponent === 'links' && <Links />}

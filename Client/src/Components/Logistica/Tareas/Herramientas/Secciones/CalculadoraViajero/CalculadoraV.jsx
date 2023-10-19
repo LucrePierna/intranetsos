@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Formato from './Formato';
 
-export default function Calculadora({ resultado }) {
+export default function CalculadoraV({ resultado }) {
   const [formData, setFormData] = useState({
     cantidadTotal: '',
     cantidadPorAsistencia: '',

@@ -2,7 +2,6 @@ import React from 'react'
 import * as bootstrap from 'bootstrap'
 import imagen1 from '../../../../Image/eficaz1.png'
 import imagen2 from '../../../../Image/eficaz2.png'
-import Formato from './Formato/Formato'
 
 export default function Instructivo() {
   const triggerTabList = document.querySelectorAll('#myTab button')
@@ -21,7 +20,6 @@ export default function Instructivo() {
         <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Descripción de la tarea</button>
           <button className="nav-link custom" id="nav-eficaz-tab" data-bs-toggle="tab" data-bs-target="#nav-eficaz" type="button" role="tab" aria-controls="nav-eficaz" aria-selected="false">Conexión eficaz</button>
-          <button className="nav-link custom" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Formato de registro</button>
           <button className="nav-link custom" id="nav-rechazo-tab" data-bs-toggle="tab" data-bs-target="#nav-rechazo" type="button" role="tab" aria-controls="nav-rechazo" aria-selected="false">Motivos de rechazo</button>
           <button className="nav-link custom" id="nav-planilla-tab" data-bs-toggle="tab" data-bs-target="#nav-planilla" type="button" role="tab" aria-controls="nav-planilla" aria-selected="false">Planilla</button>
         </div>
@@ -48,9 +46,6 @@ export default function Instructivo() {
             </div>
           </div>
           <p className='py-5 text-center'>El primer servicio se pagará completo(Ida y Vuelta) al prestador, mientras que el segundo servicio se abonará desde Destino del primer servicio al nuevo Origen, Destino y luego vuelta a Base.</p>
-        </div>
-        <div className="tab-pane fade lineaGeneral" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab" tabIndex="0">
-          <Formato />
         </div>
         <div className="tab-pane fade px-3 mt-3 lineaGeneral" id="nav-rechazo" role="tabpanel" aria-labelledby="nav-rechazo-tab" tabindex="0">
           <p >El registro debe estar completo y los motivos claros del porque prestador no acepta la conexión. Referencia: Cuestiones Operativas Descripción: Prestador "Base/Nombre" no acepta Enganche. </p>

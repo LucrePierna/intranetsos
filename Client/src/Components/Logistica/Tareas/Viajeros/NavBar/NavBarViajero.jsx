@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../../../EstilosGlobales/NavBar.css'
-import Calculadora from '../Secciones/Calculadora/Calculadora'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Procedimiento from '../Secciones/Procedimiento/Procedimiento'
 
@@ -39,27 +38,12 @@ export default function NavBarViajero() {
               Flujograma
             </button>
           </li>
-
-
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'calculadora' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('calculadora')}
-              style={{
-                color: selectedComponent === 'calculadora' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'calculadora' ? 'white' : 'initial'
-              }}
-            >
-              Calculadora
-            </button>
-          </li>
         </ul>
       </nav>
 
       <div className="container-fluid">
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'procedimiento' && <Procedimiento />}
-        {selectedComponent === 'calculadora' && <Calculadora />}
 
       </div>
     </div>

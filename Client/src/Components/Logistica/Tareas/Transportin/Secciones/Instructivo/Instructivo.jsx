@@ -1,7 +1,6 @@
 import React from 'react'
 import '../../../../EstilosGlobales/General.css'
 import * as bootstrap from 'bootstrap'
-import Formato from './Formato/Formato'
 
 export default function Instructivo() {
 
@@ -26,7 +25,6 @@ export default function Instructivo() {
           <button className="nav-link custom" id="nav-contencion-tab" data-bs-toggle="tab" data-bs-target="#nav-contencion" type="button" role="tab" aria-controls="nav-contencion" aria-selected="false">Contención</button>
           <button className="nav-link custom" id="nav-refesvc-tab" data-bs-toggle="tab" data-bs-target="#nav-refesvc" type="button" role="tab" aria-controls="nav-refesvc" aria-selected="false">Referencia en servicio</button>
           <button className="nav-link custom" id="nav-gruat-tab" data-bs-toggle="tab" data-bs-target="#nav-gruat" type="button" role="tab" aria-controls="nav-gruat" aria-selected="false">Grúa triple</button>
-          <button className="nav-link custom" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Formato</button>
         </div>
       </nav>
       <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto " id="nav-tabContent">
@@ -180,9 +178,6 @@ export default function Instructivo() {
           </ul>
           <p>En referencias de derivación: Registrar los vehículos que traslada en el trayecto.</p>
           <p>Luego el operador deberá asignar el servicio por reintegro a base 10361 Reintegro Córdoba, pero con el cierre TRANSPORTIN ENLACE.</p>
-        </div>
-        <div className="tab-pane fade lineaGeneral" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
-          <Formato />
         </div>
       </div>
     </div >
