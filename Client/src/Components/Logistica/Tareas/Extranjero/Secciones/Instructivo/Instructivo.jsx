@@ -65,7 +65,7 @@ export default function Instructivo() {
             </div>
             <div class="tab-pane fade" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <ul className='mt-3 listaGral'>
-                <li><b><u>Federación Patronal:</u></b> km recorridos por valor de km adicional, para mecánicas o movimientos locales el costo del servicio adicional.  </li>
+                <li><b><u>Federación Patronal:</u></b> km totales por valor de km adicional, para mecánicas o movimientos locales el costo del servicio adicional.  </li>
                 <li><b><u>Resto de Compañías:</u></b> se realiza el cálculo con planilla de reintegro </li>
               </ul>
               <p><b>Cuando se brinda la cobertura por reintegro siempre expresarse en pesos argentinos, NO convertir a moneda extranjera y respetando la cobertura según grilla.</b></p>
