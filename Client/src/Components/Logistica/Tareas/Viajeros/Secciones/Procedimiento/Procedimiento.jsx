@@ -24,6 +24,7 @@ export default function Procedimiento() {
           <button className="nav-link custom active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Instrucciones</button>
           <button className="nav-link custom" id="nav-reglas-tab" data-bs-toggle="tab" data-bs-target="#nav-reglas" type="button" role="tab" aria-controls="nav-reglas" aria-selected="false">Reglas generales</button>
           <button className="nav-link custom" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tipos de asistencia</button>
+          <button className="nav-link custom" id="nav-consid-tab" data-bs-toggle="tab" data-bs-target="#nav-consid" type="button" role="tab" aria-controls="nav-consid" aria-selected="false">Consideraciones</button>
           <button className="nav-link custom" id="nav-links-tab" data-bs-toggle="tab" data-bs-target="#nav-links" type="button" role="tab" aria-controls="nav-links" aria-selected="false">Enlaces principales</button>
         </div>
       </nav>
@@ -190,6 +191,54 @@ export default function Procedimiento() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="tab-pane fade lineaGeneral" id="nav-consid" role="tabpanel" aria-labelledby="nav-consid-tab" tabindex="0">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-pag1" role="tabpanel" aria-labelledby="nav-pag1-tab" tabindex="0">
+              <p>
+                <b>Excepciones</b><br />
+                Existen ciertas excepciones que a continuación se detallan. Las mismas deberán ser autorizadas por un Supervisor de Logística/TT o Back Office:
+                <ul className='listaGral'>
+                  <li>Si por cuestiones operativas es conveniente brindar determinada asistencia a un cliente (ej.: hospedaje), aunque no esté contemplado en su cobertura, se autorizará la misma.</li>
+                  <li>Si alguna persona no se puede trasladar por discapacidad, se autorizará el traslado por otro medio.</li>
+                </ul>
+              </p>
+              <p>
+                <b>Reglas generales</b><br />
+                Si son servicios combinados, es decir que distintas bases realizan la asistencia al viajero, (por ejemplo, un prestador realiza Remis y compramos pasajes mediante Plataforma 10 se deberán cargar 2 servicios de viajero. Cada servicio deberá estar asignado a la base que corresponde, y si se le ofrece todo por reintegro se cargarán todos los productos en un mismo servicio.<br />
+                El servicio se les brinda a las personas, en los casos que haya mascotas se le deberá explicar al socio que las mascotas van en el vehículo con las medidas de seguridad que deben contar (correa, bozal, otros) o deberán buscar el medio para trasladarlos sin condicionar el servicio de traslado del vehículo o servicio de asistencia al viajero.<br />
+              </p>
+              <p>
+                <b>MODALIDAD PAGO ANTICIPADO</b> <br />
+                Es una opción que se brinda al prestador en ocasiones eventuales, donde podrá recibir el pago por fuera de los circuitos habituales, en un menor tiempo (generalmente entre 7 y 10 días hábiles) previamente observado con un supervisor/back office. Una vez finalizado el servicio por prestador debe comunicarlo a nuestra área para que se gestione el mismo por un Supervisor el cual debe enviar email al mismo detallando código de servicio y base de prestador.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="nav-pag2" role="tabpanel" aria-labelledby="nav-pag2-tab" tabindex="0">
+              <p>
+                <b>Descripción de grúas:</b><br />
+                <u>CABINA SIMPLE:</u>  viajan en grúa el chofer, hasta 2 personas mayores de 18 años. En el caso de que en el lugar de origen se encuentre 1 mayor y un mayor de 10 años, pueden viajar siempre y cuando el mayor viaje también.  <br />
+                <u>CABINA DOBLE:</u>  viajan en grúa el chofer, hasta 2 personas mayores de 18 años adelante. Atrás pueden viajar hasta 3 personas incluyendo menores. <br />
+                En el caso de que haya un menor de 4 años, el cliente debe tener Butaca para el menor mismo puede ser que lo tenga dentro de su vehículo.
+              </p>
+              <p>
+                <b>GRUA SIN ACOMPAÑANTES:</b> Se brinda asistencia al viajero en los siguientes casos
+                <ul>
+                  <li>Modo de Trasportín(el vehículo viaja solo)</li>
+                  <li>Traslados con más de 400 kilómetros lineales, se puede brindar Asistencia al viajero en la parte de desplazamiento a todas las personas, incluso a quienes se podrían trasladar en la grúa.  presentando la documentación que corresponda (TV, Llaves, Autorización).</li>
+                  <li>Cuando no haya disponibilidad inmediata para el traslado y teniendo en cuenta la cantidad de xx km a recorrer, se coordina la guarda y la programación del servicio. Definir km</li>
+                  <li>Si el traslado se realiza con más de un chofer (se cubrirá la asistencia al viajero para la persona que podría acompañar el traslado en su lugar).</li>
+                  <li>Cuando haya un acompañante que sea menor de 10 años.</li>
+                  <li>Cuando haya un adulto y un menor (-10 años), se procede a coordinar la asistencia. El vehículo viaja solo presentando la documentación que corresponda (TV, Llaves, Autorización).</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link sub active" id="nav-pag1-tab" data-bs-toggle="tab" data-bs-target="#nav-pag1" type="button" role="tab" aria-controls="nav-pag1" aria-selected="true">Pág 1</button>
+              <button class="nav-link sub" id="nav-pag2-tab" data-bs-toggle="tab" data-bs-target="#nav-pag2" type="button" role="tab" aria-controls="nav-pag2" aria-selected="false">Pág 2</button>
+            </div>
+          </nav>
         </div>
         <div className="tab-pane fade lineaGeneral" id="nav-links" role="tabpanel" aria-labelledby="nav-links-tab" tabindex="0">
           <div className='d-flex flex-column py-4 m-auto justify-content-center text-center'>
