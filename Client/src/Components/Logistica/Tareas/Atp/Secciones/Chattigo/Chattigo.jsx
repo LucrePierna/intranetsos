@@ -27,7 +27,7 @@ export default function Chattigo() {
                 </TableRow>
                 <TableRow key="4" className="border border-dark bg-light text-black">
                   <TableCell>derivador4@redsos.com.ar</TableCell>
-                  <TableCell>Derivador4*</TableCell>
+                  <TableCell>Derivador4+</TableCell>
                 </TableRow>
                 <TableRow key="5" className="border border-dark bg-light text-black">
                   <TableCell>derivador5@redsos.com.ar</TableCell>
@@ -51,11 +51,11 @@ export default function Chattigo() {
                 </TableRow>
                 <TableRow key="10" className="border border-dark bg-light text-black">
                   <TableCell>derivador10@redsos.com.ar</TableCell>
-                  <TableCell>Derivador10+</TableCell>
+                  <TableCell>Derivador10++</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
-            <div className='h-50 w-50 m-auto'> 
+            <div className='h-50 w-50 m-auto'>
               <a href="https://login.chattigo.com/" target="_blank" rel="noopener noreferrer">
                 <button type='button' className="btn btn-danger mt-3">Link a Chattigo</button>
               </a>
