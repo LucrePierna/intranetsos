@@ -86,7 +86,7 @@ export default function CalculadoraContraPrestacion() {
             </div>
             <div>
                 <label className='form-check mt-2'>
-                    Kilómetros:
+                    Kilómetros lineales:
                     <input className='form-control input-style' type="number" value={kms} onChange={handleKmsChange} />
                 </label>
                 <label className='form-check-label my-2'>
