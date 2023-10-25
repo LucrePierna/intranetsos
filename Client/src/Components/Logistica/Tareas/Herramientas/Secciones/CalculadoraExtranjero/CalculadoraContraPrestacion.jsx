@@ -100,7 +100,7 @@ export default function CalculadoraContraPrestacion() {
                 <button className={`btn btn-${copiado ? 'success' : 'danger'} mt-3 mx-2`} onClick={copiado ? null : copiarResultado}>
                     {copiado ? 'Copiado' : 'Copiar'}
                 </button>
-                <button className='btn btn-danger mt-3 mx-2' onClick={resetearValores}>Restablecer</button>
+                <button className='btn btn-danger mt-3 mx-2' onClick={resetearValores}>Limpiar</button>
             </div>
             <div className='bg-success mt-3 px-2 '>{resultado && <p>{resultado}</p>}</div>
         </div>
