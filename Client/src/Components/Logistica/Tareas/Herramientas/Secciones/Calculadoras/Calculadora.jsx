@@ -4,6 +4,7 @@ import * as bootstrap from 'bootstrap'
 import Reintegro from './Reintegro/Reintegro'
 import Extraccion from './Extraccion/Extraccion'
 import ViajeroReintegro from './ViajeroReintegro/ViajeroReintegro'
+import CalculadoraV from '../CalculadoraViajero/CalculadoraV'
 
 
 export default function Calculadoras() {
@@ -47,6 +48,18 @@ export default function Calculadoras() {
             </button>
             <button
               className='nav-link custom'
+              id='nav-viajero-tab'
+              data-bs-toggle='tab'
+              data-bs-target='#nav-viajero'
+              type='button'
+              role='tab'
+              aria-controls='nav-viajero'
+              aria-selected='false'
+            >
+              Viajero
+            </button>
+            <button
+              className='nav-link custom'
               id='nav-contact-tab'
               data-bs-toggle='tab'
               data-bs-target='#nav-contact'
@@ -57,6 +70,7 @@ export default function Calculadoras() {
             >
               Extracción
             </button>
+
           </div>
         </nav>
         <div className='tab-content' id='nav-tabContent'>
@@ -77,6 +91,15 @@ export default function Calculadoras() {
             tabIndex='0'
           >
             <ViajeroReintegro />
+          </div>
+          <div
+            className='tab-pane fade'
+            id='nav-viajero'
+            role='tabpanel'
+            aria-labelledby='nav-viajero-tab'
+            tabIndex='0'
+          >
+            <CalculadoraV />
           </div>
           <div
             className='tab-pane fade'
