@@ -108,7 +108,7 @@ export default function CalculadoraExtranjero() {
                         />
                     </label>
                     <label className='form-check pt-2'>
-                        Valor por Kilómetro:
+                        Valor de Kilómetro:
                         <input
                             type="number"
                             className='form-control input-style'
