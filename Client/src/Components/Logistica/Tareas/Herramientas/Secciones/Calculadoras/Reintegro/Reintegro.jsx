@@ -9,6 +9,7 @@ function Reintegro() {
   const [trasladoChecked, setTrasladoChecked] = useState(true);
   const [mecanicaChecked, setMecanicaChecked] = useState(false);
   const [resultado, setResultado] = useState(null);
+  const [copiado, setCopiado] = useState(false);
 
   const calc_reintegro1 = () => {
     const compValue = comp;
@@ -18,6 +19,7 @@ function Reintegro() {
 
 
     const valores = {
+
       // Valores para Otras Compañías
       o: {
         // Valores para Resto del País
@@ -47,6 +49,7 @@ function Reintegro() {
     let montototal = 0;
 
     if (
+      setCopiado(false),
       ((trasladoChecked || mecanicaChecked) &&
         (Math.sign(kmsValue) === 1 || Math.sign(kmsValue) === 0)) ||
       mecanicaChecked
@@ -85,15 +88,38 @@ function Reintegro() {
       }
 
       setResultado(
-        `SPEECH: Sr/a. Le informamos que se le va a cubrir el monto de <strong>$${Math.floor(montototal)/* .toFixed(
+        `SPEECH: Sr/a. Le informamos que se le va a cubrir el monto de $${Math.floor(montototal)/* .toFixed(
           0
-        ) */}</strong> correspondiente a ${trasladoChecked ? 'traslado' : ''} ${trasladoChecked && mecanicaChecked ? 'y' : ''
+        ) */} correspondiente a ${trasladoChecked ? 'traslado' : ''} ${trasladoChecked && mecanicaChecked ? 'y' : ''
         } ${mecanicaChecked ? 'mecánica' : ''} de ${kmsValue} kms totales`
       );
     } else {
       setResultado('<strong>NO SE PUEDEN INGRESAR NÚMEROS NEGATIVOS</strong>');
     }
   };
+
+
+  const handleCopy = () => {
+    if (resultado) {
+      navigator.clipboard.writeText(resultado).then(() => {
+        setCopiado(true);
+        console.log('Resultado copiado al portapapeles: ' + resultado);
+      }).catch((error) => {
+        console.error('Error al copiar al portapapeles: ' + error);
+      });
+    }
+  }
+
+  const handleRestet = () => {
+    setComp('o');
+    setVeh('a');
+    setZon('r');
+    setKms('');
+    setTrasladoChecked(true);
+    setMecanicaChecked(false);
+    setResultado(null);
+    setCopiado(false);
+  }
 
   return (
     <div className="container text-center mt-5 py-3">
@@ -198,7 +224,13 @@ function Reintegro() {
                 </label>
               </div>
             )}
-            <button className="btn btn-danger mt-3" onClick={calc_reintegro1}>Calcular</button>
+            <div className='d-flex flex-row justify-content-center'>
+              <button className="btn btn-danger mt-3 mx-4" onClick={calc_reintegro1}>Calcular</button>
+              <button className={`btn btn-${copiado ? 'success' : 'danger'} mt-3 mx-2`} onClick={copiado ? null : handleCopy}>
+                {copiado ? 'Copiado' : 'Copiar'}
+              </button>
+              <button className="btn btn-danger mt-3 mx-4" onClick={handleRestet}>Limpiar</button>
+            </div>
             {resultado && (
               <div className="mt-3 py-4" dangerouslySetInnerHTML={{ __html: resultado }}></div>
             )}
@@ -208,5 +240,6 @@ function Reintegro() {
     </div>
   );
 }
+
 
 export default Reintegro;
