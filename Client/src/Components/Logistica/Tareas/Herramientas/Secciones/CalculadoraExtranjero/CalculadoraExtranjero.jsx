@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 
 export default function CalculadoraExtranjero() {
     const [tipoCalculo, setTipoCalculo] = useState('km');
-    const [cantidadKm, setCantidadKm] = useState(0);
-    const [valorKm, setValorKm] = useState(0);
-    const [coberturaCliente, setCoberturaCliente] = useState(0);
-    const [cotizacion, setCotizacion] = useState(0);
-    const [valorDolar, setValorDolar] = useState(0);
-    const [resultado, setResultado] = useState(0);
+    const [cantidadKm, setCantidadKm] = useState();
+    const [valorKm, setValorKm] = useState();
+    const [coberturaCliente, setCoberturaCliente] = useState();
+    const [cotizacion, setCotizacion] = useState();
+    const [valorDolar, setValorDolar] = useState();
+    const [resultado, setResultado] = useState();
     const [copiado, setCopiado] = useState(false);
-    const [restoCobKm, setRestoCobKm] = useState(0);
-    const [restoCob, setRestoCob] = useState(0);
+    const [restoCobKm, setRestoCobKm] = useState();
+    const [restoCob, setRestoCob] = useState();
 
     const handleCalculo = () => {
         setCopiado(false);
@@ -37,13 +37,13 @@ export default function CalculadoraExtranjero() {
 
     const handleLimpiar = () => {
         setTipoCalculo('km');
-        setCantidadKm(0);
-        setValorKm(0);
+        setCantidadKm();
+        setValorKm();
         setRestoCobKm();
         setRestoCob();
-        setCoberturaCliente(0);
-        setCotizacion(0);
-        setValorDolar(0);
+        setCoberturaCliente();
+        setCotizacion();
+        setValorDolar();
         setResultado();
         setCopiado(false);
     };
@@ -150,7 +150,7 @@ export default function CalculadoraExtranjero() {
                 />
             </label>
             <label className='form-check pt-2'>
-                Valor del Dólar del Día:
+                Valor de divisa del Día:
                 <input
                     type="number"
                     className='form-control input-style'

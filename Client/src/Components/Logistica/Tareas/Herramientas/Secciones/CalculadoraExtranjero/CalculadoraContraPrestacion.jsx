@@ -36,6 +36,9 @@ export default function CalculadoraContraPrestacion() {
         const kmsValue = parseFloat(kms);
         if (isNaN(kmsValue)) {
             setResultado('Ingresa un valor válido para los kilómetros.');
+        } else if (kmsValue <= 20) {
+            let resultadoMovida = option.mov;
+            setResultado(`Valor del servicio ${resultadoMovida}.`);
         } else {
             let nuevoResultado = (kmsValue * 2) - 20;
             let resultadoKm = nuevoResultado * option.km;
