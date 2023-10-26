@@ -71,8 +71,7 @@ export default function CalculadoraContraPrestacion() {
     return (
         <div className="containerExt ">
             <div>
-
-                <label className='pt-2'>
+                <label>
                     Opción de Prestador
                     <select className='form-select container-style' value={selectedOption} onChange={handleOptionChange}>
                         <option value="">Selecciona una opción</option>

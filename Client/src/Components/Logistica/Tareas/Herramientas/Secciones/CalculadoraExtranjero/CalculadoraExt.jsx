@@ -1,6 +1,7 @@
 import React from 'react'
 import * as bootstrap from 'bootstrap'
 import CalculadoraContraPrestacion from './CalculadoraContraPrestacion'
+import CalculadoraExtranjero from './CalculadoraExtranjero'
 
 export default function CalculadoraExt() {
     const triggerTabList = document.querySelectorAll('#myTab button')
@@ -29,6 +30,18 @@ export default function CalculadoraExt() {
                         >
                             Contraprestación
                         </button>
+                        <button
+                            className='nav-link custom'
+                            id='nav-extranjero-tab'
+                            data-bs-toggle='tab'
+                            data-bs-target='#nav-extranjero'
+                            type='button'
+                            role='tab'
+                            aria-controls='nav-extranjero'
+                            aria-selected='true'
+                        >
+                            Extranjero
+                        </button>
                     </div>
                 </nav>
                 <div className='tab-content' id='nav-tabContent'>
@@ -40,6 +53,15 @@ export default function CalculadoraExt() {
                         tabIndex='0'
                     >
                         <CalculadoraContraPrestacion />
+                    </div>
+                    <div
+                        className='tab-pane fade'
+                        id='nav-extranjero'
+                        role='tabpanel'
+                        aria-labelledby='nav-extranjero-tab'
+                        tabIndex='0'
+                    >
+                        <CalculadoraExtranjero />
                     </div>
 
                 </div>

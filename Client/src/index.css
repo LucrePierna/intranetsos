@@ -291,3 +291,20 @@ code {
   margin-top: 0.5rem;
   padding: 3rem;
 }
+
+.containerExtranjero {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 600px;
+  top: 0;
+  justify-content: start;
+  align-items: center;
+  background-color: #646565;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px #000000;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  padding: 2rem 4rem 2rem 4rem;
+  overflow: hidden;
+}

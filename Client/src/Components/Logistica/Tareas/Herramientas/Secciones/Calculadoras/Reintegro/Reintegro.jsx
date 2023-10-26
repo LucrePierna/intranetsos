@@ -162,11 +162,16 @@ function Reintegro() {
               <label>
                 Zona:
                 <select className="form-select container-style" value={zon} onChange={(e) => setZon(e.target.value)}>
-                  <option value="r">Resto del País</option>
+                  {comp === 'f' ? (
+                    <option value="f">País</option>
+                  ) : (
+                    <option value="r">Resto del País</option>
+                  )}
                   {comp === 'o' && <option value="p">Patagonia</option>}
                 </select>
               </label>
             </div>
+
             {mecanicaChecked ? (
               <div className="mt-3">
                 <label>
