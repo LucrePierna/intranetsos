@@ -27,7 +27,7 @@ function TiempoEspera() {
         <label className='px-2'>
           Ingrese la cantidad de productos:
           <input
-            type="number"
+            type="text"
             value={time}
             onChange={(e) => setTime(e.target.value)}
             style={{

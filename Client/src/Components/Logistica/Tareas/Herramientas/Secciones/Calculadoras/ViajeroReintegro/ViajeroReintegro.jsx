@@ -81,7 +81,7 @@ export default function ViajeroReintegro() {
                 <div className="form-group">
                     <label htmlFor="km" className='my-4 fs-4'>Cantidad de kilómetros lineales:</label>
                     <input
-                        type="number"
+                        type="text"
                         id="km"
                         className="form-control"
                         value={km}

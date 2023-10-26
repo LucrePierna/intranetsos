@@ -203,7 +203,7 @@ function Reintegro() {
                 <label>
                   Kilómetros <b>Lineales:</b>
                   <input
-                    type="number"
+                    type="text"
                     className="form-control input-style"
                     value={kms}
                     onChange={(e) => setKms(e.target.value)}
@@ -216,7 +216,7 @@ function Reintegro() {
                 <label>
                   Kilómetros <b>Lineales:</b>
                   <input
-                    type="number"
+                    type="text"
                     className="form-control input-style"
                     value={kms}
                     onChange={(e) => setKms(e.target.value)}

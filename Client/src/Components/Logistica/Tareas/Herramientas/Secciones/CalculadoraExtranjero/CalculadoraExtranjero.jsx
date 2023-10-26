@@ -101,7 +101,7 @@ export default function CalculadoraExtranjero() {
                     <label className='form-check pt-2'>
                         Cantidad de Kilómetros:
                         <input
-                            type="number"
+                            type="text"
                             className='form-control input-style'
                             value={cantidadKm}
                             onChange={(e) => setCantidadKm(e.target.value)}
@@ -110,7 +110,7 @@ export default function CalculadoraExtranjero() {
                     <label className='form-check pt-2'>
                         Valor de Kilómetro:
                         <input
-                            type="number"
+                            type="text"
                             className='form-control input-style'
                             value={valorKm}
                             onChange={(e) => setValorKm(e.target.value)}
@@ -123,7 +123,7 @@ export default function CalculadoraExtranjero() {
                     <label className='form-check pt-2'>
                         Cobertura del Cliente:
                         <input
-                            type="number"
+                            type="text"
                             className='form-control input-style'
                             value={coberturaCliente}
                             onChange={(e) => setCoberturaCliente(e.target.value)}
@@ -132,7 +132,7 @@ export default function CalculadoraExtranjero() {
                     <label className='form-check pt-2'>
                         Valor de Kilómetro:
                         <input
-                            type="number"
+                            type="text"
                             className='form-control input-style'
                             value={valorKm}
                             onChange={(e) => setValorKm(e.target.value)}
@@ -143,7 +143,7 @@ export default function CalculadoraExtranjero() {
             <label className='form-check pt-2'>
                 Cotización:
                 <input
-                    type="number"
+                    type="text"
                     className='form-control input-style'
                     value={cotizacion}
                     onChange={(e) => setCotizacion(e.target.value)}
@@ -152,7 +152,7 @@ export default function CalculadoraExtranjero() {
             <label className='form-check pt-2'>
                 Valor de divisa del Día:
                 <input
-                    type="number"
+                    type="text"
                     className='form-control input-style'
                     value={valorDolar}
                     onChange={(e) => setValorDolar(e.target.value)}

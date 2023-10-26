@@ -122,14 +122,14 @@ export default function Formato() {
     return (
         <div className='d-flex flex-column calculadora'>
             <h1 className='text-center m-auto mb-3'>Calculadora de Viajero</h1>
-            <input className='inputViajero' type="number" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
+            <input className='inputViajero' type="text" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
 
             <input className='inputViajero' type="text" name="precio" value={precio} onChange={handleInputChange} placeholder="Cargar precio en $" />
 
             <input type="checkbox" name="tieneIVA" checked={tieneIVA} onChange={(e) => setTieneIVA(e.target.checked)} />
             <label htmlFor="tieneIVA">Agregar IVA</label>
 
-            <input className='inputViajero' type="number" name="personas" value={personas} onChange={handleInputChange} placeholder="Cantidad de personas" disabled={!esPorPersona} />
+            <input className='inputViajero' type="text" name="personas" value={personas} onChange={handleInputChange} placeholder="Cantidad de personas" disabled={!esPorPersona} />
 
             <input
                 type='checkbox'
@@ -154,7 +154,7 @@ export default function Formato() {
                     name='cobertura'
                     value={cobertura}
                     onChange={handleInputChange}
-                    placeholder='Cobertura del cliente'
+                    placeholder='$ Cobertura del cliente'
                     disabled
                 />
             ) : (
