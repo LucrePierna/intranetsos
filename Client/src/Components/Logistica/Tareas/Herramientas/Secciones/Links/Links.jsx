@@ -26,7 +26,7 @@ export default function PlanillasyLinks() {
                 <TableCell>Torre de Conexión</TableCell>
                 <TableCell></TableCell>
                 <TableCell><a href="http://cba-mstr02:8080/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=8C6D331949623CB6CE573F818C42E8E6&Server=CBA-MSTR02&Project=SOS%20BI&Port=0&share=1" target='_blank' rel='noopener noreferrer'>
-                  <button type='button' className='btn btn-danger'>MICROSTRATEGY</button>
+                  <button type='button' className='btn btn-danger'>MicroStrategy</button>
                 </a></TableCell>
                 <TableCell> <a href="https://redsos-my.sharepoint.com/:x:/r/personal/lpierna_redsos_com_ar/_layouts/15/Doc.aspx?sourcedoc=%7B5421D102-2397-4907-B6DB-5BD402591161%7D&file=REDUCCI%25u00d3N%20DE%20COSTOS%202023.xlsx&action=default&mobileredirect=true" target="_blank" rel="noopener noreferrer">
                   <button type="button" class="btn btn-danger">Planilla Torre de conexion</button>

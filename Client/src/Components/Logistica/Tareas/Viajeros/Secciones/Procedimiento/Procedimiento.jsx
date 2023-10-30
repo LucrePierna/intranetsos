@@ -23,7 +23,7 @@ export default function Procedimiento() {
         <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button className="nav-link custom active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Instrucciones</button>
           <button className="nav-link custom" id="nav-reglas-tab" data-bs-toggle="tab" data-bs-target="#nav-reglas" type="button" role="tab" aria-controls="nav-reglas" aria-selected="false">Reglas generales</button>
-          <button className="nav-link custom" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tipos de asistencia</button>
+          <button className="nav-link custom" id="nav-tipasist-tab" data-bs-toggle="tab" data-bs-target="#nav-tipasist" type="button" role="tab" aria-controls="nav-tipasist" aria-selected="false">Tipos de asistencia</button>
           <button className="nav-link custom" id="nav-consid-tab" data-bs-toggle="tab" data-bs-target="#nav-consid" type="button" role="tab" aria-controls="nav-consid" aria-selected="false">Consideraciones</button>
           <button className="nav-link custom" id="nav-links-tab" data-bs-toggle="tab" data-bs-target="#nav-links" type="button" role="tab" aria-controls="nav-links" aria-selected="false">Enlaces principales</button>
         </div>
@@ -102,7 +102,7 @@ export default function Procedimiento() {
             </div>
           </div>
         </div>
-        <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div className="tab-pane fade" id="nav-tipasist" role="tabpanel" aria-labelledby="nav-tipasist-tab" tabindex="0">
           <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
               <button class="nav-link sub active" id="nav-taxi-tab" data-bs-toggle="tab" data-bs-target="#nav-taxi" type="button" role="tab" aria-controls="nav-taxi" aria-selected="true">Taxi-Remis-Cabify</button>
@@ -114,19 +114,22 @@ export default function Procedimiento() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 mt-3 " id="nav-taxi" role="tabpanel" aria-labelledby="nav-taxi-tab" tabindex="0">
-              <p>Puede ser brindado directamente por el prestador (con unidad propia) o tercerizando a través de una remisería (taxi y remise por recupero). <br />
+              <p>Puede ser brindado directamente por el prestador (con unidad propia) o terciarizando a través de una remisería (taxi y remis por recupero). <br />
                 Si se realiza con esta segunda opción corresponderá una "fee de gestión de viajero" para el prestador. Tener en cuenta los topes de cobertura del cliente en esta prestación.<br />
                 En la pantalla de “Red Nacional” al servicio se le asignará llegada y cierre en el momento que sea confirmado por el prestador. <br />
                 El producto que corresponderá cargar al prestador serán kilómetros lineales, medidos desde la base hasta el destino del viaje del cliente. Al cliente se le computarán solo kilómetros lineales, medidos en el trayecto que recorre durante el servicio de viajero. <br />
               </p>
               <p>
-                Los kilómetros se contabilizarán para el cliente desde el lugar de origen (donde están el vehículo y las personas) hasta el destino final (siempre kilómetros lineales). *Tener en cuenta que el traslado de las personas para ser coordinado por este medio no debe superar los 60 km lineales* <br />
+                Los kilómetros se contabilizarán para el cliente desde el lugar de origen (donde están el vehículo y las personas) hasta el destino final (siempre kilómetros lineales). <u>Tener en cuenta que el traslado de las personas para ser coordinado por este medio no debe superar los 60 km lineales</u> <br />
+              </p>
+              <p>
+                <u>Cabify:</u> Tenemos en Córdoba, Rosario, Capital Federal y Mendoza. Se consulta con Supervisor/Back Office si hay disponibilidad en la zona, en caso de haber, el servicio se coordina unicamente si está cubierto en su totalidad por compañía.
               </p>
               <p>
                 <u>Remis LH – Córdoba:</u> Coordina remis en la localidad de Córdoba y alrededores. El producto que se deberá cargar es “taxi y remis propio”. Los servicios deberán ser asignados a la base 11444 – Córdoba – López Héctor Horacio. <br />
               </p>
               <p>
-                <u>Resto del país:</u> ver opciones de grilla de prestadores si cuentan con este servicio, o la base que salga en opciones de búsqueda, una de las opciones es Supernova S.A: CUBRE GRAN PARTE DE LAS LOCALIDADES DEL PAÍS. Los servicios deberán ser asignados a la base 11079. <br />
+                <u>Resto del país:</u> Ver opciones de grilla de prestadores si cuentan con este servicio, o la base que salga en opciones de búsqueda, una de las opciones es Supernova S.A: CUBRE GRAN PARTE DE LAS LOCALIDADES DEL PAÍS. Los servicios deberán ser asignados a la base 11079. <br />
               </p>
               <p><b>
                 Si el servicio de viajero cuenta con adicional a cargo del asegurado, no se podrá coordinar con los prestadores antes mencionados, el servicio debe estar cubierto en su totalidad.
@@ -165,30 +168,42 @@ export default function Procedimiento() {
               </p>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-gestor-tab" tabindex="0">
-              <p><b>Se deberán agotar todas las vías posibles antes de brindar el servicio por reintegro. En caso de coordinarse bajo esta modalidad, se deberá brindar la mayor contención posible al cliente, ofreciendo comunicación con familiares, policía, números de remiserías, hoteles, verificando disponibilidad de micros, etc.</b></p>
-              <p><u>Consideraciones generales para el reintegro:</u>
-                <ul className='listaGral'>
-                  <li>Debe ser autorizado por Supervisor / Back Office.</li>
-                  <li>Se debe cerrar por reintegro asignándolos a la base 10361 – Córdoba.  Brindando los medios para gestionarlo, enviando un mail con copia a derivadores y mesa de ayuda o informar vía verbal los medios de gestión de reintegro (que se dirija a la Cía. o envíe la factura *Página web: www.redsos.com.ar - reclamos y sugerencias.</li>
-                  <li>Se deben cargar los productos correspondientes en solapa prestador – listado de producto (“Taxi/remis por reintegro”, “Hotelería por reintegro”, “Pasajes por reintegro”).</li>
-                  <li>Se debe recordar al cliente presentar comprobante fiscal y/o ticket para poder acceder al reintegro.</li>
-                  <li>Se debe especificar al cliente los topes de cobertura, respetando lo detallado en cada grilla.</li>
-                  <li>Se debe dejar registro en el servicio del lugar del cual se toman los precios como referencia para fijar el tope por reintegro, por ejemplo, Plataforma 10 o Central de Pasajes.</li>
-                  <li>En los casos que cliente manifieste no ser de la zona o desconocimiento para contratar servicio se puede aconsejarle la página web https://www.telexplorer.com.ar el cual muestra servicios de Taxi / Remis / hospedaje el cual cliente podrá contactarse para contratar sus servicios o realizar consultas.</li>
-                  <li>Como última instancia indicar al cliente que lo puede utilizar al tope de reintegro en combustible, para que algún familiar los busque.</li>
-                </ul>
-
-                Se debe tener en cuenta que los servicios de reintegro por taxi/Remis como Micro se calculan sobre los KM lineales. <br />
-                <ul className='listaGral'>
-                  <li>Taxi-Remis: valor hasta 20km lineales tope de $1500 finales. Entre 20km y 60km lineales el valor a tomar es de $120 finales por km lineal.</li>
-                  <li>Mas de 60 km, Pasaje en Micro: Valor de referencia de plataforma de venta o valor de $18 final por km lineal.</li>
-                  <b>Nota:</b>
-                  <li> Si el tope de cobertura en póliza es mayor al que se le ofrece, indicar que es un monto aproximado.</li>
-                  <li> Ver siempre el tarifario de reintegro actualizado.</li>
-                </ul>
-                Registros en todos los servicios
-                Una Referencia de Viajero con el formato estándar en la sección de "Herramientas"
-              </p>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active " id="nav-pa1" role="tabpanel" aria-labelledby="nav-pa1-tab" tabindex="0">
+                  <p><b>Se deberán agotar todas las vías posibles antes de brindar el servicio por reintegro. En caso de coordinarse bajo esta modalidad, se deberá brindar la mayor contención posible al cliente, ofreciendo comunicación con familiares, policía, números de remiserías, hoteles, verificando disponibilidad de micros, etc.</b></p>
+                  <p><u>Consideraciones generales para el reintegro:</u>
+                    <ul className='listaGral'>
+                      <li>Debe ser autorizado por Supervisor / Back Office.</li>
+                      <li>Se debe cerrar por reintegro asignándolos a la base 10361 – Córdoba.  Brindando los medios para gestionarlo, enviando un mail con copia a derivadores y mesa de ayuda o informar vía verbal los medios de gestión de reintegro (que se dirija a la Cía. o envíe la factura *Página web: www.redsos.com.ar - reclamos y sugerencias.</li>
+                      <li>Se deben cargar los productos correspondientes en solapa prestador – listado de producto (“Taxi/remis por reintegro”, “Hotelería por reintegro”, “Pasajes por reintegro”).</li>
+                      <li>Se debe recordar al cliente presentar comprobante fiscal y/o ticket para poder acceder al reintegro.</li>
+                      <li>Se debe especificar al cliente los topes de cobertura, respetando lo detallado en cada grilla.</li>
+                      <li>Se debe dejar registro en el servicio del lugar del cual se toman los precios como referencia para fijar el tope por reintegro, por ejemplo, Plataforma 10 o Central de Pasajes.</li>
+                      <li>En los casos que cliente manifieste no ser de la zona o desconocimiento para contratar servicio se puede aconsejarle la página web <a href="https://www.telexplorer.com.ar" target='_blank'><button type='button' class="customBTN mx-2">Telexplorer</button></a> el cual muestra servicios de Taxi / Remis / hospedaje el cual cliente podrá contactarse para contratar sus servicios o realizar consultas.</li>
+                      <li>Como última instancia indicar al cliente que lo puede utilizar al tope de reintegro en combustible, para que algún familiar los busque.</li>
+                    </ul>
+                  </p>
+                </div>
+                <div className="tab-pane fade" id="nav-pa2" role="tabpanel" aria-labelledby="nav-pa2-tab" tabindex="0">
+                  <p>Se debe tener en cuenta que los servicios de reintegro por taxi/Remis como Micro se calculan sobre los KM lineales. <br />
+                    <ul className='listaGral'>
+                      <li>Taxi-Remis: valor hasta 20km lineales tope de $1500 finales. Entre 20km y 60km lineales el valor a tomar es de $120 finales por km lineal.</li>
+                      <li>Mas de 60 km, Pasaje en Micro: Valor de referencia de plataforma de venta o valor de $18 final por km lineal.</li>
+                      <b>Nota:</b>
+                      <li> Si el tope de cobertura en póliza es mayor al que se le ofrece, indicar que es un monto aproximado.</li>
+                      <li> Ver siempre el tarifario de reintegro actualizado.</li>
+                    </ul>
+                    Registros en todos los servicios
+                    Una Referencia de Viajero con el formato estándar en la sección de "Herramientas"
+                  </p>
+                </div>
+                <nav>
+                  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link sub active" id="nav-pa1-tab" data-bs-toggle="tab" data-bs-target="#nav-pa1" type="button" role="tab" aria-controls="nav-pa1" aria-selected="true">Pág 1</button>
+                    <button class="nav-link sub" id="nav-pa2-tab" data-bs-toggle="tab" data-bs-target="#nav-pa2" type="button" role="tab" aria-controls="nav-pa2" aria-selected="false">Pág 2</button>
+                  </div>
+                </nav>
+              </div>
             </div>
           </div>
         </div>

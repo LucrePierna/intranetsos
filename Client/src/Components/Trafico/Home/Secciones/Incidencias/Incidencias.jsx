@@ -19,7 +19,7 @@ export default function Incidencias() {
             <nav>
                 <div className="nav nav-tabs" id="nav-tab" role="tablist">
                     <button className="nav-link custom active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Incidencias </button>
-                    <button className="nav-link custom" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Desvios de mvl</button>
+                    <button className="nav-link custom" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Desvios de Móvil</button>
                 </div>
             </nav>
             <div className="h-100 w-100 tab-content mt-1" id="nav-tabContent">

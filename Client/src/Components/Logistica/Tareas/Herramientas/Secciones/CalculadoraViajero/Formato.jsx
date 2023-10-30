@@ -188,14 +188,14 @@ export default function Formato() {
             <div className='form-group mt-3'>
                 {!copied ? (
                     <button className='btn btn-dark btnGroup' onClick={copyToClipboard} >
-                        Copiar Resultado
+                        Copiar
                     </button>
                 ) : (
                     <div className='text-white' style={{ backgroundColor: 'green' }}>¡Resultado copiado al portapapeles!</div>
                 )}
 
                 <button className='btn btn-dark btnGroup' onClick={resetResult} >
-                    Restablecer Resultado
+                    Limpiar
                 </button>
             </div>
         </div>

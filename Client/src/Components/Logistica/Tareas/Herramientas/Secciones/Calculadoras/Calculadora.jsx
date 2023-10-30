@@ -56,7 +56,7 @@ export default function Calculadoras() {
               aria-controls='nav-viajero'
               aria-selected='false'
             >
-              Viajero
+              Viajero Doble Cabina
             </button>
             <button
               className='nav-link custom'
