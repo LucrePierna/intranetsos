@@ -18,7 +18,7 @@ export default function PlanillasyLinks() {
                 <TableCell>Derivación General</TableCell>
                 <TableCell></TableCell>
                 <TableCell>
-                  {/* <a href="https://redsos-my.sharepoint.com/:x:/g/personal/framirez_redsos_com_ar/EWOq5sAqsPxBp5j2y5ExzmoB3ingUpKlTBOTCt0M03dyng?e=D8U9Mc" target='_blank'><button type='button' className='btn btn-danger'>Grilla de Dimensiones</button></a> */}
+                  <a href="https://redsos-my.sharepoint.com/:x:/g/personal/framirez_redsos_com_ar/EWOq5sAqsPxBp5j2y5ExzmoB3ingUpKlTBOTCt0M03dyng" target='_blank'><button type='button' className='btn btn-danger'>Grilla de Dimensiones</button></a>
                 </TableCell>
                 <TableCell><a href="https://redsos-my.sharepoint.com/:x:/r/personal/jmolinari_redsos_com_ar/Documents/Prestadores%20con%20GAP%20Lite/PRESTADORES%20GAP%20Lite.xlsx?d=w03ab3d1ddfe14e43a534d851f9e06532&csf=1&web=1&e=zWm82z" target='_blank'><button type='button' className='btn btn-danger'>Planilla Prestadores GapLite</button></a></TableCell>
               </TableRow>
