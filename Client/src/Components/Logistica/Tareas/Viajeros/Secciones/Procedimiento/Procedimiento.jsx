@@ -76,21 +76,21 @@ export default function Procedimiento() {
                 </div>
                 <div className="tab-pane fade" id="nav-p2" role="tabpanel" aria-labelledby="nav-pa2-tab" tabindex="0">
                   <p>En el servicio se deberá registrar:<br />
-                    Los costos relacionados al servicio, tramo que se autoriza (costo del kilómetro o cantidad de kilómetros a recorrer) <br />
+                    Los costos relacionados al servicio, tramo que se autoriza (costo del kilómetro o cantidad de kilómetros a recorrer). <br />
                     Una Referencia de Viajero en la que consten los siguientes datos con este formato estándar que se puede encontrar en la sección "Herramientas":<br />
-                    <b>CANT TOTAL PERSONAS:</b>(se refiere a todas las personas a bordo del vehículo) <br />
-                    <b>CANT PERS ASIST VIAJERO:</b>(sólo las que tienen asistencia al viajero, no las dos que van en grúa o las que hay de más) <br />
-                    <b>ORIGEN Y DESTINO (DE LAS PERSONAS):</b>(Origen, se refiere al lugar de donde es oriundo el cliente; Destino, se refiere al lugar al que se estaba dirigiendo) <br />
-                    <b>TIPO DE ASISTENCIA:</b>(si es grúa doble cabina, remis, pasajes, etc.) <br />
-                    <b>TOPE ESTABLECIDO POR CIA:</b>(tope que figura en la grilla de la Cía.) <br />
-                    <b>OBSERVACIONES:</b>(cualquier otro dato de importancia. Ej.: debe abonar diferencia por los kilómetros de más)  <br />
+                    <b>CANT TOTAL PERSONAS:</b>(se refiere a todas las personas a bordo del vehículo). <br />
+                    <b>CANT PERS ASIST VIAJERO:</b>(sólo las que tienen asistencia al viajero, no las dos que van en grúa o las que hay de más). <br />
+                    <b>ORIGEN Y DESTINO (DE LAS PERSONAS):</b>(Origen, se refiere al lugar de donde es oriundo el cliente; Destino, se refiere al lugar al que se estaba dirigiendo). <br />
+                    <b>TIPO DE ASISTENCIA:</b>(si es grúa doble cabina, remis, pasajes, etc.). <br />
+                    <b>TOPE ESTABLECIDO POR CIA:</b>(tope que figura en la grilla de la Cía.). <br />
+                    <b>OBSERVACIONES:</b>(cualquier otro dato de importancia. Ej.: debe abonar diferencia por los kilómetros de más). <br />
                   </p>
                   <p>
                     <b><u>Viajero sin Traslado:</u></b> Hay instancias en la que solo se trabaja con el servicio de viajero, sin trabajar el traslado, en esos casos se consulta al sector correspondiente que tiene el servicio de traslado, a los Tráficos (Rosario, Córdoba, Caba llamando al 9700) si el móvil asignado cuenta con cabina doble. Si no tienen móvil asignado se espera la coordinación del móvil para saber cuántas personas lleva el prestador. En el caso que lleve menos personas de las que haya en el lugar se coordina:<br />
-                    Taxi o remis menos de 60km <br />
-                    Pasajes en colectivo más de 60km<br />
-                    Pasajes en avión (Eventualmente)<br />
-                    Reintegro </p>
+                    Taxi o remis menos de 60km. <br />
+                    Pasajes en colectivo más de 60km.<br />
+                    Pasajes en avión (Eventualmente).<br />
+                    Reintegro. </p>
                 </div>
                 <nav>
                   <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -120,7 +120,7 @@ export default function Procedimiento() {
                 El producto que corresponderá cargar al prestador serán kilómetros lineales, medidos desde la base hasta el destino del viaje del cliente. Al cliente se le computarán solo kilómetros lineales, medidos en el trayecto que recorre durante el servicio de viajero. <br />
               </p>
               <p>
-                Los kilómetros se contabilizarán para el cliente desde el lugar de origen (donde están el vehículo y las personas) hasta el destino final (siempre kilómetros lineales). <u>Tener en cuenta que el traslado de las personas para ser coordinado por este medio no debe superar los 60 km lineales</u> <br />
+                Los kilómetros se contabilizarán para el cliente desde el lugar de origen (donde están el vehículo y las personas) hasta el destino final (siempre kilómetros lineales). <u>Tener en cuenta que el traslado de las personas para ser coordinado por este medio no debe superar los 60 km lineales.</u> <br />
               </p>
               <p>
                 <u>Cabify:</u> Tenemos en Córdoba, Rosario, Capital Federal y Mendoza. Se consulta con Supervisor/Back Office si hay disponibilidad en la zona, en caso de haber, el servicio se coordina unicamente si está cubierto en su totalidad por compañía.
@@ -150,7 +150,7 @@ export default function Procedimiento() {
               <p>
                 <u><b>Punto Turístico:</b></u> Es una agencia de turismo, que ofrece la gestión de compra de pasajes aéreos (previa autorización del Supervisor) y coordinación de hospedaje en distintas partes del país. El pedido de hospedaje/ pasaje aéreo se envía por mail a: <u>reservas@pturistico.com.ar</u>  <br />
                 El producto que se utiliza es: pasajes aéreos: “pasajes para prestador 21%”. <br />
-                Estos servicios deberán ser asignados a la base "10849 Córdoba – Punto Turístico" <br />
+                Estos servicios deberán ser asignados a la base "10849 Córdoba – Punto Turístico". <br />
                 En el servicio se deberá registrar: los costos y topes relacionados al servicio, como costos de pasajes, tramo que se autoriza (costo del kilómetro o cantidad de kilómetros a recorrer.)
                 Una referencia de servicio con el formato estándar.
               </p>
@@ -163,7 +163,7 @@ export default function Procedimiento() {
                 Tener en cuenta que se pueden combinar los servicios entre distintas asistencias como: Hospedajes y Remis/ Remis y Pasajes (colectivo o Avión.) <br />
                 <b><u>Punto Turístico:</u></b> Es una agencia de turismo, que ofrece la gestión de compra de pasajes aéreos (previa autorización del Supervisor) y coordinación de hospedaje en distintas partes del país. El pedido de hospedaje/pasaje aéreo se envía por e-mail a: <u>reservas@pturistico.com.ar</u>  <br />
                 El producto que se utiliza es: Pasajes aéreos: “pasajes para prestador 21%”. <br />
-                Estos servicios deberán ser asignados a la base "10849 Córdoba – Punto Turístico" <br />
+                Estos servicios deberán ser asignados a la base "10849 Córdoba – Punto Turístico". <br />
                 <b>En caso de que traslado se coordine, tener en cuenta que NO corresponde hospedaje en caso de que haya disponibilidad de micro, en este caso se brinda reintegro del pasaje, tampoco si él cliente manifestó en la solicitud de servicio que era el destino la localidad donde se dirigía.</b>
               </p>
             </div>
@@ -194,7 +194,7 @@ export default function Procedimiento() {
                       <li> Ver siempre el tarifario de reintegro actualizado.</li>
                     </ul>
                     Registros en todos los servicios
-                    Una Referencia de Viajero con el formato estándar en la sección de "Herramientas"
+                    Una Referencia de Viajero con el formato estándar en la sección de "Herramientas".
                   </p>
                 </div>
                 <nav>

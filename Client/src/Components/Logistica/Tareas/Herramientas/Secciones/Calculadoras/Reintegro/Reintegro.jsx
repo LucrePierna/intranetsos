@@ -127,8 +127,8 @@ function Reintegro() {
         <div className="col-md-8">
           <div className="bg-secondary rounded-5 p-4">
             <h1 className='text-center mb-3'>CALCULO DE REINTEGRO</h1>
-            <p className="bg-danger text-white p-2 border border-danger label-style">
-              <b>Importante!!</b> Recordar informar que debe ser una factura fiscal y el socio debe adjuntarla con sus datos bancarios en www.redsos.com.ar
+            <p className="bg-danger text-white text-center p-2 border border-danger label-style">
+              <b>¡¡Importante!!</b> Recordar informar que debe ser una factura fiscal y el socio debe adjuntarla con sus datos bancarios en www.redsos.com.ar
             </p>
             <div className="d-flex justify-content-center">
               <div className="mr-4">
