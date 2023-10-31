@@ -19,27 +19,26 @@ export default function Consultas() {
         <div className='conteinerNav mt-5 '>
             <nav className='navConteiner'>
                 <div className="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button className="nav-link custom active" id="nav-descripcion-tab" data-bs-toggle="tab" data-bs-target="#nav-descripcion" type="button" role="tab" aria-controls="nav-descripcion" aria-selected="true">Vehiculo prop. privada</button>
-                    <button className="nav-link custom" id="nav-etapas-tab" data-bs-toggle="tab" data-bs-target="#nav-etapas" type="button" role="tab" aria-controls="nav-etapas" aria-selected="false">Vehiculos bajos</button>
-                    <button className="nav-link custom" id="nav-operatoria-tab" data-bs-toggle="tab" data-bs-target="#nav-operatoria" type="button" role="tab" aria-controls="nav-operatoria" aria-selected="false">Factura por adicionales</button>
-                    <button className="nav-link custom" id="nav-speech-tab" data-bs-toggle="tab" data-bs-target="#nav-speech" type="button" role="tab" aria-controls="nav-speech" aria-selected="false">Servicios con adicional</button>
-                    <button className="nav-link custom" id="nav-contencion-tab" data-bs-toggle="tab" data-bs-target="#nav-contencion" type="button" role="tab" aria-controls="nav-contencion" aria-selected="false">Servicios de Peritaje</button>
-                    <button className="nav-link custom" id="nav-refesvc-tab" data-bs-toggle="tab" data-bs-target="#nav-refesvc" type="button" role="tab" aria-controls="nav-refesvc" aria-selected="false">Vehiculos en Parking</button>
-                    <button className="nav-link custom" id="nav-gruat-tab" data-bs-toggle="tab" data-bs-target="#nav-gruat" type="button" role="tab" aria-controls="nav-gruat" aria-selected="false">Coordinación pesados</button>
-                    <button className="nav-link custom" id="nav-formato-tab" data-bs-toggle="tab" data-bs-target="#nav-formato" type="button" role="tab" aria-controls="nav-formato" aria-selected="false">Vehículos sin motor</button>
+                    <button className="nav-link custom active" id="nav-proppriv-tab" data-bs-toggle="tab" data-bs-target="#nav-proppriv" type="button" role="tab" aria-controls="nav-proppriv" aria-selected="true">Vehiculo prop. privada</button>
+                    <button className="nav-link custom" id="nav-vhcbajo-tab" data-bs-toggle="tab" data-bs-target="#nav-vhcbajo" type="button" role="tab" aria-controls="nav-vhcbajo" aria-selected="false">Vehiculos bajos</button>
+                    <button className="nav-link custom" id="nav-factadic-tab" data-bs-toggle="tab" data-bs-target="#nav-factadic" type="button" role="tab" aria-controls="nav-factadic" aria-selected="false">Factura por adicionales</button>
+                    <button className="nav-link custom" id="nav-svcconad-tab" data-bs-toggle="tab" data-bs-target="#nav-svcconad" type="button" role="tab" aria-controls="nav-svcconad" aria-selected="false">Servicios con adicional</button>
+                    <button className="nav-link custom" id="nav-peritaje-tab" data-bs-toggle="tab" data-bs-target="#nav-peritaje" type="button" role="tab" aria-controls="nav-peritaje" aria-selected="false">Servicios de Peritaje</button>
+                    <button className="nav-link custom" id="nav-parking-tab" data-bs-toggle="tab" data-bs-target="#nav-parking" type="button" role="tab" aria-controls="nav-parking" aria-selected="false">Vehiculos en Parking</button>
+                    <button className="nav-link custom" id="nav-pesados-tab" data-bs-toggle="tab" data-bs-target="#nav-pesados" type="button" role="tab" aria-controls="nav-pesados" aria-selected="false">Coordinación pesados</button>
+                    <button className="nav-link custom" id="nav-sinmotor-tab" data-bs-toggle="tab" data-bs-target="#nav-sinmotor" type="button" role="tab" aria-controls="nav-sinmotor" aria-selected="false">Vehículos sin motor</button>
                     <button className="nav-link custom" id="nav-fc-tab" data-bs-toggle="tab" data-bs-target="#nav-fc" type="button" role="tab" aria-controls="nav-fc" aria-selected="false">Fuera Cochera</button>
-                    <button className="nav-link custom" id="nav-patente-tab" data-bs-toggle="tab" data-bs-target="#nav-patente" type="button" role="tab" aria-controls="nav-patente" aria-selected="false">Patente incorrecta</button>
-
+                    <button className="nav-link custom" id="nav-patenteinc-tab" data-bs-toggle="tab" data-bs-target="#nav-patenteinc" type="button" role="tab" aria-controls="nav-patenteinc" aria-selected="false">Patente incorrecta</button>
                 </div>
             </nav>
             <div className="h-100 w-100 tab-content text-start mt-3 px-5 m-auto" id="nav-tabContent">
-                <div className="tab-pane fade show active lineaGeneral" id="nav-descripcion" role="tabpanel" aria-labelledby="nav-descripcion-tab" tabindex="0">
+                <div className="tab-pane fade show active lineaGeneral" id="nav-proppriv" role="tabpanel" aria-labelledby="nav-proppriv-tab" tabindex="0">
                     <p>Las asistencias son de cordón a cordón, por lo que, si al llegar el móvil el vehículo se encontrara en un estacionamiento, cochera, vereda o jardín de un domicilio,
                         el cliente debe sacarlo a la calle (independientemente de que lo haya dejado el cliente o una grua nuestra en donde se encuentra).
                         Solo podremos intervenir cuando se encuentre en una vereda por consecuencia de un siniestro, cobrando el costo de extracción
                         correspondiente según la cobertura del asegurado.</p>
                 </div>
-                <div className="tab-pane fade lineaGeneral" id="nav-etapas" role="tabpanel" aria-labelledby="nav-etapas-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-vhcbajo" role="tabpanel" aria-labelledby="nav-vhcbajo-tab" tabindex="0">
                     <p> Si el vehículo es bajo de fábrica y el móvil que fue al lugar no puede cargarlo o no quiere hacerlo por miedo a dañarlo, por más que cliente firme
                         conformidad de arrastre, se procederá a solicitarle foto del vehículo y realizar un derivado a otro móvil. Al nuevo móvil se le enviara la foto del
                         vehículo para que confirme si lo cargará antes de ir al lugar. Se le indica al cliente que ira otro móvil de manera condicional a intentar cargar
@@ -51,13 +50,13 @@ export default function Consultas() {
                         al socio que no cuenta con servicio y que lo cargaremos de manera excepcional.
                     </p>
                 </div>
-                <div className="tab-pane fade lineaGeneral" id="nav-operatoria" role="tabpanel" aria-labelledby="nav-operatoria-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-factadic" role="tabpanel" aria-labelledby="nav-factadic-tab" tabindex="0">
                     <p>Los servicios con adicionales cobrados desde SOS: se envía factura desde la empresa.</p>
                     <p>Los servicios que cobre un móvil por cualquier medio (Efectivo, transferencia o tarjeta): corresponde que el chofer envíe la factura,
                         TODOS los choferes tienen para facturar, ya sea el chofer o el titular. Ante cualquier duda se debe comunicar con su ejecutivo de cuenta.</p>
                     <p>En ambos casos la factura es electrónica y se envía vía mail al socio.</p>
                 </div>
-                <div className="tab-pane fade lineaGeneral" id="nav-speech" role="tabpanel" aria-labelledby="nav-speech-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-svcconad" role="tabpanel" aria-labelledby="nav-svcconad-tab" tabindex="0">
                     <h1>Controlar los servicios al ingresar en pantalla</h1>
                     <br />
                     <p>Si el adicional es en efectivo, aceptamos el servicio normalmente y lo coordinamos. </p>
@@ -68,24 +67,23 @@ export default function Consultas() {
                  
 
                 </div>
-                <div className="tab-pane fade lineaGeneral" id="nav-contencion" role="tabpanel" aria-labelledby="nav-contencion-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-peritaje" role="tabpanel" aria-labelledby="nav-peritaje-tab" tabindex="0">
                     <p> Cuando un socio solicita un servicio por peritaje, el mismo tiene una tolerancia de 30min en destino mientras lo peritan para que luego el mismo móvil
                         lo traslade, pasado este tiempo el móvil se retira y el cliente deberá solicitar el servicio una vez que esté listo para trasladar.</p>
                     <p>En este servicio no le computamos el adicional de diagnóstico por traslado desde taller, pero SI un segundo servicio, si el mismo por cobertura es
-                        con costo debe cobrarse el mismo antes de trasladar el vehículo, en caso de que el socio no quiera abonar, el móvil se retira</p>
+                        con costo debe cobrarse el mismo antes de trasladar el vehículo, en caso de que el socio no quiera abonar, el móvil se retira.</p>
                 </div>
-                <div className="tab-pane fade " id="nav-refesvc" role="tabpanel" aria-labelledby="nav-refesvc-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-parking" role="tabpanel" aria-labelledby="nav-parking-tab" tabindex="0">
                     <p> Los servicios solicitados por vehículos en parking son condicionales, si el vehículo está en la calle y el móvil que fue no puede cargarlo por falta de
                         implementos le hacemos un derivado de manera condicional y buscamos móvil con 4 carros o 2 carros y 2 ski de arrastre, siempre que las ruedas se encuentren
                         derechas y sin obstáculos adelante del mismo. Si el vehículo está en parking, pero no está en la calle, el cliente debe destrabar y dejar el vehículo paralelo al
                         cordón, luego de eso debe solicitar el servicio nuevamente.</p>
                     <p>No se destrabamos manualmente Parking a ningun vehiculo.</p>
                 </div>
-
-                <div className="tab-pane fade lineaGeneral" id="nav-gruat" role="tabpanel" aria-labelledby="nav-gruat-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-pesados" role="tabpanel" aria-labelledby="nav-pesados-tab" tabindex="0">
                     <p>Para coordinar cualquier servicio de pesados debes tener SI O SI foto de la unidad, caso contrario no el servicio queda en espera hasta recibirla.</p>
                 </div>
-                <div className="tab-pane fade lineaGeneral" id="nav-formato" role="tabpanel" aria-labelledby="nav-formato-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-sinmotor" role="tabpanel" aria-labelledby="nav-sinmotor-tab" tabindex="0">
                     <p>Los vehículos que se encuentren sin motor no tienen servicio. El mismo debe estar colocado o dentro del vehículo para poder realizar la asistencia.</p>
                 </div>
                 <div className="tab-pane fade lineaGeneral" id="nav-fc" role="tabpanel" aria-labelledby="nav-fc-tab" tabindex="0">
@@ -99,25 +97,25 @@ export default function Consultas() {
 
                     <p><u>Consideraciones a tener en cuenta sobre situación del vehículo y del lugar:</u></p>
                     <ul className='mt-2 listaGral'>
-                        <li>Estado de las ruedas (si las ruedas no giran no podemos retirarlo)</li>
-                        <li>Espacio suficiente para que maniobre el móvil</li>
-                        <li>Estacionado de frente o de culata</li>
-                        <li>Altura de la entrada de la cochera desde el piso al techo (debe ser mayor a 2.5mts)</li>
-                        <li>Ubicación de la cochera (sólo asistimos en 1er subsuelo)</li>
+                        <li>Estado de las ruedas (si las ruedas no giran no podemos retirarlo.)</li>
+                        <li>Espacio suficiente para que maniobre el móvil.</li>
+                        <li>Estacionado de frente o de culata.</li>
+                        <li>Altura de la entrada de la cochera desde el piso al techo (debe ser mayor a 2.5mts).</li>
+                        <li>Ubicación de la cochera (sólo asistimos en 1er subsuelo).</li>
                         <li>Condiciones de las rampas (curvas, empinadas, no ingresamos en ascensores).</li>
                     </ul>
                     <br />
                     <p><u>¿Cuándo NO lo podemos brindar?</u></p>
                     <ul className='mt-2 listaGral'>
-                        <li>Cuando el vehículo se encuentre en la planta alta de un estacionamiento, en este caso el cliente deberá sacarlo por sus medios</li>
+                        <li>Cuando el vehículo se encuentre en la planta alta de un estacionamiento, en este caso el cliente deberá sacarlo por sus medios.</li>
                         <li>Cuando se encuentre en un estacionamiento a nivel de la calle, aquí también deberá sacarlo por sus medios.</li>
                         <li>Cuando las ruedas del vehículo no giren. En este caso deberá sacarlo por sus medios.</li>
                         <li>Cuando el vehículo este en niveles más abajo del primer subsuelo.</li>
-                        <li>Cuando esté en cocheras particulares (Ejemplo: cochera de una casa)</li>
+                        <li>Cuando esté en cocheras particulares (Ejemplo: cochera de una casa).</li>
                         <li>Cuando se solicite un fuera cochera para una moto.</li>
                     </ul>
                 </div>
-                <div className="tab-pane fade lineaGeneral" id="nav-patente" role="tabpanel" aria-labelledby="nav-patente-tab" tabindex="0">
+                <div className="tab-pane fade lineaGeneral" id="nav-patenteinc" role="tabpanel" aria-labelledby="nav-patenteinc-tab" tabindex="0">
                     <p>Cuando un móvil llega a realizar una asistencia y nos indica que no le coincide la patente, debemos llamar al 8800 o 98008 e indicarles la situación
                         para que corroboren si el socio cuenta con asistencia con dicha patente, le indicamos al móvil que aguarde 15min mientras se realiza la gestión y se
                         comunique nuevamente, en caso de tener servicio realizaremos la asistencia. En caso de no tener servicio se anulará el mismo como

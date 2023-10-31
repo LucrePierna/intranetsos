@@ -138,7 +138,7 @@ export default function Procedimientos() {
                 </ul>
                 <ul>
                   <h5><u>Viaje largo</u></h5>
-                  <p>Cuando el prestador nos informe que está realizando un traslado largo</p>
+                  <p>Cuando el prestador nos informe que está realizando un traslado largo.</p>
 
                   <h5><u>Ya no trabaja para SOS</u></h5>
                   <p>Cuando el prestador informe que tiene suspendido el servicio para S.O.S.</p>
