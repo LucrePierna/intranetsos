@@ -81,6 +81,7 @@ export default function Formato() {
                             id='Observaciones'
                             name='Observaciones'
                             className='form-control'
+                            maxlength="360"
                             rows='4'
                             cols='50'
                             value={formData.observaciones}
