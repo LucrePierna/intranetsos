@@ -196,7 +196,7 @@ export default function Formato() {
                     <label className='p-1 mx-1'>
                         Plazos de entrega:
                         <input
-                            className='mx-2'
+                            className='mx-2 rounded-2 w-50 text-center'
                             value={formData.plazos}
                             onChange={(e) => handleFieldChange('plazos', e.target.value)}
                             readOnly={true}
@@ -256,7 +256,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Método de pago:
                     <input
-                        className='mx-2'
+                        className='mx-2 rounded-2 w-50 text-center'
                         value={formData.metodoPago}
                         onChange={(e) => handleFieldChange('metodoPago', e.target.value)}
                         readOnly={true}
@@ -390,7 +390,7 @@ export default function Formato() {
                 <label className='p-1 mx-1'>
                     Observaciones:
                     <textarea
-                        className='mx-2'
+                        className='mx-3 rounded-1'
                         maxlength="218"
                         value={formData.observaciones}
                         onChange={(e) => handleFieldChange('observaciones', e.target.value)}
