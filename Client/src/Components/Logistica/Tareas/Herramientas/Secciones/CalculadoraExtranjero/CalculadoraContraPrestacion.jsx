@@ -76,7 +76,7 @@ export default function CalculadoraContraPrestacion() {
             <div>
                 <label>
                     Opción de Prestador
-                    <select className='form-select container-style' value={selectedOption} onChange={handleOptionChange}>
+                    <select className='form-select slectOptions' value={selectedOption} onChange={handleOptionChange}>
                         <option value="">Selecciona una opción</option>
                         {options.map((option, index) => (
                             <option key={index} value={option.label}>
@@ -87,9 +87,9 @@ export default function CalculadoraContraPrestacion() {
                 </label>
             </div>
             <div>
-                <label className='form-check mt-2'>
+                <label className='form-check mt-4'>
                     Kilómetros lineales:
-                    <input className='form-control input-style' type="text" value={kms} onChange={handleKmsChange} />
+                    <input className='form-control inputViajero my-3' type="text" value={kms} onChange={handleKmsChange} />
                 </label>
                 <label className='form-check-label my-2'>
                     Servicio en el exterior:

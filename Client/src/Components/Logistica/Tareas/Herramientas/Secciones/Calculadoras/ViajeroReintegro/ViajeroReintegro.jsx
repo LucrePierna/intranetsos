@@ -120,7 +120,7 @@ export default function ViajeroReintegro() {
                 </div>
             )}
 
-            <div className='d-flex justify-content-center align-items-center mt-3'>
+            <div className='d-flex flex-row justify-content-center align-items-center mt-3'>
                 {resultado !== null && (
                     <button className='btn btn-danger me-3' onClick={handleCopyClick}>
                         {copied ? 'Copiado' : 'Copiar'}

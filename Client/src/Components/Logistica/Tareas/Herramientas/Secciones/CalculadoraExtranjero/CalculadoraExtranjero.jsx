@@ -72,7 +72,7 @@ export default function CalculadoraExtranjero() {
     return (
         <div className='containerExtranjero '>
             <h1>Calculadora Extranjero</h1>
-            <div className='d-flex flex-row'>
+            <div className='d-flex flex-row my-2'>
                 <label className='form-check-label pt-2'>
                     <input
                         type="checkbox"
@@ -97,12 +97,12 @@ export default function CalculadoraExtranjero() {
                 </label>
             </div>
             {tipoCalculo === 'km' && (
-                <div className='mt-2'>
+                <div className='text-center item-center justify-content-center mt-2'>
                     <label className='form-check pt-2'>
                         Cantidad de Kilómetros:
                         <input
                             type="text"
-                            className='form-control input-style'
+                            className='form-control  inputViajero'
                             value={cantidadKm}
                             onChange={(e) => setCantidadKm(e.target.value)}
                         />
@@ -111,7 +111,7 @@ export default function CalculadoraExtranjero() {
                         Valor de Kilómetro:
                         <input
                             type="text"
-                            className='form-control input-style'
+                            className='form-control inputViajero'
                             value={valorKm}
                             onChange={(e) => setValorKm(e.target.value)}
                         />
@@ -124,7 +124,7 @@ export default function CalculadoraExtranjero() {
                         Cobertura del Cliente:
                         <input
                             type="text"
-                            className='form-control input-style'
+                            className='form-control inputViajero'
                             value={coberturaCliente}
                             onChange={(e) => setCoberturaCliente(e.target.value)}
                         />
@@ -133,7 +133,7 @@ export default function CalculadoraExtranjero() {
                         Valor de Kilómetro:
                         <input
                             type="text"
-                            className='form-control input-style'
+                            className='form-control inputViajero'
                             value={valorKm}
                             onChange={(e) => setValorKm(e.target.value)}
                         />
@@ -144,7 +144,7 @@ export default function CalculadoraExtranjero() {
                 Cotización:
                 <input
                     type="text"
-                    className='form-control input-style'
+                    className='form-control inputViajero'
                     value={cotizacion}
                     onChange={(e) => setCotizacion(e.target.value)}
                 />
@@ -153,7 +153,7 @@ export default function CalculadoraExtranjero() {
                 Valor de divisa del Día:
                 <input
                     type="text"
-                    className='form-control input-style'
+                    className='form-control inputViajero'
                     value={valorDolar}
                     onChange={(e) => setValorDolar(e.target.value)}
                 />
