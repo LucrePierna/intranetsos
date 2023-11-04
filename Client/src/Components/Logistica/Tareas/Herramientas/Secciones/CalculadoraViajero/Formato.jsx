@@ -32,7 +32,7 @@ export default function Formato() {
 
         if (tieneIVA) {
             resultadoCalculado *= 1.21;
-            detalleCalculoTexto += ` + IVA = $${resultadoCalculado}   `;
+            detalleCalculoTexto += ` + IVA = $${Math.floor(resultadoCalculado)}   `;
         } else {
             detalleCalculoTexto += 'Sin IVA\n';
         }
@@ -188,14 +188,14 @@ export default function Formato() {
             <div className='form-group mt-3'>
                 {!copied ? (
                     <button className='btn btn-dark btnGroup' onClick={copyToClipboard} >
-                        Copiar
+                        Copiar Resultado
                     </button>
                 ) : (
                     <div className='text-white' style={{ backgroundColor: 'green' }}>¡Resultado copiado al portapapeles!</div>
                 )}
 
                 <button className='btn btn-dark btnGroup' onClick={resetResult} >
-                    Limpiar
+                    Restablecer Resultado
                 </button>
             </div>
         </div>
