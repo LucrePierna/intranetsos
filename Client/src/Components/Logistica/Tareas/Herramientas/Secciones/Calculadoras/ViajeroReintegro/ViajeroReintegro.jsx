@@ -4,6 +4,7 @@ export default function ViajeroReintegro() {
     const [selectedOption, setSelectedOption] = useState('');
     const [km, setKm] = useState('');
     const [resultado, setResultado] = useState(null);
+    const [cantPersona, setCantPersona] = useState('');
     const [formData, setFormData] = useState({
         resultadoFinal: ''
     });
@@ -30,7 +31,7 @@ export default function ViajeroReintegro() {
             }
         } else if (selectedOption === 'micro') {
             if (km > 60) {
-                resultadoCalculado = km * 18;
+                resultadoCalculado = km * 18 * cantPersona;
             } else {
                 resultadoCalculado = 'Debe calcular con Remis';
             }
@@ -86,6 +87,19 @@ export default function ViajeroReintegro() {
                         className="form-control"
                         value={km}
                         onChange={(e) => setKm(e.target.value)}
+                    />
+                </div>
+            )}
+
+            {selectedOption === 'micro' && (
+                <div className="form-group">
+                    <label htmlFor="cantPersona" className='my-4 fs-4'>Cantidad de personas:</label>
+                    <input
+                        type="text"
+                        id="cantPersona"
+                        className="form-control"
+                        value={cantPersona}
+                        onChange={(e) => setCantPersona(e.target.value)}
                     />
                 </div>
             )}

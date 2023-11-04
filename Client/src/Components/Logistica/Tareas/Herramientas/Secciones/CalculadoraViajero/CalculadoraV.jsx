@@ -51,7 +51,7 @@ export default function CalculadoraV({ resultado }) {
   };
 
   return (
-    <div className='container mt-5 bg-secondary p-5 rounded'>
+    <div className='container mt-5 bg-secondary p-5 rounded '>
       <div className='row justify-content-center'>
         <div className='col-md-6'>
           <Formato />

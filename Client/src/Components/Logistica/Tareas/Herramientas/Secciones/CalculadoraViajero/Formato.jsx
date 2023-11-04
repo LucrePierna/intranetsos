@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from "@nextui-org/react";
 
 export default function Formato() {
     const [km, setKm] = useState('');
@@ -120,7 +119,7 @@ export default function Formato() {
     };
 
     return (
-        <div className='d-flex flex-column calculadora'>
+        <div className='calculadora'>
             <h1 className='text-center m-auto mb-3'>Calculadora de Viajero</h1>
             <input className='inputViajero' type="text" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
 
@@ -193,10 +192,11 @@ export default function Formato() {
                 ) : (
                     <div className='text-white' style={{ backgroundColor: 'green' }}>¡Resultado copiado al portapapeles!</div>
                 )}
-
-                <button className='btn btn-dark btnGroup' onClick={resetResult} >
-                    Restablecer Resultado
-                </button>
+                <div className='my-2'>
+                    <button className='btn btn-dark btnGroup' onClick={resetResult} >
+                        Restablecer Resultado
+                    </button>
+                </div>
             </div>
         </div>
 

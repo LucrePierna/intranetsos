@@ -5,6 +5,7 @@
   margin-top: 3rem;
   list-style: none;
 }
+
 .listaTE {
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@
   border: 2px solid lightcyan;
 }
 
-h1{
+h1 {
   font-size: 26px;
   margin-top: 1rem;
   text-align: start;
@@ -43,7 +44,7 @@ h1{
   }
 }
 
-p{
+p {
   font-size: 20px;
   text-align: start;
 }
@@ -62,7 +63,7 @@ p{
   }
 }
 
-td{
+td {
   font-size: 20px;
   text-align: start;
 }
@@ -81,11 +82,11 @@ td{
   }
 }
 
-.loading{
+.loading {
   margin-top: 20%;
 }
 
-.chattigoTable{
-  width: 700px ;
+.chattigoTable {
+  width: 700px;
   height: auto;
 }
