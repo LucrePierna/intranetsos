@@ -121,7 +121,7 @@ export default function Formato() {
     return (
         <div className='calculadora'>
             <h1 className='text-center m-auto mb-3'>Calculadora de Viajero</h1>
-            <input className='inputViajero' type="text" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros" />
+            <input className='inputViajero' type="text" name="km" value={km} onChange={handleInputChange} placeholder="Cargar kilómetros lineales" />
 
             <input className='inputViajero' type="text" name="precio" value={precio} onChange={handleInputChange} placeholder="Cargar precio en $" />
 
