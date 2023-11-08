@@ -5,6 +5,7 @@ import Reintegro from './Reintegro/Reintegro'
 import Extraccion from './Extraccion/Extraccion'
 import ViajeroReintegro from './ViajeroReintegro/ViajeroReintegro'
 import CalculadoraV from '../CalculadoraViajero/CalculadoraV'
+import CalculadoraPasajes from '../CalculadoraPasajes/CalculadoraPasajes'
 
 
 export default function Calculadoras() {
@@ -60,6 +61,18 @@ export default function Calculadoras() {
             </button>
             <button
               className='nav-link custom'
+              id='nav-pasajes-tab'
+              data-bs-toggle='tab'
+              data-bs-target='#nav-pasajes'
+              type='button'
+              role='tab'
+              aria-controls='nav-pasajes'
+              aria-selected='false'
+            >
+              Calculadora Pasajes
+            </button>
+            <button
+              className='nav-link custom'
               id='nav-contact-tab'
               data-bs-toggle='tab'
               data-bs-target='#nav-contact'
@@ -100,6 +113,15 @@ export default function Calculadoras() {
             tabIndex='0'
           >
             <CalculadoraV />
+          </div>
+          <div
+            className='tab-pane fade'
+            id='nav-pasajes'
+            role='tabpanel'
+            aria-labelledby='nav-pasajes-tab'
+            tabIndex='0'
+          >
+            <CalculadoraPasajes />
           </div>
           <div
             className='tab-pane fade'
