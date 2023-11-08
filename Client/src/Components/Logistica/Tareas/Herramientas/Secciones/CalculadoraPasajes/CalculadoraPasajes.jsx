@@ -18,8 +18,9 @@ export default function CalculadoraPasajes() {
     const calcularResultado = () => {
         setLimpiar(true);
         const resultadoCalculado = valor * cantidad;
-        setResultado(Math.round(resultadoCalculado));
-        setResultadoIva(Math.round(resultadoCalculado / 1.105));
+        setResultado((resultadoCalculado.toFixed(2)));
+        const resultadoCalculadoIva = resultadoCalculado / 1.105;
+        setResultadoIva(resultadoCalculadoIva.toFixed(2));
     }
 
     const limpiarCampos = () => {
