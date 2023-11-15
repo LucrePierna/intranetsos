@@ -64,7 +64,7 @@ export default function Consultas() {
                         DEBE ser rechazado con una referencia que indique "Adicional sin cobrar, una vez cobrado pasar a base con xx minutos".</p>
                     <p>xx = (cantidad de minutos que tenía el servicio al momento de ingresar a pantalla).</p>
 
-                 
+
 
                 </div>
                 <div className="tab-pane fade lineaGeneral" id="nav-peritaje" role="tabpanel" aria-labelledby="nav-peritaje-tab" tabindex="0">

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Bases from '../Secciones/Bases/Bases'
-import Corredores from '../Secciones/Corredores/Corredores'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
 import Planillas from '../Secciones/Planillas/Planillas'
@@ -69,19 +68,6 @@ export default function NavBarTransportin() {
               Planillas
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'corredores' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('corredores')}
-              style={{
-                color: selectedComponent === 'corredores' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'corredores' ? 'white' : 'initial'
-              }}
-            >
-              Corredores
-            </button>
-          </li>
-
         </ul>
       </nav>
 
@@ -91,7 +77,6 @@ export default function NavBarTransportin() {
         {selectedComponent === 'bases' && <Bases />}
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'planillas' && <Planillas />}
-        {selectedComponent === 'corredores' && <Corredores />}
 
 
       </div>

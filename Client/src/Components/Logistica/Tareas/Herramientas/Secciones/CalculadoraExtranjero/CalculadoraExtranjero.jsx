@@ -21,7 +21,7 @@ export default function CalculadoraExtranjero() {
             const resultadoFinal = Math.abs(resultadoCalculado.toFixed(2));
             const restoCoberturaKm = resultadoFinal * valorDolar / valorKm;
             const restoCobertura = resultadoFinal * valorDolar;
-            setResultado(`La costo del servicio es de USD ${resultadoFinal}`);
+            setResultado(`El costo del servicio es de USD ${resultadoFinal}`);
             setRestoCobKm(`La cobertura del cliente es de ${restoCoberturaKm.toFixed(0)} km`);
             setRestoCob(`La cobertura del cliente es de $ ${restoCobertura.toFixed(0)} `);
         } else {
@@ -29,7 +29,7 @@ export default function CalculadoraExtranjero() {
             const resultadoFinal = Math.abs(resultadoCalculado.toFixed(2));
             const restoCobertura = resultadoFinal * valorDolar;
             const restoCoberturaKm = resultadoFinal * valorDolar / valorKm;
-            setResultado(`La costo del servicio es de USD${resultadoFinal}`);
+            setResultado(`El costo del servicio es de USD${resultadoFinal}`);
             setRestoCobKm(`La cobertura del cliente es de ${restoCoberturaKm.toFixed(0)} km`);
             setRestoCob(`La cobertura del cliente es de $ ${restoCobertura.toFixed(0)} `);
         }
