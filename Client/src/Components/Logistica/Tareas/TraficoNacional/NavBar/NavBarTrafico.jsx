@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Instructivo from '../Secciones/Instructivo/Instructivo'
-import Mapas from '../Secciones/Mapas/Mapas'
 import Noticias from '../Secciones/Noticias/Noticias'
 import Bases from '../Secciones/Bases/Bases'
 
@@ -68,19 +67,6 @@ export default function NavBarTrafico() {
               Bases
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link btn ${selectedComponent === 'mapas' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('mapas')}
-              style={{
-                color: selectedComponent === 'mapas' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'mapas' ? 'white' : 'initial'
-              }}
-            >
-              Mapas
-            </button>
-          </li>
-
         </ul>
       </nav>
 
@@ -89,9 +75,6 @@ export default function NavBarTrafico() {
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'instructivo' && <Instructivo />}
         {selectedComponent === 'bases' && <Bases />}
-        {selectedComponent === 'mapas' && <Mapas />}
-
-
       </div>
     </div>
   );

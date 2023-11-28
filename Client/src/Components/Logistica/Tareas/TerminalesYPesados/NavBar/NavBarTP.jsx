@@ -4,7 +4,6 @@ import Bases from '../Secciones/Bases/Bases'
 import Flujograma from '../Secciones/Flujograma/Flujograma'
 import Terminales from '../Secciones/Terminales/Terminales'
 import Pesados from '../Secciones/Pesados/Pesados'
-import Mapas from '../Secciones/Mapas/Mapas'
 import TipoDeVehiculos from '../Secciones/TiposDeVehiculos/TipoDeVehiculos'
 import Trasvase from '../Secciones/Trasvase/Trasvase'
 
@@ -70,18 +69,6 @@ export default function NavBarTP() {
           </li>
           <li className="nav-item">
             <button
-              className={`nav-link btn ${selectedComponent === 'mapas' ? 'active' : ''}`}
-              onClick={() => handleComponentClick('mapas')}
-              style={{
-                color: selectedComponent === 'mapas' ? 'black' : 'red',
-                backgroundColor: selectedComponent === 'mapas' ? 'white' : 'initial'
-              }}
-            >
-              Mapas
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
               className={`nav-link btn ${selectedComponent === 'tiposvhc' ? 'active' : ''}`}
               onClick={() => handleComponentClick('tiposvhc')}
               style={{
@@ -111,7 +98,6 @@ export default function NavBarTP() {
         {selectedComponent === 'flujograma' && <Flujograma />}
         {selectedComponent === 'terminales' && <Terminales />}
         {selectedComponent === 'bases' && <Bases />}
-        {selectedComponent === 'mapas' && <Mapas />}
         {selectedComponent === 'pesados' && <Pesados />}
         {selectedComponent === 'tiposvhc' && <TipoDeVehiculos />}
         {selectedComponent === 'trasvase' && <Trasvase />}
