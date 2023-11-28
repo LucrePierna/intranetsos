@@ -18,7 +18,7 @@ export default function NavBarBsAs() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-between ">
         <div></div>
         <ul className="nav nav-tabs just">
-   {/*        <li className="nav-item">
+          {/*        <li className="nav-item">
             <button
               className={`nav-link btn ${selectedComponent === 'procedimientos' ? 'active' : ''}`}
               onClick={() => handleComponentClick('procedimientos')}
@@ -63,7 +63,7 @@ export default function NavBarBsAs() {
       </nav>
 
       <div className="container-fluid">
-       {/*  {selectedComponent === 'procedimientos' && <Procedimientos />} */}
+        {/*  {selectedComponent === 'procedimientos' && <Procedimientos />} */}
         {selectedComponent === 'mapas' && <Mapas />}
         {selectedComponent === 'prestadores' && <Prestadores />}
 

@@ -14,26 +14,49 @@ export default function CalculadoraExtranjero() {
 
     const handleCalculo = () => {
         setCopiado(false);
+
         if (tipoCalculo === 'km') {
             const cobertura = cantidadKm * valorKm;
             const coberturaUsd = cobertura / valorDolar;
             const resultadoCalculado = cotizacion - coberturaUsd;
             const resultadoFinal = Math.abs(resultadoCalculado.toFixed(2));
-            const restoCoberturaKm = resultadoFinal * valorDolar / valorKm;
-            const restoCobertura = resultadoFinal * valorDolar;
+
+            const restoCoberturaKm = resultadoCalculado >= 0 ? 0 : resultadoFinal / valorKm;
+            const restoCobertura = resultadoCalculado >= 0 ? 0 : resultadoFinal;
+
             setResultado(`La costo del servicio es de USD ${resultadoFinal}`);
-            setRestoCobKm(`La cobertura del cliente es de ${restoCoberturaKm.toFixed(0)} km`);
-            setRestoCob(`La cobertura del cliente es de $ ${restoCobertura.toFixed(0)} `);
+
+            // Mostrar la información de la cobertura del cliente solo si hay un excedente
+            if (resultadoCalculado < 0) {
+                setRestoCobKm(`La cobertura del cliente es de ${restoCoberturaKm.toFixed(0)} km`);
+                setRestoCob(`La cobertura del cliente es de $ ${restoCobertura.toFixed(0)}`);
+            } else {
+                setRestoCobKm('');
+                setRestoCob('');
+            }
         } else {
             const resultadoCalculado = coberturaCliente / valorDolar - cotizacion;
             const resultadoFinal = Math.abs(resultadoCalculado.toFixed(2));
-            const restoCobertura = resultadoFinal * valorDolar;
-            const restoCoberturaKm = resultadoFinal * valorDolar / valorKm;
-            setResultado(`La costo del servicio es de USD${resultadoFinal}`);
-            setRestoCobKm(`La cobertura del cliente es de ${restoCoberturaKm.toFixed(0)} km`);
-            setRestoCob(`La cobertura del cliente es de $ ${restoCobertura.toFixed(0)} `);
+
+            const restoCobertura = resultadoCalculado >= 0 ? 0 : resultadoFinal;
+            const restoCoberturaKm = resultadoCalculado >= 0 ? 0 : resultadoFinal * valorKm;
+
+            setResultado(`El costo del servicio es de USD ${resultadoFinal}`);
+
+            if (resultadoCalculado < 0) {
+                setRestoCobKm(`La cobertura del cliente es de ${restoCoberturaKm.toFixed(0)} km`);
+                setRestoCob(`La cobertura del cliente es de $ ${restoCobertura.toFixed(0)}`);
+            } else {
+                const coberturaRestante = resultadoCalculado * valorDolar;
+                const coberturaRestanteKm = coberturaRestante / valorKm;
+                setRestoCobKm(`La cobertura del cliente es de ${coberturaRestanteKm.toFixed(0)} km`);
+                setRestoCob(`La cobertura del cliente es de $ ${coberturaRestante.toFixed(0)}`);
+            }
         }
     };
+
+
+
 
     const handleLimpiar = () => {
         setTipoCalculo('km');

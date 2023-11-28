@@ -6,6 +6,7 @@ import Mapas from '../Secciones/Mapas/Mapas';
 import Links from '../Secciones/Links/Links';
 import CalculadoraTranp from '../Secciones/CalculadoraTransp/CalculadoraTranp';
 import CalculadoraExt from '../Secciones/CalculadoraExtranjero/CalculadoraExt';
+import PagoA from '../PagoAnticipado/PagoA';
 
 
 export default function NavBarHerramientas() {
@@ -20,6 +21,18 @@ export default function NavBarHerramientas() {
             <nav className="navbar navbar-expand-lg navbar-dark bg-black justify-content-center ">
                 <h1 className='titleNav'>Herramientas</h1>
                 <ul className="nav nav-tabs just">
+                    <li className="nav-item">
+                        <button
+                            className={`nav-link btn ${selectedComponent === 'pagoA' ? 'active' : ''}`}
+                            onClick={() => handleComponentClick('pagoA')}
+                            style={{
+                                color: selectedComponent === 'pagoA' ? 'black' : 'red',
+                                backgroundColor: selectedComponent === 'pagoA' ? 'white' : 'initial'
+                            }}
+                        >
+                            Pago Anticipado
+                        </button>
+                    </li>
                     <li className="nav-item">
                         <button
                             className={`nav-link btn ${selectedComponent === 'calculadoras' ? 'active' : ''}`}
@@ -96,6 +109,7 @@ export default function NavBarHerramientas() {
             </nav>
 
             <div className="container-fluid">
+                {selectedComponent === 'pagoA' && <PagoA />}
                 {selectedComponent === 'calculadoras' && <Calculadoras />}
                 {/*                 {selectedComponent === 'calculadoravtransp' && <CalculadoraTranp />} */}
                 {selectedComponent === 'extranjero' && <CalculadoraExt />}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export default function Solicitud() {
     const [formData, setFormData] = useState({
+        codigo: '',
         vehiculo: '',
         patente: '',
         color: '',
@@ -9,6 +10,7 @@ export default function Solicitud() {
         falla: '',
         ubicacion: '',
         destino: '',
+        cntPers: '',
         observacion: ''
     })
     const [copied, setCopied] = useState(false)
@@ -24,6 +26,7 @@ export default function Solicitud() {
         let formattedText = '';
 
         formattedText += `
+        Codigo: ${formData.codigo}
         Vehiculo: ${formData.vehiculo}
         Patente: ${formData.patente}
         Color: ${formData.color}
@@ -31,6 +34,7 @@ export default function Solicitud() {
         Ubicación: ${formData.ubicacion}
         Destino: ${formData.destino}
         Falla: ${formData.falla}
+        Cantidad de personas: ${formData.cntPers}
         Observación: ${formData.observacion}`;
 
         navigator.clipboard
@@ -42,6 +46,7 @@ export default function Solicitud() {
 
     const handleReset = () => {
         setFormData({
+            codigo: '',
             vehiculo: '',
             patente: '',
             color: '',
@@ -49,6 +54,7 @@ export default function Solicitud() {
             falla: '',
             ubicacion: '',
             destino: '',
+            cntPers: '',
             observacion: ''
         })
         setCopied(false);
@@ -60,6 +66,13 @@ export default function Solicitud() {
                 <div className="d-flex flex-row justify-content-center">
                     <div className='flex-column px-4'>
                         <div className='py-1'>
+                            <label className='px-3'>Codigo:</label>
+                            <input
+                                type='text'
+                                className='form-control'
+                                value={formData.codigo}
+                                onChange={(e) => handleFieldChange('codigo', e.target.value)}
+                            />
                             <label className='px-3'>Vehículo:</label>
                             <input
                                 type='text'
@@ -122,6 +135,15 @@ export default function Solicitud() {
                                 className='form-control'
                                 value={formData.destino}
                                 onChange={(e) => handleFieldChange('destino', e.target.value)}
+                            />
+                        </div>
+                        <div className='py-1'>
+                            <label className='px-3'>Cantidad de Personas:</label>
+                            <input
+                                type='text'
+                                className='form-control'
+                                value={formData.cntPers}
+                                onChange={(e) => handleFieldChange('cntPers', e.target.value)}
                             />
                         </div>
                         <div className='py-1'>
