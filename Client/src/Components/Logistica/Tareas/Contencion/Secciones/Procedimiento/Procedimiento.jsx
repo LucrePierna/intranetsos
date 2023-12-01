@@ -58,10 +58,10 @@ export default function Procedimientos() {
               <p>Cuando el servicio este aceptado y/ siendo trabajado por el Derivador de Logística, la contención, seguimiento y llegada del servicio será responsabilidad del mismo, sin intervención del operador de contención. </p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-ctto" role="tabpanel" aria-labelledby="nav-ctto-tab" tabindex="0">
-              <p>Transcurridos 20’ desde la toma del servicio, el operador de Contención deberá establecer un primer contacto con el cliente para informarle que se está trabajando en su pedido de asistencia. Transcurridos 40/60’ de la última contención, deberá volver a contactar al cliente y notificar el estado del servicio. </p>
+              <p>Transcurridos 20’ desde la toma del servicio, el operador de Contención deberá establecer un primer contacto con el cliente para informarle que se está trabajando en su pedido de asistencia. Transcurridos 40/60’ de la última contención, deberá volver a contactar al cliente y notificar el estado del servicio. (Eso corresponde al derivador una vez que se marca y acepta el servicio. El operador de contención se pone en contacto en los 60' de la toma del servicio, siempre y cuando el servicio no este marcado y aceptado por el derivador, el operador de contención deberá realizar el primer contacto con el cliente.).</p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-seguimiento" role="tabpanel" aria-labelledby="nav-seguimiento-tab" tabindex="0">
-              <p>Si al realizar el seguimiento del servicio, el Operador de Contención detecta que el móvil ya realizó el servicio, deberá dar llegada y finalización del servicio en el sistema.  </p>
+              <p>Si al realizar el seguimiento del servicio, el Operador de Contención detecta que el móvil ya realizó el servicio, deberá dar llegada y finalización del servicio en el sistema." ( Siempre y cuando el servicio no este tomado por GAP LITE o por SISTEMA. En caso que este pasado por estos medios únicamente dejar registro correspondiente en el servicio.).</p>
             </div>
           </div>
         </div>
@@ -92,14 +92,16 @@ export default function Procedimientos() {
               <p>Dentro de la pantalla ‘Derivados’ se deberán verificar los servicios y controlar los cambios de demora a través del botón ‘Cambios de demora’ de la solapa “5. Horarios / otros”. </p>
             </div>
             <div class="tab-pane fade px-3" id="nav-faltacomtn" role="tabpanel" aria-labelledby="nav-faltacomtn-tab" tabindex="0">
-              <p>En caso de que el Derivador no lograra contacto con el cliente, deberá intentar nuevamente la comunicación transcurridos 10 minutos. </p>
+              <p>En caso de que el Derivador no lograra contacto con el cliente, deberá intentar nuevamente la comunicación transcurridos 10 minutos. ( En el caso que el derivador se retire por fin del turno deberá dar aviso a contención (interno 3220) y pasar el servicio para que realicen un seguimiento del mismo.) </p>
             </div>
             <div class="tab-pane fade px-3" id="nav-demycierretn" role="tabpanel" aria-labelledby="nav-demycierretn-tab" tabindex="0">
               <p>Para los servicios cuya demora esté próxima a cumplirse o ya se encontrare cumplida y el móvil aún no hubiera llegado, serán aplicables los incisos a continuación. </p>
               <h1><u>Demora Caída</u></h1>
               <p>El Derivador de Contención deberá consultar al móvil el motivo del retraso y el tiempo restante. Posteriormente deberá llamar al cliente para informar lo sucedido. </p>
               <h1><u>Seguimiento, Control y Cierre de Servicios</u></h1>
-              <p>Si al realizar el seguimiento del servicio, el Derivador de Contención verificare que el móvil ya realizó el servicio, dará llegada y finalización del servicio en el sistema. </p>
+              <p>En caso que el derivador asigne una base eventual, el servicio desaparecerá de la pantalla de trafico nacional y automáticamente aparecerá en Red nacional. Es responsabilidad de contención llamar al cliente para corroborar si móvil llego al lugar para asistirlo. <br />
+                En caso que operador verifique que cliente fue asistido por móvil, dejar el registro correspondiente y si corresponde finalizar el servicio correctamente. <br />
+                En caso que operador detecte que móvil no llego al origen a asistirlo, deberá comunicarse con todos los números de la base y consultar el motivo del retraso del móvil, dejando el registro correspondiente en el servicio. </p>
             </div>
           </div>
         </div>
@@ -113,13 +115,13 @@ export default function Procedimientos() {
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active px-3 " id="nav-mvlasigtl" role="tabpanel" aria-labelledby="nav-mvlasigtl-tab" tabindex="0">
-              <p>Si el servicio es en tránsito, será responsabilidad del Operador de Contención dar aviso al cliente de la aceptación del móvil. Si es en lugar a resguardo, o es servicio de mecánica o motos, será responsabilidad del Operador de Tráfico dar aviso al cliente de la aceptación del móvil, indicando el tiempo de arribo del mismo y corroborando origen y destino del servicio. </p>
+              <p>Si el servicio es en tránsito, será responsabilidad del Operador de Contención dar aviso al cliente de la aceptación del móvil. Si es en lugar a resguardo, o es servicio de mecánica o motos, será responsabilidad del Operador de Tráfico dar aviso al cliente de la aceptación del móvil, indicando el tiempo de arribo del mismo y corroborando origen y destino del servicio. ( Esto es responsabilidad del operador de contención, independientemente si esta en transito/ruta o a resguardo.).</p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-sinmvltl" role="tabpanel" aria-labelledby="nav-sinmvltl-tab" tabindex="0">
-              <p>Será responsabilidad del Operador de Tráfico dar aviso al cliente de la situación del servicio, independientemente de si está a resguardo o en tránsito.</p>
+              <p>Será responsabilidad del Operador de Tráfico dar aviso al cliente de la situación del servicio, independientemente de si está a resguardo o en tránsito. (Es responsabilidad de contención realizar el primer contacto con el cliente pasado los 150min de la toma del servicio.).</p>
             </div>
             <div class="tab-pane fade px-3 " id="nav-eventualtl" role="tabpanel" aria-labelledby="nav-eventualtl-tab" tabindex="0">
-              <p>Será responsabilidad del Operador de Tráfico dar aviso al cliente de la situación del servicio, independientemente de si está a resguardo o en tránsito. </p>
+              <p>Será responsabilidad del Operador de Tráfico dar aviso al cliente de la situación del servicio, independientemente de si está a resguardo o en tránsito. ( Es responsabilidad del operador de contención brindarle la demora al cliente.) . </p>
             </div>
           </div>
         </div>
@@ -179,7 +181,7 @@ export default function Procedimientos() {
                 <li>Reintegro de traslado  o programación.</li>
                 <li>Coordinación de remis para traslado a estación de servicio.</li>
                 <li>Hospedaje si corresponde.</li>
-                <li>Refrigerio (promedio de $1000 por persona según situación).</li>
+                <li>Refrigerio ( $2000 por persona, según situación en la que se encuentre el cliente.). </li>
                 <li>Ofrecer aviso a defensa civil, polícia o bomberos de acuerdo a la situación.</li>
                 <li>Ofrecer aviso a familiar.</li>
                 <li>Analizar otras alternativas /excepciones con supervisor.</li>
