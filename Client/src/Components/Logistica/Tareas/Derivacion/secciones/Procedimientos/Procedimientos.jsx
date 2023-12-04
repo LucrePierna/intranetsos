@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react'
 import * as bootstrap from 'bootstrap'
 import '../../../../EstilosGlobales/General.css'
-
+import VideoPago from '../../../../Video/LinkDePago.mp4'
 
 export default function Procedimientos() {
 
@@ -227,18 +227,33 @@ export default function Procedimientos() {
               <h3 className='fs-3'><b>Se deberá informar al cliente que hasta el pago no se vea impactado en el sistema no se activará el servicio de traslado.</b></h3>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-gestor" role="tabpanel" aria-labelledby="nav-gestor-tab" tabindex="0">
-              <p>En la solapa de "Adicionales" y sin dar en editar al servicio, se debe registrar en el recuadro de "tarjeta de crédito" el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
-                <b>Se debe estar sumamente atento a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)</b> <br />
-                Una vez registrado el valor, van a hacer click en el cartel azul que dice "Tarjeta de crédito"<br />
-                Y allí los redirecciona al gestor de pagos. <br />
-                En esta primera solapa que abre registrarán los datos del titular de la tarjeta.<br />
-                Si el cliente quiere el link por WhatsAp,se debe solicitar de igual manera una casilla de correo (esto es obligatorio ya que la factura se envía por este medio), si el cliente informa que no tiene y no sabe de ningun familiar o cercano, se registra la de "supervisoresderivacion@redsos.com.ar". <br />
-                Al dar click en "siguiente" nos habilita la pestaña para la facturación<br />
-                - Si la factura va a nombre de la misma persona que la tarjeta deben dejar la tilde y les trae los datos antes escritos, solo van a tener que llenar el domicilio. <br />
-                - Si la factura va a nombre de otra persona o razón social retiran la tilde y llenan todos los campos. <br />
-                Cuando el cliente haya realizado el pago del adicional, en solapa de "Adicionales", en la parte inferior les va a aparecer un recuadro con los datos del cliente y al final el logo de MercadoPago.<br />
-                <b>El prestador no debe salir hasta que dicho pago no se haya visto impactado en el servicio, para eso deberán a los 10 minutos revisar el servicio. Si pasado este tiempo no impactó, deben llamar al cliente para verificar si hay algún inconveniente.</b>
-              </p>
+              <div class="tab-content" id="nav-tabContent">
+                <div className="tab-pane fade" id="nav-pag1" role="tabpanel" aria-labelledby="nav-pag1-tab" tabindex="0">
+                  <p>En la solapa de "Adicionales" y sin dar en editar al servicio, se debe registrar en el recuadro de "tarjeta de crédito" el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
+                    <b>Se debe estar sumamente atento a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)</b> <br />
+                    Una vez registrado el valor, van a hacer click en el cartel azul que dice "Tarjeta de crédito"<br />
+                    Y allí los redirecciona al gestor de pagos. <br />
+                    En esta primera solapa que abre registrarán los datos del titular de la tarjeta.<br />
+                    Si el cliente quiere el link por WhatsAp,se debe solicitar de igual manera una casilla de correo (esto es obligatorio ya que la factura se envía por este medio), si el cliente informa que no tiene y no sabe de ningun familiar o cercano, se registra la de "supervisoresderivacion@redsos.com.ar". <br />
+                    Al dar click en "siguiente" nos habilita la pestaña para la facturación<br />
+                    - Si la factura va a nombre de la misma persona que la tarjeta deben dejar la tilde y les trae los datos antes escritos, solo van a tener que llenar el domicilio. <br />
+                    - Si la factura va a nombre de otra persona o razón social retiran la tilde y llenan todos los campos. <br />
+                    Cuando el cliente haya realizado el pago del adicional, en solapa de "Adicionales", en la parte inferior les va a aparecer un recuadro con los datos del cliente y al final el logo de MercadoPago.<br />
+                    <b>El prestador no debe salir hasta que dicho pago no se haya visto impactado en el servicio, para eso deberán a los 10 minutos revisar el servicio. Si pasado este tiempo no impactó, deben llamar al cliente para verificar si hay algún inconveniente.</b>
+                  </p>
+                </div>
+                <div className="tab-pane fade" id="nav-pag2" role="tabpanel" aria-labelledby="nav-pag2-tab" tabindex="0">
+                  <div className="d-flex flex-row justify-content-evenly px-4">
+                    <video src={VideoPago} alt="LinkDePago" width="80%" height="80%" controls></video>
+                  </div>
+                </div>
+                <nav>
+                  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link sub active" id="nav-pag1-tab" data-bs-toggle="tab" data-bs-target="#nav-pag1" type="button" role="tab" aria-controls="nav-pag1" aria-selected="true">instructivo</button>
+                    <button class="nav-link sub" id="nav-pag2-tab" data-bs-toggle="tab" data-bs-target="#nav-pag2" type="button" role="tab" aria-controls="nav-pag2" aria-selected="false">Video</button>
+                  </div>
+                </nav>
+              </div>
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-reintegro" role="tabpanel" aria-labelledby="nav-reintegro-tab" tabindex="0">
               <p className='text-start'>El operador podrá brindar la opción de reintegro ante la falta de disponibilidad de prestador en la localidad, demora elevada o falta de capacidad operativa. Para calcular el monto de reintegro el operador deberá utilizar la herramienta de calculadora, indicando kilómetros recorridos por el cliente dentro de su cobertura y una vez calculado deberá dejar registro de lo informado en una referencia de derivación.
