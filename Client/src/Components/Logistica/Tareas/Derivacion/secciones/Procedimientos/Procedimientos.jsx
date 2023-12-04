@@ -228,7 +228,7 @@ export default function Procedimientos() {
             </div>
             <div class="tab-pane fade px-3 mt-3" id="nav-gestor" role="tabpanel" aria-labelledby="nav-gestor-tab" tabindex="0">
               <div class="tab-content" id="nav-tabContent">
-                <div className="tab-pane fade" id="nav-pag1" role="tabpanel" aria-labelledby="nav-pag1-tab" tabindex="0">
+                <div className="tab-pane fade show active" id="nav-instru" role="tabpanel" aria-labelledby="nav-instru-tab" tabindex="0">
                   <p>En la solapa de "Adicionales" y sin dar en editar al servicio, se debe registrar en el recuadro de "tarjeta de crédito" el importe que el cliente abona, puede ser la totalidad o parcial ya que puede haber casos que abona una parte en efectivo, el resto con tarjeta o con más de una tarjeta.<br />
                     <b>Se debe estar sumamente atento a los valores, poner la totalidad de números y el punto cuando registran centavos (no toma comas el sistema astor)</b> <br />
                     Una vez registrado el valor, van a hacer click en el cartel azul que dice "Tarjeta de crédito"<br />
@@ -242,15 +242,15 @@ export default function Procedimientos() {
                     <b>El prestador no debe salir hasta que dicho pago no se haya visto impactado en el servicio, para eso deberán a los 10 minutos revisar el servicio. Si pasado este tiempo no impactó, deben llamar al cliente para verificar si hay algún inconveniente.</b>
                   </p>
                 </div>
-                <div className="tab-pane fade" id="nav-pag2" role="tabpanel" aria-labelledby="nav-pag2-tab" tabindex="0">
+                <div className="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab" tabindex="0">
                   <div className="d-flex flex-row justify-content-evenly px-4">
                     <video src={VideoPago} alt="LinkDePago" width="80%" height="80%" controls></video>
                   </div>
                 </div>
                 <nav>
                   <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                    <button class="nav-link sub active" id="nav-pag1-tab" data-bs-toggle="tab" data-bs-target="#nav-pag1" type="button" role="tab" aria-controls="nav-pag1" aria-selected="true">instructivo</button>
-                    <button class="nav-link sub" id="nav-pag2-tab" data-bs-toggle="tab" data-bs-target="#nav-pag2" type="button" role="tab" aria-controls="nav-pag2" aria-selected="false">Video</button>
+                    <button class="nav-link sub active" id="nav-instru-tab" data-bs-toggle="tab" data-bs-target="#nav-instru" type="button" role="tab" aria-controls="nav-instru" aria-selected="true">instructivo</button>
+                    <button class="nav-link sub" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">Video</button>
                   </div>
                 </nav>
               </div>
@@ -356,7 +356,7 @@ export default function Procedimientos() {
                 <nav>
                   <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                     <button class="nav-link sub active" id="nav-pag1-tab" data-bs-toggle="tab" data-bs-target="#nav-pag1" type="button" role="tab" aria-controls="nav-pag1" aria-selected="true">Pág 1</button>
-                    <button class="nav-link sub" id="nav-pag2-tab" data-bs-toggle="tab" data-bs-target="#nav-pag2" type="button" role="tab" aria-controls="nav-pag2" aria-selected="true">Pág 2</button>
+                    <button class="nav-link sub" id="nav-pag2-tab" data-bs-toggle="tab" data-bs-target="#nav-pag2" type="button" role="tab" aria-controls="nav-pag2" aria-selected="false">Pág 2</button>
                   </div>
                 </nav>
               </div>
