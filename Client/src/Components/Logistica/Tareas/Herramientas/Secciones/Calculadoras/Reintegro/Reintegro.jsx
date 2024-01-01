@@ -24,24 +24,24 @@ function Reintegro() {
       o: {
         // Valores para Resto del País
         r: {
-          a: { valor: 5700, km: 202 },
-          l: { valor: 6400, km: 210 },
-          ca: { valor: 21000, km: 485 },
+          a: { valor: 7837.50, km: 278 },
+          l: { valor: 8800, km: 288 },
+          ca: { valor: 28600, km: 667 },
         },
         // Valores para Patagonia
         p: {
-          a: { valor: 7600, km: 235 },
-          l: { valor: 7900, km: 255 },
-          ca: { valor: 22500, km: 565 },
+          a: { valor: 10450.00, km: 323 },
+          l: { valor: 10862.50, km: 350 },
+          ca: { valor: 30937.50, km: 777 },
         },
       },
       // Valores para Federación Patronal
       f: {
         // Valores para Resto del País
         r: {
-          a: { valor: 5700, km: 227 },
-          l: { valor: 6400, km: 227 },
-          ca: { valor: 21000, km: 227 },
+          a: { valor: 7837.50, km: 330 },
+          l: { valor: 8800, km: 330 },
+          ca: { valor: 28600, km: 330 },
         },
       },
     };
@@ -66,21 +66,21 @@ function Reintegro() {
 
         if (vehValue === 'a') {
           if (zonValue === 'r') {
-            valorMecanica = 2850; // Nacional
+            valorMecanica = 3918; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 3800; // Patagonia
+            valorMecanica = 5225; // Patagonia
           }
         } else if (vehValue === 'l') {
           if (zonValue === 'r') {
-            valorMecanica = 3200; // Nacional
+            valorMecanica = 4400 ; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 3950; // Patagonia
+            valorMecanica = 5431; // Patagonia
           }
         } else if (vehValue === 'ca') {
           if (zonValue === 'r') {
-            valorMecanica = 10500; // Nacional
+            valorMecanica = 14300; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 11250; // Patagonia
+            valorMecanica =  15469; // Patagonia
           }
         }
 
