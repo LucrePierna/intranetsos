@@ -43,7 +43,7 @@ export default function Chattigo() {
                 </TableRow>
                 <TableRow key="8" className="border border-dark bg-light text-black">
                   <TableCell>derivador8@redsos.com.ar</TableCell>
-                  <TableCell>Derivador8*</TableCell>
+                  <TableCell>Derivador8**</TableCell>
                 </TableRow>
                 <TableRow key="9" className="border border-dark bg-light text-black">
                   <TableCell>derivador9@redsos.com.ar</TableCell>

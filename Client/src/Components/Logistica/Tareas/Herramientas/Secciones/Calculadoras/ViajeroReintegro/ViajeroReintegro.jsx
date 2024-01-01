@@ -23,15 +23,15 @@ export default function ViajeroReintegro() {
 
         if (selectedOption === 'remis') {
             if (km <= 20) {
-                resultadoCalculado = 1500;
+                resultadoCalculado = 4800;
             } else if (km > 20 && km <= 60) {
-                resultadoCalculado = km * 120;
+                resultadoCalculado = km * 300;
             } else {
                 resultadoCalculado = 'Debe calcular con Micro';
             }
         } else if (selectedOption === 'micro') {
             if (km > 60) {
-                resultadoCalculado = km * 18 * cantPersona;
+                resultadoCalculado = km * 60 * cantPersona;
             } else {
                 resultadoCalculado = 'Debe calcular con Remis';
             }
