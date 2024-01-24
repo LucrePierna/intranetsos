@@ -38,7 +38,7 @@ export default function Landing() {
               <span></span>
               <span></span>
               <span></span>
-              -TRÁFICO LOCAL</button>
+              TRÁFICO LOCAL</button>
           </a>
         </div>
       </div>
