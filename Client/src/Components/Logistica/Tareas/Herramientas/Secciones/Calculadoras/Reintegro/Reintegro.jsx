@@ -44,6 +44,15 @@ function Reintegro() {
           ca: { valor: 28600, km: 330 },
         },
       },
+        // Valores para Zurich + QBE
+      z: {
+       
+        r: {
+          a: { valor: 27500, km: 415 },
+          l: { valor: 27500, km: 415 },
+          ca: { valor: 27500, km: 415 },
+        },
+      },
     };
 
     let montototal = 0;
@@ -171,6 +180,7 @@ function Reintegro() {
                 <select className="form-select container-style" value={comp} onChange={(e) => setComp(e.target.value)}>
                   <option value="o">Otras Compañías</option>
                   <option value="f">Federación Patronal</option>
+                  <option value="z">Zurich + QBE</option>
                 </select>
               </label>
             </div>
