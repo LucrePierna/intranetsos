@@ -10,12 +10,14 @@ function Reintegro() {
   const [mecanicaChecked, setMecanicaChecked] = useState(false);
   const [resultado, setResultado] = useState(null);
   const [copiado, setCopiado] = useState(false);
+ 
 
   const calc_reintegro1 = () => {
     const compValue = comp;
     const vehValue = veh;
     const zonValue = zon;
     const kmsValue = parseFloat(kms) * 2;
+
 
 
     const valores = {
@@ -130,6 +132,8 @@ function Reintegro() {
     setCopiado(false);
   }
 
+  if(comp === "o"){() => setValid(true)}
+
   return (
     <div className="container text-center mt-5 py-3">
       <div className="row justify-content-center">
@@ -180,10 +184,11 @@ function Reintegro() {
                 <select className="form-select container-style" value={comp} onChange={(e) => setComp(e.target.value)}>
                   <option value="o">Otras Compañías</option>
                   <option value="f">Federación Patronal</option>
-                  <option value="z">Zurich + QBE</option>
+                  <option value="z">Radios: 120, 121, 137, 138, 227, 278, 816</option>
                 </select>
               </label>
             </div>
+
             <div className="mt-3">
               <label>
                 Vehículo:
@@ -235,7 +240,7 @@ function Reintegro() {
               </div>
             )}
             <div className='d-flex flex-row justify-content-center'>
-              <button className="btn btn-danger mt-3 mx-4" onClick={calc_reintegro1}>Calcular</button>
+              <button className="btn btn-danger mt-3 mx-4" onClick={calc_reintegro1} >Calcular</button>
               <button className={`btn btn-${copiado ? 'success' : 'danger'} mt-3 mx-2`} onClick={copiado ? null : handleCopy}>
                 {copiado ? 'Copiado' : 'Copiar'}
               </button>
