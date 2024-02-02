@@ -26,33 +26,33 @@ function Reintegro() {
       o: {
         // Valores para Resto del País
         r: {
-          a: { valor: 7837.50, km: 278 },
-          l: { valor: 8800, km: 288 },
-          ca: { valor: 28600, km: 667 },
+          a: { valor: 9335, km: 330 },
+          l: { valor: 10500, km: 342 },
+          ca: { valor: 34000, km: 794 },
         },
         // Valores para Patagonia
         p: {
-          a: { valor: 10450.00, km: 323 },
-          l: { valor: 10862.50, km: 350 },
-          ca: { valor: 30937.50, km: 777 },
+          a: { valor: 12445, km: 385 },
+          l: { valor: 12935, km: 418 },
+          ca: { valor: 37000, km: 925 },
         },
       },
       // Valores para Federación Patronal
       f: {
         // Valores para Resto del País
         r: {
-          a: { valor: 7837.50, km: 330 },
-          l: { valor: 8800, km: 330 },
-          ca: { valor: 28600, km: 330 },
+          a: { valor: 9335, km: 395 },
+          l: { valor: 10500, km: 395 },
+          ca: { valor: 34000, km: 395 },
         },
       },
         // Valores para Zurich + QBE
       z: {
        
         r: {
-          a: { valor: 27500, km: 415 },
-          l: { valor: 27500, km: 415 },
-          ca: { valor: 27500, km: 415 },
+          a: { valor: 32725, km: 495 },
+          l: { valor: 32725, km: 495 },
+          ca: { valor: 32725, km: 495 },
         },
       },
     };
@@ -77,21 +77,21 @@ function Reintegro() {
 
         if (vehValue === 'a') {
           if (zonValue === 'r') {
-            valorMecanica = 3918; // Nacional
+            valorMecanica = 4650; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 5225; // Patagonia
+            valorMecanica = 6200; // Patagonia
           }
         } else if (vehValue === 'l') {
           if (zonValue === 'r') {
-            valorMecanica = 4400 ; // Nacional
+            valorMecanica = 5250 ; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica = 5431; // Patagonia
+            valorMecanica = 6500; // Patagonia
           }
         } else if (vehValue === 'ca') {
           if (zonValue === 'r') {
-            valorMecanica = 14300; // Nacional
+            valorMecanica = 17000; // Nacional
           } else if (zonValue === 'p') {
-            valorMecanica =  15469; // Patagonia
+            valorMecanica =  18500; // Patagonia
           }
         }
 
