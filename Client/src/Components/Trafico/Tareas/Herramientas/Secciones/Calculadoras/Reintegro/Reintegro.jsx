@@ -179,7 +179,7 @@ function Reintegro() {
                 Compañía:
                 <select className="form-select container-style" value={comp} onChange={(e) => setComp(e.target.value)}>
                   <option value="o">Otras Compañías</option>
-                  <option value="f">Federación Patronal</option>
+                  <option value="f">Federación Patronal y Rivadavia</option>
                   <option value="z">Radios: 120, 121, 137, 138, 227, 278, 816</option>
                 </select>
               </label>
