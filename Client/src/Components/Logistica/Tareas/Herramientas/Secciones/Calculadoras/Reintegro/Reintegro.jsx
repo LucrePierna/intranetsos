@@ -132,7 +132,6 @@ function Reintegro() {
     setCopiado(false);
   }
 
-  if(comp === "o"){() => setValid(true)}
 
   return (
     <div className="container text-center mt-5 py-3">
